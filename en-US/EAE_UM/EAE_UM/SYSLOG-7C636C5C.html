@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="SYSLOG" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SYSLOG-7C636C5C" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+SYSLOG
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.8";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/TroubleshootingMQTTDiagnostics-36EF20A1.html" />
+<meta name="brsnext" value="EAE_UM/ConfigureSYSLOG-7C6442C2_1.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications" />
+</head>
+<body id="SYSLOG-7C636C5C"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > SYSLOG<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SYSLOG-7C636C5C" id="SYSLOG-7C636C5C_">
+<!-- --></a><a name="SYSLOG_7C636C5C" id="SYSLOG_7C636C5C">
+<!-- --></a><a name="SYSLOG_7C636C5C" id="SYSLOG_7C636C5C_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+SYSLOG
+</h1>
+<div class="body conbody">
+
+<div class="section" id="SYSLOG-7C636C5C__IntroducingSYSLOG-7C640732">
+<a name="IntroducingSYSLOG-7C640732" id="IntroducingSYSLOG-7C640732">
+<!-- --></a><a name="SYSLOG_7C636C5C__IntroducingSYSLOG_7C640732" id="SYSLOG_7C636C5C__IntroducingSYSLOG_7C640732">
+<!-- --></a><a name="IntroducingSYSLOG_7C640732" id="IntroducingSYSLOG_7C640732">
+<!-- --></a>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert - Buildtime</span> version 23.1 and later support the message logging protocol SYSLOG.
+</p>
+<p class="p">
+Use the SYSLOG service to capture an audit trail of cybersecurity-related system event messages, and store these messages on a third-party read-only SYSLOG server.
+</p>
+<p class="p">
+The SYSLOG protocol is standardized according to RFC 5424. SYSLOG messages incorporate the following features:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="SYSLOGMessageStructure-7C5F56BB.html">Message Structure</a>: Defines the content and order of the data contained in each event message.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="SYSLOGFacilityCodes-7C60A99F.html">Facility Codes</a>: Describe the kind or source of the SYSLOG message.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="SYSLOGMessageSeverityCodes-7C60F01D.html">Message Severity Codes</a>: Describe level of urgency assigned to the SYSLOG message.
+</p>
+</li>
+</ul>
+<p class="p">
+Refer to the Appendix for a<a class="xref" href="SYSLOGMessageTriggeringEvents-7C61BBDE.html"> list of events that trigger SYSLOG messages</a>.
+</p>
+</div>
+<div class="section" id="SYSLOG-7C636C5C__SYSLOGPlusTCPAndSYSLOGPlusTLS-0C160458">
+<a name="SYSLOGPlusTCPAndSYSLOGPlusTLS-0C160458" id="SYSLOGPlusTCPAndSYSLOGPlusTLS-0C160458">
+<!-- --></a><a name="SYSLOG_7C636C5C__SYSLOGPlusTCPAndSYSLOGPlusTLS_0C160458" id="SYSLOG_7C636C5C__SYSLOGPlusTCPAndSYSLOGPlusTLS_0C160458">
+<!-- --></a><a name="SYSLOGPlusTCPAndSYSLOGPlusTLS_0C160458" id="SYSLOGPlusTCPAndSYSLOGPlusTLS_0C160458">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SYSLOG plus TCP and SYSLOG plus TLS
+</h2>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> supports both encrypted and unencrypted SYSLOG messaging, depending on the device.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+SYSLOG (version 23.1 and later) supports unencrypted communications and is sent over TCP.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For Soft dPAC and for HA Soft dPAC controllers using unencrypted SYSLOG communications, select the server device in the <span class="ph uicontrol">Physical Devices</span> editor, then in the <span class="ph uicontrol">Properties</span> pad set the <span class="ph menucascade"><span class="ph uicontrol">Syslog Server</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Logical port (unsecured)</span></span> setting to 601.
+</div>
+</li>
+<li class="li">
+<p class="p">
+SYSLOG sent over Transport Layer Security - TLS - (version 24.1 and later) supports encrypted communications.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For Soft dPAC and for HA Soft dPAC controllers using encrypted SYSLOG communications, select the server device in the <span class="ph uicontrol">Physical Devices</span> editor, then in the <span class="ph uicontrol">Properties</span> pad set the <span class="ph menucascade"><span class="ph uicontrol">Syslog Server</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Logical port (secured)</span></span> setting to 6514 (the default).
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="SYSLOG-7C636C5C__SYSLOGSupportingDevices-7C63FE47">
+<a name="SYSLOGSupportingDevices-7C63FE47" id="SYSLOGSupportingDevices-7C63FE47">
+<!-- --></a><a name="SYSLOG_7C636C5C__SYSLOGSupportingDevices_7C63FE47" id="SYSLOG_7C636C5C__SYSLOGSupportingDevices_7C63FE47">
+<!-- --></a><a name="SYSLOGSupportingDevices_7C63FE47" id="SYSLOGSupportingDevices_7C63FE47">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SYSLOG Supporting Devices
+</h2>
+<p class="p">
+The following devices support SYSLOG communications:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:33.32666733326667%" />
+<col style="width:33.336666333366665%" />
+<col style="width:33.336666333366665%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d439576e165">
+<p class="p">
+Device / Application
+</p>
+</th>
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d439576e170">
+<p class="p">
+SYSLOG
+</p>
+</th>
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d439576e175">
+<p class="p">
+SYSLOG over TLS
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+ATV dPAC
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+√
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+M262 dPAC
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+√
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+M580 dPAC
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+√
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+Soft dPAC (Linux)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+√
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+HA Soft dPAC (Linux)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+√
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+BMECRD0100 adapter
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+√
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 ">
+<p class="p">
+HMI Runtime
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e170 ">
+<p class="p">
+√
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d439576e175 ">
+<p class="p">
+x
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" colspan="3" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d439576e165 d439576e170 d439576e175 ">
+<p class="p">
+√: Supported protocol
+</p>
+<p class="p">
+x: Unsupported protocol
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Adding EtherNet/IP Devices to the Physical View","type":"item","url":"EAE_UM/AddingEtherNetIPDevicesToThePhysica-CBA1A274.html"},{"name":"Configuring the EtherNet/IP Fieldbus Scanner","type":"item","url":"EAE_UM/ConfiguringTheEtherNetIPFieldbusSca-CABF0D41.html"},{"name":"Adding the EIPSCANNER2 to the Hardware Configuration","type":"item","url":"EAE_UM/AddingTheEIPSCANNER2ToTheHardwareCo-CB9FE47D.html"},{"name":"Mapping Physical Devices to the EIPSCANNER2","type":"item","url":"EAE_UM/MappingPhysicalDevicesToTheEIPSCANN-CB9F609C.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

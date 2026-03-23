@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="License Server Management" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="LicenseServerManagement-A633A49D" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+License Server Management
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.2.1.0_4";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/OfflineNode-LockedLicenseOperations-A49C3B73.html" />
+<meta name="brsnext" value="EAE_UM/EcoStrucureAutomationExpertBuildtim-958D1D70.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; Installing and Licensing EcoStruxure Automation Expert &gt; EcoStruxure Automation Expert Licenses" />
+</head>
+<body id="LicenseServerManagement-A633A49D"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"AcquiringInstallingLicensingAndMain-94F2A2B4.html#AcquiringInstallingLicensingAndMain-94F2A2B4\">Installing and Licensing EcoStruxure Automation Expert<\/a> > <a href=\"GettingActivatingAndRegisteringALic-954798FC.html#GettingActivatingAndRegisteringALic-954798FC\">EcoStruxure Automation Expert Licenses<\/a> > License Server Management<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="LicenseServerManagement-A633A49D" id="LicenseServerManagement-A633A49D_">
+<!-- --></a><a name="LicenseServerManagement_A633A49D" id="LicenseServerManagement_A633A49D">
+<!-- --></a><a name="LicenseServerManagement_A633A49D" id="LicenseServerManagement_A633A49D_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+License Server Management
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Two types of License Servers are supported with <span class="ph">EcoStruxure Automation Expert</span>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">Cloud License Server</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">Enterprise License Server</span>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know their differences, please check the topic <a class="xref" href="GettingActivatingAndRegisteringALic-954798FC.html#GettingActivatingAndRegisteringALic-954798FC__EcoStruxureAutomationExpert-Enginee-9F1F5607"><span class="ph">EcoStruxure Automation Expert</span> Licenses</a>
+</div>
+</li>
+</ul>
+<p class="p">
+Here are the different steps to manage these two License Servers:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__CloudLicenseServerCreationAndMainte-A6A85DF6"><span class="ph">Cloud License Server</span></a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__EnterpriseLicenseServerInstallation-A6A85EE8"><span class="ph">Enterprise License Server</span></a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__LicenseServerConfiguration-AD4A771F">License Server configuration</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__AvailableLicensesOnALicenseServer-8ADDA3AB">License Server availability</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__BorrowFloatingLicenseFromALicenseSe-A6A86498">Borrowing floating license from a License Server</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__ReserveBorrowedLicensesForOfflineUse-782DC8A2">Reserving borrowed floating licenses for offline use</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseServerManagement-A633A49D__LicenseServerNotification-A6A865DD">License Server notifications</a>
+</p>
+</li>
+</ul>
+<div class="section" id="LicenseServerManagement-A633A49D__CloudLicenseServerCreationAndMainte-A6A85DF6">
+<a name="CloudLicenseServerCreationAndMainte-A6A85DF6" id="CloudLicenseServerCreationAndMainte-A6A85DF6">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__CloudLicenseServerCreationAndMainte_A6A85DF6" id="LicenseServerManagement_A633A49D__CloudLicenseServerCreationAndMainte_A6A85DF6">
+<!-- --></a><a name="CloudLicenseServerCreationAndMainte_A6A85DF6" id="CloudLicenseServerCreationAndMainte_A6A85DF6">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">Cloud License Server</span> Creation and License Assignment
+</h2>
+<div class="p">
+The creation of your <span class="ph">Cloud License Server</span> and the license operations on your server can be done on the <span class="ph uicontrol">Software Management</span> portal.
+<div class="note note">
+<span class="notetitle">NOTE:</span> In China, contact your local <span class="ph">Schneider Electric</span> customer support to request the creation of your Cloud License Server for <span class="ph">EcoStruxure Automation Expert</span>.
+</div>
+</div>
+<p class="p">
+Complete the following steps to create a Cloud License Server and to add the required licenses as floating licenses on your License Server:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">License Manager</span>, click the <span class="ph uicontrol">License Portal</span> link.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Software Management</span> portal opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Login with your <span class="ph uicontrol">MySchneider</span> account.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+If you do not have a <span class="ph uicontrol">MySchneider</span> account, you can create one by clicking <span class="ph uicontrol">Register</span> and following the instructions.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+If there is no Internet connection on your Engineering Workstation, enter the URL displayed in the tooltip of the <span class="ph uicontrol">License Portal</span> link in a web browser, on any device with Internet connection.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Verify if the licenses that you want to use on your Cloud License Server appear in the <span class="ph uicontrol">Software Management</span> portal. If not, then register the licenses <span class="ph uicontrol">Activation ID</span>s to your account.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">Devices</span> tab. Then add a new device, select <span class="ph">EcoStruxure Automation Expert</span> and enter a device name for your Cloud License Server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the created Cloud License Server and add the licenses that you want to use on this server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Safely store the <span class="ph uicontrol">Device ID</span> (that is the License Server ID).
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Device ID</span> is required in the <span class="ph uicontrol">License Manager</span> to <a class="xref" href="LicenseServerManagement-A633A49D.html#LicenseServerManagement-A633A49D__LicenseServerConfiguration-AD4A771F">configure the License Server</a> on any Engineering Workstation, where licenses are borrowed or reserved from this Cloud License Server.
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="LicenseServerManagement-A633A49D__EnterpriseLicenseServerInstallation-A6A85EE8">
+<a name="EnterpriseLicenseServerInstallation-A6A85EE8" id="EnterpriseLicenseServerInstallation-A6A85EE8">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__EnterpriseLicenseServerInstallation_A6A85EE8" id="LicenseServerManagement_A633A49D__EnterpriseLicenseServerInstallation_A6A85EE8">
+<!-- --></a><a name="EnterpriseLicenseServerInstallation_A6A85EE8" id="EnterpriseLicenseServerInstallation_A6A85EE8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">Enterprise License Server</span> Installation and License Management
+</h2>
+<p class="p">
+The <span class="ph">Enterprise License Server</span> must be hosted and maintained by your enterprise.
+</p>
+<p class="p">
+The <span class="ph">Enterprise License Server</span> is offered as separate package and can be downloaded for free from the same location where you downloaded the <span class="ph">EcoStruxure Automation Expert</span> package.
+</p>
+<p class="p">
+This package also includes an English guideline, describing the <span class="ph">Enterprise License Server</span> requirements and necessary steps to install, configure and manage the licenses on it.
+</p>
+</div>
+<div class="section" id="LicenseServerManagement-A633A49D__LicenseServerConfiguration-AD4A771F">
+<a name="LicenseServerConfiguration-AD4A771F" id="LicenseServerConfiguration-AD4A771F">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__LicenseServerConfiguration_AD4A771F" id="LicenseServerManagement_A633A49D__LicenseServerConfiguration_AD4A771F">
+<!-- --></a><a name="LicenseServerConfiguration_AD4A771F" id="LicenseServerConfiguration_AD4A771F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+License Server Configuration
+</h2>
+<p class="p">
+To configure your Engineering Workstations to borrow or reserve licenses from your License Server, complete the following steps:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Start <span class="ph">EcoStruxure Automation Expert</span> and click <span class="ph uicontrol">Help</span> menu, then click <span class="ph uicontrol">License Manager</span>.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">License Manager</span> opens and displays the <span class="ph uicontrol">License Information</span> page.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">License Server</span> button.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">New</span> in the last column of the License Server table.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Configure License Server</span> page opens.
+</p>
+</li>
+<li class="li">
+<div class="p">
+On the <span class="ph uicontrol">Configure License Server</span> page:
+<ul class="ul">
+<li class="li">
+<p class="p">
+For <strong class="ph b"><span class="ph">Cloud License Server</span></strong>:
+</p>
+<ol class="ol" type="a">
+<li class="li">
+<p class="p">
+Enter an <span class="ph uicontrol">Alias</span> for the License Server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the type <strong class="ph b"><span class="ph">Cloud License Server</span></strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter your <span class="ph uicontrol">License Server ID</span> previously retrieved.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Check Connection</span> to verify if the License Server is reachable.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Save</span> the License Server connection once its status is <span class="ph uicontrol">Online</span>. This status indicates that the License Server is running as it is reachable over the network.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> With the button <span class="ph uicontrol">Remove</span>, a saved configuration can be removed when needed.
+</div>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Configure License Server</span> page is closed.
+</p>
+</li>
+</ol>
+</li>
+</ul>
+<ul class="ul">
+<li class="li">
+<p class="p">
+For <strong class="ph b"><span class="ph">Enterprise License Server</span></strong>:
+</p>
+<ol class="ol" type="a">
+<li class="li">
+<p class="p">
+Enter an <span class="ph uicontrol">Alias</span> for the License Server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the type <strong class="ph b"><span class="ph">Enterprise License Server</span></strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the <span class="keyword wintitle">Hyper Text Transfer Protocol</span> of your License Server. It is strongly recommended to use the secured one (https).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter the <span class="ph uicontrol">host name</span> or the <span class="ph uicontrol">IP address</span> and the <span class="ph uicontrol">Port</span> of your <span class="ph">Enterprise License Server</span> machine.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Check Connection</span> to verify if the License Server is reachable.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Save</span> the License Server connection once its status is <span class="ph uicontrol">Online</span>. This status indicates that the License Server is running as it is reachable over the network.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> With the button <span class="ph uicontrol">Remove</span>, a saved configuration can be removed when needed.
+</div>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Configure License Server</span> page is closed.
+</p>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<div class="p">
+If required, in the <span class="ph uicontrol">License Server</span> page, modify the License Server configuration by using the <span class="ph uicontrol">Edit</span> button.
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Edit</span> button is unavailable when licenses are still reserved from the License Server. Releasing the reserved licenses makes the <span class="ph uicontrol">Edit</span> button available again.
+</div>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Close</span> to return to the <span class="ph uicontrol">License Information</span> page.
+</p>
+<div class="p">
+<strong class="ph b">Result:</strong> One copy of each floating license, which is not yet available as node-locked license, is automatically borrowed from the configured License Server. For the borrowed licenses, the alias name of the License Server is displayed in the <span class="ph uicontrol">Source</span> column of the <span class="ph uicontrol">License Information</span> page. The remaining available licenses on your License Server are displayed under <a class="xref" href="#LicenseServerManagement-A633A49D__AvailableLicensesOnALicenseServer-8ADDA3AB"><span class="ph uicontrol">Available Served Licenses</span></a>, on the <span class="ph uicontrol">License Information</span> page.
+<div class="note note">
+<span class="notetitle">NOTE:</span> After any License Server configuration change, it is recommended to restart other possible running <span class="ph">EcoStruxure Automation Expert</span> instances on your PC.
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="LicenseServerManagement-A633A49D__AvailableLicensesOnALicenseServer-8ADDA3AB">
+<a name="AvailableLicensesOnALicenseServer-8ADDA3AB" id="AvailableLicensesOnALicenseServer-8ADDA3AB">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__AvailableLicensesOnALicenseServer_8ADDA3AB" id="LicenseServerManagement_A633A49D__AvailableLicensesOnALicenseServer_8ADDA3AB">
+<!-- --></a><a name="AvailableLicensesOnALicenseServer_8ADDA3AB" id="AvailableLicensesOnALicenseServer_8ADDA3AB">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Available Licenses on a License Server
+</h2>
+<p class="p">
+The <span class="ph uicontrol">License Information</span> page shows the <span class="ph">EcoStruxure Automation Expert</span> licenses. The licenses, available on the configured License Server, are also displayed.
+</p>
+<p class="p">
+To see them, click <span class="ph uicontrol">Available Served Licenses</span> to expand a table when a License Server is properly configured and reachable.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Available Served Licenses</span> table shows the following additional information:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Alias</span>: It is the alias name given to the License Server during its configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Remaining Copies</span>: The number of available license copies that can be borrowed at the moment by another Engineering Workstation.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you want to verify if a copy has been released from another Engineering Workstation, collapse, then expand again the <span class="ph uicontrol">Available Served Licenses</span> table to refresh the number. Licenses with zero remaining copies are not displayed, except if they are borrowed or reserved by the current Engineering Workstation.
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="LicenseServerManagement-A633A49D__BorrowFloatingLicenseFromALicenseSe-A6A86498">
+<a name="BorrowFloatingLicenseFromALicenseSe-A6A86498" id="BorrowFloatingLicenseFromALicenseSe-A6A86498">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__BorrowFloatingLicenseFromALicenseSe_A6A86498" id="LicenseServerManagement_A633A49D__BorrowFloatingLicenseFromALicenseSe_A6A86498">
+<!-- --></a><a name="BorrowFloatingLicenseFromALicenseSe_A6A86498" id="BorrowFloatingLicenseFromALicenseSe_A6A86498">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Borrowing Floating License from a License Server
+</h2>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> borrows automatically, from the configured License Server, one copy of the floating licenses that are not yet available as node-locked licenses:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+After each successful configuration of your License Server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+At each opening of <span class="ph">EcoStruxure Automation Expert</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+After the release of reserved licenses from a License Server.
+</p>
+</li>
+</ul>
+<p class="p">
+For the two <span class="ph uicontrol">Asset Link</span> product features, automatic borrowing of the corresponding <span class="ph">Addon</span> licenses is only done if these features are installed.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The feature <span class="ph uicontrol">Asset Link</span> for Bulk Engineering needs no more Addon license in EcoStruxure Automation Expert V24.0 because it is only for preview.
+</div>
+<p class="p">
+The conditions to borrow licenses on your Engineering Workstation are:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+A permanent Internet connection on the Engineering Workstation when borrowing a license from a <span class="ph">Cloud License Server</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If this Internet connection is not permanently available, then <a class="xref" href="#LicenseServerManagement-A633A49D__LicenseServerNotification-A6A865DD">License Server notifications</a> might appear. A re-connection is required at least once within every four hours.
+</div>
+</li>
+<li class="li">
+<p class="p">
+A permanent Intranet connection on the Engineering Workstation when borrowing a license from an <span class="ph">Enterprise License Server</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If this Intranet connection is not permanently available, then <a class="xref" href="#LicenseServerManagement-A633A49D__LicenseServerNotification-A6A865DD">License Server notifications</a> might appear.
+</div>
+</li>
+<li class="li">
+<p class="p">
+A configured License Server within the <a class="xref" href="LicenseManager-036F02C8.html"><span class="ph uicontrol">License Manager</span></a> of <span class="ph">EcoStruxure Automation Expert</span> with <span class="ph uicontrol">Online</span> connection status.
+</p>
+</li>
+<li class="li">
+<p class="p">
+An available copy of a Professional <span class="ph">Engineering</span>, Standard <span class="ph">Engineering</span>, or <span class="ph">Addon</span> license, must be available on the License Server for borrowing.
+</p>
+</li>
+</ul>
+<p class="p">
+After having successfully borrowed an available license copy from the License Server, information about this license becomes available on the <span class="ph uicontrol">License Information</span> page of the <a class="xref" href="LicenseManager-036F02C8.html"><span class="ph uicontrol">License Manager</span></a>. The new license appears there with the License Server alias name in the <span class="ph uicontrol">Source</span> column.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> It is recommended to synchronize the clock of your Engineering Workstation with a time server to prevent problems with license borrowing.
+</div>
+</div>
+<div class="section" id="LicenseServerManagement-A633A49D__ReserveBorrowedLicensesForOfflineUse-782DC8A2">
+<a name="ReserveBorrowedLicensesForOfflineUse-782DC8A2" id="ReserveBorrowedLicensesForOfflineUse-782DC8A2">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__ReserveBorrowedLicensesForOfflineUse_782DC8A2" id="LicenseServerManagement_A633A49D__ReserveBorrowedLicensesForOfflineUse_782DC8A2">
+<!-- --></a><a name="ReserveBorrowedLicensesForOfflineUse_782DC8A2" id="ReserveBorrowedLicensesForOfflineUse_782DC8A2">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Reserving Borrowed Floating Licenses for Offline Use
+</h2>
+<p class="p">
+Your borrowed floating licenses can be reserved for use on your Engineering Workstation without connection to the License Server, for a maximum period of 14 days.
+</p>
+<p class="p">
+To reserve borrowed floating licenses, your Engineering Workstation must be connected to the License Server. After the license reservation is confirmed, the Engineering Workstation can be disconnected from the License Server.
+</p>
+<div class="p">
+The license reservation is available only if a License Server is configured in your <span class="ph">EcoStruxure Automation Expert</span> solution.
+<div class="note note">
+<span class="notetitle">NOTE:</span> During the reservation period, the License Server configuration on the <span class="ph uicontrol">License Server</span> page cannot be modified.
+</div>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8%" />
+<col style="width:92%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d332678e704">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d332678e709">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d332678e704 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d332678e709 ">
+<p class="p">
+Start <span class="ph">EcoStruxure Automation Expert</span> and click <span class="ph uicontrol">Help</span> menu, then click <span class="ph uicontrol">License Manager</span>.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">License Manager</span> opens and your available licenses are displayed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d332678e704 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d332678e709 ">
+<p class="p">
+Click the <span class="ph uicontrol">Reserve License</span> button.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Reserve Licenses</span> page opens.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d332678e704 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d332678e709 ">
+<div class="p">
+Modify the duration of the reservation period by clicking <kbd class="ph userinput">-</kbd> or <kbd class="ph userinput">+</kbd>.
+<div class="note note">
+<span class="notetitle">NOTE:</span> The maximum duration is 14 days. The period ends at the end of the reservation date displayed on the same page or in the <span class="ph uicontrol">License Information</span> page.
+</div>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d332678e704 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d332678e709 ">
+<p class="p">
+Click <span class="ph uicontrol">Next</span>, then click <span class="ph uicontrol">OK</span> on the confirmation dialog.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The previously borrowed floating licenses are now reserved for the selected period of time. Your Engineering Workstation can be disconnected from the License Server. In the <span class="ph uicontrol">License Manager</span>, the <span class="ph uicontrol">Reserve License</span> button is replaced by the <span class="ph uicontrol">Release Reservation</span> button.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+The reserved licenses can be released manually before the end of the reservation period if your Engineering Workstation is connected to the License Server. Otherwise, they are released automatically at the end of the reservation period, even if the Engineering Workstation is not connected to the License Server.
+</p>
+<p class="p">
+To release a reserved license when connected to the License Server, open the <span class="ph uicontrol">License Manager</span> and click the <span class="ph uicontrol">Release Reservation</span> button, then click <span class="ph uicontrol">OK</span> on the confirmation dialog. The license is released and becomes borrowed again.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When the reservation period of one or more licenses expires in less than three days, a message is displayed at the start of <span class="ph">EcoStruxure Automation Expert</span>. To extend the reservation period, a connection to the License Server is required to release the current reservation. Then you can reserve the licenses again for a new reservation period.
+</div>
+</div>
+<div class="section" id="LicenseServerManagement-A633A49D__LicenseServerNotification-A6A865DD">
+<a name="LicenseServerNotification-A6A865DD" id="LicenseServerNotification-A6A865DD">
+<!-- --></a><a name="LicenseServerManagement_A633A49D__LicenseServerNotification_A6A865DD" id="LicenseServerManagement_A633A49D__LicenseServerNotification_A6A865DD">
+<!-- --></a><a name="LicenseServerNotification_A6A865DD" id="LicenseServerNotification_A6A865DD">
+<!-- --></a>
+<h2 class="title sectiontitle">
+License Server Notifications
+</h2>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> gives message notifications when specific license use cases happened while borrowing or reserving a floating license from a License Server. Some of these use cases are:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The connection to the License Server ends while <span class="ph">EcoStruxure Automation Expert</span> runs. Short connection breaks do not lead to messages.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Re-connection to the License Server could not be established within a defined time.
+</p>
+</li>
+<li class="li">
+<p class="p">
+There is no available copy of an <span class="ph">Engineering</span> or <span class="ph">Addon</span> license, available on the License Server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+There are no borrowed licenses available to reserve for offline use.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

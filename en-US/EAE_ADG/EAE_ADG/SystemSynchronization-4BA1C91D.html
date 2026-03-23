@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="System Synchronization" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SystemSynchronization-4BA1C91D" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+System Synchronization
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.1.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/SampleProjectPresentation-4AA5CB1F.html" />
+<meta name="brsnext" value="EAE_ADG/GeneralizationAPragmaticApproach-4BA3F4B1.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Special Design Use Cases &gt; Availability Monitoring and Execution Synchronization" />
+</head>
+<body id="SystemSynchronization-4BA1C91D"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"SpecialDesignUseCases-4AA4F7F2.html#SpecialDesignUseCases-4AA4F7F2\">Special Design Use Cases<\/a> > <a href=\"AvailabilityMonitoringAndExecutionS-4AA514F2.html#AvailabilityMonitoringAndExecutionS-4AA514F2\">Availability Monitoring and Execution Synchronization<\/a> > System Synchronization<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SystemSynchronization-4BA1C91D" id="SystemSynchronization-4BA1C91D_">
+<!-- --></a><a name="SystemSynchronization_4BA1C91D" id="SystemSynchronization_4BA1C91D">
+<!-- --></a><a name="SystemSynchronization_4BA1C91D" id="SystemSynchronization_4BA1C91D_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+System Synchronization
+</h1>
+<div class="body conbody">
+
+<div class="section" id="SystemSynchronization-4BA1C91D__DevicesAreExchangingInformationInAL-4BA3CF49">
+<a name="DevicesAreExchangingInformationInAL-4BA3CF49" id="DevicesAreExchangingInformationInAL-4BA3CF49">
+<!-- --></a><a name="SystemSynchronization_4BA1C91D__DevicesAreExchangingInformationInAL_4BA3CF49" id="SystemSynchronization_4BA1C91D__DevicesAreExchangingInformationInAL_4BA3CF49">
+<!-- --></a><a name="DevicesAreExchangingInformationInAL_4BA3CF49" id="DevicesAreExchangingInformationInAL_4BA3CF49">
+<!-- --></a>
+<p class="p">
+The sections in this topic illustrate how to synchronize the start of all devices based on the overall <span class="ph uicontrol">System</span> state information.
+</p>
+<p class="p">
+Devices are exchanging information in a loop (<span class="ph menucascade"><span class="ph uicontrol">DEVICE0</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">DEVICE1</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">DEVICE2</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">DEVICE3</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">DEVICE0</span></span>) through a common interface.
+</p>
+<div class="fig fignone">
+<span class="figcap">Chained Function Blocks Across Devices:</span> <img class="image" src="0000857590.png" alt="" style="max-height:3in;" />
+</div>
+<p class="p">
+All devices receive:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+One <span class="ph uicontrol">PeerMonitor</span> <span class="ph">CAT</span> to process the state of the pair.
+</p>
+</li>
+<li class="li">
+<p class="p">
+One <span class="ph uicontrol">FakeProcess</span> <span class="ph">CAT</span> to simulate the parts of the process to be synchronized.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="SystemSynchronization-4BA1C91D__PeerMonitorCAT-4BA3CC47">
+<a name="PeerMonitorCAT-4BA3CC47" id="PeerMonitorCAT-4BA3CC47">
+<!-- --></a><a name="SystemSynchronization_4BA1C91D__PeerMonitorCAT_4BA3CC47" id="SystemSynchronization_4BA1C91D__PeerMonitorCAT_4BA3CC47">
+<!-- --></a><a name="PeerMonitorCAT_4BA3CC47" id="PeerMonitorCAT_4BA3CC47">
+<!-- --></a>
+<h2 class="title sectiontitle">
+PeerMonitor <span class="ph">CAT</span>
+</h2>
+<p class="p">
+The <span class="ph uicontrol">PeerMonitor</span> <span class="ph">CAT</span> includes a <span class="ph uicontrol">DeviceState</span> for display purpose and monitors the previous device through a heartbeat mechanism. It gives a <span class="ph uicontrol">Start</span> process event if the system is ready and a stop process event if the system is not ready.
+</p>
+<p class="p">
+The <span class="ph uicontrol">PeerMonitor</span> logic is split in five zones:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Initialization</strong>: which has been triggered through an <span class="ph uicontrol">EVENTCHAIN</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">System State Calculation</strong>: Heartbeat management which is linked with previous and next device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Process State Calculation</strong>: commands to start or stop the process according to the state.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Messaging</strong>: communication and interfaces to connect with previous and next device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Display</strong>: HMI part.
+</p>
+</li>
+</ul>
+<div class="fig fignone">
+<span class="figcap"><span class="ph uicontrol">PeerMonitor</span> <span class="ph">CAT</span>:</span> <img class="image" src="0001000033.png" alt="" style="max-height:3.2in;" />
+</div>
+</div>
+<div class="section" id="SystemSynchronization-4BA1C91D__DeviceHeartBitComposite-4BA3C979">
+<a name="DeviceHeartBitComposite-4BA3C979" id="DeviceHeartBitComposite-4BA3C979">
+<!-- --></a><a name="SystemSynchronization_4BA1C91D__DeviceHeartBitComposite_4BA3C979" id="SystemSynchronization_4BA1C91D__DeviceHeartBitComposite_4BA3C979">
+<!-- --></a><a name="DeviceHeartBitComposite_4BA3C979" id="DeviceHeartBitComposite_4BA3C979">
+<!-- --></a>
+<h2 class="title sectiontitle">
+DeviceHeartBit Composite
+</h2>
+<p class="p">
+The core of the logic is the system state calculation to detect the availability of the previous device and take into account the overall system status. This logic is provided by <span class="ph uicontrol">DeviceHeartBit</span> composite function block:
+</p>
+<img class="image" src="DD00678747.png" alt="" style="max-height:1.4in;" />
+<p class="p">
+As the name suggests, it implements a simple way to exchange periodic “heart beat” events between paired devices. At initialization, the function block receives the period to send the heartbeat signal and a timeout.
+</p>
+<p class="p">
+The state change event provides a way to signal any change of the system state to be able to handle the process correctly. A timeout control allows detecting the failure on the other side.
+</p>
+<p class="p">
+The <span class="ph uicontrol">DeviceHeartBit</span> composite logic has the following parts:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Polling, sending heartbeat every <span class="ph uicontrol">period</span> (emit), and starting a timer to detect the non-answer after a timeout (timeoutDetected).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Reaction to the reception of the heartbeat from the partner, stopping the timer before it reaches the timeout, and providing state.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Calculating the data to send to the next device.
+</p>
+</li>
+</ul>
+<div class="fig fignone">
+<span class="figcap"><span class="ph uicontrol">DeviceHeartBit</span> Composite:</span> <img class="image" src="0001000032.png" alt="" style="max-height:3.2in;" />
+</div>
+</div>
+<div class="section" id="SystemSynchronization-4BA1C91D__HeartBeatSignalAdapter-4BA3C663">
+<a name="HeartBeatSignalAdapter-4BA3C663" id="HeartBeatSignalAdapter-4BA3C663">
+<!-- --></a><a name="SystemSynchronization_4BA1C91D__HeartBeatSignalAdapter_4BA3C663" id="SystemSynchronization_4BA1C91D__HeartBeatSignalAdapter_4BA3C663">
+<!-- --></a><a name="HeartBeatSignalAdapter_4BA3C663" id="HeartBeatSignalAdapter_4BA3C663">
+<!-- --></a>
+<h2 class="title sectiontitle">
+HeartBeatSignal Adapter
+</h2>
+<p class="p">
+The usage of an adapter (as interface) allows users to define a single connection between devices, for receiving the signal from the previous device, or sending the signal to the next device in the chain.
+</p>
+<div class="fig fignone">
+<span class="figcap"><span class="ph uicontrol">HeartBitSignal</span> Adapter:</span> <img class="image" src="DD00678746.png" alt="" style="max-height:1in;" />
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

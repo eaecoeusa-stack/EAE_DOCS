@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Optimization at Application Design Level" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="OptimizationAtApplicationDesignLeve-4A955320" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Optimization at Application Design Level
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.6.2.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/GeneralDesignRules-4A940A41.html" />
+<meta name="brsnext" value="EAE_ADG/OptimizationAtHardwareConfiguration-4AA4104A.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Event Storms Risk Mitigation &gt; Optimizations to Reduce Event Generation" />
+</head>
+<body id="OptimizationAtApplicationDesignLeve-4A955320"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"EventStormsRiskMitigation-48F15640.html#EventStormsRiskMitigation-48F15640\">Event Storms Risk Mitigation<\/a> > <a href=\"OptimizationsToReduceEventGeneratio-4A93E33B.html#OptimizationsToReduceEventGeneratio-4A93E33B\">Optimizations to Reduce Event Generation<\/a> > Optimization at Application Design Level<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="OptimizationAtApplicationDesignLeve-4A955320" id="OptimizationAtApplicationDesignLeve-4A955320_">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320" id="OptimizationAtApplicationDesignLeve_4A955320">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320" id="OptimizationAtApplicationDesignLeve_4A955320_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Optimization at Application Design Level
+</h1>
+<div class="body conbody">
+
+<div class="section" id="OptimizationAtApplicationDesignLeve-4A955320__ManagingAnalogValueChangesR2ReduceE-4A974B8D">
+<a name="ManagingAnalogValueChangesR2ReduceE-4A974B8D" id="ManagingAnalogValueChangesR2ReduceE-4A974B8D">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320__ManagingAnalogValueChangesR2ReduceE_4A974B8D" id="OptimizationAtApplicationDesignLeve_4A955320__ManagingAnalogValueChangesR2ReduceE_4A974B8D">
+<!-- --></a><a name="ManagingAnalogValueChangesR2ReduceE_4A974B8D" id="ManagingAnalogValueChangesR2ReduceE_4A974B8D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Managing Analog Value Changes <sup class="ph sup">R2 [Reduce Events]</sup>
+</h2>
+<p class="p">
+One of the first source of events creation is the change of inputs values. In particular, real input values can be affected by very small calculation rounding or even electric current perturbations, which lead to an infinitesimal – (10<sup class="ph sup">-9</sup>) or so – changes in the value. This can lead to a huge number of events generated for a value change that may not be significant from a process perspective.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+When using real values, in particular analog inputs, it is important to filter the changes.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+<strong class="ph b"><u class="ph u">One thing to keep in mind:</u></strong> In an IEC61131 based process, a periodic or cyclic task will read the input at the beginning of each cycle. So, even with real value inputs changing faster than the task cycle time, the process will still only consider and process one value per cycle. But event driven systems (like those based on <span class="ph">IEC61499</span>) will also read I/O cyclically, but will generate an event only if a change in value is detected (and process it in its order of detection).
+</p>
+</li>
+</ul>
+</div>
+<p class="p">
+The <strong class="ph b">SMOOTH</strong> function block can be used to reduce drastically the number of nonsignificant changes. The figure below shows a <strong class="ph b">write</strong> function block generating 10 events that the <strong class="ph b">SMOOTH</strong> function block filters to generate only 3 events.
+</p>
+<div class="fig fignone">
+<img class="image" src="DD01118695.png" alt="" style="max-height:2.75in;" />
+</div>
+<p class="p">
+Another use of this function block is to filter by frequency of changes. For example, if a value changes every 2 ms but your system only needs a reaction every 10 ms you can divide by 5 the number of events generated.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about <span class="ph uicontrol">SMOOTH</span> function block, check its description in its library documentation.
+</div>
+<p class="p">
+For Boolean data in the application there is also a way to reduce the number of events by using the <span class="ph uicontrol">E_D_FF</span> function block.
+</p>
+</div>
+<div class="section" id="OptimizationAtApplicationDesignLeve-4A955320__De-GroupSymlinksR3ReduceEvents-4A97492F">
+<a name="De-GroupSymlinksR3ReduceEvents-4A97492F" id="De-GroupSymlinksR3ReduceEvents-4A97492F">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320__De_GroupSymlinksR3ReduceEvents_4A97492F" id="OptimizationAtApplicationDesignLeve_4A955320__De_GroupSymlinksR3ReduceEvents_4A97492F">
+<!-- --></a><a name="De_GroupSymlinksR3ReduceEvents_4A97492F" id="De_GroupSymlinksR3ReduceEvents_4A97492F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+De-Group Symlinks <sup class="ph sup">R3 [Reduce Events]</sup>
+</h2>
+<p class="p">
+The symlinks function blocks in the <span class="ph">EcoStruxure Automation Expert</span> environment play a very specific role and propagate value changes to the rest of the logic.
+</p>
+<p class="p">
+Two main points to keep in mind:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">CNF</span> of a <span class="ph uicontrol">SYMLINKMULTIVARDST</span> function block is <strong class="ph b">triggered for every change of <u class="ph u">any</u> value</strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">REQ</span> of a <span class="ph uicontrol">SYMLINKMULTIVARSRC</span> function block <strong class="ph b">automatically triggers the value change</strong> for all symlinks <strong class="ph b">even if the values are not modified</strong>.
+</p>
+</li>
+</ul>
+<div class="div">
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--caution">
+<span class="hazardstatement--caution-symbol"> </span>CAUTION
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+RISK OF UNINTENDED OPERATION
+</div>
+<div class="howtoavoid">
+For solutions created with EcoStruxure Automation Expert earlier than v24.0 - but running a since updated EcoStruxure Automation Expert v24.0 and later - avoid executing an <strong class="ph b">INIT</strong> event for a <strong class="ph b">SYMLINKMULTIVARSRC</strong> function as it can cause the loss of pre-existing non-cyclic data input values and change the intended behavior of the application.
+</div>
+<div class="howtoavoid">
+In this case, edit your program logic to ensure intended operation.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in injury or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p">
+For more information on the relationship between the REQ and INIT events, refer to the <em class="ph i">Runtime.Base - Library Guide</em> help topic <span class="ph"><a class="xref " href="../../RunBas/index.htm?rhmapid=SYMLINKMULTIVARSRC_SYMLINKMULTIVARSRC" target="_blank"><em class="ph i">SYMLINKMULTIVARSRC</em></a></span>.
+</p>
+<p class="p">
+Example: using a function block to get the value of 10 symlinks and using some values (not all) for a calculation.
+</p>
+<div class="fig fignone">
+<img class="image" src="DD01118694.png" alt="" style="max-height:3in;" />
+</div>
+<p class="p">
+Because both function blocks operate with the same symlinks, any trigger of <span class="ph uicontrol">setval.REQ</span> (<span class="ph uicontrol">SYMLINKMULTIVARSRC</span>) is seen by <span class="ph uicontrol">getval</span> (<span class="ph uicontrol">SYMLINKMULTIVARDST</span>) as a change and triggers <span class="ph uicontrol">getval.CNF</span>.
+</p>
+<p class="p">
+In this example, only the values 1 to 4 are used in the <strong class="ph b">ADD</strong> logic.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+With this application design, the calculation (<strong class="ph b">ADD</strong>) is executed systematically, even if the change was done in a non-impacting value or even in the absence of any change.
+</p>
+</li>
+</ul>
+<p class="p">
+Remember that hardware <span class="ph">CATs</span> usually trigger changes through <span class="ph uicontrol">SYMLINKMULTIVARDST</span> for each input value. For example, in each bus cycle (let’s say 25 ms) an analog module with 16 channels will potentially trigger 16 events (if all are modified). If all these symlinks are grouped in a single <span class="ph uicontrol">SYMLINKMULTIVARDST</span> then the <span class="ph uicontrol">CNF</span> event will be generated 16 * 40 = 640 times per second (quickly generating a huge number of events).
+</p>
+<p class="p">
+To mitigate this:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Avoid grouping symlinks in one <span class="ph uicontrol">SYMLINKMULTIVARSRC</span> unless they change at the same time (e.g. the <span class="ph uicontrol">REQ</span> is triggered after updating all values).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Avoid grouping symlinks in one <span class="ph uicontrol">SYMLINKMULTIVARDST</span> unless they are all used for the same calculation.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When transmitting value with a <span class="ph uicontrol">SYMLINKMULTIVARDST</span>, it is not necessary to trigger the <span class="ph uicontrol">REQ</span> event even though the variable are associated with this event.
+</div>
+</div>
+<div class="section" id="OptimizationAtApplicationDesignLeve-4A955320__InitializationR4ManageOrderReduceEv-4A9E8AC5">
+<a name="InitializationR4ManageOrderReduceEv-4A9E8AC5" id="InitializationR4ManageOrderReduceEv-4A9E8AC5">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320__InitializationR4ManageOrderReduceEv_4A9E8AC5" id="OptimizationAtApplicationDesignLeve_4A955320__InitializationR4ManageOrderReduceEv_4A9E8AC5">
+<!-- --></a><a name="InitializationR4ManageOrderReduceEv_4A9E8AC5" id="InitializationR4ManageOrderReduceEv_4A9E8AC5">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Initialization <sup class="ph sup">R4 [Manage Order, Reduce Events]</sup>
+</h2>
+<p class="p">
+First refer to the description of the initialization process as described in the topic <a class="xref" href="StrategiesForInitializationInEcoStr-B8B081B1.html">Strategies for Initialization in <span class="ph">EcoStruxure Automation Expert</span></a>.
+</p>
+<p class="p">
+One of the critical phases for the system is the startup, during which initialization is triggered. Most of the function blocks need initialization and will take their parameters values at this stage. This is true for most of the objects instantiated in the application, including:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Your application designed logic function blocks instances (<span class="ph">CATs</span>, Composites, Basics).
+</p>
+</li>
+<li class="li">
+<p class="p">
+The hardware <span class="ph">CATs</span> instances that the application is using (for example <span class="ph">Modbus</span> slots).
+</p>
+</li>
+<li class="li">
+<p class="p">
+All the symlinks.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Instances of function blocks coming from the used libraries.
+</p>
+</li>
+</ul>
+<p class="p">
+As mentioned in the topic <a class="xref" href="StrategiesForInitializationInEcoStr-B8B081B1.html">Strategies for Initialization in <span class="ph">EcoStruxure Automation Expert</span></a>, the recommended design pattern is to <strong class="ph b">start the initialization of each resource</strong> using the <span class="ph uicontrol">DPAC_FULLINIT</span> composite from the <span class="ph">SE.DPAC</span> library.
+</p>
+<p class="p">
+This function block automatically triggers the two main initialization chains:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">'HW_INIT'</span> chain: Dedicated to hardware <span class="ph">CATs</span> initialization.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">'APP_INIT'</span> chain: Dedicated to the application (process logic) initialization.
+</p>
+</li>
+</ul>
+<p class="p">
+In order to sequence the initialization inside the application, there are two solutions:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Using a separate <span class="ph uicontrol">EVENTCHAINHEAD</span> and <span class="ph uicontrol">EVENTCHAIN</span> group with a custom string, as in the schema below. With <span class="ph uicontrol">INVERT</span> set to <span class="ph uicontrol">FALSE</span>, the priorities are sorted starting with the lowest one in each group. Every group is executed sequentially after the previous group finishes. There is no priority conflict because the priorities play a role only inside a group.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Using the <span class="ph uicontrol">'APP_INIT'</span> group but managing the priorities. As the library objects are using priorities &lt;37, a good way to avoid overloading the initialization would be to set priority to a number &gt;37.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">INVERT</span> input is set to <span class="ph uicontrol">FALSE</span> for all the <span class="ph uicontrol">EventChain</span> and <span class="ph uicontrol">EventChainHead</span> functions blocks in the following diagram:
+</div>
+<div class="fig fignone">
+<img class="image" src="0000987530.png" alt="" style="max-height:3.5in;" />
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+Most function blocks provide <span class="ph uicontrol">INIT</span> and <span class="ph uicontrol">INITO</span> events. When receiving the <span class="ph uicontrol">INIT</span> the application must chain them together as a daisy chain.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+When using a <span class="ph uicontrol">plcStart</span> function block, link back the <span class="ph uicontrol">INITO</span> of the last function block from the initialization chain with the <span class="ph uicontrol">plcStart</span>. If not doing so, the <span class="ph uicontrol">plcStart</span> function block will wait for the timeout (500 ms) which causes avoidable time lost.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+When using a <span class="ph uicontrol">EVENTCHAIN</span> function block, link back the last <span class="ph uicontrol">INITO</span> of the last function block from the initialization chain with the <span class="ph uicontrol">EVENTCHAIN</span>. If not doing so, the <span class="ph uicontrol">EVENTCHAIN</span> function block will wait for the timeout which causes avoidable time lost.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="OptimizationAtApplicationDesignLeve-4A955320__UseCompositionR5R6R7Organize-4A9E84C8">
+<a name="UseCompositionR5R6R7Organize-4A9E84C8" id="UseCompositionR5R6R7Organize-4A9E84C8">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320__UseCompositionR5R6R7Organize_4A9E84C8" id="OptimizationAtApplicationDesignLeve_4A955320__UseCompositionR5R6R7Organize_4A9E84C8">
+<!-- --></a><a name="UseCompositionR5R6R7Organize_4A9E84C8" id="UseCompositionR5R6R7Organize_4A9E84C8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Use Composition <sup class="ph sup">R5, R6, R7 [Organize]</sup>
+</h2>
+<p class="p">
+As explained in the topic <a class="xref" href="EventsManagementInAResource-48F18CBF.html">Events Management in a Resource</a>, the events are managed inside a resource through two event queues: the external queue being processed only after the full internal queue content is processed. Therefore, the organization of the application code has a huge impact on performance.
+</p>
+<p class="p">
+The following tips apply to the use of structured text (ST) in <span class="ph uicontrol">Basic</span> function blocks. They are intended to add clarity to the application and avoid unnecessary events or blocking algorithm. However, they may sometimes be contradictory and should be applied together in a balanced way.
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<em class="ph i"><strong class="ph b">Avoid blocking the system for too long with a large algorithm (ST)</strong></em> <em class="ph i"><strong class="ph b"><sup class="ph sup">R5 [organize]</sup></strong></em>
+</p>
+<p class="p">
+When processing an algorithm, the system executes its entire code before considering the next event. In the meantime, some external events occur which fills the event queue. The execution of these events are then delayed. Breaking long algorithms into smaller steps would allow the system to process queues more frequently.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b"><em class="ph i">Keep your function blocks small enough, use composition (ST)</em></strong> <strong class="ph b"><em class="ph i"><sup class="ph sup">R6 [Organize]</sup></em></strong>
+</p>
+<p class="p">
+By splitting the code into small chunks (<span class="ph">CATs</span>, composites, basics) and using composition, the designer allows for logic reusability but not only this. It also gives the system the ability to manage the execution more smoothly and makes debugging easier: identification of faulty logic is more precisely identified, and control of the events (blocking/raising/counting) more accurate.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b"><em class="ph i">Use basics for simple logic (ST) </em></strong><strong class="ph b"><em class="ph i"><sup class="ph sup">R7 [Organize]</sup></em></strong>
+</p>
+<p class="p">
+The basic function blocks are used to describe atomic logical algorithms with a graph of execution. It is used for example for:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Small logic with simple code (below, a simple <span class="ph uicontrol">ADD</span> function block which executes the algorithm <span class="ph uicontrol">REQ</span> on event <span class="ph uicontrol">REQ</span> and returns the result with <span class="ph uicontrol">CNF</span>):
+</p>
+</li>
+</ul>
+<div class="fig fignone">
+<img class="image" src="0000857342.png" alt="" style="max-height:1.15in;" /> <img class="image" src="0000857341.png" alt="" style="max-height:1.1in;" /> <img class="image" src="0000857340.png" alt="" style="max-height:1.5in;" />
+</div>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Larger logic with IF structures:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="90%">
+<colgroup>
+<col />
+<col />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<div class="fig fignone">
+<img class="image" src="DD00677615.png" alt="" style="max-height:2in;" />
+</div>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">The boolean equation on branches are the IF conditions. Then, when the associated algorithm is executed, this avoids complex branching and jumps in ST code, keeping the algorithms as simple as possible.</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<img class="image" src="0000857508.png" alt="" style="max-height:2.2in;" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: none; border-bottom-style: none; ">
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span style="font-size: 10pt">If the IF conditions are not exclusive, then both branches will be executed (sequentially, in the order the links were created). The order of execution is influenced by assigning them a higher priority (lower number) in this list.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b"><em class="ph i">Use Basic (ST) and Component-Based design </em></strong> <sup class="ph sup"><strong class="ph b"><em class="ph i">R8 [Organize]</em></strong></sup>
+</p>
+<p class="p">
+Component-Based design refers the ability of the function blocks to be used repeatedly with minimal configuration effort and with an interactive approach of event and data exchange between the function blocks. This design method advantage is that the application remain comprehensive as the functions blocks are small and all the interactions between them are visible.
+</p>
+<p class="p">
+Developing with Basics functions and structured text refer to develop high-level complex algorithm inside one single function block. This design method advantage is that the solution triggers fewer events which increase the device performances. Thus the same operation done with a Basics function and a component-based design may be succeeded faster with the Basics function.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> It is then to the developer to choose between these two designs depending on its application needs.
+</div>
+<div class="div">
+<p class="p">
+The following image shows an example for each of these two design methods:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00677614.png" alt="" style="max-height:3in;" />
+</div>
+</div>
+</li>
+</ol>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<strong class="ph b">Component-Based design</strong>: Small reusable function blocks are linked one after the other. The logic is comprehensible which eases the diagnostic. However it generates 10 events.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Basics Functions with Structured Text design</strong>: Bigger function block with fewer chance to be reused. Its logic may not be directly comprehensible which can increase diagnostic complexity. However it generates only one event.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="OptimizationAtApplicationDesignLeve-4A955320__AvoidForkingEventDispatchR8ReduceEv-4A9E81B1">
+<a name="AvoidForkingEventDispatchR8ReduceEv-4A9E81B1" id="AvoidForkingEventDispatchR8ReduceEv-4A9E81B1">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320__AvoidForkingEventDispatchR8ReduceEv_4A9E81B1" id="OptimizationAtApplicationDesignLeve_4A955320__AvoidForkingEventDispatchR8ReduceEv_4A9E81B1">
+<!-- --></a><a name="AvoidForkingEventDispatchR8ReduceEv_4A9E81B1" id="AvoidForkingEventDispatchR8ReduceEv_4A9E81B1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Avoid forking, Event Dispatch<sup class="ph sup"> R8 [Reduce Events] [Manage Order]</sup>
+</h2>
+<p class="p">
+The designer should be careful when dispatching events to multiple connections.
+</p>
+<p class="p">
+Try to avoid parallelism (with the expectation this will speed-up the processing): In all cases, the connections will always be internally considered sequentially in their order of creation (when linked from function block to function block). So an apparent parallelism in the network chart is in fact a sequential execution of the links, and not a simultaneous one.
+</p>
+<p class="p">
+Use explicit synchronization:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col />
+<col />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="DD00677613.png" alt="" style="max-height:1.6in;" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">For instance, the output of this logic is hardly predictable because the use of parallelism makes it dependent on the order of creation of the parallel links.</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<img class="image" src="DD00677612.png" alt="" style="max-height:1.7in;" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: none; border-bottom-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">If </span><span class="ph uicontrol"><span style="font-size: 10pt">add2</span></span><span style="font-size: 10pt"> is executed before </span><span class="ph uicontrol"><span style="font-size: 10pt">add3</span></span><span style="font-size: 10pt"> then the result is not correct, result is equal to 13 instead of 25.</span>
+</p>
+<p class="p">
+<span style="font-size: 10pt">Furthermore, the total count of events, starting from </span><span class="ph uicontrol"><span style="font-size: 10pt">add1.REQ</span></span><span style="font-size: 10pt"> is :</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:right;vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">add1(REQ) + add2(REQ) + add3(REQ) + 2*add4(REQ + CNF) = 1+1+1+2*2 = </span><strong class="ph b"><span style="font-size: 10pt">7 events</span></strong>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col />
+<col />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="DD00677611.png" alt="" style="max-height:2in;" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">To fix the computation error, an event can be added to re-synchronize, and force </span><span class="ph uicontrol"><span style="font-size: 10pt">add2</span></span><span style="font-size: 10pt"> to recalculate when add </span><span class="ph uicontrol"><span style="font-size: 10pt">add3</span></span><span style="font-size: 10pt"> is complete.</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+But as shown in the picture the new total event count is:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:right;vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">add1(REQ) + 2*add2(REQ) + add3(REQ) + 3*add4 (REQ + CNF) = 1+2*1+1+3*2 = </span><strong class="ph b"><span style="font-size: 10pt">10 events</span></strong>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Often these kind of algorithms can be linearized in a sequence: this brings better readability, avoids parallelism errors and generates fewer events:
+</p>
+<img class="image" src="DD00677610.png" alt="" style="max-height:1.3in;" />
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:right;vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">add1(REQ) + add2(REQ) + add3(REQ) + add4(REQ + CNF) = 1+1+1+2*1 = </span><strong class="ph b"><span style="font-size: 10pt">5 events</span></strong>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="OptimizationAtApplicationDesignLeve-4A955320__UseTimersWithCautionR9ReduceEventsM-4A9E7F0D">
+<a name="UseTimersWithCautionR9ReduceEventsM-4A9E7F0D" id="UseTimersWithCautionR9ReduceEventsM-4A9E7F0D">
+<!-- --></a><a name="OptimizationAtApplicationDesignLeve_4A955320__UseTimersWithCautionR9ReduceEventsM_4A9E7F0D" id="OptimizationAtApplicationDesignLeve_4A955320__UseTimersWithCautionR9ReduceEventsM_4A9E7F0D">
+<!-- --></a><a name="UseTimersWithCautionR9ReduceEventsM_4A9E7F0D" id="UseTimersWithCautionR9ReduceEventsM_4A9E7F0D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Use Timers with Caution <sup class="ph sup">R9 [Reduce Events] [Manage Order]</sup>
+</h2>
+<p class="p">
+In an event driven system, a timely information or cadence is also managed as an event.
+</p>
+<p class="p">
+The designer can create periodic calls to function blocks using <span class="ph uicontrol">E_Cycle</span> function block. This is a valid method, however, it needs to be carefully checked.
+</p>
+<p class="p">
+For example:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Avoid using lots of timers inside a resource, remember you are using an event driven paradigm.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Avoid the use of refresh rates that are unnecessarily short as this overloads the system.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Keep in mind that timer events are also managed sequentially inside the external queue. Therefore, they can be delayed if the system is not able to process all the events present between two successive timer events, in a shorter time than the expected timer rate.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

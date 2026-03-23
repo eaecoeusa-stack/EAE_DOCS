@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Create Self-Signed Certificates" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="CreateSelf-SignedCertificates-198D9807" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Create Self-Signed Certificates
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.7.1.1.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/InstallOpenSSL-198D87E3.html" />
+<meta name="brsnext" value="EAE_UM/ConfigureMosquitto-198D744F.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; MQTT &gt; MQTT Broker &gt; Secure Mosquitto Communication" />
+</head>
+<body id="CreateSelf-SignedCertificates-198D9807"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"MQTTCPT-21469A9D.html#MQTTCPT-21469A9D\">MQTT<\/a> > <a href=\"MosquittoMQTTBroker-198D55D5.html\">MQTT Broker<\/a> > <a href=\"SecureMosquittoCommunication-198D7E7D.html\">Secure Mosquitto Communication<\/a> > Create Self-Signed Certificates<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="CreateSelf-SignedCertificates-198D9807" id="CreateSelf-SignedCertificates-198D9807_">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807" id="CreateSelf_SignedCertificates_198D9807">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807" id="CreateSelf_SignedCertificates_198D9807_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Create Self-Signed Certificates
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Perform the following tasks in sequence to create self-signed certificates to secure an MQTT connection:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#CreateSelf-SignedCertificates-198D9807__CreateACACertificate-E0CF06A8">Create a CA Certificate</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#CreateSelf-SignedCertificates-198D9807__CreateABrokerCertificate-E0CF09E7">Create a Broker Certificate</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#CreateSelf-SignedCertificates-198D9807__CreateAClientCertificate-E0CF0C18">Create a Client Certificate</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#CreateSelf-SignedCertificates-198D9807__ConfigureTheMQTTClient-E0CF0E78">Configure the MQTT Client</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="CreateSelf-SignedCertificates-198D9807__CreateACACertificate-E0CF06A8">
+<a name="CreateACACertificate-E0CF06A8" id="CreateACACertificate-E0CF06A8">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807__CreateACACertificate_E0CF06A8" id="CreateSelf_SignedCertificates_198D9807__CreateACACertificate_E0CF06A8">
+<!-- --></a><a name="CreateACACertificate_E0CF06A8" id="CreateACACertificate_E0CF06A8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Create a CA Certificate
+</h2>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you already possess a CA certificate (or a commercial CA) you can skip this task and substitute your existing CA certificate for the self-signed CA certificate.
+</div>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph">Windows</span> command prompt.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Navigate to a <span class="ph">Windows</span> folder of your choice, where you want the certificates to be created.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Generate a private key certificate for the CA (the ca.key), which will be used in signing both the broker's public key certificate and the EcoRT's public key certificate:<br /><code class="ph codeph">openssl genrsa -des3 -out ca.key 2048</code>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+You will be asked to create and verify a pass phrase. You define the pass phrase, which is used later to finalize the creation of the certificates.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The "ca.key" file contains the private key. It must be treated as confidential. Anyone who can read its content could use it to sign their own certificates and compromise the security of the MQTT communications.
+</p>
+</li>
+</ul>
+You will be asked to create and verify a pass phrase. You define the pass phrase, which is used later to finalize the creation of the certificates.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Generate the public key certificate (the ca.crt) by extracting it from the private key certificate created in the previous step, thereby creating a self-signed certificate for the CA:<br /><code class="ph codeph">openssl req -new -x509 -days 1826 -key ca.key -out ca.crt</code>
+</p>
+<p class="p">
+After entering the command, you will be asked series of questions. Your answers to these questions will be embedded in the CSR. Answer the questions as described below:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:31.35%" />
+<col style="width:68.65%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Country Name (2 letter code)</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+The two-letter country code where your company is legally located.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">State or Province Name (full name)</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The state/province where your company is legally located.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Locality Name (e.g., city)</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The city where your company is legally located.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Organization Name (e.g., company)</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Your company's legally registered name (e.g., YourCompany, Inc.).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Organizational Unit Name (e.g., section)</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The name of your department within the organization. (You can leave this option blank; simply press <strong class="ph b">Enter</strong>.)
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Common Name (e.g., server FQDN)</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Write <code class="ph codeph">localhost</code> or the fully-qualified domain name (FQDN) (e.g., www.example.com).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Email Address</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Your email address. (You can leave this option blank; simply press <strong class="ph b">Enter</strong>.)
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">A challenge password</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Leave this option blank (simply press <strong class="ph b">Enter</strong>).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">An optional company name</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Leave this option blank (simply press <strong class="ph b">Enter</strong>).
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Some of the above CSR questions have default values that will be used if you leave the answer blank and press <strong class="ph b">Enter</strong>. These default values are pulled from the OpenSSL configuration file located in the <strong class="ph b">OPENSSLDIR</strong>. If you want to leave a question blank without using the default value, type a "<strong class="ph b">.</strong>" (period) and press <strong class="ph b">Enter</strong>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="CreateSelf-SignedCertificates-198D9807__CreateABrokerCertificate-E0CF09E7">
+<a name="CreateABrokerCertificate-E0CF09E7" id="CreateABrokerCertificate-E0CF09E7">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807__CreateABrokerCertificate_E0CF09E7" id="CreateSelf_SignedCertificates_198D9807__CreateABrokerCertificate_E0CF09E7">
+<!-- --></a><a name="CreateABrokerCertificate_E0CF09E7" id="CreateABrokerCertificate_E0CF09E7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Create a Broker Certificate
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Generate a private key certificate (server.key) for the broker:<br /><code class="ph codeph">openssl genrsa -out server.key 2048</code>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Generate a certificate signing request for the broker (server.csr) by extracting it from the private key certificate created in the previous step.<br /><code class="ph codeph">openssl req -new -key server.key -out server.csr</code>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you already possess a CA certificate (or a commercial CA) you can substitute your existing CA certificate for the self-signed CA certificate.
+</div>
+<p class="p">
+Following this command, enter again some of the previously requested information, including:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+A challenge password
+</p>
+</li>
+<li class="li">
+<p class="p">
+The company name (optional)
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Sign the broker's CSR with the CA's private key to get the broker's public key certificate:
+</p>
+<br /><code class="ph codeph">openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 360</code>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+The last characters <code class="ph codeph">-days 360</code> define the duration of the certificates. When the certificates expire, you need to again perform all the steps of this procedure.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The "ca.key" file contains the private key. It must be treated as confidential. Anyone who can read its content could use it to sign their own certificates and compromise the security of the MQTT communications.
+</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="CreateSelf-SignedCertificates-198D9807__CreateAClientCertificate-E0CF0C18">
+<a name="CreateAClientCertificate-E0CF0C18" id="CreateAClientCertificate-E0CF0C18">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807__CreateAClientCertificate_E0CF0C18" id="CreateSelf_SignedCertificates_198D9807__CreateAClientCertificate_E0CF0C18">
+<!-- --></a><a name="CreateAClientCertificate_E0CF0C18" id="CreateAClientCertificate_E0CF0C18">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Create a Client Certificate
+</h2>
+<p class="p">
+You can authenticate a client in two ways, using either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+a username/password combination, or
+</p>
+</li>
+<li class="li">
+<p class="p">
+a client certificate
+</p>
+</li>
+</ul>
+<p class="p">
+The following procedure describes how to create a client certificate for authentication:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Generate a private key certificate for the EcoRT client:
+</p>
+<br /><code class="ph codeph">openssl genrsa -out client.key 2048</code>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+This command requests to enter a pass phrase and to verify it. This pass phrase is defined by you and it is used later to finalize the creation of the certificates.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The EcoRT client private key certificate will be used in the MQTT_CONNECTION FB as the <span class="ph uicontrol">CertificateKey</span> value.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Generate a certificate signing request (CSR) for the EcoRT client:<br /><code class="ph codeph">openssl req -new -key client.key -out client.csr</code>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Sign the EcoRT client's CSR with the CA's private key to generate the EcoRT client's public key certificate:<br /><code class="ph codeph">openssl x509 -req -in client.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out client.crt -days 360</code>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+The last characters <code class="ph codeph">-days 360</code> define the duration of the certificates. When the certificates expire, you must complete again all the steps of this procedure.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The "ca.key" file contains the private key. It must be treated as confidential. Anyone who can read its content could use it to sign their own certificates and compromise the security of the MQTT communications.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Install or add the ca.crt public key file to the broker's trusted certificate store, and configure the broker with its public key certificate (and its private key certificate if required).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Install or add the ca.crt, client.key and client.crt files to the EcoRT.
+</p>
+<p class="p">
+The location may vary by platform. The ca.crt may need to be added to the Windows or Linux certificate store (e.g., using the<code class="ph codeph"> add-trusted-cert</code> or similar command).
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="CreateSelf-SignedCertificates-198D9807__HandlingThePrivateKeyFile-F2EAF049">
+<a name="HandlingThePrivateKeyFile-F2EAF049" id="HandlingThePrivateKeyFile-F2EAF049">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807__HandlingThePrivateKeyFile_F2EAF049" id="CreateSelf_SignedCertificates_198D9807__HandlingThePrivateKeyFile_F2EAF049">
+<!-- --></a><a name="HandlingThePrivateKeyFile_F2EAF049" id="HandlingThePrivateKeyFile_F2EAF049">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Handling the Private Key File
+</h2>
+<p class="p">
+The "ca.key" file contains the private key. It must be treated as confidential. Anyone who can read its content could use it to sign their own certificates and or compromise the security of the MQTT communications.
+</p>
+<p class="p">
+Handle the "ca.key" file as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Store the "ca.key" file in a folder under least privilege during signing.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Allow the "ca.key" file to reside on the file system only while signing is taking place.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Scrub the “ca.key” file from the file system after it is removed for secure storage.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="CreateSelf-SignedCertificates-198D9807__ConfigureTheMQTTClient-E0CF0E78">
+<a name="ConfigureTheMQTTClient-E0CF0E78" id="ConfigureTheMQTTClient-E0CF0E78">
+<!-- --></a><a name="CreateSelf_SignedCertificates_198D9807__ConfigureTheMQTTClient_E0CF0E78" id="CreateSelf_SignedCertificates_198D9807__ConfigureTheMQTTClient_E0CF0E78">
+<!-- --></a><a name="ConfigureTheMQTTClient_E0CF0E78" id="ConfigureTheMQTTClient_E0CF0E78">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure the MQTT Client
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Add the following path for storage of client certificates for Windows Soft dPAC:
+</p>
+<p class="p">
+<code class="ph codeph">C:\ProgramData\Schneider Electric\SE SoftdPAC EcoStruxure Automation Expert 24.0\auth</code>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Pass the certificate files to the <span class="ph">Soft dPAC</span> host.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Copy certificates to the <span class="ph">Soft dPAC</span> container by executing the following commands on the <span class="ph">Soft dPAC</span> <span class="ph">Linux</span> host:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<code class="ph codeph">sudo docker cp ca.crt Softdpac_1:/var/lib/nxtSRT61499N/data/auth</code>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">sudo docker cp client.crt Softdpac_1:/var/lib/nxtSRT61499N/data/auth</code>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">sudo docker cp client.key Softdpac_1:/var/lib/nxtSRT61499N/data/auth</code>
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Replace <code class="ph codeph">Softdpac_1</code> in the upper commands by the instance name of your <span class="ph">Soft dPAC</span>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Configure the MQTT_CONNECTION function block with the CA certificate, client certificate, and client key:
+</p>
+<img class="image" src="DD00738556.png" alt="" style="max-height:1in;" />
+</li>
+<li class="li">
+<p class="p">
+Configure the MQTT broker to use certificates:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">require_certificate</span>: if true, the broker informs the client it needs to provide a certificate.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">use_identity_as_username</span>: if true, the broker takes the username from the certificate and not from a password file.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">crlfile</span>: You can create a certificate revocation file listing revoked client certificates.
+</p>
+</li>
+</ul>
+</li>
+</ol>
+<p class="p">
+The steps are completed and the certificate files are created in the selected <span class="ph">Windows</span> folder. You can <a class="xref" href="ConfigureMosquitto-198D744F.html">configure <span class="ph">Mosquitto</span>.</a>
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

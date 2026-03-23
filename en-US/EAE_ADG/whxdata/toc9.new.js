@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Cross-Communication between dPAC and HMI Devices","type":"item","url":"EAE_ADG/Cross-CommunicationBetweenDPACAndHM-B8B11B8A.html#Cross-CommunicationBetweenDPACAndHM-B8B11B8A"},{"name":"Selecting the Right Operating System for the HMI Solution","type":"item","url":"EAE_ADG/SelectingTheRightOperatingSystemFor-B8B12BC4.html#SelectingTheRightOperatingSystemFor-B8B12BC4"},{"name":"HMI Configuration","type":"item","url":"EAE_ADG/HMIConfigurationCPT-B8B13377.html#HMIConfigurationCPT-B8B13377"},{"key":"toc10","name":"HMI Design Recommendation","type":"book","url":"EAE_ADG/HMIDesignRecommendationCPT-B8B13A9D.html#HMIDesignRecommendationCPT-B8B13A9D"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc14.js\"  name=\"EncoderDigitalModuleVW3A3420 - Hardware CAT\" url=\"ATVd_CAT/D-SE-0106534.html\"><item name=\"EncoderDigitalModuleVW3A3420 - Properties\" url=\"ATVd_CAT/D-SE-0106535.html\" /><item name=\"EncoderDigitalModuleVW3A3420 HMI Symbol\" url=\"ATVd_CAT/D-SE-0106536.html\" /></data>";

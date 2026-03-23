@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc23.js\"  name=\"Performance Considerations\" url=\"EAE_ADG/PerformanceConsiderationsCPT-C2DA2CFF.html\"><item name=\"Monitoring CPU Load\" url=\"EAE_ADG/MonitoringCPULoadCPT-C2DA354E.html\" /><item name=\"Using Faceplates\" url=\"EAE_ADG/UsingFaceplatesCPT-C2DA3CD9.html\" /></data>";

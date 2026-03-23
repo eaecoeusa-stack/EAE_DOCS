@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Architectural Indications","type":"item","url":"EAE_IECMG/ArchitecturalIndications-617CC6CA.html"},{"name":"Hierarchical Aggregation of Functional Sub-Systems","type":"item","url":"EAE_IECMG/HierarchicalAggregationOfFunctional-617EDB5F.html"},{"name":"Sub-systems Interface","type":"item","url":"EAE_IECMG/SubsystemsInterface-61800441.html"},{"key":"toc5","name":"Internal Software architecture of Sub-System CAT","type":"book","url":"EAE_IECMG/InternalSWArchitectureOfSubsystemCA-6182FD3A.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

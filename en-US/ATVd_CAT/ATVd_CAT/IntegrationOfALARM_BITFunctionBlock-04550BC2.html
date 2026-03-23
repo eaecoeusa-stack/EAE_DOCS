@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Integration of ALARM_BIT function block into AltivarVsLight" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500Rueil MalmaisonFrance+ 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="IntegrationOfALARM_BITFunctionBlock-04550BC2" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Integration of ALARM_BIT function block into AltivarVsLight
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v16.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.8.2.0_2";
+//]]></script>
+<meta name="brsprev" value="ATVd_CAT/AltivarLightVSIntegration-03E6D1A0.html" />
+<meta name="brsnext" value="ATVd_CAT/AltivarVS-ApplicationCAT-03E89435.html" />
+<meta name="topic-breadcrumbs" content="SE.IoATV - Library Guide &gt; Application CAT &gt; AltivarVsLight - Application CAT" />
+</head>
+<body id="IntegrationOfALARM_BITFunctionBlock-04550BC2"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ATVd_CAT_D-SE-0105319.html");
+document.write("<a href=\"ATVd_CAT_D-SE-0105319.html\">SE.IoATV - Library Guide<\/a> > <a href=\"ApplicationCAT-DBBEBB10.html#ApplicationCAT-DBBEBB10\">Application CAT<\/a> > <a href=\"AltivarLightVS-ApplicationCAT-03E472F2.html\">AltivarVsLight - Application CAT<\/a> > Integration of ALARM_BIT function block into AltivarVsLight<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="IntegrationOfALARM_BITFunctionBlock-04550BC2" id="IntegrationOfALARM_BITFunctionBlock-04550BC2_">
+<!-- --></a><a name="IntegrationOfALARM_BITFunctionBlock_04550BC2" id="IntegrationOfALARM_BITFunctionBlock_04550BC2">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Integration of <span class="ph">ALARM_BIT</span> function block into <span class="ph">AltivarVsLight</span>
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<h2 class="title sectiontitle">
+Abstract
+</h2>
+<p class="p">
+The <span class="ph">ALARM_BIT</span> function block has already been preconfigured in the <span class="ph">AltivarVsLight</span> application <span class="ph">CAT</span>.
+</p>
+<p class="p">
+The <span class="ph">ALARM_BIT</span> function block is used to process warning messages at an Alarm Grid on <span class="ph">HMI</span>, which offers a platform to show warnings on the <span class="ph">HMI</span> in form of a list.
+</p>
+<p class="p">
+Warnings of <span class="ph">AltivarVsLight</span> application <span class="ph">CAT</span> report drive errors (not drive warnings), but the warning Code is not visible for <span class="ph">AltivarVsLight</span>
+</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Description
+</h2>
+<p class="p">
+The element Alarm Grid shows warnings, sent by the <span class="ph">AltivarVsLight</span> application <span class="ph">CAT</span>. This means that this <span class="ph">CAT</span> is instantiated in the project from ready-to-use libraries and that the functionality to send warnings is already implemented.
+</p>
+<p class="p">
+You need to create an alarm grid control panel for the <span class="ph">HMI</span> and the <span class="ph">CAT</span> warning messages used are displayed automatically at runtime.
+</p>
+<p class="p">
+When the drive detects an error, you will see Drive Status Fault in an alarm grid on the <span class="ph">HMI</span>.
+</p>
+<div class="p">
+The figure below shows the alarm grid when the drive detects an error
+<div class="fig fignone">
+<img class="image" src="0001104220.PNG" alt="" style="max-height:0.9in;" />
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+NNZ13569.12
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

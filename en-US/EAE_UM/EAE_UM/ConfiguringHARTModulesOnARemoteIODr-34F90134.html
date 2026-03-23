@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Configuring HART Modules on a Remote I/O Drop" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfiguringHARTModulesOnARemoteIODr-34F90134" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Configuring HART Modules on a Remote I/O Drop
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.3.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/HardwareConfigurator-A18C4217.html" />
+<meta name="brsnext" value="EAE_UM/SymbolicLinks-A2221E99.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor &gt; Hardware Configuration Editor" />
+</head>
+<body id="ConfiguringHARTModulesOnARemoteIODr-34F90134"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > <a href=\"HardwareConfigurator-A18C4217.html#HardwareConfigurator-A18C4217\">Hardware Configuration Editor<\/a> > Configuring HART Modules on a Remote I/O Drop<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfiguringHARTModulesOnARemoteIODr-34F90134" id="ConfiguringHARTModulesOnARemoteIODr-34F90134_">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134" id="ConfiguringHARTModulesOnARemoteIODr_34F90134">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134" id="ConfiguringHARTModulesOnARemoteIODr_34F90134_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Configuring HART Modules on a Remote I/O Drop
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+The BMEAHI0812 and BMEAHO0412 Mx80 modules can be added only to the local remote I/O backplane of a Soft dPAC or an HA Soft dPAC system with a BMECRD0100 adapter module.
+</p>
+<p class="p">
+To configure BMEAHI0812 and BMEAHO0412, perform the following tasks.
+</p>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__BuildTheRemoteIODrop-3514B9C1">
+<a name="BuildTheRemoteIODrop-3514B9C1" id="BuildTheRemoteIODrop-3514B9C1">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__BuildTheRemoteIODrop_3514B9C1" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__BuildTheRemoteIODrop_3514B9C1">
+<!-- --></a><a name="BuildTheRemoteIODrop_3514B9C1" id="BuildTheRemoteIODrop_3514B9C1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Build the Remote I/O Drop
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <a class="xref" href="HardwareConfigurator-A18C4217.html"><span class="ph uicontrol">Hardware Configuration editor</span></a>, build one or more RIO drops by adding at minimum:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Ethernet Backplane (for example SE.IoX80:BMEXBP0800)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Power supply (for example SE.IoX80:BMECPS3500)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Adapter module (SE.IoX80:BMECRD0100)
+</p>
+</li>
+<li class="li">
+<p class="p">
+HART input module (SE.IoX80:BMEAHI0812)
+</p>
+</li>
+<li class="li">
+<p class="p">
+HART output module (SE.IoX80:BMEAHO0412)
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Enter the rack address (<span class="ph uicontrol">rackAdr</span>) of the backplane.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter the slot number (<span class="ph uicontrol">SlotNr</span>) of each I/O module.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter a sufficiently large Bus Master Cycle Time (<span class="ph uicontrol">busCycleTime</span> for SE.HwCommon:BM_RIO), for example, 100ms.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter <span class="ph uicontrol">Promptness</span> values for each I/O module.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Each I/O module <span class="ph uicontrol">Promptness</span> value needs to be larger than the Bus Master Cycle Time.
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__ConfigureIPAddressingForEachBMECRD0-3514BD48">
+<a name="ConfigureIPAddressingForEachBMECRD0-3514BD48" id="ConfigureIPAddressingForEachBMECRD0-3514BD48">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureIPAddressingForEachBMECRD0_3514BD48" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureIPAddressingForEachBMECRD0_3514BD48">
+<!-- --></a><a name="ConfigureIPAddressingForEachBMECRD0_3514BD48" id="ConfigureIPAddressingForEachBMECRD0_3514BD48">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure IP Addressing for each BMECRD0100 Adapter Module
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Right click on the SE.HwCommon.BC_RIO node and select<span class="ph uicontrol"> Properties...</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Input the IP Address in two places:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">DeployURI</span>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Overwrite only the IP Address portion of this value. For example, if the default settings are 'ws://127.0.0.1:51499' replace only the '127.0.0.1' with the module’s actual IP Address..
+</div>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">connectinfo</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">ipaddress</span></span>.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__ConfigureTheEtherNetIPScannerDTM-3514C009">
+<a name="ConfigureTheEtherNetIPScannerDTM-3514C009" id="ConfigureTheEtherNetIPScannerDTM-3514C009">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureTheEtherNetIPScannerDTM_3514C009" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureTheEtherNetIPScannerDTM_3514C009">
+<!-- --></a><a name="ConfigureTheEtherNetIPScannerDTM_3514C009" id="ConfigureTheEtherNetIPScannerDTM_3514C009">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure the EtherNet/IP Scanner DTM
+</h2>
+<p class="p">
+As a pre-requisite, install the Schneider Electric HART Gateway DTM, version 1.1.20 or later, on your PC.
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Add an EtherNet/IP Scanner (Standard.IoEtherNetIP:BC_RIO_EIP).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click on this node and click <span class="ph uicontrol">Configure EtherNet/IP Scanner...</span>
+</p>
+<p class="p">
+The <span class="ph uicontrol">EtherNet/IP Configurator</span> opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In <span class="ph uicontrol">Network View</span>, select <span class="ph uicontrol">EtherNet/IP scanner</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Select Channel Properties </span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">TCP/IP</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure the IP address settings of the BMECRD0100:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Module IP Address</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Sub-Network Mask</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Gateway IP Address</span>
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Apply</span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Add the BMEAHO0412 and BMEAHI0812 DTMs
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Network View</span>, right click <span class="ph uicontrol">EtherNet/IP Scanner</span> and select <span class="ph uicontrol">Add</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">BMEAHI0812</span> and <span class="ph uicontrol">BMEAHO0412</span> and click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Device List</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> BMEAHO0412</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Address Setting</span> tab, enter:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IP Address</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Identifier</span>: In the format AAA0_NN_AHO0412, where:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+AAA is the alpha-numeric user-defined Rackid
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Rackid value for each BMECRD0100 remote I/O drop must be unique, otherwise the remote I/O drop becomes inoperable.
+</div>
+</li>
+<li class="li">
+<p class="p">
+0 is a required character
+</p>
+</li>
+<li class="li">
+<p class="p">
+NN is the slot number (decimal)
+</p>
+</li>
+<li class="li">
+<p class="p">
+AHO0412 is the part number
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Identifier</span> value for each BMEAHO0412 module must be unique. If modules with duplicate <span class="ph uicontrol">Identifier</span> values are added, the remote I/O drop becomes inoperable.
+</div>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Device List</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> BMEAHI0812</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Address Setting</span> tab, enter:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IP Address</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Identifier</span>: In the format AAA0_NN_AHI0812, where:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+AAA is the alpha-numeric user-defined Rackid
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Rackid value for each BMECRD0100 remote I/O drop must be unique, otherwise the remote I/O drop becomes inoperable.
+</div>
+</li>
+<li class="li">
+<p class="p">
+0 is a required character
+</p>
+</li>
+<li class="li">
+<p class="p">
+NN is the slot number (decimal)
+</p>
+</li>
+<li class="li">
+<p class="p">
+AHI0812 is the part number
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Identifier value for each <span class="ph uicontrol">BMEAHI0812</span> module must be unique. If modules with duplicate <span class="ph uicontrol">Identifier</span> values are added, the remote I/O drop becomes inoperable.
+</div>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Apply</span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__AddHARTDeviceDTMs-36670329">
+<a name="AddHARTDeviceDTMs-36670329" id="AddHARTDeviceDTMs-36670329">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__AddHARTDeviceDTMs_36670329" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__AddHARTDeviceDTMs_36670329">
+<!-- --></a><a name="AddHARTDeviceDTMs_36670329" id="AddHARTDeviceDTMs_36670329">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Add HART Device DTMs
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Network View</span> right click a HART module, either the BMEAHI0812 or the BMEAHO0412, then select <span class="ph uicontrol">Add</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Navigate the list of available HART devices, then click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click the HART device, and in the <span class="ph uicontrol">Channel Selection</span> dialog select the channel to use, then click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Repeat steps 1 - 3 for all added HART devices.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__ConfigureTheBMEAHO0412DTM-3514C29F">
+<a name="ConfigureTheBMEAHO0412DTM-3514C29F" id="ConfigureTheBMEAHO0412DTM-3514C29F">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureTheBMEAHO0412DTM_3514C29F" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureTheBMEAHO0412DTM_3514C29F">
+<!-- --></a><a name="ConfigureTheBMEAHO0412DTM_3514C29F" id="ConfigureTheBMEAHO0412DTM_3514C29F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure the BMEAHO0412 DTM
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In <span class="ph uicontrol">Network View</span>, select <span class="ph menucascade"><span class="ph uicontrol">EtherNet/IP scanner</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">BMEAHO0412</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">Process Data</span>, then enable (select) the used channels and disable (de-select) the unused channels.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Apply</span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__ConfigureTheBMEAHI0812DTM-3514C4FF">
+<a name="ConfigureTheBMEAHI0812DTM-3514C4FF" id="ConfigureTheBMEAHI0812DTM-3514C4FF">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureTheBMEAHI0812DTM_3514C4FF" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureTheBMEAHI0812DTM_3514C4FF">
+<!-- --></a><a name="ConfigureTheBMEAHI0812DTM_3514C4FF" id="ConfigureTheBMEAHI0812DTM_3514C4FF">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure the BMEAHI0812 DTM
+</h2>
+<p class="p">
+Repeat the steps described in the previous section for the HART input module.
+</p>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__ConfigureHARTDeviceDTMs-3666FCA5">
+<a name="ConfigureHARTDeviceDTMs-3666FCA5" id="ConfigureHARTDeviceDTMs-3666FCA5">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureHARTDeviceDTMs_3666FCA5" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__ConfigureHARTDeviceDTMs_3666FCA5">
+<!-- --></a><a name="ConfigureHARTDeviceDTMs_3666FCA5" id="ConfigureHARTDeviceDTMs_3666FCA5">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure HART Device DTMs
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Network View</span> double-click a HART device previously added.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure the device-specific settings for the HART device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Repeat steps 1 - 3 for all added HART devices.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__ExportAndImportConfiguration-3666F8C4">
+<a name="ExportAndImportConfiguration-3666F8C4" id="ExportAndImportConfiguration-3666F8C4">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__ExportAndImportConfiguration_3666F8C4" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__ExportAndImportConfiguration_3666F8C4">
+<!-- --></a><a name="ExportAndImportConfiguration_3666F8C4" id="ExportAndImportConfiguration_3666F8C4">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Export and Import Configuration
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Close the <span class="ph uicontrol">EtherNet/IP Configurator</span> and during the <span class="ph uicontrol">Save</span>, <span class="ph uicontrol">Export</span> the configuration to a zip file.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Hardware Configuration editor</span>, select the Standard.IoEtherNetIP:BC_RIO_EIP node.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click on this node and click <span class="ph uicontrol">Import EtherNet/IP Scanner...</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Navigate to and select the exported configuration zip file, then click <span class="ph uicontrol">Open</span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ConfiguringHARTModulesOnARemoteIODr-34F90134__EnablingAHARTIOModule-3514C961">
+<a name="EnablingAHARTIOModule-3514C961" id="EnablingAHARTIOModule-3514C961">
+<!-- --></a><a name="ConfiguringHARTModulesOnARemoteIODr_34F90134__EnablingAHARTIOModule_3514C961" id="ConfiguringHARTModulesOnARemoteIODr_34F90134__EnablingAHARTIOModule_3514C961">
+<!-- --></a><a name="EnablingAHARTIOModule_3514C961" id="EnablingAHARTIOModule_3514C961">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Enabling a HART I/O Module
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the application, create a byte Symlink with value 16#ff:
+</p>
+<img class="image" src="DD00504460.png" alt="" style="max-height:1.5in;" />
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Hardware Configuration</span> editor, set the HART module’s G_Enable_ID value to 'Enable".
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Network Security" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="NetworkSecurity-3861BFEB" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Network Security
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_CSG/PhysicalSecurityCPT-3737BBD9.html" />
+<meta name="brsnext" value="EAE_CSG/SecuringTheNetwork-3863CCA9.html" />
+<meta name="topic-breadcrumbs" content="Cybersecurity - Guide &gt; Defense in Depth" />
+</head>
+<body id="NetworkSecurity-3861BFEB"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html");
+document.write("<a href=\"EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html\">Cybersecurity - Guide<\/a> > <a href=\"DefenseInDepth-38633DAE.html\">Defense in Depth<\/a> > Network Security<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="NetworkSecurity-3861BFEB" id="NetworkSecurity-3861BFEB_">
+<!-- --></a><a name="NetworkSecurity_3861BFEB" id="NetworkSecurity_3861BFEB">
+<!-- --></a><a name="NetworkSecurity_3861BFEB" id="NetworkSecurity_3861BFEB_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Network Security
+</h1>
+<div class="body conbody">
+
+<p class="p">
+All networks installed in an industrial setting, where network performance is critical to plant operation, must be protected from cyber attacks.
+</p>
+<p class="p">
+The cybersecurity requirements must be determined before the tendering phase, and those requirements evaluated and passed on to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Project personnel
+</p>
+</li>
+<li class="li">
+<p class="p">
+Design activities
+</p>
+</li>
+<li class="li">
+<p class="p">
+Equipment selection
+</p>
+</li>
+<li class="li">
+<p class="p">
+Project deliverable lists
+</p>
+</li>
+</ul>
+<p class="p">
+The project must accommodate all cybersecurity requirements and facilitate their fulfillment throughout the installed life of the system to be delivered. To accomplish this, the Delivery project might have tasks and deliverables that support the future but do not directly contribute to completing a successful Factory Acceptance Test.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Some aspects of network security are detailed in other topics. For instance, for:
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+Switch hardening and redundancy, refer to the <a class="xref" href="SwitchSecurityConsiderations-38642AD5.html">Switch Security Considerations topic</a>.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+Firewall hardening rules, refer to <a class="xref" href="FirewallSecurityConsiderationsCPT-3737CC74.html">Firewall Security Considerations topic</a>.
+</p>
+</li>
+</ul>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Overview of <span class="ph">EcoStruxure Automation Expert</span> Network Architecture
+</h2>
+<p class="p">
+Find below an overview of the detailed <span class="ph">EcoStruxure Automation Expert</span> Network Architecture mentioned as Level 2 &amp; 3 in the topic <a class="xref" href="ControlSystemArchitecture-12C06C6D.html">Control System Architecture</a>.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#NetworkSecurity-3861BFEB__OperationsNetwork-37C3DADE">Operations Network</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#NetworkSecurity-3861BFEB__ControlNetwork-37C3DD58">Control Network</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="NetworkSecurity-3861BFEB__OperationsNetwork-37C3DADE">
+<a name="OperationsNetwork-37C3DADE" id="OperationsNetwork-37C3DADE">
+<!-- --></a><a name="NetworkSecurity_3861BFEB__OperationsNetwork_37C3DADE" id="NetworkSecurity_3861BFEB__OperationsNetwork_37C3DADE">
+<!-- --></a><a name="OperationsNetwork_37C3DADE" id="OperationsNetwork_37C3DADE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Operations Network
+</h2>
+<p class="p">
+The operations network hosts:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="ph">EcoStruxure Automation Expert</span> engineering workstation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph">AVEVA OMI</span> operation workstations.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Any supporting <span class="ph">AVEVA System Platform</span> servers required for hosting the Galaxy database.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+For more information about how to securely configure the Galaxy database, refer directly to <span class="ph">AVEVA System Platform</span> documentation.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The appendix topic <a class="xref" href="AdditionalDocumentation-B9281455.html#AdditionalDocumentation-B9281455__AVEVASystemPlatformApplicationServe-B9297C28">Additional Documentation</a> provides a link to the website for the <span class="ph">AVEVA System Platform</span> Application Server.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Active directory Domain Servers and Network Attached Storage.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The system Primary and Backup domain servers may also be hosted in this network.
+</div>
+<p class="p">
+Each of the <span class="ph">AVEVA OMI</span> operator workstations and <span class="ph">AVEVA System Platform</span> servers are recommended to be dual connected, the network switches should be redundant to help protect against any single network component failure, and the operations network needs to be separated from other networks by firewalls.
+</p>
+<div class="fig fignone">
+<img class="image" src="DD01378963.png" alt="" style="max-height:10in;" />
+</div>
+</div>
+<div class="section" id="NetworkSecurity-3861BFEB__ControlNetwork-37C3DD58">
+<a name="ControlNetwork-37C3DD58" id="ControlNetwork-37C3DD58">
+<!-- --></a><a name="NetworkSecurity_3861BFEB__ControlNetwork_37C3DD58" id="NetworkSecurity_3861BFEB__ControlNetwork_37C3DD58">
+<!-- --></a><a name="ControlNetwork_37C3DD58" id="ControlNetwork_37C3DD58">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Control Network
+</h2>
+<p class="p">
+The control network of Soft dPAC, CRD, ATVd, M580d and M262d can be networked in an RSTP ring to provide network redundancy that is tolerant to any single network component failure and tolerant the failure of any individual device that acts as a network hop.
+</p>
+<p class="p">
+The IPCs themselves cannot act as a network hop, but can be dual connected to redundant network switches that are connected together using RSTP.
+</p>
+<p class="p">
+IPCs hosting <span class="ph">High Availability Soft dPAC</span> must be connected via a dedicated direct Ethernet connection and must not be connected via a network switch or switched Ethernet network. The data carried over this network carries control input and output data (refer to the <a class="xref" href="Assets-6301BEA5.html">Assets topic</a>). The control network must be physically separate from other networks and separated from the Operations network via the firewall to protect the integrity of this asset.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--caution">
+<span class="hazardstatement--caution-symbol"> </span>CAUTION
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+risk of compromised control netework operations
+</div>
+<div class="howtoavoid">
+Failure to separate the control network using firewalls can result in exposure to cybersecurity vulnerability and compromised operations.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in injury or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Further information on <span class="ph">High Availability Soft dPAC</span> configuration and RSTP can be found in the <span class="ph"><a class="xref " href="../../HASOFTd_UG/index.htm?rhmapid=DocumentTypeProductCategoryRangeNam_B51D7608" target="_blank"><em class="ph i"><span class="ph">High Availability Soft dPAC</span> - User Guide</em></a></span>.
+</div>
+<div class="fig fignone">
+<img class="image" src="DD01378962.png" alt="" style="max-height:8in;" />
+</div>
+</div>
+<div class="section" id="NetworkSecurity-3861BFEB__ControlNetworksWithEtherCATAndProfi-12D2D91D">
+<a name="ControlNetworksWithEtherCATAndProfi-12D2D91D" id="ControlNetworksWithEtherCATAndProfi-12D2D91D">
+<!-- --></a><a name="NetworkSecurity_3861BFEB__ControlNetworksWithEtherCATAndProfi_12D2D91D" id="NetworkSecurity_3861BFEB__ControlNetworksWithEtherCATAndProfi_12D2D91D">
+<!-- --></a><a name="ControlNetworksWithEtherCATAndProfi_12D2D91D" id="ControlNetworksWithEtherCATAndProfi_12D2D91D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Control Networks with EtherCAT and Profinet
+</h2>
+<p class="p">
+<span class="ph">Modbus</span>, EtherNet/IP, Profinet and EtherCAT do not provide cryptographic protection of integrity or confidentiality. The Control network must therefore be physically separate from the other networks in the system and separated from the operations network by a firewall.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--caution">
+<span class="hazardstatement--caution-symbol"> </span>CAUTION
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+risk of compromised control netework operations
+</div>
+<div class="howtoavoid">
+Failure to separate the control network using firewalls can result in exposure to cybersecurity vulnerability and compromised operations.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in injury or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div class="fig fignone">
+<img class="image" src="DD01378961.png" alt="" style="max-height:8.5in;" />
+</div>
+<p class="p">
+The EtherCAT and Profinet networks must be physically separate from the control network and located within the plant perimeter.
+</p>
+<p class="p">
+To help protect the essential function of the system, DIO (Distributed IO connected via <span class="ph">Modbus</span> or EtherNet/IP), Profinet devices, or EtherCAT nodes should be configured with a deterministic behavior that will be enacted in case of communications interruption. The deterministic behavior is typically one of the following settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<em class="ph i">Hold Last Value (HLV)</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">High</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Low</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Ramp to Stop</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Coast to Stop</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Set to Preset Speed</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Brake to Stop</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Trigger Fault / Alarm</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">Switch to Local Control</em>
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="NetworkSecurity-3861BFEB__EdgeIODistributedIOConfiguration-12D2DC45">
+<a name="EdgeIODistributedIOConfiguration-12D2DC45" id="EdgeIODistributedIOConfiguration-12D2DC45">
+<!-- --></a><a name="NetworkSecurity_3861BFEB__EdgeIODistributedIOConfiguration_12D2DC45" id="NetworkSecurity_3861BFEB__EdgeIODistributedIOConfiguration_12D2DC45">
+<!-- --></a><a name="EdgeIODistributedIOConfiguration_12D2DC45" id="EdgeIODistributedIOConfiguration_12D2DC45">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Edge I/O Distributed I/O Configuration
+</h2>
+<p class="p">
+Edge I/O provides distributed I/O (DIO) in the L1 network with the ability to secure the integrity of its configuration settings. Cybersecurity configuration can be applied to Edge I/O either via the device configuration web page interface or using the using Cybersecurity Admin Expert. User accounts, enabled services, logon banner and fallback settings should be applied. For information about:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Configuring user accounts with minimum required privileges, refer to the <em class="ph i">Modicon Edge I/O Configurator and Web Interface - User Guide</em> help for the <em class="ph i">User Management Subpage</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configuring session settings, refer to the <em class="ph i">Modicon Edge I/O Configurator and Web Interface - User Guide</em> help for the <em class="ph i">Session Management Subpage</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enabling only the required services, refer to the <em class="ph i">Modicon Edge I/O Configurator and Web Interface - User Guide</em> help for the <em class="ph i">Network Interface Subpage</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Creating a logon banner, refer to the <em class="ph i">Modicon Edge I/O Configurator and Web Interface - User Guide</em> help for the <em class="ph i">Security Banner Subpage</em>.
+</p>
+</li>
+</ul>
+<p class="p">
+<strong class="ph b">Configure required fallback configuration</strong>
+</p>
+<p class="p">
+To help protect the essential function of the system, IO modules should be configured with a deterministic behavior that will be enacted in case of communications interruption. The deterministic behavior is typically one of the following settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Hold Last Value (HLV)
+</p>
+</li>
+<li class="li">
+<p class="p">
+High
+</p>
+</li>
+<li class="li">
+<p class="p">
+Low
+</p>
+</li>
+</ul>
+<p class="p">
+These can be configured via the I/O channel parameters. For information about a typical I/O module, you can refer to the <em class="ph i">Modicon Edge I/O NTS Discrete Modules - User Guide</em> help for the module <em class="ph i">NTSDRA0615 Parameters</em>. This document also provides information for other I/O modules with similar fallback settings.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005517.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

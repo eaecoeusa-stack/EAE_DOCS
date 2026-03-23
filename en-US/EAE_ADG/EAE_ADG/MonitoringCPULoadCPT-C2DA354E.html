@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Monitoring CPU Load" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="MonitoringCPULoadCPT-C2DA354E" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Monitoring CPU Load
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.9.1.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/PerformanceConsiderationsCPT-C2DA2CFF.html" />
+<meta name="brsnext" value="EAE_ADG/UsingFaceplatesCPT-C2DA3CD9.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Performance Recommendations and Considerations &gt; Performance Considerations" />
+</head>
+<body id="MonitoringCPULoadCPT-C2DA354E"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"PerformanceRecommendationsandConsid-C2D9F185.html\">Performance Recommendations and Considerations<\/a> > <a href=\"PerformanceConsiderationsCPT-C2DA2CFF.html\">Performance Considerations<\/a> > Monitoring CPU Load<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="MonitoringCPULoadCPT-C2DA354E" id="MonitoringCPULoadCPT-C2DA354E_">
+<!-- --></a><a name="MonitoringCPULoadCPT_C2DA354E" id="MonitoringCPULoadCPT_C2DA354E">
+<!-- --></a><a name="MonitoringCPULoadCPT_C2DA354E" id="MonitoringCPULoadCPT_C2DA354E_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Monitoring CPU Load
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+The event driven nature of <span class="ph">IEC61499</span> implies that the most frequent state of a controller should be idle (in other words, it does nothing unless asked). Therefore, the CPU load of a device should remain below 60% under normal conditions. If this is not the case:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Optimize the application logic (for example, remove event loops)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Spread the application load (if supported by the platform) over multiple <span class="ph">EcoStruxure Automation Expert</span> resources.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Replace hardware that cannot support the level of performance required by the application.
+</p>
+</li>
+</ul>
+<p class="p">
+To measure the CPU load, use the <span class="ph uicontrol">MIBGET</span> function block to monitor the following MIBs:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">System.CPULoad</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">System.CPUCore.Load</span>
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Refer to the documentation of the <span class="ph uicontrol">MIBGET</span> function block in the Runtime.Base library for a list of all available PATH object identifiers (OIDs) and their data types.
+</div>
+</div>
+<div class="section" id="MonitoringCPULoadCPT-C2DA354E__System.CPULoad-6E7B5FA3">
+<a name="System.CPULoad-6E7B5FA3" id="System.CPULoad-6E7B5FA3">
+<!-- --></a><a name="MonitoringCPULoadCPT_C2DA354E__System_CPULoad_6E7B5FA3" id="MonitoringCPULoadCPT_C2DA354E__System_CPULoad_6E7B5FA3">
+<!-- --></a><a name="System_CPULoad_6E7B5FA3" id="System_CPULoad_6E7B5FA3">
+<!-- --></a>
+<h2 class="title sectiontitle">
+System.CPULoad
+</h2>
+<p class="p">
+Use the MIB PATH OID <span class="ph uicontrol">'System.CPULoad'</span> to return a single value representing:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+For Soft dPAC Linux, the total CPU capacity Soft dPAC is using across all cores. For example, if 2 cores are allocated to Soft dPAC and Soft dPAC load is 60% on each core, then total CPU load is 120%.
+</p>
+</li>
+<li class="li">
+<p class="p">
+For M262 and M580 platforms, the CPU load of the core reserved for Runtime execution (2nd core).
+</p>
+</li>
+<li class="li">
+<p class="p">
+For all other platforms (ATV, M251, and Soft dPAC Windows), the average CPU load of all cores at platform level.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+CPU load at platform level - for all platforms except Soft dPAC Linux - includes the load of any additional software installed on the platform and run in parallel to the <span class="ph">EcoStruxure Automation Expert</span> application.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+CPU load is measured internally every 5 seconds. The <span class="ph uicontrol">MIBGET</span> <span class="ph uicontrol">REQ</span> event should be triggered accordingly.
+</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<p class="p">
+<span class="ph uicontrol">'System.CPULoad'</span> can be implemented in a simplified <span class="ph uicontrol">MIBGET</span> block:
+</p>
+<img class="image" src="0000868479.png" alt="" style="max-height:1.8in;" />
+<p class="p">
+The constant <span class="ph uicontrol">'System.CPULoad'</span> in the input <span class="ph uicontrol">PATH1</span> sets the <span class="ph uicontrol">VALUE1</span> output with the current CPU load, when the <span class="ph uicontrol">REQ</span> event is triggered.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The CPU load is given in tenths of %. In this example the value of 289 represents a CPU load of 28.9 %.
+</div>
+</div>
+<div class="section" id="MonitoringCPULoadCPT-C2DA354E__System.CPUCore.Load-6E7B61FF">
+<a name="System.CPUCore.Load-6E7B61FF" id="System.CPUCore.Load-6E7B61FF">
+<!-- --></a><a name="MonitoringCPULoadCPT_C2DA354E__System_CPUCore_Load_6E7B61FF" id="MonitoringCPULoadCPT_C2DA354E__System_CPUCore_Load_6E7B61FF">
+<!-- --></a><a name="System_CPUCore_Load_6E7B61FF" id="System_CPUCore_Load_6E7B61FF">
+<!-- --></a>
+<h2 class="title sectiontitle">
+System.CPUCore.Load
+</h2>
+<p class="p">
+Use the MIB PATH OID <span class="ph uicontrol">'System.CPUCore.Load'</span> to return the load per CPU core at platform level. For Soft dPAC Linux, if you are running additional tools natively on the machine (i.e. outside of the Soft dPAC docker container), the related load is also reported by this MIB.
+</p>
+<p class="p">
+Consider the situation when Core 1 is experiencing 60% load and Core 2 is at 80% and part of that load is Soft dPAC using 40% on Core 1 and 70% on Core 2
+</p>
+<p class="p">
+<span class="ph uicontrol">'System.CPULoad'</span> reports:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+110% (40% + 70%).
+</p>
+</li>
+</ul>
+<p class="p">
+<span class="ph uicontrol">'System.CPUCore.Load'</span>reports:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+60% on core 1
+</p>
+</li>
+<li class="li">
+<p class="p">
+80% on Core 2
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> CPU load by core is measured internally every 1 second on Soft dPAC Linux and every 5 seconds on other platforms. The <span class="ph uicontrol">MIBGET</span> <span class="ph uicontrol">REQ</span> event should be triggered accordingly.
+</div>
+<p class="p">
+To collect information of CPU load by core, the following MIB PATH (OIDs) are available:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">‘System.CPUCore.Index'</span>: the core index value:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+0 (or no INDEX): returns a comma-separated list of all CPU core indexes available on the platform. Use the values reported here as INDEX input for <span class="ph uicontrol">System.CPUCore.Load'</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Data type needs to be a string to be able to display this comma separated list.
+</div>
+</li>
+<li class="li">
+<p class="p">
+1<em class="ph i">...n:</em> returns CPU core index for the specified core.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">‘System.CPUCore.Load'</span>: the core load in tenths of percent:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+0: returns a comma-separated list of all CPU core loads.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Data type needs to be a string to be able to display this comma separated list.
+</div>
+</li>
+<li class="li">
+<p class="p">
+1<em class="ph i">...n:</em> returns the load for the specified core index.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If <em class="ph i">n:</em> is greater than the number of CPU cores (i.e., one or more non-existent cores are referenced), <span class="ph uicontrol">MIBGET</span> reports <span class="ph uicontrol">VALUE</span> = 0, and <span class="ph uicontrol">STATUS</span> = “No instance".
+</div>
+<div class="fig fignone">
+<img class="image" src="DD00986067.png" alt="" style="max-height:2.5in;" />
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The numbering of the CPU cores may begin at core 0 in the platform. However, for <span class="ph uicontrol">MIBGET</span> CPU core indexing begins at 1. (Index 0 is reserved for the list of all available values for the specified OID PATH).
+</div>
+<p class="p">
+In this example, when the <span class="ph uicontrol">REQ</span> event is triggered:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The list of CPU core indexes is provided on <span class="ph uicontrol">VALUE1</span> output.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The list of CPU core loads (at platform level) is provided on <span class="ph uicontrol">VALUE2</span> output.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The CPU load for core 4 is provided on <span class="ph uicontrol">VALUE5</span> output.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Because core 9 does not exist, inputting the value 9 into <span class="ph uicontrol">INDEX6</span> returns the <span class="ph uicontrol">STATUS6</span> ‘No instance’ and a <span class="ph uicontrol">VALUE6</span> output value of 0.
+</p>
+</li>
+</ul>
+<p class="p">
+You can extend this configuration by adding additional inputs and outputs to return individual core values for specified cores. For example, you could add:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Input <span class="ph uicontrol">PATH7</span> = <span class="ph uicontrol">System.CPUCore.Load</span> and <span class="ph uicontrol">INDEX7</span> = 1 so that <span class="ph uicontrol">VALUE7</span> returns CPU core load for CPU core index number 1.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="MonitoringCPULoadCPT-C2DA354E__SystemDesignConsiderations-6E805936">
+<a name="SystemDesignConsiderations-6E805936" id="SystemDesignConsiderations-6E805936">
+<!-- --></a><a name="MonitoringCPULoadCPT_C2DA354E__SystemDesignConsiderations_6E805936" id="MonitoringCPULoadCPT_C2DA354E__SystemDesignConsiderations_6E805936">
+<!-- --></a><a name="SystemDesignConsiderations_6E805936" id="SystemDesignConsiderations_6E805936">
+<!-- --></a>
+<h2 class="title sectiontitle">
+System Design Considerations
+</h2>
+<p class="p">
+<span class="ph uicontrol">System.CPULoad</span> can be used to develop and commission your solution, to determine the amount of CPU your application will require on the platform.
+</p>
+<p class="p">
+<span class="ph uicontrol">System.CPUCore.Load</span> can be used to determine that your solution does not exceed a maximum 60% of CPU load at core level and thereby enable expected operation of your <span class="ph">EcoStruxure Automation Expert</span> application in production. <span class="ph uicontrol">System.CPUCore.Load</span> allows monitoring for occasional CPU spikes (caused, for example, by the <span class="ph">EcoStruxure Automation Expert</span> application, the operating system, or external tools running in parallel).
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

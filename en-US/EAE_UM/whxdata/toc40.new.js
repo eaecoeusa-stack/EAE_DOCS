@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"ASi-5/ASi-3ModbusTCP Gateway","type":"item","url":"EAE_UM/ASiGateway-831B7390.html"},{"name":"PROFIBUS DP Master Gateway","type":"item","url":"EAE_UM/Gateway-EF438131.html"},{"name":"OPC UA Server and Client","type":"item","url":"EAE_UM/OPCUAServer-961C7D5E.html#OPCUAServer-961C7D5E"},{"name":"Cross-Communication Links","type":"item","url":"EAE_UM/Cross-Communication-6548E4BC.html"},{"key":"toc41","name":"Reliable Cross Communication","type":"book","url":"EAE_UM/ReliableCrossCommunication-25F3284C.html#ReliableCrossCommunication-25F3284C"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

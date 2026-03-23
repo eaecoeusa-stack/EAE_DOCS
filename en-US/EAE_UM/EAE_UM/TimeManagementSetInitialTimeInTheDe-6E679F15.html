@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Manually Set the Date and Time in a Device" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="TimeManagementSetInitialTimeInTheDe-6E679F15" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Manually Set the Date and Time in a Device
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.1.2.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/AddingRealDevicesToThePhysicalArchi-CC49F800.html" />
+<meta name="brsnext" value="EAE_UM/PhysicalTopologyEditor-Monitoring-A049455C.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor &gt; Physical Devices Editor &gt; Commissioning the Physical Architecture" />
+</head>
+<body id="TimeManagementSetInitialTimeInTheDe-6E679F15"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > <a href=\"PhysicalTopologyEditor-A00503A9.html#PhysicalTopologyEditor-A00503A9\">Physical Devices Editor<\/a> > <a href=\"PhysicalTopologyEditor-Commissionin-A0476701.html#PhysicalTopologyEditor-Commissionin-A0476701\">Commissioning the Physical Architecture<\/a> > Manually Set the Date and Time in a Device<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="TimeManagementSetInitialTimeInTheDe-6E679F15" id="TimeManagementSetInitialTimeInTheDe-6E679F15_">
+<!-- --></a><a name="TimeManagementSetInitialTimeInTheDe_6E679F15" id="TimeManagementSetInitialTimeInTheDe_6E679F15">
+<!-- --></a><a name="TimeManagementSetInitialTimeInTheDe_6E679F15" id="TimeManagementSetInitialTimeInTheDe_6E679F15_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Manually Set the Date and Time in a Device
+</h1>
+<div class="body conbody">
+<div class="section" id="TimeManagementSetInitialTimeInTheDe-6E679F15__SetCurrentDateAndTime-90FC1999">
+<a name="SetCurrentDateAndTime-90FC1999" id="SetCurrentDateAndTime-90FC1999">
+<!-- --></a><a name="TimeManagementSetInitialTimeInTheDe_6E679F15__SetCurrentDateAndTime_90FC1999" id="TimeManagementSetInitialTimeInTheDe_6E679F15__SetCurrentDateAndTime_90FC1999">
+<!-- --></a><a name="SetCurrentDateAndTime_90FC1999" id="SetCurrentDateAndTime_90FC1999">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Set Current Date and Time
+</h2>
+<p class="p">
+Before setting the date and time inside the target device, ensure that:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+You are logged in, for this the configured device needs to be secured. For more information, refer to <a class="xref" href="SecureTheDevices-CC4AA5CF.html">Secure the Devices</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The device is not in <span class="ph uicontrol">RUN</span> state to perform this operation, otherwise the execution is rejected.
+</p>
+</li>
+</ul>
+<p class="p">
+Follow the next steps to set the current date and time:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Using <span class="ph">EcoStruxure Automation Expert</span>, open the <span class="ph uicontrol">Physical Devices </span> editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the device you want to configure, then right-click and select <span class="ph uicontrol">Set current date and time</span> to open the dialog box.
+</p>
+<img class="image" src="DD00619555.png" width="160" alt="" />
+</li>
+<li class="li">
+<p class="p">
+Set the device date and time.
+</p>
+<img class="image" src="DD00619445.png" alt="" />
+<div class="p">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:23.66412213740458%" />
+<col style="width:23.66412213740458%" />
+<col style="width:52.67175572519084%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d753086e118">
+<p class="p">
+Field
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d753086e123">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d753086e118 ">
+<p class="p">
+Current Device Date Time
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d753086e123 ">
+<p class="p">
+Coordinated Universal Time (UTC) Date and Time read from device when dialog opens.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d753086e118 ">
+<p class="p">
+Current PC Date Time
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d753086e123 ">
+<p class="p">
+UTC Date and Time from PC clock and keep it refreshed with the latest value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d753086e118 ">
+<p class="p">
+Set Device Date Time
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d753086e118 ">
+<p class="p">
+Same as Current PC time
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d753086e123 ">
+<p class="p">
+UTC Date and Time values same as PC time (Dynamic).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d753086e118 ">
+<p class="p">
+Custom
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d753086e123 ">
+<p class="p">
+You can specify a custom date and time.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> On <span class="ph">Modicon M251 Distributed PAC</span> and <span class="ph">Modicon M262 Distributed PAC</span> if the date and time value set on the custom device is too early, the device will automatically set the date on which the product was first launched. If the value is too far in the future, the device will generate a new certificate that must be trusted again by <span class="ph">EcoStruxure Automation Expert</span>.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" colspan="3" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; " headers="d753086e118 d753086e123 ">
+<p class="p">
+<sup class="ph sup">*</sup>The firmware version, available in the EcoStruxure™ Automation Device Maintenance (EADM) tool, is used to deduce this value as follow: V23.0.<strong class="ph b">&lt;YY&gt;</strong><strong class="ph b">&lt;DDD&gt;</strong>.00 with <strong class="ph b">&lt;YY&gt;</strong> being the digits of the year and <strong class="ph b">&lt;DDD&gt;</strong> being the digits of the current day of the year.
+</p>
+<p class="p">
+Example: V23.1.<strong class="ph b">23314</strong>.00: <strong class="ph b">&lt;YY&gt;</strong> =<strong class="ph b"> 23</strong> (means the year 2023) and <strong class="ph b">&lt;DDD&gt; = 314 </strong>( means the day 314 of the year = November 10th).[[{
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> There is no need to restart the device to apply these settings.
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Applicability
+</h2>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">Modicon M262 Distributed PAC</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">Modicon M251 Distributed PAC</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">Modicon M580 Distributed PAC</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">Altivar dPAC Module VW3A3530D</span>
+</p>
+</li>
+<li class="li">
+<span class="ph">BMECRD0100</span>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

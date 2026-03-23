@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="License Manager" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="LicenseManager-036F02C8" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+License Manager
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.2.1.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/GettingActivatingAndRegisteringALic-954798FC.html" />
+<meta name="brsnext" value="EAE_UM/OnlineNode-LockedLicenseOperations-A48B3231.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; Installing and Licensing EcoStruxure Automation Expert &gt; EcoStruxure Automation Expert Licenses" />
+</head>
+<body id="LicenseManager-036F02C8"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"AcquiringInstallingLicensingAndMain-94F2A2B4.html#AcquiringInstallingLicensingAndMain-94F2A2B4\">Installing and Licensing EcoStruxure Automation Expert<\/a> > <a href=\"GettingActivatingAndRegisteringALic-954798FC.html#GettingActivatingAndRegisteringALic-954798FC\">EcoStruxure Automation Expert Licenses<\/a> > License Manager<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="LicenseManager-036F02C8" id="LicenseManager-036F02C8_">
+<!-- --></a><a name="LicenseManager_036F02C8" id="LicenseManager_036F02C8">
+<!-- --></a><a name="LicenseManager_036F02C8" id="LicenseManager_036F02C8_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+License Manager
+</h1>
+<div class="body conbody">
+
+<div class="section" id="LicenseManager-036F02C8__Overview-ECA19EDC">
+<a name="Overview-ECA19EDC" id="Overview-ECA19EDC">
+<!-- --></a><a name="LicenseManager_036F02C8__Overview_ECA19EDC" id="LicenseManager_036F02C8__Overview_ECA19EDC">
+<!-- --></a><a name="Overview_ECA19EDC" id="Overview_ECA19EDC">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Overview
+</h2>
+<p class="p">
+The <span class="ph uicontrol">License Manager</span> is a dialog window in <span class="ph">EcoStruxure Automation Expert</span>, accessible by clicking <span class="ph uicontrol">License Manager</span> in the <span class="ph uicontrol">Help</span> menu <img class="image" src="0001003538.png" alt="" style="max-height:15px;" />.
+</p>
+<p class="p">
+The <span class="ph uicontrol">License Manager</span> is where all the licensing information and operations are gathered.
+</p>
+<p class="p">
+The following elements are shown in the License Manager dialog:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseManager-036F02C8__ToolbarButtons-ECA07B82">Toolbar</a>: Contains the buttons required for license management.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseManager-036F02C8__ImportantLicenseInformation-ECA0B811">License Information</a>: Provides information about the available licenses in columns with status icons for each license.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#LicenseManager-036F02C8__LicensePortalAccess-ECA1B81F">License Portal link</a>: Opens the <strong class="ph b">Software Management</strong> portal.
+</p>
+</li>
+<li class="li">
+<div class="p">
+<span class="ph uicontrol">Device ID</span>: The Device ID of the Engineering Workstation whose licenses are connected through the license activation process.
+<div class="note note">
+<span class="notetitle">NOTE:</span> Read more information of the Device ID in chapter <a class="xref" href="#LicenseManager-036F02C8__ImportantLicenseInformation-ECA0B811">Important License Information</a>.
+</div>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Release: Displays the release date of the current <span class="ph">EcoStruxure Automation Expert</span> version in a <em class="ph i">yyyy.mm</em> format.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="LicenseManager-036F02C8__LicenseStatus-8CF2DD91">
+<a name="LicenseStatus-8CF2DD91" id="LicenseStatus-8CF2DD91">
+<!-- --></a><a name="LicenseManager_036F02C8__LicenseStatus_8CF2DD91" id="LicenseManager_036F02C8__LicenseStatus_8CF2DD91">
+<!-- --></a><a name="LicenseStatus_8CF2DD91" id="LicenseStatus_8CF2DD91">
+<!-- --></a>
+<h2 class="title sectiontitle">
+License Status
+</h2>
+<p class="p">
+The status of the licenses available on your Engineering Workstation is visible in the <span class="ph uicontrol">License Information</span> page of the <a class="xref" href="LicenseManager-036F02C8.html"><span class="ph uicontrol">License Manager</span></a>, as follows:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:13.852813852813853%" />
+<col style="width:86.14718614718615%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<strong class="ph b">Icon</strong>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<strong class="ph b">Description</strong>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015126.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is permanently valid for the <span class="ph">EcoStruxure Automation Expert</span> version.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015125.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is invalid and it cannot be used anymore. More information on how to take the license back to valid state is provided in the <a class="xref" href="#LicenseManager-036F02C8__ImportantLicenseInformation-ECA0B811">Important License Information</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015124.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is borrowed from the configured License Server.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00593055.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is reserved from the configured License Server, for exclusive usage on the Engineering Workstation for limited number of days (max. 14 days).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015123.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is borrowed from the configured License Server and will expire in less than 60 days.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015122.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is incompatible with the currently used <span class="ph">EcoStruxure Automation Expert</span> version. It may be still required for an older version installed on this device.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015121.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This trial license is valid but will expire.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015120.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This trial license is still valid but will expire in less than four days.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015119.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This trial license has expired and can no longer be used.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015118.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is valid but will expire.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015117.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is still valid but will expire in less than 60 days.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015136.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license has expired and can no longer be used.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="0001015135.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This license is unsuitable for <span class="ph">EcoStruxure Automation Expert</span>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> In the <span class="ph uicontrol">License Manager</span>, when you hover over the status icon with the mouse cursor, additional information about the license is displayed.
+</div>
+</div>
+<div class="section" id="LicenseManager-036F02C8__ToolbarButtons-ECA07B82">
+<a name="ToolbarButtons-ECA07B82" id="ToolbarButtons-ECA07B82">
+<!-- --></a><a name="LicenseManager_036F02C8__ToolbarButtons_ECA07B82" id="LicenseManager_036F02C8__ToolbarButtons_ECA07B82">
+<!-- --></a><a name="ToolbarButtons_ECA07B82" id="ToolbarButtons_ECA07B82">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Toolbar Buttons
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:16.666666666666664%" />
+<col style="width:9.666666666666666%" />
+<col style="width:73.66666666666667%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d699937e341">
+<p class="p">
+Name
+</p>
+</th>
+<th class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d699937e346">
+<p class="p">
+Icon
+</p>
+</th>
+<th class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d699937e351">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Activate</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003537.png" width="30" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<div class="p">
+This button opens:
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Online License Activation</span> page when the PC has Internet connection. This page is used to <a class="xref" href="OnlineNode-LockedLicenseOperations-A48B3231.html#OnlineNode-LockedLicenseOperations-A48B3231__ActivateANewNode-LockedLicense-A6A622FF">activate online node-locked licenses</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Offline License Activation</span> page when the PC has no Internet connection. This page is used to <a class="xref" href="OfflineNode-LockedLicenseOperations-A49C3B73.html#OfflineNode-LockedLicenseOperations-A49C3B73__ActivateANode-LockedLicense-A6A5FDBD">activate offline node-locked licenses</a>.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For both, online and offline license activation, you can activate multiple node-locked licenses with a single license request.
+</div>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Return</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003536.png" width="30" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<div class="p">
+This button opens:
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Online License Return</span> page when the PC has Internet connection. This page is used to <a class="xref" href="OnlineNode-LockedLicenseOperations-A48B3231.html#OnlineNode-LockedLicenseOperations-A48B3231__ReturnAnActivatedLicenseToTheSchnei-A6A61EC1">return online node-locked licenses</a> only.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Offline License Return</span> page when the PC has no Internet connection. This page is used to <a class="xref" href="OfflineNode-LockedLicenseOperations-A49C3B73.html#OfflineNode-LockedLicenseOperations-A49C3B73__ReturnAnActivatedLicenseToTheSchnei-A6A60285">return offline node-locked licenses</a> only.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For both, online and offline license return, you can return multiple node-locked licenses with a single license request.
+</div>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Renew</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003535.png" width="30" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<div class="p">
+This button opens:
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Online License Renewal</span> page when the PC has Internet connection. This page is used to renew the <a class="xref" href="OnlineNode-LockedLicenseOperations-A48B3231.html#OnlineNode-LockedLicenseOperations-A48B3231__RenewLicenseInformation-A6A62091">license information for all licenses online</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Offline License Renewal</span> page when the PC has no Internet connection. This page is used to renew the <a class="xref" href="OfflineNode-LockedLicenseOperations-A49C3B73.html#OfflineNode-LockedLicenseOperations-A49C3B73__RenewLicenseInformation-A6A5FFF9">license information for all licenses offline</a>.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Refresh</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003534.png" width="30" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<div class="p">
+This button refreshes the licenses information in the <span class="ph uicontrol">License Information</span> page. This page lists the available licenses on the Engineering Workstation. The <span class="ph uicontrol">License Information</span> page displays the following information for each available license:
+<ul class="ul">
+<li class="li">
+<p class="p">
+Status icon with a tooltip (see the different status available for the licenses in <a class="xref" href="GettingActivatingAndRegisteringALic-954798FC.html"><em class="ph i"><span class="ph">EcoStruxure Automation Expert</span> Licenses</em></a>)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Name
+</p>
+</li>
+<li class="li">
+<p class="p">
+Version
+</p>
+</li>
+<li class="li">
+<p class="p">
+Part Number
+</p>
+</li>
+<li class="li">
+<p class="p">
+Activation ID
+</p>
+</li>
+<li class="li">
+<p class="p">
+Expiration Date
+</p>
+</li>
+<li class="li">
+<p class="p">
+Source
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For reserved licenses, under <span class="ph uicontrol">Expiration Date</span> are displayed, the expiration date of the reserved license on the Engineering Workstation, and its expiration date on the License Server.
+</div>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Process Response</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003533.png" width="25" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<p class="p">
+This button opens the <span class="ph uicontrol">Process Response File</span> page used to complete offline license operations like : <a class="xref" href="OfflineNode-LockedLicenseOperations-A49C3B73.html#OfflineNode-LockedLicenseOperations-A49C3B73__ActivateANode-LockedLicense-A6A5FDBD">offline node-locked activation</a>, <a class="xref" href="OnlineNode-LockedLicenseOperations-A48B3231.html#OnlineNode-LockedLicenseOperations-A48B3231__RenewLicenseInformation-A6A62091">offline node-locked renew</a> and <a class="xref" href="OnlineNode-LockedLicenseOperations-A48B3231.html#OnlineNode-LockedLicenseOperations-A48B3231__ReturnAnActivatedLicenseToTheSchnei-A6A61EC1">offline node-locked return</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">License Server</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003532.png" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<p class="p">
+This button opens the <span class="ph uicontrol">License Server</span> page. In this page, one type of <a class="xref" href="LicenseServerManagement-A633A49D.html#LicenseServerManagement-A633A49D__LicenseServerConfiguration-AD4A771F">License Server</a> can be configured, either a <span class="ph">Cloud License Server</span> or an <span class="ph">Enterprise License Server</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Reserve License</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="DD00587975.png" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<p class="p">
+This button opens the <span class="ph uicontrol">Reserve Licenses</span> page. The button is available only when a License Server is configured and no licenses are currently reserved.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Release Reservation</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="DD00587974.png" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<p class="p">
+This button releases the reserved floating licenses. The button is available only when a License Server is configured and licenses are currently reserved.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e341 ">
+<p class="p">
+<span class="ph uicontrol">Settings</span>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e346 ">
+<p class="p">
+<img class="image" src="0001003531.png" width="30" alt="" />
+</p>
+</td>
+<td class="entry" style="vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e351 ">
+<p class="p">
+This button gives access to setting options. The <span class="ph uicontrol">License View</span> option can be used to hide all incompatible, invalid and expired licenses on the <span class="ph uicontrol">License Information</span> page of the <span class="ph uicontrol">License Manager</span>. A filter symbol in the <span class="ph uicontrol">Status</span> column indicates that a filter is active. The filter settings can be selected individually per Windows user.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="LicenseManager-036F02C8__LicensePortalAccess-ECA1B81F">
+<a name="LicensePortalAccess-ECA1B81F" id="LicensePortalAccess-ECA1B81F">
+<!-- --></a><a name="LicenseManager_036F02C8__LicensePortalAccess_ECA1B81F" id="LicenseManager_036F02C8__LicensePortalAccess_ECA1B81F">
+<!-- --></a><a name="LicensePortalAccess_ECA1B81F" id="LicensePortalAccess_ECA1B81F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+License Portal Access
+</h2>
+<p class="p">
+The <span class="ph uicontrol">License Portal</span> link is situated on the far-right of the toolbar in the <span class="ph uicontrol">License Manager</span>.
+</p>
+<p class="p">
+This link opens the <span class="ph uicontrol">Software Management</span> portal where you login with a <span class="ph uicontrol">MySchneider</span> account. If you do not have a <span class="ph uicontrol">MySchneider</span> account, you can create one by clicking <span class="ph uicontrol">Register</span> and filling the required information.
+</p>
+<p class="p">
+After logging in to the portal, you can manage all your <span class="ph">Schneider Electric</span> licenses, registered to your account. The license registration is either done with your license order, or you can do it in the portal, using the <span class="ph uicontrol">Activation ID</span>s of your licenses.
+</p>
+<p class="p">
+The following information and actions are available on the <span class="ph uicontrol">Software Management</span> portal:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Search and view license information (for example, available and total number of copies, license expiration or duration, part number, Device ID, Software Assurance information, etc.).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Register licenses to your account.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Group your licenses.
+</p>
+</li>
+<li class="li">
+<p class="p">
+View and manage devices.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For <span class="ph">EcoStruxure Automation Expert</span> you can create Cloud License Servers from the <span class="ph uicontrol">Devices</span> tab.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Offline license operations.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Manage user access.
+</p>
+</li>
+</ul>
+<p class="p">
+More information on the <span class="ph uicontrol">Software Management</span> portal is available on the portal when you click on <span class="ph uicontrol">Get started and help</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Software Management</span> portal is not supported in China.
+</div>
+</div>
+<div class="section" id="LicenseManager-036F02C8__LicenseInformationColumns-E81C14F4">
+<a name="LicenseInformationColumns-E81C14F4" id="LicenseInformationColumns-E81C14F4">
+<!-- --></a><a name="LicenseManager_036F02C8__LicenseInformationColumns_E81C14F4" id="LicenseManager_036F02C8__LicenseInformationColumns_E81C14F4">
+<!-- --></a><a name="LicenseInformationColumns_E81C14F4" id="LicenseInformationColumns_E81C14F4">
+<!-- --></a>
+<h2 class="title sectiontitle">
+License Information Columns
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:22.5%" />
+<col style="width:77.5%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d699937e789">
+<p class="p">
+Column
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d699937e794">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Status</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays a status icon, depending on the state of the license.
+</p>
+<p class="p">
+When you hover over the specific Status cell with the mouse cursor, a tooltip with additional information is displayed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Name</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays the name of the license.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Compatibility</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays the compatibility information of the licenses to <span class="ph">EcoStruxure Automation Expert</span> Versions. Read more information in chapter <a class="xref" href="GettingActivatingAndRegisteringALic-954798FC.html#GettingActivatingAndRegisteringALic-954798FC__LicenseCompatibility-EC9409A2">License Compatibility</a>
+</p>
+<p class="p">
+When you hover over the specific Compatibility cell with the mouse cursor, a tooltip with additional information is displayed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Part Number</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays the part number of the license.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Activation ID</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays the <span class="ph uicontrol">Activation ID</span> of the license.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Expiration Date</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays the expiration date of the license.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d699937e789 ">
+<p class="p">
+<span class="ph uicontrol">Source</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d699937e794 ">
+<p class="p">
+Displays the license source. It can be <span class="ph uicontrol">Trial</span>, <span class="ph uicontrol">Local License</span> (for node-locked license), or the configured alias name of a License Server (for floating license).
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="LicenseManager-036F02C8__ImportantLicenseInformation-ECA0B811">
+<a name="ImportantLicenseInformation-ECA0B811" id="ImportantLicenseInformation-ECA0B811">
+<!-- --></a><a name="LicenseManager_036F02C8__ImportantLicenseInformation_ECA0B811" id="LicenseManager_036F02C8__ImportantLicenseInformation_ECA0B811">
+<!-- --></a><a name="ImportantLicenseInformation_ECA0B811" id="ImportantLicenseInformation_ECA0B811">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Important License Information
+</h2>
+<ul class="ul">
+<li class="li">
+<p class="p">
+It is recommended to close your <span class="ph">EcoStruxure Automation Expert</span> solution before making any license operation or License Server configuration in the <span class="ph uicontrol">License Manager</span>. Otherwise, if a used license becomes unavailable, the solution closes automatically and proposes to save unsaved changes first.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The license activation process connects the licenses to the <span class="ph uicontrol">Device ID</span> of the Engineering Workstation. The <span class="ph uicontrol">Device ID</span> of the machine, used with your node-locked licenses is displayed in the <span class="ph uicontrol">License Manager</span> and in the <span class="ph uicontrol">Software Management</span> portal for your registered licenses.
+</p>
+<p class="p">
+In the following specific cases, the <span class="ph uicontrol">Device ID</span> of your Engineering Workstation can change, which sets the status of your licenses to <span class="ph uicontrol">Invalid</span>. Invalid licenses cannot be used anymore as they become orphaned.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Renaming the Engineering Workstation</strong>:
+</p>
+<p class="p">
+Before renaming an Engineering Workstation, first return all activated node-locked licenses, otherwise they become orphaned.
+</p>
+<p class="p">
+Resolving this orphaned license issue can be done by reverting the name change, rebooting, then perform a renew operation by clicking the <span class="ph uicontrol">Renew</span> button in the <span class="ph uicontrol">License Manager</span>. Afterwards, return all node-locked licenses if you need to rename the Engineering Workstation again. The returned licenses can then be activated again on the renamed Engineering Workstation. If these actions do not solve the issue, contact your local <span class="ph">Schneider Electric</span> support.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Changing the network configuration on a physical machine</strong>:
+</p>
+<p class="p">
+Removing or disabling of network adapters, which were present at node-locked license activation, can change the <span class="ph uicontrol">Device ID</span> and the licenses can become orphaned.
+</p>
+<p class="p">
+Resolving this orphaned license issue can be done by reverting the network adapter change to the one at license activation, restarting <span class="ph">EcoStruxure Automation Expert</span>, then perform a renew operation by clicking the <span class="ph uicontrol">Renew</span> button in the <span class="ph uicontrol">License Manager</span>. If these actions do not solve the issue, contact your local <span class="ph">Schneider Electric</span> support.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Cloning a virtual machine</strong>:
+</p>
+<p class="p">
+Before cloning a virtual machine, first return all activated node-locked licenses, otherwise they become orphaned. The returned licenses can be activated again on the virtual machine after it has been cloned.
+</p>
+<p class="p">
+Resolving this orphaned license issue can only be done by your local <span class="ph">Schneider Electric</span> support.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+It is recommended to synchronize the clock of your Engineering Workstation with a time server. Otherwise, if the clock is set in the past, your licenses might be displayed as <span class="ph uicontrol">Invalid</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Only one copy of an <span class="ph">Engineering</span> or <span class="ph">Addon</span> license is needed per Engineering Workstation to enable the corresponding product features. This copy is shared with all users logged in on this workstation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If a valid node-locked <span class="ph">Engineering</span> or <span class="ph">Addon</span> license is activated on an Engineering Workstation, it does not in addition borrow an <span class="ph">Engineering</span> or <span class="ph">Addon</span> license from a possibly configured License Server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If you use your licenses from a License Server and different versions of <span class="ph">EcoStruxure Automation Expert</span> are installed in parallel on your Engineering Workstation, it is recommended to use only one <span class="ph">EcoStruxure Automation Expert</span> version at a time. If you need to use multiple versions at the same time, start the latest version first, otherwise all licensed features might not be unlocked.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The license reservation is supported only by <span class="ph">EcoStruxure Automation Expert</span> 23.1 and later. If you run <span class="ph">EcoStruxure Automation Expert</span> 23.0 or earlier while licenses are reserved from a later version, the reserved licenses can be released automatically from your Engineering Workstation but not from the License Server. In this case, the released licenses become available again on the License Server only after the reservation period ends.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

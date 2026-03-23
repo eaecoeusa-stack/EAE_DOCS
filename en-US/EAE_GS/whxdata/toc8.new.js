@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Purpose of the Connections","type":"item","url":"EAE_GS/PurposeoftheConnectionsCPT-5BF28AAE.html#PurposeoftheConnectionsCPT-5BF28AAE"},{"name":"Opening the First Valve","type":"item","url":"EAE_GS/OpeningtheFirstValveCPT-5BF2A0FA.html#OpeningtheFirstValveCPT-5BF2A0FA"},{"name":"Opening the Second Valve","type":"item","url":"EAE_GS/OpeningtheSecondValveCPT-5BF2A89E.html#OpeningtheSecondValveCPT-5BF2A89E"},{"name":"Opening the Third Valve","type":"item","url":"EAE_GS/OpeningtheThirdValveCPT-5BF2B112.html#OpeningtheThirdValveCPT-5BF2B112"},{"name":"Processing the Analog Input Value","type":"item","url":"EAE_GS/ProcessingAnalogInputValueCPT-5BF2B96A.html#ProcessingAnalogInputValueCPT-5BF2B96A"},{"name":"Turning 'ON' the Digital Output","type":"item","url":"EAE_GS/TurningONtheDigitalOutputCPT-5BF2DCC3.html#TurningONtheDigitalOutputCPT-5BF2DCC3"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

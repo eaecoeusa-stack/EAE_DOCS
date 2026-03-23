@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Configure Users and Roles and Allow Permission in IDE" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfigureUsersAndRoles-652F3590" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Configure Users and Roles and Allow Permission in IDE
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.1.1.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_CSG/AVEVAOMIPolicyConfigurationCPT-3B7AA530.html" />
+<meta name="brsnext" value="EAE_CSG/AssetLinkWorkflowUsingGalaxyUserHav-652EB834.html" />
+<meta name="topic-breadcrumbs" content="Cybersecurity - Guide &gt; EcoStruxure Automation Expert - Cybersecurity Features &gt; Identify, Authenticate and Authorize User Account &gt; AVEVA OMI Users and Roles Configuration" />
+</head>
+<body id="ConfigureUsersAndRoles-652F3590"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html");
+document.write("<a href=\"EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html\">Cybersecurity - Guide<\/a> > <a href=\"EcoStruxureAutomationExpert-CyberSe-34B08F70.html#EcoStruxureAutomationExpert-CyberSe-34B08F70\">EcoStruxure Automation Expert - Cybersecurity Features<\/a> > <a href=\"IdentifyAuthenticateandAuthorizeUse-3B5990BB.html#IdentifyAuthenticateandAuthorizeUse-3B5990BB\">Identify, Authenticate and Authorize User Account<\/a> > <a href=\"AVEVAOMIPolicyConfigurationCPT-3B7AA530.html#AVEVAOMIPolicyConfigurationCPT-3B7AA530\">AVEVA OMI Users and Roles Configuration<\/a> > Configure Users and Roles and Allow Permission in IDE<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfigureUsersAndRoles-652F3590" id="ConfigureUsersAndRoles-652F3590_">
+<!-- --></a><a name="ConfigureUsersAndRoles_652F3590" id="ConfigureUsersAndRoles_652F3590">
+<!-- --></a><a name="ConfigureUsersAndRoles_652F3590" id="ConfigureUsersAndRoles_652F3590_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Configure Users and Roles and Allow Permission in IDE
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<h2 class="title sectiontitle">
+Creating Users
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Launch the previously configured galaxy with user Administrator.
+</p>
+</li>
+<li class="li">
+<p class="p">
+From the ribbon, select <span class="ph menucascade"><span class="ph uicontrol">Galaxy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configure</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Security</span></span>. The Security page appears.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click on the <span class="ph uicontrol">Users</span> tab.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click and select <span class="ph uicontrol">Add</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Give the name as <span class="ph uicontrol">Operator1</span> and click on Save.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Do the steps 4 and 5 for the users: <span class="ph uicontrol">Maintenance1</span> and <span class="ph uicontrol">Engineer1</span>.
+</p>
+</li>
+</ol>
+<img class="image" src="DD00975823.png" width="500" alt="" />
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Creating Roles
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">Roles</span> tab.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click and select <span class="ph uicontrol">Add</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Create the role <span class="ph uicontrol">Operator</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Perform the steps 2 and 3 for the roles: <span class="ph uicontrol">Maintenance</span> and <span class="ph uicontrol">Engineer</span>.
+</p>
+</li>
+</ol>
+<img class="image" src="DD00975822.png" width="500" alt="" />
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Assigning Roles to Users
+</h2>
+<p class="p">
+Next let’s assign the users to the roles:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">Users</span> tab, all users in the Galaxy are listed here.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the user in the <span class="ph uicontrol">Authorized Users</span> available area.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select a role in the <span class="ph uicontrol">Associated Roles</span> for <span class="ph uicontrol">&lt;user name&gt;</span> area.
+</p>
+<p class="p">
+Every user is assigned to the <span class="ph uicontrol">Default</span> role. Add other roles that users need to perform their job functions.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Provide each user with a password.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Ensure to set new passwords for the Administrator and Default user accounts.
+</div>
+</li>
+<li class="li">
+<p class="p">
+As it is Galaxy Authentication mode, click <span class="ph uicontrol">Change</span> password. The<span class="ph uicontrol"> Change password</span> dialog box appears.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the same way, provide password for other users also.
+</p>
+</li>
+</ol>
+<img class="image" src="DD00975821.png" alt="" />
+<p class="p">
+Let’s give permissions for the roles in the <span class="ph uicontrol">Roles</span> tab by selecting the check boxes for the options to give for each role.
+</p>
+<p class="p">
+Here are the permissions for the created roles:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:18.93687707641196%" />
+<col style="width:19.269102990033225%" />
+<col style="width:61.79401993355482%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13058e231">
+User
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13058e235">
+Role
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13058e239">
+Permissions
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13058e231 ">
+Operator1
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13058e235 ">
+Operator
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13058e239 ">
+<p class="p">
+<strong class="ph b">General permissions:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can Start the IDE
+</p>
+</li>
+<li class="li">
+<p class="p">
+Importing and Exporting
+</p>
+</li>
+<li class="li">
+<p class="p">
+Framework Configuration:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can modify the Security Model
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Deployment Permissions
+</p>
+</li>
+<li class="li">
+<p class="p">
+Graphic Management Permissions
+</p>
+</li>
+<li class="li">
+<p class="p">
+OCMC Permissions:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can start the OCMC
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="p">
+<strong class="ph b">Operational permissions:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can modify <span class="ph uicontrol">Operate</span> attributes
+</p>
+</li>
+<li class="li">
+<p class="p">
+Can modify <span class="ph uicontrol">Tune</span> attributes
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13058e231 ">
+Maintenance1
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13058e235 ">
+Maintenance
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13058e239 ">
+<p class="p">
+<strong class="ph b">General permissions:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can start the IDE
+</p>
+</li>
+<li class="li">
+<p class="p">
+Importing and Exporting
+</p>
+</li>
+<li class="li">
+<p class="p">
+Framework Configuration:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can modify the Security Model
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Deployment Permissions:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can deploy and undeploy area objects
+</p>
+</li>
+<li class="li">
+<p class="p">
+Can deploy and undeploy application object
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<div class="p">
+Graphic Management Permissions:
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can deploy and undeploy view application
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+OCMC Permissions:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can start the OCMC
+</p>
+</li>
+<li class="li">
+<p class="p">
+Can start and stop engine and platform
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="p">
+<strong class="ph b">Operational permissions:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can modify <span class="ph uicontrol">Tune</span> attributes
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13058e231 ">
+Engineer1
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13058e235 ">
+Engineer
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13058e239 ">
+<p class="p">
+<strong class="ph b">General permissions:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can start the IDE
+</p>
+</li>
+<li class="li">
+<p class="p">
+Importing and Exporting
+</p>
+</li>
+<li class="li">
+<p class="p">
+General Configuration
+</p>
+</li>
+<li class="li">
+<p class="p">
+Device Integration Objects
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can create, modify and delete device integration object instances
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Application Configuration
+</p>
+</li>
+<li class="li">
+<p class="p">
+Framework Configuration
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can modify the Security Model
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+User Configuration
+</p>
+</li>
+<li class="li">
+<p class="p">
+Deployment Permissions
+</p>
+</li>
+<li class="li">
+<p class="p">
+Graphic Management Permissions
+</p>
+</li>
+<li class="li">
+<p class="p">
+OCMC Permissions
+</p>
+</li>
+</ul>
+<p class="p">
+<strong class="ph b">Operational permissions:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Can modify <span class="ph uicontrol">Configure</span> attributes
+</p>
+</li>
+<li class="li">
+<p class="p">
+Can modify <span class="ph uicontrol">Operate</span> attributes
+</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> In <span class="ph">AVEVA System Platform</span>, if the user with one of these roles tries to perform operations without having the permission, the user then gets notified with a message saying that this role doesn’t have the permission to do the operation.
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Assigning Roles to Objects
+</h2>
+<p class="p">
+To know how to assign roles to different security groups, directly check the <em class="ph i"><span class="ph">AVEVA System Platform</span> IDE User Guide</em>. Inside this document, refer to the <em class="ph i">About Security Group</em> topic.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005517.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Basic Function Block Editor" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="BasicFunctionBlockEditor-9FE10B6F" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Basic Function Block Editor
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.4.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/FunctionalityOfBasicFunctionBlock-9FE2699E.html" />
+<meta name="brsnext" value="EAE_UM/GenericInterfaceEditor-9BF0D85B.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Function Block Editors" />
+</head>
+<body id="BasicFunctionBlockEditor-9FE10B6F"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"FunctionBlockEditors-9FE0F1E2.html#FunctionBlockEditors-9FE0F1E2\">Function Block Editors<\/a> > Basic Function Block Editor<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="BasicFunctionBlockEditor-9FE10B6F" id="BasicFunctionBlockEditor-9FE10B6F_">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F" id="BasicFunctionBlockEditor_9FE10B6F">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F" id="BasicFunctionBlockEditor_9FE10B6F_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Basic Function Block Editor
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+The Basic Function Block editor displays a schematic representation of program logic.
+</p>
+<p class="p">
+Functions and tasks include:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__InterfaceEditor-6E79F787">Interface editor</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__CreateANewState-A6497DF0">Create a new state</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__StateContextMenuCommands-A6498053">State context menu commands</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__StateActionGrayBoxContextMenuComman-A6498160">State action (gray box) context menu commands</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__StateActionLightRedBoxContextMenuCo-A64982F6">State action (light red box) context menu commands</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__AddActions-A6498922">Add actions</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__Algorithms-A64862BE">Algorithms</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#BasicFunctionBlockEditor-9FE10B6F__TestFunction-A6485349">Test function</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__InterfaceEditor-6E79F787">
+<a name="InterfaceEditor-6E79F787" id="InterfaceEditor-6E79F787">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__InterfaceEditor_6E79F787" id="BasicFunctionBlockEditor_9FE10B6F__InterfaceEditor_6E79F787">
+<!-- --></a><a name="InterfaceEditor_6E79F787" id="InterfaceEditor_6E79F787">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Interface Editor
+</h2>
+<p class="p">
+Click the <span class="ph uicontrol">Interface</span> icon <img class="image" src="0000907695.png" alt="" style="max-height:18px;" /> from the vertical toolbar on the left to open the <a class="xref" href="FunctionBlockInterfaceEditor-9FE8270B.html">Interface editor</a>. Use the Interface editor to create the interfaces of the Basic function block.
+</p>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__CreateANewState-A6497DF0">
+<a name="CreateANewState-A6497DF0" id="CreateANewState-A6497DF0">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__CreateANewState_A6497DF0" id="BasicFunctionBlockEditor_9FE10B6F__CreateANewState_A6497DF0">
+<!-- --></a><a name="CreateANewState_A6497DF0" id="CreateANewState_A6497DF0">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Create a New State
+</h2>
+<p class="p">
+To add a new state to the ECC logic:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select the <span class="ph uicontrol">Execution Control Chart</span> icon <img class="image" src="0000907694.png" alt="" style="max-height:18px;" />from the vertical menu on the left.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click on the editor background and select <span class="ph uicontrol">New State</span> from the context menu:
+</p>
+</li>
+</ol>
+
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:28.360000000000003%" />
+<col style="width:71.64%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e165">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e169">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e165 ">
+<span class="ph uicontrol">New State </span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e169 ">
+<p class="p">
+Creates a new ECC state within the Execution Control Chart editor. The automatically generated name <em class="ph i">STATEn</em> can be overwritten after selecting it via left click.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e165 ">
+<span class="ph uicontrol">Edit condition order</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e169 ">
+<p class="p">
+Opens the dialog to edit the<a class="xref" href="TransitionConditionsOrder-9B7CA900.html"> Transition Conditions Order</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+<strong class="ph b">To generate new connecting arrows:</strong>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:14.63%" />
+<col style="width:85.37%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e222">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e226">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e222 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e226 ">
+<p class="p">
+Move the mouse pointer to the border of the state symbol
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e222 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e226 ">
+<p class="p">
+Cursor symbol turns into a hand
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e222 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e226 ">
+<p class="p">
+Now a connecting arrow can be dragged to the corresponding target object by holding down the mouse key
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+<strong class="ph b">To modify a connecting arrow:</strong>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:14.429999999999998%" />
+<col style="width:85.57%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e284">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e289">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e284 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e289 ">
+<p class="p">
+Left-click the arrow to be changed
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e284 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e289 ">
+<p class="p">
+A tail of the arrow can be moved to another state on the green rhombus that has now appeared
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e284 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e289 ">
+<p class="p">
+Move the green-bordered name or squares to change the course of the arrow
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__StateContextMenuCommands-A6498053">
+<a name="StateContextMenuCommands-A6498053" id="StateContextMenuCommands-A6498053">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__StateContextMenuCommands_A6498053" id="BasicFunctionBlockEditor_9FE10B6F__StateContextMenuCommands_A6498053">
+<!-- --></a><a name="StateContextMenuCommands_A6498053" id="StateContextMenuCommands_A6498053">
+<!-- --></a>
+<h2 class="title sectiontitle">
+State Context Menu Commands
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:16.72%" />
+<col style="width:83.28%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e355">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e359">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e355 ">
+<p class="p">
+<span class="ph uicontrol">Add action</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e359 ">
+<p class="p">
+Adds a new state which can be parameterized as described below.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e355 ">
+<p class="p">
+<span class="ph uicontrol">Breakpoint</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e359 ">
+<p class="p">
+Adds a breakpoint at the selected ECC state, in order to stop the processing of the ECC at a defined point while debugging in test container.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e355 ">
+<p class="p">
+<span class="ph uicontrol">Cut</span>
+</p>
+<p class="p">
+<span class="ph uicontrol">Copy</span>
+</p>
+<p class="p">
+<span class="ph uicontrol">Delete</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e359 ">
+<p class="p">
+These procedures are executed on the selected ECC state including any associated actions.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e355 ">
+<p class="p">
+<span class="ph uicontrol">Comment</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e359 ">
+<p class="p">
+Opens a dialog to edit the comment. The text of the comment will be displayed as a tooltip for the respective element.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__StateActionGrayBoxContextMenuComman-A6498160">
+<a name="StateActionGrayBoxContextMenuComman-A6498160" id="StateActionGrayBoxContextMenuComman-A6498160">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__StateActionGrayBoxContextMenuComman_A6498160" id="BasicFunctionBlockEditor_9FE10B6F__StateActionGrayBoxContextMenuComman_A6498160">
+<!-- --></a><a name="StateActionGrayBoxContextMenuComman_A6498160" id="StateActionGrayBoxContextMenuComman_A6498160">
+<!-- --></a>
+<h2 class="title sectiontitle">
+State Action (Gray Box) Context Menu Commands
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:18.51%" />
+<col style="width:81.49%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e439">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e443">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">None</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+Deletes the associated algorithm of the selected action. A checkmark on the left side next to the entry shows that the action has currently no algorithm associated.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">INIT</span>
+</p>
+<p class="p">
+<span class="ph uicontrol">REQ</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+The two entries shown here are deemed to be examples only. The number and names of the listed items depends on the number and names of any algorithms already created for the block. The existing algorithms of the block are listed here and are available for selection. Clicking on one of the entries will associate this algorithm to the selected action. The entry of the currently assigned algorithm is marked with a tick on the left next to the entry.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">New Algorithm </span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+This creates a new, empty algorithm. The new algorithm can then be opened and edited in the <span class="ph uicontrol">Algorithms</span> editor. After creating a new algorithm, a <span class="ph uicontrol">New Algorithm</span> dialog opens. The dialog is described below.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">Edit Algorithm</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+Opens the selected algorithm. The entry is only available if the action has already been assigned an algorithm.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">Delete Algorithm</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+Opens a submenu that lists the available algorithms. Only those algorithms can be deleted that are currently not assigned an action.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">Add action</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+Adds a new empty action to the corresponding state of this action, in the form as already described above at <em class="ph i">Context menu by right-clicking a state</em>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">Delete Action</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+Deletes the action (gray and light red box) where the right-click was performed on.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e439 ">
+<p class="p">
+<span class="ph uicontrol">Cut</span>
+</p>
+<p class="p">
+<span class="ph uicontrol">Copy</span>
+</p>
+<p class="p">
+<span class="ph uicontrol">Delete</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e443 ">
+<p class="p">
+These procedures are executed on the selected action as well as the associated (and therefore selected) ECC state including any eventually associated actions.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__StateActionLightRedBoxContextMenuCo-A64982F6">
+<a name="StateActionLightRedBoxContextMenuCo-A64982F6" id="StateActionLightRedBoxContextMenuCo-A64982F6">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__StateActionLightRedBoxContextMenuCo_A64982F6" id="BasicFunctionBlockEditor_9FE10B6F__StateActionLightRedBoxContextMenuCo_A64982F6">
+<!-- --></a><a name="StateActionLightRedBoxContextMenuCo_A64982F6" id="StateActionLightRedBoxContextMenuCo_A64982F6">
+<!-- --></a>
+<h2 class="title sectiontitle">
+State Action (Light Red Box) Context Menu Commands
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:15.02150215021502%" />
+<col style="width:84.97849784978499%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e585">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e589">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e585 ">
+<p class="p">
+None
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e589 ">
+<p class="p">
+Deletes the associated algorithm of the selected action. A checkmark on the left side next to the entry shows that the action has currently no output event associated.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e585 ">
+<p class="p">
+INITO
+</p>
+<p class="p">
+CNF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e589 ">
+<p class="p">
+The two entries shown here are deemed to be examples only. The number and names of the listed items depends on the number and names of any output events already created for the block. The existing output events of the block are listed here and are available for selection. Clicking on one of the entries will associate this output event to the selected action. The entry of the currently assigned output events is marked with a tick on the left next to the entry.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e585 ">
+<p class="p">
+New Output-Event ...
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e589 ">
+<p class="p">
+This creates a new output event. After defining a name for the new output event the <a class="xref" href="WithTypeEditor-9F3E5E3B.html">With Type Editor</a> opens and offers the list of any existing output variables of the block in order to enable associating the respective output variables with the new event.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e585 ">
+<p class="p">
+Add action
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e589 ">
+<p class="p">
+See table above
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e585 ">
+<p class="p">
+Delete Action
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e589 ">
+<p class="p">
+See table above
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e585 ">
+<p class="p">
+Cut
+</p>
+<p class="p">
+Copy
+</p>
+<p class="p">
+Delete
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e589 ">
+<p class="p">
+See table above
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__AddActions-A6498922">
+<a name="AddActions-A6498922" id="AddActions-A6498922">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__AddActions_A6498922" id="BasicFunctionBlockEditor_9FE10B6F__AddActions_A6498922">
+<!-- --></a><a name="AddActions_A6498922" id="AddActions_A6498922">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Add Actions
+</h2>
+<p class="p">
+<strong class="ph b">Add actions:</strong>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:14.63%" />
+<col style="width:85.37%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e695">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e699">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+Right-click on the corresponding state symbol (see <em class="ph i">Context menu after right-clicking a state</em> in text above)
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+Select <em class="ph i">Add Action</em>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+An empty action field is added.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+To add algorithm REQ for example: Right-click the gray box of the created action
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+Select REQ from context menu. In the same way an already assigned algorithm can be replaced by another one.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+Select <span class="ph uicontrol">New Algorithm</span> from context menu if the existing algorithms doesn't fit.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e695 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e699 ">
+<p class="p">
+Then open the context menu again and select the new action, or replace it immediately in the <span class="ph uicontrol">New Algorithm</span> dialog by selecting <span class="ph uicontrol">Associate with current action</span>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+<strong class="ph b">Description of the New Algorithm dialog:</strong>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:26.369999999999997%" />
+<col style="width:73.63%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e816">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e820">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e816 ">
+<p class="p">
+Go to editor
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e820 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Algorithms</span> editor immediately after the new action was created
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e816 ">
+<p class="p">
+Associate with current action
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e820 ">
+<p class="p">
+Replaces the chosen action by the new generated action
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e816 ">
+<p class="p">
+Create a new action
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e820 ">
+<p class="p">
+Creates an additional action with the newly-defined name for the selected action
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+<strong class="ph b">Continuing...</strong>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.04%" />
+<col style="width:87.96%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e881">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e885">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e881 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e885 ">
+<p class="p">
+If necessary an output event can be assigned an action (as INITO or REQ for example as shown in screenshot below): right-click the light red shaded rectangle of the action.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e881 ">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e885 ">
+<p class="p">
+Select the corresponding output event from the context menu
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e881 ">
+<p class="p">
+10
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e885 ">
+<p class="p">
+Or generate a new event output for the function block by selecting <strong class="ph b">New Event Output...</strong> from the context menu. In this case the <a class="xref" href="WithTypeEditor-9F3E5E3B.html">With Type Editor</a> opens to enable the definition of the association between event and the respective, existing data outputs directly. (Of course, the associations can also be edited via <a class="xref" href="FunctionBlockInterfaceEditor-9FE8270B.html">Function block Interface Editor</a> at any time.)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__Algorithms-A64862BE">
+<a name="Algorithms-A64862BE" id="Algorithms-A64862BE">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__Algorithms_A64862BE" id="BasicFunctionBlockEditor_9FE10B6F__Algorithms_A64862BE">
+<!-- --></a><a name="Algorithms_A64862BE" id="Algorithms_A64862BE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Algorithms
+</h2>
+<p class="p">
+The <span class="ph uicontrol">Algorithms</span> editor <img class="image" src="0000907850.png" alt="" style="max-height:18px;" /> contains one tab for each action used in the function block. This editor contains the algorithm for the action written in structured text in accordance with IEC 61131-3.
+</p>
+<p class="p">
+IntelliSense (Code Completion) is available by pressing the shortcut Ctrl+Spacebar to make editing easier.
+</p>
+<p class="p">
+Right-clicking the tab header of any existing algorithm opens a context menu with the following commands:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d307509e967">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d307509e972">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e967 ">
+<p class="p">
+<span class="ph uicontrol">Add Algorithm</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e972 ">
+<p class="p">
+Creates a new Algorithm.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e967 ">
+<p class="p">
+<span class="ph uicontrol">Rename Algorithm</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e972 ">
+<p class="p">
+Opens a dialog to rename the selected Algorithm.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d307509e967 ">
+<p class="p">
+<span class="ph uicontrol">Delete Variables</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d307509e972 ">
+<p class="p">
+Removes the selected Algorithm. This item is available only when the selected Algorithm currently is not in use in the ECC
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The context menu is not available if no Algorithm exists.
+</div>
+<p class="p">
+When no Algorithm exists the context menu is not available, because also no Algorithm tab header exists. To create a new Algorithm in this case, right-click the grey box of an action of a state in the Execution Control Chart editor as described above.
+</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Temporary Variables
+</h2>
+<p class="p">
+This command edits temporary variables using a grid located at the top of the selected Algorithm.
+</p>
+<p class="p">
+The grid editor can be accessed using the <span class="ph uicontrol">Algorithms</span> command, which is located in the grey vertical menu bar.
+</p>
+<p class="p">
+The grid allows to enter a new variable and to change its name, to edit the data type of the variable, enter the number of array elements or the minimum and maximum index value valid for the array, to enter an initial value for the variable to start with when entering the algorithm.
+</p>
+</div>
+<div class="section" id="BasicFunctionBlockEditor-9FE10B6F__TestFunction-A6485349">
+<a name="TestFunction-A6485349" id="TestFunction-A6485349">
+<!-- --></a><a name="BasicFunctionBlockEditor_9FE10B6F__TestFunction_A6485349" id="BasicFunctionBlockEditor_9FE10B6F__TestFunction_A6485349">
+<!-- --></a><a name="TestFunction_A6485349" id="TestFunction_A6485349">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Test Function
+</h2>
+<p class="p">
+The Test Container provides the ability to simulate the execution of basic function blocks singularly, even before it is instanced in a project.
+</p>
+<p class="p">
+A description of how to use the test container can be found at <a class="xref" href="TestContainerForBasicFunctionBlocks-A2DA856C.html">Test Container for Basic Function Blocks</a>.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

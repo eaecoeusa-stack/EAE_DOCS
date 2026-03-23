@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"CPU\" url=\"ATVd_CAT/CPUVW3A3530D-DBB12C5C.html#CPUVW3A3530D-DBB12C5C\"><book name=\"ATVdPACxVW3A3530D\" url=\"ATVd_CAT/ATVDPACVW3A3530DHardwareCAT-F9972E45.html\" src=\"toc4.js\" /></data>";

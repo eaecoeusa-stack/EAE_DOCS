@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Creating a Process View","type":"item","url":"EAE_UM/CreatingNewProcessViewCPT-F0590FF4.html#CreatingNewProcessViewCPT-F0590FF4"},{"name":"Personalizing a Process View","type":"item","url":"EAE_UM/MaintainingProcessViewCPT-F0592B20.html#MaintainingProcessViewCPT-F0592B20"},{"name":"Creating an AVEVA Model Plant View","type":"item","url":"EAE_UM/CreatingAnAvevaModelPlantView-7510C526.html"},{"name":"Handling Application Instances","type":"item","url":"EAE_UM/AddingCATInstanceCPT-F059199C.html#AddingCATInstanceCPT-F059199C"},{"name":"Bulk Development of a Process View","type":"item","url":"EAE_UM/RationaleForRepresentingAProcessTre-C8AB4B41.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Adding Archive Runtimes to the Archive Configuration","type":"item","url":"ARCHV_UG/AddingARuntimeForArchiveConfigurati-6C742DA9.html"},{"name":"Configuring an Archive_Database Object","type":"item","url":"ARCHV_UG/CreatingAndConfiguringAnArchiveData-6C77DB78.html"},{"name":"Creating and Configuring an Archive_Link Object","type":"item","url":"ARCHV_UG/CreatingAndConfiguringAnArchiveLink-6C78FC34.html"},{"name":"Creating and Configuring CAT_HMI Input Variables for Archiving","type":"item","url":"ARCHV_UG/ConfiguringHMIInputVariablesForArch-6CDFD9EB.html"},{"name":"Configuring a dPAC Object for Archiving","type":"item","url":"ARCHV_UG/CreatingAndConfiguringASoftDPACRunt-6CDE84F0.html"},{"name":"Configuring Alarm Archiving","type":"item","url":"ARCHV_UG/ConfiguringAlarmArchiving-928E75C3.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

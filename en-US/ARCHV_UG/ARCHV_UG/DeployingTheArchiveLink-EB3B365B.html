@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Deploying the Archive Link (Windows)" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="DeployingTheArchiveLink-EB3B365B" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Deploying the Archive Link (Windows)
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.0_2";
+//]]></script>
+<meta name="brsprev" value="ARCHV_UG/CreatingAnArchivingDatabase-6CF7D440.html" />
+<meta name="brsnext" value="ARCHV_UG/TestingHMIInputDataAndAlarmArchivin-EB3B5E15.html" />
+<meta name="topic-breadcrumbs" content="Archive - User Guide &gt; EcoStruxure Automation Expert - Archive Commissioning" />
+</head>
+<body id="DeployingTheArchiveLink-EB3B365B"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html");
+document.write("<a href=\"ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html\">Archive - User Guide<\/a> > <a href=\"Commissioning-952FE4B0.html\">EcoStruxure Automation Expert - Archive Commissioning<\/a> > Deploying the Archive Link (Windows)<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="DeployingTheArchiveLink-EB3B365B" id="DeployingTheArchiveLink-EB3B365B_">
+<!-- --></a><a name="DeployingTheArchiveLink_EB3B365B" id="DeployingTheArchiveLink_EB3B365B">
+<!-- --></a><a name="DeployingTheArchiveLink_EB3B365B" id="DeployingTheArchiveLink_EB3B365B_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Deploying the Archive Link (Windows)
+</h1>
+<div class="body conbody">
+
+<div class="section" id="DeployingTheArchiveLink-EB3B365B__DeployingTheArchiveLink-A3369997">
+<a name="DeployingTheArchiveLink-A3369997" id="DeployingTheArchiveLink-A3369997">
+<!-- --></a><a name="DeployingTheArchiveLink_EB3B365B__DeployingTheArchiveLink_A3369997" id="DeployingTheArchiveLink_EB3B365B__DeployingTheArchiveLink_A3369997">
+<!-- --></a><a name="DeployingTheArchiveLink_A3369997" id="DeployingTheArchiveLink_A3369997">
+<!-- --></a>
+<p class="p">
+When the Archive link is deployed, the data from the <span class="ph">dPAC</span> devices is collected and sent to the database. Then HMI clients can access the archived data in the PostgreSQL database.
+</p>
+<p class="p">
+To deploy the Archive link:
+</p>
+<div class="p">
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">Deploy and Diagnostic</span> editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">Action</span> menu of the <span class="ph uicontrol">Archive_Link</span> object, and select <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Archive Link Configuration</span></span>.
+</p>
+</li>
+</ol>
+.
+</div>
+<p class="p">
+To confirm that the Archive link deployed properly, and to manage and monitor the Archive link in the future, you can use <span class="ph uicontrol">Archive Manager 2x.x</span>. This is a software tool, installed automatically when you install <span class="ph">EcoStruxure Automation Expert - Runtime</span>. To open it, click <span class="ph menucascade"><span class="ph uicontrol">Start</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">EcoStruxure Automation Expert 2x.x</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Archive Manager 2x.x</span></span>.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Archive Manager 2x.x</span> interface consists of a <span class="ph uicontrol">Service Status</span> tab and an <span class="ph uicontrol">Archive Links</span> tab.
+</p>
+<p class="p">
+Use the <span class="ph uicontrol">Service Status</span> tab to display the number of archive links configured and running, the service port number and the date the service started running. Because only one link is configured for the <span class="ph uicontrol">Archive_Link</span> object, this tab confirms that the link is configured and running.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Archive Links</span> tab presents a list of the active Archive links. Select an Archive link and click the right mouse button to display a menu containing the following commands you can use to manage the selected Archive link:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:21%" />
+<col style="width:79%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d1845e147">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d1845e152">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Log In</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Enter Credentials</span> dialog where you can enter your management service username and password. When a valid username and password combination is entered, the remaining commands are enabled.
+</p>
+<p class="p">
+<strong class="ph b">NOTE:</strong> The valid username and password combination are configured in the <span class="ph uicontrol">Management Service</span> property of the <span class="ph uicontrol">Archive_Link</span> object. By default, <kbd class="ph userinput">managementservice</kbd> is used for both the username and password.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Start</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Manually starts an Archive link. This command is impacted neither by enable nor disable status.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Stop</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Manually stops an Archive link. This command is impacted neither by enable nor disable status.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Enable</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Activates the automatic start and stop of an archive link depending on Archive service command. As enabled, it starts the archive link automatically when the archive service starts (for example, when Windows boots).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Disable</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+De-activates the automatic start and stop of an Archive link depending on Archive service command. As disabled, it does not impact the Archive link if the archive service starts or stops.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Show Service Log Directory</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Displays the directory containing logs of the archiving service.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Show Archive Link Log Directory</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Displays the directory containing logs of the selected Archive link.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Assign Licenses</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Disabled and not used.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Delete</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Removes the Archive link configuration files from the system where it is deployed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d1845e147 ">
+<p class="p">
+<span class="keyword cmdname">Log Out</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d1845e152 ">
+<p class="p">
+Ends the Archive link management session.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005116.05
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

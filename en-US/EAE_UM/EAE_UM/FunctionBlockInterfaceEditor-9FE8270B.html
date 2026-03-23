@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Interface Editor" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="FunctionBlockInterfaceEditor-9FE8270B" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Interface Editor
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.4.0_7";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/GenericInterfaceEditor-9BF0D85B.html" />
+<meta name="brsnext" value="EAE_UM/ServiceFunctionBlockEditor-9FE9E667.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Function Block Editors" />
+</head>
+<body id="FunctionBlockInterfaceEditor-9FE8270B"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"FunctionBlockEditors-9FE0F1E2.html#FunctionBlockEditors-9FE0F1E2\">Function Block Editors<\/a> > Interface Editor<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="FunctionBlockInterfaceEditor-9FE8270B" id="FunctionBlockInterfaceEditor-9FE8270B_">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B" id="FunctionBlockInterfaceEditor_9FE8270B">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B" id="FunctionBlockInterfaceEditor_9FE8270B_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Interface Editor
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Use the Interface editor to create the interfaces of a function block and to set its general adjustment, that is, which event interface will start which data processing. The editor presents the following functions for function block interfaces:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#FunctionBlockInterfaceEditor-9FE8270B__GenerateNewInterfaces-A64C57BE">Generate new interfaces</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#FunctionBlockInterfaceEditor-9FE8270B__DeleteOrRenameAnInterface-A64C62CC">Delete or rename interfaces</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#FunctionBlockInterfaceEditor-9FE8270B__GenerateAssociationsBetweenInterfac-A64C8581">Generate associations between interfaces</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#FunctionBlockInterfaceEditor-9FE8270B__InterfaceParameterAttributes-A64C8406">Parameterize interface attributes</a> for supported <a class="xref" href="#FunctionBlockInterfaceEditor-9FE8270B__ObjectTypes-A64C82A8">object types</a>
+</p>
+</li>
+</ul>
+<p class="p">
+The Interface editor can be used with Service, Basic, Composite, and Adapter function blocks, sub-applications, and CATs.
+</p>
+<p class="p">
+To open the Interface editor:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Open the Service, Basic, Composite, or Adapter function block editor, or the Sub-Application editor and click the <span class="ph uicontrol">Interface</span> icon <img class="image" src="0000907696.png" alt="" style="max-height:18px;" /> in the vertical menu on the left.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Double-click on a Service, Basic, Composite, or Adapter function block, Sub-Application, or CAT in the <a class="xref" href="SolutionExplorerPad-99502686.html"><strong class="ph b">Solution Explorer</strong> pad</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click on a function block in the <span class="ph uicontrol">Function Blocks Network</span> editor of the <a class="xref" href="SystemEditorOverview-9FEBC4B7.html">System editor</a> and click <span class="ph uicontrol">Go to definition</span>.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="FunctionBlockInterfaceEditor-9FE8270B__GenerateNewInterfaces-A64C57BE">
+<a name="GenerateNewInterfaces-A64C57BE" id="GenerateNewInterfaces-A64C57BE">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B__GenerateNewInterfaces_A64C57BE" id="FunctionBlockInterfaceEditor_9FE8270B__GenerateNewInterfaces_A64C57BE">
+<!-- --></a><a name="GenerateNewInterfaces_A64C57BE" id="GenerateNewInterfaces_A64C57BE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Generate New Interfaces
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.45%" />
+<col style="width:87.55%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d741317e143">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d741317e147">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e143 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e147 ">
+<p class="p">
+In the <span class="ph uicontrol">Function Block Interface</span> editor, left-click on <span class="ph uicontrol">&lt;new interface&gt;</span>, <span class="ph uicontrol">&lt;new variable&gt;</span>, or<span class="ph uicontrol">&lt;new adapter&gt;</span>, according to the requirements) .The row turns highlighted blue.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e143 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e147 ">
+<p class="p">
+Select the text by left-clicking again - or press F2 -, so that only the text is highlighted blue.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e143 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e147 ">
+<p class="p">
+Type in the new name.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e143 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e147 ">
+<p class="p">
+Confirm with Return or click on another row.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e143 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e147 ">
+<p class="p">
+Adjust the parameter if it is a variable (see below).
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="FunctionBlockInterfaceEditor-9FE8270B__DeleteOrRenameAnInterface-A64C62CC">
+<a name="DeleteOrRenameAnInterface-A64C62CC" id="DeleteOrRenameAnInterface-A64C62CC">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B__DeleteOrRenameAnInterface_A64C62CC" id="FunctionBlockInterfaceEditor_9FE8270B__DeleteOrRenameAnInterface_A64C62CC">
+<!-- --></a><a name="DeleteOrRenameAnInterface_A64C62CC" id="DeleteOrRenameAnInterface_A64C62CC">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Delete or Rename an Interface
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:24%" />
+<col style="width:76%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d741317e242">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d741317e247">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e242 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e247 ">
+<p class="p">
+Left-click once on the interface to be deleted or renamed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e242 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e247 ">
+<p class="p">
+When the whole row is highlighted blue, delete with Del key or click once again on the name - or press F2 - and type in a new name.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e242 ">
+<p class="p">
+alternatively
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e247 ">
+
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e242 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e247 ">
+<p class="p">
+Right-click on the interface to be deleted or renamed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e242 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e247 ">
+<p class="p">
+Click on the respective context menu entry <span class="ph uicontrol">Rename</span> or <span class="ph uicontrol">Remove</span> and, in case of <span class="ph uicontrol">Rename</span>, type in a new name.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="FunctionBlockInterfaceEditor-9FE8270B__GenerateAssociationsBetweenInterfac-A64C8581">
+<a name="GenerateAssociationsBetweenInterfac-A64C8581" id="GenerateAssociationsBetweenInterfac-A64C8581">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B__GenerateAssociationsBetweenInterfac_A64C8581" id="FunctionBlockInterfaceEditor_9FE8270B__GenerateAssociationsBetweenInterfac_A64C8581">
+<!-- --></a><a name="GenerateAssociationsBetweenInterfac_A64C8581" id="GenerateAssociationsBetweenInterfac_A64C8581">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Generate Associations Between Interfaces
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:24.5%" />
+<col style="width:75.5%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d741317e340">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d741317e345">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e340 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e345 ">
+<p class="p">
+With the left mouse key held down, drag the input variable to the corresponding input event (likewise for output).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e340 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e345 ">
+<p class="p">
+Release mouse key on the event.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e340 ">
+<p class="p">
+alternatively
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e345 ">
+<p class="p">
+In the <span class="ph uicontrol">With</span> column in the event area: click and then hold down the ellipsis (...)  button and follow the dialog <a class="xref" href="WithTypeEditor-9F3E5E3B.html"><strong class="ph b">With Type Editor</strong></a>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can delete associations using the reverse of the same procedure as for generating them. 
+</div>
+</div>
+<div class="section" id="FunctionBlockInterfaceEditor-9FE8270B__InterfaceParameterAttributes-A64C8406">
+<a name="InterfaceParameterAttributes-A64C8406" id="InterfaceParameterAttributes-A64C8406">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B__InterfaceParameterAttributes_A64C8406" id="FunctionBlockInterfaceEditor_9FE8270B__InterfaceParameterAttributes_A64C8406">
+<!-- --></a><a name="InterfaceParameterAttributes_A64C8406" id="InterfaceParameterAttributes_A64C8406">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Interface Parameter Attributes
+</h2>
+<p class="p">
+Use these attributes to define Interface variables and items:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:16.57%" />
+<col style="width:83.43%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d741317e417">
+<p class="p">
+Column
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d741317e421">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<span class="ph uicontrol">Name</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+The name of the interface is defined here.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<span class="ph uicontrol">Type</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+The variable type can be adjusted here out of a drop-down list (BOOL, INT, REAL, STRING, etc.).
+</p>
+<p class="p">
+At <strong class="ph b">Sockets → Plugs</strong>: the Adapter which has to be used can be chosen here. (Only available if some Adapter does already exist.)
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When using the data type STRING with Structured text-based blocks, a variable with a maximum length of 15 characters is generated per default. If this variable is to process longer strings, the length of the variable can be defined by adding the value in square brackets: e.g. STRING[60]
+</div>
+<p class="p">
+However, this behavior only affects Structured text-based blocks such as Basic function blocks. For IEC 61499 RT-based blocks (Composite, Service, Adapter) a length definition of string variables is not necessary and also not intended. The variables automatically allocate the required memory area according to the contents of the string variable. Example: The input via the HMI can be of any length without having to define the variable accordingly.
+</p>
+<p class="p">
+For STRING variables: There is no limit on the possible length of the variable. Only the size of the controller memory limits the size.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<a class="xref" href="IEC61131DataTypes-A3014D46.html#IEC61131DataTypes-A3014D46__Arrays-A3E2F71D"><span class="ph uicontrol">Array size</span></a>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+An array of the adjusted variable type can be defined here by inserting the array size. For this reason only the relevant number has to be inserted into the field.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<span class="ph uicontrol">Initial value</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+A default-value can be pre-defined here. This value will be active, if no other value has arrived at this interface. On first start, the variable will be initialized with this value, when defined.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For CAT_HMI, if you want to use a variable as a persistent variable, check out <a class="xref" href="OfflineParameterizationEditor-A14F653E.html">Offline Parametrization Editor</a> topic.
+</div>
+<p class="p">
+For IEC61131 user defined datatypes Structure and Array, right click in the cell and select <strong class="ph b">Reset </strong>to restore the initial value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<span class="ph uicontrol">With</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+In this column the links between EventIO and VariableIO are listed and can be edited. The dialog <a class="xref" href="WithTypeEditor-9F3E5E3B.html">With Type Editor</a> opens by a click on the ellipsis (...) button within the column <strong class="ph b">With </strong>(select the field to have the button visible) in one of the event rows. This dialog serves to edit the 'with construction' between event and data interfaces.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<span class="ph uicontrol">Attr</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+Attributes can be inserted here with the assistance of a dialog. A click on the ...-button within the column <strong class="ph b">Attr </strong>will open the dialog <a class="xref" href="Attribute-9BA6F72D.html">Attribute Editor</a> to edit the attributes.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e417 ">
+<p class="p">
+<span class="ph uicontrol">Comment</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e421 ">
+<p class="p">
+In this column explanatory comments to the relevant interface can be inserted.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="FunctionBlockInterfaceEditor-9FE8270B__ObjectTypes-A64C82A8">
+<a name="ObjectTypes-A64C82A8" id="ObjectTypes-A64C82A8">
+<!-- --></a><a name="FunctionBlockInterfaceEditor_9FE8270B__ObjectTypes_A64C82A8" id="FunctionBlockInterfaceEditor_9FE8270B__ObjectTypes_A64C82A8">
+<!-- --></a><a name="ObjectTypes_A64C82A8" id="ObjectTypes_A64C82A8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Object Types
+</h2>
+<p class="p">
+Description of the top level navigation tree nodes of the Interface editor:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:16.86%" />
+<col style="width:83.14%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d741317e573">
+<p class="p">
+Column
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d741317e577">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+EventInputs
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+The Event Inputs are located on the left side of the function block head. They serve to trigger the processing of specific logic processes within the function block. The state or value of the input variables connected with the event are read out by triggering the event.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+EventOutputs
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+The Event Outputs are located on the right side of the function block head. They serve to pass on the event when the function block has finished its processing, to cause the next function block in the chain to start processing its logic.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+InputVars
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+The Data Inputs are located on the left side of the function block body. They have to be connected with the relevant EventInputs, providing the necessary data for the processing. The name of a data input variable is displayed italic when no 'With-connection' with an event exists.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+OutputVars
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+The Data Outputs are located on the right side of the function block body. They have to be connected with the relevant EventOutputs. When the internal logic of the function block has been processed and an output event is fired, the data of the connected output variables will be provided at the data outputs for further processing. The name of a data output variable is displayed italic when no 'With-connection' with an event exists.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+Sockets
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+Sockets represent the Adapter inputs of the function block. They can only be used together with existing adapters. To use the <em class="ph i">new adapter</em> menu an <a class="xref" href="AdapterFunctionBlock-97C3E0D8.html">Adapter Function block</a> has to be created first. Sockets are available in Composite, CAT, and Service function blocks.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+Plugs
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+Plugs represent the Adapter outputs of the function block. They can only be used together with existing adapters. To use the <span class="ph uicontrol">&lt;new adapter&gt;</span> menu, an <a class="xref" href="AdapterFunctionBlock-97C3E0D8.html">Adapter Function block</a> has to be created first. Plugs are available in Composite, CAT, and Service function blocks.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+InternalVars
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+InternalVars does not create a visible port for the function block. It serves to define variables which are needed for the logic of the function block, but not required as an in- or output. These variables are available for the entire function block. If you need a variable just for a special part of the code, it is fully sufficient to define it in this part of the code.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+AdapterInputs
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+Basically identical to Plugs, but an adapter port, which is created as AdapterInput, can be used also within the function block only in its collectivity. Individual ports of the adapter cannot be accessed. AdapterInputs are available in Composite, CAT and subapplication function blocks.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d741317e573 ">
+<p class="p">
+AdapterOutputs
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d741317e577 ">
+<p class="p">
+Basically identical to Sockets, but an Adapter port, which is created as AdapterOutput, can be used also within the function block only in its collectivity. Individual ports of the adapter cannot be accessed. AdapterOutputs are available in Composite, CAT and subapplication function blocks.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Adding Modbus Registers" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="AddingModbusRegistersCPT-BDC2DB88" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Adding Modbus Registers
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.3.2.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/ManualDevelopmentCPT-A30AE92F.html" />
+<meta name="brsnext" value="EAE_UM/SettingModbusRegistersParametersCPT-BDC38365.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; Modbus &gt; Manual Development" />
+</head>
+<body id="AddingModbusRegistersCPT-BDC2DB88"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"ModbusCPT-ABBA2515.html#ModbusCPT-ABBA2515\">Modbus<\/a> > <a href=\"ManualDevelopmentCPT-A30AE92F.html#ManualDevelopmentCPT-A30AE92F\">Manual Development<\/a> > Adding Modbus Registers<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="AddingModbusRegistersCPT-BDC2DB88" id="AddingModbusRegistersCPT-BDC2DB88_">
+<!-- --></a><a name="AddingModbusRegistersCPT_BDC2DB88" id="AddingModbusRegistersCPT_BDC2DB88">
+<!-- --></a><a name="AddingModbusRegistersCPT_BDC2DB88" id="AddingModbusRegistersCPT_BDC2DB88_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Adding <span class="ph">Modbus</span> Registers
+</h1>
+<div class="body conbody">
+
+<p class="p">
+The first step of the manual development is to add the <span class="ph">Modbus</span> registers into <a class="xref" href="BusAndDeviceSetUp-BCD2CD4B.html">the <span class="ph">Modbus</span> device previously added</a> into the <a class="xref" href="HardwareConfigurator-A18C4217.html">Hardware Configuration</a> editor.
+</p>
+<p class="p">
+To add manually a <span class="ph">Modbus</span> register into these elements:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select <span class="ph">Modbus</span> device line and click on <span class="ph uicontrol">Add new HW-CAT</span> button: <img class="image" src="0001015855.png" alt="" />
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Add to [Modbus device Name]</span> dialog window opens with the <span class="ph uicontrol">Element Type</span> <span class="ph">Modbus</span> register selected.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The list is containing all the <span class="ph">Modbus</span> registers available to add into the <span class="ph">Modbus</span> device. As described in the chapter <a class="xref" href="ModbusCPT-ABBA2515.html"><span class="ph">Modbus</span></a>, there are:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">The <span class="ph">Modbus</span> Gateway registers</strong> at the top of the list.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">The Standard.IoModbus registers</strong> at the bottom of the list.
+</p>
+</li>
+</ul>
+<p class="p">
+As specified in the <a class="xref" href="ModbusCPT-ABBA2515.html"><span class="ph">Modbus</span></a> chapter, the development of <span class="ph">Modbus</span> communication shown in this documentation will only be using <span class="ph">Modbus</span> registers from the library <span class="ph uicontrol">SE.ModbusGateway</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In this <span class="ph">Modbus</span> Gateway list of <span class="ph">Modbus</span> registers, select the one fitting to the variable to transfer. To know which one will fit, check the following aspects:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Usage</strong>: If the variable to transfer through <span class="ph">Modbus</span> is sent, select a writing <span class="ph">Modbus</span> register starting by <span class="ph uicontrol">SE.ModbusGateway.MB_W</span>, the <span class="ph uicontrol">W</span> standing for write. If the variable is received, select a reading <span class="ph">Modbus</span>
+</p>
+register starting by <span class="ph uicontrol">SE.ModbusGateway.MB_R</span>, the <span class="ph uicontrol">R</span> standing for read.
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Type</strong>: Choose a <span class="ph">Modbus</span> register transmitting the same type than the one from the variable to transfer. Select a <span class="ph">Modbus</span> register finishing with the right variable type (<span class="ph uicontrol">BOOL</span>, <span class="ph uicontrol">WORD</span>, <span class="ph uicontrol">INT</span> and so on).
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The read <span class="ph">Modbus</span> registers automatically convert variable type chosen to its VTQ version (<span class="ph uicontrol">BOOL</span> to <span class="ph uicontrol">VTQBOOL</span> and so on). For more information about VTQ, refer to <a class="xref" href="TransmittingAndInterpretingOnlineVa-B9100674.html#TransmittingAndInterpretingOnlineVa-B9100674__InterpretTheOnlineValues-B9152098">Transmitting and Interpreting Online Values topic</a>.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For other information, refer to the <em class="ph i">SE.<span class="ph">Modbus</span> Gateway - Library Guide</em> topic <span class="ph"><a class="xref " href="../../LIB_MBGat/index.htm?rhmapid=ListofTypeHandledCPT_D35F91AA" target="_blank"><em class="ph i">List of Type Handled</em></a></span>.
+</div>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Select the <span class="ph">Modbus</span> register applying to these two rules, enter its name and click <span class="ph uicontrol">Add</span>.
+</p>
+</li>
+</ol>
+<p class="p">
+Even though the dialog window won’t close after clicking on <span class="ph uicontrol">Add</span>, the <span class="ph">Modbus</span> register will still be added into the <span class="ph">Modbus</span> device. As the dialog window remains open, multiple <span class="ph">Modbus</span> registers can be added at the same time. Click on <span class="ph uicontrol">Close</span> when all the <span class="ph">Modbus</span> registers have be added.
+</p>
+<p class="p">
+When all <span class="ph">Modbus</span> registers have been added into the <span class="ph">Modbus</span> device, it is necessary to configure them so they are transmitting correctly the expected variable. To do so, check the topic <a class="xref" href="SettingModbusRegistersParametersCPT-BDC38365.html">Setting <span class="ph">Modbus</span> Registers Parameters</a>.
+</p>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

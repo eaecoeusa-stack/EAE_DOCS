@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"EcoStruxure Automation Expert - Buildtime","type":"item","url":"EAE_RNote/EAE-BuildtimeInformation-1AA8F33B.html"},{"name":"EcoStruxure Automation Expert - Archive","type":"item","url":"EAE_RNote/ArchiveInformation-1AAD163D.html"},{"name":"EcoStruxure Automation Expert - HMI","type":"item","url":"EAE_RNote/HMIInformation-1AADEB61.html"},{"key":"toc7","name":"EcoStruxure Automation Expert Platform","type":"book","url":"EAE_RNote/EAEPInformations-1ADAB15F.html"},{"name":"AVEVA System Platform","type":"item","url":"EAE_RNote/AVEVASystemPlatform-1ADD9704.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

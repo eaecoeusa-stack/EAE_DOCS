@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Action Commands Triggering Operating State Transitions" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ActionCommandsImpactOnOperatingStat-D5181A41" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Action Commands Triggering Operating State Transitions
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.8.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/DeviceOperatingStateTransitions-CEF0F9F3.html" />
+<meta name="brsnext" value="EAE_UM/OtherActionMenuCommands-0D58A3CC.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Operating States" />
+</head>
+<body id="ActionCommandsImpactOnOperatingStat-D5181A41"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"OperatingStates-D388BB10.html#OperatingStates-D388BB10\">Operating States<\/a> > Action Commands Triggering Operating State Transitions<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ActionCommandsImpactOnOperatingStat-D5181A41" id="ActionCommandsImpactOnOperatingStat-D5181A41_">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41" id="ActionCommandsImpactOnOperatingStat_D5181A41">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41" id="ActionCommandsImpactOnOperatingStat_D5181A41_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Action Commands Triggering Operating State Transitions
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+The following action commands, available in the <a class="xref" href="DeployAndDiagnosticEditor-A223637D.html">Deploy and Diagnostic editor</a>, can impact a device’s operating state:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__Clean-D51B0DBC">Clean</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__Deploy-D51B196F">Deploy</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__LoadBootProject-D51B1E69">Load Boot Project</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__RebootDevice-D51B284F">Reboot Device</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__RestartRuntime-D51B2A94">Restart Runtime</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__Run-D51B2D1E">Run</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__Stop-D51B31D1">Stop</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__Clean-D51B0DBC">
+<a name="Clean-D51B0DBC" id="Clean-D51B0DBC">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__Clean_D51B0DBC" id="ActionCommandsImpactOnOperatingStat_D5181A41__Clean_D51B0DBC">
+<!-- --></a><a name="Clean_D51B0DBC" id="Clean_D51B0DBC">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Clean
+</h2>
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span> command deletes both the application (program logic) and hardware configuration (I/O and communication) settings from the device execution memory.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--warning">
+<span class="hazardstatement--warning-symbol"> </span>WARNING
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+UNINTENDED EQUIPMENT OPERATION
+</div>
+<div class="howtoavoid">
+Before performing a “Clean” command on a running dPAC, make sure that the resulting immediate interruption of the execution will not have unwanted effects on equipment operation.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in death, serious injury, or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p class="p">
+This command can be executed as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Manually via <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span>. The device enters the <strong class="ph b">Clean</strong> state.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Automatically via:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>, with the <span class="ph uicontrol">Deploy Service &gt;</span> <span class="keyword parmname">Clean before deploy</span> parameter set to <strong class="ph b">True</strong>. Then the device enters the <strong class="ph b">Stopped</strong> state unless the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings &gt;</span></span> <span class="keyword parmname">Auto start after deploy</span> parameter is set to <strong class="ph b">True</strong>, causing the device to enter the <strong class="ph b">Running</strong> state.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For devices that include a physical STOP switch, like M251d and M262d, the device enters the <strong class="ph b">Running</strong> state only if the switch is set to the RUN position. If the switch is set to STOP, the device remains in the <strong class="ph b">Stopped</strong> state.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Reboot Device</span></span>, or cycling device power, which clean the device before loading the boot project, then the device enters the <strong class="ph b">Stopped</strong> state, unless the <span class="keyword parmname">BehaviorAfterReboot</span> parameter specifies differently.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="p">
+When the device is in <strong class="ph b">Clean</strong> state, an application can be written to the device execution memory using:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Boot Project</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Load Boot Project</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__Deploy-D51B196F">
+<a name="Deploy-D51B196F" id="Deploy-D51B196F">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__Deploy_D51B196F" id="ActionCommandsImpactOnOperatingStat_D5181A41__Deploy_D51B196F">
+<!-- --></a><a name="Deploy_D51B196F" id="Deploy_D51B196F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Deploy
+</h2>
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span> command writes the compiled project in the device execution memory, including both the application (program logic) and hardware configuration (I/O and communication).
+</p>
+<p class="p">
+This command can be executed in any operating state, but requires the device to transition to <strong class="ph b">Clean</strong> state.
+</p>
+<p class="p">
+<strong class="ph b">Clean</strong> state can be achieved:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Manually by executing a <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span> command, or
+</p>
+</li>
+<li class="li">
+<p class="p">
+Automatically when executing a <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span> command with the <span class="ph uicontrol">Deploy Service &gt;</span> <span class="keyword parmname">Clean before deploy</span> parameter set to <strong class="ph b">True</strong>.
+</p>
+</li>
+</ul>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--warning">
+<span class="hazardstatement--warning-symbol"> </span>WARNING
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+UNINTENDED EQUIPMENT OPERATION
+</div>
+<div class="howtoavoid">
+Before performing a “Clean” command on a running dPAC, make sure that the resulting immediate interruption of the execution will not have unwanted effects on equipment operation.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in death, serious injury, or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p class="p">
+After a successful deployment, the behavior of the application depends on the parameter (set in the <a class="xref" href="LogicalDevices-A0877135.html">Logical Devices editor</a>)  <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings &gt;</span></span> <span class="keyword parmname">Auto start after deploy</span>. If this parameter is set to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">True:</strong> the application immediately enters the <strong class="ph b">Running</strong> state (unless a physical STOP switch on the device is set to the STOP position, thereby preventing the start of the application).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">False:</strong> (the default setting) the application enters the <strong class="ph b">Stopped</strong> state. To start the application, select the command <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Run</span></span>.
+</p>
+</li>
+</ul>
+<p class="p">
+For very large solutions or very slow devices, the time to complete deployment can be long, resulting in a timeout. To reduce the likelihood of a timeout, increase the value of the long timeout setting. To do this, make edits in two places:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">File</span> to open the backstage, then select <a class="xref" href="InstalledPlug-ins-9B7AA8C5.html"><span class="ph uicontrol">Installed Plug-ins</span></a> <span class="ph menucascade"><span class="ph uicontrol">EcoRT Plugin</span></span>, then click <span class="ph uicontrol"> Settings</span> to access and edit the value for <span class="keyword parmname">Long Command Timeout</span>. 
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the<a class="xref" href="LogicalDevices-A0877135.html"> Logical Devices editor</a>, select a device, then in the <a class="xref" href="PropertiesPad-99E23478.html"><strong class="ph b">Properties pad</strong></a>, navigate to <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Communication</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>  then edit the setting for the <span class="keyword parmname">TimeoutLong</span> parameter.
+</p>
+</li>
+</ol>
+<p class="p">
+After a full deploy, inputs and outputs go to their fallback state and the application enters <strong class="ph b">Stopped</strong> state.
+</p>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__LoadBootProject-D51B1E69">
+<a name="LoadBootProject-D51B1E69" id="LoadBootProject-D51B1E69">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__LoadBootProject_D51B1E69" id="ActionCommandsImpactOnOperatingStat_D5181A41__LoadBootProject_D51B1E69">
+<!-- --></a><a name="LoadBootProject_D51B1E69" id="LoadBootProject_D51B1E69">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Load Boot Project
+</h2>
+<p class="p">
+The load boot project command writes in the device execution memory the project previously stored in the device via the <span class="ph menucascade"><span class="ph uicontrol">Boot Project</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Set Running Project as Boot Project</span></span> command.
+</p>
+<p class="p">
+The boot project includes both the application (program logic) and hardware configuration (I/O and communication) settings. This command is available only in <strong class="ph b">Clean</strong> state.
+</p>
+<p class="p">
+The resulting operating state can be:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Clean</strong>: if no coherent boot project exists. A boot project is coherent when all of the following conditions are met:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+It exists.
+</p>
+</li>
+<li class="li">
+<p class="p">
+It is not corrupted and has not been tampered with.
+</p>
+</li>
+<li class="li">
+<p class="p">
+It is compatible with the solution's hardware configuration.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Stopped</strong>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+if a coherent boot project exists, and if the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings</span></span> <span class="keyword parmname">Auto start after deploy</span> parameter = FALSE
+</p>
+</li>
+<li class="li">
+<p class="p">
+if a physical STOP switch is STOP
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Running</strong> if a coherent boot project exists, and if the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings</span></span> <span class="keyword parmname">Auto start after deploy</span> parameter = TRUE, and in the absence of a physical STOP switch in STOP position.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">ErrorHalt</strong>: if an error is detected when parsing the coherent boot project.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The boot project will also be loaded upon<span class="ph uicontrol"> Restart Runtime</span>, <span class="ph uicontrol">Reboot Device</span> and cycling device power, but the resulting operating state will then depend on the <span class="keyword parmname">Behavior on reboot</span> parameter.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If the boot project itself causes an execution error, the running device will go to <span class="ph uicontrol">Error Halt</span> state repeatedly after each attempt to execute it, creating an endless loop. This could happen in several scenario (after <span class="ph uicontrol">Load Boot Project</span>, <span class="ph uicontrol">Restart Runtime</span> and <span class="ph uicontrol">Reboot Device</span> commands or device power cycle, if the settings trigger the boot project execution).
+<p class="p">
+Follow these steps to avoid such a loop:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Boot Project</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Delete Boot Project</span></span> (causing the error loop).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span> (another project).
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__RebootDevice-D51B284F">
+<a name="RebootDevice-D51B284F" id="RebootDevice-D51B284F">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__RebootDevice_D51B284F" id="ActionCommandsImpactOnOperatingStat_D5181A41__RebootDevice_D51B284F">
+<!-- --></a><a name="RebootDevice_D51B284F" id="RebootDevice_D51B284F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Reboot Device
+</h2>
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Reboot Device</span></span> command immediately stops the application execution and causes the device to power cycle. The services running on the device, including both the dPAC EcoRT runtime service and any non-EcoRT services, are re-initialized.
+</p>
+<p class="p">
+Non-EcoRT services running on the device can include (but are not limited to) EcoStruxure Automation Device Maintenance (EADM) server, Network Time Protocol (NTP) client, and the EtherNet/IP communication service.
+</p>
+<p class="p">
+Use the <span class="ph uicontrol">Reboot Device</span> command (instead of the <span class="ph uicontrol">Restart Runtime</span> command) if non-EcoRT services need to be re-initialized.
+</p>
+<p class="p">
+Use the <span class="ph uicontrol">Restart Runtime</span> command if only the EcoRT service needs to be re-initialized.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Reboot Device</span> command impacts the dPAC EcoRT runtime service in the same way as the <span class="ph uicontrol">Restart Runtime</span> command. Refer to <a class="xref" href="#ActionCommandsImpactOnOperatingStat-D5181A41__RestartRuntime-D51B2A94"><span class="ph uicontrol">Restart Runtime</span></a> for the details on how the <span class="ph uicontrol">Reboot Device</span> command impacts the potential resulting operating states.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Reboot Device</span> command does not impact the dPAC EcoRT runtime service running in simulation mode in <span class="ph">EcoStruxure Automation Expert</span>.
+</div>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__RestartRuntime-D51B2A94">
+<a name="RestartRuntime-D51B2A94" id="RestartRuntime-D51B2A94">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__RestartRuntime_D51B2A94" id="ActionCommandsImpactOnOperatingStat_D5181A41__RestartRuntime_D51B2A94">
+<!-- --></a><a name="RestartRuntime_D51B2A94" id="RestartRuntime_D51B2A94">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Restart Runtime
+</h2>
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Restart Runtime</span></span> command:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Immediately stops the application execution, and
+</p>
+</li>
+<li class="li">
+<p class="p">
+Causes the termination and restart of the dPAC process.
+</p>
+</li>
+</ul>
+<p class="p">
+The content of the device execution memory is lost, and the device attempts a startup process based on the following logic (identical for <span class="ph uicontrol">Reboot Device</span> and device power cycle):
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+absence of boot project =&gt; Clean
+</p>
+</li>
+<li class="li">
+<p class="p">
+detected error while checking the boot project =&gt; Error Halt
+</p>
+</li>
+<li class="li">
+<p class="p">
+(with valid boot project loaded in device execution memory) depending on the value of <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Boot</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Behavior on reboot</span></span> property:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Run</span>: Device enters <strong class="ph b">Running</strong> state (unless prevented by a physical STOP switch set to STOP).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Stop</span>: Device enters <strong class="ph b">Stopped</strong> state.
+</p>
+</li>
+<li class="li">
+<div class="p">
+<span class="ph uicontrol">LastState</span>: The most recent state is attempted:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Clean</strong> =&gt; Clean
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Running</strong> or <strong class="ph b">Stopped</strong> =&gt; Running or Stopped (leveraging a physical STOP switch position)
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Error Halt</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+if the error was found on a Clean state =&gt; Clean
+</p>
+</li>
+<li class="li">
+<p class="p">
+if the error was found on a Running state =&gt; Stopped
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<div class="p">
+<span class="ph uicontrol">LastStateIgnoreErr</span>: The most recent state is attempted:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Clean</strong> =&gt; Clean
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Running</strong> or <strong class="ph b">Stopped</strong> =&gt; Running or Stopped (leveraging a physical STOP switch position)
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Error Halt</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+if the error was found on a Clean state =&gt; Clean
+</p>
+</li>
+<li class="li">
+<p class="p">
+if the error was found on a Running state =&gt; Running or Stopped (leveraging a physical STOP switch position)
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__Run-D51B2D1E">
+<a name="Run-D51B2D1E" id="Run-D51B2D1E">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__Run_D51B2D1E" id="ActionCommandsImpactOnOperatingStat_D5181A41__Run_D51B2D1E">
+<!-- --></a><a name="Run_D51B2D1E" id="Run_D51B2D1E">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Run
+</h2>
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Run</span></span> command:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Is only available when the device is in the <strong class="ph b">Stopped</strong> state either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+after execution of the <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span> (full deploy) command, or
+</p>
+</li>
+<li class="li">
+<p class="p">
+after a <span class="ph uicontrol">Load Boot Project</span> command.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+is not available after a <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Stop</span></span> command.
+</p>
+</li>
+<li class="li">
+<p class="p">
+and, (providing the absence of a physical STOP switch in the STOP position):
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+triggers the execution of the application stored in the device execution memory.
+</p>
+</li>
+<li class="li">
+<p class="p">
+sets the device to the <strong class="ph b">Running</strong> state.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="ActionCommandsImpactOnOperatingStat-D5181A41__Stop-D51B31D1">
+<a name="Stop-D51B31D1" id="Stop-D51B31D1">
+<!-- --></a><a name="ActionCommandsImpactOnOperatingStat_D5181A41__Stop_D51B31D1" id="ActionCommandsImpactOnOperatingStat_D5181A41__Stop_D51B31D1">
+<!-- --></a><a name="Stop_D51B31D1" id="Stop_D51B31D1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Stop
+</h2>
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Stop</span></span> command
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+is available only when the device is in the <strong class="ph b">Running</strong> state.
+</p>
+</li>
+<li class="li">
+<p class="p">
+immediately stops the application execution.
+</p>
+</li>
+<li class="li">
+<p class="p">
+sets the device in the <strong class="ph b">Stopped</strong> state.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> After a <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Stop</span></span> command, use either a <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Reboot Device</span></span> or <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Restart Runtime</span></span> command to move the device from <strong class="ph b">Stopped</strong> to <strong class="ph b">Running</strong>.
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

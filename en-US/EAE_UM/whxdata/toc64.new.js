@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Deploy to Run Devices","type":"item","url":"EAE_UM/DeploytoRunDeviceCPT-544082C1.html#DeploytoRunDeviceCPT-544082C1"},{"name":"Status","type":"item","url":"EAE_UM/DeviceStatusAndForcedVariables-EC276BCF.html"},{"name":"Device Information","type":"item","url":"EAE_UM/DeviceInformation-86304C78.html#DeviceInformation-86304C78"},{"name":"Export Deploy Data","type":"item","url":"EAE_UM/ExportDeployData-D557A792.html"},{"name":"IP Address Management in Deploy and Diagnostic","type":"item","url":"EAE_UM/IPAddressManagementInDeployAndDiagn-D5512F9E.html"},{"key":"toc65","name":"Actions","type":"book","url":"EAE_UM/DeviceAction-EC279F2B.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

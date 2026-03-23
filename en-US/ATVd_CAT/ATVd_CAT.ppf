@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="ATVd_CAT" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="8" page="ATVd_CAT\Abstract-F5F961F4.html">
+  </contextentry>
+  <contextentry id="23" page="ATVd_CAT\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="12" page="ATVd_CAT\D-SE-0095676_1.html">
+  </contextentry>
+  <contextentry id="37" page="ATVd_CAT\D-SE-0104759.html">
+  </contextentry>
+  <contextentry id="7" page="ATVd_CAT\D-SE-0104934.html">
+  </contextentry>
+  <contextentry id="6" page="ATVd_CAT\D-SE-0104936.html">
+  </contextentry>
+  <contextentry id="5" page="ATVd_CAT\D-SE-0104938.html">
+  </contextentry>
+  <contextentry id="22" page="ATVd_CAT\D-SE-0105336_1.html">
+  </contextentry>
+  <contextentry id="21" page="ATVd_CAT\D-SE-0105336.html">
+  </contextentry>
+  <contextentry id="20" page="ATVd_CAT\D-SE-0105337_1.html">
+  </contextentry>
+  <contextentry id="19" page="ATVd_CAT\D-SE-0105337_2.html">
+  </contextentry>
+  <contextentry id="18" page="ATVd_CAT\D-SE-0105337.html">
+  </contextentry>
+  <contextentry id="17" page="ATVd_CAT\D-SE-0105338.html">
+  </contextentry>
+  <contextentry id="34" page="ATVd_CAT\D-SE-0106073.html">
+  </contextentry>
+  <contextentry id="33" page="ATVd_CAT\D-SE-0106074.html">
+  </contextentry>
+  <contextentry id="32" page="ATVd_CAT\D-SE-0106075.html">
+  </contextentry>
+  <contextentry id="31" page="ATVd_CAT\D-SE-0106076.html">
+  </contextentry>
+  <contextentry id="30" page="ATVd_CAT\D-SE-0106078.html">
+  </contextentry>
+  <contextentry id="29" page="ATVd_CAT\D-SE-0106079.html">
+  </contextentry>
+  <contextentry id="16" page="ATVd_CAT\D-SE-0106453.html">
+  </contextentry>
+  <contextentry id="15" page="ATVd_CAT\D-SE-0106454.html">
+  </contextentry>
+  <contextentry id="14" page="ATVd_CAT\D-SE-0106455.html">
+  </contextentry>
+  <contextentry id="13" page="ATVd_CAT\D-SE-0106456.html">
+  </contextentry>
+  <contextentry id="3" page="ATVd_CAT\D-SE-0106534.html">
+  </contextentry>
+  <contextentry id="2" page="ATVd_CAT\D-SE-0106535.html">
+  </contextentry>
+  <contextentry id="1" page="ATVd_CAT\D-SE-0106536.html">
+  </contextentry>
+  <contextentry id="10" page="ATVd_CAT\D-SE-0107028.html">
+  </contextentry>
+  <contextentry id="9" page="ATVd_CAT\D-SE-0107029.html">
+  </contextentry>
+  <contextentry id="28" page="ATVd_CAT\D-SE-0107030.html">
+  </contextentry>
+  <contextentry id="27" page="ATVd_CAT\D-SE-0107032.html">
+  </contextentry>
+  <contextentry id="26" page="ATVd_CAT\D-SE-0107033.html">
+  </contextentry>
+  <contextentry id="25" page="ATVd_CAT\D-SE-0107034.html">
+  </contextentry>
+  <contextentry id="24" page="ATVd_CAT\D-SE-0107535.html">
+  </contextentry>
+  <contextentry id="35" page="ATVd_CAT\D-SE-0107702.html">
+  </contextentry>
+  <contextentry id="4" page="ATVd_CAT\ResolverModuleVW3A3423-C8ADE453.html">
+  </contextentry>
+  <contextentry id="36" page="ATVd_CAT\VW3A3422EncoderAnalogModule-CA2D147F.html">
+  </contextentry>
+  <contextentry id="11" page="ATVd_CAT\VW3A3422EncoderAnalogModuleSDefault-C7A26718.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="ATVd_CAT\ATVd_CAT_D-SE-0105319.html">
+  <topic>ATVd_CAT\Abstract-F5F961F4.html
+  </topic>
+  <topic>ATVd_CAT\AltistartMSLight-ApplicationCAT-0BA3217E.html
+  </topic>
+  <topic>ATVd_CAT\AltistartMSLightIntegration-0BAFFAD1.html
+  </topic>
+  <topic>ATVd_CAT\AltivarLightVS-ApplicationCAT-03E472F2.html
+  </topic>
+  <topic>ATVd_CAT\AltivarLightVSIntegration-03E6D1A0.html
+  </topic>
+  <topic>ATVd_CAT\AltivarVS-ApplicationCAT-03E89435.html
+  </topic>
+  <topic>ATVd_CAT\AltivarVSIntegration-03ECA3CF.html
+  </topic>
+  <topic>ATVd_CAT\AndlingExampleWithPositionerVSDBase-CB8EF17C.html
+  </topic>
+  <topic>ATVd_CAT\ApplicationCAT-DBBEBB10.html
+  </topic>
+  <topic>ATVd_CAT\ApplicationExample-4D043E84.html
+  </topic>
+  <topic>ATVd_CAT\ATV32BitCyclicScanner-Properties-01E03651.html
+  </topic>
+  <topic>ATVd_CAT\ATV32BitCyclicScannerHMISymbol-02654CE6.html
+  </topic>
+  <topic>ATVd_CAT\ATV32BitCyclicScannerIntegrationToE-03D11180.html
+  </topic>
+  <topic>ATVd_CAT\AtvCmdUserBits-5F8E6A7C.html
+  </topic>
+  <topic>ATVd_CAT\ATVCyclicScanner-DCB9EF0D.html
+  </topic>
+  <topic>ATVd_CAT\AtvDatatypeConverter-5F73CBEC.html
+  </topic>
+  <topic>ATVd_CAT\ATVDD_IN-E09B29F4.html
+  </topic>
+  <topic>ATVd_CAT\ATVDD_OUT-E09B2ECC.html
+  </topic>
+  <topic>ATVd_CAT\ATVDisplay-HardwareCAT-F5F94129.html
+  </topic>
+  <topic>ATVd_CAT\ATVDisplayConfiguration-F8F9DE30.html
+  </topic>
+  <topic>ATVd_CAT\ATVDisplayIntegration-F67A511D.html
+  </topic>
+  <topic>ATVd_CAT\ATVDisplayProperties-F5F98BD6.html
+  </topic>
+  <topic>ATVd_CAT\ATVDPACVW3A3530DHardwareCAT-F9972E45.html
+  </topic>
+  <topic>ATVd_CAT\ATVDPACVW3A3530DSAtv340Ex30to75kW-F9976DCA.html
+  </topic>
+  <topic>ATVd_CAT\ATVDPACVW3A3530DSAtv340x075to22kW-F9976719.html
+  </topic>
+  <topic>ATVd_CAT\ATVDPACVW3A3530DSAtv6xx-F9979D96.html
+  </topic>
+  <topic>ATVd_CAT\ATVDPACVW3A3530DSAtv9xx-F997A575.html
+  </topic>
+  <topic>ATVd_CAT\ATVd_CAT_D-SE-0105319.html
+  </topic>
+  <topic>ATVd_CAT\ATVd_CAT_id_disclaimer_tpc.html
+  </topic>
+  <topic>ATVd_CAT\AtvEtaDecoder-952AA75F.html
+  </topic>
+  <topic>ATVd_CAT\AtvEtaDecoder-952AA75F_1.html
+  </topic>
+  <topic>ATVd_CAT\AtvEtaDecoder-952AA75F_2.html
+  </topic>
+  <topic>ATVd_CAT\AtvEtaDecoder-952AA75F_3.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-FpDriveCtrl-50965F21.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-FpDriveSettings-5096590E.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-FpDriveTrend-509651C3.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-HardwareCAT-4D7D9D91.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-HardwareConfigu-4D7F4C36.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-Properties-4D806B68.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-SDrive-4D817817.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControl-SDriveInterface-5098FC3F.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControlLight-HardwareCA-4D7D9253.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControlLight-HardwareCo-4D7F438D.html
+  </topic>
+  <topic>ATVd_CAT\ATVFrequencyControlLight-Properties-4D801C5E.html
+  </topic>
+  <topic>ATVd_CAT\AtvPersistCyclic-542B65C1.html
+  </topic>
+  <topic>ATVd_CAT\AtvPersistEvent-542B5B7A.html
+  </topic>
+  <topic>ATVd_CAT\ATVPosControlLight-HardwareCAT-F2BC1D4E.html
+  </topic>
+  <topic>ATVd_CAT\ATVPosControlLight-Properties-F2BCC62E.html
+  </topic>
+  <topic>ATVd_CAT\AtvPosInterface-3D85363E.html
+  </topic>
+  <topic>ATVd_CAT\ATVPosInterface2-ApplicationCAT-CEC4E501.html
+  </topic>
+  <topic>ATVd_CAT\ATVSpeedControlFpDriveSettings-F93A9897.html
+  </topic>
+  <topic>ATVd_CAT\ATVSpeedControlLight-DCB8DA1C.html
+  </topic>
+  <topic>ATVd_CAT\ATV_DD_INIntegration-FB08F212.html
+  </topic>
+  <topic>ATVd_CAT\BasicFunctionBlock-5F739B7C.html
+  </topic>
+  <topic>ATVd_CAT\CompositeFunctionBlock-993987CD.html
+  </topic>
+  <topic>ATVd_CAT\ConceptTitle-FB0AE168.html
+  </topic>
+  <topic>ATVd_CAT\CPUVW3A3530D-DBB12C5C.html
+  </topic>
+  <topic>ATVd_CAT\CybersecurityGeneralities-0C1F6E09.html
+  </topic>
+  <topic>ATVd_CAT\D-NA-0003897.1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0037979.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0037979_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039436.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039436_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039436_2.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039438.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039438_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039438_2.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039439_2.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0039440.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043725.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043725_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043726.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043726_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043811.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043811_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0043957.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0044662.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0056294.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0095676.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0095676_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0103845.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0103848.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0103868.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0103932.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104348.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104349.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104350.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104351.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104352.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104582.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104584.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104586.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104587.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104605.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104759.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104928.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104929.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104930.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104931.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104932.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104932_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104933.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104934.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104935.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104936.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104937.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104938.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104939.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104940.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0104941.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105319.14.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105336.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105336_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105337.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105337_1.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105337_2.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0105338.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106073.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106074.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106075.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106076.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106078.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106079.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106453.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106454.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106455.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106456.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106534.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106535.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0106536.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107028.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107029.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107030.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107032.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107033.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107034.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107535.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107702.html
+  </topic>
+  <topic>ATVd_CAT\D-SE-0107703.html
+  </topic>
+  <topic>ATVd_CAT\Description-F5F972F7.html
+  </topic>
+  <topic>ATVd_CAT\EncoderAnalogModuleVW3A3422-C7A21495.html
+  </topic>
+  <topic>ATVd_CAT\GatingRulesForATVSpeedControl-08765E0B.html
+  </topic>
+  <topic>ATVd_CAT\HandlingExampleWithPositionerVSDBas-F2DC7026.html
+  </topic>
+  <topic>ATVd_CAT\HardwareCATs-DBB099F9.html
+  </topic>
+  <topic>ATVd_CAT\IntegrationOfALARM_BITFunctionBlock-0453A0C0.html
+  </topic>
+  <topic>ATVd_CAT\IntegrationOfALARM_BITFunctionBlock-04550BC2.html
+  </topic>
+  <topic>ATVd_CAT\IntegrationOfALARM_BITFunctionBlock-0C096D8C.html
+  </topic>
+  <topic>ATVd_CAT\IOEmbeddedATV340x30To75KW-0C19D12B.html
+  </topic>
+  <topic>ATVd_CAT\IOEmbeddedATV340x30To75KWFpAnalogIn-0C209F20.html
+  </topic>
+  <topic>ATVd_CAT\IOEmbeddedATV340x30To75KWFpAnalogOu-0C22E419.html
+  </topic>
+  <topic>ATVd_CAT\IOEmbeddedATV340x30To75KWFpDigitalI-0C260E2C.html
+  </topic>
+  <topic>ATVd_CAT\IOEmbeddedATV340x30To75KWFpDigitalO-0C28461F.html
+  </topic>
+  <topic>ATVd_CAT\IOEmbeddedATV340x30To75KWHardwareCA-0C2C6697.html
+  </topic>
+  <topic>ATVd_CAT\IO_EmbeddedInputOutputEmbeddedModul-014D1B29.html
+  </topic>
+  <topic>ATVd_CAT\IO_EncodersEncoderInterfaceModules-016A91B9.html
+  </topic>
+  <topic>ATVd_CAT\IO_ExtendedInputOutputOptionModules-F99965BD.html
+  </topic>
+  <topic>ATVd_CAT\LogMessagesTroubleshooting-0F21C676.html
+  </topic>
+  <topic>ATVd_CAT\MemoryConsumptionOfAltivarVSVsMotor-04EDDB1C.html
+  </topic>
+  <topic>ATVd_CAT\RelatedDocuments-A4B2ED75.html
+  </topic>
+  <topic>ATVd_CAT\RelayRELA-MenuRxConfigurationRx-Men-9CE5C861.html
+  </topic>
+  <topic>ATVd_CAT\ResolverModuleVW3A3423-C8ADE453.html
+  </topic>
+  <topic>ATVd_CAT\ServiceFunctionBlocks-E09B24FD.html
+  </topic>
+  <topic>ATVd_CAT\TaskTitle-A628F122.html
+  </topic>
+  <topic>ATVd_CAT\TestWithoutDevice-50964C13.html
+  </topic>
+  <topic>ATVd_CAT\TPC_ATVCyclicScanner-DC4FDEB2.html
+  </topic>
+  <topic>ATVd_CAT\TPC_ATVSpeedControlLight-DC4F8F87.html
+  </topic>
+  <topic>ATVd_CAT\TPC_ATVSpeedControlLightSDefault-DC4FABD1.html
+  </topic>
+  <topic>ATVd_CAT\Troubleshooting-414CE23F.html
+  </topic>
+  <topic>ATVd_CAT\Troubleshooting-F5D8A89E.html
+  </topic>
+  <topic>ATVd_CAT\VW3A3422EncoderAnalogModule-CA2D147F.html
+  </topic>
+  <topic>ATVd_CAT\VW3A3422EncoderAnalogModuleSDefault-C7A26718.html
+  </topic>
+  <topic>ATVd_CAT\VW3A3423ResolverModulSDefault-CA191139.html
+  </topic>
+  <topic>ATVd_CAT\VW3A3424ResolverModule-CA18C990.html
+  </topic>
+  <topic>ATVd_CAT\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

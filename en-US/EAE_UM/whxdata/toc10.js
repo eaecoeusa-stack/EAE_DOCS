@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc7.js\"  name=\"Toolbar and Taskbar\" url=\"EAE_UM/ToolbarAndTaskbar-97AF14CC.html#ToolbarAndTaskbar-97AF14CC\"><item name=\"Quick Access Toolbar\" url=\"EAE_UM/Toolbar-97AF2C48.html#Toolbar-97AF2C48\" /><item name=\"Taskbar\" url=\"EAE_UM/Taskbar-97B9C3FF.html#Taskbar-97B9C3FF\" /></data>";

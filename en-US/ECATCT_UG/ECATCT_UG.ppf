@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="ECATCT_UG" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="1" page="ECATCT_UG\AboutTheDocument-A711CB5C.html">
+  </contextentry>
+  <contextentry id="5" page="ECATCT_UG\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="4" page="ECATCT_UG\D-TS-0002473_1.html">
+  </contextentry>
+  <contextentry id="3" page="ECATCT_UG\D-TS-0002473_3.html">
+  </contextentry>
+  <contextentry id="2" page="ECATCT_UG\D-TS-0002473_4.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="ECATCT_UG\ECATCT_UG_UserGuideEtherCATConfigurationToolE-A0F055D2.html">
+  <topic>ECATCT_UG\AboutTheDocument-A711CB5C.html
+  </topic>
+  <topic>ECATCT_UG\AddAliasDialogBox-A60B5C70.html
+  </topic>
+  <topic>ECATCT_UG\AddCoEInitCommandDialogBox-A6780090.html
+  </topic>
+  <topic>ECATCT_UG\AddPDOEntryDialogBox-A3E61E1F.html
+  </topic>
+  <topic>ECATCT_UG\AddVariableDialogBox-A60B75B8.html
+  </topic>
+  <topic>ECATCT_UG\AdvancedOptionTab-A36308B4.html
+  </topic>
+  <topic>ECATCT_UG\AppendEtherCATSubDeviceDialogBox-A2F4BBC2.html
+  </topic>
+  <topic>ECATCT_UG\CANopenOverEtherCATCoEAProtocolThat-C6844469.html
+  </topic>
+  <topic>ECATCT_UG\CaptureFileDialogBox-A6FE9427.html
+  </topic>
+  <topic>ECATCT_UG\ChangeSubDeviceDialogBox-A2F4AF17.html
+  </topic>
+  <topic>ECATCT_UG\CoEObjectDictionaryTab-A363CB54.html
+  </topic>
+  <topic>ECATCT_UG\ConfigureTheEtherCATNetwork-A718B05D.html
+  </topic>
+  <topic>ECATCT_UG\D-NA-0003897.1.html
+  </topic>
+  <topic>ECATCT_UG\D-TS-0002473_1.html
+  </topic>
+  <topic>ECATCT_UG\D-TS-0002473_3.html
+  </topic>
+  <topic>ECATCT_UG\D-TS-0002473_4.html
+  </topic>
+  <topic>ECATCT_UG\DeviceEditorPad-A0EFAEC0.html
+  </topic>
+  <topic>ECATCT_UG\DialogBoxes-A70F287D.html
+  </topic>
+  <topic>ECATCT_UG\DistributedClockMain-deviceSynchron-C6844E49.html
+  </topic>
+  <topic>ECATCT_UG\DistributedClocksTab-A363313D.html
+  </topic>
+  <topic>ECATCT_UG\ECATCT_UG_id_address_tpc.html
+  </topic>
+  <topic>ECATCT_UG\ECATCT_UG_id_disclaimer_tpc.html
+  </topic>
+  <topic>ECATCT_UG\ECATCT_UG_id_glo_tpc.html
+  </topic>
+  <topic>ECATCT_UG\ECATCT_UG_UserGuideEtherCATConfigurationToolE-A0F055D2.html
+  </topic>
+  <topic>ECATCT_UG\EditAliasDialogBox-A60B6A9C.html
+  </topic>
+  <topic>ECATCT_UG\EditCoEInitCommandDialogBox-A6780FF0.html
+  </topic>
+  <topic>ECATCT_UG\EditPDODialogBox-A3E2622B.html
+  </topic>
+  <topic>ECATCT_UG\EditPDOEntryDialogBox-A3E62E39.html
+  </topic>
+  <topic>ECATCT_UG\EditTopologyDialogBox-A6FD18D8.html
+  </topic>
+  <topic>ECATCT_UG\EditVariableDialogBox-A60B81DA.html
+  </topic>
+  <topic>ECATCT_UG\EMIManagerDialogBox-A68870FD.html
+  </topic>
+  <topic>ECATCT_UG\ESIManagerDialogBox-A67E3D46.html
+  </topic>
+  <topic>ECATCT_UG\EtherCATMain-deviceInformationEMIAF-C6845B99.html
+  </topic>
+  <topic>ECATCT_UG\EtherCATNetworkInformationENIAnXMLF-C6840DDD.html
+  </topic>
+  <topic>ECATCT_UG\EtherCATSub-deviceInformationESIAnX-C6842618.html
+  </topic>
+  <topic>ECATCT_UG\ExportProcessDataImageDialogBox-A366131F.html
+  </topic>
+  <topic>ECATCT_UG\ExportTheENIFile-AA91BEF8.html
+  </topic>
+  <topic>ECATCT_UG\FieldbusMemoryManagementUnitSyncMan-C68439F3.html
+  </topic>
+  <topic>ECATCT_UG\GeneralTab-A363705B.html
+  </topic>
+  <topic>ECATCT_UG\GraphicalUserInterface-A0EF42E8.html
+  </topic>
+  <topic>ECATCT_UG\InitCommandsTab-A363B9B3.html
+  </topic>
+  <topic>ECATCT_UG\InspectionReportDialogBox-A6FBE417.html
+  </topic>
+  <topic>ECATCT_UG\Introduction-A0E41B77.html
+  </topic>
+  <topic>ECATCT_UG\LineCrossedAnalyzerDialogBox-A6F9DBC1.html
+  </topic>
+  <topic>ECATCT_UG\MainDeviceTab-A35EB39E.html
+  </topic>
+  <topic>ECATCT_UG\Menus-A0EF69D4.html
+  </topic>
+  <topic>ECATCT_UG\MessagesPad-A0EFCA77.html
+  </topic>
+  <topic>ECATCT_UG\ModulesTab-A3637C5A.html
+  </topic>
+  <topic>ECATCT_UG\NetworkMismatchAnalyzer-A6F7EF04.html
+  </topic>
+  <topic>ECATCT_UG\OfflineConfiguration-A0E4C56C.html
+  </topic>
+  <topic>ECATCT_UG\OnlineConfiguration-A0E4D393.html
+  </topic>
+  <topic>ECATCT_UG\PDOMappingTab-A3638BFA.html
+  </topic>
+  <topic>ECATCT_UG\ProcessDataImage-A35EBD50.html
+  </topic>
+  <topic>ECATCT_UG\ProjectExplorerPad-A0EF9854.html
+  </topic>
+  <topic>ECATCT_UG\ProjectTemplatesDialogBox-A701442A.html
+  </topic>
+  <topic>ECATCT_UG\SelectMainDeviceUnitDialogBox-AAB52EF0.html
+  </topic>
+  <topic>ECATCT_UG\SetTheMain-Device-AA913A93.html
+  </topic>
+  <topic>ECATCT_UG\SetTheSub-Devices-AA9193EA.html
+  </topic>
+  <topic>ECATCT_UG\ShortInfoPad-A0EFBEDF.html
+  </topic>
+  <topic>ECATCT_UG\StartTheConfiguration-AA911F2C.html
+  </topic>
+  <topic>ECATCT_UG\Sub-deviceConfigurationInterfaceSCI-C6843072.html
+  </topic>
+  <topic>ECATCT_UG\Sub-DeviceDistributedClocksTab-A363F9E9.html
+  </topic>
+  <topic>ECATCT_UG\SubDeviceAdvancedOptionsTab-A363AF72.html
+  </topic>
+  <topic>ECATCT_UG\TraceDataTab-A35ECBCF.html
+  </topic>
+  <topic>ECATCT_UG\UseAdditionalTools-AA91B017.html
+  </topic>
+  <topic>ECATCT_UG\VariablesTab-A36397D2.html
+  </topic>
+  <topic>ECATCT_UG\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

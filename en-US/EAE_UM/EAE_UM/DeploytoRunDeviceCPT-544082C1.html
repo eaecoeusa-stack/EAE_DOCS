@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Deploy to Run Devices" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="DeploytoRunDeviceCPT-544082C1" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Deploy to Run Devices
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.6.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/DeployAndDiagnosticEditor-A223637D.html" />
+<meta name="brsnext" value="EAE_UM/DeviceStatusAndForcedVariables-EC276BCF.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Deploy and Diagnostic Editor" />
+</head>
+<body id="DeploytoRunDeviceCPT-544082C1"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"DeployAndDiagnosticEditor-A223637D.html#DeployAndDiagnosticEditor-A223637D\">Deploy and Diagnostic Editor<\/a> > Deploy to Run Devices<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="DeploytoRunDeviceCPT-544082C1" id="DeploytoRunDeviceCPT-544082C1_">
+<!-- --></a><a name="DeploytoRunDeviceCPT_544082C1" id="DeploytoRunDeviceCPT_544082C1">
+<!-- --></a><a name="DeploytoRunDeviceCPT_544082C1" id="DeploytoRunDeviceCPT_544082C1_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Deploy to Run Devices
+</h1>
+<div class="body conbody">
+
+<p class="p">
+To deploy to run devices, first open the <span class="ph uicontrol">Deploy and Diagnostic</span> editor. Then depending how many devices need to be deployed, follow one of these two processes:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#DeploytoRunDeviceCPT-544082C1__DeployToRunOneParticularLogicalDevi-54A8FD58">Deploy one logical device instance</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#DeploytoRunDeviceCPT-544082C1__DeployToRunSeveralLogicalDeviceInst-54A8FE00">Deploy several logical device instances at once</a>.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Follow the same processes to deploy to run into the runtime simulation.
+</div>
+<div class="section" id="DeploytoRunDeviceCPT-544082C1__DeployToRunOneParticularLogicalDevi-54A8FD58">
+<a name="DeployToRunOneParticularLogicalDevi-54A8FD58" id="DeployToRunOneParticularLogicalDevi-54A8FD58">
+<!-- --></a><a name="DeploytoRunDeviceCPT_544082C1__DeployToRunOneParticularLogicalDevi_54A8FD58" id="DeploytoRunDeviceCPT_544082C1__DeployToRunOneParticularLogicalDevi_54A8FD58">
+<!-- --></a><a name="DeployToRunOneParticularLogicalDevi_54A8FD58" id="DeployToRunOneParticularLogicalDevi_54A8FD58">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Deploy to Run One Logical Device Instance
+</h2>
+<p class="p">
+To deploy to run one logical device instance, the user can:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Manually perform one after the other all the actions following the workflows listed in the topic <a class="xref" href="OperatingStateTransitions-D51A64FE.html">Typical Operating State Workflows</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Automatically perform all the same actions with the <span class="ph uicontrol">Deploy to Run Assistant</span>. This way, no steps are forgotten during the deployment process.
+</p>
+</li>
+</ul>
+<p class="p">
+Thus, to deploy to run one logical device instance using the <span class="ph uicontrol">Deploy to Run Assistant</span>, follow the next steps:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00544515.png" alt="" />
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:14.950166112956811%" />
+<col style="width:37.54152823920266%" />
+<col style="width:47.50830564784053%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<strong class="ph b">Step</strong>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<strong class="ph b">Action</strong>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<strong class="ph b">Result</strong>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Launch assistant
+</p>
+<img class="image" src="DD00542046.png" alt="" style="max-height:20px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Click on <span class="ph uicontrol">Deploy to Run Assistant</span> of the wanted logical device instance.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A first dialog box opens requesting to login the logical device instance to the device, if not already logged in.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Login
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+If not already logged in, click on <span class="ph uicontrol">Login</span> to login into the device. If requested, enter the credentials.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The <span class="ph uicontrol">Deploy to Run Assistant</span> dialog box opens
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Read status
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Check, in the section <span class="ph uicontrol">Device Status</span>, the current status of the logical device instance given with:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+All the symbols described in the topic <a class="xref" href="DeviceStatusAndForcedVariables-EC276BCF.html">Status</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+A small description of each status.
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Select actions
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Choose, in the section <span class="ph uicontrol">Action to apply</span>, the actions to reach the <span class="ph uicontrol">Running</span> status and to have the wanted status.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+By default, some actions are already selected. These actions will bring the device to run without reboot. However, the user can select or deselect any individual action. This will:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Potentially select or deselect other implicit actions. E.g. selecting <span class="ph uicontrol">Deploy device configuration</span> will automatically select the actions <span class="ph uicontrol">Delete existing boot project</span> and <span class="ph uicontrol">Set active application as boot</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Inform if the current selection will deploy with or without rebooting the device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enable the button <span class="ph uicontrol">Back to pre-selected actions</span>. Click on it to be back to the initial selection.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Update the impacts listed in the <span class="ph uicontrol">Impacts</span> section.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Control impacts
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Check, in the section <span class="ph uicontrol">Impacts</span>, all the impacts that the current selection of actions will have on the device.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+If the impacts are:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+As wanted: The device is ready to be deployed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Not as wanted: Either discard the modification or change the selection of actions until getting the wanted impacts.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Deploy
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Click on <span class="ph uicontrol">Deploy</span> to deploy or <span class="ph uicontrol">Cancel</span> to cancel the deployment.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+There are safety messages, then the safety messages dialog box appears for acknowledgement.
+</p>
+</li>
+<li class="li">
+<p class="p">
+There are no safety message, then the deployment is starting.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Acknowledge safety message
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Read each safety message and for those with choose actions, pick one answer.
+</p>
+<p class="p">
+Once done, select or deselect the check boxes:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Tick the first one to ensure having read the safety message and declare to be aware of the risks involved.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Tick the second one to request confirmation before putting to <span class="ph uicontrol">Running</span> the device. If deselected and <span class="ph uicontrol">Run</span> action selected, the device will automatically set the device to <span class="ph uicontrol">Running</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Tick the third one to hide this safety message at the next login deployment. This check box is available only in simulation mode.
+</p>
+</li>
+</ul>
+<p class="p">
+After all the choices of the safety messages made and the check boxes selected, the <span class="ph uicontrol">Deploy</span> deployed button will become enable. Click on it to start the deployment.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The deployment is starting
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Deploy in progress
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The actions previously selected will then be automatically performed one after the other.
+</p>
+<p class="p">
+During the deployment, an addition information bar is added at the bottom of the <span class="ph uicontrol">Deploy and Diagnostic</span> editor. This information bar is showing:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The total amount of actions.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The amount of actions already completed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The current actions on going.
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Once all completed, the device is either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the state wanted as shown in the <span class="ph uicontrol">Impacts</span> section.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the fail state if the deployment has failed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In <span class="ph uicontrol">Stopped</span> state waiting for approval to switch to the <span class="ph uicontrol">Running</span> state. This happens when the confirmation to switch to <span class="ph uicontrol">Running</span> state is requested. The <span class="ph uicontrol">RUN application</span> dialog box appears.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Device Running
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Click on <span class="ph uicontrol">Validate</span> to confirm the switch to the <span class="ph uicontrol">Running</span> state.
+</p>
+<p class="p">
+This confirmation dialog box can be hidden by clicking on <span class="ph uicontrol">Do not show next time</span> before validate.
+</p>
+<p class="p">
+At next the deployments, a button <span class="ph uicontrol">RUN application</span> is added into the information bar instead of the dialog box. A confirmation is still required as long as the check box in the safety message dialog box is selected.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Switch back to the confirmation dialog box by deselected the check box in the <a class="xref" href="General-EA92F8CE.html"><span class="ph uicontrol">Deploy To Run Assistant</span> parameter of <span class="ph">EcoStruxure Automation Expert</span></a>.
+</div>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+At the point, the device is now running and ready to operate.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+For any reason, the deployment process can be canceled by pressing the <span class="ph uicontrol">Cancel</span> button in these places:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Deploy to Run Assistant</span> dialog box.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the dialog box with the safety messages.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">RUN application</span> dialog box.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the progress bar once the deployment in on-going. If canceled in this case, the action on going will be completed and the deployment will stop there.
+</p>
+</li>
+</ul>
+<p class="p">
+At the end of the deployment process, find all the summary of the deployment in the <span class="ph uicontrol">Output</span> and <span class="ph uicontrol">Message log</span> pads.
+</p>
+</div>
+<div class="section" id="DeploytoRunDeviceCPT-544082C1__DeployToRunSeveralLogicalDeviceInst-54A8FE00">
+<a name="DeployToRunSeveralLogicalDeviceInst-54A8FE00" id="DeployToRunSeveralLogicalDeviceInst-54A8FE00">
+<!-- --></a><a name="DeploytoRunDeviceCPT_544082C1__DeployToRunSeveralLogicalDeviceInst_54A8FE00" id="DeploytoRunDeviceCPT_544082C1__DeployToRunSeveralLogicalDeviceInst_54A8FE00">
+<!-- --></a><a name="DeployToRunSeveralLogicalDeviceInst_54A8FE00" id="DeployToRunSeveralLogicalDeviceInst_54A8FE00">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Deploy to Run Several Logical Device Instances
+</h2>
+<p class="p">
+To deploy to run several logical device instances at once, follow the next steps:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Deploy and Diagnostic</span> editor, select all the logical device instances wanted by ticking their button, located on the left of their line.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Compile these logical device instances and ensure that there are no error by selecting <span class="ph uicontrol">Compile</span> in the common drop down list of actions.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Log in to all the logical device instances by clicking on the common button <span class="ph uicontrol">Login</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter the credentials of the logical device instances requesting them. The logical device instances are now logged in to their devices.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Now, perform several actions with the command buttons, as described in the topic <a class="xref" href="DeployAndDiagnosticEditor-A223637D.html">Deploy and Diagnostic Editor</a>, to reach the <span class="ph uicontrol">Run</span> state.
+</p>
+<p class="p">
+The list of all the actions to perform and the order to do them is given in the topic <a class="xref" href="OperatingStateTransitions-D51A64FE.html">Typical Operating State Workflows</a>.
+</p>
+</li>
+</ol>
+<p class="p">
+Once all the actions done, the devices will be running and ready to operate.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

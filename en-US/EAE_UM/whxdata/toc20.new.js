@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc21","name":"Asset Link for AVEVA OMI","type":"book","url":"EAE_UM/AutobuildAvevaInTouchOMI-96443BE6.html#AutobuildAvevaInTouchOMI-96443BE6"},{"name":"Asset Link Bulk Creation for the Hierarchy View","type":"item","url":"EAE_UM/BulkCreatingAreasPopulatingTheHiera-D1F15D03.html"},{"key":"toc24","name":"Asset Link for Bulk Engineering","type":"book","url":"EAE_UM/AssetLinkForBulkEngineering-03EFD3D7.html#AssetLinkForBulkEngineering-03EFD3D7"},{"key":"toc25","name":"CAT Instances Operations","type":"book","url":"EAE_UM/CATInstancesOperationsCPT-C46D3B86.html#CATInstancesOperationsCPT-C46D3B86"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

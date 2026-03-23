@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="OPC UA Server Editor" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="OPCUAEditor-A1508266" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+OPC UA Server Editor
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.3_3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/OfflineParameterizationEditor-A14F653E.html" />
+<meta name="brsnext" value="EAE_UM/OPCUAClientEditor-EB4A8A23.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor" />
+</head>
+<body id="OPCUAEditor-A1508266"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > OPC UA Server Editor<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="OPCUAEditor-A1508266" id="OPCUAEditor-A1508266_">
+<!-- --></a><a name="OPCUAEditor_A1508266" id="OPCUAEditor_A1508266">
+<!-- --></a><a name="OPCUAEditor_A1508266" id="OPCUAEditor_A1508266_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span class="ph">OPC UA</span> Server Editor
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Use the <span class="ph">OPC UA</span> Server editor to configure and display <span class="ph">OPC UA</span> communication variables and their attributes. <span class="ph">OPC UA</span> variables are shared, or common, with HMI function block interface definitions. Only variables associated with a valid event in the <a class="xref" href="FunctionBlockInterfaceEditor-9FE8270B.html"><strong class="ph b">Function Block Interface editor</strong></a> can be <a class="xref" href="#OPCUAEditor-A1508266__CreatingAConnectionBetweenAnOPCUASe-A6CC0804">shared between an <span class="ph">OPC UA</span> server and client</a>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, the <span class="ph">OPC UA</span> Server function is enabled in the <span class="ph uicontrol">Properties</span> pad of the <span class="ph uicontrol">Logical Devices</span> editor, via the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Communication</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">OPC UA</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Enable server</span></span> setting.
+</div>
+</div>
+<div class="section" id="OPCUAEditor-A1508266__DisplayingTheOPCUAClientEditor-6DEAF276">
+<a name="DisplayingTheOPCUAClientEditor-6DEAF276" id="DisplayingTheOPCUAClientEditor-6DEAF276">
+<!-- --></a><a name="OPCUAEditor_A1508266__DisplayingTheOPCUAClientEditor_6DEAF276" id="OPCUAEditor_A1508266__DisplayingTheOPCUAClientEditor_6DEAF276">
+<!-- --></a><a name="DisplayingTheOPCUAClientEditor_6DEAF276" id="DisplayingTheOPCUAClientEditor_6DEAF276">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Displaying the <span class="ph">OPC UA</span> Server Editor
+</h2>
+<div class="div">
+<p class="p">
+To display the <span class="ph">OPC UA</span> Server editor:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">System</span> editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">OPC UA Server</span> icon <img class="image" src="0000906991.png" alt="" style="max-height:20px;" /> in the vertical toolbar on the left.
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="OPCUAEditor-A1508266__OPCUAEditor-A6CB862F">
+<a name="OPCUAEditor-A6CB862F" id="OPCUAEditor-A6CB862F">
+<!-- --></a><a name="OPCUAEditor_A1508266__OPCUAEditor_A6CB862F" id="OPCUAEditor_A1508266__OPCUAEditor_A6CB862F">
+<!-- --></a><a name="OPCUAEditor_A6CB862F" id="OPCUAEditor_A6CB862F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">OPC UA</span> Server Editor
+</h2>
+<p class="p">
+The editor is divided into two parts:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#OPCUAEditor-A1508266__VariableListdataPoints-A6CB87A1">Variable list</a>, of input variables (<span class="ph uicontrol">InputVars</span>) and output variables (<span class="ph uicontrol">OutputVars</span>), located at the top of the editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OPCUAEditor-A1508266__AttributeList-A6CB88C7">Attribute list</a>, for the variable selected in the variable list, located at the bottom of the editor.
+</p>
+</li>
+</ul>
+<div class="p">
+<div class="fig fignone">
+<img class="image" src="DD00533848.png" width="500" alt="" />
+</div>
+</div>
+<p class="p">
+The <span class="ph">OPC UA</span> Server editor can be accessed at the application, function block, and HMI object levels.
+</p>
+<p class="p">
+When accessed at the application or function block levels, the <span class="ph uicontrol">Exposed</span> check box of the parent item is selected by default and all child items are visible and can be edited. If the <span class="ph uicontrol">Exposed</span> check box of the parent item is deselected, its child items are locked and can longer be edited.
+</p>
+</div>
+<div class="section" id="OPCUAEditor-A1508266__VariableListdataPoints-A6CB87A1">
+<a name="VariableListdataPoints-A6CB87A1" id="VariableListdataPoints-A6CB87A1">
+<!-- --></a><a name="OPCUAEditor_A1508266__VariableListdataPoints_A6CB87A1" id="OPCUAEditor_A1508266__VariableListdataPoints_A6CB87A1">
+<!-- --></a><a name="VariableListdataPoints_A6CB87A1" id="VariableListdataPoints_A6CB87A1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Variable List (data points)
+</h2>
+<p class="p">
+By default, the variable list presents the <span class="ph uicontrol">Name</span>, <span class="ph uicontrol">Exposed</span> and <span class="ph uicontrol">Access Level</span> attribute settings for each variable. To display different attributes than the default ones, click on the drop down menu available in the most right column of the variable list. Then select and deselect the wanted attributes.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To display the trigger event that is associated with a variable, select <span class="ph uicontrol">Trigger Event</span> from the drop down list. The <span class="ph uicontrol">Trigger Event</span> attribute is not included in the Attribute List (below).
+</div>
+<p class="p">
+The variables are transmitted to the connected <span class="ph">OPC UA</span> client if exposed. The <span class="ph">OPC UA</span> client then accesses to all exposed variables and orders them with the same hierarchy as in the Variable list.
+</p>
+<p class="p">
+Even though it doesn’t transfer variable information, <span class="ph uicontrol">IThis</span> line will still be visible in the <span class="ph">CAT</span> instances and the connected <span class="ph">OPC UA</span> client hierarchy as it is by default set to visible (<img class="image" src="0001132181.png" alt="" style="max-height:15px;" />).
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> This visibility icon is only available for <span class="ph">CATs</span> type in their <span class="ph">OPC UA</span> Server editor, thus it is not available for the SubApp type.
+</div>
+<p class="p">
+As this <span class="ph uicontrol">IThis</span> line doesn’t give information, it can also be hidden from the hierarchies. To hide it, two actions are required:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Set the parameter <span class="ph uicontrol">OPC UA Server</span> to <span class="ph uicontrol">String</span>. This parameter is accessible with the following path: <span class="ph menucascade"><span class="ph uicontrol">Solution Explorer</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Right click on the application</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Options</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">IEC61499</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Settings</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click on the visibility icon in the <span class="ph">OPC UA</span> Server editor of the <span class="ph">CAT</span> (<img class="image" src="0001132180.png" alt="" style="max-height:15px;" />).
+</p>
+</li>
+</ul>
+<p class="p">
+Doing this will then hide the <span class="ph uicontrol">IThis</span> line. Thus, all its variables are brought at the previous <span class="ph uicontrol">IThis</span> hierarchy level and <span class="ph uicontrol">IThis</span> won’t be mentioned anymore in the <span class="ph">OPC UA</span> path either.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> That action could raise an error during the deployment of the <span class="ph">CAT</span> instances if a sub variable of the <span class="ph uicontrol">IThis</span> has the same name as a function block instance in the <span class="ph uicontrol">IThis</span> hierarchy level. Two elements would then have the same <span class="ph">OPC UA</span> path. To know more about this error, check its <a class="xref" href="ERR_CodeList-ECC11286.html#ERR_CodeList-ECC11286__ERR_CONFLICT_OPCUA_PATH-16D5C8AF">error message</a>.
+</div>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row" style="vertical-align:middle;">
+<td class="entry" style="text-align:left;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000900603.png" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:bottom; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">To learn more about how to create </span><span class="ph"><span style="font-size: 10pt">OPC UA</span></span><span style="font-size: 10pt"> variables in </span><span class="ph"><span style="font-size: 10pt">EcoStruxure Automation Expert</span></span><span style="font-size: 10pt">, watch </span><a class="xref" href="https://www.youtube.com/watch?v=42hquJ1cJh4&amp;list=PLa7UGrWOTyjkvGehn-WZtJ9Aif36xTemR&amp;index=7" target="_blank"><span style="font-size: 10pt">How to Create </span><span class="ph"><span style="font-size: 10pt">OPC UA</span></span><span style="font-size: 10pt"> Variables</span></a>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="OPCUAEditor-A1508266__AttributeList-A6CB88C7">
+<a name="AttributeList-A6CB88C7" id="AttributeList-A6CB88C7">
+<!-- --></a><a name="OPCUAEditor_A1508266__AttributeList_A6CB88C7" id="OPCUAEditor_A1508266__AttributeList_A6CB88C7">
+<!-- --></a><a name="AttributeList_A6CB88C7" id="AttributeList_A6CB88C7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Attribute List
+</h2>
+<p class="p">
+The attribute list displays the attributes of the selected variable. Default attribute settings appear in normal text. Non-default, i.e., changed, settings appear in <strong class="ph b">bold</strong>. The following attributes can be configured:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:16.65%" />
+<col style="width:83.35%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d103351e378">
+<p class="p">
+Attribute
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d103351e382">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e378 ">
+<p class="p">
+<span class="ph uicontrol">Exposed</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e382 ">
+<p class="p">
+Allows connected <span class="ph">OPC UA</span> clients to access this variable.
+</p>
+<p class="p">
+The user can choose by default between this set of values:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">False</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">True</span>
+</p>
+</li>
+</ul>
+<p class="p">
+In the <span class="ph uicontrol">Mask</span> column, turn off one of these values to remove it from the set of values available. After instantiating the function block type, only the values still selected in the <span class="ph uicontrol">Mask</span> column will be available for the user.
+</p>
+<p class="p">
+If the <span class="ph uicontrol">Locked</span> setting is selected, the attribute value cannot be further overparameterized.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e378 ">
+<p class="p">
+<span class="ph uicontrol">Access Level</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e382 ">
+<p class="p">
+Determines the privileges granted to an <span class="ph">OPC UA</span> client if this variable is exposed.
+</p>
+<p class="p">
+The user can choose by default between this set of values:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">CurrentRead</span>: available for both input variables and output variables.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">CurrentWrite</span>: available only for output variables.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">TimestampWrite</span>: available only for output VTQ variables.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">StatusWrite</span>: available only for output VTQ variables.
+</p>
+</li>
+</ul>
+<p class="p">
+In the <span class="ph uicontrol">Mask</span> column, turn off these values to remove them from the set of values available. After instantiating the function block type, only the values still selected in the <span class="ph uicontrol">Mask</span> column will be available for the user.
+</p>
+<p class="p">
+If the <span class="ph uicontrol">Locked</span> setting is selected, the attribute value cannot be further overparameterized.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more explanation about these attributes, check the official <span class="ph">OPC UA</span> specification document <a class="xref" href="https://reference.opcfoundation.org/Core/Part3/v104/docs/8.57#_Ref497896703" target="_blank">here</a>.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e378 ">
+<p class="p">
+<span class="ph uicontrol">Browse Name</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e382 ">
+<p class="p">
+The text string the server shows in a browse sequence when the variable is exposed.. Default = ${VariableName}
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e378 ">
+<p class="p">
+<span class="ph uicontrol">Display Name</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e382 ">
+<p class="p">
+The text string the server displays when the variable is exposed.. Default = ${VariableName}.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e378 ">
+<p class="p">
+<span class="ph uicontrol">Minimum Sampling Interval</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e382 ">
+<p class="p">
+The minimum time, in milliseconds, applied by the <span class="ph">OPC UA</span> server when sampling this variable value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e378 ">
+<p class="p">
+<span class="ph uicontrol">Description</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e382 ">
+<p class="p">
+A memo field. Default value is the description coming from the Interface definition = ${VariableComment}.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="OPCUAEditor-A1508266__CreatingAConnectionBetweenAnOPCUASe-A6CC0804">
+<a name="CreatingAConnectionBetweenAnOPCUASe-A6CC0804" id="CreatingAConnectionBetweenAnOPCUASe-A6CC0804">
+<!-- --></a><a name="OPCUAEditor_A1508266__CreatingAConnectionBetweenAnOPCUASe_A6CC0804" id="OPCUAEditor_A1508266__CreatingAConnectionBetweenAnOPCUASe_A6CC0804">
+<!-- --></a><a name="CreatingAConnectionBetweenAnOPCUASe_A6CC0804" id="CreatingAConnectionBetweenAnOPCUASe_A6CC0804">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Creating a Connection Between an <span class="ph">OPC UA</span> Server and an <span class="ph">OPC UA</span> Client
+</h2>
+<p class="p">
+The following steps describe the sequence of tasks you can use to create variables in <span class="ph">EcoStruxure Automation Expert</span>, then create a connection between an <span class="ph">OPC UA</span> server and <span class="ph">OPC UA</span> client so the client can access these variables.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:10.43%" />
+<col style="width:89.57%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d103351e585">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d103351e589">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span> pad, for a distributed PAC Project, expand the <span class="ph uicontrol">CAT</span> node, then right click the <span class="ph uicontrol">Application</span> node and select <span class="ph uicontrol">New Item</span> from the menu.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+In the <span class="ph uicontrol">CAT Definition</span> dialog, add a <span class="ph">CAT</span> name, for example <q class="q">CAT1</q>, then click <span class="ph uicontrol">Finish</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+In the  <span class="ph uicontrol">Solution Explorer</span> pad, under the new <span class="ph">CAT</span> name node, select the <span class="ph uicontrol">CAT_HMI</span> node. Either double-click the node or right-click and choose <span class="ph uicontrol">Open</span> from the context menu.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+In the <a class="xref" href="FunctionBlockInterfaceEditor-9FE8270B.html">Function Block Interface editor</a> for CAT_HMI, create data points, events, and associations:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Create the desired input and output variables
+</p>
+</li>
+<li class="li">
+<p class="p">
+Create the input and output events to associate with the variables.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Associate each input variable with its input event, and each output variable with its output event. This can be done by dragging a variable and dropping it on an event.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Save your edits by right-clicking on the CAT_HMI tab and choosing <span class="ph uicontrol">Save All</span>.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Before you create data points, verify that you are working in the <span class="ph uicontrol">Interface</span> editor for the CAT_HMI and not for the parent <span class="ph">CAT</span>.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+With the CAT_HMI tab still selected, open the <span class="ph uicontrol">OPC UA Server</span> editor and select a variable in the Variable List (top part of the editor) to display its attributes in the Attribute List (bottom part of the tab). Make the desired configuration edits for the attributes. For example, select <span class="ph uicontrol">Exposed</span> for each variable you want to share with <span class="ph">OPC UA</span> clients. By default, <span class="ph">OPC UA</span> variables are not shared.  
+</p>
+<p class="p">
+Save your edits by right-clicking on the tab and choosing <span class="ph uicontrol">Save All</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>  The variables in the top part of the tab are grayed-out when:
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+some variables cannot be associated with an event,
+</p>
+</li>
+<li class="sli">
+<p class="p">
+the configuration cannot be saved, or
+</p>
+</li>
+<li class="sli">
+<p class="p">
+the <span class="ph uicontrol">Exposed</span> check box of the parent item is deselected.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+Instantiate the HMI block to link <span class="ph">OPC UA</span> data and populate the <span class="ph">OPC UA</span> server node set:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select the parent <span class="ph uicontrol">CAT</span> tab, then the <span class="ph uicontrol">Composite</span> tab
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span> navigation tree, drag and drop the <span class="ph uicontrol">CAT_HMI</span> node onto the <span class="ph uicontrol">Composite</span> function block editor
+</p>
+</li>
+<li class="li">
+<p class="p">
+Add any other function blocks that will be used in your project
+</p>
+</li>
+<li class="li">
+<p class="p">
+Complete the necessary connections between the inputs and outputs of each function block.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Steps 1...6 describe the configuration of the <span class="ph">OPC UA</span> function block object.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+The next step is to perform <span class="ph">IEC61499</span> application instantiation for the <span class="ph">OPC UA</span> function block object you have created as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span> navigation tree, under the <span class="ph uicontrol">System</span> node, double click on the <span class="ph uicontrol">APP1</span> node.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span> navigation tree, select then drag and drop the <span class="ph uicontrol">CAT</span> object into the <span class="ph uicontrol">APP1</span> configuration area (which you just opened), The <span class="ph uicontrol">Define new name</span> dialog opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Define new name</span> dialog, enter a name for the <span class="ph">CAT</span> function block, then click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+The next step is to perform <span class="ph">IEC61499</span> information mapping to link the new <span class="ph">CAT</span> function block to the appropriate device:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Application Editor</span>, right click on the new <span class="ph">CAT</span> function block, select <span class="ph uicontrol">Mapping</span>, then select the device to be associated with the function block.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+Build the application: select <span class="ph menucascade"><span class="ph uicontrol">Home</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Build</span></span> (or <span class="ph menucascade"><span class="ph uicontrol">Home</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Rebuild</span></span>).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+10
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+Deploy the application, as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">View</span> menu, click on the <span class="ph uicontrol">General pads</span> icon, then select <span class="ph uicontrol">Deploy and Diagnostic</span> to open that editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select an <span class="ph uicontrol">Active Network Profile</span>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">(Default)</span> indicates you will work online with real devices.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">(Local Test)</span> indicates you will work in simulation mode.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Your selection will apply the <a class="xref" href="LogicalDevices-A0877135.html#LogicalDevices-A0877135__ConfiguringRealAndSimulatedDeviceSe-C4202C23">configuration for real or simulation devices</a> created in the <span class="ph uicontrol">Logical Devices</span> editor.
+</div>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> It is recommended that you first operate in simulation mode to test your design. When you are satisfied the design works as intended, return to this setting and select <span class="ph uicontrol">(Default)</span> for online operations.
+</div>
+<ul class="ul">
+<li class="li">
+<p class="p">
+To operate in simulation mode (with <span class="ph uicontrol">(Local Test)</span> selected), select <span class="ph menucascade"><span class="ph uicontrol">Runtime Simulation</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Start</span></span> from the <span class="ph uicontrol">Action</span> menu. The  <span class="ph uicontrol">Status</span> column indicates the status of your application, and indicates what you need to do next.
+</p>
+</li>
+</ul>
+<p class="p">
+Other actions to take to complete deployment may include:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="DeviceAction-EC279F2B.html"><strong class="ph b">Login</strong></a>, <a class="xref" href="DeviceAction-EC279F2B.html"><strong class="ph b">Compile</strong></a>, and finally <a class="xref" href="SubMenuDeploy-EC28B8A0.html"><strong class="ph b">Deploy</strong></a>. 
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d103351e585 ">
+<p class="p">
+11
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d103351e589 ">
+<p class="p">
+The next steps are:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Make the connection between the <span class="ph">OPC UA</span> server and an <span class="ph">OPC UA</span> client.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Read and (if authorized) write to application variables.
+</p>
+</li>
+</ul>
+<p class="p">
+Both of these tasks are performed from the <span class="ph">OPC UA</span> client side. Refer to the instructions for your client application for information on how to perform these tasks.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="OPCUAEditor-A1508266__BulkEditingTheExposedAttributeOfOPC-54FB687E">
+<a name="BulkEditingTheExposedAttributeOfOPC-54FB687E" id="BulkEditingTheExposedAttributeOfOPC-54FB687E">
+<!-- --></a><a name="OPCUAEditor_A1508266__BulkEditingTheExposedAttributeOfOPC_54FB687E" id="OPCUAEditor_A1508266__BulkEditingTheExposedAttributeOfOPC_54FB687E">
+<!-- --></a><a name="BulkEditingTheExposedAttributeOfOPC_54FB687E" id="BulkEditingTheExposedAttributeOfOPC_54FB687E">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Bulk Editing the Exposed Attribute of <span class="ph">OPC UA</span> <span class="ph">CAT</span> Variables
+</h2>
+<p class="p">
+The bulk editing feature lets you edit - in one place - the <span class="ph uicontrol">Exposed</span> attribute value for <span class="ph">OPC UA</span> variables associated with one or more composite automation types (<span class="ph">CATs</span>) and their SubCATs. This feature saves you the time that would otherwise be spent individually editing the <span class="ph uicontrol">Exposed</span> attribute value for each <span class="ph">CAT</span>/SubCAT instance.
+</p>
+<p class="p">
+Bulk editing of the <span class="ph">OPC UA</span> variable <span class="ph uicontrol">Exposed</span> attribute can be performed in the <a class="xref" href="SystemEditor-9FEBB8AC.html">System editor</a> at either the application or the <span class="ph">CAT</span> level. If you perform bulk editing at the:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Application level: all <span class="ph">OPC UA</span> variables for all <span class="ph">CATs</span> and their SubCATs associated with the selected application are added to the file and are available for editing.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">CAT</span> level: only <span class="ph">OPC UA</span> variables for the selected <span class="ph">CAT</span> and its SubCATs can be edited.
+</p>
+</li>
+</ul>
+<p class="p">
+Bulk editing involves the following tasks:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Export an .xlsx or.csv file listing <span class="ph">OPC UA</span> variables associated with <span class="ph">CATs</span> and their SubCATs.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Edit the Exposed attribute for one or more of the variables in the file.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Import the edited variable file.
+</p>
+</li>
+</ul>
+<p class="p">
+Before the file is imported, <span class="ph">EcoStruxure Automation Expert</span> validates the proposed edits. If the file to be imported is:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Invalid: <span class="ph">EcoStruxure Automation Expert</span> displays a message indicating the bulk editing process will be aborted, and the reason is displayed in the <span class="ph uicontrol">Output</span> pad.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Valid: <span class="ph">EcoStruxure Automation Expert</span> indicates the process completed successfully.
+</p>
+</li>
+</ul>
+<p class="p">
+To perform bulk editing of <span class="ph">OPC UA</span> <span class="ph">CAT</span> variables:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">System</span> editor, open the application or the <span class="ph">CAT</span>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+For an application: in the <span class="ph uicontrol">Solution Explorer</span> navigate to <span class="ph menucascade"><span class="ph uicontrol">Solution</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">System</span></span> then double-click on the application.
+</p>
+</li>
+<li class="li">
+<p class="p">
+For a <span class="ph">CAT</span>, in the <span class="ph uicontrol">Solution Explorer</span> navigate to <span class="ph menucascade"><span class="ph uicontrol">CAT</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Application</span></span> and double-click on a <span class="ph">CAT</span>.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">OPC UA Server</span> editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">Export</span> icon <img class="image" src="0000906990.png" alt="" style="max-height:18px;" />. The <span class="ph uicontrol">Export Excel</span> dialog opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In this dialog, type in a <span class="ph uicontrol">Name</span> and select a <span class="ph uicontrol">Save as type</span>, .csv or .xlsx.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Save</span>. The selected file type opens, displaying settings for two columns:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Name</span>: The full path name of each <span class="ph">OPC UA</span> variable.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Exposed</span>: The <span class="ph uicontrol">Exposed</span> attribute value (Y = exposed, N = Not exposed).
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Edit the <span class="ph uicontrol">Exposed</span> column for each variable you want to change to exposed or not exposed and save your changes.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+You can delete rows that you do not intend to change. <span class="ph">EcoStruxure Automation Expert</span> will not make edits for non-edited rows or for deleted rows.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+You cannot:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Change the <span class="ph uicontrol">Exposed</span> attribute to a value other than Y or N, or leave the value blank.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Change a column name.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Delete or rename the <span class="ph">OPC UA</span> sheet (In <span class="ph">Excel</span>).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Add a new row with a new attribute.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Add a duplicate row.
+</p>
+</li>
+</ul>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> aborts the process if it encounters these changes.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">OPC UA Server</span> editor, click the <span class="ph uicontrol">Import</span> icon <img class="image" src="0000906989.png" alt="" style="max-height:18px;" />. The <span class="ph uicontrol">Import Excel</span> dialog opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the appropriate file of type (.csv or.xlsx), then navigate to and <span class="ph uicontrol">Open</span> the previously exported and edited file. <span class="ph">EcoStruxure Automation Expert</span> validates the specified file and informs you if the file is valid or invalid.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If the file is:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Valid: the <span class="ph uicontrol">Message Log</span> indicates the process completed successfully.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Invalid: the process aborts and the cause is displayed in the <span class="ph uicontrol">Output pad</span>.
+</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Security Policies and Procedures","type":"item","url":"EAE_CSG/SecurityPoliciesAndProcedures-12C044D8.html#SecurityPoliciesAndProcedures-12C044D8"},{"name":"Control System Architecture","type":"item","url":"EAE_CSG/ControlSystemArchitecture-12C06C6D.html#ControlSystemArchitecture-12C06C6D"},{"name":"Threats","type":"item","url":"EAE_CSG/Threats-12C2F656.html#Threats-12C2F656"},{"name":"Vulnerabilities","type":"item","url":"EAE_CSG/Vulnerabilities-12C30905.html#Vulnerabilities-12C30905"},{"name":"Risk Assessment Formulas","type":"item","url":"EAE_CSG/RiskAssessmentFormulas-12C32144.html#RiskAssessmentFormulas-12C32144"},{"name":"Cybersecurity Application Platform","type":"item","url":"EAE_CSG/CybersecurityApplicationPlatform-12C3460B.html#CybersecurityApplicationPlatform-12C3460B"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc44.js\"  name=\"ATV_DD_OUT\" url=\"ATVd_CAT/ATVDD_OUT-E09B2ECC.html#ATVDD_OUT-E09B2ECC\"><item name=\"ATV_DD_OUT Integration\" url=\"ATVd_CAT/ConceptTitle-FB0AE168.html\" /></data>";

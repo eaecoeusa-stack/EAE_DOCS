@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Get Diagnostics" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="GetHMIDiagnostics-198DB4E5" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Get Diagnostics
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.7.2.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/HMIDiagnostics-198D39DE.html" />
+<meta name="brsnext" value="EAE_UM/TroubleshootingMQTTDiagnostics-36EF20A1.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; MQTT &gt; Diagnostics" />
+</head>
+<body id="GetHMIDiagnostics-198DB4E5"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"MQTTCPT-21469A9D.html#MQTTCPT-21469A9D\">MQTT<\/a> > <a href=\"HMIDiagnostics-198D39DE.html\">Diagnostics<\/a> > Get Diagnostics<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="GetHMIDiagnostics-198DB4E5" id="GetHMIDiagnostics-198DB4E5_">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5" id="GetHMIDiagnostics_198DB4E5">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5" id="GetHMIDiagnostics_198DB4E5_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Get Diagnostics
+</h1>
+<div class="body conbody">
+
+<p class="p">
+After the <span class="ph">MQTT</span> broker is installed and configured, the following actions have to be completed to get the device diagnostics on HMI:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<a class="xref" href="#GetHMIDiagnostics-198DB4E5__ConfigureADevice-1F2854DB">Configure a <span class="ph">Soft dPAC</span> device</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#GetHMIDiagnostics-198DB4E5__DefineCommunicationWithTheBroker-1F2855B7">Define the communication with the <span class="ph">MQTT</span> broker</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#GetHMIDiagnostics-198DB4E5__PushConfigurationToTheManager-1F28572C">Push the <span class="ph">MQTT</span> configuration to the <span class="ph">Soft dPAC</span> Manager</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#GetHMIDiagnostics-198DB4E5__DrawDiagnosticsGridOnCanvas-1F28583E">Draw <span class="ph uicontrol">Diagnostics Grid</span> on canvas</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#GetHMIDiagnostics-198DB4E5__RunOnlineTheApplication-1F2858CE">Run the application online</a>.
+</p>
+</li>
+</ol>
+<div class="section" id="GetHMIDiagnostics-198DB4E5__ConfigureADevice-1F2854DB">
+<a name="ConfigureADevice-1F2854DB" id="ConfigureADevice-1F2854DB">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5__ConfigureADevice_1F2854DB" id="GetHMIDiagnostics_198DB4E5__ConfigureADevice_1F2854DB">
+<!-- --></a><a name="ConfigureADevice_1F2854DB" id="ConfigureADevice_1F2854DB">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure a <span class="ph">Soft dPAC</span> Device
+</h2>
+<p class="p">
+To configure a <span class="ph">Soft dPAC</span> device, follow the actions described in <em class="ph i">Working with <span class="ph">Soft dPAC</span> in the Physical Devices Editor</em> in the <em class="ph i"><span class="ph">EcoStruxure Automation Expert - Soft dPAC</span> User Guide</em>.
+</p>
+</div>
+<div class="section" id="GetHMIDiagnostics-198DB4E5__DefineCommunicationWithTheBroker-1F2855B7">
+<a name="DefineCommunicationWithTheBroker-1F2855B7" id="DefineCommunicationWithTheBroker-1F2855B7">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5__DefineCommunicationWithTheBroker_1F2855B7" id="GetHMIDiagnostics_198DB4E5__DefineCommunicationWithTheBroker_1F2855B7">
+<!-- --></a><a name="DefineCommunicationWithTheBroker_1F2855B7" id="DefineCommunicationWithTheBroker_1F2855B7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Define Communication with the <span class="ph">MQTT</span> Broker
+</h2>
+<p class="p">
+To define the communication with the <span class="ph">MQTT</span> broker, complete the following steps:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <a class="xref" href="PhysicalTopologyEditor-A00503A9.html"><span class="ph uicontrol">Physical devices editor</span></a>, then the <a class="xref" href="PropertiesPad-99E23478.html"><span class="ph uicontrol">Properties</span> pad</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Add a workstation to define the communication with the <span class="ph">MQTT</span> broker.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the bottom left part of the workstation (named <span class="ph uicontrol">NIC</span> in the <span class="ph uicontrol">Properties</span> pad). Then in the <span class="ph uicontrol">Properties</span> pad, add the <span class="ph">IPv4</span> address of the engineering workstation, where the <span class="ph">MQTT</span> broker is installed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the entire workstation (named <span class="ph uicontrol">Workstation</span> in the <span class="ph uicontrol">Properties</span> pad). Then add the <span class="ph">MQTT</span> broker service by:
+</p>
+<ol class="ol" type="a">
+<li class="li">
+<p class="p">
+Right clicking the workstation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Clicking <span class="ph menucascade"><span class="ph uicontrol">Manage Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">MQTT Broker</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Activate service</span></span>.
+</p>
+</li>
+</ol>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Properties</span> pad, define the listener port to secure communication by:
+</p>
+<ol class="ol" type="a">
+<li class="li">
+<p class="p">
+Finding the <span class="ph uicontrol">Logical Port</span> parameter: <span class="ph menucascade"><span class="ph uicontrol">Properties</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">MQTT Broker</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Logical Port</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Modifying the parameter <span class="ph uicontrol">Logical Port</span> value to 8883.
+</p>
+</li>
+</ol>
+<p class="p">
+This listener port number is the same as the one used during the configuration of the <span class="ph">MQTT</span> broker.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="GetHMIDiagnostics-198DB4E5__PushConfigurationToTheManager-1F28572C">
+<a name="PushConfigurationToTheManager-1F28572C" id="PushConfigurationToTheManager-1F28572C">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5__PushConfigurationToTheManager_1F28572C" id="GetHMIDiagnostics_198DB4E5__PushConfigurationToTheManager_1F28572C">
+<!-- --></a><a name="PushConfigurationToTheManager_1F28572C" id="PushConfigurationToTheManager_1F28572C">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Push <span class="ph">MQTT</span> Configuration to the <span class="ph">Soft dPAC</span> <span class="ph uicontrol">Manager</span>
+</h2>
+<p class="p">
+To push <span class="ph">MQTT</span> configuration onto the <span class="ph">Soft dPAC</span> <span class="ph uicontrol">Manager</span>, follow these actions for each station running a <span class="ph">Soft dPAC</span>:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <a class="xref" href="PhysicalTopologyEditor-A00503A9.html"><span class="ph uicontrol">Physical devices editor</span></a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure a <span class="ph">Soft dPAC</span> device (see section above).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Define communication with the <span class="ph">MQTT</span> broker (see section above).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the entire workstation, containing the <span class="ph">Soft dPAC</span> device, then push the <span class="ph">MQTT</span> configuration by:
+</p>
+<ol class="ol" type="a">
+<li class="li">
+<p class="p">
+Right-clicking the workstation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Clicking <span class="ph menucascade"><span class="ph uicontrol">Manage Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Manage Soft dPAC</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configuration</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Clicking <span class="ph uicontrol">Apply</span> at the bottom right of the window opening.
+</p>
+</li>
+</ol>
+</li>
+</ol>
+<div class="p">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Repeat these pushing steps on any station running a <span class="ph">Soft dPAC</span>, each time the broker address is changed.
+</div>
+</div>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph">MQTT</span> configuration is pushed onto the <span class="ph">Soft dPAC</span> <span class="ph uicontrol">Manager</span> as it is shown in the tab <span class="ph uicontrol">Services</span> and in the line <span class="ph uicontrol">Diagnostic service</span> of the window. The <span class="ph">Soft dPAC</span> <span class="ph uicontrol">Manager</span> is now making the communication between the <span class="ph">MQTT</span> broker and the <span class="ph">Soft dPAC</span> device, allowing the diagnostics to be delivered.
+</p>
+</div>
+<div class="section" id="GetHMIDiagnostics-198DB4E5__DrawDiagnosticsGridOnCanvas-1F28583E">
+<a name="DrawDiagnosticsGridOnCanvas-1F28583E" id="DrawDiagnosticsGridOnCanvas-1F28583E">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5__DrawDiagnosticsGridOnCanvas_1F28583E" id="GetHMIDiagnostics_198DB4E5__DrawDiagnosticsGridOnCanvas_1F28583E">
+<!-- --></a><a name="DrawDiagnosticsGridOnCanvas_1F28583E" id="DrawDiagnosticsGridOnCanvas_1F28583E">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Draw <span class="ph uicontrol">Diagnostics Grid</span> on Canvas
+</h2>
+<p class="p">
+To see the diagnostics transferred from the <span class="ph">Soft dPAC</span> device, add a <span class="ph uicontrol">Diagnostics Grid</span> on a canvas:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <a class="xref" href="SolutionExplorerPad-99502686.html"><span class="ph uicontrol">Solution Explorer</span> pad</a>, expand the <span class="ph uicontrol">Canvas</span> sub-node.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Open or create a canvas.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Add a <span class="ph uicontrol">Diagnostics Grid</span> into the canvas.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Save and close the canvas.
+</p>
+</li>
+</ol>
+<p class="p">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Diagnostics Grid</span> is added and the canvas is ready to be started online.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know how the <span class="ph uicontrol">Diagnostics Grid</span> graphic tool works, refer to <a class="xref" href="GraphicsEditorToolbar-EAB7CA20.html"><em class="ph i">Graphics Editor Toolbar</em></a>.
+</div>
+</div>
+<div class="section" id="GetHMIDiagnostics-198DB4E5__RunOnlineTheApplication-1F2858CE">
+<a name="RunOnlineTheApplication-1F2858CE" id="RunOnlineTheApplication-1F2858CE">
+<!-- --></a><a name="GetHMIDiagnostics_198DB4E5__RunOnlineTheApplication_1F2858CE" id="GetHMIDiagnostics_198DB4E5__RunOnlineTheApplication_1F2858CE">
+<!-- --></a><a name="RunOnlineTheApplication_1F2858CE" id="RunOnlineTheApplication_1F2858CE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Run the Application Online
+</h2>
+<p class="p">
+To get the diagnostics, make sure to have completed all the previously described actions. Then run the <span class="ph">Soft dPAC</span> device online and start the HMI online. The canvas with the <span class="ph uicontrol">Diagnostics Grid</span> displays the diagnostics of the device.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,1 @@
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"About the Document\" to=\"Cybersecurity Generalities\" num=\"19\"/><ck fm=\"Safety Information\" to=\"Operation And Adjustments\" num=\"19\"/><ck fm=\"Before You Begin\" to=\"Native Altivar drive interface and I/O support\" num=\"17\"/><ck fm=\"Overview\" to=\"csh.js\" num=\"12\"/></cki>";

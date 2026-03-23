@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"1. Interface Editor View","type":"item","url":"EAE_UM/InterfaceEditorView-EABA9DCA.html"},{"name":"2. HMI Symbols Library","type":"item","url":"EAE_UM/HMISymbolsLibrary-EABAB945.html"},{"name":"3. HMI Base Symbols Library","type":"item","url":"EAE_UM/HMIBaseSymbolsLibrary-EABAD132.html"},{"name":"4. Customizing Generic Symbol Icons","type":"item","url":"EAE_UM/CustomizingGenericSymbolIcons-EABAF702.html"},{"name":"5. Symbol Size when used in Canvas","type":"item","url":"EAE_UM/SymbolSizeWhenUsedInCanvas-EABB192D.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

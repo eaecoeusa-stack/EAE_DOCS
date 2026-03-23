@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc33.js\"  name=\"ATVCyclicScanner - Properties\" url=\"ATVd_CAT/ATVCyclicScanner-DCB9EF0D.html#ATVCyclicScanner-DCB9EF0D\"><item name=\"Integration of ATVCyclicScanner to EcoStruxure Automation Expert Solution\" url=\"ATVd_CAT/TaskTitle-A628F122.html\" /></data>";

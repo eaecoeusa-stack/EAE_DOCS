@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Error Halt Causes and Inspection Methods" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ErrorHaltCausesandInspectionMethods-C0E888C0" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Error Halt Causes and Inspection Methods
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.8.1.0_4";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/ErrorHaltPromptsandMitigationCPT-C0617671.html" />
+<meta name="brsnext" value="EAE_ADG/HMIDebugandTestCPT-C0618E48.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Debug and Test Tools in EcoStruxure Automation Expert &gt; EcoRuntime Debug and Test" />
+</head>
+<body id="ErrorHaltCausesandInspectionMethods-C0E888C0"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"DebugandTestToolsinEcoStruxureAutom-C06087CA.html#DebugandTestToolsinEcoStruxureAutom-C06087CA\">Debug and Test Tools in EcoStruxure Automation Expert<\/a> > <a href=\"EcoRuntimeDebugandTestCPT-C060A699.html\">EcoRuntime Debug and Test<\/a> > Error Halt Causes and Inspection Methods<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ErrorHaltCausesandInspectionMethods-C0E888C0" id="ErrorHaltCausesandInspectionMethods-C0E888C0_">
+<!-- --></a><a name="ErrorHaltCausesandInspectionMethods_C0E888C0" id="ErrorHaltCausesandInspectionMethods_C0E888C0">
+<!-- --></a><a name="ErrorHaltCausesandInspectionMethods_C0E888C0" id="ErrorHaltCausesandInspectionMethods_C0E888C0_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Error Halt Causes and Inspection Methods
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<h2 class="title sectiontitle">
+Error halt can be caused due to boot Project
+</h2>
+<p class="p">
+If the boot project causes an execution error, the running device goes to <span class="ph uicontrol">ErrorHalt</span> state after each attempt to execute the endless loop.
+</p>
+<p class="p">
+This could happened if:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+One of the following command is triggered: <span class="ph uicontrol">Load Boot Project</span>, <span class="ph uicontrol">Restart Runtime</span>, <span class="ph uicontrol">Reboot Device</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+And the parameters trigger the boot project after these commands execution.
+</p>
+</li>
+</ul>
+<p class="p">
+To avoid such loop, perform these actions in the <span class="ph uicontrol">Deploy and Diagnostics</span> editor:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Boot Project</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Delete Boot Project</span></span> (the boot project causing the error loop).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Segmentation Fault and arithmetic errors
+</h2>
+<p class="p">
+The following examples will stop the <span class="ph">EcoRT</span> process: Segmentation fault, array or string out of bounds or division by zero.
+</p>
+<p class="p">
+See these errors on the cyclic log file. It displays the name of the function block that triggered the error. To help prevent such event, all variables must have permission to access memory by assigning the right size to each variable.
+</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Out of Memory and High CPU Load
+</h2>
+<p class="p">
+The device also moves to <span class="ph uicontrol">ErrorHalt</span> state if:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Maximum allowed memory is exceeded</strong>: When the data being accessed or processed does not align with the allocated device memory.
+</p>
+<p class="p">
+To manage this issue, redistribute the application to different devices or optimize the logic.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">High CPU load</strong>: It potentially causes the system to become unresponsive.
+</p>
+<p class="p">
+To investigate this issue, monitor the system resource usage. Then Identify the processes consuming excessive CPU resources and check in the log files, with <span class="ph uicontrol">Fetch Log Files</span> command in the <span class="ph uicontrol">Deploy and Diagnostics</span> editor, if there is no event chain with infinite loop, by checking which function blocks have been fired which event. Finally, optimize the logic or processes contributing to the high load.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To identify if the instance of the <span class="ph">Soft dPAC</span> is having high CPU load, open the task manager of the engineering station
+</div>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For watch and forcing variables, refer to the topic <a class="xref" href="ObservingEventFlowsAndEventCounts-4A7F9F81.html">Observing Event Flows and Event Counts</a>.
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

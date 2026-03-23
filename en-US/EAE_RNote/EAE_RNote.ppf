@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="EAE_RNote" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="2" page="EAE_RNote\AboutTheBook-B8350686.html">
+  </contextentry>
+  <contextentry id="1" page="EAE_RNote\D-NA-0003897.1.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="EAE_RNote\EAE_RNote_ReleaseNotesEcoStruxureAutomationEx-B82E5819.html">
+  <topic>EAE_RNote\AboutTheBook-B8350686.html
+  </topic>
+  <topic>EAE_RNote\AdditionalInformation-B8B41214.html
+  </topic>
+  <topic>EAE_RNote\BeforeYouBegin-B8B02606.html
+  </topic>
+  <topic>EAE_RNote\CompatibilityAndMigrationNewFeature-E3E09F33.html
+  </topic>
+  <topic>EAE_RNote\CybersecurityFeatures-805FADA6.html
+  </topic>
+  <topic>EAE_RNote\CybersecurityInformation-DC2C30EB.html
+  </topic>
+  <topic>EAE_RNote\D-NA-0003897.1.html
+  </topic>
+  <topic>EAE_RNote\DistributedComponents-E3ECC19A.html
+  </topic>
+  <topic>EAE_RNote\DistributedComponentsNewFeatures-E3D08D5E.html
+  </topic>
+  <topic>EAE_RNote\DocumentationAndSupport-C890016B.html
+  </topic>
+  <topic>EAE_RNote\EAE_RNote_id_address_tpc.html
+  </topic>
+  <topic>EAE_RNote\EAE_RNote_id_disclaimer_tpc.html
+  </topic>
+  <topic>EAE_RNote\EAE_RNote_ReleaseNotesEcoStruxureAutomationEx-B82E5819.html
+  </topic>
+  <topic>EAE_RNote\HardwareFirmwareInformation-B89A3435.html
+  </topic>
+  <topic>EAE_RNote\IdentificationAltivarDriveFamiliesT-E3D235E7.html
+  </topic>
+  <topic>EAE_RNote\IdentificationInformationAboutForWi-E3D308C3.html
+  </topic>
+  <topic>EAE_RNote\IdentificationTheFollowingTableIndi-E3D170C6.html
+  </topic>
+  <topic>EAE_RNote\IdentificationTheFollowingTableIndi-E3D1DE3C.html
+  </topic>
+  <topic>EAE_RNote\IdentificationTheHAIsARedundantVers-E3D39AFE.html
+  </topic>
+  <topic>EAE_RNote\InstallationInstructions-B837C89A.html
+  </topic>
+  <topic>EAE_RNote\KnownLimitations-E3EC59FB.html
+  </topic>
+  <topic>EAE_RNote\LibraryIdentification-E3E2EA63.html
+  </topic>
+  <topic>EAE_RNote\LibraryInformation-E3E1FA43.html
+  </topic>
+  <topic>EAE_RNote\LicenseRequirements103139-3B8F758F.html
+  </topic>
+  <topic>EAE_RNote\ModiconEdgeIO-81A0ED1A.html
+  </topic>
+  <topic>EAE_RNote\Multi-userCapability-7FF31A4D.html
+  </topic>
+  <topic>EAE_RNote\NewFeatures-E3EA32C3.html
+  </topic>
+  <topic>EAE_RNote\OverviewIsAIPCPre-installedWithOnAD-E3D517C1.html
+  </topic>
+  <topic>EAE_RNote\OverviewIsDesignedForPerformance-de-E3D291C9.html
+  </topic>
+  <topic>EAE_RNote\OverviewProvidesStorageForAlarmsHis-E3D58A5D.html
+  </topic>
+  <topic>EAE_RNote\ProductInformation-B83666B4.html
+  </topic>
+  <topic>EAE_RNote\ProductInformation-B836CF72.html
+  </topic>
+  <topic>EAE_RNote\SafetyRelatedRecommendations-B8B07DC1.html
+  </topic>
+  <topic>EAE_RNote\SoftwareInformation-E3E6E22C.html
+  </topic>
+  <topic>EAE_RNote\SystemRequirements-DC2DBE61.html
+  </topic>
+  <topic>EAE_RNote\X80RemoteIO-E3D4BD22.html
+  </topic>
+  <topic>EAE_RNote\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

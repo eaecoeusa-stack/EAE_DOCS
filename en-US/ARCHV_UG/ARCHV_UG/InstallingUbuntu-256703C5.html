@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="task" />
+<meta name="DC.title" content="EcoStruxure Automation Expert - Archive and PostgreSQL Installation" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="InstallingUbuntu-256703C5" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+EcoStruxure Automation Expert - Archive and PostgreSQL Installation
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.0_3";
+//]]></script>
+<meta name="brsprev" value="ARCHV_UG/ChecksumAndSignatureVerification-F052DC75.html" />
+<meta name="brsnext" value="ARCHV_UG/ConfiguringPgAdmin4-2D88AFDE.html" />
+<meta name="topic-breadcrumbs" content="Archive - User Guide &gt; EcoStruxure Automation Expert - Archive (Ubuntu and Debian) Installation Instructions" />
+</head>
+<body id="InstallingUbuntu-256703C5"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html");
+document.write("<a href=\"ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html\">Archive - User Guide<\/a> > <a href=\"EAEArchiveInstallUbuntu-25E8974F.html\">EcoStruxure Automation Expert - Archive (Ubuntu and Debian) Installation Instructions<\/a> > EcoStruxure Automation Expert - Archive and PostgreSQL Installation<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="InstallingUbuntu-256703C5" id="InstallingUbuntu-256703C5_">
+<!-- --></a><a name="InstallingUbuntu_256703C5" id="InstallingUbuntu_256703C5">
+<!-- --></a><a name="InstallingUbuntu_256703C5" id="InstallingUbuntu_256703C5_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span class="ph">EcoStruxure Automation Expert - Archive</span> and PostgreSQL Installation
+</h1>
+<div class="body taskbody">
+
+<div class="section prereq p">
+An internet connection is required on the PC for the download and the installation of <span class="ph">EcoStruxure Automation Expert - Archive</span> (Ubuntu and Debian).<br />PostgreSQL V14.0 is installed during the installation of <span class="ph">EcoStruxure Automation Expert - Archive</span>.
+</div>
+<div class="section context">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Starting with <span class="ph">EcoStruxure Automation Expert - Archive</span> V24.1 there are new password requirements introduced and the passwords are encrypted with scram-sha-256 algorithm to fulfill standard security requirements. In earlier versions, default passwords were used (identical to the usernames) and encrypted with unsecure MD5 algorithm. The password encryption is configured in the pg_hba.conf file.
+</div>
+</div>
+<ol class="ol steps">
+<li class="li step stepexpand">
+<span class="ph cmd">Copy the <span class="ph">.deb</span> installation file from the <span class="ph uicontrol">Archive/Linux</span> subfolder of the <span class="ph">EcoStruxure Automation Expert - Runtime</span> installation package to the target PC, using winscp or a USB, into a folder of your choice (for example: <span class="ph filepath">/home/&lt;username&gt;</span>).</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Open the folder where the file is copied, then right-click and select the <span class="ph uicontrol">Terminal</span> application.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Terminal</span> application opens.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Run the command <code class="ph codeph">sudo apt update</code> to update the list of installation packages.</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Depend on processor architecture, run the command <code class="ph codeph">$ sudo apt install ./eae-archive_2x.y_amd64.deb</code> or <code class="ph codeph">$ sudo apt install ./eae-archive_2x.y_arm64.deb</code>, then:</span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> The 2x.y is the version of <span class="ph">EcoStruxure Automation Expert - Archive</span> that you install.
+</div>
+</div>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Set a port number or keep the default port number (5432).</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">When a dialog is displayed, set a password for the database superuser (postgres) for PostgreSQL.</span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+Remember this password as it is required for later use.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+Use a password that follows the standard security requirements that is displayed in the dialogue during the installation.
+</p>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Enter the password of the database superuser (postgres), set during the installation of PostgreSQL, and confirm.</span>
+<div class="itemgroup info">
+Passwords for the required user roles <span class="ph uicontrol">searchive</span> and the <span class="ph uicontrol">seservice</span> are requested. Enter the password that follows the standard password security requirements displayed in the dialogue during installation.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">When the <span class="ph uicontrol">Configuring eae-archive</span> dialog is displayed:</span>
+<ul class="ul choices">
+<li class="li choice">
+Click <span class="ph uicontrol">Yes</span> to backup the data, or
+</li>
+<li class="li choice">
+Click <span class="ph uicontrol">No</span> to not create backup.
+</li>
+</ul>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, <a class="xref" href="PgAgentJobActions-25E680F2.html#PgAgentJobActions-25E680F2">the data of the <span class="ph uicontrol">Properties</span> tables of your databases is deleted by <span class="ph">pgAgent</span> to save space</a>. If you click <span class="ph uicontrol">Yes</span>, backups are created before deleting the tables. The selection is applied to databases, created after the setting is configured, and not to existing databases. The value of the backup setting is visible in the <span class="ph uicontrol">Properties</span> table of the <span class="ph uicontrol">searchive</span> database in <span class="ph">pgAdmin 4</span>, under the <span class="ph uicontrol">TablePartitioningExportBeforeDrop</span> property. If the value is <kbd class="ph userinput">1</kbd>, then backup is activated, and if the value is <kbd class="ph userinput">0</kbd>, the backup is turned off. If you want to modify the configuration of this setting, run the command <code class="ph codeph">$ sudo dpkg-reconfigure eae-archive</code> and follow the installation steps.
+</div>
+</div>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The installation is completed.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Logout and login to start the services.</span>
+</li>
+</ol>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005116.05
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

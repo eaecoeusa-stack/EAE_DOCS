@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Configure Users and Roles and Allow Permission in IDE","type":"item","url":"EAE_CSG/ConfigureUsersAndRoles-652F3590.html"},{"name":"Asset Link Workflow using Galaxy User Having Administrator Role","type":"item","url":"EAE_CSG/AssetLinkWorkflowUsingGalaxyUserHav-652EB834.html"},{"name":"Asset Link Workflow Using Galaxy User Having Operator Role","type":"item","url":"EAE_CSG/AssetLinkWorkflowUsingGalaxyUserHav-652F529C.html"},{"name":"AVEVA Industrial Graphic Workflow Using Galaxy User Having Operator Role","type":"item","url":"EAE_CSG/AIGWorkflowUsingGalaxyUserHavingOpe-6C72201D.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

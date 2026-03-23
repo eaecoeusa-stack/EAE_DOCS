@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Hardening Guideline for Containers on Soft dPAC" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="HardeningGuidelineForContainersOnSo-99CC15EF" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Hardening Guideline for Containers on Soft dPAC
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.1.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_RNote24.1/CybersecurityInformation-DC2C30EB.html" />
+<meta name="brsnext" value="EAE_RNote24.1/ProductInformation-B83666B4.html" />
+<meta name="topic-breadcrumbs" content="EcoStruxure Automation Expert - Release Notes &gt; Before You Begin" />
+</head>
+<body id="HardeningGuidelineForContainersOnSo-99CC15EF"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_RNote24.1_ReleaseNotesEcoStruxureAutomationEx-B82E5819.html");
+document.write("<a href=\"EAE_RNote24.1_ReleaseNotesEcoStruxureAutomationEx-B82E5819.html\">EcoStruxure Automation Expert - Release Notes<\/a> > <a href=\"BeforeYouBegin-B8B02606.html\">Before You Begin<\/a> > Hardening Guideline for Containers on Soft dPAC<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="HardeningGuidelineForContainersOnSo-99CC15EF" id="HardeningGuidelineForContainersOnSo-99CC15EF_">
+<!-- --></a><a name="HardeningGuidelineForContainersOnSo_99CC15EF" id="HardeningGuidelineForContainersOnSo_99CC15EF">
+<!-- --></a><a name="HardeningGuidelineForContainersOnSo_99CC15EF" id="HardeningGuidelineForContainersOnSo_99CC15EF_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Hardening Guideline for Containers on <span class="ph">Soft dPAC</span>
+</h1>
+<div class="body conbody">
+
+<p class="p">
+The purpose of this guideline is to explain the security concerns associated with container technologies and make practical recommendations for addressing those vulnerabilities when specifying, implementing, and maintaining containers. The use of container-specific operating systems (for example, Alpine OS) is more than required to reduce surface attack due to their construction, instead of generic ones (for example, Red Hat, or Ubuntu).
+</p>
+<div class="section">
+<h2 class="title sectiontitle">
+Architectural Point of View
+</h2>
+<p class="p">
+If you modify or add containers, try to group them by functionality or security levels as a measure to containment.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Stay minimal</strong>: Remove any components that are not needed, or any outdated functionalities.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Only use trusted images</strong>: Use images that have been previously scanned and found to be trustworthy.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Harden the host</strong>: Use scripts to configure hosts properly, based on state-of-the-art cybersecurity best practices.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Remove privileges</strong>: Running privileged containers is a security risk because it creates an opportunity for a malicious user to take control of the host system:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+The root access must be limited to designated security member of the company.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The docker members must be limited to designated people when installing and uninstalling the <span class="ph">Soft dPAC</span> solution.
+</p>
+</li>
+</ol>
+</li>
+<li class="li">
+<p class="p">
+Respect the CISO rules of the company.
+</p>
+</li>
+</ul>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Monitoring Point of View
+</h2>
+<p class="p">
+Software solutions can be used to surveil the environment for suspicious activity.
+</p>
+<p class="p">
+There are several types of Intrusion prevention systems (IPSs), each with a different purpose:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Network intrusion prevention system (NIPS)</strong>: This type of IPS is installed only at strategic points to monitor all network traffic and proactively scan for threats.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Host intrusion prevention system (HIPS)</strong>: In contrast to a NIPS, a HIPS is installed on an endpoint (such as a PC) and looks at inbound and outbound traffic from that machine only. It works best in combination with a NIPS, as it serves as a last line of defense for threats that have made it past the NIPS.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--notice">
+NOTICE
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard"></div>
+<div class="howtoavoid">
+<strong class="ph b">POTENTIAL SECURITY ISSUE</strong>
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Network behavior analysis (NBA)</strong>: This system analyzes network traffic to detect unusual traffic flows, such as DDoS (Distributed Denial of Service) attacks. <br />Here are some best practices for setting up an NBA system:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<strong class="ph b">Analyze your options carefully before picking an NBA offering</strong>: There are many different NBA solutions available, and it’s important to choose one that meets your specific needs. Consider factors such as the size of your network, the types of the used devices, and the required level of security.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Do not rely on NBA alone</strong>: Use other security tools in addition to NBA, such as firewalls and antivirus software, to provide comprehensive protection for your network.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Ensure live testing before full-scale adoption</strong>: Before deploying an NBA system across your entire network, test it in a limited environment to ensure that it works as expected and does not cause any disruption.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Fine-tune NBA to minimize false positive</strong>: NBA systems can generate a large number of alerts, many of which might be false positive. It is important to fine-tune your NBA system to minimize false positive and ensure that you only receive alerts for genuine security threats.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Leverage NBA for security and non-security monitoring</strong>: NBA systems can be used for more than just security monitoring. They can also be used to monitor network performance, identify bandwidth hogs, and optimize network traffic.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Web application firewalls (WAF): </strong>A web application firewall is a security tool that monitors, filters and blocks HTTP traffic to and from a web application.  
+</p>
+</li>
+</ol>
+</li>
+<li class="li">
+<ol class="ol">
+<li class="li">
+<p class="p">
+<strong class="ph b">Choose the right WAF for your needs</strong>: There are many different WAF solutions available, and it is important to choose one that meets your specific needs. Consider factors such as the size of your network, the types of the used devices, and the required level of security.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Configure your WAF properly</strong>: Proper configuration is essential to ensure that your WAF is effective. Configure your WAF to monitor all traffic that passes through it, and set up rules to block malicious traffic.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Keep your WAF up-to-date</strong>: New threats are constantly emerging. Keep your WAF up-to-date with the latest security patches and updates.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Monitor your WAF regularly</strong>: Regular monitoring is essential to ensure that your WAF is working properly and blocking malicious traffic. Review your WAF logs regularly to identify any suspicious activity.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Integrate your WAF with other security tools</strong>: WAFs are an important part of a comprehensive security strategy, but they should not be relied on as the sole security tool. Use other security tools in addition to the WAF, such as firewalls and antivirus software, to provide comprehensive protection for your network.
+</p>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+RN0000000052.04
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

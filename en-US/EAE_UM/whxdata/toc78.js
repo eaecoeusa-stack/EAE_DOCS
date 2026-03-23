@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc76.js\"  name=\"IEC 61131 Data Types\" url=\"EAE_UM/IEC61131DataTypes-A3014D46.html#IEC61131DataTypes-A3014D46\"><item name=\"STRING Data Types - Fixed versus Dynamic\" url=\"EAE_UM/StringDataTypes-FixedVersusDynamic-CE5CA3F3.html#StringDataTypes-FixedVersusDynamic-CE5CA3F3\" /></data>";

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Internal Software architecture of Sub-System CAT" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="InternalSWArchitectureOfSubsystemCA-6182FD3A" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Internal Software architecture of Sub-System CAT
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v16.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.1";
+//]]></script>
+<meta name="brsprev" value="EAE_IECMG/SubsystemsInterface-61800441.html" />
+<meta name="brsnext" value="EAE_IECMG/InitializationCATFrame-0CPT-B8AE978F.html" />
+<meta name="topic-breadcrumbs" content="IEC61499 Application Modeling - Guidelines &gt; Modeling Guidelines in EcoStruxure Automation Expert" />
+</head>
+<body id="InternalSWArchitectureOfSubsystemCA-6182FD3A"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_IECMG_IEC614499ProgrammingGuidelinesEcoSt-5B4C38A7.html");
+document.write("<a href=\"EAE_IECMG_IEC614499ProgrammingGuidelinesEcoSt-5B4C38A7.html\">IEC61499 Application Modeling - Guidelines<\/a> > <a href=\"ProgrammingGuidelinesIn-617C8AFF.html\">Modeling Guidelines in EcoStruxure Automation Expert<\/a> > Internal Software architecture of Sub-System CAT<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="InternalSWArchitectureOfSubsystemCA-6182FD3A" id="InternalSWArchitectureOfSubsystemCA-6182FD3A_">
+<!-- --></a><a name="InternalSWArchitectureOfSubsystemCA_6182FD3A" id="InternalSWArchitectureOfSubsystemCA_6182FD3A">
+<!-- --></a><a name="InternalSWArchitectureOfSubsystemCA_6182FD3A" id="InternalSWArchitectureOfSubsystemCA_6182FD3A_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Internal Software architecture of Sub-System CAT
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Every sub-system <span class="ph">CAT</span> is suggested to have the same internal software architecture, divided into six functional areas.
+</p>
+<p class="p">
+Each area is identified inside <span class="ph">EcoStruxure Automation Expert</span> by colored and named frames, according to the template shown here below:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Frame - 0 INITIALIZATION</strong>: Each sub-system has its own internal and autonomous initialization. This allows for a correct SubApp implementation and optionally establishes a hierarchical initialization priority. The initialization <span class="ph">CAT</span> is instanced inside this frame.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know more about initialization <span class="ph">CAT</span>, refer to <a class="xref" href="InitializationCATFrame-0CPT-B8AE978F.html">Initialization <span class="ph">CAT</span> (frame-0) topic</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Frame - 1/2 FUNCTIONAL INPUT/OUTPUT</strong>: These two frames contain the software connections to the input and output adapters of the sub-systems, defined in its <span class="ph">CAT</span> interface. There is in those two frames one connection per function behavior of the sub-system.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Frame - 3 FIELD INTERFACE</strong>: This frame contains the <span class="ph">CAT</span> hosting all I/Os from the field directly contained inside the sub-system.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> I/Os belonging to children’s sub-systems are not located here. There are located directly inside the children sub-system.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know more about the field interface, refer to the <a class="xref" href="FieldInterfaceCATFrame-3CPT-B8AE9F6A.html">Field Interface CAT (Frame-3) topic</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Frame - 4 CHILDREN</strong>: This frame is where all children belonging to this sub-system are located. This frame can be divided into two sub-frames:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">4.A - TYPICALS</strong>: This frame contains the children with typical types as pumps, valves, motors and so on.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">4.B - OTHER SUB-SYSTEMS</strong>: This frame contains generic sub-systems.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know more about children frame, refer to the <a class="xref" href="ChildrenSubsystemFrame-4CPT-B8B04007.html">Children Sub-system (Frame-4) topic</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Frame - 5 LOGIC</strong>: This frame hosts the <span class="ph">CAT</span> implementing the whole functional logics of the sub-system. It governs messages from and to all other frames.
+</p>
+<p class="p">
+This frame is divided into three function areas, one per logic type:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">5.A - Functional Behaviors</strong>: A single <span class="ph">CAT</span> to practically implement the intelligence of the sub-system.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know more about the functional behavior frame, refer to the <a class="xref" href="BehavioralLogicsFrame-5a-6199F893.html">Behavioral Logics (Frame-5A) topic</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">5.B - Operation Mode Management</strong>: The sub-system logics managing the working modes of the sub-system in relationship to its parent or children, e.g. manual mode and automatic mode.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">5.C - Interlocks and Permissive Management</strong>: The point of arrive and the distribution of the interlocks and permissive acting on the sub-system or its children.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To know more about the logic frame, refer to the <a class="xref" href="LogicsSubsystemFrame-5CPT-B8B046CC.html">Logic Sub-System (Frame-5) topic</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Frame - 6 OT-IT INTERFACE</strong>: Very similarly to what the field interface does (frame 3), it contains the <span class="ph">CAT</span> implementing the exchange of signals to and from the IT/OT domain that resides outside of the scope of the <span class="ph">IEC61499</span> communication network.
+</p>
+<p class="p">
+This bidirectional access contains the implementation of the specific communication mechanisms used to establish the connection. For instance, it could contain a <span class="ph">MQTT</span> client to publish certain topics towards the IT and to subscribe to other topics coming from the IT (e.g. HTTP Requests, WebSocket Client and so on).
+</p>
+</li>
+</ul>
+<img class="image" src="DD00667525.png" width="750" alt="" />
+<div class="note note">
+<span class="notetitle">NOTE:</span> To see an internal software architecture fully filled, check the <a class="xref" href="Children-627D3C60.html">Children topic</a>, the <a class="xref" href="Unit601-627D82F6.html">Unit 601 topic</a>, or the <a class="xref" href="EM_C1FunctionalBehavior-627EF1E6.html">EM_C1 Functional Behavior topic</a>.
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005641.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"EcoStruxure Automation Expert Compatibility with OS","type":"item","url":"EAE_CMPT/EcoStruxureAutomationExpertCompatib-3D8DE7DD.html"},{"name":"Controller Compatibilities","type":"item","url":"EAE_CMPT/ControllerCompatibilities-3D9124C8.html"},{"name":"Library Dependencies","type":"item","url":"EAE_CMPT/LibraryDependencies-3D92944F.html"},{"name":"Device Compatibilities","type":"item","url":"EAE_CMPT/DeviceCompatibilities-3D947A71.html"},{"name":"Software Compatibilities","type":"item","url":"EAE_CMPT/SoftwareCompatibilities-EEADFA96.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

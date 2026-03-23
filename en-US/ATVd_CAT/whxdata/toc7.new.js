@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"IoEmbeddedATV340Ex30to75kW AnalogInputs","type":"item","url":"ATVd_CAT/IOEmbeddedATV340x30To75KWFpAnalogIn-0C209F20.html"},{"name":"IoEmbeddedATV340Ex30to75kW AnalogOutputs","type":"item","url":"ATVd_CAT/IOEmbeddedATV340x30To75KWFpAnalogOu-0C22E419.html"},{"name":"IoEmbeddedATV340Ex30to75kW DigitalInputs","type":"item","url":"ATVd_CAT/IOEmbeddedATV340x30To75KWFpDigitalI-0C260E2C.html"},{"name":"IoEmbeddedATV340Ex30to75kW Relay & Digital Outputs","type":"item","url":"ATVd_CAT/IOEmbeddedATV340x30To75KWFpDigitalO-0C28461F.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

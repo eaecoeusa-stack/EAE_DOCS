@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="1. Handling of Time Structures" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="HandlingOfTimeStructures-22E02256" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+1. Handling of Time Structures
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.8.4.1.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/TimeFunctions-A30A02B6.html" />
+<meta name="brsnext" value="EAE_UM/GeneralFeatures-22E0C3E7.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; Appendix &gt; Functions and Data Types &gt; Time Functions" />
+</head>
+<body id="HandlingOfTimeStructures-22E02256"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"Appendix-A2FF5064.html#Appendix-A2FF5064\">Appendix<\/a> > <a href=\"TimeFunctionsAndDataTypes-A309EDDC.html#TimeFunctionsAndDataTypes-A309EDDC\">Functions and Data Types<\/a> > <a href=\"TimeFunctions-A30A02B6.html#TimeFunctions-A30A02B6\">Time Functions<\/a> > 1. Handling of Time Structures<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="HandlingOfTimeStructures-22E02256" id="HandlingOfTimeStructures-22E02256_">
+<!-- --></a><a name="HandlingOfTimeStructures_22E02256" id="HandlingOfTimeStructures_22E02256">
+<!-- --></a><a name="HandlingOfTimeStructures_22E02256" id="HandlingOfTimeStructures_22E02256_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+1. Handling of Time Structures
+</h1>
+<div class="body conbody">
+<div class="section" id="HandlingOfTimeStructures-22E02256__HandlingOfTimeStructures-A7507406">
+<a name="HandlingOfTimeStructures-A7507406" id="HandlingOfTimeStructures-A7507406">
+<!-- --></a><a name="HandlingOfTimeStructures_22E02256__HandlingOfTimeStructures_A7507406" id="HandlingOfTimeStructures_22E02256__HandlingOfTimeStructures_A7507406">
+<!-- --></a><a name="HandlingOfTimeStructures_A7507406" id="HandlingOfTimeStructures_A7507406">
+<!-- --></a>
+<p class="p">
+The IEC 61131-3 defines two duration data types,
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+TIME
+</p>
+</li>
+<li class="li">
+<p class="p">
+LTIME
+</p>
+</li>
+</ul>
+<p class="p">
+and six data types representing different aspects of date and time values:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+DATE
+</p>
+</li>
+<li class="li">
+<p class="p">
+LDATE
+</p>
+</li>
+<li class="li">
+<p class="p">
+TIME_OF_DAY (TOD)
+</p>
+</li>
+<li class="li">
+<p class="p">
+LTOD
+</p>
+</li>
+<li class="li">
+<p class="p">
+DATE_AND_TIME (DT)
+</p>
+</li>
+<li class="li">
+<p class="p">
+LDT
+</p>
+</li>
+</ul>
+<p class="p">
+The long versions of these data types have been added in the third edition of the standard and are well defined while the others rely on a given implementation.
+</p>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">TIME</em> - duration of time
+</p>
+<p class="p">
+Min. value: TIME#-2147483648ms, T#-24d20h31m23s648ms
+</p>
+<p class="p">
+Max. value: TIME#2147483647ms, T#24d20h31m23s647ms
+</p>
+<p class="p">
+Resolution: milliseconds
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">LTIME</em> - duration of time
+</p>
+<p class="p">
+Min. value: LTIME#-9_223_372_036.854_775_808s,
+</p>
+<p class="p">
+LT#-106751d23h47m16s854ms775us808ns
+</p>
+<p class="p">
+Max. value: LTIME#9_223_372_036.854_775_807s,
+</p>
+<p class="p">
+LT#106751d23h47m16s854ms775us807ns
+</p>
+<p class="p">
+Resolution: nanoseconds
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">DATE</em> - absolute point in calendar time, representing a single day
+</p>
+<p class="p">
+Min. value: DATE#1970-01-01, D#1970-01-01
+</p>
+<p class="p">
+Max. value: DATE#2038-01-18, D#2038-01-18
+</p>
+<p class="p">
+Resolution: days
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">LDATE</em> - absolute point in calendar time, representing a single day
+</p>
+<p class="p">
+Min. value: LDATE#1970-01-01, LD#1970-01-01
+</p>
+<p class="p">
+Max. value: LDATE#2038-01-18, LD#2038-01-18
+</p>
+<p class="p">
+Resolution: days
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">TIME_OF_DAY (TOD)</em> - absolute point at one day
+</p>
+<p class="p">
+Min. value: TIME_OF_DAY#00:00:00.000, TOD#00:00:00.000
+</p>
+<p class="p">
+Max. value: TIME_OF_DAY#23:59:59.999, TOD#23:59:59.999
+</p>
+<p class="p">
+Resolution: milliseconds
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">LTIME_OF_DAY (LTOD)</em> - absolute point at one day
+</p>
+<p class="p">
+Min. value: LTIME_OF_DAY#00:00:00.000_000_000,
+</p>
+<p class="p">
+LTOD#00:00:00.000_000_000
+</p>
+<p class="p">
+Max. value: LTIME_OF_DAY#23:59:59.999_999_999,
+</p>
+<p class="p">
+LTOD#23:59:59.999_999_999
+</p>
+<p class="p">
+Resolution: nanoseconds
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">DATE_AND_TIME (DT)</em> - absolute point in time
+</p>
+<p class="p">
+Min. value: DATE_AND_TIME_UTC#1970-01-01-00:00:00.000,
+</p>
+<p class="p">
+DT_UTC#1970-01-01-00:00:00.000
+</p>
+<p class="p">
+Max. value: DATE_AND_TIME_UTC#2038-01-18-16:14:07.000,
+</p>
+<p class="p">
+DT_UTC#2038-01-18-16:14:07.000
+</p>
+<p class="p">
+Resolution: milliseconds
+</p>
+</div>
+<br />
+<div class="div">
+<p class="p">
+<em class="ph i">LDATE_AND_TIME (LDT)</em> - absolute point in time
+</p>
+<p class="p">
+Min. value: LDATE_AND_TIME_UTC#1970-01-01-00:00:00.000_000_000,
+</p>
+<p class="p">
+LDT_UTC#1970-01-01-00:00:00.000_000_000
+</p>
+<p class="p">
+Max. value: LDATE_AND_TIME_UTC#2038-01-18-16:14:07.000_000_000,
+</p>
+<p class="p">
+LDT_UTC#2038-01-18-16:14:07.000_000_000
+</p>
+<p class="p">
+Resolution: nanoseconds
+</p>
+</div>
+<br />
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ol class="ol">
+<li class="li">
+<p class="p">
+There is no abbreviate for data types TIME, LTIME, DATE and LDATE. Abbreviations only exist for literal prefixes: T#, LT#, D# and LD#.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Date and time values are stored internally as UTC values. A textual representation by default is considered to be using the local time zone of the controller executing. Therefore DT#2022-01-01:00:00:00:00 is New Year wherever the controller may be. To specify UTC time zone, use the UTC specific prefixes. Also note that there is no DT_UTC data type.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The literals for DATE, LDATE, TOD and LTOD are local time and not time zone dependent. Literal prefixes DATE_UTC#, LDATE_UTC#, TOD_UTC# and LTOD_UTC do not exist.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The upper limits for data types DATE, LDATE, DATE_AND_TIME and LDATE_AND_TIME do not reflect the actual capacity of these types. Due to limitations in the underlying operating systems they have been chosen to be compliant with supported controllers. The compiler enforces these limits for portability and interoperability reasons. The limits will change in the future.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Operating a controller in UTC time zone can solve a portability problem with applications expecting all date and time values to be UTC. If a distributed application does not span multiple time zones, this may not cause problems.
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="HandlingOfTimeStructures-22E02256__WhileTheStandardDefinesThisDataType-24E5D967">
+<a name="WhileTheStandardDefinesThisDataType-24E5D967" id="WhileTheStandardDefinesThisDataType-24E5D967">
+<!-- --></a><a name="HandlingOfTimeStructures_22E02256__WhileTheStandardDefinesThisDataType_24E5D967" id="HandlingOfTimeStructures_22E02256__WhileTheStandardDefinesThisDataType_24E5D967">
+<!-- --></a><a name="WhileTheStandardDefinesThisDataType_24E5D967" id="WhileTheStandardDefinesThisDataType_24E5D967">
+<!-- --></a>
+<p class="p">
+While the standard defines these data types and their memory format, it does not define functions to handle these variables. It also does not define the time zone interpretation of time variables (which gets even more significance in distributed systems). According to this lack of specification, the following article describes the handling of time variables in EcoStruxure Automation Expert Buildtime systems and the available functions for handling times.
+</p>
+<p class="p">
+The concept of Schneider Electric is to handle all times in the Runtime as UTC and convert them to the local time zones at representation or in the according functions.
+</p>
+<img class="image" src="0000774280.png" alt="" style="max-height:300pt;" />
+<p class="p">
+All variables of type DT/LDT hold UTC date and time values.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

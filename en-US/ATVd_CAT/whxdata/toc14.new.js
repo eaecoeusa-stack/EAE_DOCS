@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc15","name":"EncoderAnalogModuleVW3A3422 - Hardware CAT","type":"book","url":"ATVd_CAT/VW3A3422EncoderAnalogModule-CA2D147F.html#VW3A3422EncoderAnalogModule-CA2D147F"},{"key":"toc16","name":"EncoderDigitalModuleVW3A3420 - Hardware CAT","type":"book","url":"ATVd_CAT/D-SE-0106534.html"},{"key":"toc17","name":"EncoderEmbeddedATV340x075to22kW - Hardware CAT","type":"book","url":"ATVd_CAT/D-SE-0107028.html"},{"key":"toc18","name":"EncoderHtlModuleVW3A3424 - Hardware CAT","type":"book","url":"ATVd_CAT/D-SE-0107032.html"},{"key":"toc19","name":"EncoderResolverModuleVW3A3423 - Hardware CAT","type":"book","url":"ATVd_CAT/ResolverModuleVW3A3423-C8ADE453.html#ResolverModuleVW3A3423-C8ADE453"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

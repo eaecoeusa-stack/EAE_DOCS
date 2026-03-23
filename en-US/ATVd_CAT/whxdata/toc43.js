@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"Basic Function Block\" url=\"ATVd_CAT/BasicFunctionBlock-5F739B7C.html\"><item name=\"atvDatatypeConverter\" url=\"ATVd_CAT/AtvDatatypeConverter-5F73CBEC.html\" /></data>";

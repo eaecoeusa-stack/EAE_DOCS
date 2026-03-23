@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Creating Physical Devices and Mapping Logical to Physical Devices","type":"item","url":"EAE_UM/CreatingPhysicalDevicesAndMappingLo-CBA616F0.html"},{"name":"Adding the EIPSCANNER to the Hardware Configuration","type":"item","url":"EAE_UM/OpenTheHardwareConfigurationEditor.-CBA6279A.html"},{"name":"Introducing the EtherNet/IP Configurator","type":"item","url":"EAE_UM/IntroducingTheEtherNetIPConfigurato-EAAE65BF.html"},{"name":"Configuring the EtherNet/IP Fieldbus Scanner and Adapters","type":"item","url":"EAE_UM/ConfiguringTheEtherNetIPFieldbusSca-CBC1A736.html"},{"name":"Importing the EtherNet/IP Configuration to a Solution","type":"item","url":"EAE_UM/ImportingTheEtherNetIPConfiguration-CBBCC0C3.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

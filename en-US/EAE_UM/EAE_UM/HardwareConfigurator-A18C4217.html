@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Hardware Configuration Editor" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="HardwareConfigurator-A18C4217" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Hardware Configuration Editor
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/FunctionBlocksNetworkEditor-69D62822.html" />
+<meta name="brsnext" value="EAE_UM/ConfiguringHARTModulesOnARemoteIODr-34F90134.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor" />
+</head>
+<body id="HardwareConfigurator-A18C4217"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > Hardware Configuration Editor<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="HardwareConfigurator-A18C4217" id="HardwareConfigurator-A18C4217_">
+<!-- --></a><a name="HardwareConfigurator_A18C4217" id="HardwareConfigurator_A18C4217">
+<!-- --></a><a name="HardwareConfigurator_A18C4217" id="HardwareConfigurator_A18C4217_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Hardware Configuration Editor
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+The <span class="ph uicontrol">Hardware Configuration</span> editor is available in the list of editors from the <span class="ph uicontrol">System</span> pad.
+</p>
+<p class="p">
+In this editor is configured the communication of the application with the hardware devices and / or with communication protocols.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To see how to define a communication protocol, refer to <a class="xref" href="SupportedCommunicationProtocols-66B40E44_1.html"><span class="ph">EcoStruxure Automation Expert - Buildtime</span> network communications</a>.
+</div>
+<p class="p">
+The hardware used in the project is presented under the following form:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Hardware elements can be <a class="xref" href="#HardwareConfigurator-A18C4217__AddingNewHardwareElements-A6CF5F6E">added</a> or removed within the <span class="ph uicontrol">Hardware Configuration</span> editor, displaying the element <span class="ph uicontrol">Type</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Parametrization can be performed in the <span class="ph uicontrol">Value</span> column  (for example, <span class="keyword parmname">busCycleTime</span>, <span class="keyword parmname">BUS_ID</span>, etc.). The symlink definition can either be typed directly in the column, or inserted from the <a class="xref" href="SymbolicLinks-A2221E99.html"><span class="ph uicontrol">Symbolic Links</span> pad</a> by drag and drop.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Comments can be added.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click on a hardware element in the <span class="ph uicontrol">Name</span> column to edit its name.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Watch points can be set in the <span class="ph uicontrol">Watch</span> column during runtime.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Previous port</span> column shows the bus output of the previous element, which allows you to verify the arrangement of the bus.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can also verify the bus arrangement using the graphical representation of the <a class="xref" href="HWConfigurationNetwork-A18B7ACF.html">hardware configuration network</a>.
+</div>
+</li>
+</ul>
+<p class="p">
+The columns displayed can be selected or deselected via toolbar icon <img class="image" src="0000802000.png" alt="" style="max-height:15px;" /> (<span class="ph uicontrol">Tools and options</span> ). Refer to the <a class="xref" href="#HardwareConfigurator-A18C4217__HWConfigurationEditorToolbar-DA3256B2">toolbar icons descriptions</a>.
+</p>
+<p class="p">
+Use the <a class="xref" href="#HardwareConfigurator-A18C4217__UsingExportAndImportToRe-useAPrevio-A6CEBFBA">import and export commands</a> to re-use a configuration.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can use the <span class="ph uicontrol">CAT : Configuration</span> tab to enter program logic that controls a user’s ability to <a class="xref" href="LimitingEditsAndActionsInTheHardwar-EC4EF2D4.html">perform edits and other actions in the Hardware Configuration editor</a>.
+</div>
+</div>
+<div class="section" id="HardwareConfigurator-A18C4217__AddingNewHardwareElements-A6CF5F6E">
+<a name="AddingNewHardwareElements-A6CF5F6E" id="AddingNewHardwareElements-A6CF5F6E">
+<!-- --></a><a name="HardwareConfigurator_A18C4217__AddingNewHardwareElements_A6CF5F6E" id="HardwareConfigurator_A18C4217__AddingNewHardwareElements_A6CF5F6E">
+<!-- --></a><a name="AddingNewHardwareElements_A6CF5F6E" id="AddingNewHardwareElements_A6CF5F6E">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Adding New Hardware Elements
+</h2>
+<p class="p">
+There are several options for inserting new hardware elements:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Drag and drop elements from the <span class="ph uicontrol">Solution Explorer</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Using the <a class="xref" href="#HardwareConfigurator-A18C4217__HWConfiguratorToolbar-A6CEC1C8">toolbar</a>, which is located on the upper edge of the <span class="ph uicontrol">Hardware Configuration</span> editor. Click the <img class="image" src="0000801999.png" alt="" style="max-height:15px;" /> (<span class="ph uicontrol">Add new master HW-CAT</span>) or <img class="image" src="0000801998.png" alt="" style="max-height:15px;" /> (<span class="ph uicontrol">Add new HW-CAT</span>) buttons.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Via context menu, by right-clicking the configurator field. Depending on the element on which the click has been made, different actions are available. If it is required, for example, to add IO-terminals to a coupler, right-click on the appropriate coupler item within the list and select <span class="ph uicontrol">Add</span> in the context menu.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="HardwareConfigurator-A18C4217__ContextMenu-A6CEC496">
+<a name="ContextMenu-A6CEC496" id="ContextMenu-A6CEC496">
+<!-- --></a><a name="HardwareConfigurator_A18C4217__ContextMenu_A6CEC496" id="HardwareConfigurator_A18C4217__ContextMenu_A6CEC496">
+<!-- --></a><a name="ContextMenu_A6CEC496" id="ContextMenu_A6CEC496">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Context Menu
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:25.4%" />
+<col style="width:74.6%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d260952e232">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d260952e236">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Add</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Add</span> window. This window displays a tree-form list of bus or device types that can be added to the currently selected element. For example, if a Modbus element is selected in the <span class="ph uicontrol">Hardware Configuration</span> editor, only Modbus device types are listed.
+</p>
+<p class="p">
+Select a bus or device type to add.
+</p>
+<p class="p">
+Optionally, edit the <span class="ph uicontrol">Name</span> of the element. To add more than one element of the same type, enter the number of elements to be added in the <span class="ph uicontrol">Count</span> box. In this case, unique names are created by appending an underscore (_) and the next available integer to the name of the element.
+</p>
+<p class="p">
+Click <span class="ph uicontrol">Add</span> to add the element(s) to the Hardware Configuration editor.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Add</span> window remains open after adding an element so you can continue to add elements. Selecting a different element in the Hardware Configuration editor automatically updates the <span class="ph uicontrol">Add</span> window to show only the bus or device types available in that context.
+</p>
+<p class="p">
+Click <span class="ph uicontrol">Close</span> to close the window.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Remove</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Removes the selected element
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Reset</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Restores the default setting for a selected VTQ input or output value that was previously edited. Enabled only for VTQ input and output values that have been changed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Copy</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Copies the selected hardware object.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Paste</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Pastes the previously copied hardware object in the selected location, provided the location is permissible.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Expand</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Expands the selected node
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Collapse</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Collapses the selected node
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Expand All</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Expands all nodes within the selected element
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Collapse All</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Collapses all nodes within the selected element
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Validate Configuration</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Performs a validation check of the hardware configuration. On completion, a message is displayed that indicates the hardware configuration is either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Valid.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Invalid and instructs you to refer to the <a class="xref" href="OutputPad-9A13B54F.html">Output window</a> for details.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> This command exists only at the bus master level.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Properties</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Opens a dialog window to show the properties of the selected element. The number and type of entries in the properties window are hardware-dependent. In some cases, this dialog is needed to define the <span class="keyword parmname">busID</span> as well (otherwise a detected error message appears e.g. "<em class="ph i">The required attribute 'busId' is missing</em>."). 
+</p>
+<p class="p">
+The properties dialog can also offer some additional functions when they are supported by the hardware. For example the module <em class="ph i">MIO 100</em> offers the possibility to configure universal I/O ports. 
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Reset Properties</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Restores the default setting for all properties that were previously edited. Enabled only if one or more property values have been changed.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Watch</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Sets respective watch points, depending on where the right-click was executed. That means, for example, all ports of a module / terminal when the right-click has been examined at the module / terminal itself, or just some selected ports of one or several modules or terminals.
+</p>
+<p class="p">
+Watched values are displayed in the <span class="ph uicontrol">Watch</span> column . If some of the watched points are forced (via HMI - Faceplates) the forced values are shown as well.
+</p>
+<p class="p">
+Precondition for setting watch points is that the project is deployed to the controller and the studio is logged into the controller (see the <a class="xref" href="DeviceAction-EC279F2B.html"><strong class="ph b">Login</strong></a> command of the <a class="xref" href="DeviceAction-EC279F2B.html"><strong class="ph b">Deploy and Diagnostic editor</strong></a>). This watch dialog serves to set watch points at the ports of the hardware. Information for setting watch points at other function blocks are located at <a class="xref" href="Watch-9FF7176D.html"><strong class="ph b">Watch</strong></a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Remove Watch</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Removes the selected watch points. An eventually set force of some ports has also to be removed via HMI again. Removing the watch points will not delete forces.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Parametrize with</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Depending on the hardware element type, an entry of this kind can be enclosed in the context menu. A click on this entry opens the respective faceplate directly, without starting the entire HMI.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Help</span>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Opens the help of the respective HW module of the HW library.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Configure EtherNet/IP scanner</span><sup class="ph sup">1</sup>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Opens the <a class="xref" href="IntroducingTheEtherNetIPConfigurato-EAAE65BF.html"><strong class="ph b">EtherNet/IP Configurator</strong></a> that you can use to configure the properties of an EtherNet/IP fieldbus scanner and adapters.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 ">
+<span class="ph uicontrol">Import EtherNet/IP Scanner</span><sup class="ph sup">1</sup>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e236 ">
+<p class="p">
+Opens the <strong class="ph b">Open</strong> dialog, which you can use to <a class="xref" href="Import-9F412A8A.html"><strong class="ph b">import</strong></a> a .zip file that contains a previously saved EtherNet/IP fieldbus scanner configuration. 
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e232 d260952e236 ">
+<p class="p">
+<sup class="ph sup">1</sup> Available only for EIPSCANNER HWCAT.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> From the Context Menu, you can Copy and Paste a hardware object within the same device or to a different one.
+</div>
+<p class="p">
+The hardware ports of the terminals can be linked here directly with variables from the process image by dragging an input or output variable via drag &amp; drop from the <a class="xref" href="SymbolicLinksPad-99E0357A.html"><strong class="ph b">Symbolic Links</strong> pad</a> on the respective port within the Hardware Configuration editor (see also <a class="xref" href="SymbolicLinks-A2221E99.html"><strong class="ph b">Symbolic Links</strong></a>). 
+</p>
+</div>
+<div class="section" id="HardwareConfigurator-A18C4217__HWConfiguratorToolbar-A6CEC1C8">
+<a name="HWConfiguratorToolbar-A6CEC1C8" id="HWConfiguratorToolbar-A6CEC1C8">
+<!-- --></a><a name="HardwareConfigurator_A18C4217__HWConfiguratorToolbar_A6CEC1C8" id="HardwareConfigurator_A18C4217__HWConfiguratorToolbar_A6CEC1C8">
+<!-- --></a><a name="HWConfiguratorToolbar_A6CEC1C8" id="HWConfiguratorToolbar_A6CEC1C8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+HW Configuration Editor Toolbar
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:19.66%" />
+<col style="width:80.34%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d260952e606">
+<p class="p">
+Icon
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d260952e610">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000801999.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Add new master HW-CAT
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Opens the<span class="ph uicontrol"> Add Bus</span> dialog for adding a new device master. The device master is the precondition that hardware elements can be inserted. The selection of the device master defines which hardware elements are offered for selection subsequently.
+</p>
+<p class="p">
+A dialog opens which offers the available device master types, depending on the referenced hardware library. Complete the following fields:
+</p>
+<p class="p">
+<span class="ph uicontrol">Name</span>:  The name of the master can be defined in the <span class="ph uicontrol">Name</span> column. When the field is left empty the name of the type is automatically adopted by selecting the type. When adding several masters, a number is added to the name and increased automatically.
+</p>
+<p class="p">
+<span class="ph uicontrol">Count</span>:  The number of added masters can be defined in field <span class="ph uicontrol">Count</span>.
+</p>
+<p class="p">
+<span class="ph uicontrol">Element Type</span>: The type <span class="ph uicontrol">Bus</span> is always available. The availability of other types depend on the selected node in the <span class="ph uicontrol">Hardware Configuration</span> editor.
+</p>
+<p class="p">
+<span class="ph uicontrol">Type</span>:  The available options are offered in the list at <span class="ph uicontrol">Type</span>(library dependent). The selected element can be added by clicking <span class="ph uicontrol">Add</span>. The number of elements added is determined by the <span class="ph uicontrol">Count</span> setting.
+</p>
+<p class="p">
+<span class="ph uicontrol">Add</span>: Adds the specified number and type of items.
+</p>
+<p class="p">
+<span class="ph uicontrol">Close</span>: Closes the dialog and saves the changes.
+</p>
+<p class="p">
+<span class="ph uicontrol">Help</span>: Opens context sensitive help for this dialog.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000801998.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Add new HW-CAT
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Available only when a master or a suitable hardware module is selected in the <a class="xref" href="HardwareConfigurator-A18C4217.html"><strong class="ph b">Hardware Configuration editor</strong></a>. A dialog opens that lets you insert hardware elements to the <span class="ph uicontrol">Hardware Configuration</span> editor. Complete the following fields:
+</p>
+<p class="p">
+<span class="ph uicontrol">Name</span>: The name of the element to be added next can be defined in field <span class="ph uicontrol">Name</span>. When the field is left empty the name of the type is automatically adopted by selecting the type. When adding several masters a number is added to the name and increased automatically.
+</p>
+<p class="p">
+<span class="ph uicontrol">Count</span>:  The number of added elements can be defined in field <span class="ph uicontrol">Count</span>.
+</p>
+<p class="p">
+<span class="ph uicontrol">Element Type</span>: Presents a library-dependent selection of available element types. Select an element type to display the bus outputs for the selected element. If there are several bus outputs available for the selected element you can switch between the individual outputs.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If the list doesn't offer the element you are searching for, it may be that the wrong bus output is selected. Check in the field <span class="ph uicontrol">Element Type</span> if there are multiple bus outputs available.
+</div>
+<p class="p">
+<span class="ph uicontrol">Type</span>:  Lists the available options (library dependent). The selected element can be added by clicking <span class="ph uicontrol">Add</span>. The number of elements added is determined by the <span class="ph uicontrol">Count</span> setting.
+</p>
+<p class="p">
+<span class="ph uicontrol">Add</span>: Adds the specified number and type of items.
+</p>
+<p class="p">
+<span class="ph uicontrol">Close</span>: Closes the dialog and saves the changes.
+</p>
+<p class="p">
+<span class="ph uicontrol">Help</span>: Opens context sensitive help for this dialog.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Permissible <span class="ph uicontrol">Count</span> and <span class="ph uicontrol">Element Type</span> values, as well as the listed devices, are library-dependent. The content of this window is dynamic and defined by the selected library.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000801996.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Export hardware configuration to file
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+The current hardware configuration can be saved as a <span class="ph">.HCF</span> file. The file can be saved in the project or separately on a data medium at arbitrary storage location.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000801995.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Import hardware configuration from file
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Imports an already stored hardware configuration in the form of a <span class="ph">.HCF</span> file from an arbitrary storage location.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="DD00845951.png" alt="" style="max-height:0.3in;" />
+</p>
+<p class="p">
+Revert all changes and parse FB network to create hardware configuration
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Discards the changes within the hardware configuration and loads the last state from function block network instead.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000801992.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Expand All
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Expands all nodes within the hardware configuration list.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000801991.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Collapse All
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Collapses all nodes within the hardware configuration list.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e606 ">
+<div class="div">
+<p class="p">
+<img class="image" src="0000802000.png" alt="" style="max-height:20px;" />
+</p>
+<p class="p">
+Tools and options
+</p>
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e610 ">
+<p class="p">
+Opens the submenu <span class="ph uicontrol">Select Columns</span> where you can select or deselect the columns to display from a drop down list.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="HardwareConfigurator-A18C4217__UsingExportAndImportToRe-useAPrevio-A6CEBFBA">
+<a name="UsingExportAndImportToRe-useAPrevio-A6CEBFBA" id="UsingExportAndImportToRe-useAPrevio-A6CEBFBA">
+<!-- --></a><a name="HardwareConfigurator_A18C4217__UsingExportAndImportToRe_useAPrevio_A6CEBFBA" id="HardwareConfigurator_A18C4217__UsingExportAndImportToRe_useAPrevio_A6CEBFBA">
+<!-- --></a><a name="UsingExportAndImportToRe_useAPrevio_A6CEBFBA" id="UsingExportAndImportToRe_useAPrevio_A6CEBFBA">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Using Export and Import to Re-use a Previously Configured Hardware Configuration
+</h2>
+<p class="p">
+You can use the Hardware Configuration editor to duplicate a hardware configuration by first exporting the configuration, and then importing the same exported hardware configuration. This process re-creates hardware configurations when no equivalent configuration was defined.
+</p>
+<p class="p">
+In some cases, you may unintentionally import a hardware configuration when an existing configuration was already created, or you may have imported the same hardware configuration twice. As a result, <span class="ph">EcoStruxure Automation Expert</span> displays the duplicate configuration with a red icon.
+</p>
+<p class="p">
+Follow these steps to preserve a consistent configuration:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:11.33%" />
+<col style="width:88.67%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d260952e886">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d260952e890">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Import the configuration using the <span class="ph uicontrol">Import hardware configuration from file</span> button <img class="image" src="0000801995.png" alt="" style="max-height:20px;" />.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Click <span class="ph uicontrol">Save</span>. If a duplicate configuration is imported, the duplicate configuration is displayed with a red icon.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Delete the duplicate configuration by selecting it and clicking <span class="ph uicontrol">Remove</span>. The duplicate configuration is deleted.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Click <span class="ph uicontrol">Save</span>. The configuration is saved.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Exit the <span class="ph uicontrol">System</span> editor.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Return to the <span class="ph uicontrol">System</span> editor. Select the Hardware Configuration editor. displays the <span class="ph uicontrol">Recovery</span> dialog.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d260952e886 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d260952e890 ">
+<p class="p">
+Click <span class="ph uicontrol">OK</span> to close the <span class="ph uicontrol">Recovery</span> dialog. Your hardware configuration will be correctly imported.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

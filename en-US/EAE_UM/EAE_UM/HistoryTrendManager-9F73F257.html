@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="History Trend Manager" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="HistoryTrendManager-9F73F257" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+History Trend Manager
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.7.1.0_4";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/PointFCollectionEditor-EAB7E69F.html" />
+<meta name="brsnext" value="EAE_UM/Trend-A5CAC637.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Graphic Editors &gt; EcoStruxure Automation Expert HMI" />
+</head>
+<body id="HistoryTrendManager-9F73F257"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"GraphicEditor1-A2974FD8.html#GraphicEditor1-A2974FD8\">Graphic Editors<\/a> > <a href=\"EcoStruxureAutomationExpertHMI-A2976A50.html#EcoStruxureAutomationExpertHMI-A2976A50\">EcoStruxure Automation Expert HMI<\/a> > History Trend Manager<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="HistoryTrendManager-9F73F257" id="HistoryTrendManager-9F73F257_">
+<!-- --></a><a name="HistoryTrendManager_9F73F257" id="HistoryTrendManager_9F73F257">
+<!-- --></a><a name="HistoryTrendManager_9F73F257" id="HistoryTrendManager_9F73F257_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+History Trend Manager
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+You can use the <span class="ph uicontrol">History Trend Manager</span> in two contexts, to perform the following tasks:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Create static configurations in <span class="ph">EcoStruxure Automation Expert - Buildtime</span> that can be applied to archived data and used as a data source by an HMI client. In this context, access the dialog in <strong class="ph b">Solution Explorer</strong>  by selecting the project node, then right-click and select <span class="ph menucascade"><span class="ph uicontrol">Configurations</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">History Trend</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select existing configurations for an HMI client during runtime to apply to the <span class="ph uicontrol">history trend control</span> displayed in a canvas during runtime. 
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+A locked icon indicates the history trend configuration is not editable - for example, a configuration created in buildtime that is displayed during runtime.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+An unlocked icon indicates the configuration is editable - for example, a configuration created in buildtime accessed during buildtime, or a configuration created during runtime that is accessed during runtime. 
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="HistoryTrendManager-9F73F257__ManagingHistoryTrendConfigurations-A5D63D7D">
+<a name="ManagingHistoryTrendConfigurations-A5D63D7D" id="ManagingHistoryTrendConfigurations-A5D63D7D">
+<!-- --></a><a name="HistoryTrendManager_9F73F257__ManagingHistoryTrendConfigurations_A5D63D7D" id="HistoryTrendManager_9F73F257__ManagingHistoryTrendConfigurations_A5D63D7D">
+<!-- --></a><a name="ManagingHistoryTrendConfigurations_A5D63D7D" id="ManagingHistoryTrendConfigurations_A5D63D7D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Managing History Trend Configurations
+</h2>
+<p class="p">
+The <span class="ph uicontrol">History Trend Manager</span> presents the following areas and tools:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:17.211721172117212%" />
+<col style="width:13.391339133913391%" />
+<col style="width:69.3969396939694%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d811601e123">
+<p class="p">
+Area
+</p>
+</th>
+<th class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d811601e128">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="13" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e123 ">
+<p class="p">
+Configurations
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Contains a collection of folders and configurations, presented in nested navigation tree form. The following context menu commands are available.
+</p>
+<p class="p">
+When you right click on a <em class="ph i">folder</em>, the following commands are available:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+<strong class="ph b">Command</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+New
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Opens the <span class="ph uicontrol">History Trend Configuration</span> dialog, where you can <a class="xref" href="#HistoryTrendManager-9F73F257__CreatingAndEditingHistoryTrendConfi-A5D63AC9">create a new configuration</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+New Folder
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Add Folder</span> dialog, where you can create and name a new child folder that will be nested beneath the selected parent folder. 
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Rename
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Name</span> dialog, where you change the selected name.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Duplicate
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Add Folder</span> dialog, where you can add the name of the folder that will be a copy of the selected folder. 
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> All child folders and configurations of the selected folder are also copied and nested beneath the new folder.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Delete
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Deletes the selected folder.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>  You can only delete the lowest level nested folder.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+When you right click on a <em class="ph i">configuration</em>, the following commands are available:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+<strong class="ph b">Command</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Edit
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Opens the <span class="ph uicontrol">History Trend Configuration</span> dialog, where you can <a class="xref" href="#HistoryTrendManager-9F73F257__CreatingAndEditingHistoryTrendConfi-A5D63AC9">edit the properties of the selected configuration</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Rename
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Opens the <span class="ph uicontrol">Name</span> dialog, where you change the selected configuration name.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Duplicate
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Immediately creates a copy of the selected configuration, assigning it a unique name by adding the next available integer as a suffix to the name of the selected configuration. The new configuration is placed beneath, but on the same nested level as the original configuration.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Delete
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Deletes the selected configuration.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e123 ">
+<p class="p">
+Description
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+The description of the selected configuration that was entered in the <span class="ph uicontrol">History Trend Configuration</span> dialog.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e123 ">
+<p class="p">
+Runtime Directory
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e128 ">
+<p class="p">
+Click the ellipsis (...) to open a the <span class="ph uicontrol">Browse For Folder</span> dialog where you can navigate to and select the directory in which the configuration will be saved from HMI runtime. 
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you leave this field empty, the configuration will not be saved.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="HistoryTrendManager-9F73F257__CreatingAndEditingHistoryTrendConfi-A5D63AC9">
+<a name="CreatingAndEditingHistoryTrendConfi-A5D63AC9" id="CreatingAndEditingHistoryTrendConfi-A5D63AC9">
+<!-- --></a><a name="HistoryTrendManager_9F73F257__CreatingAndEditingHistoryTrendConfi_A5D63AC9" id="HistoryTrendManager_9F73F257__CreatingAndEditingHistoryTrendConfi_A5D63AC9">
+<!-- --></a><a name="CreatingAndEditingHistoryTrendConfi_A5D63AC9" id="CreatingAndEditingHistoryTrendConfi_A5D63AC9">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Creating and Editing History Trend Configurations
+</h2>
+<p class="p">
+When you select <span class="ph uicontrol">New</span> to create a new configuration, or <span class="ph uicontrol">Edit</span>  to edit an existing configuration, the History Trend Configuration dialog opens. 
+</p>
+<p class="p">
+The dialog presents the following features:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:23.427657234276573%" />
+<col style="width:23.947605239476054%" />
+<col style="width:52.62473752624738%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d811601e382">
+<p class="p">
+Setting
+</p>
+</th>
+<th class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d811601e387">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e382 ">
+<p class="p">
+Configuration
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The name you assign to the configuration. 
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e382 ">
+<p class="p">
+Description
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The short description of the configuration viewed from HMI runtime. 
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e382 ">
+<p class="p">
+Title
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The label displayed by the History Trend control during runtime.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e382 ">
+<p class="p">
+Time
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Sets the time period - in relation to runtime - for displaying archived data.
+</p>
+<p class="p">
+Click the ellipsis (...) to open the <strong class="ph b">Time Period</strong> dialog, where you can select one of the following settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+All
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Five Minutes
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Ten Minutes
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Hour
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Two Hours
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Day
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Week
+</p>
+</li>
+<li class="li">
+<p class="p">
+Last Month
+</p>
+</li>
+<li class="li">
+<p class="p">
+This Hour
+</p>
+</li>
+<li class="li">
+<p class="p">
+This Week
+</p>
+</li>
+<li class="li">
+<p class="p">
+This Month
+</p>
+</li>
+<li class="li">
+<p class="p">
+From Time: Displays additional settings where you can specify a start date and a time period.
+</p>
+</li>
+<li class="li">
+<p class="p">
+From Time To Time: Displays additional settings where you can specify a start date and end date.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="14" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e382 ">
+<p class="p">
+Series
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Specifies the variables to include in the configuration. 
+</p>
+<p class="p">
+Click the ellipsis to open the <span class="ph uicontrol">TrendSeries Collection Editor</span> dialog.
+</p>
+<p class="p">
+In the <span class="ph uicontrol">TrendSeries Collection Editor</span> dialog, you can:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <strong class="ph b">Members</strong> list, select variables to include in the configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure display settings for the variable selected in the <strong class="ph b">Members</strong> area.
+</p>
+</li>
+</ul>
+<p class="p">
+You can configure the following properties for a variable that is a member of the configuration:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+<strong class="ph b">Parameter</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Color
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The editable color of the line used to display values for the selected variable.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+DataLimit
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The maximum number of data points to display for the variable.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+LegendFormat
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The format for the display of the variable data value in the legend.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The legend displays at runtime.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+LegendName
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The label that displays for the variable in the legend during runtime.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Maximum
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Used in scaling, this setting is mapped to the maximum variable value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Minimum
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Used in scaling, this setting is mapped to the lowest variable value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+PenStyle
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The line style: solid or dashes.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+PenWidth
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The line width in points.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+ScaleName
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The name of the value scale assigned to this variable.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, Left and Right scales are available. In addition, you can create custom scales using the <strong class="ph b">Value Scales</strong> settings.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+ShowValueInLegend
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Shows (True) or hides (False) the variable value in the legend during runtime.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Stairs
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Displays the value line as a series of steps (True) or as a straight line (False).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Click <span class="ph uicontrol">Add</span>  to open the <span class="ph uicontrol">Select Archive Path</span>  dialog, where you can select - one at a time - variables to be added to the list of available variables in the <strong class="ph b">Members</strong> area of the  <span class="ph uicontrol">TrendSeries Collection Editor</span> dialog. Click <span class="ph uicontrol">Remove</span> to delete a variable from the list.  
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="13" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e382 ">
+<p class="p">
+Value Scales
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Specifies the default or custom scaling display to apply to the configuration.
+</p>
+<p class="p">
+Click the ellipsis (...) to open the <span class="ph uicontrol">TrendSeries Collection Editor</span>.
+</p>
+<p class="p">
+The properties in this dialog define how the axis will be presented By default, this editor presents a left and right scale, indicating the location of the scale will be on the left or right side of the history trend display. Click <span class="ph uicontrol">Add</span> to create additional scaling templates for left-side scales. 
+</p>
+<p class="p">
+This dialog contains the following properties:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+<strong class="ph b">Parameter</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+AutoScale
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Scales the axis automatically to the maximum and minimum range of scaled values (True). Or displays non-scaled data (False).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+EndPosition
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Percentage of the chart that is set as the scale's maximum value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Format
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The format for the display of the variable data value in the axis.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+MasterScale
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Determines the scale's position when more than one left scale is included. For example, when MasterScale is set as Left for CustomLeft, then CustomLeft scales are also aligned in the same place (Left).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Maximum
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The axis value mapped to the variable maximum value.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>  0 indicates actual variable value is displayed.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Minimum
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+The axis value mapped to the variable minimum value.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>  0 indicates actual variable value is displayed.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+SeriesMustBeInsideRange
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+When set to True, all series using this scale are shown in scale's range. Therefore, the Minimum and Maximum scale values are automatically set based on the series' Maximum and Minimum values.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+ShowOnlyMinAndMax
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Displays only the maximum and minimum values in the scale (y-axis).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+ShowScrollArrows
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Displays scroll arrows in the vertical axis when runtime values exceed the scale's Maximum and Minimum values - i.e., as is done with the arrows in the horizontal axis.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+StartPosition
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Percentage of the chart that is set as the scale's minimum value.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Visible
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d811601e387 ">
+<p class="p">
+Indicates the axis, with its values and labels, is displayed (True) or hidden (False).
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

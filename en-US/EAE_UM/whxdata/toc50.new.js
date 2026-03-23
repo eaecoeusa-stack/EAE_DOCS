@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc51","name":"Distributed PAC Project Node","type":"book","url":"EAE_UM/DistributedPACProjectNode-9F7FE8A3.html#DistributedPACProjectNode-9F7FE8A3"},{"name":"Distributed PAC Project Options","type":"item","url":"EAE_UM/DistributedPACProjectOptions-9F8AC886.html#DistributedPACProjectOptions-9F8AC886"},{"key":"toc52","name":"Editors Overview","type":"book","url":"EAE_UM/EditorsOverview-9FC10E9F.html#EditorsOverview-9FC10E9F"},{"name":"Editor Shortcuts","type":"item","url":"EAE_UM/EditorShortcuts-9FDCF56B.html#EditorShortcuts-9FDCF56B"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

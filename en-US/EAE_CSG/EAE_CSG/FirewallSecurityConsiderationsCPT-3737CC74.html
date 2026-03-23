@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Firewall Security Considerations" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="FirewallSecurityConsiderationsCPT-3737CC74" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Firewall Security Considerations
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.0_7";
+//]]></script>
+<meta name="brsprev" value="EAE_CSG/SecuringTheNetwork-3863CCA9.html" />
+<meta name="brsnext" value="EAE_CSG/SwitchSecurityConsiderations-38642AD5.html" />
+<meta name="topic-breadcrumbs" content="Cybersecurity - Guide &gt; Defense in Depth" />
+</head>
+<body id="FirewallSecurityConsiderationsCPT-3737CC74"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html");
+document.write("<a href=\"EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html\">Cybersecurity - Guide<\/a> > <a href=\"DefenseInDepth-38633DAE.html\">Defense in Depth<\/a> > Firewall Security Considerations<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="FirewallSecurityConsiderationsCPT-3737CC74" id="FirewallSecurityConsiderationsCPT-3737CC74_">
+<!-- --></a><a name="FirewallSecurityConsiderationsCPT_3737CC74" id="FirewallSecurityConsiderationsCPT_3737CC74">
+<!-- --></a><a name="FirewallSecurityConsiderationsCPT_3737CC74" id="FirewallSecurityConsiderationsCPT_3737CC74_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Firewall Security Considerations
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Firewalls are configured using rules that allow for definitions of what types of traffic should be allowed in or out of the secured network zones. While the exact method of configuring the firewall varies with the firewall manufacturer, most allow you to restrict the traffic by these basic categories of traffic:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+IP Addresses (Source and Destination)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Domain Names
+</p>
+</li>
+<li class="li">
+<p class="p">
+TCP/IP ports used (TCP &amp; UDP)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Protocols
+</p>
+</li>
+</ul>
+<p class="p">
+There are different mechanisms used by firewalls to restrict traffic in this architecture:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Packet-filtering
+</p>
+</li>
+<li class="li">
+<p class="p">
+Stateful packet filtering
+</p>
+</li>
+<li class="li">
+<p class="p">
+Proxy service
+</p>
+</li>
+</ul>
+<p class="p">
+Packet-filtering should be applied based on the rules defined in this table. Depending on the firewall, they can be combined to provide more in-depth protection.
+</p>
+<p class="p">
+Configure firewalls to allow this traffic:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col />
+<col />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d64e119">
+Source
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d64e123">
+Service (Ports)
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d64e127">
+Destination
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+Domain Members:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> Engineering Workstation
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">AVEVA OMI</span> Workstation
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">AVEVA System Platform</span> Server
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+<ul class="ul">
+<li class="li">
+<p class="p">
+DNS (<span class="ph">UDP</span>/<span class="ph">TCP</span>/53)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Kerberos_v5_TCP (<span class="ph">TCP</span>/88)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Kerberos_v5_UDP (<span class="ph">UDP</span>/88)
+</p>
+</li>
+<li class="li">
+<p class="p">
+DCE_RPC (<span class="ph">TCP</span>/49152- 65535)
+</p>
+</li>
+<li class="li">
+<p class="p">
+smb (TCP/445)
+</p>
+</li>
+<li class="li">
+<p class="p">
+ldap (<span class="ph">UDP</span>/<span class="ph">TCP</span>/389)
+</p>
+</li>
+<li class="li">
+<p class="p">
+ldap-ssl (<span class="ph">TCP</span>/636)
+</p>
+</li>
+<li class="li">
+<p class="p">
+LDAP_global1 (<span class="ph">TCP</span>/3268)
+</p>
+</li>
+<li class="li">
+<p class="p">
+LDAP_global2 (<span class="ph">TCP</span>/3269)
+</p>
+</li>
+<li class="li">
+<p class="p">
+NTP (<span class="ph">UDP</span>/123)
+</p>
+</li>
+<li class="li">
+<p class="p">
+RPC_Endpoint_Mapper (<span class="ph">TCP</span>/135)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Kerberos_TCP_passChange (<span class="ph">TCP</span>/464)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Kerberos_UDP_passChange (<span class="ph">UDP</span>/464)
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+Domain Controllers
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> Engineering Workstation
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+<p class="p">
+HTTPS data transfer (<span class="ph">TCP</span>/443)
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+SVN Server
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> Engineering Workstation
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">AVEVA OMI</span> Workstation
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">AVEVA System Platform</span> Server
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+<ul class="ul">
+<li class="li">
+<p class="p">
+nbsession (<span class="ph">TCP</span>/139)
+</p>
+</li>
+<li class="li">
+<p class="p">
+microsoft-ds (<span class="ph">TCP</span>/445)
+</p>
+</li>
+<li class="li">
+<p class="p">
+nbname (<span class="ph">UDP</span>/137)
+</p>
+</li>
+<li class="li">
+<p class="p">
+nbdatagram (<span class="ph">UDP</span>/138)
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+File Server (<span class="ph">Windows</span> Share, NAS &amp; etc.)
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+<span class="ph">AVEVA OMI</span> Workstation
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+<p class="p">
+<span class="ph">OPC UA</span> Client 4840
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+All dPAC controllers
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> Engineering Workstation
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">OPC UA</span>-<span class="ph">TCP</span> (<span class="ph">TCP</span>/4840)
+</p>
+</li>
+<li class="li">
+<p class="p">
+wsdapi (<span class="ph">TCP</span>/5357)
+</p>
+</li>
+<li class="li">
+<p class="p">
+csserver-authn (<span class="ph">TCP</span>/8089)
+</p>
+</li>
+<li class="li">
+<p class="p">
+csserver-bind (<span class="ph">TCP</span>/8989)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Mongoose secure (<span class="ph">TCP</span>/51443)
+</p>
+</li>
+<li class="li">
+<p class="p">
+WSD (<span class="ph">UDP</span>/3702)
+</p>
+</li>
+<li class="li">
+<p class="p">
+DPWS (<span class="ph">TCP</span>/9867)
+</p>
+</li>
+<li class="li">
+<p class="p">
+DPWS (<span class="ph">TCP</span>/3702)
+</p>
+</li>
+</ul>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+All dPAC controllers
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+<span class="ph">AVEVA OMI</span> Workstation
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+<span class="ph">AVEVA System Platform</span> Server
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+CAP Server
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+CAP managed end point:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> Engineering Workstation
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">AVEVA OMI</span> Workstation
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">AVEVA System Platform</span> Server
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d64e119 ">
+<p class="p">
+All dPAC controllers
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e123 ">
+<p class="p">
+Syslog/Secure syslog (TCP/514 &amp; TCP/6514)
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d64e127 ">
+<p class="p">
+CAP Server
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="FirewallSecurityConsiderationsCPT-3737CC74__PacketFilterFirewalls-37D774A7">
+<a name="PacketFilterFirewalls-37D774A7" id="PacketFilterFirewalls-37D774A7">
+<!-- --></a><a name="FirewallSecurityConsiderationsCPT_3737CC74__PacketFilterFirewalls_37D774A7" id="FirewallSecurityConsiderationsCPT_3737CC74__PacketFilterFirewalls_37D774A7">
+<!-- --></a><a name="PacketFilterFirewalls_37D774A7" id="PacketFilterFirewalls_37D774A7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Packet Filter Firewalls
+</h2>
+<p class="p">
+A packet filter is a type of firewall. Packet filters can restrict network traffic and help protect your network by rejecting packets from unauthorized hosts, using unauthorized ports or trying to connect to unauthorized IP addresses. Packet filters check the packet header to determine the source and destination address and the source and destination ports to verify against its rules.
+</p>
+</div>
+<div class="section" id="FirewallSecurityConsiderationsCPT-3737CC74__StatefulInspectionFilteringFirewall-37D775F2">
+<a name="StatefulInspectionFilteringFirewall-37D775F2" id="StatefulInspectionFilteringFirewall-37D775F2">
+<!-- --></a><a name="FirewallSecurityConsiderationsCPT_3737CC74__StatefulInspectionFilteringFirewall_37D775F2" id="FirewallSecurityConsiderationsCPT_3737CC74__StatefulInspectionFilteringFirewall_37D775F2">
+<!-- --></a><a name="StatefulInspectionFilteringFirewall_37D775F2" id="StatefulInspectionFilteringFirewall_37D775F2">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Stateful Inspection Filtering Firewall
+</h2>
+<p class="p">
+Stateful inspection packet filtering or Stateful Packet Filtering (SPF) is a more in-depth form of a packet filter firewall. Stateful Inspection firewalls check the packet all the way to the Application Layer and monitor incoming and outgoing packets to determine not only source and destination, but also context. This helps ensure that only requested information is allowed back in.
+</p>
+<p class="p">
+Stateful Inspection helps protect against hacker techniques such as IP spoofing and port scanning. SPF looks at more details from each packet than packet filtering. This allows the determination of what is contained within the packet rather than simply who and where it is from (or allegedly from).
+</p>
+<p class="p">
+SPF monitors communications between the two devices and compares the traffic not only to the rules it has been given, but also to previous communications. If any communication seems out of context or out of the ordinary based on previous traffic, the packet is rejected.
+</p>
+</div>
+<div class="section" id="FirewallSecurityConsiderationsCPT-3737CC74__ProxyService-37D7A284">
+<a name="ProxyService-37D7A284" id="ProxyService-37D7A284">
+<!-- --></a><a name="FirewallSecurityConsiderationsCPT_3737CC74__ProxyService_37D7A284" id="FirewallSecurityConsiderationsCPT_3737CC74__ProxyService_37D7A284">
+<!-- --></a><a name="ProxyService_37D7A284" id="ProxyService_37D7A284">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Proxy Service
+</h2>
+<p class="p">
+A proxy service is generally put in place to boost performance of the network, but can act as a sort of firewall as well. The proxy service hides your internal addresses so all communications appear to originate from the firewall itself. The proxy can improve user response by maintaining a cache of recently requested pages locally. The Proxy also provides another layer of security for defense in depth.
+</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Firewall Equipment Selection
+</h2>
+<p class="p">
+The <span class="ph">Schneider Electric</span> Cybersecurity Application Platform firewall is recommended. However other <span class="ph">IEC 62443-4-2</span> certified firewall exist and provide equivalent functionality.
+</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Firewall Configuration Management
+</h2>
+<p class="p">
+Proper firewall management is critical.
+</p>
+<p class="p">
+Like many devices that rely on code to function, firewalls might require periodic updates as the manufacturer’s releases are updated. It is important that the operation of the firewall is monitored.
+</p>
+<p class="p">
+Firewalls generate logs of events that occur in the firewall. These events are good indications of someone or something that is trying to access devices across the firewall that is outside of the rules. This is usually an indication of a misconfigured application, but might also be an indication of a worm or a possible intruder on the network.
+</p>
+<p class="p">
+It is critical that the logs are monitored and that an action process is put in place. Firewalls can be monitored by an internal group or outsourced to a partner.
+</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Using Firewalls for Other Services
+</h2>
+<p class="p">
+You must enact a policy for configuration and change management.This provides accountability for the changes made to the firewall ruleset
+</p>
+<p class="p">
+Documentation of the types of rule changes, including when and why they were made, is critical. A good example of this is: during implementation of new applications or upgrades where the exact ports used are not known, inexperienced firewall designers will open up ports for testing and then forget to close them back up.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005517.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

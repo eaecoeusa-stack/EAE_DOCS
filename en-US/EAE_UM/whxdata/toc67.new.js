@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"1. Graphic Format Ribbon","type":"item","url":"EAE_UM/GraphicFormatRibbon-EAB79C1A.html"},{"name":"2. Graphics Editor Toolbar","type":"item","url":"EAE_UM/GraphicsEditorToolbar-EAB7CA20.html"},{"name":"3. PointF Collection Editor","type":"item","url":"EAE_UM/PointFCollectionEditor-EAB7E69F.html"},{"name":"History Trend Manager","type":"item","url":"EAE_UM/HistoryTrendManager-9F73F257.html#HistoryTrendManager-9F73F257"},{"name":"Trend","type":"item","url":"EAE_UM/Trend-A5CAC637.html#Trend-A5CAC637"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

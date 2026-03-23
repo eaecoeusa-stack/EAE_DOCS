@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc5","name":"System Requirements","type":"book","url":"EAE_HMI/SystemRequirements-15DF9F05.html#SystemRequirements-15DF9F05"},{"key":"toc6","name":"Install EcoStruxure Automation Expert - HMI on Linux","type":"book","url":"EAE_HMI/InstallEcoStruxureAutomationExpert--2237A4BD.html#InstallEcoStruxureAutomationExpert--2237A4BD"},{"name":"Install EcoStruxure Automation Expert - HMI on Windows","type":"item","url":"EAE_HMI/InstallEcoStruxureAutomationExpert--223644A0.html#InstallEcoStruxureAutomationExpert--223644A0"},{"name":"Install EcoStruxure Automation Expert - HMI Runtime on Harmony ST6xxx Devices","type":"item","url":"EAE_HMI/EAE-InstallingOnHarmonyST6Devices-2133A526.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

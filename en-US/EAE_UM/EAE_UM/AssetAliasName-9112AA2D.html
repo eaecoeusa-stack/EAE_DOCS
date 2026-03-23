@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Creating Asset Tag for CAT and Sub-CAT Instances" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="AssetAliasName-9112AA2D" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Creating Asset Tag for CAT and Sub-CAT Instances
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.3.3.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/CreatingAndLocalizingHMIAliasesAndA-6760E2EE.html" />
+<meta name="brsnext" value="EAE_UM/CreatingAndDisplayingAliasNamesForC-67615DFD.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; Elements &gt; Creating and Localizing different CAT and Sub-CAT Instance Names" />
+</head>
+<body id="AssetAliasName-9112AA2D"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"Elements-97BB21D1.html#Elements-97BB21D1\">Elements<\/a> > <a href=\"CreatingAndLocalizingHMIAliasesAndA-6760E2EE.html#CreatingAndLocalizingHMIAliasesAndA-6760E2EE\">Creating and Localizing different CAT and Sub-CAT Instance Names<\/a> > Creating Asset Tag for CAT and Sub-CAT Instances<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="AssetAliasName-9112AA2D" id="AssetAliasName-9112AA2D_">
+<!-- --></a><a name="AssetAliasName_9112AA2D" id="AssetAliasName_9112AA2D">
+<!-- --></a><a name="AssetAliasName_9112AA2D" id="AssetAliasName_9112AA2D_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Creating <span class="ph">Asset Tag</span> for <span class="ph">CAT</span> and Sub-<span class="ph">CAT</span> Instances
+</h1>
+<div class="body conbody">
+
+<div class="section" id="AssetAliasName-9112AA2D__YouCanAssignAnAliasNameToAnyApplica-911464FB">
+<a name="YouCanAssignAnAliasNameToAnyApplica-911464FB" id="YouCanAssignAnAliasNameToAnyApplica-911464FB">
+<!-- --></a><a name="AssetAliasName_9112AA2D__YouCanAssignAnAliasNameToAnyApplica_911464FB" id="AssetAliasName_9112AA2D__YouCanAssignAnAliasNameToAnyApplica_911464FB">
+<!-- --></a><a name="YouCanAssignAnAliasNameToAnyApplica_911464FB" id="YouCanAssignAnAliasNameToAnyApplica_911464FB">
+<!-- --></a>
+<p class="p">
+You can assign an <span class="ph">Asset Tag</span> to any hardware or application <span class="ph">CAT</span> or sub-<span class="ph">CAT</span> instance.
+</p>
+<p class="p">
+The <span class="ph">Asset Tag</span> you assign to the <span class="ph">CAT</span> or sub-<span class="ph">CAT</span> instance will be accessible:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In <span class="ph">AVEVA</span> Operations Management Interface (OMI).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> editors, including Symbolic Links, <span class="ph">OPC UA</span> Server, Offline Parameterization, and so forth.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In <span class="ph">OPC UA</span> tag browser, based on <span class="ph">AVEVA OMI</span> hierarchy.
+</p>
+</li>
+<li class="li">
+<p class="p">
+As <span class="ph">Asset Tag</span> for HMI symbols, faceplates, alarm summaries, realtime time or historical trends.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The new tag can be created in your choice of localized language by entering text in that target language.
+</div>
+</div>
+<div class="section" id="AssetAliasName-9112AA2D__ValidAliasNames-9114591A">
+<a name="ValidAliasNames-9114591A" id="ValidAliasNames-9114591A">
+<!-- --></a><a name="AssetAliasName_9112AA2D__ValidAliasNames_9114591A" id="AssetAliasName_9112AA2D__ValidAliasNames_9114591A">
+<!-- --></a><a name="ValidAliasNames_9114591A" id="ValidAliasNames_9114591A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Valid <span class="ph">Asset Tag</span>
+</h2>
+<p class="p">
+A valid <span class="ph">Asset Tag</span> will:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Contain 32 characters or fewer.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Include only characters that are alphanumeric or the special characters ‘$’, ‘#’ and ‘_’.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Be unique, i.e., an <span class="ph">Asset Tag</span> can be used only once in a solution.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you enter invalid characters, more than 32 characters, or a duplicate <span class="ph">Asset Tag</span>:
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+An icon ( <img class="image" src="0000956796.png" alt="" style="max-height:0.25in;" /> ) appears, and
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The <span class="ph uicontrol">OK</span> button is disabled.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="AssetAliasName-9112AA2D__HowToSetAnAliasName-91145603">
+<a name="HowToSetAnAliasName-91145603" id="HowToSetAnAliasName-91145603">
+<!-- --></a><a name="AssetAliasName_9112AA2D__HowToSetAnAliasName_91145603" id="AssetAliasName_9112AA2D__HowToSetAnAliasName_91145603">
+<!-- --></a><a name="HowToSetAnAliasName_91145603" id="HowToSetAnAliasName_91145603">
+<!-- --></a>
+<h2 class="title sectiontitle">
+How to Set an <span class="ph">Asset Tag</span> for a <span class="ph">CAT</span> or Sub-<span class="ph">CAT</span> Instance
+</h2>
+<p class="p">
+In a solution that includes one or more application or hardware <span class="ph">CAT</span> or sub-<span class="ph">CAT</span> instances, follow these steps:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span>, navigate to <span class="ph menucascade"><span class="ph uicontrol">(solution)</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">CAT Instances</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">(APP name)</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Application / Hardware</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">(CAT name) or (CAT name &gt; sub-CAT name)</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click on the <span class="ph">CAT</span> or sub-<span class="ph">CAT</span>, and select <span class="ph uicontrol">Set Asset Tag</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Edit Asset Tag Name</span> dialog, type in a <a class="xref" href="#AssetAliasName-9112AA2D__ValidAliasNames-9114591A">valid <span class="ph">Asset Tag</span></a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">OK</span> to save the new <span class="ph">Asset Tag</span>.
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

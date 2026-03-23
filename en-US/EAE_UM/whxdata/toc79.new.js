@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"1. IF Structure","type":"item","url":"EAE_UM/IFStructure-EB19BAA4.html"},{"name":"2. CASE Structure","type":"item","url":"EAE_UM/CASEStructure-EB19D906.html"},{"name":"3. FOR Structure","type":"item","url":"EAE_UM/FORStructure-EB19F43D.html"},{"name":"4. WHILE Structure","type":"item","url":"EAE_UM/WHILEStructure-EB1A20C7.html"},{"name":"5. REPEAT Structure","type":"item","url":"EAE_UM/REPEATStructure-EB1A4F4C.html"},{"name":"6. EXIT Structure","type":"item","url":"EAE_UM/EXITStructure-EB1A8A48.html"},{"name":"7. RETURN Statement","type":"item","url":"EAE_UM/RETURNStatement-EB1ABF91.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

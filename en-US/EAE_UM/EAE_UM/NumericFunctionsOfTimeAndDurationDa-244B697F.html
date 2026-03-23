@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="6. Numeric Functions of Time and Duration Data Types" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="NumericFunctionsOfTimeAndDurationDa-244B697F" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+6. Numeric Functions of Time and Duration Data Types
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.8.4.1.0_6";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/CharacterTypesConversionToDateAndTi-244AF00F.html" />
+<meta name="brsnext" value="EAE_UM/AdditionalFunctionsOfTimeDataTypes-244E351F.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; Appendix &gt; Functions and Data Types &gt; Time Functions" />
+</head>
+<body id="NumericFunctionsOfTimeAndDurationDa-244B697F"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"Appendix-A2FF5064.html#Appendix-A2FF5064\">Appendix<\/a> > <a href=\"TimeFunctionsAndDataTypes-A309EDDC.html#TimeFunctionsAndDataTypes-A309EDDC\">Functions and Data Types<\/a> > <a href=\"TimeFunctions-A30A02B6.html#TimeFunctions-A30A02B6\">Time Functions<\/a> > 6. Numeric Functions of Time and Duration Data Types<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="NumericFunctionsOfTimeAndDurationDa-244B697F" id="NumericFunctionsOfTimeAndDurationDa-244B697F_">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F" id="NumericFunctionsOfTimeAndDurationDa_244B697F">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F" id="NumericFunctionsOfTimeAndDurationDa_244B697F_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+6. Numeric Functions of Time and Duration Data Types
+</h1>
+<div class="body conbody">
+<p class="p">
+All functions described in this topic are conforming to IEC 61131-3 third edition.
+</p>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__ADDADD_DT_TIMEADD_LDT_LTIME-244BF1B2">
+<a name="ADDADD_DT_TIMEADD_LDT_LTIME-244BF1B2" id="ADDADD_DT_TIMEADD_LDT_LTIME-244BF1B2">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__ADDADD_DT_TIMEADD_LDT_LTIME_244BF1B2" id="NumericFunctionsOfTimeAndDurationDa_244B697F__ADDADD_DT_TIMEADD_LDT_LTIME_244BF1B2">
+<!-- --></a><a name="ADDADD_DT_TIMEADD_LDT_LTIME_244BF1B2" id="ADDADD_DT_TIMEADD_LDT_LTIME_244BF1B2">
+<!-- --></a>
+<h2 class="title sectiontitle">
+ADD, ADD_DT_TIME, ADD_LDT_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>ADD(IN1: DT, IN2: TIME): DT
+ADD_DT(IN1: DT, IN2: TIME): DT
+ADD_DT_TIME(IN1: DT, IN2: TIME): DT
+ADD_DATE_AND_TIME_TIME(IN1: DT, IN2: TIME): DT
+IN1 + IN2</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>ADD(IN1: LDT, IN2: LTIME): LDT
+ADD_LDT(IN1: LDT, IN2: LTIME): LDT
+ADD_LDT_LTIME(IN1: LDT, IN2: LTIME): LDT
+ADD_LDATE_AND_TIME_LTIME(IN1: LDT, IN2: LTIME): LDT
+IN1 + IN2</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Adds parameter IN2 of type TIME or LTIME to parameter IN1 of type DT or LDT respectively and returns the resulting date and time value of the same type as parameter IN1.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the add operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>VAR_TEMP
+  someDT : LDT := LDT#2021-12-03-12:00:00;
+END_VAR
+IF someDT + LDT#10d &lt; LDT#2022-01-01-0:0:0 THEN
+  someDT := ADD_LDT_LTIME(IN2 := LTIME#10d,IN1 := someDT);
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__ADDADD_TIMEADD_LTIME-244B5997">
+<a name="ADDADD_TIMEADD_LTIME-244B5997" id="ADDADD_TIMEADD_LTIME-244B5997">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__ADDADD_TIMEADD_LTIME_244B5997" id="NumericFunctionsOfTimeAndDurationDa_244B697F__ADDADD_TIMEADD_LTIME_244B5997">
+<!-- --></a><a name="ADDADD_TIMEADD_LTIME_244B5997" id="ADDADD_TIMEADD_LTIME_244B5997">
+<!-- --></a>
+<h2 class="title sectiontitle">
+ADD, ADD_TIME, ADD_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>ADD(IN1: TIME, …): TIME
+ADD_TIME(IN1: TIME, …): TIME
+IN1 + … + INn</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>ADD(IN1: LTIME, …): LTIME
+ADD_LTIME(IN1: LTIME, …): LTIME
+IN1 + … + INn</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Adds all parameters IN<sub class="ph sub">i</sub> of type TIME or LTIME and returns the resulting time value of the same type as the parameters.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the add operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF ADD_TIME(T#95s, T#5m10s, T#-10s) = T#6m35s THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__ADDADD_TOD_TIMEADD_LTOD_LTIME-244BD5E5">
+<a name="ADDADD_TOD_TIMEADD_LTOD_LTIME-244BD5E5" id="ADDADD_TOD_TIMEADD_LTOD_LTIME-244BD5E5">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__ADDADD_TOD_TIMEADD_LTOD_LTIME_244BD5E5" id="NumericFunctionsOfTimeAndDurationDa_244B697F__ADDADD_TOD_TIMEADD_LTOD_LTIME_244BD5E5">
+<!-- --></a><a name="ADDADD_TOD_TIMEADD_LTOD_LTIME_244BD5E5" id="ADDADD_TOD_TIMEADD_LTOD_LTIME_244BD5E5">
+<!-- --></a>
+<h2 class="title sectiontitle">
+ADD, ADD_TOD_TIME, ADD_LTOD_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>ADD(IN1: TOD, IN2: TIME): TOD
+ADD_TOD(IN1: TOD, IN2: TIME): TOD
+ADD_TOD_TIME(IN1: TOD, IN2: TIME): TOD</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>ADD(IN1: LTOD, IN2: LTIME): LTOD
+ADD_TOD(IN1: LTOD, IN2: LTIME): LTOD
+ADD_TOD_TIME(IN1: LTOD, IN2: LTIME): LTOD</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Adds parameter IN2 of type TIME or LTIME to parameter IN1 of type TOD or LDOT respectively and returns the resulting time of day value of the same type as parameter IN1. The function provides the resulting value within the range defined by the resulting data type [00:00:00..24:00:00) with the upper limit not included.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the add operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>VAR_TEMP
+  currTOD : TOD := TOD#12:49:30;
+END_VAR
+IF ADD(currTOD, T#1d15h) = TOD#3:49:30 AND
+ADD_TOD_TIME(IN2 := TIME#-9h, IN1 := currTOD) = TOD#3:49:30 THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__DIVDIV_TIMEDIV_LTIME-244D3D0B">
+<a name="DIVDIV_TIMEDIV_LTIME-244D3D0B" id="DIVDIV_TIMEDIV_LTIME-244D3D0B">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__DIVDIV_TIMEDIV_LTIME_244D3D0B" id="NumericFunctionsOfTimeAndDurationDa_244B697F__DIVDIV_TIMEDIV_LTIME_244D3D0B">
+<!-- --></a><a name="DIVDIV_TIMEDIV_LTIME_244D3D0B" id="DIVDIV_TIMEDIV_LTIME_244D3D0B">
+<!-- --></a>
+<h2 class="title sectiontitle">
+DIV, DIV_TIME, DIV_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>DIV(IN1: TIME, IN2: <em class="ph i">ANY_NUM</em>): TIME
+DIV_TIME(IN1: TIME, IN2: <em class="ph i">ANY_NUM</em>): TIME
+DIV_TIME_<em class="ph i">ANY_NUM</em>(IN1: TIME, IN2: <em class="ph i">ANY_NUM</em>): TIME
+IN1 / IN2</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>DIV(IN1: LTIME, IN2: <em class="ph i">ANY_NUM</em>): LTIME
+DIV_TIME(IN1: LTIME, IN2: <em class="ph i">ANY_NUM</em>): LTIME
+DIV_TIME_<em class="ph i">ANY_NUM</em>(IN1: LTIME, IN2: <em class="ph i">ANY_NUM</em>): LTIME
+IN1 / IN2</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Divides parameter IN1 of type TIME or LTIME by parameter IN2 of type <em class="ph i">ANY_INT</em> and returns the resulting time value of the same type as parameter IN1. All numeric data types are supported as a divisor except LINT and ULINT.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_CONVERSION: A conversion error is reported if the result of floating-point division does not fit into the result data type.
+</p>
+<p class="p">
+Error handling of integer divisions is platform dependent.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF DIV_TIME(T#1h, 4) = T#15m THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__MULMUL_TIMEMUL_LTIME-244D056E">
+<a name="MULMUL_TIMEMUL_LTIME-244D056E" id="MULMUL_TIMEMUL_LTIME-244D056E">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__MULMUL_TIMEMUL_LTIME_244D056E" id="NumericFunctionsOfTimeAndDurationDa_244B697F__MULMUL_TIMEMUL_LTIME_244D056E">
+<!-- --></a><a name="MULMUL_TIMEMUL_LTIME_244D056E" id="MULMUL_TIMEMUL_LTIME_244D056E">
+<!-- --></a>
+<h2 class="title sectiontitle">
+MUL, MUL_TIME, MUL_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>MUL(IN1: TIME, IN2: <em class="ph i">ANY_NUM</em>): TIME
+MUL_TIME(IN1: TIME, IN2: <em class="ph i">ANY_NUM</em>): TIME
+MUL_TIME_<em class="ph i">ANY_NUM</em>(IN1: TIME, IN2: <em class="ph i">ANY_NUM</em>): TIME
+IN1 * IN2</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>MUL(IN1: LTIME, IN2: <em class="ph i">ANY_NUM</em>): LTIME
+MUL_TIME(IN1: LTIME, IN2: <em class="ph i">ANY_NUM</em>): LTIME
+MUL_TIME_<em class="ph i">ANY_NUM</em>(IN1: LTIME, IN2: <em class="ph i">ANY_NUM</em>): LTIME
+IN1 * IN 2</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Multiplies parameter IN1 of type TIME or LTIME by parameter IN2 of type <em class="ph i">ANY_INT</em> and returns the resulting time value of the same type as parameter IN1. All numeric data types are supported as a multiplicator except LINT and ULINT.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_CONVERSION: A conversion error is reported if the result of a floating-point multiplication does not fit into the result data type.
+</p>
+<p class="p">
+Integer overflow conditions are not detected and reported.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF MUL_TIME(T#15m, 4) = T#1h THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__SUBSUB_DATE_DATESUB_LDATE_LDATE-244DBC18">
+<a name="SUBSUB_DATE_DATESUB_LDATE_LDATE-244DBC18" id="SUBSUB_DATE_DATESUB_LDATE_LDATE-244DBC18">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_DATE_DATESUB_LDATE_LDATE_244DBC18" id="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_DATE_DATESUB_LDATE_LDATE_244DBC18">
+<!-- --></a><a name="SUBSUB_DATE_DATESUB_LDATE_LDATE_244DBC18" id="SUBSUB_DATE_DATESUB_LDATE_LDATE_244DBC18">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SUB, SUB_DATE_DATE, SUB_LDATE_LDATE
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: DATE, IN2: DATE): TIME
+SUB_DATE(IN1: DATE, IN2: DATE): TIME
+SUB_DATE_DATE(IN1: DATE, IN2: DATE): TIME
+IN1 – IN2</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: LDATE, IN2: LDATE): LTIME
+SUB_LDATE(IN1: LDATE, IN2: LDATE): LTIME
+SUB_LDATE_LDATE(IN1: LDATE, IN2: LDATE): LTIME
+IN1 – IN2</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Subtracts parameter IN2 of type DATE or LDATE from parameter IN1 of the same type as parameter IN1 and returns the time difference between the two date values.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_OVERFLOW: An overflow error is reported if time difference between the two date values does not fit into the result data type.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF SUB_DATE(IN2 := D#2021-12-3, IN1 := D#2021-12-2) = T#-1d THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__SUBSUB_DT_DTSUB_LDT_LDT-244C7E98">
+<a name="SUBSUB_DT_DTSUB_LDT_LDT-244C7E98" id="SUBSUB_DT_DTSUB_LDT_LDT-244C7E98">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_DT_DTSUB_LDT_LDT_244C7E98" id="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_DT_DTSUB_LDT_LDT_244C7E98">
+<!-- --></a><a name="SUBSUB_DT_DTSUB_LDT_LDT_244C7E98" id="SUBSUB_DT_DTSUB_LDT_LDT_244C7E98">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SUB, SUB_DT_DT, SUB_LDT_LDT
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: DT, IN2: DT): TIME
+SUB_DATE(IN1: DT, IN2: DT): TIME
+SUB_DATE_DATE(IN1: DT, IN2: DT): TIME
+IN1 – IN2</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: LDT, IN2: LDT): LTIME
+SUB_DATE(IN1: LDT, IN2: LDT): LTIME
+SUB_DATE_DATE(IN1: LDT, IN2: LDT): LTIME
+IN1 – IN2</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Subtracts parameter IN2 of type DATE_AND_TIME or LDATE_AND_TIME from parameter IN1 of the same type as parameter IN1 and returns the time difference between the two date and time values.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_OVERFLOW: An overflow error is reported if time difference between the two date values does not fit into the result data type.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF (LDT#2021-12-2-12:35:55.12345 - LDT#2021-12-3-12:45:55.12345) = T#-1d10m THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__SUBSUB_DT_TIMESUB_LDT_LTIME-244C81DF">
+<a name="SUBSUB_DT_TIMESUB_LDT_LTIME-244C81DF" id="SUBSUB_DT_TIMESUB_LDT_LTIME-244C81DF">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_DT_TIMESUB_LDT_LTIME_244C81DF" id="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_DT_TIMESUB_LDT_LTIME_244C81DF">
+<!-- --></a><a name="SUBSUB_DT_TIMESUB_LDT_LTIME_244C81DF" id="SUBSUB_DT_TIMESUB_LDT_LTIME_244C81DF">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SUB, SUB_DT_TIME, SUB_LDT_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: DT, IN2: TIME): DT
+SUB_DT(IN1: DT, IN2: TIME): DT
+SUB_DT_TIME(IN1: DT, IN2: TIME): DT
+SUB_DATE_AND_TIME(IN1: DT, IN2: TIME): DT
+SUB_DATE_AND_TIME_TIME(IN1: DT, IN2: TIME): DT
+IN1 – IN2</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: LDT, IN2: LTIME): LDT
+SUB_LDT(IN1: LDT, IN2: LTIME): LDT
+SUB_LDT_LTIME(IN1: LDT, IN2: LTIME): LDT
+SUB_LDATE_AND_TIME(IN1: LDT, IN2: LTIME): LDT
+SUB_LDATE_AND_TIME_LTIME(IN1: LDT, IN2: LTIME): LDT
+IN1 – IN2</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Subtracts parameter IN2 of type TIME or LTIME from parameter IN1 of type DATE_AND_TIME or LDATE_AND_TIME respectively and returns a new date and time value of the same type as parameter IN1.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF (LDT#2021-12-2-12:35:55.12345 - T#-1d10m = LDT#2021-12-3-12:45:55.12345) THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__SUBSUB_TIMESUB_LTIME-244C02E4">
+<a name="SUBSUB_TIMESUB_LTIME-244C02E4" id="SUBSUB_TIMESUB_LTIME-244C02E4">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_TIMESUB_LTIME_244C02E4" id="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_TIMESUB_LTIME_244C02E4">
+<!-- --></a><a name="SUBSUB_TIMESUB_LTIME_244C02E4" id="SUBSUB_TIMESUB_LTIME_244C02E4">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SUB, SUB_TIME, SUB_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: TIME, IN2: TIME): TIME
+SUB_TIME(IN1: TIME, IN2: TIME): TIME</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: LTIME, IN2: LTIME): LTIME
+SUB_TIME(IN1: LTIME, IN2: LTIME): LTIME</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Subtracts parameter IN2 of type TIME or LTIME from parameter IN1 of the same type as parameter IN2 and returns the difference between two time values.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF SUB_TIME(IN2 := T#1m55s, IN1 := T#75s) = T#-40s THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__SUBSUB_TOD_TIMESUB_LTOD_LTIME-244C19B1">
+<a name="SUBSUB_TOD_TIMESUB_LTOD_LTIME-244C19B1" id="SUBSUB_TOD_TIMESUB_LTOD_LTIME-244C19B1">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_TOD_TIMESUB_LTOD_LTIME_244C19B1" id="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_TOD_TIMESUB_LTOD_LTIME_244C19B1">
+<!-- --></a><a name="SUBSUB_TOD_TIMESUB_LTOD_LTIME_244C19B1" id="SUBSUB_TOD_TIMESUB_LTOD_LTIME_244C19B1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SUB, SUB_TOD_TIME, SUB_LTOD_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: TOD, IN2: TIME): TOD
+SUB_TOD(IN1: TOD, IN2: TIME): TOD
+SUB_TOD_TIME(IN1: TOD, IN2: TIME): TOD</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: LTOD, IN2: LTIME): LTOD
+SUB_LTOD(IN1: LTOD, IN2: LTIME): LTOD
+SUB_LTOD_LTIME(IN1: LTOD, IN2: LTIME): LTOD</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Subtracts parameter IN2 of type TIME or LTIME from parameter IN1 of type TOD or LDOT respectively and returns the resulting time of day value of the same type as parameter IN1.
+</p>
+<p class="p">
+The resulting value is always in the range defined by the resulting data type [00:00:00..24:00:00) with the upper limit not included.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>VAR_TEMP
+  currTOD : TOD := TOD#12:49:30;
+END_VAR
+IF SUB(currTOD, T#1d15h) = TOD#21:49:30 AND
+SUB_TOD_TIME(IN2 := TIME#-9h, IN1 := currTOD) = TOD#21:49:30 THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="NumericFunctionsOfTimeAndDurationDa-244B697F__SUBSUB_TOD_TODSUB_LTOD_LTOD-244C38FF">
+<a name="SUBSUB_TOD_TODSUB_LTOD_LTOD-244C38FF" id="SUBSUB_TOD_TODSUB_LTOD_LTOD-244C38FF">
+<!-- --></a><a name="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_TOD_TODSUB_LTOD_LTOD_244C38FF" id="NumericFunctionsOfTimeAndDurationDa_244B697F__SUBSUB_TOD_TODSUB_LTOD_LTOD_244C38FF">
+<!-- --></a><a name="SUBSUB_TOD_TODSUB_LTOD_LTOD_244C38FF" id="SUBSUB_TOD_TODSUB_LTOD_LTOD_244C38FF">
+<!-- --></a>
+<h2 class="title sectiontitle">
+SUB, SUB_TOD_TOD, SUB_LTOD_LTOD
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: TOD, IN2: TOD): TIME
+SUB_TOD(IN1: TOD, IN2: TOD): TIME
+SUB_TOD_TOD(IN1: TOD, IN2: TOD): TIME</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>SUB(IN1: LTOD, IN2: LTOD): LTIME
+SUB_LTOD(IN1: LTOD, IN2: LTOD): LTIME
+SUB_LTOD_LTOD(IN1: LTOD, IN2: LTOD): LTIME</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Subtracts parameter IN2 of type TIME or LTIME from parameter IN1 of type TOD or LDOT respectively and returns the resulting time of day value of the same type as parameter IN1.
+</p>
+<p class="p">
+The resulting value is always in the range defined by the resulting data type [00:00:00..24:00:00) with the upper limit not included.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+No errors are detected during the operation. Overflow conditions are ignored.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>VAR_TEMP
+  currTOD : TOD := TOD#12:49:30;
+END_VAR
+IF SUB(currTOD, T#1d15h) = TOD#3:49:30 AND
+SUB_TOD_TIME(IN2 := TIME#-9h, IN1 := currTOD) = TOD#3:49:30 THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

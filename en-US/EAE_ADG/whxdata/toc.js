@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"Application Design - Guidelines\" url=\"EAE_ADG/EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\" src=\"toc1.js\" /></data>";

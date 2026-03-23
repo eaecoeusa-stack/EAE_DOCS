@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="task" />
+<meta name="DC.title" content="EcoStruxure Automation Expert - Archive Database Migration" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="MigratingMWDatabase-2884A0A4" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+EcoStruxure Automation Expert - Archive Database Migration
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.2.0_8";
+//]]></script>
+<meta name="brsprev" value="ARCHV_UG/UpgradingEAE-Archive-434592C7.html" />
+<meta name="brsnext" value="ARCHV_UG/EAEArchiveInstallUbuntu-25E8974F.html" />
+<meta name="topic-breadcrumbs" content="Archive - User Guide &gt; EcoStruxure Automation Expert - Archive (Windows) Installation Instructions" />
+</head>
+<body id="MigratingMWDatabase-2884A0A4"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html");
+document.write("<a href=\"ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html\">Archive - User Guide<\/a> > <a href=\"EAEAchiveInstallMW-25E6B246.html\">EcoStruxure Automation Expert - Archive (Windows) Installation Instructions<\/a> > EcoStruxure Automation Expert - Archive Database Migration<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="MigratingMWDatabase-2884A0A4" id="MigratingMWDatabase-2884A0A4_">
+<!-- --></a><a name="MigratingMWDatabase_2884A0A4" id="MigratingMWDatabase_2884A0A4">
+<!-- --></a><a name="MigratingMWDatabase_2884A0A4" id="MigratingMWDatabase_2884A0A4_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span class="ph">EcoStruxure Automation Expert - Archive</span> Database Migration
+</h1>
+<div class="body taskbody">
+<div class="section context">
+<p class="p">
+Starting with <span class="ph">EcoStruxure Automation Expert - Archive</span> V23.0 the installation wizard lists all detected compatible PostgreSQL versions available on your computer. If more than one PostgreSQL version is listed, a PostgreSQL database may already exist on this computer, created with the installation of an earlier major version of PostgreSQL. You can migrate this database to a later major version of PostgreSQL.
+</p>
+</div>
+<ol class="ol steps">
+<li class="li step stepexpand">
+<span class="ph cmd"><a class="xref" href="PostgreSQLInstallationWindows-45B5DE7A.html#PostgreSQLInstallationWindows-45B5DE7A">Install the latest major supported version of PostgreSQL</a> (including <span class="ph">pgAdmin</span>) to which the existing Archive database is to be migrated.</span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Your existing Archive database, created with an earlier major version of PostgreSQL remains unchanged, and a new Archive database is created with the new major version of PostgreSQL.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd"><a class="xref" href="EcoStruxureAutomationExpert-Archive-7BC5E5D3.html#EcoStruxureAutomationExpert-Archive-7BC5E5D3">Install <span class="ph">EcoStruxure Automation Expert - Archive</span></a> and select the latest major version of PostgreSQL when requested by the setup wizard.</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Open a Windows command prompt and navigate to the bin folder of the PostgreSQL version used for the existing Archive database, for example: <em class="ph i"><span class="ph filepath">cd “C:\Program Files\PostgreSQL\14\bin”</span></em>.</span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Open <span class="ph">pgAdmin 4</span> from the Windows <span class="ph uicontrol">Start</span> menu to find out to which PostgreSQL version your existing Archive database is related.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Dump the Archive data from your existing Archive database into an SQL file, for example: <em class="ph i">pg_dumpall.exe &gt; %temp%\ArchiveDB_V14.sql -U postgres</em>.</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Navigate to the bin folder of the new major PostgreSQL version installed in step 1, for example: <em class="ph i"><span class="ph filepath">cd “C:\Program Files\PostgreSQL\15\bin”</span></em></span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Import your data into your new Archive database, for example: <em class="ph i">psql.exe -U postgres -p 5432 -f "%temp%\ArchiveDB_V14.sql”</em></span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Command line parameter <em class="ph i">-p</em> must be your configured port number for the PostgreSQL version installed in step 1 of this procedure. The default port number is 5432.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Verify that the port number, used in step 7 of this procedure, is also configured inside your <span class="ph">EcoStruxure Automation Expert</span> solution for the Archive device.</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Verify that the newly installed Archive is working correctly, and that your data history is present.</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Optionally, uninstall the previous PostgreSQL version from your computer if not required by any software, then delete the old Archive database from your computer.</span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> After uninstallation of the previous PostgreSQL version, a message appears, displaying the path to the location where your old Archive database is installed.
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005116.05
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

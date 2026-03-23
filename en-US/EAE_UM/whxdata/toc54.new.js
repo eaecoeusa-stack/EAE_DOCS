@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Device Configuration Commands","type":"item","url":"EAE_UM/ConceptTitle-D6832A12.html"},{"key":"toc55","name":"Designing the Physical Architecture","type":"book","url":"EAE_UM/PhysicalTopologyEditor-Designing-A0062A4C.html#PhysicalTopologyEditor-Designing-A0062A4C"},{"key":"toc56","name":"Commissioning the Physical Architecture","type":"book","url":"EAE_UM/PhysicalTopologyEditor-Commissionin-A0476701.html#PhysicalTopologyEditor-Commissionin-A0476701"},{"key":"toc57","name":"Monitoring the Physical Architecture","type":"book","url":"EAE_UM/PhysicalTopologyEditor-Monitoring-A049455C.html#PhysicalTopologyEditor-Monitoring-A049455C"},{"name":"Reset the Device Security","type":"item","url":"EAE_UM/ConceptTitle-44C38297.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

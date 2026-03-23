@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="User Accounts Management" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ManageUsersAccountCPT-3B7ABEBB" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+User Accounts Management
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.1.1_1";
+//]]></script>
+<meta name="brsprev" value="EAE_CSG/AIGWorkflowUsingGalaxyUserHavingOpe-6C72201D.html" />
+<meta name="brsnext" value="EAE_CSG/DefinePKIandCertificatesCPT-3B7ADB26.html" />
+<meta name="topic-breadcrumbs" content="Cybersecurity - Guide &gt; EcoStruxure Automation Expert - Cybersecurity Features &gt; Identify, Authenticate and Authorize User Account" />
+</head>
+<body id="ManageUsersAccountCPT-3B7ABEBB"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html");
+document.write("<a href=\"EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html\">Cybersecurity - Guide<\/a> > <a href=\"EcoStruxureAutomationExpert-CyberSe-34B08F70.html#EcoStruxureAutomationExpert-CyberSe-34B08F70\">EcoStruxure Automation Expert - Cybersecurity Features<\/a> > <a href=\"IdentifyAuthenticateandAuthorizeUse-3B5990BB.html#IdentifyAuthenticateandAuthorizeUse-3B5990BB\">Identify, Authenticate and Authorize User Account<\/a> > User Accounts Management<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ManageUsersAccountCPT-3B7ABEBB" id="ManageUsersAccountCPT-3B7ABEBB_">
+<!-- --></a><a name="ManageUsersAccountCPT_3B7ABEBB" id="ManageUsersAccountCPT_3B7ABEBB">
+<!-- --></a><a name="ManageUsersAccountCPT_3B7ABEBB" id="ManageUsersAccountCPT_3B7ABEBB_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+User Accounts Management
+</h1>
+<div class="body conbody">
+
+<p class="p">
+An advantage of a Control System is its ability to create and manage user accounts from central Domain Controllers.
+</p>
+<p class="p">
+As a security best practice, we recommend to create different user accounts depending on the users roles and responsibilities.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> As part of hardening the practice, the Administrator and Guest accounts should be disabled on all operator workstations and servers.
+</div>
+<p class="p">
+User account properties are set through group policy settings. The following password policy settings are recommended:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Expiration period - none
+</p>
+</li>
+<li class="li">
+<p class="p">
+Lock account duration - 240 s
+</p>
+</li>
+<li class="li">
+<p class="p">
+Account lockout threshold - 5
+</p>
+</li>
+<li class="li">
+<p class="p">
+Inactive period - 15 min
+</p>
+</li>
+<li class="li">
+<p class="p">
+Reset account lockout counter - none
+</p>
+</li>
+</ul>
+<p class="p">
+The domain policy governs the password policy. By default, all user accounts across the domain will have the same password applied on them. The following domain policy settings are recommended:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Enforce password history - 3 password cannot be re-used
+</p>
+</li>
+<li class="li">
+<p class="p">
+Maximum password age - 365 days
+</p>
+</li>
+<li class="li">
+<p class="p">
+Minimum password age - none
+</p>
+</li>
+<li class="li">
+<p class="p">
+Minimum password length - 12
+</p>
+</li>
+<li class="li">
+<p class="p">
+Password complexity requirements - y
+</p>
+</li>
+</ul>
+<p class="p">
+It is advisable to follow best practice depending on the trade-off of availability versus DoS tolerance by applying the guidance provided at <a class="xref" href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/reset-account-lockout-counter-after" target="_blank">Reset account lockout counter after - Windows 10 | Microsoft Learn</a>.
+</p>
+<p class="p">
+It is also recommended to remove guest and admin local users from workstations.
+</p>
+<div class="section" id="ManageUsersAccountCPT-3B7ABEBB__EcoStruxureAutomationExpertDPACDevi-1342D8E7">
+<a name="EcoStruxureAutomationExpertDPACDevi-1342D8E7" id="EcoStruxureAutomationExpertDPACDevi-1342D8E7">
+<!-- --></a><a name="ManageUsersAccountCPT_3B7ABEBB__EcoStruxureAutomationExpertDPACDevi_1342D8E7" id="ManageUsersAccountCPT_3B7ABEBB__EcoStruxureAutomationExpertDPACDevi_1342D8E7">
+<!-- --></a><a name="EcoStruxureAutomationExpertDPACDevi_1342D8E7" id="EcoStruxureAutomationExpertDPACDevi_1342D8E7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+EcoStruxure Automation Expert dPAC Device User Accounts
+</h2>
+<p class="p">
+Before an application can be deployed to a dPAC, user accounts must be added to the EcoStruxure Automation Expert solution. Note that in this version of EcoStruxure Automation Expert all users have the same level of privilege. For more information refer to the <em class="ph i">EcoStruxure Automation Expert - User Manual</em> topic <span class="ph"><a class="xref " href="../../EAE_UM/index.htm?rhmapid=UserManagement_9C2999FB" target="_blank"><em class="ph i">User Management</em></a></span>.
+</p>
+</div>
+<div class="section" id="ManageUsersAccountCPT-3B7ABEBB__EdgeIODeviceUserAccounts-1342DAEB">
+<a name="EdgeIODeviceUserAccounts-1342DAEB" id="EdgeIODeviceUserAccounts-1342DAEB">
+<!-- --></a><a name="ManageUsersAccountCPT_3B7ABEBB__EdgeIODeviceUserAccounts_1342DAEB" id="ManageUsersAccountCPT_3B7ABEBB__EdgeIODeviceUserAccounts_1342DAEB">
+<!-- --></a><a name="EdgeIODeviceUserAccounts_1342DAEB" id="EdgeIODeviceUserAccounts_1342DAEB">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Edge I/O Device User Accounts
+</h2>
+<p class="p">
+Configure the user accounts added to the Edge I/O devices to limit the level of privilege. The following settings are recommended:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Minimum Inactivity Period (min) = 15 min
+</p>
+</li>
+<li class="li">
+<p class="p">
+Password Attempts Timer (min) = 240 s
+</p>
+</li>
+<li class="li">
+<p class="p">
+Maximum Login Attempts = 5
+</p>
+</li>
+</ul>
+<p class="p">
+For more information, refer to the topic <a class="xref" href="NetworkSecurity-3861BFEB.html#NetworkSecurity-3861BFEB__EdgeIODistributedIOConfiguration-12D2DC45">Edge I/O Distributed IO Configuration</a>.
+</p>
+</div>
+<div class="section" id="ManageUsersAccountCPT-3B7ABEBB__ASRockIEP-5000GIPCAndLinuxHostUserA-33B506D5">
+<a name="ASRockIEP-5000GIPCAndLinuxHostUserA-33B506D5" id="ASRockIEP-5000GIPCAndLinuxHostUserA-33B506D5">
+<!-- --></a><a name="ManageUsersAccountCPT_3B7ABEBB__ASRockIEP_5000GIPCAndLinuxHostUserA_33B506D5" id="ManageUsersAccountCPT_3B7ABEBB__ASRockIEP_5000GIPCAndLinuxHostUserA_33B506D5">
+<!-- --></a><a name="ASRockIEP_5000GIPCAndLinuxHostUserA_33B506D5" id="ASRockIEP_5000GIPCAndLinuxHostUserA_33B506D5">
+<!-- --></a>
+<h2 class="title sectiontitle">
+ASRock iEP-5000G iPC and Linux Host User Accounts
+</h2>
+<p class="p">
+User accounts control access to the device. If these accounts are not properly managed, attackers can gain unauthorized access, change configurations, or disrupt operations. Therefore, securing these accounts is important to maintaining device integrity.
+</p>
+<p class="p">
+ASRock iEP-5000G iPCs provided by Schneider Electric will come configured according to the following policy. Linux hosts should be configured according to the following policies:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The device uses local accounts and there is no integration with external directory services.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Default Accounts:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+eeadmin is the only authorized account for SSH access.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The root account is disabled by default.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+SSH Access:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+SSH is disabled by default. Enable it only when required for setup or maintenance.
+</p>
+</li>
+<li class="li">
+<p class="p">
+When SSH is enabled, only one SSH session is allowed at a time. This should be disabled after setup or maintenance.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Password Management:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Change default password during initial setup.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Save passwords securely. If you forget the new password, the device must be re-imaged.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+To save passwords they must be either physically secured or secured by using a password manager such as Bitwarden1 to store a <em class="ph i">Note</em> password.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Remove Unused Accounts: Delete or disable any accounts that are not required for operation.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="p">
+The UEFI/BIOS Supervisor and User accounts should be protected by a strong password. Note that it is not normally possible to enforce a password policy in the UEFI/BIOS
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005517.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

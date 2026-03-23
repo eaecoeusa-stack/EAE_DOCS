@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Export CAT Instances","type":"item","url":"EAE_UM/ExportCATInstancesCPT-C46D4B04.html#ExportCATInstancesCPT-C46D4B04"},{"name":"Update CAT Instances in Excel","type":"item","url":"EAE_UM/UpdateCATInstancesInExcelCPT-C46D588C.html#UpdateCATInstancesInExcelCPT-C46D588C"},{"name":"Import CAT Instances","type":"item","url":"EAE_UM/ImportCATInstancesCPT-C46D6252.html#ImportCATInstancesCPT-C46D6252"},{"name":"Troubleshooting Tips","type":"item","url":"EAE_UM/TroubleshootingTipsCPT-B57A7AEF.html#TroubleshootingTipsCPT-B57A7AEF"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

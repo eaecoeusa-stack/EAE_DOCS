@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Impact of Multiresource Feature on Mibget Output Format","type":"item","url":"ATVd_UG/ImpactOfMultiresourceFeatureOnMibge-CBA4CDC6.html"},{"name":"Controller Application menu Missing on the Graphic Display Terminal","type":"item","url":"ATVd_UG/ControllerApplicationMenuMissingOnT-CBA4D61B.html"},{"name":"Connection to Kiwi SysLog server","type":"item","url":"ATVd_UG/ConnectionToMQQTKiwiSysLogServer-CFAC1221.html"},{"name":"Troubleshooting during the ATV Distributed PAC Firmware Update","type":"item","url":"ATVd_UG/TroubleshootingDuringTheATVDPACFirm-07ED2413.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

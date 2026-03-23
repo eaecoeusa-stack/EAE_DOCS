@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Sequence Diagram" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SequenceDiagramEditor-2250CFFE" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Sequence Diagram
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.5.1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/StateGraphEditor-224F89C5.html" />
+<meta name="brsnext" value="EAE_UM/DebuggingTheSequences-E141A6BC.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Sequential Control" />
+</head>
+<body id="SequenceDiagramEditor-2250CFFE"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SequentialControlEditor-2243A36F.html\">Sequential Control<\/a> > Sequence Diagram<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SequenceDiagramEditor-2250CFFE" id="SequenceDiagramEditor-2250CFFE_">
+<!-- --></a><a name="SequenceDiagramEditor_2250CFFE" id="SequenceDiagramEditor_2250CFFE">
+<!-- --></a><a name="SequenceDiagramEditor_2250CFFE" id="SequenceDiagramEditor_2250CFFE_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Sequence Diagram
+</h1>
+<div class="body conbody">
+<div class="section" id="SequenceDiagramEditor-2250CFFE__Overview-224FBC60">
+<a name="Overview-224FBC60" id="Overview-224FBC60">
+<!-- --></a><a name="SequenceDiagramEditor_2250CFFE__Overview_224FBC60" id="SequenceDiagramEditor_2250CFFE__Overview_224FBC60">
+<!-- --></a><a name="Overview_224FBC60" id="Overview_224FBC60">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Overview
+</h2>
+<p class="p">
+A <span class="ph uicontrol">Sequence Diagram</span> is the chart attached to a state of a Procedural <span class="ph">CAT</span>. It describes the logic using sequential control.
+</p>
+<p class="p">
+The sequence flows through two main kinds of graphic:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+A step, a processing unit that contains the actions that occur when it is actived or deactivated.
+</p>
+</li>
+<li class="li">
+<p class="p">
+A transition, the gate whose opening activates the next step.
+</p>
+</li>
+</ul>
+<p class="p">
+The first time a state is double-clicked, two elements are automatically drawn:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+An initial step (Start Sequence). Usually it does not contain any action; it must be followed by one regular step (see hereafter).
+</p>
+</li>
+<li class="li">
+<p class="p">
+A final step (End Sequence). It must be preceded by one transition (directly or through a jump) or several transitions.
+</p>
+</li>
+</ul>
+<p class="p">
+The minimum chart includes between these two elements a regular step that does not need any event to be active, then a transition.
+</p>
+</div>
+<div class="section" id="SequenceDiagramEditor-2250CFFE__BasicEditorCommands-22503EB1">
+<a name="BasicEditorCommands-22503EB1" id="BasicEditorCommands-22503EB1">
+<!-- --></a><a name="SequenceDiagramEditor_2250CFFE__BasicEditorCommands_22503EB1" id="SequenceDiagramEditor_2250CFFE__BasicEditorCommands_22503EB1">
+<!-- --></a><a name="BasicEditorCommands_22503EB1" id="BasicEditorCommands_22503EB1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Smart Graphics
+</h2>
+<div class="div">
+<p class="p">
+The current tab (CAT) and sub-tab (sequence) headers stand out on a white background. The upper left corner features a bar with seven icons, one by smart graphic type:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.955223880597016%" />
+<col style="width:30.34825870646766%" />
+<col style="width:30.34825870646766%" />
+<col style="width:30.34825870646766%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+&lt;Procedural CAT1 name&gt;
+</p>
+</td>
+<td class="entry" style="vertical-align:top; background-color:#e0e0e0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+&lt;Procedural CAT2 name&gt;
+</p>
+</td>
+<td class="entry" style="vertical-align:top; background-color:#e0e0e0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+&lt;Procedural CAT3 name&gt;
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; background-color:#e0e0e0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; "></td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+&lt;Sequence 1 name&gt;
+</p>
+</td>
+<td class="entry" style="vertical-align:top; background-color:#f0f0f0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+&lt;Sequence 2 name&gt;
+</p>
+</td>
+<td class="entry" style="vertical-align:top; background-color:#f0f0f0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; "></td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:middle; background-color:#e0e0e0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; "></td>
+<td class="entry" colspan="3" style="text-align:left;vertical-align:top; background-color:#e0e0e0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<img class="image" src="DD00739056.png" alt="" style="max-height:25px;" />
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; background-color:#e0e0e0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<span class="ph uicontrol">SEQ</span>
+</p>
+</td>
+<td class="entry" colspan="3" style="text-align:center;vertical-align:top; background-color:#f0f0f0; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+<strong class="ph b"><span style="font-family: Arial;font-size: 1em;">╤</span></strong>
+</p>
+<p class="p">
+<strong class="ph b"><span style="font-family: Arial;font-size: 1em;">╧</span></strong>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="p">
+To insert a graphic, drag a tool and drop the icon onto the space.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table page" width="100%">
+<colgroup>
+<col style="width:7.980049875311722%" />
+<col style="width:30.673316708229425%" />
+<col style="width:24.189526184538654%" />
+<col style="width:37.1571072319202%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Icon</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Result</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Valid connections</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739106.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Step, a state in the flow chart .
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A rectangle appears. The default label is Sn. You can edit it.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+1 ... n transitions before and after. See further.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739105.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Transition ruled out by a Boolean expression allowing the flow to move from previous step (source of the transition) to the next step (destination step of the transition). See <a class="xref" href="TransitionsEditor-9B7C71BC.html">Transition Editor</a>.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A transition appears. The default label is TRn. You can edit it.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739104.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Step and transition
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+As in the preceding rows, but they are already connected.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739103.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Extensible divider into parallel paths (Simultaneous branching or AND branching). All paths execute and must finish before the sequence can move on.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A double bar with two output connectors appears.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<img class="image" src="DD00739102.png" alt="" />
+<p class="p">
+Recommendation: 1 transition before. A connector can stay free.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739101.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Extensible collector of parallel paths (End of simultaneous branching or AND branching)
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A double bar with two input connectors appears.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<img class="image" src="DD00739100.png" alt="" style="max-height:80px;" />
+<div class="p">
+It can also be followed by several transitions (see further EXCLUSIVE PATHS): <img class="image" src="DD00761074.png" alt="" style="max-height:57px;" />A connector can stay free, but the same count of free connectors as in the corresponding divider is required.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739099.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Jump (forward or backward). It includes the preceding transition.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A selection drop-down appears. The destination step must be in the same parallel branch and can not be the same as the source step (no jump to itself).
+</p>
+
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The destination step must be in the same parallel branch (or in the main one) and cannot be the preceding one (infinite loop) except if another path of an OR branching can take over (see chart further).
+</p>
+<p class="p">
+The destination cannot be in a simultaneous branch as the counts of engaged connectors differ.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<img class="image" src="DD00739098.png" alt="" style="max-height:40px;" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Comments
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Enter the text in the extensible rectangle.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; "></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> ADOPT A system approach. Start with big steps and later break them out into meaningful increments or parallel paths.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The DEFAULT numbers in the labels may be repeated in different sequences. abel the graphics with descriptive captions: a physical change, such as a part in position, a temperature reached, or a recipe selection.
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Changing the count of parallel connectors in a divider or a collector
+</h2>
+<p class="p">
+By default, the divider and the collector are designed for two paths.
+</p>
+<p class="p">
+To add a connector:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select the graphic. This reveals a black arrow on both end of the double bar.<img class="image" src="DD00762576.png" alt="" style="max-height:25px;" />
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click either arrow. This extends the double bar and adds a connector on the clicked side.
+</p>
+</li>
+</ol>
+<p class="p">
+To remove a connector when more than two are present:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select the graphic. This reveals the black arrows.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click a black arrow pointing inwardly. This removes a connector on the clicked side.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If relevant, reconnect the disconnected path to an innermost connector.
+</p>
+</li>
+</ol>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Drawing the connections and Navigating the chart
+</h2>
+<p class="p">
+Use the mouse left button to draw the flow between the graphics.
+</p>
+<p class="p">
+During the procedure, the control appears green.
+</p>
+<p class="p">
+BASIC CONNECTION
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8%" />
+<col style="width:46%" />
+<col style="width:46%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Step</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Operation</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Result</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+1.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Hover the source graphic or the destination graphic.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+This reveals the upstream and downstream connectors.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+2.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Hover the in-between connector.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+The cursor turns into a hand.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+3.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Draw a line to the other graphic connector to hook it.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+4.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Release the mouse.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+If the connection is allowed, the line remains visible.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+5.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Move either graphic in case the connecting line is broken.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; "></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+EXCLUSIVE PATHS (Alternative sequence or Selection branching or OR branching)
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8%" />
+<col style="width:46%" />
+<col style="width:46%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Step</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Operation</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Result</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+1.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Lay out as many transitions as needed branches.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+2.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Connect a transition to the preceding step.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+3.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Connect another transition to the preceding step.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A horizontal bar connects the branches .A vertical segment with a thick stroke connects it to the preceding step.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+4.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Move the segment horizontally to straighten a broken line, vertically to adjust the distances.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+5.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Develop the branches. Each one must end with a transition (or a jump).
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+ 
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+6.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Connect either last transition to a step (possibly the final one).
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; "></td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+7.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Connect the other last transition to the same step as just above.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+A horizontal bar connects the branches .A vertical segment with a thick stroke connects it to the preceding step.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+8.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Move the segment horizontally to straighten a broken line, vertically to adjust the distances.
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; "></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+The transitions are tested from left to right. The first passing one is chosen, whereas the others are ignored. The control flows through the first passing branch.
+</p>
+<p class="p">
+Notice that this sequence is not valid because there is a jump to the preceding step:<img class="image" src="DD00762575.png" alt="" />
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+In contrast with the AND bars, the OR bars feature one line.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+An OR branching can succeed an AND collector.
+</p>
+</li>
+</ul>
+</div>
+<p class="p">
+HANDLING &amp; VIEWING
+</p>
+<p class="p">
+Selecting graphic(s) is needed to move or delete them.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:50%" />
+<col style="width:50%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Operation</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Result</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Click on graphic
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Selects the graphic.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Ctrl + click on graphics
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Selects all the clicked graphics.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Ctrl A
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Selects all the graphics in the chart.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Del
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Deletes the selected graphic. Start Sequence and End Sequence cannot be deleted.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Scroll wheel up
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Scrolls the chart up.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Scroll wheel down
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Scrolls the chart down.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Ctrl + Scroll wheel up
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Zooms in.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Ctrl + Scroll wheel down
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Zooms out.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Shift + Scroll wheel up
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Scrolls the chart left.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Shift + Scroll wheel down
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Scrolls the chart right.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+To select adjacent graphics, press and hold down (more than 1 second) the mouse left button to draw a rectangle that encloses the chosen graphics.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

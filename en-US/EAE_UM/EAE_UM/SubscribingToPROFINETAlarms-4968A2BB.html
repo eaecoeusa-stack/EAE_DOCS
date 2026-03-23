@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Subscribing to PROFINET Alarms" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SubscribingToPROFINETAlarms-4968A2BB" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Subscribing to PROFINET Alarms
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.5.3.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/ConfigureEventTriggeredWriteOfPROFI-48F894FB.html" />
+<meta name="brsnext" value="EAE_UM/PROFINETModuleAndSubmoduleDiagnosti-62A9DA04.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; PROFINET &gt; Configuring Event Driven PROFINET Communication" />
+</head>
+<body id="SubscribingToPROFINETAlarms-4968A2BB"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"PROFINET-D50A0A36.html#PROFINET-D50A0A36\">PROFINET<\/a> > <a href=\"ConfiguringEventDrivenPROFINETCommu-498F57C5.html#ConfiguringEventDrivenPROFINETCommu-498F57C5\">Configuring Event Driven PROFINET Communication<\/a> > Subscribing to PROFINET Alarms<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SubscribingToPROFINETAlarms-4968A2BB" id="SubscribingToPROFINETAlarms-4968A2BB_">
+<!-- --></a><a name="SubscribingToPROFINETAlarms_4968A2BB" id="SubscribingToPROFINETAlarms_4968A2BB">
+<!-- --></a><a name="SubscribingToPROFINETAlarms_4968A2BB" id="SubscribingToPROFINETAlarms_4968A2BB_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Subscribing to PROFINET Alarms
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Use the <code class="ph codeph">PN_RECEIVE_ALARM</code> function block to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Create a single PROFINET alarm subscription, by setting <code class="ph codeph">INIT</code> = 1 + <code class="ph codeph">QI</code> = TRUE.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Remove a previously created alarm subscription, by setting <code class="ph codeph">INIT</code> = 1 + <code class="ph codeph">QI</code> = FALSE.
+</p>
+</li>
+</ul>
+<p class="p">
+When you create an alarm subscription, that subscription remains in effect until it is removed.
+</p>
+<p class="p">
+To edit a previously created subscription, remove the original subscription, then create a new subscription.
+</p>
+
+</div>
+<div class="section" id="SubscribingToPROFINETAlarms-4968A2BB__AlarmPriorities-49689E91">
+<a name="AlarmPriorities-49689E91" id="AlarmPriorities-49689E91">
+<!-- --></a><a name="SubscribingToPROFINETAlarms_4968A2BB__AlarmPriorities_49689E91" id="SubscribingToPROFINETAlarms_4968A2BB__AlarmPriorities_49689E91">
+<!-- --></a><a name="AlarmPriorities_49689E91" id="AlarmPriorities_49689E91">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Alarm Priorities
+</h2>
+<p class="p">
+Each IO-Device maintains two PROFINET alarm queues: High Priority &amp; Low Priority:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+High Priority is for Process Alarms: triggered by events described in solution logic and reported by the program.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Low Priority is for all other alarms, including:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Diagnostic alarms (e.g., a field device becomes non-operational)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Maintenance alarms (e.g., a field device has been operating a period of time defined for scheduled maintenance)
+</p>
+</li>
+<li class="li">
+<p class="p">
+IO-Device specific alarms (e.g., device manufacturer diagnostic alarms)
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="p">
+The IO-Device sends all queued High Priority alarms before it sends Low Priority alarms.
+</p>
+</div>
+<div class="section" id="SubscribingToPROFINETAlarms-4968A2BB__FilteringAlarms-49689B4D">
+<a name="FilteringAlarms-49689B4D" id="FilteringAlarms-49689B4D">
+<!-- --></a><a name="SubscribingToPROFINETAlarms_4968A2BB__FilteringAlarms_49689B4D" id="SubscribingToPROFINETAlarms_4968A2BB__FilteringAlarms_49689B4D">
+<!-- --></a><a name="FilteringAlarms_49689B4D" id="FilteringAlarms_49689B4D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Filtering Alarms
+</h2>
+<p class="p">
+You can configure the <code class="ph codeph">PN_RECEIVE_ALARM</code> function block to receive:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<code class="ph codeph">ALL_ALARMS</code> from the specified IO-Controller (BUS_ID), or
+</p>
+</li>
+<li class="li">
+<p class="p">
+Only specified alarms, by filtering the alarms by alarm source. Filtering options include:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+IO-Device (BUS_ID + STATION_NAME_FILTER)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Slot (BUS_ID + STATION_NAME_FILTER + SLOT_NO_FILTER)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Subslot (BUS_ID + STATION_NAME_FILTER + SLOT_NO_FILTER + SUBSLOT_NO_FILTER)
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="SubscribingToPROFINETAlarms-4968A2BB__ConfiguringAPROFINETAlarmSubscripti-496899A9">
+<a name="ConfiguringAPROFINETAlarmSubscripti-496899A9" id="ConfiguringAPROFINETAlarmSubscripti-496899A9">
+<!-- --></a><a name="SubscribingToPROFINETAlarms_4968A2BB__ConfiguringAPROFINETAlarmSubscripti_496899A9" id="SubscribingToPROFINETAlarms_4968A2BB__ConfiguringAPROFINETAlarmSubscripti_496899A9">
+<!-- --></a><a name="ConfiguringAPROFINETAlarmSubscripti_496899A9" id="ConfiguringAPROFINETAlarmSubscripti_496899A9">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configuring a PROFINET Alarm Subscription
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the<a class="xref" href="FunctionBlocksNetworkEditor-69D62822.html"> Function Blocks Network editor</a>, add the <code class="ph codeph">PN_RECEIVE_ALARM</code> function block from the library <span class="ph menucascade"><span class="ph uicontrol">Standard.IoProfinet</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Services</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure <code class="ph codeph">QI</code> to specify the requested action:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+TRUE = create subscription
+</p>
+</li>
+<li class="li">
+<p class="p">
+FALSE = remove subscription
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Configure the alarm subscription source:
+</p>
+<ol class="ol" type="a">
+<li class="li">
+<p class="p">
+Specify the <code class="ph codeph">BUS_ID</code> of the source PROFINET IO-Controller (bus master) of the type <span class="ph uicontrol">Standard.IoProfinet.PN_IOController</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Specify the PROFINET filters that can be applied to the subscription:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<code class="ph codeph">STATION_NAME_FILTER</code>:identifies the source IO-Device on the specified IO-Controller.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">SLOT_NO_FILTER</code>: identifies the Slot Number of the specified source IO-Device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">SUBSLOT_NO_FILTER</code>: identifies the Subslot Number of the specified Slot Number.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">MODE</code> : specifies the filters you specified in step 2.b. that will be applied to the subscription:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<code class="ph codeph">ALL_ALARMS</code>
+</p>
+: All alarms from all IO-Devices of the IO-Controller are sent.
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">ALARM_BY_DEVICE</code>: Only alarms from the specified IO-Device are sent.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">ALARM_BY_SLOT</code>: Only alarms from the specified IO-Device Slot are sent.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">ALARM_BY_SUBLOT</code>: Only alarms from the specified IO-Device Subslot are sent.
+</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li class="li">
+<p class="p">
+After the subscription action is completed, check the <code class="ph codeph">STATUS</code> data output text value, which can display:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">+Subscription OK</span>: Adding subscription was processed and sent to PROFINET IO-Controller.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">+Subscription Error</span>: Adding subscription was not processed. Refer the <em class="ph i">Applications Design Guidelines</em> topic <span class="ph"><a class="xref " href="../../EAE_ADG/index.htm?rhmapid=RuntimeDeviceAndCyclicLogs_48E37B10" target="_blank"><em class="ph i">Runtime Device and Cyclic Logs</em></a></span> for more information.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">-Subscription OK</span>: Removing subscription was processed and sent to PROFINET IO-Controller.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">-Subscription Error</span>: Removing subscription was not processed. Refer the <em class="ph i">Applications Design Guidelines</em> topic <span class="ph"><a class="xref " href="../../EAE_ADG/index.htm?rhmapid=RuntimeDeviceAndCyclicLogs_48E37B10" target="_blank"><em class="ph i">Runtime Device and Cyclic Logs</em></a></span> for more information.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Notification OK</span>: Alarm notification was received from the PROFINET IO-Device
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Notification Error</span>: Alarm notification contains one or more detected errors.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Standard.IoProfinet</span> library help for the <code class="ph codeph">PN_RECEIVE_ALARM</code> function block includes a link to PROFINET detected error codes.
+</div>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Check the <code class="ph codeph">ALARM_TYPE</code> output.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Standard.IoProfinet</span> library help for the <code class="ph codeph">PN_RECEIVE_ALARM</code> function block includes a link to PROFINET alarm types.
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"ATV Distributed PAC Integrated Communication Ports","type":"item","url":"ATVd_UG/IntegratedCommunicationPorts-D8848EA4.html"},{"name":"Drive Embedded Communication Ports","type":"item","url":"ATVd_UG/DriveEmbeddedCommunicationPorts-D885548F.html"},{"name":"Connecting ATV Distributed PAC to a PC","type":"item","url":"ATVd_UG/D-SE-0105087.html"},{"key":"toc8","name":"ATV dPAC EtherNet/IP use-cases","type":"book","url":"ATVd_UG/ATVDPACEtherNetIPUse-cases-B911CC92.html"},{"name":"Fast Device Replacement","type":"item","url":"ATVd_UG/FastDeviceReplacement-6D781F24.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,424 @@
+/* HEADER */
+div.header {
+    background-color: #3DCD58;
+}
+
+/* desktop */
+body.media-desktop div.header div.logo {
+    height: 4.818em;
+    width: 12em;
+    margin-left: 0;
+    margin-right: 3em;
+    margin-top: -9px;
+}
+
+body.media-desktop div.searchbar-extra {
+    display: none;
+}
+
+/* tab */
+body.media-landscape div.header div.logo {
+    float: left;
+    width: 3.5em;
+    margin-right: 1.25em;
+    margin-left: .5em;
+}
+
+/* SIDE MENU */
+div.toc-holder li.selected {
+    color: #009100;
+    border-left-color: #009100;
+}
+
+/* tab */
+body.media-landscape div.functionbar div.nav a.toc,
+body.media-landscape div.functionbar div.nav a.idx,
+body.media-landscape div.functionbar div.nav a.glo,
+body.media-landscape div.functionbar div.nav a.fts {
+    background-size: auto;
+}
+
+/* mobile */
+body.media-mobile div.functionbar div.nav a.toc,
+body.media-mobile div.functionbar div.nav a.idx,
+body.media-mobile div.functionbar div.nav a.glo {
+    background-size: auto;
+}
+
+/* Search */
+#substringSearchLabel {
+    display: block;
+    margin-bottom: .75em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    padding-left: 1.75em;
+    background-image: url("entirestringsearch_nomark.png");
+    background-repeat: no-repeat;
+    background-position: left 1em;
+    background-size: auto 0.8em;
+}
+
+#substringSearchLabel.active {
+    background-image: url("entirestringsearch_mark.png");
+}
+
+body.media-desktop #substringSearchLabel {
+    padding-top: .2em;
+    padding-left: 2.5em;
+    background-position: left 0.6em;
+    background-size: auto 1em;
+}
+
+body.media-mobile #substringSearchLabel {
+    background-position: 0.4em 1em;
+}
+
+body.media-desktop div.searchresults label.wSearchAndLabelResults span,
+body.media-desktop div.searchresults label.wSearchEntireStringLabelResults span {
+    font-size: 1.4em;
+}
+
+body.media-desktop div.searchbar .wSearchLink,
+body.media-landscape div.searchbar .wSearchLink {
+    width: 30px;
+    height: 35px;
+    background-image: url('search_desktop.png');
+    display: inline-block !important;
+    position: absolute;
+    margin: 8px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    text-decoration: none;
+}
+
+body.media-desktop div.searchbar input,
+body.media-landscape div.searchbar input {
+    width: calc(100% - 55px);
+}
+
+/* Searchresults */
+div.searchresults a {
+    color: #009530;
+}
+
+div.searchresults span.wSearchURL {
+    color: #009530;
+}
+
+body.media-landscape div.topic div.functionholder,
+body.media-mobile div.topic div.functionholder {
+    display: block;
+    height: 34px;
+}
+
+body.media-landscape div.topic div.functionholder div.print,
+body.media-mobile div.topic div.functionholder div.print {
+    position: absolute;
+    right: 55px;
+    top: 3px;
+    width: 20px;
+}
+
+body.media-landscape div.topic div.functionholder div.print a.print,
+body.media-mobile div.topic div.functionholder div.print a.print {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url("print_desktop.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.media-landscape div.topic div.functionholder .brs_previous,
+body.media-landscape div.topic div.functionholder .brs_next,
+body.media-mobile div.topic div.functionholder .brs_previous,
+body.media-mobile div.topic div.functionholder .brs_next {
+    display: none
+}
+
+body.media-desktop div.topic a.to_top {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+iframe.topic {
+    height: calc(100% - 34px);
+}
+
+iframe.printer {
+    opacity: 0;
+}
+
+.print_options {
+    width: auto;
+    display: inline-block;
+    position: fixed;
+    right: 50px;
+}
+
+body.media-landscape .print_options {
+    right: 50px;
+}
+
+body.media-desktop .print_options {
+    right: 105px;
+}
+
+#btn_print_hierarchy {
+    border: medium;
+    border-image: none;
+    width: 22px;
+    height: 22px;
+    padding: 0px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url('print_hierarchy.png');
+    background-size: contain;
+    background-color: transparent;
+}
+
+#btn_print_hierarchy:focus {
+    outline: none;
+}
+
+.media-mobile #btn_print_hierarchy,
+.media-landscape #btn_print_hierarchy {
+    width: 28px;
+    height: 28px;
+}
+
+#printOptionsDropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    top: 45px;
+    right: -103px;
+}
+
+#printOptionsDropdown a {
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+#printOptionsDropdown a#print_hierarchy {
+    border-top-style: none;
+}
+
+#printOptionsDropdown a:hover {
+    background-color: #e7e8e7;
+}
+
+#printOptionsDropdown.show {
+    display: block;
+    border: 1pt solid lightgrey;
+}
+
+body.media-landscape #printOptionsDropdown {
+    right: -25px;
+}
+
+/*
+loading "circle" for hierarchy print
+*/
+#circleBody {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    z-index: 9999999;
+    height: 28px;
+}
+
+@keyframes fades {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+#circleBody span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    background: #3DCD58;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fades;
+    animation-name: fades;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+#circleBody span:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#circleBody span:nth-child(3) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+/*
+	language menu
+*/
+div.se_language_menu {
+    position: fixed;
+    top: 17px;
+    z-index: 99;
+}
+
+ul.dropdown-menu:focus {
+    outline: none !important;
+}
+
+ul.dropdown-menu {
+    position: absolute;
+    top: 34px;
+    left: -1px;
+    float: left;
+    min-width: 60px;
+    padding: 5px 0px;
+    margin: 2px 0 0;
+    text-align: left;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 0px;
+    box-shadow: (0 6px 12px rgba(0, 0, 0, .175));
+}
+
+body.media-mobile div.se_language_menu ul.dropdown-menu {
+    top: 25px;
+}
+
+ul.dropdown-menu li {
+    list-style: none;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+}
+
+ul#lp_language_navigation {
+    display: none;
+}
+
+ul#lp_language_navigation.show {
+    display: block;
+}
+
+ul.dropdown-menu li:hover {
+    background-color: #f5f5f5;
+}
+
+ul.dropdown-menu li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 3px 20px;
+}
+
+a#lp_language_navigationHeader {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+a#lp_language_navigationHeader span {
+    display: block;
+    font-size: 20px;
+    border: 2px solid white;
+    width: 35px;
+    align-self: normal;
+    text-align: center;
+    height: 35px;
+    padding-top: 5px;
+}
+
+a#lp_language_navigationHeader span:empty {
+    display: none;
+}
+
+div.se_language_menu>li {
+    list-style: none;
+}
+
+div.se_language_menu {
+    right: 35px !important;
+}
+
+body.media-landscape div.se_language_menu {
+    top: 14px;
+    right: 140px !important;
+}
+
+body.media-landscape a#lp_language_navigationHeader {
+    display: block;
+    font-size: 19px;
+}
+
+body.media-landscape ul#lp_language_navigation li {
+    font-size: 15px;
+}
+
+body.media-landscape ul#lp_language_navigation li a {
+    padding: 6px 20px 6px 20px;
+    font-size: 17px;
+}
+
+body.media-mobile a#lp_language_navigationHeader {
+    color: #009100 !important;
+    display: block;
+    font-size: 19px;
+}
+
+body.media-mobile ul#lp_language_navigation li {
+    font-size: 15px;
+}
+
+body.media-mobile ul#lp_language_navigation li a {
+    padding: 6px 20px 6px 20px;
+    font-size: 17px;
+}
+
+body.media-mobile div.se_language_menu {
+    top: 9px !important;
+    right: 90px !important;
+}
+
+body.media-mobile div.se_language_menu a#lp_language_navigationHeader span {
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #009100;
+}
+
+div.Index .IndexLink,
+div.Glossary .IndexLink {
+    background-image: none;
+    padding-left: 0px !important;
+}

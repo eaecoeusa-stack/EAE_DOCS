@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Implementing Network Security" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SecuringTheNetwork-3863CCA9" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Implementing Network Security
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.0_6";
+//]]></script>
+<meta name="brsprev" value="EAE_CSG/NetworkSecurity-3861BFEB.html" />
+<meta name="brsnext" value="EAE_CSG/FirewallSecurityConsiderationsCPT-3737CC74.html" />
+<meta name="topic-breadcrumbs" content="Cybersecurity - Guide &gt; Defense in Depth" />
+</head>
+<body id="SecuringTheNetwork-3863CCA9"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html");
+document.write("<a href=\"EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html\">Cybersecurity - Guide<\/a> > <a href=\"DefenseInDepth-38633DAE.html\">Defense in Depth<\/a> > Implementing Network Security<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SecuringTheNetwork-3863CCA9" id="SecuringTheNetwork-3863CCA9_">
+<!-- --></a><a name="SecuringTheNetwork_3863CCA9" id="SecuringTheNetwork_3863CCA9">
+<!-- --></a><a name="SecuringTheNetwork_3863CCA9" id="SecuringTheNetwork_3863CCA9_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Implementing Network Security
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Network segmentation divides your network into multiple zones. Each zone has a different set of connectivity requirements and traffic patterns.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Segmentation is obtained by placing firewalls at strategic locations.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Configure firewalls with filtering rules defined in <a class="xref" href="FirewallSecurityConsiderationsCPT-3737CC74.html">Firewall Security Considerations topic</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Intrusion detection and prevention systems are deployed at key locations and alerts are reported to a monitoring center.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For networks that require reliable communications to the control network, it is recommended that at a minimum this device is a high-availability or redundant unit.
+</div>
+<p class="p">
+To mitigate the risk of storm events in the system that would impact on the control network, apply a rate limit of 1000 frames per second, or 12 Mbps to the traffic passing into the control network.
+</p>
+<div class="section" id="SecuringTheNetwork-3863CCA9__RemoteAccessSecurity-BBC3C66A">
+<a name="RemoteAccessSecurity-BBC3C66A" id="RemoteAccessSecurity-BBC3C66A">
+<!-- --></a><a name="SecuringTheNetwork_3863CCA9__RemoteAccessSecurity_BBC3C66A" id="SecuringTheNetwork_3863CCA9__RemoteAccessSecurity_BBC3C66A">
+<!-- --></a><a name="RemoteAccessSecurity_BBC3C66A" id="RemoteAccessSecurity_BBC3C66A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Remote Access Security
+</h2>
+<p class="p">
+Many organizations require that people can remotely connect to the <span class="ph">EcoStruxure Automation Expert</span> components as if they were still located physically at site, with the highest levels of security considered. Whether for maintenance, support, or even aspects of system operation, fast, reliable and secure connections are required wherever your key experts are located.
+</p>
+<p class="p">
+Typical VPN solutions are complex to setup and maintain and provide limited or no access to OT systems. Hardware systems don’t provide the flexibility and access required to the resources needed to keep your operation running smoothly.
+</p>
+<p class="p">
+The <span class="ph">Schneider Electric</span> Cybersecurity Services team can help to provide you a solution enabling your key personnel to remotely access their OT assets and applications while away from site in a secure and safe manner. This connectivity enables them to monitor their assets, and, subject to appropriate authorization, permit them to control and carry out maintenance tasks on the asset / applications. If needed, this functionality can be extended to third party vendors as well. Our solution sits within the existing client infrastructure and uses existing hardware, to the extent possible, within the client’s location.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information, see Secure Remote Access (SRA) at <a class="xref" href="https://www.se.com/ww/en/work/services/cybersecurity-services/" target="_blank">https://www.se.com/ww/en/work/services/cybersecurity-services/</a>.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Secure remote access service is managed by CAP as detailed in the <a class="xref" href="RemoteDesktopService-5416D500.html">Remote Desktop Service topic</a>. For more information about CAP, refer to the topic <a class="xref" href="CybersecurityApplicationPlatform-12C3460B.html">Cybersecurity Application Platform</a>.
+</div>
+</div>
+<div class="section" id="SecuringTheNetwork-3863CCA9__DemilitarizedZoneDMZ-BBC3C404">
+<a name="DemilitarizedZoneDMZ-BBC3C404" id="DemilitarizedZoneDMZ-BBC3C404">
+<!-- --></a><a name="SecuringTheNetwork_3863CCA9__DemilitarizedZoneDMZ_BBC3C404" id="SecuringTheNetwork_3863CCA9__DemilitarizedZoneDMZ_BBC3C404">
+<!-- --></a><a name="DemilitarizedZoneDMZ_BBC3C404" id="DemilitarizedZoneDMZ_BBC3C404">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Demilitarized Zone (DMZ)
+</h2>
+<p class="p">
+In a perimeter or external firewall, a special isolated zone, referred to as a demilitarized zone (DMZ), is commonly created..
+</p>
+<p class="p">
+The DMZ is a small network inserted as a neutral zone between a company’s private network and the outside public network The DMZ sub-zone contains public facing web or FTP servers. The DMZ gives greater flexibility for the firewall rule set to further control traffic that flows through it.
+</p>
+<p class="p">
+It is common for external firewalls to have additional DMZs for other applications. The firewall will then provide the ability to restrict what your trading partners can access on the company network. Therefore, you can extend these concepts to an internal firewall that is used to isolate the Control System’s Control Network.
+</p>
+<p class="p">
+A typical example is an installation in which the firewall is located between the plant network and the control network zones. A DMZ is created that contains the data collection and reporting servers. These servers will be accessible from the enterprise network. Only these servers will be allowed to communicate with the process control network.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> We also recommend creating an additional DMZ for controlling remote administration an service connections to the process control network.
+</div>
+<p class="p">
+The security level for the DMZ is higher than the enterprise zone but less than the Control zone, see the topic <a class="xref" href="ControlSystemArchitecture-12C06C6D.html">Control System Architecture</a>. The function of this zone is to eliminate or reduce all direct communication between the Control zone and the Enterprise zone. Devices should be located in the DMZ that function as a bridge or buffer between devices in the Enterprise zone and Control zone. The Networks are segmented through the use of a firewall that has the ability to control what passes through the device.
+</p>
+<p class="p">
+You can use these filtering strategies in the DMZ:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The base configuration of the barrier device should be set to deny all communication by default and only allow communication by exception to meet a critical business need. This applies to both intermittent and interactive user communication, and task-to-task communication between devices in these two zones.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Ports and servers frequently used as attack vectors should not be opened through the barrier device. If this service is required due to business justifications, additional countermeasures such as blocking inbound scripts and the use of an http proxy server might help reduce the risk of opening high risk ports and servers.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Minimize the number of ports and services open through the barrier device. Avoid communication technologies that require a large number of open ports.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="SecuringTheNetwork-3863CCA9__IntrusionDetectionSystemAndIntrusio-BBC3C17D">
+<a name="IntrusionDetectionSystemAndIntrusio-BBC3C17D" id="IntrusionDetectionSystemAndIntrusio-BBC3C17D">
+<!-- --></a><a name="SecuringTheNetwork_3863CCA9__IntrusionDetectionSystemAndIntrusio_BBC3C17D" id="SecuringTheNetwork_3863CCA9__IntrusionDetectionSystemAndIntrusio_BBC3C17D">
+<!-- --></a><a name="IntrusionDetectionSystemAndIntrusio_BBC3C17D" id="IntrusionDetectionSystemAndIntrusio_BBC3C17D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Intrusion Detection System and Intrusion Prevention System
+</h2>
+<p class="p">
+The IT and Process Control networks have a basic requirement that Intrusion Detection System (IDS) and Intrusion Prevention Systems (IPS) are implemented to help prevent unwanted or malicious traffic.
+</p>
+<p class="p">
+An IPS should be part of the overall enterprise and control network architectures to help protect critical networks against the complete spectrum of threats and vulnerabilities. Nozomi Guardian provided by CAP is recommended for this architecture.
+</p>
+<p class="p">
+IDS have been a critical piece of security infrastructure implemented whenever critical business processes such as Control Systems are connected to TCP/IP-based local and wide area networks. IDS are able to detect and block network activity such as hacking attempts, virus and worm attacks, and other potentially threatening traffic capable of wreaking havoc on the control system.
+</p>
+<p class="p">
+In the process control environment, preventing intrusion in real-time is just as important as detecting it. IPS incorporate all IDS functionality, and then take intrusion detection a step further with its ability to block an attack as it is happening, thereby helping to prevent harm to your network or control system. IPS are installed in-line on your network, thus all network traffic must traverse it.
+</p>
+<p class="p">
+We recommend Network-based IDS as part of CAP:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:25%" />
+<col style="width:75%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Network-based IPS
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+Intrusion prevention devices that monitor your network for attacks and are independent from the control system.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+Host-based IPS
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Intrusion prevention devices that are installed on each Computer System on the network. These devices make a baseline of the operating system and applications on your system and block any anomalous traffic coming from your network that could potentially interrupt the recorded baseline.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can also consider Host-based IPS.
+</div>
+<p class="p">
+Like firewalls, IPS are also chosen by their network bandwidth capability. These aspects should be taken into consideration when choosing an IPS:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Number of physical connections
+</p>
+</li>
+<li class="li">
+<p class="p">
+Speed of the physical connections (throughput)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Speed of the combined physical connections (aggregate throughput)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Special IP network constraints such as VLAN use
+</p>
+</li>
+</ul>
+<p class="p">
+CAP offers a network-based IDS called <span class="ph">Nozomi Guardian™</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about CAP, refer to the topic <a class="xref" href="CybersecurityApplicationPlatform-12C3460B.html">Cybersecurity Application Platform</a>.
+</div>
+<p class="p">
+<span class="ph">Nozomi Guardian™</span> is a platform that protects OT networks from cyber attacks and operational disruptions by providing visibility and rapid detection of threats, anomalies and process risks using a passive approach.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about <span class="ph">Nozomi Guardian™</span>, refer to its official website <a class="xref" href="https://www.nozominetworks.com/products/guardian" target="_blank">here</a>.
+</div>
+<img class="image" src="DD00955092.png" width="350" alt="" />
+<p class="p">
+<span class="ph">Nozomi Guardian™</span> is an instance of a sensor that can be deployed in strategic areas of the plant architecture.
+</p>
+<p class="p">
+Here is the most common way to set up a <span class="ph">Nozomi Guardian™</span>:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Choose where to deploy <span class="ph">Nozomi Guardian™</span>. The sensor must be deployed just after a firewall dividing two different subnets. For instance, between the Enterprise Zone (Level 4) and DMZ (Level 3.5).
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about the plant architecture, refer to the topic <a class="xref" href="ControlSystemArchitecture-12C06C6D.html">Control System Architecture</a>.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Configure the firewall in the chosen zone to mirror its outbound interface to <span class="ph">Nozomi Guardian™</span> so the firewall connect to <span class="ph">Nozomi Guardian™</span> and have access to all traffic.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The network interface used by <span class="ph">Nozomi Guardian™</span> must be configured in <span class="ph uicontrol">Promiscuous Mode</span>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="SecuringTheNetwork-3863CCA9__WirelessAccess-BBC3BEA1">
+<a name="WirelessAccess-BBC3BEA1" id="WirelessAccess-BBC3BEA1">
+<!-- --></a><a name="SecuringTheNetwork_3863CCA9__WirelessAccess_BBC3BEA1" id="SecuringTheNetwork_3863CCA9__WirelessAccess_BBC3BEA1">
+<!-- --></a><a name="WirelessAccess_BBC3BEA1" id="WirelessAccess_BBC3BEA1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Wireless Access
+</h2>
+<p class="p">
+Direct wireless access is not supported on <span class="ph">EcoStruxure Automation Expert</span>. Thus, you cannot deploy and control devices through wireless access.
+</p>
+<p class="p">
+The only exception is the remote access service using CAP, as detailed in the <a class="xref" href="RemoteDesktopService-5416D500.html">Remote Desktop Service topic</a>. This service is supported through internet connection using <span class="ph">Wi-Fi</span> or any other wireless communication.
+</p>
+<p class="p">
+In an IEC 62443-3-3 certified system Wi-Fi should not be used.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about CAP, refer to the topic <a class="xref" href="CybersecurityApplicationPlatform-12C3460B.html">Cybersecurity Application Platform</a>.
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005517.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

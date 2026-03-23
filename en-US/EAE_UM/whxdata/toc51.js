@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc50.js\"  name=\"Distributed PAC Project Node\" url=\"EAE_UM/DistributedPACProjectNode-9F7FE8A3.html#DistributedPACProjectNode-9F7FE8A3\"><item name=\"Multilanguage Dictionaries\" url=\"EAE_UM/MultilanguageDictionaries-2A80373F.html#MultilanguageDictionaries-2A80373F\" /></data>";

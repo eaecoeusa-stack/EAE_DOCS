@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="task" />
+<meta name="DC.title" content="Configuring the EtherNet/IP Fieldbus Scanner and Adapters" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfiguringTheEtherNetIPFieldbusSca-CBC1A736" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Configuring the EtherNet/IP Fieldbus Scanner and Adapters
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.2.1.0_4";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/IntroducingTheEtherNetIPConfigurato-EAAE65BF.html" />
+<meta name="brsnext" value="EAE_UM/ImportingTheEtherNetIPConfiguration-CBBCC0C3.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; EtherNet/IP Fieldbus Scanner &gt; Configuring the EIPSCANNER" />
+</head>
+<body id="ConfiguringTheEtherNetIPFieldbusSca-CBC1A736"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"EtherNetIPFieldbusScanner-A1D2F51C.html#EtherNetIPFieldbusScanner-A1D2F51C\">EtherNet/IP Fieldbus Scanner<\/a> > <a href=\"ProcessingTheEIPSCANNER-C8B10B8A.html\">Configuring the EIPSCANNER<\/a> > Configuring the EtherNet/IP Fieldbus Scanner and Adapters<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfiguringTheEtherNetIPFieldbusSca-CBC1A736" id="ConfiguringTheEtherNetIPFieldbusSca-CBC1A736_">
+<!-- --></a><a name="ConfiguringTheEtherNetIPFieldbusSca_CBC1A736" id="ConfiguringTheEtherNetIPFieldbusSca_CBC1A736">
+<!-- --></a><a name="ConfiguringTheEtherNetIPFieldbusSca_CBC1A736" id="ConfiguringTheEtherNetIPFieldbusSca_CBC1A736_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Configuring the EtherNet/IP Fieldbus Scanner and Adapters
+</h1>
+<div class="body taskbody">
+
+<div class="section context">
+<p class="p">
+When you select <span class="ph uicontrol">Configure EtherNet/IP scanner...</span> in the <span class="ph uicontrol">Hardware Configuration</span> editor, the <span class="ph uicontrol">EtherNet/IP Configurator</span> opens. Use the configurator to perform these tasks:
+</p>
+</div>
+<ol class="ol steps">
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the IP address settings of the EtherNet/IP scanner:</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">Network View</span> pane, double-click the scanner node to display its DTM in the DTM configuration area.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">In the DTM configuration area, under <span class="ph uicontrol">Channel Properties</span>, select <span class="ph uicontrol">TCP/IP</span>.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The IP address settings are displayed.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Edit the <span class="ph uicontrol">Module IP Address</span>, <span class="ph uicontrol">Sub-Network Mask</span>, and <span class="ph uicontrol">Gateway IP Address</span> settings to match the settings in your <span class="ph">EcoStruxure Automation Expert</span> solution.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Apply</span> to save your changes.</span>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Add EtherNet/IP device DTMs to the configuration:</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">Network View</span> pane, right-click the EtherNet/IP scanner node and select <span class="ph uicontrol">Add...</span>.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">DTM Selector</span> dialog opens.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">DTM Selector</span> dialog, select the corresponding device DTM, then click <span class="ph uicontrol">Ok</span>.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The selected device is added to both the <span class="ph uicontrol">Network View</span> pane beneath the EtherNet/IP scanner, and the DTM configuration area <span class="ph uicontrol">Device List</span>.
+</div>
+</li>
+</ol>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Repeat these steps for each device DTM that you want to add.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Edit the names of the added EtherNet/IP devices, removing the default name and using the names to be used in the <span class="ph">EcoStruxure Automation Expert</span> solution:</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">Network View</span> pane, double-click on a device name.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The name becomes editable.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Edit the highlighted text name to match the desired device name and hit <span class="ph uicontrol">Enter</span>.</span>
+</li>
+</ol>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Repeat these steps for each device DTM name that you need to edit.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the I/O connection settings for each EtherNet/IP device:</span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> An I/O connection consists of a block of input and output data to be exchanged between the scanner and each device. The scanner can scan up to 128 EtherNet/IP I/O connections.
+</div>
+</div>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">In the <span class="ph uicontrol">Network View</span> pane, double-click a device to display its DTM.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">In the DTM navigation tree, either select an existing connection, or create a new connection and select it.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">For each I/O device, configure <span class="ph uicontrol">RPI</span>, <span class="ph uicontrol">Input size</span>, and <span class="ph uicontrol">Output size</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">Apply</span> to save your edits.</span>
+</li>
+</ol>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Repeat these steps for each device I/O connection.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The specific DTM configuration screens can vary depending on the selected device. For information on how to create and configure connections for specific device types, click the <span class="ph uicontrol">Help</span> button.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure communication settings by adding IP address settings for each EtherNet/IP device:</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">Network View</span> pane, double-click the scanner node to display its DTM in the DTM configuration area, or select the scanner DTM configuration tab if it is open.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Under the <span class="ph uicontrol">Device List</span> node, select a device DTM, this is the top-most node for that device.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Properties</span> and <span class="ph uicontrol">Address Setting</span> tabs are displayed.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Select the <span class="ph uicontrol">Properties</span> tab, then set <span class="ph uicontrol">Import Mode</span> to <span class="ph uicontrol">Manual</span>.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Select the <span class="ph uicontrol">Address Setting</span> tab, then configure IP address settings for the selected device: <span class="ph uicontrol">IP Address</span>, <span class="ph uicontrol">Subnet Mask</span>, and <span class="ph uicontrol">Gateway</span>.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Apply</span>.</span>
+</li>
+</ol>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Repeat these steps for each EtherNet/IP I/O device.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure input and output items for each EtherNet/IP I/O device:</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">In the <span class="ph uicontrol">Network View</span> pane, double-click the scanner node to display its DTM in the DTM configuration area, or select the scanner DTM configuration tab if it is open.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Under the <span class="ph uicontrol">Device List</span> node, select the <span class="ph uicontrol">Items</span> node for the selected device DTM. Expanding the connection node might be required to see this node.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Use the <span class="ph uicontrol">Input</span>, <span class="ph uicontrol">Input (bit)</span>, <span class="ph uicontrol">Output</span>, and <span class="ph uicontrol">Output (bit)</span> tabs to create, position, and name I/O items.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">Apply</span>.</span>
+</li>
+</ol>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> Repeat these steps for the I/O items for each device.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span>  For information on how to create, position and name I/O items, click the <span class="ph uicontrol">Help</span> button.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">When all configuration edits are completed, close the <span class="ph uicontrol">EtherNet/IP Configurator</span>, while saving and exporting the configuration:</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Click the <span class="ph uicontrol">Close</span> toolbar command (<span class="imageinline"><img class="image" src="0000613592.png" alt="" /></span>).</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> A dialog is displayed, asking if you want to save your changes.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Yes</span>.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">Saving the Project</span> dialog is displayed, asking if you want to export the EtherNet/IP configuration.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">Saving the Project</span> dialog:</span>
+<div class="itemgroup info">
+<ul class="ul">
+<li class="li">
+<p class="p">
+Click<span class="ph uicontrol">Yes</span> if you are finished editing the configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">No</span> to close the <span class="ph uicontrol">EtherNet/IP Configurator</span>.
+</p>
+</li>
+</ul>
+</div>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> If you click <span class="ph uicontrol">Yes</span>, a <span class="ph uicontrol">Save As</span> dialog opens.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">In the <span class="ph uicontrol">Save As</span> dialog, enter a <span class="ph uicontrol">File name</span> for the configuration file, then <span class="ph uicontrol">Save</span> it to a zip file.</span>
+<div class="itemgroup stepresult">
+<strong class="ph b">Result:</strong> The <span class="ph uicontrol">EtherNet/IP Configurator</span> closes and you return to <span class="ph">EcoStruxure Automation Expert - Buildtime</span>.
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

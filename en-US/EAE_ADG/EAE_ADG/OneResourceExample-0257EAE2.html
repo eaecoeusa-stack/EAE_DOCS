@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Jitter Reduction Example-One Bus Master" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="OneResourceExample-0257EAE2" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Jitter Reduction Example-One Bus Master
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.1.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/UsingMultipleResourcesWithConfigura-024D38E5.html" />
+<meta name="brsnext" value="EAE_ADG/JitterReductionExample-TwoBusMaster-0262DF02.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Special Design Use Cases &gt; Reducing Jitter in an EcoStruxure Automation Expert Application &gt; Using Multiple Resources with Configurable Priorities" />
+</head>
+<body id="OneResourceExample-0257EAE2"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"SpecialDesignUseCases-4AA4F7F2.html#SpecialDesignUseCases-4AA4F7F2\">Special Design Use Cases<\/a> > <a href=\"ReducingJitterInAnEcoStruxureAutoma-02432EEE.html#ReducingJitterInAnEcoStruxureAutoma-02432EEE\">Reducing Jitter in an EcoStruxure Automation Expert Application<\/a> > <a href=\"UsingMultipleResourcesWithConfigura-024D38E5.html#UsingMultipleResourcesWithConfigura-024D38E5\">Using Multiple Resources with Configurable Priorities<\/a> > Jitter Reduction Example-One Bus Master<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="OneResourceExample-0257EAE2" id="OneResourceExample-0257EAE2_">
+<!-- --></a><a name="OneResourceExample_0257EAE2" id="OneResourceExample_0257EAE2">
+<!-- --></a><a name="OneResourceExample_0257EAE2" id="OneResourceExample_0257EAE2_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Jitter Reduction Example-One Bus Master
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+This example presents two use designs:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+a single resource design, that incorporates all tasks into a single resource
+</p>
+</li>
+<li class="li">
+<p class="p">
+a two resource design, that includes:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+a high priority resource for rapidly performed basic processing operations.
+</p>
+</li>
+<li class="li">
+<p class="p">
+a low priority resource that consumes a large amount of processing time.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="OneResourceExample-0257EAE2__OneResourceDesign-02626C1C">
+<a name="OneResourceDesign-02626C1C" id="OneResourceDesign-02626C1C">
+<!-- --></a><a name="OneResourceExample_0257EAE2__OneResourceDesign_02626C1C" id="OneResourceExample_0257EAE2__OneResourceDesign_02626C1C">
+<!-- --></a><a name="OneResourceDesign_02626C1C" id="OneResourceDesign_02626C1C">
+<!-- --></a>
+<h2 class="title sectiontitle">
+One Resource Design
+</h2>
+<ul class="ul">
+<li class="li">
+<p class="p">
+One Modbus TCP bus master, with bus cycle time = 10ms
+</p>
+</li>
+<li class="li">
+<p class="p">
+Basic I/O processing: read 1 input (through destination symlink), process the value (increment it using <strong class="ph b">ADD</strong> Function Block) and write 1 output (through source symlink).
+</p>
+</li>
+<li class="li">
+<p class="p">
+One controller-consuming task (generating a loop of internal events at 780ms to simulate an event storm), which could be image processing or statistics / mathematical computations for real customer application.
+</p>
+</li>
+</ul>
+<img class="image" src="DD00794456.png" alt="" style="max-height:2.75in;" />
+</div>
+<div class="section" id="OneResourceExample-0257EAE2__OneResourceObservations-02626EE3">
+<a name="OneResourceObservations-02626EE3" id="OneResourceObservations-02626EE3">
+<!-- --></a><a name="OneResourceExample_0257EAE2__OneResourceObservations_02626EE3" id="OneResourceExample_0257EAE2__OneResourceObservations_02626EE3">
+<!-- --></a><a name="OneResourceObservations_02626EE3" id="OneResourceObservations_02626EE3">
+<!-- --></a>
+<h2 class="title sectiontitle">
+One Resource Observations
+</h2>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--notice">
+NOTICE
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+Unreliable test results
+</div>
+<div class="howtoavoid">
+Do not consider the following figures as a reliable reference! They were observed on specific hardware, in combination with a specific application, over a limited time period. Using these numbers outside the original testing context is irrelevant, and higher jitter spikes may occur in a different configuration.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p class="p">
+Interval between sent Modbus TCP packets:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Massive jitter observed (line at 780ms, whereas target is 10ms).
+</p>
+</li>
+<li class="li">
+<p class="p">
+The Bus Master (HW CATs) and Basic processing part are impacted by the Time consuming CAT.
+</p>
+</li>
+</ul>
+<img class="image" src="DD00794455.png" alt="" style="max-height:3in;" />
+</div>
+<div class="section" id="OneResourceExample-0257EAE2__TwoResourceSettings-02627114">
+<a name="TwoResourceSettings-02627114" id="TwoResourceSettings-02627114">
+<!-- --></a><a name="OneResourceExample_0257EAE2__TwoResourceSettings_02627114" id="OneResourceExample_0257EAE2__TwoResourceSettings_02627114">
+<!-- --></a><a name="TwoResourceSettings_02627114" id="TwoResourceSettings_02627114">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Two Resource Settings
+</h2>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The original one resource design are the same, except that:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The Modbus bus master <strong class="ph b">alignWithResPriority</strong> setting is set to <strong class="ph b">TRUE</strong>: <img class="image" src="DD00794454.png" alt="" />
+</p>
+</li>
+<li class="li">
+<p class="p">
+The Time consuming CAT has been moved to a separate resource.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The resource performing basic processing (RES0) is assigned the highest execution priority.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The resource containing the time consuming CAT is assigned a normal execution priority
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<img class="image" src="DD00794453.png" alt="" style="max-height:2.75in;" />
+</div>
+<div class="section" id="OneResourceExample-0257EAE2__TwoPrioritizedResourcesObservations-026273F1">
+<a name="TwoPrioritizedResourcesObservations-026273F1" id="TwoPrioritizedResourcesObservations-026273F1">
+<!-- --></a><a name="OneResourceExample_0257EAE2__TwoPrioritizedResourcesObservations_026273F1" id="OneResourceExample_0257EAE2__TwoPrioritizedResourcesObservations_026273F1">
+<!-- --></a><a name="TwoPrioritizedResourcesObservations_026273F1" id="TwoPrioritizedResourcesObservations_026273F1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Two Prioritized Resources Observations
+</h2>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Interval between sent Modbus TCP packets:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+minimum = 7ms
+</p>
+</li>
+<li class="li">
+<p class="p">
+maximum = 13ms (target = bus cycle = 10ms)
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Jitter limited to 3ms, but &lt;= 1ms 99.99% of the time
+</p>
+</li>
+<li class="li">
+<p class="p">
+The Bus Master (HW CATs) and basic processing part are almost not impacted by the time consuming CAT.
+</p>
+</li>
+</ul>
+<img class="image" src="DD00795606.png" alt="" style="max-height:2in;" />
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="EAE_CMPT" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="1" page="EAE_CMPT\AboutTheBook-3D7E7E27.html">
+  </contextentry>
+  <contextentry id="2" page="EAE_CMPT\D-NA-0003897.1.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="EAE_CMPT\EAE_CMPT_CompatibilityGuideReferenceNumberOp-3D7DC3B5.html">
+  <topic>EAE_CMPT\AboutTheBook-3D7E7E27.html
+  </topic>
+  <topic>EAE_CMPT\ControllerCompatibilities-3D9124C8.html
+  </topic>
+  <topic>EAE_CMPT\D-NA-0003897.1.html
+  </topic>
+  <topic>EAE_CMPT\DependenciesAndCompatibilities-3D8CD752.html
+  </topic>
+  <topic>EAE_CMPT\DeviceCompatibilities-3D947A71.html
+  </topic>
+  <topic>EAE_CMPT\EAE_CMPT_CompatibilityGuideReferenceNumberOp-3D7DC3B5.html
+  </topic>
+  <topic>EAE_CMPT\EAE_CMPT_id_address_tpc.html
+  </topic>
+  <topic>EAE_CMPT\EAE_CMPT_id_disclaimer_tpc.html
+  </topic>
+  <topic>EAE_CMPT\EcoStruxureAutomationExpertCompatib-3D8DE7DD.html
+  </topic>
+  <topic>EAE_CMPT\LibraryDependencies-3D92944F.html
+  </topic>
+  <topic>EAE_CMPT\SoftwareCompatibilities-EEADFA96.html
+  </topic>
+  <topic>EAE_CMPT\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

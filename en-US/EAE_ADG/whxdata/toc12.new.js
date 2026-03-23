@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Event Storm Description and Causation","type":"item","url":"EAE_ADG/EventStormDescriptionAndCausation-49B2FA85.html#EventStormDescriptionAndCausation-49B2FA85"},{"name":"Events Management in a Resource","type":"item","url":"EAE_ADG/EventsManagementInAResource-48F18CBF.html#EventsManagementInAResource-48F18CBF"},{"key":"toc13","name":"Observing Event Flows and Event Counts","type":"book","url":"EAE_ADG/ObservingEventFlowsAndEventCounts-4A7F9F81.html#ObservingEventFlowsAndEventCounts-4A7F9F81"},{"key":"toc14","name":"Optimizations to Reduce Event Generation","type":"book","url":"EAE_ADG/OptimizationsToReduceEventGeneratio-4A93E33B.html#OptimizationsToReduceEventGeneratio-4A93E33B"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

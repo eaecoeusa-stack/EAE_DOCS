@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="9. Syncing the Instances to the AVEVA System Platform" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SyncingTheInstancesToTheAVEVASystem-EB9CF850" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+9. Syncing the Instances to the AVEVA System Platform
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.6.1.1_10";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/CompilingTheDeviceAndConfiguringThe-EB9CCC20.html" />
+<meta name="brsnext" value="EAE_UM/ConnectingToAGalaxyAndLaunchingTheA-EB9D1965.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; EcoStruxure Automation Expert – Data Exchange &gt; Asset Link for AVEVA OMI" />
+</head>
+<body id="SyncingTheInstancesToTheAVEVASystem-EB9CF850"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"EcoStruxureAutomationExpertDataAndS-961C60B5.html#EcoStruxureAutomationExpertDataAndS-961C60B5\">EcoStruxure Automation Expert – Data Exchange<\/a> > <a href=\"AutobuildAvevaInTouchOMI-96443BE6.html#AutobuildAvevaInTouchOMI-96443BE6\">Asset Link for AVEVA OMI<\/a> > 9. Syncing the Instances to the AVEVA System Platform<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SyncingTheInstancesToTheAVEVASystem-EB9CF850" id="SyncingTheInstancesToTheAVEVASystem-EB9CF850_">
+<!-- --></a><a name="SyncingTheInstancesToTheAVEVASystem_EB9CF850" id="SyncingTheInstancesToTheAVEVASystem_EB9CF850">
+<!-- --></a><a name="SyncingTheInstancesToTheAVEVASystem_EB9CF850" id="SyncingTheInstancesToTheAVEVASystem_EB9CF850_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+9. Syncing the Instances to the <span class="ph">AVEVA</span> System Platform
+</h1>
+<div class="body conbody">
+<div class="section" id="SyncingTheInstancesToTheAVEVASystem-EB9CF850__SyncingTheInstancesToTheAVEVASystem-A2B87FBF">
+<a name="SyncingTheInstancesToTheAVEVASystem-A2B87FBF" id="SyncingTheInstancesToTheAVEVASystem-A2B87FBF">
+<!-- --></a><a name="SyncingTheInstancesToTheAVEVASystem_EB9CF850__SyncingTheInstancesToTheAVEVASystem_A2B87FBF" id="SyncingTheInstancesToTheAVEVASystem_EB9CF850__SyncingTheInstancesToTheAVEVASystem_A2B87FBF">
+<!-- --></a><a name="SyncingTheInstancesToTheAVEVASystem_A2B87FBF" id="SyncingTheInstancesToTheAVEVASystem_A2B87FBF">
+<!-- --></a>
+<div class="div">
+<p class="p">
+The sync process reads information compiled by the <span class="ph">AVEVA</span> server device for <span class="ph">CAT</span> instances and then creates, updates, renames or deletes application objects in the <span class="ph">AVEVA System Platform</span> (<span class="ph">ASP</span>). The graphics in the <span class="ph uicontrol">OMI</span> folder will also be created in <span class="ph">ASP</span>. For <span class="ph">CAT</span> instances and SubApp instances the application objects will be created with the hierarchy following the view created in the <a class="xref" href="ProcessViewPadCPT-F059026A.html"><span class="ph uicontrol">Hierarchy View</span> pad</a>.
+</p>
+<div class="div">
+<p class="p">
+To sync the <span class="ph">AVEVA</span> server device:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:11%" />
+<col style="width:89%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d665623e108">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d665623e113">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d665623e108 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d665623e113 ">
+<p class="p">
+Confirm the following tasks have been completed:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph">ASP</span> mapping is completed for the <span class="ph">CATs</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph">AVEVA</span> server device has completed compilation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Assigning the <span class="ph">CAT</span> instances into the <span class="ph">AVEVA</span> Plant Model view of the Galaxy.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d665623e108 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d665623e113 ">
+<p class="p">
+In the <span class="ph uicontrol">Deploy &amp; Diagnostic</span> editor, select the <span class="ph">AVEVA</span> server device, and select <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Sync to AVEVA System Platform</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Sync ...</span></span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d665623e108 ">
+<p class="p">
+3a
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d665623e113 ">
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--note">
+NOTE
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+In large Solutions the syncing MAY take a lot of time
+</div>
+<div class="howtoavoid">
+If you have only done changes on <span class="ph">CAT</span>s, to reduce the scope of syncing, refer to the row below.
+</div>
+<div class="consequence">
+default.consequence.Note
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p class="p">
+If you select <span class="ph uicontrol">Sync Selection</span>, a preview mimics the hierarchy view of the Plant Model. Drill down and tick the <span class="ph">CAT</span>s instances of interest and click <span class="ph uicontrol">Sync</span>. This creates the selected AppObjects.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you tick a parent, all the underlying instances get selected. On the contrary, a green <strong class="ph b">—</strong> denotes an area whose only some items are ticked.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d665623e108 ">
+<p class="p">
+3b
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d665623e113 ">
+<p class="p">
+If you select <span class="ph uicontrol">Sync Changes</span>, the first time all the objects are loaded to the <span class="ph">AVEVA System Platform</span>, but the other times ONLY the changes (<span class="ph">CAT</span> name and position in the hierarchy, graphics, ...) in the AppObjects are loaded. The process is indicated in the <span class="ph uicontrol">Action Progress</span> column by the <span class="ph uicontrol">Sync in progress with AVEVA System Platform</span> statement.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d665623e108 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d665623e113 ">
+On successful sync operation, the <span class="ph uicontrol">Action Progress</span> cell reads:<span class="ph uicontrol">Sync Successful</span>; read the details in the <a class="xref" href="OutputPad-9A13B54F.html">Output</a> pad.
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d665623e108 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d665623e113 ">
+To check the results, open the IDE as described <a class="xref" href="ConnectingToAGalaxyAndLaunchingTheA-EB9D1965.html#ConnectingToAGalaxyAndLaunchingTheA-EB9D1965__ConnectingToAGalaxyAndLaunchingTheA-A2B2B523">here</a>. Open the <span class="ph uicontrol">Deployment</span> tab: only the ticked instances show in the hierarchy.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p class="p">
+All these steps are similar for <span class="ph">CAT</span> Composite instances and SubApp instances.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Here ‘SubApp instances’ is referring to top instances. Sub instances as SubApp are not supported.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> AppObjects created in <span class="ph">AVEVA System Platform</span> for <span class="ph">CAT</span> instances or for SubApp instances align with <span class="ph">AVEVA</span> Plant Model view. System Objects - for example, Platform, AppEngine, ViewEngine, <span class="ph uicontrol">OPC Client</span> and ViewApp - are also created as part of the Sync operation. For each EcoRT device with <span class="ph">CAT</span> instances mapped to it, an OPC client instance is created. The <span class="ph">OPC UA</span> references of the <span class="ph">CAT</span> and Sub<span class="ph">CAT</span> instances are added to the scan group as Item References to the corresponding OPC client instance.
+</div>
+<p class="p">
+Scan groups are created in the OPC client based on the scan group selection in ASP Attribute Mapping editor and the corresponding attributes are assigned to scan group as per this assignment. Each scan group has a specific naming convention.
+</p>
+<p class="p">
+Additional scan groups are created when attribute limits are exceeded. This allows that instances are correctly distributed based on their required scan rates.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

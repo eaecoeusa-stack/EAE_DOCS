@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="PROFINET Limitations" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="PROFINETLimitations-D91CB4EC" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+PROFINET Limitations
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.5.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/PROFINET-D50A0A36.html" />
+<meta name="brsnext" value="EAE_UM/PROFINETIOConfigurator-D580871C.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; PROFINET" />
+</head>
+<body id="PROFINETLimitations-D91CB4EC"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"PROFINET-D50A0A36.html#PROFINET-D50A0A36\">PROFINET<\/a> > PROFINET Limitations<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="PROFINETLimitations-D91CB4EC" id="PROFINETLimitations-D91CB4EC_">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC" id="PROFINETLimitations_D91CB4EC">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC" id="PROFINETLimitations_D91CB4EC_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+PROFINET Limitations
+</h1>
+<div class="body conbody">
+
+<div class="section" id="PROFINETLimitations-D91CB4EC__SupportedNumbersOfPROFINETNetworkDe-D920ACB0">
+<a name="SupportedNumbersOfPROFINETNetworkDe-D920ACB0" id="SupportedNumbersOfPROFINETNetworkDe-D920ACB0">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__SupportedNumbersOfPROFINETNetworkDe_D920ACB0" id="PROFINETLimitations_D91CB4EC__SupportedNumbersOfPROFINETNetworkDe_D920ACB0">
+<!-- --></a><a name="SupportedNumbersOfPROFINETNetworkDe_D920ACB0" id="SupportedNumbersOfPROFINETNetworkDe_D920ACB0">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Supported Numbers of PROFINET Network Devices
+</h2>
+<p class="p">
+As implemented in <span class="ph">EcoStruxure Automation Expert</span>, PROFINET supports real-time unsynchronized communication over networks that include up to the following maximum number of devices:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+1 PROFINET IO-Controller and IO-Device instance per Soft dPAC.
+</p>
+</li>
+<li class="li">
+<p class="p">
+1 port per PROFINET IO-Controller instance.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Up to 128 connected IO-Devices operating in real-time.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__SupportedUpdateTimes-D920B35A">
+<a name="SupportedUpdateTimes-D920B35A" id="SupportedUpdateTimes-D920B35A">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__SupportedUpdateTimes_D920B35A" id="PROFINETLimitations_D91CB4EC__SupportedUpdateTimes_D920B35A">
+<!-- --></a><a name="SupportedUpdateTimes_D920B35A" id="SupportedUpdateTimes_D920B35A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Supported Update Times
+</h2>
+<p class="p">
+The minimum IO-Device <span class="ph uicontrol">Update Time</span> depends on several factors, including:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+the communication share set for PROFINET IO.
+</p>
+</li>
+<li class="li">
+<p class="p">
+the number of IO-Devices.
+</p>
+</li>
+<li class="li">
+<p class="p">
+the quantity of configured user data.
+</p>
+</li>
+</ul>
+<p class="p">
+Each of the following <span class="ph uicontrol">Send Clock</span> settings support IO-Device minimum <span class="ph uicontrol">Update Time</span> settings equal to or greater than the settings indicated below, up to the maximum supported by the IO-Device:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:44%" />
+<col style="width:56.00000000000001%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b"><span class="ph uicontrol">Send Clock</span> setting</strong>
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Minimum <span class="ph uicontrol">Update Time</span></strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+1 ms
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+2 ms
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+2 ms
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+4 ms
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+4 ms
+</p>
+</td>
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+8 ms
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__ConformanceClassASubsetSupportedFea-D920B6B7">
+<a name="ConformanceClassASubsetSupportedFea-D920B6B7" id="ConformanceClassASubsetSupportedFea-D920B6B7">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__ConformanceClassASubsetSupportedFea_D920B6B7" id="PROFINETLimitations_D91CB4EC__ConformanceClassASubsetSupportedFea_D920B6B7">
+<!-- --></a><a name="ConformanceClassASubsetSupportedFea_D920B6B7" id="ConformanceClassASubsetSupportedFea_D920B6B7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Conformance Class A Subset Supported Features
+</h2>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> supports all mandatory CC-A features including the following:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Cyclic I/O
+</p>
+</li>
+<li class="li">
+<p class="p">
+Acyclic communication
+</p>
+</li>
+<li class="li">
+<p class="p">
+Standard Parameters (F-Parameters and Dynamic Parameters are not supported.)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Diagnostic Alarms
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__SupportedGSDMLVersions-D920BD82">
+<a name="SupportedGSDMLVersions-D920BD82" id="SupportedGSDMLVersions-D920BD82">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__SupportedGSDMLVersions_D920BD82" id="PROFINETLimitations_D91CB4EC__SupportedGSDMLVersions_D920BD82">
+<!-- --></a><a name="SupportedGSDMLVersions_D920BD82" id="SupportedGSDMLVersions_D920BD82">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Supported GSDML Versions
+</h2>
+<p class="p">
+GSDML versions 2.45 and earlier are supported. Versions later than version 2.45 are not supported.
+</p>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__SupportedDataTypes-D920BF73">
+<a name="SupportedDataTypes-D920BF73" id="SupportedDataTypes-D920BF73">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__SupportedDataTypes_D920BF73" id="PROFINETLimitations_D91CB4EC__SupportedDataTypes_D920BF73">
+<!-- --></a><a name="SupportedDataTypes_D920BF73" id="SupportedDataTypes_D920BF73">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Supported Data Types
+</h2>
+<p class="p">
+PROFINET supports all data types.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+E2, C4, Unipolar2.16, V2, L2 data types are represented as Octet string.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+UnicodeString8, 61131_STRING, 61131_WSTRING data types are represented as VisibleString.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__HardwareConfigurationImportLimitati-E4E55F22">
+<a name="HardwareConfigurationImportLimitati-E4E55F22" id="HardwareConfigurationImportLimitati-E4E55F22">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__HardwareConfigurationImportLimitati_E4E55F22" id="PROFINETLimitations_D91CB4EC__HardwareConfigurationImportLimitati_E4E55F22">
+<!-- --></a><a name="HardwareConfigurationImportLimitati_E4E55F22" id="HardwareConfigurationImportLimitati_E4E55F22">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Hardware Configuration Import Limitations
+</h2>
+<p class="p">
+Not all elements of a hardware configuration are included when importing a solution. The following elements need to be imported separately:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+GSDML files
+</p>
+</li>
+<li class="li">
+<p class="p">
+Hardware CATs
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__DataSizeLimitations-D920BADE">
+<a name="DataSizeLimitations-D920BADE" id="DataSizeLimitations-D920BADE">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__DataSizeLimitations_D920BADE" id="PROFINETLimitations_D91CB4EC__DataSizeLimitations_D920BADE">
+<!-- --></a><a name="DataSizeLimitations_D920BADE" id="DataSizeLimitations_D920BADE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Data Size Limitations
+</h2>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Maximum I/O Data Item length: 1024 bytes.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If the <span class="ph uicontrol">DataItem</span> Boolean attribute <span class="ph uicontrol">UseAsBits</span> in the GSDML is set to <span class="ph uicontrol">True</span>, the <span class="ph uicontrol">Maximum I/O Data Item length</span>is limited to 8 bytes by default. The <span class="ph uicontrol">Maximum I/O Data Item length</span> value can be configured using the <span class="ph uicontrol">MaxLengthForBitAccess</span> property in the <em class="ph i">app.config</em> file (located at: C:\Program Files\Schneider Electric\EcoStruxure Automation Expert - Buildtime 25.0\Studio\bin\Plugins\ProfinetConfiguration\ProfinetConfiguration.dll.config).
+</div>
+</li>
+<li class="li">
+<p class="p">
+There is no limit to the maximum number of Symbolic links per IO-Device.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can use the <span class="ph menucascade"><span class="ph uicontrol">Network Configuration </span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Device</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Cyclic Data</span></span> settings in the <span class="ph uicontrol">PROFINET IO Configurator</span> to select only the data items for which symbolic links need to be created.
+</div>
+</li>
+<li class="li">
+<p class="p">
+I/O communication over a fieldbus supports devices based on hardware size. <span class="ph">EcoStruxure Automation Expert - Buildtime</span> displays a message when a busmaster is configured with a greater number of devices and registers than it can support.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="PROFINETLimitations-D91CB4EC__UnsupportedFeatures-D920B91A">
+<a name="UnsupportedFeatures-D920B91A" id="UnsupportedFeatures-D920B91A">
+<!-- --></a><a name="PROFINETLimitations_D91CB4EC__UnsupportedFeatures_D920B91A" id="PROFINETLimitations_D91CB4EC__UnsupportedFeatures_D920B91A">
+<!-- --></a><a name="UnsupportedFeatures_D920B91A" id="UnsupportedFeatures_D920B91A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Unsupported Features
+</h2>
+<p class="p">
+PROFINET supports CC-A features, except for the following:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Topology Information (CC-A LLDP)
+</p>
+</li>
+</ul>
+<p class="p">
+Other PROFINET features also are not supported, including System redundancy, Fast start-up, MRP, iPAR server, and so forth.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

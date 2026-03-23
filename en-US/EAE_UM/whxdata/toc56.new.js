@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Discovering the Devices","type":"item","url":"EAE_UM/DiscoveringTheRealDevices-CC48876B.html"},{"name":"Secure the Devices","type":"item","url":"EAE_UM/SecureTheDevices-CC4AA5CF.html"},{"name":"Setting the Configured Devices Accordingly to the Discovered Devices","type":"item","url":"EAE_UM/SettingTheDefinedDevicesAccordingly-CC496F64.html"},{"name":"Adding Discovered Devices to the Physical Architecture","type":"item","url":"EAE_UM/AddingRealDevicesToThePhysicalArchi-CC49F800.html"},{"name":"Manually Set the Date and Time in a Device","type":"item","url":"EAE_UM/TimeManagementSetInitialTimeInTheDe-6E679F15.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"Altivar Distributed PAC Module VW3A3530D - User Guide\" url=\"ATVd_UG/ATVd_UG_D-SE-0105440.html\" src=\"toc1.js\" /></data>";

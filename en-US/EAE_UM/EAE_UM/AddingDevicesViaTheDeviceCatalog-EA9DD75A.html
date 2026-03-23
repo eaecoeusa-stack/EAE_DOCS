@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Using the Device Catalog" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="AddingDevicesViaTheDeviceCatalog-EA9DD75A" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Using the Device Catalog
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.1.1.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/DeviceCatalog-D8A6B4FB.html" />
+<meta name="brsnext" value="EAE_UM/ConnectingDevicesInTheTopology-EA9E0350.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor &gt; Physical Devices Editor &gt; Designing the Physical Architecture" />
+</head>
+<body id="AddingDevicesViaTheDeviceCatalog-EA9DD75A"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > <a href=\"PhysicalTopologyEditor-A00503A9.html#PhysicalTopologyEditor-A00503A9\">Physical Devices Editor<\/a> > <a href=\"PhysicalTopologyEditor-Designing-A0062A4C.html#PhysicalTopologyEditor-Designing-A0062A4C\">Designing the Physical Architecture<\/a> > Using the Device Catalog<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="AddingDevicesViaTheDeviceCatalog-EA9DD75A" id="AddingDevicesViaTheDeviceCatalog-EA9DD75A_">
+<!-- --></a><a name="AddingDevicesViaTheDeviceCatalog_EA9DD75A" id="AddingDevicesViaTheDeviceCatalog_EA9DD75A">
+<!-- --></a><a name="AddingDevicesViaTheDeviceCatalog_EA9DD75A" id="AddingDevicesViaTheDeviceCatalog_EA9DD75A_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Using the Device Catalog
+</h1>
+<div class="body conbody">
+<div class="section" id="AddingDevicesViaTheDeviceCatalog-EA9DD75A__AddingDevicesViaTheDeviceCatalog-A65CE797">
+<a name="AddingDevicesViaTheDeviceCatalog-A65CE797" id="AddingDevicesViaTheDeviceCatalog-A65CE797">
+<!-- --></a><a name="AddingDevicesViaTheDeviceCatalog_EA9DD75A__AddingDevicesViaTheDeviceCatalog_A65CE797" id="AddingDevicesViaTheDeviceCatalog_EA9DD75A__AddingDevicesViaTheDeviceCatalog_A65CE797">
+<!-- --></a><a name="AddingDevicesViaTheDeviceCatalog_A65CE797" id="AddingDevicesViaTheDeviceCatalog_A65CE797">
+<!-- --></a>
+<p class="p">
+To design your physical network, the <span class="ph uicontrol">Physical devices</span> editor gives access to the device catalog, containing a list of supported products.
+</p>
+<p class="p">
+The device catalog is organizing the production, depending on their type and their range. All the devices with the same purpose are then gathered at the same place — in the same <span class="ph uicontrol">Product Type</span> and then in the same <span class="ph uicontrol">Product Range</span>. For example, all the EcoRT devices are located together, inside the group type <span class="ph uicontrol">Distributed Automation Controllers</span> and inside the group range <span class="ph uicontrol">Modicon</span>.
+</p>
+<img class="image" src="0000611765.png" alt="" />
+<ol class="ol">
+<li class="li">
+<p class="p">
+Expands the device catalog to display all product types and product ranges.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Collapses the device catalog. Only the product types are displayed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Type in a value to display only devices with that value in the identifier, version, or description field.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Toggles on and off the advanced sorting and filtering tools, described as items 5, 6, and 7.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Toggles the device catalog display by product type:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Arrow pointing up sorts in ascending alphanumeric order.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Arrow pointing down sorts in descending alphanumeric order.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Toggles the device catalog display by product range
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Arrow pointing up sorts in ascending alphanumeric order
+</p>
+</li>
+<li class="li">
+<p class="p">
+Arrow pointing down sorts in descending alphanumeric order
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Type in values used to filter the display on the combined bases of identifier, version and description.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Opens a list of value delimiters for filtering the list of devices, including:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Is equal to
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is not equal to
+</p>
+</li>
+<li class="li">
+<p class="p">
+Contains (default)
+</p>
+</li>
+<li class="li">
+<p class="p">
+Does not contain
+</p>
+</li>
+<li class="li">
+<p class="p">
+Starts with
+</p>
+</li>
+<li class="li">
+<p class="p">
+Ends with
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is null
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is not null
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is empty
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is not empty
+</p>
+</li>
+</ul>
+<p class="p">
+Select a delimiter to apply the filter. 
+</p>
+</li>
+<li class="li">
+<p class="p">
+Clears the filter.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Product type level group.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Product range level group
+</p>
+</li>
+</ol>
+<p class="p">
+The catalog presents the following information for each device:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Identifier
+</p>
+</li>
+<li class="li">
+<p class="p">
+Version
+</p>
+</li>
+<li class="li">
+<p class="p">
+Description
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="AddingDevicesViaTheDeviceCatalog-EA9DD75A__AddingADevice-DFD59776">
+<a name="AddingADevice-DFD59776" id="AddingADevice-DFD59776">
+<!-- --></a><a name="AddingDevicesViaTheDeviceCatalog_EA9DD75A__AddingADevice_DFD59776" id="AddingDevicesViaTheDeviceCatalog_EA9DD75A__AddingADevice_DFD59776">
+<!-- --></a><a name="AddingADevice_DFD59776" id="AddingADevice_DFD59776">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Adding a Device
+</h2>
+<div class="div">
+<p class="p">
+To add a device:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select the device in the <span class="ph uicontrol">Device Catalog</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Drag it to and drop it into the workspace area.
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="AddingDevicesViaTheDeviceCatalog-EA9DD75A__CopyingAnExistingDevice-DFD59A85">
+<a name="CopyingAnExistingDevice-DFD59A85" id="CopyingAnExistingDevice-DFD59A85">
+<!-- --></a><a name="AddingDevicesViaTheDeviceCatalog_EA9DD75A__CopyingAnExistingDevice_DFD59A85" id="AddingDevicesViaTheDeviceCatalog_EA9DD75A__CopyingAnExistingDevice_DFD59A85">
+<!-- --></a><a name="CopyingAnExistingDevice_DFD59A85" id="CopyingAnExistingDevice_DFD59A85">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Copying an Existing Device
+</h2>
+<p class="p">
+To copy a device in the workspace area:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select a device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click and select <span class="ph uicontrol">Copy</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click anywhere in the workspace area and select <span class="ph uicontrol">Paste</span>.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When you copy and paste a device, you also copy all the device properties, including the <span class="ph uicontrol">IP address</span>. Only the device <span class="ph uicontrol">Name</span>, which is generated automatically, is changed.
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

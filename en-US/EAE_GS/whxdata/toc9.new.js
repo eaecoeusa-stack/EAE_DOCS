@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Creating the Main Canvas","type":"item","url":"EAE_GS/CreatingMainCanvasCPT-5BF3872F.html#CreatingMainCanvasCPT-5BF3872F"},{"name":"Adding Instruments Instances","type":"item","url":"EAE_GS/AddingInstrumentsInstancesCPT-5BF395A6.html#AddingInstrumentsInstancesCPT-5BF395A6"},{"name":"Creating the Alarm Canvas","type":"item","url":"EAE_GS/CreatingAlarmCanvasCPT-5BF39C87.html#CreatingAlarmCanvasCPT-5BF39C87"},{"name":"Setting Up the Start Canvas","type":"item","url":"EAE_GS/Setting-UpStartCanvasCPT-5BF3A821.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

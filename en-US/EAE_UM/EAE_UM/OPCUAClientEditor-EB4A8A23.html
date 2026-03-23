@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="OPC UA Client Editor" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="OPCUAClientEditor-EB4A8A23" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+OPC UA Client Editor
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.3_4";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/OPCUAEditor-A1508266.html" />
+<meta name="brsnext" value="EAE_UM/Comm-Network-A151D525.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor" />
+</head>
+<body id="OPCUAClientEditor-EB4A8A23"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > OPC UA Client Editor<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="OPCUAClientEditor-EB4A8A23" id="OPCUAClientEditor-EB4A8A23_">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23" id="OPCUAClientEditor_EB4A8A23">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23" id="OPCUAClientEditor_EB4A8A23_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+OPC UA Client Editor
+</h1>
+<div class="body conbody">
+
+<div class="section" id="OPCUAClientEditor-EB4A8A23__UseTheOPCUAClientEditorToConfigureA-EB597477">
+<a name="UseTheOPCUAClientEditorToConfigureA-EB597477" id="UseTheOPCUAClientEditorToConfigureA-EB597477">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__UseTheOPCUAClientEditorToConfigureA_EB597477" id="OPCUAClientEditor_EB4A8A23__UseTheOPCUAClientEditorToConfigureA_EB597477">
+<!-- --></a><a name="UseTheOPCUAClientEditorToConfigureA_EB597477" id="UseTheOPCUAClientEditorToConfigureA_EB597477">
+<!-- --></a>
+<p class="p">
+Use the OPC UA Client Editor to view and configure attribute and parameter values for OPC UA Client function blocks. To use the editor, you first need to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Ensure the <a class="xref" href="#OPCUAClientEditor-EB4A8A23__AddingTheStandard.OPCUAClientLibrar-EB59773F">Standard.OPCUAClient library is referenced</a> in your solution.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OPCUAClientEditor-EB4A8A23__EnablingTheOPCUAClientEditor-EB597917">Enable the OPC UA Client Editor</a>.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, the OPC UA Client function is enabled in the <span class="ph uicontrol">Properties</span> pad of the <span class="ph uicontrol">Logical Devices</span> editor, via the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Communication</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">OPCUA</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Enable Client</span></span> setting.
+</div>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__AddingTheStandard.OPCUAClientLibrar-EB59773F">
+<a name="AddingTheStandard.OPCUAClientLibrar-EB59773F" id="AddingTheStandard.OPCUAClientLibrar-EB59773F">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__AddingTheStandard_OPCUAClientLibrar_EB59773F" id="OPCUAClientEditor_EB4A8A23__AddingTheStandard_OPCUAClientLibrar_EB59773F">
+<!-- --></a><a name="AddingTheStandard_OPCUAClientLibrar_EB59773F" id="AddingTheStandard_OPCUAClientLibrar_EB59773F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Referencing the Standard.OPCUAClient Library
+</h2>
+<p class="p">
+To use OPC UA Client function blocks, the Standard.OPCUAClient library must be referenced by your solution. To reference the Standard.OPCUAClient library:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <a class="xref" href="SolutionExplorerPad-99502686.html"><span class="ph uicontrol">Solution Explorer</span></a>, right click on the solution.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">References</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <a class="xref" href="ProjectReferences-9B7D0575.html"><span class="ph uicontrol">Project Library References</span></a> dialog, open the <span class="ph uicontrol">Installed Libraries</span> tab.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">Standard.OPCUAClient</span> then click <span class="ph uicontrol">Add</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">OK</span> to save your edits and close the dialog.
+</p>
+</li>
+</ol>
+<p class="p">
+The Standard.OPCUAClient library appears under the <span class="ph uicontrol">Libraries</span> node of the <span class="ph uicontrol">Solution Explorer</span>.
+</p>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__EnablingTheOPCUAClientEditor-EB597917">
+<a name="EnablingTheOPCUAClientEditor-EB597917" id="EnablingTheOPCUAClientEditor-EB597917">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__EnablingTheOPCUAClientEditor_EB597917" id="OPCUAClientEditor_EB4A8A23__EnablingTheOPCUAClientEditor_EB597917">
+<!-- --></a><a name="EnablingTheOPCUAClientEditor_EB597917" id="EnablingTheOPCUAClientEditor_EB597917">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Enabling the OPC UA Client Editor
+</h2>
+<p class="p">
+By default, the OPC UA Client editor is not displayed. To enable it:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span>, right click on the project node.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Options</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">IEC61499</span></span> to open that tab.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Settings</span> sub-tab, select <span class="ph uicontrol">Enable OPCUA Client configuration</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Save</span> <img class="image" src="0000906993.png" alt="" style="max-height:16px;" /> on the quick access toolbar.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__OPCUAClientEditor-EB597BCE">
+<a name="OPCUAClientEditor-EB597BCE" id="OPCUAClientEditor-EB597BCE">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__OPCUAClientEditor_EB597BCE" id="OPCUAClientEditor_EB4A8A23__OPCUAClientEditor_EB597BCE">
+<!-- --></a><a name="OPCUAClientEditor_EB597BCE" id="OPCUAClientEditor_EB597BCE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Displaying the OPC UA Client Editor
+</h2>
+<div class="div">
+<p class="p">
+To display the OPC UA Client editor:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">System</span> editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">OPCUA Client</span> icon <img class="image" src="0000906992.png" alt="" style="max-height:18px;" /> in the vertical toolbar on the left:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00744316.png" alt="" style="max-height:3.75in;" />
+</div>
+</li>
+</ol>
+</div>
+<p class="p">
+The OPC UA Client editor lists all OPC UA Client function block instances within the application and device (both directly and embedded in CAT/SubApp instances). It allows you to view and configure the parameters and attributes of each function block. The collection of parameters and attributes depends upon the function block. For a description of each function block and its parameters and attributes, refer to help for the Standard.OPCUAClient library (right-click on the function block name in the library and choose <span class="ph uicontrol">Help</span>).
+</p>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__ConfiguringTheValueAttribute-EB5980A1">
+<a name="ConfiguringTheValueAttribute-EB5980A1" id="ConfiguringTheValueAttribute-EB5980A1">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__ConfiguringTheValueAttribute_EB5980A1" id="OPCUAClientEditor_EB4A8A23__ConfiguringTheValueAttribute_EB5980A1">
+<!-- --></a><a name="ConfiguringTheValueAttribute_EB5980A1" id="ConfiguringTheValueAttribute_EB5980A1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configuring Attribute Values
+</h2>
+<p class="p">
+In the OPC UA Client editor, the <span class="ph uicontrol">Value</span> attribute is editable. Change parameter values by double-clicking and editing the default or current values.
+</p>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert - Buildtime</span> validates your edits. If your edit is:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Invalid, the <span class="ph uicontrol">Value</span> cell borders turn red. A tooltip explains the reason the value is invalid.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Valid, the edited value appears in bold text.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__ConfiguringCybersecuritySettings-10D206B0">
+<a name="ConfiguringCybersecuritySettings-10D206B0" id="ConfiguringCybersecuritySettings-10D206B0">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__ConfiguringCybersecuritySettings_10D206B0" id="OPCUAClientEditor_EB4A8A23__ConfiguringCybersecuritySettings_10D206B0">
+<!-- --></a><a name="ConfiguringCybersecuritySettings_10D206B0" id="ConfiguringCybersecuritySettings_10D206B0">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configuring Cybersecurity Settings
+</h2>
+<p class="p">
+Communications between the OPC UA client and server can be secured using:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Message integrity: message validation by checking the message signature/hash.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Transport security: signing and encryption of the content of the messages exchanged.
+</p>
+</li>
+<li class="li">
+<p class="p">
+User authentication: verification of user credentials when establishing a connection.
+</p>
+</li>
+</ul>
+<p class="p">
+Cybersecurity settings are configured on the <span class="keyword parmname">OPCUA_CONNECT</span> function block. <a class="xref" href="#OPCUAClientEditor-EB4A8A23__CreatingAndTestingAnOPCUAClient-10D1BE37">Creating and Testing an OPC UA Client</a> describes how to add this function block to an OPC UA Client application.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The same cybersecurity settings must be configured on both the OPC UA Server and Client sides.
+</div>
+<p class="p">
+To configure OPC UA Client cybersecurity settings:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the OPC UA Client Editor, browse to the function block definition for the <span class="keyword parmname">OPCUA_CONNECT</span> function block.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Expand the <span class="ph uicontrol">Security Configuration</span> section.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure the cybersecurity settings:
+</p>
+<table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletable" style="max-width: 100% ;height: auto;">
+<col style="width:50%" />
+<col style="width:50%" />
+<thead>
+<tr class="sthead">
+<th style="vertical-align:bottom;text-align:left;" id="d799209e317" class="stentry">
+<p class="p">
+<strong class="ph b">Parameter Name</strong>
+</p>
+</th>
+<th style="vertical-align:bottom;text-align:left;" id="d799209e321" class="stentry">
+<p class="p">
+<strong class="ph b">Value</strong>
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="strow">
+<td style="vertical-align:top;" headers="d799209e317" class="stentry">
+<p class="p">
+<span class="ph uicontrol">Security Policy</span>
+</p>
+</td>
+<td style="vertical-align:top;" headers="d799209e321" class="stentry">
+<div class="div">
+<p class="p">
+Choose the application security mode:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">None</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Basic128Rsa15</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Basic256</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Aes128Sha256RsaOeap</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Aes256Sha256RsaPss</span> (default)
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="strow">
+<td style="vertical-align:top;" headers="d799209e317" class="stentry">
+<p class="p">
+<span class="ph uicontrol">Security Mode</span>
+</p>
+</td>
+<td style="vertical-align:top;" headers="d799209e321" class="stentry">
+<div class="div">
+<p class="p">
+Choose the transport security mode:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">None</span>. Communications between client and server applications are not secured. Mandatory when <span class="ph uicontrol">Security Policy</span> is set to <span class="ph uicontrol">None</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Sign</span>. Traffic is validated by the client and server applications, so messages cannot be modified while in transit.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Sign&amp;Encrypt</span> (default). All traffic is validated and also encrypted so messages cannot be read while in transit by third-party software.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="strow">
+<td style="vertical-align:top;" headers="d799209e317" class="stentry">
+<p class="p">
+<span class="ph uicontrol">Authentication Mode</span>
+</p>
+</td>
+<td style="vertical-align:top;" headers="d799209e321" class="stentry">
+<div class="div">
+<p class="p">
+Choose the user authentication mode:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Anonymous</span>. User access is not controlled.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Username&amp;password</span> (default). User access requires a user name and password.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="strow">
+<td style="vertical-align:top;" headers="d799209e317" class="stentry">
+<p class="p">
+<span class="ph uicontrol">User Name</span>
+</p>
+</td>
+<td style="vertical-align:top;" headers="d799209e321" class="stentry">
+<p class="p">
+Only available when <span class="ph uicontrol">Authentication Mode</span> is set to <span class="ph uicontrol">Username&amp;password</span>. Specify the user name to use to authenticate the connection.
+</p>
+</td>
+</tr>
+<tr class="strow">
+<td style="vertical-align:top;" headers="d799209e317" class="stentry">
+<p class="p">
+<span class="ph uicontrol">Password</span>
+</p>
+</td>
+<td style="vertical-align:top;" headers="d799209e321" class="stentry">
+<p class="p">
+Only available when <span class="ph uicontrol">Authentication Mode</span> is set to <span class="ph uicontrol">Username&amp;password</span>. Specify the password to use to authenticate the connection.
+</p>
+<p class="p">
+Click the eye icon <img class="image" src="0000822214.png" alt="" style="max-height:8px;" /> to view the password as text.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__AddingOPCUAServiceFunctionBlocks-EB597E1D">
+<a name="AddingOPCUAServiceFunctionBlocks-EB597E1D" id="AddingOPCUAServiceFunctionBlocks-EB597E1D">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__AddingOPCUAServiceFunctionBlocks_EB597E1D" id="OPCUAClientEditor_EB4A8A23__AddingOPCUAServiceFunctionBlocks_EB597E1D">
+<!-- --></a><a name="AddingOPCUAServiceFunctionBlocks_EB597E1D" id="AddingOPCUAServiceFunctionBlocks_EB597E1D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Adding OPC UA Client Function Blocks
+</h2>
+<p class="p">
+OPC UA Client function blocks can be added directly to an application or resource. They can also be part of CAT or SubApp instances. In the Application Editor or Device Editor, add function blocks by:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Dragging a function block from the Standard.OPCUAClient library and dropping it onto the editor, or
+</p>
+</li>
+<li class="li">
+<p class="p">
+Copying and pasting an existing function block. An function block created by copy and paste includes all the configuration settings of the original function block. The name of the new function block is the same as the original with the numerical suffix “1” added (if the original had no numerical suffix) or incremented by +1 (if a numerical suffix already exists).
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="OPCUAClientEditor-EB4A8A23__CreatingAndTestingAnOPCUAClient-10D1BE37">
+<a name="CreatingAndTestingAnOPCUAClient-10D1BE37" id="CreatingAndTestingAnOPCUAClient-10D1BE37">
+<!-- --></a><a name="OPCUAClientEditor_EB4A8A23__CreatingAndTestingAnOPCUAClient_10D1BE37" id="OPCUAClientEditor_EB4A8A23__CreatingAndTestingAnOPCUAClient_10D1BE37">
+<!-- --></a><a name="CreatingAndTestingAnOPCUAClient_10D1BE37" id="CreatingAndTestingAnOPCUAClient_10D1BE37">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Creating and Testing an OPC UA Client
+</h2>
+<div class="div">
+<p class="p">
+To create and test an OPC UA client configuration:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:10.43%" />
+<col style="width:89.57%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d799209e499">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d799209e503">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Install a third-party OPC UA Server to be able to test communications between OPC UA Client function blocks and an OPC UA server. In the third-party software, configure the following properties:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Endpoint URL</strong>. The address that the OPC UA client application connects to.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Security Settings</strong>. The message security and transport level cybersecurity settings to be applied.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Authentication Settings</strong>. The user authentication cybersecurity settings to be applied.
+</p>
+</li>
+</ul>
+<p class="p">
+Start the OPC UA server and check it is running.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+In EcoStruxure Automation Expert, create a new solution.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+In the  <span class="ph uicontrol">Solution Explorer</span>, open the <span class="ph uicontrol">Libraries</span> node and check that the Standard.OPCUAClient library is available. If not, <a class="xref" href="#OPCUAClientEditor-EB4A8A23__AddingTheStandard.OPCUAClientLibrar-EB59773F">install the library</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Check that the <a class="xref" href="#OPCUAClientEditor-EB4A8A23__EnablingTheOPCUAClientEditor-EB597917">OPC UA Client Editor is activated</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span>, navigate to <span class="ph menucascade"><span class="ph uicontrol">System</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Applications</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">APP1</span></span>, then double-click the <span class="ph uicontrol">APP1</span> node (or right-click and choose <span class="ph uicontrol">Open</span>) to open the <span class="ph uicontrol">System</span> editor.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+In the  <span class="ph uicontrol">Solution Explorer</span>, open the <span class="ph menucascade"><span class="ph uicontrol">Libraries</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Standard.OPCUAClient</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Service</span></span> node. Drag and drop the <span class="keyword parmname">OPCUA_CONNECT</span> function block onto the <span class="ph uicontrol">System</span> editor.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Use the <a class="xref" href="ApplicationEditor-A084A3E5.html">Application Editor</a> to add constants for the following input values of the <span class="keyword parmname">OPCUA_CONNECT</span> function block:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="keyword parmname">QI</span> to TRUE to enable the function block.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="keyword parmname">ID</span> to a connection identifier. If you subsequently add other OPC UA Client function blocks (for example, <span class="keyword parmname">OPCUA_READ</span> or <span class="keyword parmname">OPCUA_WRITE</span>), the <span class="keyword parmname">CONNECTION_ID</span> input of those functions blocks must match this identifier.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="keyword parmname">URI</span> to the URL of the OPC UA server configured in Step 1. You can usually copy and paste this from the server console, or the server properties page.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="keyword parmname">ID</span> and <span class="keyword parmname">URI</span> parameter values must be enclosed in single quotes ('), with no leading or trailing spaces.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Right-click on the function block, choose <span class="ph uicontrol">Mapping</span>, then choose <span class="ph uicontrol">EcoRT_0</span>. This associates the function block with the EcoRT run-time device.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Select the <span class="ph uicontrol">OPC UA Client</span> editor in the <span class="ph uicontrol">System</span> editor and configure the <a class="xref" href="#OPCUAClientEditor-EB4A8A23__ConfiguringCybersecuritySettings-10D206B0">cybersecurity settings</a> to match those configured on the OPC UA Server in Step 1.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+10
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Click the <span class="ph uicontrol">Deploy and Diagnostic</span> icon (<img class="image" src="0000915996.png" alt="" style="max-height:18px;" />) on the <a class="xref" href="Toolbar-97AF2C48.html">quick access toolbar</a> to open that editor.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+11
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Deploy the application:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Activate <a class="xref" href="LogicalDevices-A0877135.html#LogicalDevices-A0877135__AssociatingDevicesInSimulationMode-A6C24B3B">Simulation mode</a> by setting <span class="ph uicontrol">Active Network Profile</span> to <span class="ph uicontrol">(Local Test)</span> in the <span class="ph uicontrol">Deploy and Diagnostic</span> pad. This allows the device to run without being associated with a physical device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <a class="xref" href="DeviceAction-EC279F2B.html"><strong class="ph b">Compile</strong></a> from the <span class="ph uicontrol">Actions</span> menu to build the application. 
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <a class="xref" href="DeviceAction-EC279F2B.html"><strong class="ph b">Login</strong></a> from the <span class="ph uicontrol">Actions</span> menu to log in to the OPC UA server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <a class="xref" href="SubMenuDeploy-EC28B8A0.html"><strong class="ph b">Deploy</strong></a> from the <span class="ph uicontrol">Actions</span> menu to deploy the application.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Run</span></span> from the <span class="ph uicontrol">Actions</span> menu to run the application.
+</p>
+</li>
+</ol>
+<p class="p">
+<strong class="ph b">Result: </strong>The <span class="ph uicontrol">Deploy and Diagnostic</span> pad shows that the application is running:
+</p>
+<div class="fig fignone">
+<img class="image" src="0000775326.png" alt="" />
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+12
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+In the <span class="ph uicontrol">System</span> editor, right-click on the function block and choose <span class="ph uicontrol">Watch</span> to display watch points for the function block inputs and outputs.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+13
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Trigger the <span class="keyword parmname">INIT</span> event to initialize the function block.
+</p>
+<p class="p">
+Trigger the <span class="keyword parmname">CONNECT</span> event to connect to the OPC UA server.
+</p>
+<p class="p">
+Trigger the <span class="keyword parmname">DISCONNECT</span> event to disconnect from the OPC UA server.
+</p>
+<p class="p">
+When connected, the real-time values of the function block outputs are displayed to the right of the data output connectors. For example:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<q class="q">STATUS : ‘connected’</q> indicates that the OPC UA Client is connected to the server.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<q class="q">ERROR : 0</q> indicates no errors are detected.
+</p>
+</li>
+</ul>
+<div class="fig fignone">
+<img class="image" src="DD01065870.png" alt="" style="max-height:2.35in;" />
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d799209e499 ">
+<p class="p">
+14
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d799209e503 ">
+<p class="p">
+Troubleshoot your application. When the application is run, a non-zero value of the <span class="keyword parmname">ERROR</span> output indicates that an error is detected. <span class="keyword parmname">ProtocolState</span> and <span class="keyword parmname">NetworkState</span> present a textual description of the detected error.
+</p>
+<p class="p">
+OPC UA Client detected error codes are listed in the library help (right-click on the function block and choose <span class="ph uicontrol">Help</span>).
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Typical causes of errors include:
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+The cybersecurity settings of the OPC UA Client and OPC UA Server do not match.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert - Buildtime</span> OPC UA Client only supports the <span class="keyword parmname">opc.tcp</span> URL scheme. The <span class="keyword parmname">http</span> and <span class="keyword parmname">https</span> schemes are not supported. Check that the server supports <span class="keyword parmname">opc.tcp</span> URLs.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The server must have a discovery endpoint enabled.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+If using a firewall, check the settings.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="p">
+<strong class="ph b">Result:</strong> You can now continue to expand the application by adding other OPC UA service function blocks. For example, add the <span class="keyword parmname">OPCUA_READ</span> function block to read data items exposed by the server.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

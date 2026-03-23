@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"ATV dPAC Display","type":"item","url":"ATVd_UG/ATVDPACDisplay-C2DF130A.html"},{"name":"User PIN Management using ATV dPAC Displays","type":"item","url":"ATVd_UG/UserPINManagementUsingATVDPACDispla-CB1FFD8E.html"},{"name":"Runtime Status monitoring","type":"item","url":"ATVd_UG/RuntimeStatusDSTAMonitoring-5F634C41.html"},{"name":"Local reset of the ATV Distributed PAC security","type":"item","url":"ATVd_UG/LocalResetOfTheATVDPACToFactorySett-C77F7DD9.html"},{"name":"Local reset of the ATV Distributed PAC to factory settings","type":"item","url":"ATVd_UG/LocalResetOfATVDPACToFactorySetting-C692DC21.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="task" />
+<meta name="DC.title" content="Handling Example with PositionerVSDBase and EncoderDigitalModuleVW3A3420" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500Rueil MalmaisonFrance+ 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="HandlingExampleWithPositionerVSDBas-F2DC7026" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Handling Example with PositionerVSDBase and EncoderDigitalModuleVW3A3420
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v16.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.6.3.0_2";
+//]]></script>
+<meta name="brsprev" value="ATVd_CAT/ATVPosControlLight-Properties-F2BCC62E.html" />
+<meta name="brsnext" value="ATVd_CAT/Troubleshooting-F5D8A89E.html" />
+<meta name="topic-breadcrumbs" content="SE.IoATV - Library Guide &gt; VSD_Control &gt; ATVPosControlLight - Hardware CAT" />
+</head>
+<body id="HandlingExampleWithPositionerVSDBas-F2DC7026"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ATVd_CAT_D-SE-0105319.html");
+document.write("<a href=\"ATVd_CAT_D-SE-0105319.html\">SE.IoATV - Library Guide<\/a> > <a href=\"HardwareCATs-DBB099F9.html#HardwareCATs-DBB099F9\">VSD_Control<\/a> > <a href=\"ATVPosControlLight-HardwareCAT-F2BC1D4E.html\">ATVPosControlLight - Hardware CAT<\/a> > Handling Example with PositionerVSDBase and EncoderDigitalModuleVW3A3420<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="HandlingExampleWithPositionerVSDBas-F2DC7026" id="HandlingExampleWithPositionerVSDBas-F2DC7026_">
+<!-- --></a><a name="HandlingExampleWithPositionerVSDBas_F2DC7026" id="HandlingExampleWithPositionerVSDBas_F2DC7026">
+<!-- --></a>
+<h1 class="title topictitle1" id="HandlingExampleWithPositionerVSDBas-F2DC7026__HandlingExampleWithPositionerVSDBas-3D8E59DF">
+Handling Example with <span class="ph">PositionerVSDBase and <span class="ph">EncoderDigitalModuleVW3A3420</span></span>
+</h1>
+<div class="body taskbody">
+
+<div class="section prereq p">
+<strong class="ph b">Perquisites:</strong>
+<div class="p">
+Connect the following devices to your PC, and then set their IPv4 addresses to be on the same network
+<ul class="ul">
+<li class="li">
+<p class="p">
+ATV340 or ATV9••
+</p>
+</li>
+<li class="li">
+<p class="p">
+ATV dPAC
+</p>
+</li>
+<li class="li">
+<p class="p">
+Encoder
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section context">
+<p class="p">
+The procedure explains how to use an EncoderDigitalModuleVW3A3420 and the PositionerVSDBase with ATV dPAC to create a positioning application.
+</p>
+</div>
+<ol class="ol steps">
+<li class="li step stepexpand break">
+<span class="ph cmd">Open <span class="ph uicontrol">Physical Devices</span></span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Click on the <span class="ph uicontrol">System </span> tab icon <span class="imageinline"><img class="image" src="0000962855.png" alt="" /></span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Select the <span class="ph uicontrol">Physical Devices</span> icon <span class="imageinline"><img class="image" src="DD00753786.png" alt="" /></span>.</span>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+The physical device window opens.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Drag and drop your altivar device to the <span class="ph uicontrol">Physical Devices</span> window.<span class="imageinline"><img class="image" src="DD00762900.jpg" alt="" /></span></span>
+<div class="itemgroup info">
+In this example, we choose an ATV9••. Moreover, you can also choose an ATV340 device, since both of them are compatible with ATV dPAC and <span class="ph">EncoderDigitalModuleVW3A3420</span> modules.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Add an ATV dPAC module to your device.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Select the added device (ATV9•• in this example) to display its properties.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Select <span class="ph uicontrol">ATV dPAC</span> as a <span class="ph uicontrol">Communication Card Reference</span>.<span class="imageinline"><img class="image" src="DD00762899.png" alt="" /></span></span>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the IPv4 Address of your ATV dPAC.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Select the added ATV dPAC to display its properties.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Type the IPv4 Address of your ATV dPAC module.<span class="imageinline"><img class="image" src="DD00762898.png" alt="" /></span></span>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Add an ATV dPAC device.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Click on the <span class="ph uicontrol">Logical Devices</span> icon <span class="imageinline"><img class="image" src="0000962854.png" alt="" /></span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click on <span class="ph uicontrol">Add Device</span> icon <span class="imageinline"><img class="image" src="0000962853.png" alt="" style="max-height:0.2in;" /></span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Type the device name.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Select the device type.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">OK</span>.<span class="imageinline"><img class="image" src="DD00762897.jpg" alt="" style="max-height:3IN;" /></span></span>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+The ATV dPAC device is added in the <span class="ph uicontrol">Logical Devices</span> window.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Link the ATV dPAC device added in <span class="ph uicontrol">Physical Device</span> to the ATV dPAC device added in <span class="ph uicontrol">Logical Device</span>.<span class="imageinline"><img class="image" src="DD00763056.png" alt="" /></span></span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Add a <span class="ph uicontrol">DPAC_FULLINIT</span> and do the necessary connections.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Click on the <span class="ph uicontrol">Function Blocks Network</span> icon <span class="imageinline"><img class="image" src="DD00763642.png" alt="" /></span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Add <span class="ph uicontrol">DPAC_FULLINIT</span> composite function block to the <span class="ph uicontrol">Function Blocks Network</span> editor.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Link the <span class="ph uicontrol">DPAC_FULLINIT</span> to the <span class="ph uicontrol">START</span> function block.<span class="imageinline"><img class="image" src="DD00763641.JPG" alt="" /></span></span>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand break">
+<span class="ph cmd">Add <span class="ph uicontrol">PositionerVSDBase</span> application CAT and <span class="ph uicontrol">AtvPosControlInterface</span> composite function block, then link them together.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Add <span class="ph uicontrol">PositionerVSDBase</span> application CAT to the <span class="ph uicontrol">Function Blocks Network</span> editor.</span>
+<div class="itemgroup info">
+Develop the logic based on your process,to provide values in positioner inputs (such as ProgOwner, Acc, Dec, Velocity, etc.).
+<div class="note note">
+<span class="notetitle">NOTE:</span> To run, the block must have the following features set to TRUE: Enable, QuickStop, LimitSwitchPos, LimitSwitchNeg, and EncReady.
+</div>
+In this example, all the inputs will be set as constants, but you have the option to link them to your logic. This includes inputs from a PushButton, limit switch, emergency stop, input from HMI, and more.<img class="image" src="DD00763640.JPG" alt="" />
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Add <span class="ph uicontrol">AtvPosControlInterface</span> composite function block to the <span class="ph uicontrol">Function Blocks Network</span> editor.</span>
+</li>
+<li class="li substep substepexpand break">
+<span class="ph cmd">Define the following data inputs of the <span class="ph uicontrol">AtvPosControlInterface</span> composite function block as follow:</span>
+<div class="itemgroup info">
+<ul class="ul">
+<li class="li">
+<p class="p">
+Set a value to <span class="ph uicontrol">ApplyBrakeWhenMoveDone</span> depending on your application (If TRUE: The drive goes to RDY state after a movement and the brake closes, it is advised for vertical movement).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Set the default value to <span class="ph uicontrol">EncPulseInitDelay</span>.
+</p>
+</li>
+</ul>
+<div class="fig fignone">
+<img class="image" src="DD00971099.png" alt="" />
+</div>
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Link the added application CAT and composite function block as follow:<span class="imageinline"><img class="image" src="DD00763638.png" alt="" /></span></span>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand break">
+<span class="ph cmd">Add the hardware CAT.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Click on the <span class="ph uicontrol">Hardware Configuration</span> icon <span class="imageinline"><img class="image" src="DD00763646.png" alt="" /></span>.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Right-click in the <span class="ph uicontrol">Hardware Configuration</span> editor, select <span class="ph uicontrol">Add</span>, select <span class="ph uicontrol">SE.IoATVdPACxVW3A3530D</span>, then click <span class="ph uicontrol">Add</span>.<span class="imageinline"><img class="image" src="DD00763645.png" alt="" /></span></span>
+<div class="itemgroup stepresult">
+The <span class="ph uicontrol">ATVdPACxVW3A3530D</span> bus master is added to the <span class="ph uicontrol">Hardware Configuration</span> editor.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Type 10 ms as the <span class="ph uicontrol">busCycleTime</span> value.<span class="imageinline"><img class="image" src="DD00763644.png" alt="" /></span></span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Right-click on the <span class="ph uicontrol">ATVdPACxVW3A3530D</span> bus master, select <span class="ph uicontrol">SE.IoATV.AtvPosControlLight</span>, then click <span class="ph uicontrol">Add</span>.<span class="imageinline"><img class="image" src="DD00763643.png" alt="" /></span></span>
+<div class="itemgroup info">
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can also use <span class="ph uicontrol">SE.IoATVSpeedControlLight</span>, but it is advisable to use <span class="ph uicontrol">SE.IoATVPosControlLight</span>.
+<p class="p">
+If you decide to use <span class="ph uicontrol">SE.IoATVSpeedControlLight</span>, make sure that <span class="ph uicontrol">AtvUseRpmSpeed</span> is set to <span class="keyword parmname">TRUE</span>.
+</p>
+</div>
+</div>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Link the <span class="ph uicontrol">Symbolic Links</span> to the hardware CAT.<span class="imageinline"><img class="image" src="DD00763637.JPG" alt="" /></span></span>
+</li>
+<li class="li step stepexpand break">
+<span class="ph cmd">Configure the properties of <span class="ph uicontrol">ATVPosControlLight</span> hardware CAT.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Right-click <span class="ph uicontrol">ATVPosControlLight</span> hardware CAT, select <span class="ph uicontrol">Properties Editor</span>.<span class="imageinline"><img class="image" src="DD00763716.png" alt="" /></span></span>
+<div class="itemgroup stepresult">
+A new window appears to select the encoder type.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Select your encoder module based on your application, then click <span class="ph uicontrol">OK</span>.</span>
+<div class="itemgroup info">
+In this example, we choose <span class="ph uicontrol">Digital Encoder VW3A3420</span><img class="image" src="DD00763715.png" alt="" />
+</div>
+<div class="itemgroup stepresult">
+A new window appears, showing the properties of <span class="ph uicontrol">ATVPosControlLight</span>.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Command &amp; Reference</span> tab, then configure the parameters depending on your application.</span>
+<div class="itemgroup info">
+In this example, we choose the following configuration:<img class="image" src="DD00763714.png" alt="" />
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Ramp</span> tab, then configure the parameters depending on your application.</span>
+<div class="itemgroup info">
+In this example, we choose the following configuration:<img class="image" src="DD00763713.png" alt="" />
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Encoder Warning/Error</span> tab, then configure the parameters depending on your application.</span>
+<div class="itemgroup info">
+In this example, we choose the following configuration:<img class="image" src="DD00763712.JPG" alt="" />
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">SSI Encoder</span> tab, then configure the parameters depending on your application, then click <span class="ph uicontrol">OK</span>.</span>
+<div class="itemgroup info">
+In this example, we choose the following configuration:<img class="image" src="DD00763711.png" alt="" />
+<div class="note note">
+<span class="notetitle">NOTE:</span> Restart the drive after changing the SSI encoder parameters.
+</div>
+</div>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Click on the <span class="ph uicontrol">Build</span> icon <span class="imageinline"><img class="image" src="DD00763710.png" alt="" /></span>.</span>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Add the <span class="ph uicontrol">sPosition</span> generic symbol to the <span class="ph uicontrol">Canvas</span>.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Create a new <span class="ph uicontrol">Canvas</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Drag and drop the <span class="ph uicontrol">PositionerVSDBase</span> CAT instance to the <span class="ph uicontrol">Canvas</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Select <span class="ph uicontrol">sPosition</span> generic symbol.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">OK</span>.<span class="imageinline"><img class="image" src="DD00763709.jpg" alt="" /></span></span>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+The <span class="ph uicontrol">sPosition</span> generic symbol is added to the <span class="ph uicontrol">Canvas</span>.<img class="image" src="DD00763708.png" alt="" />
+</div>
+</li>
+<li class="li step stepexpand break">
+<span class="ph cmd">Deploy your solution.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Click the <span class="ph uicontrol">Deploy and Diagnostic</span> icon <span class="imageinline"><img class="image" src="DD00763707.png" alt="" /></span>.</span>
+<div class="itemgroup stepresult">
+The <span class="ph uicontrol">Deploy and Diagnostic</span> opens.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Compile</span></span>.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Login</span></span>.</span>
+<div class="itemgroup info">
+Use the credentials of your ATV dPAC module to connect to your device.
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span>.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Run</span></span>.</span>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+<div class="fig fignone">
+<span class="figcap">Result:</span> <img class="image" src="DD00763836.JPG" alt="" />
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Right-click on the resolution, then click <span class="ph uicontrol">Start Local HMI</span>.<span class="imageinline"><img class="image" src="DD00763835.png" alt="" /></span></span>
+<div class="itemgroup info">
+Use your solution credentials to start the local HMI.
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Open the positioner settings faceplate.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Click the <span class="ph uicontrol">sPosition</span> generic symbol to open the associated faceplate.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click the <span class="imageinline"><img class="image" src="DD00763834.png" alt="" /></span> icon to open the parameter data faceplate.<span class="imageinline"><img class="image" src="DD00763833.png" alt="" /></span></span>
+</li>
+</ol>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the <span class="ph uicontrol">Motor</span> tab.</span>
+<div class="itemgroup info">
+Configure the <span class="ph uicontrol">Quick Deceleration</span> so that the motor can stop rapidly enough to prevent any physical collisions. Additionally, set the <span class="ph uicontrol">Velocity Nominal</span> to the value indicated on motor nameplate.
+</div>
+<div class="itemgroup stepresult">
+<img class="image" src="DD00764076.png" alt="" />
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the <span class="ph uicontrol">Control</span> tab.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Set up the <span class="ph uicontrol">Profile</span> to match the acceleration profile you desire for your application.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Set up the <span class="ph uicontrol">SpVelocity Output</span> to <span class="keyword parmname">-/+ rpm</span> (mandatory with ATVPosControl).</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Set the following parameters, to ensure precise movement for your application:</span>
+<div class="itemgroup info">
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Max Pos Deviation</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Position Window</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">In Pos Time</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Max duration</span>
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Set up the <span class="ph uicontrol">Cycle Time</span> to the cycle time already set in the ATV dPAC in <span class="ph uicontrol">Hardware Configuration</span> (It is advised to set the cycle time to 10 ms).</span>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+<img class="image" src="DD00764075.png" alt="" />
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you are using an <span class="ph uicontrol">ATVSpeedControlLight</span> hardware CAT, select <span class="ph uicontrol">Abs rpm</span> for <span class="ph uicontrol">Sp Velocity Output</span>.
+</div>
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the <span class="ph uicontrol">Encoder</span> tab.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep substepexpand">
+<span class="ph cmd">Fill informations: <span class="ph uicontrol">Pulse/Revolution</span>, <span class="ph uicontrol">Encoder Type</span> and the <span class="ph uicontrol">Resolution</span> according to your encoder type.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">You can enable <span class="ph uicontrol">Position Incr. Save</span> to be able to save the position of the axis after restarting your drive even if you have an incremental encoder.</span>
+</li>
+<li class="li substep substepexpand">
+<span class="ph cmd">Configure the <span class="ph uicontrol">Numerator</span> and <span class="ph uicontrol">Denominator</span> to manage the mechanical cinematic of your system, according to the following formula:</span>
+<div class="itemgroup info">
+<p class="p">
+The Numerator and Denominator parameters are used to scale position values. The calculated scaling factor defines the relationship between drive revolutions and corresponding distance in user units.
+</p>
+<img class="image" src="DD00764074.png" alt="" />
+<p class="p">
+The following examples show the relation: If a 10 mm axis movement corresponds to 7 motor revolutions, set the Numerator to 7 and the Denominator to 10. The corresponding user unit would be 1 mm. In this example, if the denominator is set to 100, the user unit is 0.1 mm.
+</p>
+<p class="p">
+Similarly, parameters in modulo can be configured in angular units. When one machine axis revolution (Gearbox output shaft) equals 15.5 motor revolutions and the expected resolution is 0.1°, the Numerator is 155 and the Denominator is 36000.
+</p>
+<p class="p">
+Numerator and Denominator that are not relatively prime can be divided by their greatest common divisor (In this example 5):
+</p>
+<img class="image" src="DD00764073.png" alt="" />
+<p class="p">
+Setting of these parameters is only possible in off state (Positioner Disabled) . After changing these parameters homing with method 35 is performed automatically.
+</p>
+</div>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+<img class="image" src="DD00764072.png" alt="" />
+</div>
+</li>
+<li class="li step stepexpand">
+<span class="ph cmd">Configure the <span class="ph uicontrol">Axis</span> tab.</span>
+<div class="itemgroup info">
+<p class="p">
+Configure <span class="ph uicontrol">Software Limit Switch</span> to quick stop the positioner when the axis position exceeds the positive limit (overshoots) or falls below the negative limit (undershoots).
+</p>
+<p class="p">
+Define the behavior of the axis after triggering a physical limit switch (positive or negative), allowing you to choose between a quick stop or a halt.
+</p>
+<p class="p">
+Specify the axis type (linear or modulo) and its range (single or multi-range).
+</p>
+</div>
+<div class="itemgroup stepresult">
+<img class="image" src="DD00764071.png" alt="" />
+<div class="note note">
+<span class="notetitle">NOTE:</span> After a quick stop from the application CAT, the Drive state remains in the RUN mode to preserve the current position.
+</div>
+</div>
+</li>
+<li class="li step stepexpand break">
+<span class="ph cmd">Verify the settings of your application.</span>
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="ph cmd">Set <span class="ph uicontrol">Owner</span> to <span class="ph uicontrol">Operator</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Set <span class="ph uicontrol">Positioner</span> to <span class="ph uicontrol">Enabled</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">For <span class="ph uicontrol">Operating mode</span>, select <span class="ph uicontrol">Homing</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Select the <span class="ph uicontrol">Homing</span> tab.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">For <span class="ph uicontrol">Homing Method</span>, select <span class="ph uicontrol">35, Position setting</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Type your <span class="ph uicontrol">Homing Reference</span>.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">Execute</span>.</span>
+</li>
+</ol>
+<div class="itemgroup stepresult">
+<img class="image" src="DD00764070.png" alt="" />
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<p class="p">
+<span class="ph uicontrol">CurrentPosition</span> represents the actual position influenced by the encoder and controller parameters, while <span class="ph uicontrol">PGSpPoition</span> is the calculated position setpoint.
+</p>
+<p class="p">
+In the case where <span class="ph uicontrol">Gain Pos. Control</span> is higher than the <span class="ph uicontrol">Gain Vel. FeedFwd</span>, <span class="ph uicontrol">PGSpPoition</span> will be higher than <span class="ph uicontrol">CurrentPosition</span>. Conversely, when the <span class="ph uicontrol">Gain Pos. Control</span> is lower than the <span class="ph uicontrol">Gain Vel. FeedFwd</span>, <span class="ph uicontrol">PGSpPoition</span> will be lower than <span class="ph uicontrol">CurrentPosition</span>.
+</p>
+<p class="p">
+In summary, depending on the settings of the <span class="ph uicontrol">Gain Pos. Control</span> and <span class="ph uicontrol">Gain Vel. FeedFwd</span>, <span class="ph uicontrol">PGSpPoition</span> will either lead or lag behind the <span class="ph uicontrol">CurrentPosition</span>.
+</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+NNZ13569.12
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

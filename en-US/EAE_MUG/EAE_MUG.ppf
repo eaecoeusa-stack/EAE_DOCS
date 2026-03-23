@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="EAE_MUG" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="5" page="EAE_MUG\AboutTheDocument-748CBE11.html">
+  </contextentry>
+  <contextentry id="4" page="EAE_MUG\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="3" page="EAE_MUG\D-TS-0002473_1.html">
+  </contextentry>
+  <contextentry id="2" page="EAE_MUG\D-TS-0002473_3.html">
+  </contextentry>
+  <contextentry id="1" page="EAE_MUG\D-TS-0002473_4.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="EAE_MUG\EAE_MUG_UserGuideIntroductionToMultiUserDoc-29F05324.html">
+  <topic>EAE_MUG\AboutTheDocument-748CBE11.html
+  </topic>
+  <topic>EAE_MUG\AutomationSolutionAnAutomationSolut-C78C20C5.html
+  </topic>
+  <topic>EAE_MUG\ConceptOfZone-2C90AEFE.html
+  </topic>
+  <topic>EAE_MUG\Current-zoneTheCurrentZoneIsThePadO-C78F06F8.html
+  </topic>
+  <topic>EAE_MUG\D-NA-0003897.1.html
+  </topic>
+  <topic>EAE_MUG\D-TS-0002473_1.html
+  </topic>
+  <topic>EAE_MUG\D-TS-0002473_3.html
+  </topic>
+  <topic>EAE_MUG\D-TS-0002473_4.html
+  </topic>
+  <topic>EAE_MUG\Definition-99346D86.html
+  </topic>
+  <topic>EAE_MUG\DeliverMyModificationsDialogBox-9BA61094.html
+  </topic>
+  <topic>EAE_MUG\DiscoverMultiUser-29E9EAEB.html
+  </topic>
+  <topic>EAE_MUG\DistributedControlApplicationGlossa-C709B31F.html
+  </topic>
+  <topic>EAE_MUG\EAE_MUG_id_address_tpc.html
+  </topic>
+  <topic>EAE_MUG\EAE_MUG_id_disclaimer_tpc.html
+  </topic>
+  <topic>EAE_MUG\EAE_MUG_id_glo_tpc.html
+  </topic>
+  <topic>EAE_MUG\EAE_MUG_UserGuideIntroductionToMultiUserDoc-29F05324.html
+  </topic>
+  <topic>EAE_MUG\EcoStruxureAutomationExpertPlatform-C78C8E3F.html
+  </topic>
+  <topic>EAE_MUG\GetDeliveriesFromMyColleagues-2CF43052.html
+  </topic>
+  <topic>EAE_MUG\InstallingMultiUserEnvironment-384B3DD7.html
+  </topic>
+  <topic>EAE_MUG\MakeChangesAndSaveProject-4C7962F2.html
+  </topic>
+  <topic>EAE_MUG\Parent-zoneAParent-zoneIsAZoneThatI-C78F0E08.html
+  </topic>
+  <topic>EAE_MUG\ReleaseMyReservedZone-2BDEAEF5.html
+  </topic>
+  <topic>EAE_MUG\ReservationOfAZone-3BF2030C.html
+  </topic>
+  <topic>EAE_MUG\ReservationOverviewDialogBox-9931B1E8.html
+  </topic>
+  <topic>EAE_MUG\ReserveCommands-9931CABD.html
+  </topic>
+  <topic>EAE_MUG\RiskCharacterization-2C8CD583.html
+  </topic>
+  <topic>EAE_MUG\Sub-zoneASub-zoneIsAZoneThatIsInclu-C78F161E.html
+  </topic>
+  <topic>EAE_MUG\SynchronizeFromSever-4CF97BFC.html
+  </topic>
+  <topic>EAE_MUG\TheSessionInTheRibbonBar-58588882.html
+  </topic>
+  <topic>EAE_MUG\UIElements-585419ED.html
+  </topic>
+  <topic>EAE_MUG\VerifyAndTest-9932FEF2.html
+  </topic>
+  <topic>EAE_MUG\Workflow-9932474C.html
+  </topic>
+  <topic>EAE_MUG\ZoneAZoneIsAPartOfADistributedContr-C78C325A.html
+  </topic>
+  <topic>EAE_MUG\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

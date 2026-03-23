@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="2. Configure Connection to the AIS Server" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfigureConnectionToAVEVAAISServer-03F83D7C" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+2. Configure Connection to the AIS Server
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.6.2.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/SetupEcoStruxureAutomationExpertBui-03F73BA4.html" />
+<meta name="brsnext" value="EAE_UM/DefineEngineeringInstanceMappingCri-13E54897.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; EcoStruxure Automation Expert – Data Exchange &gt; Asset Link for Bulk Engineering" />
+</head>
+<body id="ConfigureConnectionToAVEVAAISServer-03F83D7C"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"EcoStruxureAutomationExpertDataAndS-961C60B5.html#EcoStruxureAutomationExpertDataAndS-961C60B5\">EcoStruxure Automation Expert – Data Exchange<\/a> > <a href=\"AssetLinkForBulkEngineering-03EFD3D7.html#AssetLinkForBulkEngineering-03EFD3D7\">Asset Link for Bulk Engineering<\/a> > 2. Configure Connection to the AIS Server<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfigureConnectionToAVEVAAISServer-03F83D7C" id="ConfigureConnectionToAVEVAAISServer-03F83D7C_">
+<!-- --></a><a name="ConfigureConnectionToAVEVAAISServer_03F83D7C" id="ConfigureConnectionToAVEVAAISServer_03F83D7C">
+<!-- --></a><a name="ConfigureConnectionToAVEVAAISServer_03F83D7C" id="ConfigureConnectionToAVEVAAISServer_03F83D7C_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+2. Configure Connection to the AIS Server
+</h1>
+<div class="body conbody">
+
+<div class="section" id="ConfigureConnectionToAVEVAAISServer-03F83D7C__ToObtainDataFromTheAVEVAIntegration-03FA877B">
+<a name="ToObtainDataFromTheAVEVAIntegration-03FA877B" id="ToObtainDataFromTheAVEVAIntegration-03FA877B">
+<!-- --></a><a name="ConfigureConnectionToAVEVAAISServer_03F83D7C__ToObtainDataFromTheAVEVAIntegration_03FA877B" id="ConfigureConnectionToAVEVAAISServer_03F83D7C__ToObtainDataFromTheAVEVAIntegration_03FA877B">
+<!-- --></a><a name="ToObtainDataFromTheAVEVAIntegration_03FA877B" id="ToObtainDataFromTheAVEVAIntegration_03FA877B">
+<!-- --></a>
+<p class="p">
+To get data from <span class="ph">AVEVA</span> Engineering using <span class="ph">AVEVA</span> Integration Services (AIS) server, you need to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Configure the <a class="xref" href="#ConfigureConnectionToAVEVAAISServer-03F83D7C__ConfigureTheAVEVAIntegrationClient-03FA89DE"><span class="ph">AVEVA</span> Client integration</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure the <span class="ph">AVEVA</span> project for use by the <span class="ph">EcoStruxure Automation Expert</span> <a class="xref" href="#ConfigureConnectionToAVEVAAISServer-03F83D7C__ConfigureTheAVEVAProject-03FA8C0F">Solution</a>.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ConfigureConnectionToAVEVAAISServer-03F83D7C__ConfigureTheAVEVAIntegrationClient-03FA89DE">
+<a name="ConfigureTheAVEVAIntegrationClient-03FA89DE" id="ConfigureTheAVEVAIntegrationClient-03FA89DE">
+<!-- --></a><a name="ConfigureConnectionToAVEVAAISServer_03F83D7C__ConfigureTheAVEVAIntegrationClient_03FA89DE" id="ConfigureConnectionToAVEVAAISServer_03F83D7C__ConfigureTheAVEVAIntegrationClient_03FA89DE">
+<!-- --></a><a name="ConfigureTheAVEVAIntegrationClient_03FA89DE" id="ConfigureTheAVEVAIntegrationClient_03FA89DE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure the <span class="ph">AVEVA</span> Client integration
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.67%" />
+<col style="width:91.33%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d66550e116">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d66550e121">
+<p class="p">
+Actions
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e116 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e121 ">
+<ol class="ol">
+<li class="li">
+<p class="p">
+From AVEVA Product hub site, install the <span class="ph">AVEVA</span> Integration Client into the PC where <span class="ph">EcoStruxure Automation Expert</span> is installed
+</p>
+</li>
+<li class="li">
+<p class="p">
+Launch <span class="ph">AVEVA</span> Client integration
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph">Windows</span> search field (located in the lower left of the PC’s task bar), type ‘Integration client’.
+</p>
+<p class="p">
+<span class="ph">Windows</span> shows an icon for accessing the integration client application.
+</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e116 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e121 ">
+<p class="p">
+Click the icon to launch the integration client application.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e116 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e121 ">
+<ol class="ol">
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Set Service Location</span> in the <span class="ph uicontrol">Service Settings</span> section
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter the IP address of the machine on which <span class="ph">AVEVA</span> Integration Service is installed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click<span class="ph uicontrol"> Test Service</span> to test the connection.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Save</span> to enable the Test Service.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Save</span> to save the server.
+</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e116 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e121 ">
+<p class="p">
+Optionally, verify that you have the required view and able to extract data as follows:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Test Service</span> in the <span class="ph uicontrol">Service Settings</span> section.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Get Available Products</span> in the <span class="ph uicontrol">Available Products</span> section.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">AVEVA Engineering</span> from the select module list.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the required project.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If authentication is enabled for the project, enter the project username and click <span class="ph uicontrol">Validate User</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Get tables</span> .
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You may need to wait a couple of minutes for a response.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">SEEngineeringView|DbView</span> from the list next to the <span class="ph uicontrol">Get tables</span> button.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Get Data</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You may need to wait a couple of minutes to get a response.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="ConfigureConnectionToAVEVAAISServer-03F83D7C__ConfigureTheAVEVAProject-03FA8C0F">
+<a name="ConfigureTheAVEVAProject-03FA8C0F" id="ConfigureTheAVEVAProject-03FA8C0F">
+<!-- --></a><a name="ConfigureConnectionToAVEVAAISServer_03F83D7C__ConfigureTheAVEVAProject_03FA8C0F" id="ConfigureConnectionToAVEVAAISServer_03F83D7C__ConfigureTheAVEVAProject_03FA8C0F">
+<!-- --></a><a name="ConfigureTheAVEVAProject_03FA8C0F" id="ConfigureTheAVEVAProject_03FA8C0F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configure the <span class="ph">AVEVA</span> Project
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.67%" />
+<col style="width:91.33%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d66550e339">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d66550e344">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e339 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e344 ">
+<p class="p">
+Open <span class="ph">EcoStruxure Automation Expert</span>, then create a new solution or select an existing solution.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e339 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e344 ">
+<p class="p">
+Right-click the Solution name in the explorer to open the context menu.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e339 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e344 ">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Engineering Hub Server Configuration</span></span>.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Engineering Hub Server Configuration</span> window opens.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e339 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e344 ">
+<p class="p">
+Click <span class="ph uicontrol">AVEVA Project</span> and select the appropriate <span class="ph">AVEVA</span> project from the list for extraction.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e339 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e344 ">
+<p class="p">
+If authentication is enabled for the project, <a class="xref" href="#ConfigureConnectionToAVEVAAISServer-03F83D7C__EnteringTheProjectUserNameForWindow-1DBDED0D">enter the Project User name</a> that will be recognized by the Active Directory configuration.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e339 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e344 ">
+<p class="p">
+Click <span class="ph uicontrol">Save</span> to save the configuration.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="ConfigureConnectionToAVEVAAISServer-03F83D7C__EnteringTheProjectUserNameForWindow-1DBDED0D">
+<a name="EnteringTheProjectUserNameForWindow-1DBDED0D" id="EnteringTheProjectUserNameForWindow-1DBDED0D">
+<!-- --></a><a name="ConfigureConnectionToAVEVAAISServer_03F83D7C__EnteringTheProjectUserNameForWindow_1DBDED0D" id="ConfigureConnectionToAVEVAAISServer_03F83D7C__EnteringTheProjectUserNameForWindow_1DBDED0D">
+<!-- --></a><a name="EnteringTheProjectUserNameForWindow_1DBDED0D" id="EnteringTheProjectUserNameForWindow_1DBDED0D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Enter the Project User Name for <span class="ph">Windows</span> Active Directory Authentication
+</h2>
+<div class="div">
+<p class="p">
+To find the <span class="ph uicontrol">Project User</span> name to use for <span class="ph">Windows</span> Active Directory Authentication, follow these steps:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.67%" />
+<col style="width:91.33%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d66550e478">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d66550e483">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e478 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e483 ">
+<p class="p">
+Open the <span class="ph uicontrol">AVEVA Integration Settings Editor</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e478 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e483 ">
+<p class="p">
+In the <span class="ph uicontrol">Integration Settings Editor</span>, select the desired version of <span class="ph">AVEVA</span> Engineering (<span class="ph">AVEVA</span> Engineering version...) and from the list of projects, select the <span class="ph">AVEVA</span> project.
+</p>
+<p class="p">
+If the <span class="ph uicontrol">Authentication</span> column is set to <span class="ph uicontrol">User</span>, this project applies <span class="ph">Windows</span> Active Directory authentication.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e478 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e483 ">
+<p class="p">
+In <span class="ph">AVEVA</span> Engineering, select <span class="ph menucascade"><span class="ph uicontrol">AD Configuration</span></span> in the left menu. A list of user names shows.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e478 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e483 ">
+<p class="p">
+Select the user who you want to edit the <span class="ph">AVEVA</span> project, then click <span class="ph uicontrol">Modify..</span>. to open the <span class="ph uicontrol">Active Directory User Modification dialog</span>.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Authenticated Users</span> section displays a list of authorized names for the user.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e478 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e483 ">
+<p class="p">
+From the <span class="ph uicontrol">Name</span> column, copy the role name of the selected user.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d66550e478 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d66550e483 ">
+<p class="p">
+In the <span class="ph uicontrol">Engineering Hub Server Configuration</span> dialog, in the<span class="ph uicontrol"> Project User</span> field, enter the role name for the selected user (which you copied in step 5).
+</p>
+<p class="p">
+<strong class="ph b">Result</strong>: If the user is logged into <span class="ph">Windows</span> Active Directory, <span class="ph">AVEVA</span> will authenticate the user, who can proceed to configure the <span class="ph">AVEVA</span> project.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

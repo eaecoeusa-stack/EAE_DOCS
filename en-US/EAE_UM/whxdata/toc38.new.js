@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"IO-Device Data Item Limitations","type":"item","url":"EAE_UM/IO-DeviceDataItemLimitations-F6E5BB0F.html"},{"name":"IO-Device Data Item Validation","type":"item","url":"EAE_UM/IO-DeviceDataItemValidation-F6E7C843.html"},{"name":"Changing the I-Device Role","type":"item","url":"EAE_UM/ChangingTheIO-DeviceRole-F6E99528.html"},{"name":"Updating the Hardware Configuration","type":"item","url":"EAE_UM/UpdatingTheHardwareConfiguration-F6E9CAB1.html"},{"name":"Export a GSDML File","type":"item","url":"EAE_UM/ExportAGSDMLFile-F6EA0689.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

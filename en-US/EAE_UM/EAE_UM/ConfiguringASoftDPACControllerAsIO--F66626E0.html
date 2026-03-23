@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Configuring a Soft dPAC Controller as I-Device" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfiguringASoftDPACControllerAsIO--F66626E0" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Configuring a Soft dPAC Controller as I-Device
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.5.2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/AddPROFINETNetworkCyclicDataAsSymbo-D58F3D1D.html" />
+<meta name="brsnext" value="EAE_UM/IO-DeviceDataItemLimitations-F6E5BB0F.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; PROFINET" />
+</head>
+<body id="ConfiguringASoftDPACControllerAsIO--F66626E0"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"PROFINET-D50A0A36.html#PROFINET-D50A0A36\">PROFINET<\/a> > Configuring a Soft dPAC Controller as I-Device<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfiguringASoftDPACControllerAsIO--F66626E0" id="ConfiguringASoftDPACControllerAsIO--F66626E0_">
+<!-- --></a><a name="ConfiguringASoftDPACControllerAsIO__F66626E0" id="ConfiguringASoftDPACControllerAsIO__F66626E0">
+<!-- --></a><a name="ConfiguringASoftDPACControllerAsIO__F66626E0" id="ConfiguringASoftDPACControllerAsIO__F66626E0_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Configuring a Soft dPAC Controller as I-Device
+</h1>
+<div class="body conbody">
+
+<div class="section" id="ConfiguringASoftDPACControllerAsIO--F66626E0__Procedure-F6E54740">
+<a name="Procedure-F6E54740" id="Procedure-F6E54740">
+<!-- --></a><a name="ConfiguringASoftDPACControllerAsIO__F66626E0__Procedure_F6E54740" id="ConfiguringASoftDPACControllerAsIO__F66626E0__Procedure_F6E54740">
+<!-- --></a><a name="Procedure_F6E54740" id="Procedure_F6E54740">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Procedure
+</h2>
+<p class="p">
+After you <a class="xref" href="AddAPROFINETIOControllerToYourProje-D51103F4.html">add a Standard.IoProfinet.PN_IOController node to your Hardware Configuration</a>, you can configure your Soft dPAC I-Device.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> As an I-Device, the Soft dPAC can be configured as an IO-Controller, an IO-Device, or both an IO-Device and an IO-Controller.
+</div>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Hardware Configuration</span> editor, right click the Standard.IoProfinet.PN_IOController node and select <span class="ph uicontrol">Configure</span>.
+</p>
+</li>
+<li class="li">
+<div class="p">
+Select a <span class="ph uicontrol">Role</span> for the device:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IO Controller:</span> Only an IO-Controller can be configured. The IO Device configuration option, available using the <span class="ph uicontrol">Advanced…</span> command, is disabled.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IO Device</span>: Only an IO-Device can be configured. The <span class="ph uicontrol">Advanced…</span> command (for device configuration) is enabled; the <span class="ph uicontrol">Available Devices</span> catalog (for IO-Controller configuration) is disabled.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IO Controller and IO Device</span>: Both an IO-Device and an IO-Controller can be configured. Both the <span class="ph uicontrol">Advanced…</span> command and the <span class="ph uicontrol">Available Devices</span> catalog are enabled.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The following instructions describe how to configure a Soft dPAC as only an IO-Device or as both an IO-Controller and an IO-Device.
+<p class="p">
+For instructions on how to configure the Soft dPAC as only an IO-Controller, refer to the instructions for <a class="xref" href="PROFINETIOConfigurator-D580871C.html">Configuring a PROFINET IO-Controller</a>.
+</p>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Changing a previously configured device <span class="ph uicontrol">Role</span> can change other device settings. For more information, refer to the topic <a class="xref" href="ChangingTheIO-DeviceRole-F6E99528.html">Changing the I-Device Role</a>.
+</div>
+</div>
+</li>
+<li class="li">
+<p class="p">
+To configure the Soft dPAC as IO-Device, click <span class="ph uicontrol">Advanced…</span>. The <span class="ph menucascade"><span class="ph uicontrol">Network Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Advanced Configuration</span></span> page opens. Use this page to configure IO-Device properties and IO data items.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure the following properties:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Maximum Connections</span>: Input the maximum number of Application Relation (AR) connections supported by the IO-Device. If the value is 2 or greater, the IO-Device will support <em class="ph i">Shared Device</em> and <em class="ph i">Shared Input</em>.
+</p>
+</li>
+<li class="li">
+<div class="p">
+<span class="ph uicontrol">Allow parameter assignment of PROFINET interface by higher level controller</span>: The PROFINET interface of an IO-Device can be assigned parameters only from the higher-level IO-Controller or from the IO-Device itself. If this item is:
+<ul class="ul">
+<li class="li">
+<p class="p">
+Selected: Configuration of the PROFINET interface and its ports is performed by the higher-level IO-Controller.
+</p>
+</li>
+<li class="li">
+<p class="p">
+De-selected (cleared): Configuration is performed at the IO-Device.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> This option is enabled only when the selected role is <span class="ph uicontrol">IO Device</span>. This option is disabled and cleared when the selected role is <span class="ph uicontrol">IO Controller and IO Device</span> because, when the controller is running, parameterization from an external controller is not permitted.
+</div>
+</div>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Address Assignment</span>: Indicates how the device IP address is set:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">LOCAL</span>: Assigned at the IO-Device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">DCP</span>: Assigned using a DCP Set command from a remote controller.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> DCP option is available only if <span class="ph uicontrol">Allow parameter assignment of PROFINET interface by higher level controller</span> is selected.
+</div>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When you select the option <span class="ph uicontrol">Allow parameter assignment of PROFINET interface by higher level controller</span> or set <span class="ph uicontrol">Address Assignment</span> to <span class="ph uicontrol">DCP</span>, a cybersecurity message is displayed stating:<br /><em class="ph i">You are enabling advanced features that may expose the device to increased cybersecurity risks. Ensure these changes are necessary and that your network is properly secured.</em><br />Click <span class="ph uicontrol">OK</span> to close the message, then take any necessary cybersecurity precautionary actions.
+</div>
+</li>
+</ul>
+</li>
+<li class="li">
+<div class="p">
+Configure IO data items. For IO-Device configuration, at least one IO data item is required.
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, the <span class="ph uicontrol">IO Data Configuration</span> grid (at the bottom of the <span class="ph uicontrol">Advanced Configuration</span> page) is populated with one data item.
+</div>
+</div>
+<ol class="ol" type="a">
+<li class="li">
+<div class="p">
+To add a data item, click <span class="ph uicontrol">Add DataItem</span>. A new data item is added to the grid. Each data item presents the following attributes:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">DataItem Name</span>: Read Only assigned name of the data item.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">DataItem Type</span>: Select the IO type: <span class="ph uicontrol">Input</span> or <span class="ph uicontrol">Output</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Direction</span>: Read Only automatically assigned target direction of the IO data item, based on the selected <span class="ph uicontrol">DataItem Type</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">DataItem Length</span>: Input the data item length in bytes. Value range = 1 to 1024 bytes.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">SymLink</span>: The symbolic link name for this data item. The PROFINET configurator suggests a default symlink name, which you can accept or edit.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="li">
+<p class="p">
+To delete a data item, click the delete icon ( <img class="image" src="DD01326741.png" alt="" style="max-height:0.225in;" /> ) at the right of the data item.
+</p>
+</li>
+<li class="li">
+<div class="p">
+To save the new or edited IO-Device configuration, including the new data items:
+<ol class="ol" type="i">
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Update and Close</span> in the <span class="ph uicontrol">Network Configuration</span> main page.
+</p>
+</li>
+<li class="li">
+<p class="p">
+When prompted to Update and Close, select <span class="ph uicontrol">Yes</span> to save and close the configuration.
+</p>
+</li>
+</ol>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Alternatively, if you select <span class="ph uicontrol">No</span> the unsaved configuration remains open. Then you can click <span class="ph uicontrol">Cancel</span> in the <span class="ph uicontrol">Network Configuration</span> main page to close the configuration without saving your edits.
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

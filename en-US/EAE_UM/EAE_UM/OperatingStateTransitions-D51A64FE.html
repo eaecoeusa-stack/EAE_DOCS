@@ -1,0 +1,1484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Typical Operating State Workflows" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="OperatingStateTransitions-D51A64FE" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Typical Operating State Workflows
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.8.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/OtherActionMenuCommands-0D58A3CC.html" />
+<meta name="brsnext" value="EAE_UM/ForcedVariablesImpactOnActionComman-D5199FAF.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Operating States" />
+</head>
+<body id="OperatingStateTransitions-D51A64FE"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"OperatingStates-D388BB10.html#OperatingStates-D388BB10\">Operating States<\/a> > Typical Operating State Workflows<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="OperatingStateTransitions-D51A64FE" id="OperatingStateTransitions-D51A64FE_">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE" id="OperatingStateTransitions_D51A64FE">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE" id="OperatingStateTransitions_D51A64FE_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Typical Operating State Workflows
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+The following diagrams illustrate typical workflows and operating state transitions supported by dPACs:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+How to read the workflows
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OperatingStateTransitions-D51A64FE__CleanState-D5D608F9">Workflow from Clean state</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OperatingStateTransitions-D51A64FE__StoppedState-D5D60B31">Workflow from Stopped state</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OperatingStateTransitions-D51A64FE__RunningState-D5D60DA4">Workflow from Running state</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OperatingStateTransitions-D51A64FE__ErrorHaltState-E027F531">Workflow from Error Halt state</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OperatingStateTransitions-D51A64FE__PowerCycle-D5D60636">Workflow from Power Cycle</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#OperatingStateTransitions-D51A64FE__CommandInitialStateWorkflowAndResul-0DBE9023">Command, current state, workflow, and resulting state Synthesis</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+How to Read the Workflow Diagrams
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:33.02%" />
+<col style="width:66.98%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d754510e118">
+<p class="p">
+Graphical representation
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e123">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773087.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+Operating state of a dPAC
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773086.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+Command that can be triggered from within <span class="ph">EcoStruxure Automation Expert - Buildtime</span>e
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773085.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+For devices that include a physical STOP switch, the device enters the <strong class="ph b">Running</strong> state only if the switch is set to the OFF position. If the switch is set to ON, the device enters the <strong class="ph b">Stopped</strong> state.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773084.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+Describes an internal process that occurs automatically.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773083.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+Decision switch with several output options.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773082.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+Decision switch with two outputs.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e118 ">
+<div class="fig fignone">
+<img class="image" src="0000773081.png" alt="" />
+</div>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e123 ">
+<p class="p">
+Link between diagram items showing the logic flow.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="OperatingStateTransitions-D51A64FE__CleanState-D5D608F9">
+<a name="CleanState-D5D608F9" id="CleanState-D5D608F9">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE__CleanState_D5D608F9" id="OperatingStateTransitions_D51A64FE__CleanState_D5D608F9">
+<!-- --></a><a name="CleanState_D5D608F9" id="CleanState_D5D608F9">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Workflow from Clean State
+</h2>
+<div class="fig fignone">
+<img class="image" src="0000869122.png" alt="" style="max-height:6in;" />
+</div>
+</div>
+<div class="section" id="OperatingStateTransitions-D51A64FE__StoppedState-D5D60B31">
+<a name="StoppedState-D5D60B31" id="StoppedState-D5D60B31">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE__StoppedState_D5D60B31" id="OperatingStateTransitions_D51A64FE__StoppedState_D5D60B31">
+<!-- --></a><a name="StoppedState_D5D60B31" id="StoppedState_D5D60B31">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Workflow from Stopped State
+</h2>
+<div class="fig fignone">
+<img class="image" src="0000869121.png" alt="" style="max-height:6in;" />
+</div>
+<ol class="ol">
+<li class="li">
+<p class="p">
+The <a class="xref" href="ActionCommandsImpactOnOperatingStat-D5181A41.html#ActionCommandsImpactOnOperatingStat-D5181A41__Run-D51B2D1E"><span class="ph uicontrol">Run</span> command</a> executes only after a full deploy.
+</p>
+</li>
+<li class="li">
+<p class="p">
+After a <span class="ph uicontrol">Restart Runtime</span> command, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings</span></span> <span class="keyword parmname">Auto start after deploy</span> setting (true, false).
+</p>
+</li>
+<li class="li">
+<p class="p">
+After a <span class="ph uicontrol">Reboot Device</span> command, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Boot &gt;</span></span> <span class="keyword parmname">Behavior on reboot</span> parameter setting: <strong class="ph b">Run</strong>, <strong class="ph b">Stop</strong>, <strong class="ph b">LastState</strong>, or <strong class="ph b">LastStateIgnoreErr</strong>.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For devices that include a physical STOP switch, the device enters the <strong class="ph b">Running</strong> state only if the switch is set to the OFF position. If the switch is set to ON, the device enters the <strong class="ph b">Stopped</strong> state.
+</div>
+</div>
+<div class="section" id="OperatingStateTransitions-D51A64FE__RunningState-D5D60DA4">
+<a name="RunningState-D5D60DA4" id="RunningState-D5D60DA4">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE__RunningState_D5D60DA4" id="OperatingStateTransitions_D51A64FE__RunningState_D5D60DA4">
+<!-- --></a><a name="RunningState_D5D60DA4" id="RunningState_D5D60DA4">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Workflow from Running State
+</h2>
+<div class="fig fignone">
+<img class="image" src="0000869120.png" alt="" style="max-height:6in;" />
+</div>
+<ol class="ol">
+<li class="li">
+<p class="p">
+On execution of the <a class="xref" href="ActionCommandsImpactOnOperatingStat-D5181A41.html#ActionCommandsImpactOnOperatingStat-D5181A41__RestartRuntime-D51B2A94"><span class="ph uicontrol">Restart Runtime</span></a> and <a class="xref" href="ActionCommandsImpactOnOperatingStat-D5181A41.html#ActionCommandsImpactOnOperatingStat-D5181A41__RebootDevice-D51B284F"><span class="ph uicontrol">Reboot Device</span></a> commands, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Boot &gt;</span></span> <span class="keyword parmname">Behavior on reboot</span> parameter setting: <strong class="ph b">Run</strong>, <strong class="ph b">Stop</strong>, <strong class="ph b">LastState</strong>, or <strong class="ph b">LastStateIgnoreErr</strong>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="OperatingStateTransitions-D51A64FE__ErrorHaltState-E027F531">
+<a name="ErrorHaltState-E027F531" id="ErrorHaltState-E027F531">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE__ErrorHaltState_E027F531" id="OperatingStateTransitions_D51A64FE__ErrorHaltState_E027F531">
+<!-- --></a><a name="ErrorHaltState_E027F531" id="ErrorHaltState_E027F531">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Workflow from Error Halt State
+</h2>
+<div class="fig fignone">
+<span class="figcap"><span class="ph menucascade"><span class="ph uicontrol">Behavior on Reboot</span></span> set to <span class="ph menucascade"><span class="ph uicontrol">Run</span></span> or <span class="ph menucascade"><span class="ph uicontrol">Stop</span></span>:</span> <img class="image" src="0000869119.png" alt="" style="max-height:6.5in;" />
+</div>
+<div class="fig fignone">
+<span class="figcap"><span class="ph menucascade"><span class="ph uicontrol">Behavior on Reboot</span></span> set to <span class="ph menucascade"><span class="ph uicontrol">LastState</span></span>:</span> <img class="image" src="0000869118.png" alt="" style="max-height:6.5in;" />
+</div>
+<div class="fig fignone">
+<span class="figcap"><span class="ph menucascade"><span class="ph uicontrol">Behavior on Reboot</span></span> set to <span class="ph menucascade"><span class="ph uicontrol">LastStateIgnoreErr</span></span>:</span> <img class="image" src="0000869117.png" alt="" style="max-height:6.75in;" />
+</div>
+<ol class="ol">
+<li class="li">
+<p class="p">
+After a <span class="ph uicontrol">Restart Runtime</span> command, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings</span></span> <span class="keyword parmname">Auto start after deploy</span> setting (true, false).
+</p>
+</li>
+<li class="li">
+<p class="p">
+After a <a class="xref" href="ActionCommandsImpactOnOperatingStat-D5181A41.html#ActionCommandsImpactOnOperatingStat-D5181A41__RebootDevice-D51B284F"><span class="ph uicontrol">Reboot Device</span></a> command, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Boot &gt;</span></span> <span class="keyword parmname">Behavior on reboot</span> parameter setting: <strong class="ph b">Run</strong>, <strong class="ph b">Stop</strong>, <strong class="ph b">LastState</strong>, or <strong class="ph b">LastStateIgnoreErr</strong>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="OperatingStateTransitions-D51A64FE__PowerCycle-D5D60636">
+<a name="PowerCycle-D5D60636" id="PowerCycle-D5D60636">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE__PowerCycle_D5D60636" id="OperatingStateTransitions_D51A64FE__PowerCycle_D5D60636">
+<!-- --></a><a name="PowerCycle_D5D60636" id="PowerCycle_D5D60636">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Workflow from Power Cycle
+</h2>
+<div class="fig fignone">
+<span class="figcap"><span class="ph menucascade"><span class="ph uicontrol">Behavior on Reboot</span></span> set to <span class="ph menucascade"><span class="ph uicontrol">Run</span></span> or <span class="ph menucascade"><span class="ph uicontrol">Stop</span></span>:</span> <img class="image" src="0000869116.png" alt="" />
+</div>
+<div class="fig fignone">
+<span class="figcap"><span class="ph menucascade"><span class="ph uicontrol">Behavior on Reboot</span></span> set to <span class="ph menucascade"><span class="ph uicontrol">LastState</span></span>:</span> <img class="image" src="0000869115.png" alt="" style="max-height:6in;" />
+</div>
+<div class="fig fignone">
+<span class="figcap"><span class="ph menucascade"><span class="ph uicontrol">Behavior on Reboot</span></span> set to <span class="ph menucascade"><span class="ph uicontrol">LastStateIgnoreErr</span></span>:</span> <img class="image" src="0000869114.png" alt="" style="max-height:6.5in;" />
+</div>
+<ol class="ol">
+<li class="li">
+<p class="p">
+After a <span class="ph uicontrol">Restart Runtime</span> command, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy Settings</span></span> <span class="keyword parmname">Auto start after deploy</span> setting (true, false).
+</p>
+</li>
+<li class="li">
+<p class="p">
+After a <a class="xref" href="ActionCommandsImpactOnOperatingStat-D5181A41.html#ActionCommandsImpactOnOperatingStat-D5181A41__RebootDevice-D51B284F"><span class="ph uicontrol">Reboot Device</span></a> command, the state of the device is determined by the <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Boot &gt;</span></span> <span class="keyword parmname">Behavior on reboot</span> parameter setting: <strong class="ph b">Run</strong>, <strong class="ph b">Stop</strong>, <strong class="ph b">LastState</strong>, or <strong class="ph b">LastStateIgnoreErr</strong>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="OperatingStateTransitions-D51A64FE__CommandInitialStateWorkflowAndResul-0DBE9023">
+<a name="CommandInitialStateWorkflowAndResul-0DBE9023" id="CommandInitialStateWorkflowAndResul-0DBE9023">
+<!-- --></a><a name="OperatingStateTransitions_D51A64FE__CommandInitialStateWorkflowAndResul_0DBE9023" id="OperatingStateTransitions_D51A64FE__CommandInitialStateWorkflowAndResul_0DBE9023">
+<!-- --></a><a name="CommandInitialStateWorkflowAndResul_0DBE9023" id="CommandInitialStateWorkflowAndResul_0DBE9023">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Command, Current State, Workflow, and Resulting State Synthesis
+</h2>
+<p class="p">
+The synthesis of workflows between current and resulting states are as follows:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:10.3%" />
+<col style="width:13.54%" />
+<col style="width:19.31%" />
+<col style="width:25.72%" />
+<col style="width:17.59%" />
+<col style="width:13.54%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d754510e612">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e617">
+<p class="p">
+Current State
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e622">
+<p class="p">
+Boot Project
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e627">
+<p class="p">
+Behavior After Reboot
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e632">
+<p class="p">
+Physical STOP switch
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e638">
+<p class="p">
+Resulting State
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="42" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e612 ">
+<p class="p">
+<strong class="ph b">Power Cycle</strong>
+</p>
+<p class="p">
+<strong class="ph b">Reboot Device</strong>
+</p>
+<p class="p">
+<strong class="ph b">Restart Runtime</strong>
+</p>
+</td>
+<td class="entry" rowspan="8" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e617 ">
+<p class="p">
+<strong class="ph b">CLEAN</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e622 ">
+<p class="p">
+No Coherent Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Invalid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+ERROR HALT
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="6" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Valid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Run
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+RUNNING
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Stop
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Last (CLEAN)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+LastIgnoreError (CLEAN)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="12" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e617 ">
+<p class="p">
+<strong class="ph b">RUNNING</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e622 ">
+<p class="p">
+No Coherent Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Invalid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+ERROR HALT
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="10" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Valid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Run
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Stop
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Last (RUNNING)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+LastIgnoreError (RUNNING)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="8" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e617 ">
+<p class="p">
+<strong class="ph b">STOPPED</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e622 ">
+<p class="p">
+No Coherent Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Invalid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+ERROR HALT
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="6" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Valid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Run
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Stop
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Last (STOPPED)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+LastIgnoreError (STOPPED)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="14" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e617 ">
+<p class="p">
+<strong class="ph b">ERRORHALT</strong>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e622 ">
+<p class="p">
+No Coherent Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Invalid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+ERROR HALT
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="10" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 ">
+<p class="p">
+Valid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Run
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Stop
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Last (ERRORHALT from CLEAN state) <span class="ph color-blue">(1)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+Last (ERRORHALT from RUNNING state) <span class="ph color-blue">(2)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+LastIgnoreError (ERRORHALT from CLEAN state) <span class="ph color-blue">(1)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e627 ">
+<p class="p">
+LastIgnoreError (ERRORHALT from RUNNING state) <span class="ph color-blue">(2)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e632 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e638 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="4" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 d754510e627 d754510e632 d754510e638 ">
+<p class="p">
+<span class="ph color-blue">(1) ERRORHALT state is triggered from a project parsing detected error</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="4" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e622 d754510e627 d754510e632 d754510e638 ">
+<p class="p">
+<span class="ph color-blue">(2) ERRORHALT state triggered from a project execution detected error</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:16.938306169383065%" />
+<col style="width:9.16908309169083%" />
+<col style="width:19.358064193580642%" />
+<col style="width:21.05789421057894%" />
+<col style="width:17.758224177582242%" />
+<col style="width:15.718428157184281%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d754510e1419">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1424">
+<p class="p">
+Current State
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1429">
+<p class="p">
+Boot Project
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1434">
+<p class="p">
+Auto Start After Deploy
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1439">
+<p class="p">
+Physical STOP switch
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1445">
+<p class="p">
+Resulting State
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="6" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1419 ">
+<p class="p">
+Load Boot Project
+</p>
+</td>
+<td class="entry" rowspan="6" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1424 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1429 ">
+<p class="p">
+No Coherent Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1434 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1439 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1445 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1429 ">
+<p class="p">
+Invalid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1434 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1439 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1445 ">
+<p class="p">
+ERROR HALT
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="4" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1429 ">
+<p class="p">
+Valid Boot Project
+</p>
+</td>
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1434 ">
+<p class="p">
+Run
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1439 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1445 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1439 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1445 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1439 ">
+<p class="p">
+<span class="ph color-red">STOP switch ON</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1445 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1434 ">
+<p class="p">
+Stop
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1439 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1445 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:16.301630163016302%" />
+<col style="width:9.610961096109609%" />
+<col style="width:19.2019201920192%" />
+<col style="width:21.95219521952195%" />
+<col style="width:17.84178417841784%" />
+<col style="width:15.091509150915089%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d754510e1593">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1598">
+<p class="p">
+Current State
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1603">
+<p class="p">
+Compiled Project
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1608">
+<p class="p">
+Auto Start After Deploy
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1613">
+<p class="p">
+Physical STOP switch
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d754510e1619">
+<p class="p">
+Resulting State
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="5" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1593 ">
+<p class="p">
+Deploy (Full)
+</p>
+</td>
+<td class="entry" rowspan="5" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1598 ">
+<p class="p">
+CLEAN
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1603 ">
+<p class="p">
+Invalid Compiled project
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1608 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1613 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1619 ">
+<p class="p">
+ERROR HALT
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="4" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1603 ">
+<p class="p">
+Valid Compiled project
+</p>
+</td>
+<td class="entry" rowspan="3" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1608 ">
+<p class="p">
+Run
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1613 ">
+<p class="p">
+<u class="ph u">No</u> STOP switch
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1619 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1613 ">
+<p class="p">
+STOP switch OFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1619 ">
+<p class="p">
+<span class="ph color-green">RUNNING</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1613 ">
+<p class="p">
+STOP switch ON
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1619 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d754510e1608 ">
+<p class="p">
+Stop
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1613 ">
+<p class="p">
+<span class="ph color-light-grey">(not relevant)</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d754510e1619 ">
+<p class="p">
+<span class="ph color-red">STOPPED</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

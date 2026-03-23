@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc11.js\"  name=\"Adapter Function Block\" url=\"EAE_UM/AdapterFunctionBlock-97C3E0D8.html#AdapterFunctionBlock-97C3E0D8\"><item name=\"Finding Connected Plug and Socket\" url=\"EAE_UM/FindingConnectedPlugSocket-DA2DD870.html#FindingConnectedPlugSocket-DA2DD870\" /></data>";

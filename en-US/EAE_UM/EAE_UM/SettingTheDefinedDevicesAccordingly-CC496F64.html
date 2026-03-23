@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Setting the Configured Devices Accordingly to the Discovered Devices" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SettingTheDefinedDevicesAccordingly-CC496F64" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Setting the Configured Devices Accordingly to the Discovered Devices
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.1.2.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/SecureTheDevices-CC4AA5CF.html" />
+<meta name="brsnext" value="EAE_UM/AddingRealDevicesToThePhysicalArchi-CC49F800.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor &gt; Physical Devices Editor &gt; Commissioning the Physical Architecture" />
+</head>
+<body id="SettingTheDefinedDevicesAccordingly-CC496F64"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > <a href=\"PhysicalTopologyEditor-A00503A9.html#PhysicalTopologyEditor-A00503A9\">Physical Devices Editor<\/a> > <a href=\"PhysicalTopologyEditor-Commissionin-A0476701.html#PhysicalTopologyEditor-Commissionin-A0476701\">Commissioning the Physical Architecture<\/a> > Setting the Configured Devices Accordingly to the Discovered Devices<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SettingTheDefinedDevicesAccordingly-CC496F64" id="SettingTheDefinedDevicesAccordingly-CC496F64_">
+<!-- --></a><a name="SettingTheDefinedDevicesAccordingly_CC496F64" id="SettingTheDefinedDevicesAccordingly_CC496F64">
+<!-- --></a><a name="SettingTheDefinedDevicesAccordingly_CC496F64" id="SettingTheDefinedDevicesAccordingly_CC496F64_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Setting the Configured Devices Accordingly to the Discovered Devices
+</h1>
+<div class="body conbody">
+
+<p class="p">
+To set the <a class="xref" href="PhysicalTopologyEditor-Designing-A0062A4C.html">previously configured devices</a> accordingly to the discovered devices, perform the following actions:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<a class="xref" href="#SettingTheDefinedDevicesAccordingly-CC496F64__DetectingDifferencesBetweenDiscover-CC497C00">Detecting Differences Between Discovered and Configured Devices</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#SettingTheDefinedDevicesAccordingly-CC496F64__IdentifyingAConnectedDevice-CC497F5A">Identifying a Discovered Device</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#SettingTheDefinedDevicesAccordingly-CC496F64__AssigningTheCorrectDeviceSettingsTo-CC498199">Assigning the Correct device settings to a Discovered Device</a>.
+</p>
+</li>
+</ol>
+<div class="section" id="SettingTheDefinedDevicesAccordingly-CC496F64__DetectingDifferencesBetweenDiscover-CC497C00">
+<a name="DetectingDifferencesBetweenDiscover-CC497C00" id="DetectingDifferencesBetweenDiscover-CC497C00">
+<!-- --></a><a name="SettingTheDefinedDevicesAccordingly_CC496F64__DetectingDifferencesBetweenDiscover_CC497C00" id="SettingTheDefinedDevicesAccordingly_CC496F64__DetectingDifferencesBetweenDiscover_CC497C00">
+<!-- --></a><a name="DetectingDifferencesBetweenDiscover_CC497C00" id="DetectingDifferencesBetweenDiscover_CC497C00">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Detecting Differences Between Discovered and Configured Devices
+</h2>
+<p class="p">
+After a device is discovered, its information is transmitted to the solution. Parameters are used to identify similarities and differences between a discovered device and a configured device in the <span class="ph uicontrol">Physical</span> view.
+</p>
+<p class="p">
+The following parameters are used to compare the discovered device and the configured ones:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Device type, represented by its aspect in the workspace.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Part Number</span> of the device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IP Address</span> displayed using the <img class="image" src="0000961085.png" alt="" style="max-height:12px;" /> icon.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Name</span> displayed using the <img class="image" src="0000961084.png" alt="" style="max-height:12px;" /> icon.
+</p>
+</li>
+</ul>
+<p class="p">
+Detecting device parameter differences is performed in the following sequence:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">IP Addresses</span>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+If no <span class="ph uicontrol">IP Address</span> of a discovered device matches the <span class="ph uicontrol">IP Address</span> of a configured device, the <span class="ph uicontrol">IP Address</span> of the discovered device is displayed in red and the comparison ends.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If the <span class="ph uicontrol">IP Address</span> of a discovered device matches the <span class="ph uicontrol">IP Address</span> of a configured device, the <span class="ph uicontrol">IP Address</span> is displayed in green in the <span class="ph uicontrol">Discovery</span> view and the comparison proceeds to the second step.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Device type and <span class="ph uicontrol">Part Number</span>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+If the device type and the <span class="ph uicontrol">Part Number</span> of matching devices are not the same, the device in the <span class="ph uicontrol">Physical</span> view is assigned the <a class="xref" href="PhysicalTopologyEditor-Monitoring-A049455C.html"><span class="keyword parmname">Device different</span></a> status.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If the device type and the <span class="ph uicontrol">Part Number</span> of the matching devices are the same, the configured device in the <span class="ph uicontrol">Physical</span> view conforms to the discovered device and the commissioning is complete.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> In both cases, the comparison moves to the third step.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Name</span>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+If the <span class="ph uicontrol">Name</span> of matching devices are the same, the <span class="ph uicontrol">Name</span> of the discovered device is displayed in green.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If the <span class="ph uicontrol">Name</span> of matching devices are not the same, then the <span class="ph uicontrol">Name</span> of the discovered device is displayed in red.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If the comparison stops because the <span class="ph uicontrol">IP Addresses</span> do not match, the <span class="ph uicontrol">Name</span> of the discovered device is displayed in black.
+</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="SettingTheDefinedDevicesAccordingly-CC496F64__IdentifyingAConnectedDevice-CC497F5A">
+<a name="IdentifyingAConnectedDevice-CC497F5A" id="IdentifyingAConnectedDevice-CC497F5A">
+<!-- --></a><a name="SettingTheDefinedDevicesAccordingly_CC496F64__IdentifyingAConnectedDevice_CC497F5A" id="SettingTheDefinedDevicesAccordingly_CC496F64__IdentifyingAConnectedDevice_CC497F5A">
+<!-- --></a><a name="IdentifyingAConnectedDevice_CC497F5A" id="IdentifyingAConnectedDevice_CC497F5A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Identifying a Discovered Device
+</h2>
+<p class="p">
+To get a detailed comparison of discovered and configured device parameters, use the <span class="ph uicontrol">Get identity</span> command.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You cannot use the <span class="ph uicontrol">Get identity</span> command to make changes.
+</div>
+<div class="p">
+This command can be invoked from the:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Discovery</span> view on any discovered device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Physical Devices</span> view if <span class="ph uicontrol">Monitoring</span> is started and if a configured device has an IP address that matches the IP address of a discovered device. When invoking the command, user credentials are requested.
+</p>
+</li>
+</ul>
+</div>
+<div class="div">
+<p class="p">
+To display identification information:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Right-click a device and select <span class="ph uicontrol">Get Identity</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Two sets of information are displayed:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Parameters corresponding to the configured device (<span class="ph uicontrol">In Project</span> column).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Parameters corresponding to discovered device (<span class="ph uicontrol">Connected</span> column).
+</p>
+</li>
+</ul>
+<p class="p">
+The information shown using the <span class="ph uicontrol">Get Identity</span> command depends on where the command is invoked. If invoked from the:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Physical</span> view, the left column corresponds to the device selected in the <span class="ph uicontrol">Physical</span> view and the right column corresponds to the discovered device with the same IP address.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Discovery</span> view, the right column corresponds to the device selected and the left column corresponds to the matching configured device. If the discovered device does not match a configured device, the <span class="ph uicontrol">In Project</span> column remains empty (- - -).
+</p>
+</li>
+</ul>
+</li>
+</ol>
+<img class="image" src="0000944793.png" width="500" alt="" />
+<p class="p">
+Legend:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Text in red indicates differences between the configured device (<span class="ph uicontrol">In Project</span>) and the discovered device (<span class="ph uicontrol">Connected</span>).
+</p>
+</li>
+<li class="li">
+<p class="p">
+A series of dashes (- - -) indicates that no information exists for this field.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The network interfaces. Devices like <span class="ph uicontrol">M251d</span> or <span class="ph uicontrol">M262d</span> have two interfaces, so two sets of parameters are displayed, one for each interface.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Refresh</span> button shows the latest information about the discovered and configured devices.
+</p>
+</li>
+</ol>
+</div>
+<p class="p">
+Use this information to confirm that the device in your project is properly configured. If not, because the information cannot be modified using the <span class="ph uicontrol">Get Identity</span> command, refer to the following section (Assigning the Correct device settings to a Connected Device).
+</p>
+</div>
+<div class="section" id="SettingTheDefinedDevicesAccordingly-CC496F64__AssigningTheCorrectDeviceSettingsTo-CC498199">
+<a name="AssigningTheCorrectDeviceSettingsTo-CC498199" id="AssigningTheCorrectDeviceSettingsTo-CC498199">
+<!-- --></a><a name="SettingTheDefinedDevicesAccordingly_CC496F64__AssigningTheCorrectDeviceSettingsTo_CC498199" id="SettingTheDefinedDevicesAccordingly_CC496F64__AssigningTheCorrectDeviceSettingsTo_CC498199">
+<!-- --></a><a name="AssigningTheCorrectDeviceSettingsTo_CC498199" id="AssigningTheCorrectDeviceSettingsTo_CC498199">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Assigning the Correct device settings to a Connected Device
+</h2>
+<p class="p">
+Now that all the devices parameter differences have been identified using the <span class="ph uicontrol">Get Identity</span> command, follow these actions to make the parameters match:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Select the configured device and modify manually the parameters in its <span class="ph uicontrol">Properties</span> tab, as detailed in the topic <a class="xref" href="ManagingNetworksAndDeviceIPAddresse-EA9E260E.html">Managing Networks and Device IP Addresses</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Use the <span class="ph uicontrol">Configure device settings</span> command to modify discovered device parameters.
+</p>
+</li>
+</ul>
+<p class="p">
+The <span class="ph uicontrol">Configure device settings</span> command can be invoked from the:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Physical</span> view: The IP address, the device type, and the <span class="ph uicontrol">Part Number</span> should match to enable this command.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Discovery</span> view: This command can be invoked at any time.
+</p>
+</li>
+</ul>
+<p class="p">
+In both cases, credentials are requested to invoke this command. Valid user name and password are determined as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+If this is a device with a pre-existing configuration, enter the user name and password previously created in the <strong class="ph b"><a class="xref" href="UserManagement-9C2999FB.html">User Management</a></strong> dialog.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If this is the first configuration of a new device (<a class="xref" href="UserManagement-9C2999FB.html#UserManagement-9C2999FB__Out-of-the-BoxUserNameAndPasswordCo-ADECB3C5">out-of-the-box</a>), or of a device with its configuration reset to the factory default settings, enter the default user name and password provided by the device manufacturer. After deployment of the device configuration, which includes the collection of valid users for the solution, use only the user name and password created in the <span class="ph uicontrol">User Management</span> dialog.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> After you first enter user credentials during a session, these credentials are stored in memory and automatically reused when a login is required. This avoids the need to repeatedly enter credentials during a session.
+</div>
+<p class="p">
+You can now edit the parameters of the discovered device to match its <strong class="ph b"><span class="ph">IPv4</span> Addresses</strong>. Click <span class="ph uicontrol">Apply</span> to save the modification.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Modifying the IP address of the discovered device causes a reboot of the discovered device to activate the new IP address. This action stops communication between the configured devices as their IP addresses no longer match.
+</div>
+<p class="p">
+The <span class="ph uicontrol">Configure device settings</span> command opens the following dialog:
+</p>
+<img class="image" src="0000961083.png" width="500" alt="" />
+<p class="p">
+Legend:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Information about the discovered device that can be edited: <span class="ph uicontrol">IPV4 Address</span>, <span class="ph uicontrol">IPV4 Subnet Mask</span> and <span class="ph uicontrol">IPV4 Gateway Address</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph uicontrol">Locate</span> button is used to activate a signal on the discovered device, as described in the topic <a class="xref" href="DiscoveringTheRealDevices-CC48876B.html#DiscoveringTheRealDevices-CC48876B__LocatePhysicallyTheDiscoveredDevice-CC48499F">Locating a Discovered Device</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Apply</span> to set the modification made on the discovered device parameters.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span class="ph">BMECRD0100</span>, <span class="ph">M251 dPAC</span>, <span class="ph">M262 dPAC</span>, <span class="ph">M580 dPAC</span>, <span class="ph">ATV dPAC</span>, and Altivar devices support this service. Other connected devices may not support it.
+</div>
+<p class="p">
+At this point, the devices are all set up according to the discovered devices.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

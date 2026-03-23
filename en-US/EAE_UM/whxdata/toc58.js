@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc53.js\"  name=\"Logical Devices Editor\" url=\"EAE_UM/LogicalDevices-A0877135.html#LogicalDevices-A0877135\"><item name=\"Editing a Logical Device Configuration\" url=\"EAE_UM/EditingALogicalDeviceConfiguration-088E8C87.html\" /></data>";

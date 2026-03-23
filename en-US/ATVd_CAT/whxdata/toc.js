@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"SE.IoATV - Library Guide\" url=\"ATVd_CAT/ATVd_CAT_D-SE-0105319.html\" src=\"toc1.js\" /></data>";

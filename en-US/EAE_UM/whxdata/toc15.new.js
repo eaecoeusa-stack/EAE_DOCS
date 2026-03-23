@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Create new solution and map your CAT instance","type":"item","url":"EAE_UM/CATInstanceMapping-42B224A7.html#CATInstanceMapping-42B224A7"},{"name":"Create ATV dPAC Display","type":"item","url":"EAE_UM/ConfiguringATVDPACDisplays-42AC23F4.html#ConfiguringATVDPACDisplays-42AC23F4"},{"name":"Templates categories","type":"item","url":"EAE_UM/ConceptTitle-42CE6C7A.html#ConceptTitle-42CE6C7A"},{"name":"Application example","type":"item","url":"EAE_UM/ApplicationExample-4D043E84.html#ApplicationExample-4D043E84"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

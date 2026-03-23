@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"1. Scope","type":"item","url":"EAE_UM/Scope-EB1D7790.html"},{"name":"2. Process Automation Function Blocks","type":"item","url":"EAE_UM/ProcessAutomationFunctionBlocks-EB1D901E.html"},{"name":"3. VTQ Data Structure","type":"item","url":"EAE_UM/VTQDataStructure-EB1DA86D.html"},{"name":"4. Supported Elementary Data Types","type":"item","url":"EAE_UM/SupportedElementaryDataTypes-EB1DC022.html"},{"name":"5. Syntax Example","type":"item","url":"EAE_UM/SyntaxExample-EB1DD748.html"},{"name":"6. Quality Definitions","type":"item","url":"EAE_UM/QualityDefinitions-EB1DF596.html"},{"name":"7. Implicit Data Type Conversions for Function Block Connections","type":"item","url":"EAE_UM/ImplicitDataTypeConversionsForFunct-EB1E0FEB.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

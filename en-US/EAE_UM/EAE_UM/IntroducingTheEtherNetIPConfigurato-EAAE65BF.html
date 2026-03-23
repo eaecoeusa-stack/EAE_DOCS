@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Introducing the EtherNet/IP Configurator" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="IntroducingTheEtherNetIPConfigurato-EAAE65BF" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Introducing the EtherNet/IP Configurator
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.2.1.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/OpenTheHardwareConfigurationEditor.-CBA6279A.html" />
+<meta name="brsnext" value="EAE_UM/ConfiguringTheEtherNetIPFieldbusSca-CBC1A736.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; EtherNet/IP Fieldbus Scanner &gt; Configuring the EIPSCANNER" />
+</head>
+<body id="IntroducingTheEtherNetIPConfigurato-EAAE65BF"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"EtherNetIPFieldbusScanner-A1D2F51C.html#EtherNetIPFieldbusScanner-A1D2F51C\">EtherNet/IP Fieldbus Scanner<\/a> > <a href=\"ProcessingTheEIPSCANNER-C8B10B8A.html\">Configuring the EIPSCANNER<\/a> > Introducing the EtherNet/IP Configurator<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="IntroducingTheEtherNetIPConfigurato-EAAE65BF" id="IntroducingTheEtherNetIPConfigurato-EAAE65BF_">
+<!-- --></a><a name="IntroducingTheEtherNetIPConfigurato_EAAE65BF" id="IntroducingTheEtherNetIPConfigurato_EAAE65BF">
+<!-- --></a><a name="IntroducingTheEtherNetIPConfigurato_EAAE65BF" id="IntroducingTheEtherNetIPConfigurato_EAAE65BF_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Introducing the EtherNet/IP Configurator
+</h1>
+<div class="body conbody">
+<div class="section" id="IntroducingTheEtherNetIPConfigurato-EAAE65BF__IntroducingTheEtherNetIPConfigurato-A6CFD4A6">
+<a name="IntroducingTheEtherNetIPConfigurato-A6CFD4A6" id="IntroducingTheEtherNetIPConfigurato-A6CFD4A6">
+<!-- --></a><a name="IntroducingTheEtherNetIPConfigurato_EAAE65BF__IntroducingTheEtherNetIPConfigurato_A6CFD4A6" id="IntroducingTheEtherNetIPConfigurato_EAAE65BF__IntroducingTheEtherNetIPConfigurato_A6CFD4A6">
+<!-- --></a><a name="IntroducingTheEtherNetIPConfigurato_A6CFD4A6" id="IntroducingTheEtherNetIPConfigurato_A6CFD4A6">
+<!-- --></a>
+<p class="p">
+Use the <span class="ph uicontrol">EtherNet/IP Configurator</span> to create and edit configurations for the EtherNet/IP scanner. Only the EtherNet/IP protocol can be configured using this tool. Launch the <span class="ph uicontrol">EtherNet/IP Configurator</span> from the <a class="xref" href="HardwareConfigurator-A18C4217.html"><span class="ph uicontrol">Hardware Configuration</span> editor</a>. When the EtherNet/IP configurator first opens, an EtherNet/IP scanner object is added by default.
+</p>
+<p class="p">
+The <span class="ph uicontrol">EtherNet/IP Configurator</span> contains the following areas:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:19.76%" />
+<col style="width:80.24%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d726658e87">
+<p class="p">
+Area
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d726658e92">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e87 ">
+<p class="p">
+<span class="ph uicontrol">Network View</span> pane
+</p>
+<p class="p">
+(located on the far left)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e92 ">
+<p class="p">
+In this pane you can:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Use the context menu commands to add, remove, and select EtherNet/IP devices as part of the EtherNet/IP configuration. The available context menu commands are described below.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Edit the names of the EtherNet/IP scanner and the EtherNet/IP devices to match the names used in <span class="ph">EcoStruxure Automation Expert</span>.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e87 ">
+<p class="p">
+Configurator toolbar
+</p>
+<p class="p">
+(header area)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e92 ">
+<p class="p">
+<img class="image" src="0000613593.png" alt="" style="max-height:15.5925pt;" />
+</p>
+<p class="p">
+The toolbar contains the following commands (left to right) for the EtherNet/IP configurator:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Save</span>: Saves your configuration edits, and asks if you also want to export the configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Close</span>: Closes the currently opened configuration, and asks if you want to save any unsaved changes.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Cut</span>: Removes the selected device from the <span class="ph uicontrol">Network View</span> pane.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Copy</span>: Copies the selected device configuration, which can then be used to create a new device object by pasting it into the <span class="ph uicontrol">Network View</span> pane.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Paste</span>: Creates a new device configuration by adding a copied device configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph menucascade"><span class="ph uicontrol">View</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Catalog</span></span>: Opens the catalog of available DTMs that can be added to the EtherNet/IP configuration. This command provides the same functionality as the EtherNet/IP scanner context menu <span class="ph uicontrol">Add</span> command.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e87 ">
+<p class="p">
+DTM configuration area
+</p>
+<p class="p">
+(located center and right)
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e92 ">
+<p class="p">
+This area contains DTM configuration tabs for the EtherNet/IP scanner and for EtherNet/IP devices that have been added to the configuration.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Use the <span class="ph uicontrol">Help</span> button to access information explaining how to use the DTM configuration tabs.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+<strong class="ph b">Network View Pane Context Menu Commands:</strong>
+</p>
+<p class="p">
+The <span class="ph uicontrol">Network View</span> pane offers commands relating only to the configuration of the EtherNet/IP scanner and the EtherNet/IP devices. Commands that relate to the operation of the solution or of individual devices that might appear in the context menus have been disabled. Only the enabled commands are described below:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:19.23%" />
+<col style="width:80.77%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d726658e236">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d726658e241">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e236 ">
+<p class="p">
+<span class="ph uicontrol">Add...</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e241 ">
+<p class="p">
+Opens the <span class="ph uicontrol">DTM Selector</span> dialog that you can use to add DTMs to the EtherNet/IP configuration.
+</p>
+<p class="p">
+When you select a device DTM and click <span class="ph uicontrol">Ok</span>, the selected device DTM is added in two places:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Network View</span> pane beneath the EtherNet/IP scanner.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the DTM configuration area <span class="ph uicontrol">Device List</span>.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When adding a new device DTM, replace the default name with a unique, meaningful name at the time it is created. The <span class="ph uicontrol">Network View</span> pane and the DTM configuration area <span class="ph uicontrol">Device List</span> do not always display device DTMs in the same order. As a result, if you decide to <span class="ph uicontrol">Remove</span> a device DTM – especially where multiple, similarly named device DTMs of the same type exist – you might unintentionally remove a device DTM other than the one intended.
+</div>
+<p class="p">
+This dialog includes a filtering function. You can perform a simple search by typing characters into the <em class="ph i">Search Catalog...</em> field and the dialog will display only devices with those characters in one of the fields (Device, Version, Date, Vendor). Simply delete your input characters to clear the filter and display all DTMs.
+</p>
+<p class="p">
+Or you can click on <span class="ph uicontrol">Advanced</span> to open additional search tools, that let you specify field-specific search criteria for one or more of these fields.
+</p>
+<p class="p">
+To add a search filter:
+</p>
+<ol class="ol">
+<li class="li">
+<div class="p">
+Select a field in the <span class="ph uicontrol">Device List</span>.
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span class="ph uicontrol">Device</span>, <span class="ph uicontrol">Version</span>, and <span class="ph uicontrol">Vendor</span> are available.
+</div>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Add Filter</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Type in a filtering value (for example, device or version), or select a filtering value from the list (for example, Vendor).
+</p>
+</li>
+<li class="li">
+<p class="p">
+The filter is immediately applied.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Clear All Filters</span> to end filtering.
+</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e236 ">
+<p class="p">
+<span class="ph uicontrol">Paste</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e241 ">
+<p class="p">
+Creates a new EtherNet/IP device with the same settings copied using the <span class="ph uicontrol">Copy</span> command for an EtherNet/IP device.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e236 ">
+<p class="p">
+<span class="ph uicontrol">Additional Functions</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e241 ">
+<p class="p">
+Contains a collection of commands that you can use to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Add and remove DTMs from the library.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Export the entire EtherNet/IP scanner configuration as a zip file.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Display information about the SoftdPAC DTM.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e236 ">
+<p class="p">
+<span class="ph uicontrol">Import</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e241 ">
+<p class="p">
+Used to select and import a previously exported EtherNet/IP device configuration xml file.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e236 ">
+<p class="p">
+<span class="ph uicontrol">Create PDF Report</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e241 ">
+<p class="p">
+Used to create a report in PDF format describing the EtherNet/IP configuration settings.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+EtherNet/IP device context menu commands include:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:19.16%" />
+<col style="width:80.84%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d726658e431">
+<p class="p">
+Command
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d726658e436">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Copy</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Copies the EtherNet/IP device configuration settings. Once copied, the EtherNet/IP scanner <span class="ph uicontrol">Paste</span> command can be used to create another device with the same settings.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Remove</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Deletes the selected EtherNet/IP device from the configuration.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Configuration</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Opens the selected device DTM as a tab in the DTM Configuration area.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Additional Functions</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Displays information about the selected device DTM.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Upload Parameters from device</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Copies the parameter settings from the device to the <span class="ph uicontrol">EtherNet/IP Configurator</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Download Parameters to device</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Copies the parameter settings from the <span class="ph uicontrol">EtherNet/IP Configurator</span> to the device.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d726658e431 ">
+<p class="p">
+<span class="ph uicontrol">Export</span>
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d726658e436 ">
+<p class="p">
+Exports the configuration settings of the selected EtherNet/IP device DTM in xml format. Once exported, the EtherNet/IP scanner context menu <span class="ph uicontrol">Paste</span> command can be used to create a new device with the same configuration settings.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

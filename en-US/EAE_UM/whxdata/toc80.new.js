@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Standard Functions","type":"item","url":"EAE_UM/StandardFunctions-A12CB963.html#StandardFunctions-A12CB963"},{"key":"toc81","name":"Time Functions","type":"book","url":"EAE_UM/TimeFunctions-A30A02B6.html#TimeFunctions-A30A02B6"},{"key":"toc82","name":"Data Type Conversion Functions","type":"book","url":"EAE_UM/DataTypeConversionFunctionsCPT-FAA3005E.html#DataTypeConversionFunctionsCPT-FAA3005E"},{"key":"toc83","name":"Value, Time, Quality Data Types","type":"book","url":"EAE_UM/ValueTimeQualityDataTypes-A30B2CD1.html#ValueTimeQualityDataTypes-A30B2CD1"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

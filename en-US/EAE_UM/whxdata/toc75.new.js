@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"SYSLOG Message Structure","type":"item","url":"EAE_UM/SYSLOGMessageStructure-7C5F56BB.html#SYSLOGMessageStructure-7C5F56BB"},{"name":"SYSLOG Facility Codes","type":"item","url":"EAE_UM/SYSLOGFacilityCodes-7C60A99F.html#SYSLOGFacilityCodes-7C60A99F"},{"name":"SYSLOG Message Severity Codes","type":"item","url":"EAE_UM/SYSLOGMessageSeverityCodes-7C60F01D.html#SYSLOGMessageSeverityCodes-7C60F01D"},{"name":"SYSLOG Message Triggering Events","type":"item","url":"EAE_UM/SYSLOGMessageTriggeringEvents-7C61BBDE.html#SYSLOGMessageTriggeringEvents-7C61BBDE"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

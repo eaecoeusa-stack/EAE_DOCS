@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc72.js\"  name=\"Configure SYSLOG\" url=\"EAE_UM/ConfigureSYSLOG-7C6442C2.html#ConfigureSYSLOG-7C6442C2\"><book name=\"SYSLOG\" url=\"EAE_UM/SYSLOG-7C5EC5FB.html#SYSLOG-7C5EC5FB\" src=\"toc75.js\" /></data>";

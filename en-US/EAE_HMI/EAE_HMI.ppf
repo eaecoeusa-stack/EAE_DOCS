@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="EAE_HMI" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="4" page="EAE_HMI\AboutTheBook-21B87A84.html">
+  </contextentry>
+  <contextentry id="5" page="EAE_HMI\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="3" page="EAE_HMI\D-TS-0002473_1.html">
+  </contextentry>
+  <contextentry id="2" page="EAE_HMI\D-TS-0002473_3.html">
+  </contextentry>
+  <contextentry id="1" page="EAE_HMI\D-TS-0002473_4.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="EAE_HMI\EAE_HMI_UserGuideEcoStruxureAutomationExper-21B815C7.html">
+  <topic>EAE_HMI\AboutTheBook-21B87A84.html
+  </topic>
+  <topic>EAE_HMI\CompletingTheInstallationInEcoStrux-3B0CD348.html
+  </topic>
+  <topic>EAE_HMI\D-NA-0003897.1.html
+  </topic>
+  <topic>EAE_HMI\D-TS-0002473_1.html
+  </topic>
+  <topic>EAE_HMI\D-TS-0002473_3.html
+  </topic>
+  <topic>EAE_HMI\D-TS-0002473_4.html
+  </topic>
+  <topic>EAE_HMI\EAE-InstallingOnHarmonyST6Devices-2133A526.html
+  </topic>
+  <topic>EAE_HMI\EAEt-HMIClient-9F6F9BD4.html
+  </topic>
+  <topic>EAE_HMI\EAE_HMI_id_address_tpc.html
+  </topic>
+  <topic>EAE_HMI\EAE_HMI_id_disclaimer_tpc.html
+  </topic>
+  <topic>EAE_HMI\EAE_HMI_UserGuideEcoStruxureAutomationExper-21B815C7.html
+  </topic>
+  <topic>EAE_HMI\EcoStruxureAutomationExpert-HMIDevi-9F7312C3.html
+  </topic>
+  <topic>EAE_HMI\EcoStruxureAutomationExpert-HMIServ-2972A63D.html
+  </topic>
+  <topic>EAE_HMI\HMIMessaging-10313AA4.html
+  </topic>
+  <topic>EAE_HMI\InstallationProcedure-3B0CAF44.html
+  </topic>
+  <topic>EAE_HMI\InstallEcoStruxureAutomationExpert--223644A0.html
+  </topic>
+  <topic>EAE_HMI\InstallEcoStruxureAutomationExpert--2237A4BD.html
+  </topic>
+  <topic>EAE_HMI\InstallHMIClient-2235B0D3.html
+  </topic>
+  <topic>EAE_HMI\IntroducingTheEcoStruxureAutomation-224A73DA.html
+  </topic>
+  <topic>EAE_HMI\LinuxUbuntuAndDebianSystemRequireme-15E0F9E3.html
+  </topic>
+  <topic>EAE_HMI\LocalTestRuntime-9F742988.html
+  </topic>
+  <topic>EAE_HMI\OperatingEcoStruxureAutomationExper-29723AF2.html
+  </topic>
+  <topic>EAE_HMI\SignatureVerification-3B0C6A04.html
+  </topic>
+  <topic>EAE_HMI\SupportedEquipment-223F05CD.html
+  </topic>
+  <topic>EAE_HMI\SystemRequirements-15DF9F05.html
+  </topic>
+  <topic>EAE_HMI\Troubleshooting-10335717.html
+  </topic>
+  <topic>EAE_HMI\UninstallEcoStruxureAutomationExper-3AFD635E.html
+  </topic>
+  <topic>EAE_HMI\UpgradeEcoStruxureAutomationExpert--3AFD2A48.html
+  </topic>
+  <topic>EAE_HMI\VTQDataTypes-10309BE4.html
+  </topic>
+  <topic>EAE_HMI\WindowsSystemRequirements-15E37A78.html
+  </topic>
+  <topic>EAE_HMI\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

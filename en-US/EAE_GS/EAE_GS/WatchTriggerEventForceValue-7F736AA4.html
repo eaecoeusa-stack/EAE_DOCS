@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Watch, Trigger Event and Force Value" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="WatchTriggerEventForceValue-7F736AA4" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Watch, Trigger Event and Force Value
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.5.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_GS/Setting-UptheCATtobeOnlineCPT-7F6D6701.html" />
+<meta name="brsnext" value="EAE_GS/GettheFillingSequenceStartedCPT-7F85EF01.html" />
+<meta name="topic-breadcrumbs" content="EcoStruxure Automation Expert - Getting Started &gt; The Filling Sequence CAT &gt; Testing the CAT" />
+</head>
+<body id="WatchTriggerEventForceValue-7F736AA4"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html");
+document.write("<a href=\"EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html\">EcoStruxure Automation Expert - Getting Started<\/a> > <a href=\"TheFillingSequenceCATCPT-62B1A94C.html\">The Filling Sequence CAT<\/a> > <a href=\"TestingtheCATCPT-7F6B1111.html#TestingtheCATCPT-7F6B1111\">Testing the CAT<\/a> > Watch, Trigger Event and Force Value<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="WatchTriggerEventForceValue-7F736AA4" id="WatchTriggerEventForceValue-7F736AA4_">
+<!-- --></a><a name="WatchTriggerEventForceValue_7F736AA4" id="WatchTriggerEventForceValue_7F736AA4">
+<!-- --></a><a name="WatchTriggerEventForceValue_7F736AA4" id="WatchTriggerEventForceValue_7F736AA4_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Watch, Trigger Event and Force Value
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Now that the application, and then the <span class="ph uicontrol">TankFillingSequence</span> CAT, is online and running, everything is ready to start manipulating the CAT.
+</p>
+<div class="div">
+<p class="p">
+To do so, there are three main actions available:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#WatchTriggerEventForceValue-7F736AA4__Watch-7F818374">Watch</a>: It shows the current online value of a variable or an event.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#WatchTriggerEventForceValue-7F736AA4__TriggerEvent-7F81866D">Trigger Event</a>: It manually triggers an event. This action is done to push function block program to be executed or variable to be updated.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#WatchTriggerEventForceValue-7F736AA4__ForceValue-7F81877D">Force Value</a>: It forces the value of a variable. When a variable is forced, then it overrides the current value of the variable and gives the forced value to the variable instead. The variable keeps the forced value as long as the variable is forced.
+</p>
+</li>
+</ul>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">To know more about these three actions, check the topic <span class="ph uicontrol">Test and Troubleshooting</span> in the <span class="ph uicontrol">User Manual</span>. To find it, follow <span class="ph menucascade"><span class="ph uicontrol">EcoStruxure Automation Expert Solution</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Troubleshooting, Tips, and Detected Error Codes</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Test and Troubleshooting</span></span>.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+To carry out these actions, go to the <span class="ph uicontrol">TR1</span> layer of the <span class="ph uicontrol">Whole_Milk_Tank</span> application.
+</p>
+<div class="section" id="WatchTriggerEventForceValue-7F736AA4__Watch-7F818374">
+<a name="Watch-7F818374" id="Watch-7F818374">
+<!-- --></a><a name="WatchTriggerEventForceValue_7F736AA4__Watch_7F818374" id="WatchTriggerEventForceValue_7F736AA4__Watch_7F818374">
+<!-- --></a><a name="Watch_7F818374" id="Watch_7F818374">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph uicontrol">Watch</span>
+</h2>
+<p class="p">
+To watch the <span class="ph uicontrol">TankFillingSequence</span> CAT, click <span class="ph uicontrol">Add watch</span>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:68.5%" />
+<col style="width:31.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000990987.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">If the right click is done over the function block, then all its ports will be watched. In contrast, if the right click is done over a port then only this specific one will be watched.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8.542713567839197%" />
+<col style="width:91.45728643216081%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000878449.png" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:middle; background-color:#3DCD58; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<strong class="ph b">Here, as the function block has been selected then all its ports are now watched. As the application just got deployed and run, then all the ports of <span class="ph uicontrol">TankFillingSequence</span> are at their default value, which is either 0 or <span class="ph uicontrol">FALSE</span>.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Once a function block or a port is watched,<strong class="ph b"> it will remain on watch until it get removes.</strong> To keep the track of all the ports and function blocks watched, show the <span class="ph uicontrol">Watch</span> pad.
+</p>
+<img class="image" src="0000990986.png" width="500" alt="" />
+<div class="div">
+<p class="p">
+<em class="ph i">If you don’t have access to the <span class="ph uicontrol">Watch</span> pad, it can be opened with the <span class="ph uicontrol">View</span> menu as shown in the image below.</em>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:59%" />
+<col style="width:41%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000990985.png" width="300" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="WatchTriggerEventForceValue-7F736AA4__TriggerEvent-7F81866D">
+<a name="TriggerEvent-7F81866D" id="TriggerEvent-7F81866D">
+<!-- --></a><a name="WatchTriggerEventForceValue_7F736AA4__TriggerEvent_7F81866D" id="WatchTriggerEventForceValue_7F736AA4__TriggerEvent_7F81866D">
+<!-- --></a><a name="TriggerEvent_7F81866D" id="TriggerEvent_7F81866D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph uicontrol">Trigger Event</span>
+</h2>
+<p class="p">
+Now that the function block is being watched, the changes made by triggering event will be visible.
+</p>
+<p class="p">
+For instance, <strong class="ph b">let’s trigger the input event <span class="ph uicontrol">INIT</span></strong>.
+</p>
+<p class="p">
+The input event has to be triggered to initiate the <span class="ph uicontrol">SMOOTH</span> function blocks inside the CAT.
+</p>
+<p class="p">
+As a chain of initialization was created, then <strong class="ph b">the initialization of all the function blocks will be triggered</strong>. And since the output event has been connected to the last function block, then if the initialization fully happened then <span class="ph uicontrol">INITO</span> will automatically be updated.
+</p>
+<img class="image" src="0000990984.png" width="750" alt="" />
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8.542713567839197%" />
+<col style="width:91.45728643216081%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000878449.png" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:middle; background-color:#3DCD58; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<strong class="ph b">As the output event <span class="ph uicontrol">INITO</span> is updated to 1, it makes sure that the <span class="ph uicontrol">SMOOTH</span> function blocks that are part of the <span class="ph uicontrol">INIT</span> chain have been correctly initialized.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="WatchTriggerEventForceValue-7F736AA4__ForceValue-7F81877D">
+<a name="ForceValue-7F81877D" id="ForceValue-7F81877D">
+<!-- --></a><a name="WatchTriggerEventForceValue_7F736AA4__ForceValue_7F81877D" id="WatchTriggerEventForceValue_7F736AA4__ForceValue_7F81877D">
+<!-- --></a><a name="ForceValue_7F81877D" id="ForceValue_7F81877D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph uicontrol">Force Value</span>
+</h2>
+<div class="div">
+<p class="p">
+To force the value of a variable, proceed as follows:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Right-click on a variable and select <span class="ph uicontrol">Force Value</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+From the dialog box appearing, either type the number needed (for <span class="ph uicontrol">INT</span>, <span class="ph uicontrol">REAL</span> and so on) or click on the value (for boolean) to switch it to the other one.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Validate the forced value.
+</p>
+</li>
+</ol>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:59%" />
+<col style="width:41%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000932461.png" width="350" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8.542713567839197%" />
+<col style="width:91.45728643216081%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000878449.png" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:middle; background-color:#3DCD58; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<strong class="ph b">The variable gets its value forced. A forced value is represented differently than a watched one to highlight it.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">Once a value is forced, then the <span class="ph uicontrol">Watch</span> option is stopped since the forced value overrides the input value.</em>
+</p>
+<p class="p">
+<em class="ph i"><strong class="ph b">To stop a forcing value</strong>, either <strong class="ph b">deselect <span class="ph uicontrol">Force Value</span></strong> or <strong class="ph b">select back <span class="ph uicontrol">Watch</span></strong> to give back the priority to the input value.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004453.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

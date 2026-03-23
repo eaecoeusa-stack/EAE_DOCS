@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Real Time Clock (RTC)" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500Rueil MalmaisonFrance+ 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="RealTimeClockRTC-E76A5190" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Real Time Clock (RTC)
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v16.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.0_2";
+//]]></script>
+<meta name="brsprev" value="ATVd_UG/Overview-E76A6EF0.html" />
+<meta name="brsnext" value="ATVd_UG/TimeManagementSettingTheInitialTime-9503F763.html" />
+<meta name="topic-breadcrumbs" content="Altivar Distributed PAC Module VW3A3530D - User Guide &gt; ATV Distributed time management" />
+</head>
+<body id="RealTimeClockRTC-E76A5190"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ATVd_UG_D-SE-0105440.html");
+document.write("<a href=\"ATVd_UG_D-SE-0105440.html\">Altivar Distributed PAC Module VW3A3530D - User Guide<\/a> > <a href=\"ATVDistributedTimeManagement-E76A842D.html\">ATV Distributed time management<\/a> > Real Time Clock (RTC)<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="RealTimeClockRTC-E76A5190" id="RealTimeClockRTC-E76A5190_">
+<!-- --></a><a name="RealTimeClockRTC_E76A5190" id="RealTimeClockRTC_E76A5190">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Real Time Clock (RTC)
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<h2 class="title sectiontitle">
+Overview
+</h2>
+<p class="p">
+The <span class="ph">ATV Distributed PAC</span> includes an RTC to provide system date and time information, and to support related functions requiring a real-time clock. To continue to monitor time when power is off, a non-rechargeable battery is required (see reference below).
+</p>
+<p class="p">
+This table shows how RTC drift is managed:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<colgroup>
+<col style="width:50.39208364451083%" />
+<col style="width:49.607916355489174%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;" id="d9205e68">
+<p class="p">
+<strong class="ph b">RTC Characteristics</strong>
+</p>
+</th>
+<th class="entry cell-norowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;" id="d9205e75">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody" style="vertical-align:top;">
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d9205e68 ">
+<p class="p">
+RTC drift
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d9205e75 ">
+<p class="p">
+Less than 60 seconds per month without any user calibration at 25 °C (77 °F)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> It's mandatory to have a Graphic Display Terminal (VW3A1111) for <span class="ph">ATV 340</span> to monitor the RTC when the power is off.
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Battery of the Graphic Display Terminal (VW3A1111)
+</h2>
+<p class="p">
+<span class="ph">ATV Distributed PAC</span> controller uses a battery located in the Graphic Display Terminal <span class="ph">(VW3A1111)</span>: the Graphic Display Terminal <span class="ph">(VW3A1111)</span> must remain connected to the <span class="ph">Altivar</span> drive.
+</p>
+<p class="p">
+A battery icon on the Graphic Display Terminal <span class="ph">(VW3A1111)</span> indicates if the battery is depleted or absent.
+</p>
+<div class="fig fignone">
+<div class="imageleft">
+<img class="image imageleft" src="T003263767.gif" alt="" style="max-height:2.256in;" />
+</div>
+<p class="p">
+Legend:<br /><strong class="ph b">1</strong> Battery icon
+</p>
+</div>
+<p class="p">
+The Graphic Display Terminal <span class="ph">(VW3A1111)</span> is not delivered with <span class="ph">ATV340</span> drives and <span class="ph">ATV600</span>, <span class="ph">ATV900</span> cabinet integration drives. It must be ordered separately.
+</p>
+<p class="p">
+In the event of a power interruption, the backup battery maintains the RTC for the controller.
+</p>
+<p class="p">
+This table shows the characteristics of the battery:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<colgroup>
+<col style="width:30.095990965556187%" />
+<col style="width:69.90400903444382%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;" id="d9205e168">
+<p class="p">
+<strong class="ph b">Characteristics</strong>
+</p>
+</th>
+<th class="entry cell-norowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;" id="d9205e175">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody" style="vertical-align:top;">
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d9205e168 ">
+<p class="p">
+<strong class="ph b">Use</strong>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d9205e175 ">
+<p class="p">
+In the event of a transient power outage, the battery powers the RTC.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d9205e168 ">
+<p class="p">
+<strong class="ph b">Backup life</strong>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d9205e175 ">
+<p class="p">
+At least 2 years at 25 °C maximum (77 °F). At higher temperatures, the time is reduced
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d9205e168 ">
+<p class="p">
+<strong class="ph b">Battery monitoring</strong>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d9205e175 ">
+<p class="p">
+Yes
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d9205e168 ">
+<p class="p">
+<strong class="ph b">Replaceable</strong>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d9205e175 ">
+<p class="p">
+Yes
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d9205e168 ">
+<p class="p">
+<strong class="ph b">Controller battery type</strong>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d9205e175 ">
+<p class="p">
+Lithium coin cell, type Panasonic CR2032
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Location of the Battery in the Graphic Display Terminal <span class="ph">(VW3A1111)</span>
+</h2>
+<p class="p">
+The battery is located at the bottom of the Graphic Display Terminal <span class="ph">(VW3A1111)</span> (see 1 in the figure below):
+</p>
+<div class="fig fignone">
+<img class="image" src="0000574831.png" alt="" />
+</div>
+</div>
+<div class="section" id="RealTimeClockRTC-E76A5190__D-SE-0105094.5">
+<a name="D-SE-0105094.5" id="D-SE-0105094.5">
+<!-- --></a><a name="D_SE_0105094_5" id="D_SE_0105094_5">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Installing or Replacing the Battery
+</h2>
+<p class="p">
+While lithium batteries are preferred due to their slow discharge and long life, they can present hazards to personnel, equipment and the environment and must be handled properly.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--danger">
+<span class="hazardstatement--danger-symbol"> </span>DANGER
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+EXPLOSION, FIRE OR CHEMICAL BURNS
+</div>
+<div class="howtoavoid">
+<ul class="sl simple">
+<li class="sli">
+Replace with identical battery type
+</li>
+<li class="sli">
+Follow all the instructions of the battery manufacturer
+</li>
+<li class="sli">
+Remove all replaceable batteries before discarding unit
+</li>
+<li class="sli">
+Recycle or properly dispose of used batteries
+</li>
+<li class="sli">
+Protect battery from any potential short-circuit
+</li>
+<li class="sli">
+Do not recharge, disassemble, heat above 100 °C (212 °F), or incinerate
+</li>
+<li class="sli">
+Use your hands or insulated tools to remove or replace the battery
+</li>
+<li class="sli">
+Maintain proper polarity when inserting and connecting a new battery
+</li>
+</ul>
+</div>
+<div class="consequence">
+Failure to follow these instructions will result in death or serious injury.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div class="div">
+<p class="p">
+To install or replace the battery, follow these steps:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<caption>
+<span class="tablecap">Battery Installation</span>
+</caption>
+<colgroup>
+<col style="width:12.647058823529411%" />
+<col style="width:87.3529411764706%" />
+</colgroup>
+<tbody class="tbody" style="vertical-align:top;">
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;">
+<p class="p">
+<strong class="ph b">Step</strong>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;">
+<p class="p">
+<strong class="ph b">Action</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Ensure that the power is off.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Remove the Graphic Display Terminal <span class="ph">(VW3A1111)</span> from the drive or the remove mounting kit.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Remove the strip at the bottom of the Graphic Display Terminal <span class="ph">(VW3A1111)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Remove the battery from the battery holder
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Insert the new battery into the battery holder in accordance with the polarity markings on the battery
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Put back the strip at the bottom of the Graphic Display Terminal <span class="ph">(VW3A1111)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Put back the Graphic Display Terminal <span class="ph">(VW3A1111)</span> at its previous location
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Power on the drive (or at least the control part in case of separate supply mode).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;">
+<p class="p">
+Set the internal clock
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+NNZ13577.12
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

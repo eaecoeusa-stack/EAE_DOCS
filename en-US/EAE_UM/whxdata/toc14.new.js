@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Creating Asset Tag for CAT and Sub-CAT Instances","type":"item","url":"EAE_UM/AssetAliasName-9112AA2D.html#AssetAliasName-9112AA2D"},{"name":"Creating and Displaying HMI Alias Names","type":"item","url":"EAE_UM/CreatingAndDisplayingAliasNamesForC-67615DFD.html#CreatingAndDisplayingAliasNamesForC-67615DFD"},{"name":"Display Instance Name, Asset Tag Name and HMI Alias Name","type":"item","url":"EAE_UM/DisplayInstanceNameAssetTagandAlias-960D4C27.html"},{"name":"Assigning a Display Name to a Trend Series","type":"item","url":"EAE_UM/AssigningADisplayNameToATendSeries-67CC81C9.html#AssigningADisplayNameToATendSeries-67CC81C9"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

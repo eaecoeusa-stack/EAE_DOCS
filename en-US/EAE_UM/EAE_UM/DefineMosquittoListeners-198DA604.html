@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Define Multiple Mosquitto Listeners" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="DefineMosquittoListeners-198DA604" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Define Multiple Mosquitto Listeners
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.7.1.1_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/ConfigureMosquitto-198D744F.html" />
+<meta name="brsnext" value="EAE_UM/MQTTClientPerformance-6CE3B58E.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; MQTT &gt; MQTT Broker" />
+</head>
+<body id="DefineMosquittoListeners-198DA604"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"MQTTCPT-21469A9D.html#MQTTCPT-21469A9D\">MQTT<\/a> > <a href=\"MosquittoMQTTBroker-198D55D5.html\">MQTT Broker<\/a> > Define Multiple Mosquitto Listeners<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="DefineMosquittoListeners-198DA604" id="DefineMosquittoListeners-198DA604_">
+<!-- --></a><a name="DefineMosquittoListeners_198DA604" id="DefineMosquittoListeners_198DA604">
+<!-- --></a><a name="DefineMosquittoListeners_198DA604" id="DefineMosquittoListeners_198DA604_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Define Multiple <span class="ph">Mosquitto</span> Listeners
+</h1>
+<div class="body conbody">
+
+<p class="p">
+A single <span class="ph">MQTT</span> broker can support several <span class="ph">MQTT</span> client network applications that use <span class="ph">MQTT</span> messaging. These clients may require different security configurations to connect to - and be authenticated by - the broker. For example, some clients may support username and password authentication, while other clients may require TLS certificate-based authentication.
+</p>
+<p class="p">
+<span class="ph">Mosquitto</span> <span class="ph">MQTT</span> broker can define multiple <span class="ph">Mosquitto</span> listener interfaces, each interface having its own security configuration.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You need to configure multiple <span class="ph">Mosquitto</span> listener interfaces only when using a previously installed <span class="ph">Mosquitto</span> broker with a different security configuration for your <span class="ph">MQTT</span> client network application. For a first-time <span class="ph">Mosquitto</span> broker installation with no other <span class="ph">MQTT</span> client connections, you do not need to create multiple <span class="ph">Mosquitto</span> listeners. The procedure defined in <a class="xref" href="ConfigureMosquitto-198D744F.html">Configure Mosquitto</a> is sufficient for <span class="ph">EcoStruxure Automation Expert</span> HMI Diagnostics.
+</div>
+<p class="p">
+To use multiple <span class="ph">Mosquitto</span> listeners, each with its own security configuration, follow these steps:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph">Mosquitto</span> installation folder, open the file <span class="ph uicontrol">mosquitto.conf</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Above the lines described in the topic <a class="xref" href="ConfigureMosquitto-198D744F.html">Configure Mosquitto</a>, add the following line:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<em class="ph i">per_listener_settings true</em>
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> This requires administrator rights.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Save the configuration file and restart <span class="ph">Mosquitto</span> to apply the changes.
+</p>
+</li>
+</ol>
+<p class="p">
+Adding this line lets you define multiple <span class="ph">Mosquitto</span> listener interfaces, each with its own security configuration.
+</p>
+<p class="p">
+For example, if you have <span class="ph">Mosquitto</span> <span class="ph">MQTT</span> broker security configured with the following user authentication:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+listener 1883
+</p>
+</li>
+<li class="li">
+<p class="p">
+allow_anonymous false
+</p>
+</li>
+<li class="li">
+<p class="p">
+password_file c:\Program Files\mosquitto\passwordFile.txt
+</p>
+</li>
+</ul>
+<p class="p">
+Adding the line <em class="ph i">per_listener_settings true</em> to the file <span class="ph uicontrol">mosquitto.conf</span> prevents a conflict with the <span class="ph">EcoStruxure Automation Expert</span> HMI Diagnostic configuration performed using the procedure set forth in <a class="xref" href="ConfigureMosquitto-198D744F.html">Configure Mosquitto</a>. With this line added, the listener interface configured for <span class="ph">EcoStruxure Automation Expert</span> Diagnostic will use its own security configuration and will not conflict with your <span class="ph">Mosquitto</span> listener interface security configuration for listener interface 1883.
+</p>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

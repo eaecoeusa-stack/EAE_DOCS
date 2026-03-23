@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"HMI Client - User Guide\" url=\"EAE_HMI/EAE_HMI_UserGuideEcoStruxureAutomationExper-21B815C7.html\" src=\"toc1.js\" /></data>";

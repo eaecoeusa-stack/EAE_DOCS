@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="PROFIBUS DP Master Gateway" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="Gateway-EF438131" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+PROFIBUS DP Master Gateway
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.6.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/ASiGateway-831B7390.html" />
+<meta name="brsnext" value="EAE_UM/OPCUAServer-961C7D5E.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; Communication Protocols" />
+</head>
+<body id="Gateway-EF438131"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"CommunicationProtocols-D376EE55.html#CommunicationProtocols-D376EE55\">Communication Protocols<\/a> > PROFIBUS DP Master Gateway<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="Gateway-EF438131" id="Gateway-EF438131_">
+<!-- --></a><a name="Gateway_EF438131" id="Gateway_EF438131">
+<!-- --></a><a name="Gateway_EF438131" id="Gateway_EF438131_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span class="ph">PROFIBUS</span> DP Master Gateway
+</h1>
+<div class="body conbody">
+<div class="section" id="Gateway-EF438131__UseTheGatewayToConnectSensorsAndAct-05E46963">
+<a name="UseTheGatewayToConnectSensorsAndAct-05E46963" id="UseTheGatewayToConnectSensorsAndAct-05E46963">
+<!-- --></a><a name="Gateway_EF438131__UseTheGatewayToConnectSensorsAndAct_05E46963" id="Gateway_EF438131__UseTheGatewayToConnectSensorsAndAct_05E46963">
+<!-- --></a><a name="UseTheGatewayToConnectSensorsAndAct_05E46963" id="UseTheGatewayToConnectSensorsAndAct_05E46963">
+<!-- --></a>
+<p class="p">
+Use the <span class="ph">PROFIBUS</span> gateway to connect sensors and actuators to the <span class="ph">BusMaster</span> function block within the <span class="ph">PROFIBUS</span> <span class="ph">DP</span> network.
+</p>
+<p class="p">
+Follow the first <a class="xref" href="#Gateway-EF438131__GatewayConfigurationInSoftware-05E47732">procedure</a> below to configure the <span class="ph">PROFIBUS</span> gateway in <span class="ph">EcoStruxure Automation Expert</span> software.
+</p>
+<p class="p">
+Some elements will need to be configured with <span class="ph">ProSoft PLX50 ©</span> software as detailed in the second <a class="xref" href="#Gateway-EF438131__GatewayConfigurationInProSoftPLX50S-05E46CD8">procedure</a>. Switch to this second procedure when indicated in the first procedure.
+</p>
+</div>
+<div class="section" id="Gateway-EF438131__GatewayConfigurationInSoftware-05E47732">
+<a name="GatewayConfigurationInSoftware-05E47732" id="GatewayConfigurationInSoftware-05E47732">
+<!-- --></a><a name="Gateway_EF438131__GatewayConfigurationInSoftware_05E47732" id="Gateway_EF438131__GatewayConfigurationInSoftware_05E47732">
+<!-- --></a><a name="GatewayConfigurationInSoftware_05E47732" id="GatewayConfigurationInSoftware_05E47732">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">PROFIBUS</span> Gateway Configuration in <span class="ph">EcoStruxure Automation Expert</span> Software
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:9.5%" />
+<col style="width:90.5%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d884182e116">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d884182e121">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+In <span class="ph">EcoStruxure Automation Expert</span> software, open the project in which you want to add a <span class="ph">PROFIBUS</span> gateway.
+</p>
+<p class="p">
+Add the following libraries to your solution:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Runtime.Base</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">SE.DPAC</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">SE.Standard</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Standard.IoModbus</span>
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Open the <span class="ph uicontrol">System</span> editor and select the <span class="ph uicontrol">Physical Devices</span> editor. In the <span class="ph uicontrol">Automation Devices</span> tree, select the <span class="ph menucascade"><span class="ph uicontrol">Fieldbus Gateway</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">PLX51–PBM</span></span> device and add it to your solution.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+In the <span class="ph uicontrol">Physical Devices</span> editor, connect the <span class="ph uicontrol">PLX51–PBM</span> device to the relevant elements of your solution and configure its <span class="ph">IP</span> address.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Follow the <a class="xref" href="#Gateway-EF438131__GatewayConfigurationInProSoftPLX50S-05E46CD8">procedure</a> to configure the <span class="ph">PROFIBUS</span> gateway in <span class="ph">ProSoft PLX50 ©</span> software.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Open the <span class="ph uicontrol">System</span> editor and select the <span class="ph uicontrol">Hardware Configuration</span> editor.
+</p>
+<p class="p">
+Click <span class="ph uicontrol">Add new master HW-CAT</span> and select <span class="ph uicontrol">Standard.IoModbus.MODBUS</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Right-click on <span class="ph uicontrol">MODBUS</span> device and select <span class="ph uicontrol">Add</span>.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Add To MODBUS</span> window opens.
+</p>
+<p class="p">
+Double-click on <span class="ph uicontrol">Standard.IoModbus.MODBUSSLAVEND</span> and <span class="ph uicontrol">Standard.IoModbus.MODBUSGENTCPS</span>, then click <span class="ph uicontrol">Close</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Right-click on <span class="ph uicontrol">MODBUS</span> device and select <span class="ph uicontrol">Properties</span>.
+</p>
+<p class="p">
+In the <span class="ph uicontrol">Properties MODBUS</span> window, set the <span class="ph uicontrol">Busid</span> parameter and click <span class="ph uicontrol">OK</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Right-click on <span class="ph uicontrol">MODBUSGENTCPS</span> and select <span class="ph uicontrol">Properties</span>.
+</p>
+<p class="p">
+Set the <span class="ph uicontrol">Stationid</span> parameter to 1 as defined for the <span class="ph uicontrol">Local Node Number</span> in <span class="ph">ProSoft PLX50 ©</span> configuration utility.
+</p>
+<p class="p">
+Set the <span class="ph uicontrol">IPaddress</span> parameter identical to the one defined for the <span class="ph">PLX51–PBM</span> <span class="ph uicontrol">IP Address</span> in <span class="ph">ProSoft PLX50 ©</span> configuration utility.
+</p>
+<p class="p">
+Click <span class="ph uicontrol">OK</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Right-click on <span class="ph uicontrol">MODBUSGENTCPS</span> and select <span class="ph uicontrol">Import Modbus Gateway</span>.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Import Options</span> window opens. Select <span class="ph uicontrol">Suffix variable name with device name</span> as import option and click <span class="ph uicontrol">OK</span>.
+</p>
+<p class="p">
+Use the browser to locate the <span class="ph">CSV</span> file exported from <span class="ph">ProSoft PLX50 ©</span> configuration utility and click <span class="ph uicontrol">Open</span>.
+</p>
+<p class="p">
+A <span class="ph uicontrol">Confirmation</span> window will ask you if you want to generate the associated symbolic links. Click <span class="ph uicontrol">Yes</span>.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> the function blocks needed for the gateway operation have been imported to your solution.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+10
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Open the <span class="ph uicontrol">System</span> editor and select the <span class="ph uicontrol">Function Blocks Network</span> editor to display the function blocks.
+</p>
+<p class="p">
+Connect the function blocks by drawing a line between the free <span class="ph uicontrol">INITO</span> node of your solution and the free <span class="ph uicontrol">INIT</span> node of the gateway.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e116 ">
+<p class="p">
+11
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e121 ">
+<p class="p">
+Open the <span class="ph uicontrol">Deploy and Diagnostic</span> pad, expand the menu below <span class="ph uicontrol">Action</span> and select <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>.
+</p>
+<p class="p">
+Expand again the menu below <span class="ph uicontrol">Action</span> and select <span class="ph menucascade"><span class="ph uicontrol">Device actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Run</span></span>.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> the <span class="ph">PROFIBUS</span> gateway is deployed.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="Gateway-EF438131__GatewayConfigurationInProSoftPLX50S-05E46CD8">
+<a name="GatewayConfigurationInProSoftPLX50S-05E46CD8" id="GatewayConfigurationInProSoftPLX50S-05E46CD8">
+<!-- --></a><a name="Gateway_EF438131__GatewayConfigurationInProSoftPLX50S_05E46CD8" id="Gateway_EF438131__GatewayConfigurationInProSoftPLX50S_05E46CD8">
+<!-- --></a><a name="GatewayConfigurationInProSoftPLX50S_05E46CD8" id="GatewayConfigurationInProSoftPLX50S_05E46CD8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">PROFIBUS</span> Gateway Configuration in <span class="ph">ProSoft PLX50 ©</span> Software
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:9.5%" />
+<col style="width:90.5%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d884182e547">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d884182e552">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+Start <span class="ph">ProSoft PLX50 ©</span> configuration utility.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+Click on <span class="ph uicontrol">Create New Project</span> to open the <span class="ph uicontrol">Project Explorer</span> window.
+</p>
+<p class="p">
+Right-click on <span class="ph uicontrol">New Project</span> and select <span class="ph uicontrol">Add</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Add New Device</span> window, select the <span class="ph">PLX51–PBM</span> device and click <span class="ph uicontrol">OK</span>. The <span class="ph uicontrol">Configuration</span> window opens.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">General</span> tab:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Fill in the <span class="ph">PLX51–PBM</span> <span class="ph uicontrol">IP Address</span> in the <span class="ph uicontrol">Identity</span> part.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the <span class="ph uicontrol">StandaloneMaster</span> communication mode in the <span class="ph uicontrol">Operation</span> part.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the <span class="ph uicontrol">Modbus TCP Slave</span> primary interface in the <span class="ph uicontrol">Operation</span> part.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Modbus</span> tab, set the <span class="ph uicontrol">Local Node Number</span> to 1 in the <span class="ph uicontrol">Basic Settings</span> part.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Modbus Addressing</span> tab:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Set the <span class="ph uicontrol">Master Control Register</span> address.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Set the <span class="ph uicontrol">Device Control Register</span> address.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Check the <span class="ph uicontrol">Master Control</span> and the <span class="ph uicontrol">Slave Device Enables</span> boxes.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Profibus</span> tab, set the <span class="ph uicontrol">BAUD Rate</span> to 500 kbps. Validate your changes by clicking <span class="ph uicontrol">OK</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Project Explorer</span> window, right-click on <span class="ph uicontrol">Profibus Devices</span> and select <span class="ph uicontrol">Add Profibus Device</span>.
+</p>
+<p class="p">
+The <span class="ph uicontrol">GSD File Selector</span> window opens.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+Click <span class="ph uicontrol">Add File</span> and browse to your <span class="ph">EDS</span> configuration file.
+</p>
+<p class="p">
+Click <span class="ph uicontrol">Open</span> to add it to the <span class="ph uicontrol">GSD File Selector</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can import an <span class="ph">EDS</span> file from any trustable source to configure <span class="ph uicontrol">Profibus</span> devices in <span class="ph">ProSoft PLX50 ©</span> software.
+</div>
+<p class="p">
+Select your imported configuration and click <span class="ph uicontrol">OK</span>. The <span class="ph uicontrol">Configuration</span> window opens.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+10
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Profibus Configuration</span> tab, verify that the <span class="ph uicontrol">Node Address</span> is set to 2.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+11
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Slot Configuration</span> tab, click <span class="ph uicontrol">Add Module</span>.
+</p>
+<p class="p">
+Choose your module types and configure their properties:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Description</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Data Point</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Data Type</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Register Type</span>
+</p>
+</li>
+</ul>
+<p class="p">
+Right-click on a module line and select <span class="ph uicontrol">Assign Modbus from Here</span> to configure the <span class="ph uicontrol">Modbus Offset</span> parameter.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+12
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Project Explorer</span> window, right-click on the <span class="ph">PLX51–PBM</span> device and select <span class="ph uicontrol">Go Online</span> to connect the gateway.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Configuration Action</span> window opens. Click <span class="ph uicontrol">Download</span> to download the configuration.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> a green light appears in front of the <span class="ph">PLX51–PBM</span> device in the <span class="ph uicontrol">Project Explorer</span> window. It indicates that the gateway is in online mode.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+13
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+In the <span class="ph uicontrol">Project Explorer</span> window, right-click on the <span class="ph">PLX51–PBM</span> device and select <span class="ph uicontrol">Verify Configuration</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Make sure that no detected error message appears in the <span class="ph uicontrol">Verification</span> window. <span class="ph">EcoStruxure Automation Expert</span> will not import a configuration which contains detected errors.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d884182e547 ">
+<p class="p">
+14
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d884182e552 ">
+<p class="p">
+Save your configuration.
+</p>
+<p class="p">
+In the <span class="ph uicontrol">Project Explorer</span> window, right-click on the <span class="ph">PLX51–PBM</span> device and select <span class="ph uicontrol">Export Modbus Expanded CSV</span>.
+</p>
+<p class="p">
+Select the folder for exportation and click <span class="ph uicontrol">Save</span>.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> your configuration map has been exported as <span class="ph">CSV</span> file and is ready to use in <span class="ph">EcoStruxure Automation Expert</span> software.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

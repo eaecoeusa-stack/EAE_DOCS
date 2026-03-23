@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Bulk Development of a Process View" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="RationaleForRepresentingAProcessTre-C8AB4B41" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Bulk Development of a Process View
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.4.1.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/AddingCATInstanceCPT-F059199C.html" />
+<meta name="brsnext" value="EAE_UM/WatchTrendPad-9B1F8906.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; Pads &gt; Hierarchy View Pad" />
+</head>
+<body id="RationaleForRepresentingAProcessTre-C8AB4B41"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"Pads-994F9A20.html#Pads-994F9A20\">Pads<\/a> > <a href=\"ProcessViewPadCPT-F059026A.html#ProcessViewPadCPT-F059026A\">Hierarchy View Pad<\/a> > Bulk Development of a Process View<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="RationaleForRepresentingAProcessTre-C8AB4B41" id="RationaleForRepresentingAProcessTre-C8AB4B41_">
+<!-- --></a><a name="RationaleForRepresentingAProcessTre_C8AB4B41" id="RationaleForRepresentingAProcessTre_C8AB4B41">
+<!-- --></a><a name="RationaleForRepresentingAProcessTre_C8AB4B41" id="RationaleForRepresentingAProcessTre_C8AB4B41_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span style="font-size: 1em;">Bulk Development of a Process View</span>
+</h1>
+<div class="body conbody">
+<p class="p">
+<span style="font-size: 1em;">In large projects, you can speed up the development of a process tree-view and the assignment of instances therein by representing the hierarchy in Excel</span>™<span style="font-size: 1em;">.</span>
+</p>
+<p class="p">
+<span style="font-size: 1em;">In addition, this allows you to reuse a process view across several EcoStruxure Automation Expert solutions.</span>
+</p>
+<p class="p">
+<span style="font-size: 1em;">The overall procedure is as follows:</span>
+</p>
+<div class="div">
+<div class="fig fignone">
+<img class="image" src="DD00717296.png" alt="" style="max-height:350px;" />
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span style="font-size: 1em;"> Each dashed rectangle corresponds to a section hereunder. The tasks in the left rectangle are optional.</span>
+</div>
+</div>
+<div class="section" id="RationaleForRepresentingAProcessTre-C8AB4B41__PreparingTheExcelHeadersInEcoStruxu-D1F1C9B8">
+<a name="PreparingTheExcelHeadersInEcoStruxu-D1F1C9B8" id="PreparingTheExcelHeadersInEcoStruxu-D1F1C9B8">
+<!-- --></a><a name="RationaleForRepresentingAProcessTre_C8AB4B41__PreparingTheExcelHeadersInEcoStruxu_D1F1C9B8" id="RationaleForRepresentingAProcessTre_C8AB4B41__PreparingTheExcelHeadersInEcoStruxu_D1F1C9B8">
+<!-- --></a><a name="PreparingTheExcelHeadersInEcoStruxu_D1F1C9B8" id="PreparingTheExcelHeadersInEcoStruxu_D1F1C9B8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span style="font-size: 1em;">Defining the Excel headers in EcoStruxure Automation Expert and Export</span>
+</h2>
+<p class="p">
+<span style="font-size: 1em;">These operations are optional: you may also start from an empty Process view.</span>
+</p>
+<p class="p">
+<span style="font-size: 1em;">HEADERS FOR PLANT MODEL</span>
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">At the Process view root, right-click and select </span><span class="ph uicontrol"><span style="font-size: 1em;">Define Plant Model</span></span><span style="font-size: 1em;">; this opens a water fall editor displaying opposite the default generic names and the new generic names on ten levels.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Enter a new name describing the first level, for instance “Plant” (without quotes); special characters and spaces are not allowed.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Repeat the step 2, for as many levels as desired, for example “Area”, ”Unit”, “Process”, etc</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Click</span><span class="ph uicontrol"><span style="font-size: 1em;"> Save</span></span><span style="font-size: 1em;">; the new generic names will be the table headers in Excel. If the button is greyed out, check the names validity.</span>
+</p>
+</li>
+</ol>
+<p class="p">
+<span style="font-size: 1em;">You have created folders and named them to reflect the Plant breakdown. You may have created some </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instances from the Process view, or dragged-and-dropped some from the project. All these operations are described in </span><a class="xref" href="AddingCATInstanceCPT-F059199C.html#AddingCATInstanceCPT-F059199C"><span style="font-size: 1em;">Handling Application Instances</span></a><span style="font-size: 1em;">. </span>
+</p>
+<p class="p">
+<span style="font-size: 1em;">EXPORT</span>
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">In the </span><span class="ph uicontrol"><span style="font-size: 1em;">Hierarchy view</span></span><span style="font-size: 1em;"> pad, click the </span><img class="image" src="DD00686375.png" alt="" style="max-height:15px;" /><span style="font-size: 1em;"> icon</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Name the destination Excel file (extension .xlsx) and click </span><span class="ph uicontrol"><span style="font-size: 1em;">OK</span></span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">If it is relevant, open the file and check it out.</span>
+</p>
+</li>
+</ol>
+<div class="p">
+<span style="font-size: 1em;">The sheet name is identical to the view name, a table with headers has been created, the last column named </span><span class="ph uicontrol"><span style="font-size: 1em;">Instance Name</span></span><span style="font-size: 1em;"> lists out the names of the highest-level </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instances (the Sub</span><span class="ph"><span style="font-size: 1em;">CATs</span></span><span style="font-size: 1em;"> are excluded). Each row describes the bread crumbs trail of the </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instance.</span>
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span style="font-size: 1em;">An instance will be directly attached to the root if, in its row, only the </span><span class="ph uicontrol"><span style="font-size: 1em;">Instance Name</span></span><span style="font-size: 1em;"> column is filled.</span>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span style="font-size: 1em;">The order of the nodes will reflect the order of the rows.</span>
+</div>
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+<span style="font-size: 1em;">Developing the Hierarchy in an Excel table</span>
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Open the exported Excel file or create a table in a new Excel file; in the latter case, name the sheet after the view, enter generic names describing roughly the levels (plant, unit, area, ...) in the headers row; anyway, these names will not show in the tree-view.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Check or enter the </span>
+</p>
+<span class="ph uicontrol"><span style="font-size: 1em;">Instance Name</span></span><span style="font-size: 1em;"> header name in the K column.</span>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Enter the names of plant, unit, area, ... as a bread crumbs trail across the successive columns; they will represent the parentship of nodes in the tree-view; do not use invalid characters such as *; duplicated names are allowed as far as they are not in the same column and share the same ancestors.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Enter in the K column the </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instance names existing in the project that must be assigned to the view.</span>
+</p>
+</li>
+<li class="li">
+<span style="font-size: 1em;">Close the file.</span>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+<span style="font-size: 1em;">An instance can be directly attached to the root; for this purpose, in its row, only the </span><span class="ph uicontrol"><span style="font-size: 1em;">Instance Name</span></span><span style="font-size: 1em;"> column is filled.</span>
+</p>
+</li>
+<li class="sli">
+<p class="p">
+<span style="font-size: 1em;">The order of the nodes will reflect the order of the rows.</span>
+</p>
+</li>
+<li class="sli">
+<p class="p">
+<span style="font-size: 1em;">Comments are allowed after the K column.</span>
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+<span style="font-size: 1em;">Import the Excel table to the Process view</span>
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Make sure that the Excel file to import is closed.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">In the Hierarchy view pad, click the </span><a name="ImportIconPng-C89A5CD9" id="ImportIconPng-C89A5CD9">
+<!-- --></a><a name="RationaleForRepresentingAProcessTre_C8AB4B41__ImportIconPng_C89A5CD9" id="RationaleForRepresentingAProcessTre_C8AB4B41__ImportIconPng_C89A5CD9">
+<!-- --></a><a name="ImportIconPng_C89A5CD9" id="ImportIconPng_C89A5CD9">
+<!-- --></a><img class="image" id="RationaleForRepresentingAProcessTre-C8AB4B41__ImportIconPng-C89A5CD9" src="DD00688397.png" alt="" style="max-height:15px;" /><span style="font-size: 1em;"> icon.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Select the Excel file to import and click </span><span class="ph uicontrol"><span style="font-size: 1em;">Open</span></span><span style="font-size: 1em;">; the </span><span class="ph uicontrol"><span style="font-size: 1em;">ImportHierarchyView</span></span><span style="font-size: 1em;"> window shows an outline with check boxes; anomalies are listed out in the </span><span class="ph uicontrol"><span style="font-size: 1em;">Output</span></span><span style="font-size: 1em;"> pad.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Drill down the hierarchy and tick the items you want to keep; selecting a branch triggers the selection of the whole branch.</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span style="font-size: 1em;">Click </span><span class="ph uicontrol"><span style="font-size: 1em;">Import</span></span><span style="font-size: 1em;">.</span>
+</p>
+</li>
+</ol>
+<p class="p">
+<span style="font-size: 1em;">The Process view shows only the selected branches/instances (provided they exist in the project); the Sub</span><span class="ph"><span style="font-size: 1em;">CATs</span></span><span style="font-size: 1em;"> are included only if the check box </span><span class="ph menucascade"><span class="ph uicontrol"><span style="font-size: 1em;">File</span></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"><span style="font-size: 1em;">General</span></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"><span style="font-size: 1em;">Generic Settings</span></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"><span style="font-size: 1em;">Retain CAT hierarchy while assigning CAT to Hierarchy View</span></span></span><span style="font-size: 1em;"> is ticked (this is reflected by the presence of the </span><img class="image" src="DD00711515.png" alt="" style="max-height:20px;" /><span style="font-size: 1em;"> icon above the tree-view); duplicated </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instances which may be added by mistake in Excel are also excluded.</span>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span style="font-size: 1em;"> The branches already existing in the tree-view are retained (as illustrated with a dotted circle); however they lose the </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instances whose names are also entered in the K column: the new branches get them.</span>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> <span style="font-size: 1em;"> As the new </span><span class="ph"><span style="font-size: 1em;">CAT</span></span><span style="font-size: 1em;"> instances are assigned to the view, a ● mark is added before their names in the Solution Explorer as long as the view is active.</span>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

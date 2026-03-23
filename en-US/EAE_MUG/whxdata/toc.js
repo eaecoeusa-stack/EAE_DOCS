@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"Multi-User Environment - User Guide\" url=\"EAE_MUG/EAE_MUG_UserGuideIntroductionToMultiUserDoc-29F05324.html\" src=\"toc1.js\" /></data>";

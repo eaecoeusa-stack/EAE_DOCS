@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Log Files" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="LogFiles-A2DD207E" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Log Files
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.9.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/TestContainerForCATHMI-A2DBD107.html" />
+<meta name="brsnext" value="EAE_UM/TipsAndTricks-A2FB5CEE.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Troubleshooting, Tips, and Detected Error Codes" />
+</head>
+<body id="LogFiles-A2DD207E"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"TroubleshootingTipsAndDetectedError-A2D9D28D.html#TroubleshootingTipsAndDetectedError-A2D9D28D\">Troubleshooting, Tips, and Detected Error Codes<\/a> > Log Files<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="LogFiles-A2DD207E" id="LogFiles-A2DD207E_">
+<!-- --></a><a name="LogFiles_A2DD207E" id="LogFiles_A2DD207E">
+<!-- --></a><a name="LogFiles_A2DD207E" id="LogFiles_A2DD207E_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Log Files
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Log files contain protocol information about the project and its devices. They can be used to help you identify specific detected errors within the project. For each device, two log files are stored which are overwritten alternately, so that data will not be lost. In addition, a separate file is maintained that records cyclically recurring detected errors which you can use to quickly identify these events.
+</p>
+</div>
+<div class="section" id="LogFiles-A2DD207E__AdjustingTheLogFileSize-A749A5A5">
+<a name="AdjustingTheLogFileSize-A749A5A5" id="AdjustingTheLogFileSize-A749A5A5">
+<!-- --></a><a name="LogFiles_A2DD207E__AdjustingTheLogFileSize_A749A5A5" id="LogFiles_A2DD207E__AdjustingTheLogFileSize_A749A5A5">
+<!-- --></a><a name="AdjustingTheLogFileSize_A749A5A5" id="AdjustingTheLogFileSize_A749A5A5">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Adjusting the Log File Size
+</h2>
+<p class="p">
+The log file size is set to 65 kByte by default. You can adjust it at item <span class="ph menucascade"><span class="ph uicontrol">Debug</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Log</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">MaxFileSize</span></span> for the selected device properties in the right part of the <a class="xref" href="LogicalDevices-A0877135.html"><span class="ph uicontrol">Logical Devices</span> editor</a>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Twice the log file size set here will be used on the device, because there are two log files stored on each device.
+</div>
+<p class="p">
+Only the first occurrence of a cyclical detected error is recorded in the cyclic log file. However, if the same error is detected multiple times, a <span class="ph uicontrol">Count</span> is maintained indicating the number of times that cyclic error has been detected. To open the Log files window, select <span class="ph menucascade"><span class="ph uicontrol">View</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> General pads</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy and Diagnostic</span></span>, then in that window select <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Log file</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Fetch Log File</span></span>. To display a description of the detected error, select <a class="xref" href="SubMenuLogFile-EC2A9F34.html"><strong class="ph b">a cyclic log item</strong></a> in the top pane, then click <span class="ph uicontrol">Details</span> to display its ID, count, and a description.
+</p>
+<p class="p">
+The value of the <span class="ph uicontrol">Count</span> attribute is reset to 0 when:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clean</span></span> command is executed for a device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The device stops, as a result of a detected error.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The function block, or other source cause of the event, is removed from the program.
+</p>
+</li>
+</ul>
+<p class="p">
+The file for cyclic detected errors will not be stored on the device but it is only held in working memory and available only online.
+</p>
+<p class="p">
+The maximum number of allowable cyclic log file entries can be configured in the <span class="ph uicontrol">Deploy and Diagnostic</span> editor in the selected device <span class="ph uicontrol">Properties</span> window at <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Debug</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Log</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Cyclic</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">MaxEntries</span></span>.
+</p>
+<p class="p">
+You can use the Log File window as a source of information when working with Schneider Electric technical support to resolve a detected error. To do this:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.94%" />
+<col style="width:87.06%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d678921e184">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d678921e188">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d678921e184 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d678921e188 ">
+<p class="p">
+Open the Log File window by selecting <span class="ph menucascade"><span class="ph uicontrol">View</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> General pads</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Deploy and Diagnostic</span></span>, then in that window select <span class="ph menucascade"><span class="ph uicontrol">Action</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Log file</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Fetch Log Files</span></span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d678921e184 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d678921e188 ">
+<p class="p">
+In the top pane, select the specific event (for example, a detected error) that, you need to resolve. The details of the selected item are displayed in the <span class="ph uicontrol">Message Details</span> (lower) pane.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d678921e184 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d678921e188 ">
+<p class="p">
+Click <span class="ph uicontrol">Copy</span> to copy the message details into the PC clipboard.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d678921e184 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d678921e188 ">
+<p class="p">
+Paste the details from your PC clipboard to a file that you can save and send to Schneider Electric technical support.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> In case a Log message like: <em class="ph i">Too many events in an event chain, THROTTLING for 10 ms</em> appears, the settings of the relevant device have to be adjusted. Open the <a class="xref" href="LogicalDevices-A0877135.html"><span class="ph uicontrol">Logical Devices</span> editor</a> and navigate within the properties of the device to: <span class="ph menucascade"><span class="ph uicontrol">Runtime Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Resource</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">EventQueue</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Throttle</span></span>. Here you can adjust the threshold values <span class="ph uicontrol">LimitTime</span>, <span class="ph uicontrol">PauseTime</span>, <span class="ph uicontrol">HaltNumber</span> accordingly. This will set the threshold values for the number of events being processed without an idle phase of the controller. A description of the particular value is shown in the <span class="ph uicontrol">Logical Devices</span> editor beneath the properties, when the relevant value is selected.
+</div>
+<p class="p">
+After the device settings have been modified, the new configuration has to be deployed to the device. See <a class="xref" href="DeployAndDiagnosticEditor-A223637D.html"><span class="ph uicontrol">Deploy and Diagnostic</span> editor</a>.
+</p>
+<p class="p">
+<strong class="ph b">HaltNumber</strong> will also cause an <span class="ph uicontrol">ErrorHalt</span> in the case that an event loop exists in the project.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The current state of the device is shown in the <span class="ph uicontrol">Logical Devices</span> editor. If the state <span class="ph uicontrol">ErrorHalt</span> occurs the event processing will be halted, because there had been too many events, so that there is a high probability for the occurrence of an endless-event-loop in the project. In that case, please check the log (See: <a class="xref" href="DeployAndDiagnosticEditor-A223637D.html"><span class="ph uicontrol">Deploy and Diagnostic</span> editor</a>). You can see the current content of the event chain there, which may give you a hint where to find the loop by checking which function block has fired which event.
+</div>
+</div>
+<div class="section" id="LogFiles-A2DD207E__HandlingALogBufferOverflow-A749A3D7">
+<a name="HandlingALogBufferOverflow-A749A3D7" id="HandlingALogBufferOverflow-A749A3D7">
+<!-- --></a><a name="LogFiles_A2DD207E__HandlingALogBufferOverflow_A749A3D7" id="LogFiles_A2DD207E__HandlingALogBufferOverflow_A749A3D7">
+<!-- --></a><a name="HandlingALogBufferOverflow_A749A3D7" id="HandlingALogBufferOverflow_A749A3D7">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Handling a Log Buffer Overflow
+</h2>
+<p class="p">
+For advanced users: In some cases, if the event-chain is extremely long, the log buffer could get an overflow. So if you have an incomplete event-chain after an incident like this, the config-entry <span class="ph menucascade"><span class="ph uicontrol">Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Debug</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Log</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">RingBufSize</span></span> could be increased (max. 64k)
+</p>
+<p class="p">
+Example of a log:
+</p>
+<p class="p">
+2012-12-17-17:56:47.916 E: SrcID: 0 SubID: 16: Dump of event chain: Start
+</p>
+<p class="p">
+2012-12-17-17:56:47.916 E: SrcID: 0 SubID: 16: INTERN: 0.000091130: RES1.FB5.DEVLOG.DEVLOG.1
+</p>
+<p class="p">
+2012-12-17-17:56:47.916 E: SrcID: 0 SubID: 16: INTERN: 0.000091130: RES1.FB5.DEVLOG.DEVSTATS.1
+</p>
+<p class="p">
+2012-12-17-17:56:47.916 E: SrcID: 0 SubID: 16: Dump of event chain: End
+</p>
+<p class="p">
+If a device remains in state <em class="ph i">Deploying</em> without going on, just clean it and deploy anew.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The function block LOGGER, from the Runtime.Base library, can be used to write user defined messages into the log. The logging level of the device can be defined in accordance with the requirements. If the logging level of the device is set to <span class="ph uicontrol">Debug</span>, also Debug messages are available in the log file. The default setting is <strong class="ph b">Info</strong>, that means only info, warning and detected error would be available, but no debug messages. This setting avoids an overstressing of smaller devices. In order to write debug messages to the log, open the <span class="ph uicontrol">Logical Devices</span> editor, select the device and open <span class="ph menucascade"><span class="ph uicontrol">Configuration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Debug</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Log</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Level</span></span> in the device properties. Set <span class="ph uicontrol">Level</span> to <span class="ph uicontrol">Debug</span> (or e.g. <span class="ph menucascade"><span class="ph uicontrol">Warning</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">no Info</span></span> and no Debug messages are written to the log file, etc.).
+</div>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--caution">
+<span class="hazardstatement--caution-symbol"> </span>CAUTION
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+RISK OF UNINTENDED OPERATION
+</div>
+<div class="howtoavoid">
+After a modification of the device settings, deploy the new configuration into the device, for the new settings to take effect.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in injury or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p class="p">
+To load the new configuration settings: open the <a class="xref" href="SubMenuDeploy-EC28B8A0.html"><strong class="ph b">Deploy and Diagnostic</strong></a> editor, select the device from the list, and in the <span class="ph uicontrol">Action</span> menu select <span class="ph menucascade"><span class="ph uicontrol">Deploy</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Deploy</span></span>. Then reboot the device. When using a Runtime Simulation, closed and restart and then load the project in Runtime Simulation again.
+</p>
+<p class="p">
+A description of the LOGGER function block can be found in the documentation of the function block at <span class="ph menucascade"><span class="ph uicontrol">Help</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Solution Help</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Runtime.Base</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Services</span></span>.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

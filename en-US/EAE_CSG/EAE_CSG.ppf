@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="EAE_CSG" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="5" page="EAE_CSG\AboutTheBookCPT-342721C5.html">
+  </contextentry>
+  <contextentry id="4" page="EAE_CSG\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="3" page="EAE_CSG\D-TS-0002473_1.html">
+  </contextentry>
+  <contextentry id="2" page="EAE_CSG\D-TS-0002473_3.html">
+  </contextentry>
+  <contextentry id="1" page="EAE_CSG\D-TS-0002473_4.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="EAE_CSG\EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html">
+  <topic>EAE_CSG\AboutTheBookCPT-342721C5.html
+  </topic>
+  <topic>EAE_CSG\AccountActivityLog-5A63AFB0.html
+  </topic>
+  <topic>EAE_CSG\AdditionalDocumentation-B9281455.html
+  </topic>
+  <topic>EAE_CSG\AIGWorkflowUsingGalaxyUserHavingOpe-6C72201D.html
+  </topic>
+  <topic>EAE_CSG\Appendix-B927C72A.html
+  </topic>
+  <topic>EAE_CSG\AssetLinkWorkflowUsingGalaxyUserHav-652EB834.html
+  </topic>
+  <topic>EAE_CSG\AssetLinkWorkflowUsingGalaxyUserHav-652F529C.html
+  </topic>
+  <topic>EAE_CSG\Assets-6301BEA5.html
+  </topic>
+  <topic>EAE_CSG\AVEVAOMIPolicyConfigurationCPT-3B7AA530.html
+  </topic>
+  <topic>EAE_CSG\ConfigureUsersAndRoles-652F3590.html
+  </topic>
+  <topic>EAE_CSG\ControlSystemArchitecture-12C06C6D.html
+  </topic>
+  <topic>EAE_CSG\CybersecurityApplicationPlatform-12C3460B.html
+  </topic>
+  <topic>EAE_CSG\CyberSecurityBestPracticesCPT-34B01EFF.html
+  </topic>
+  <topic>EAE_CSG\D-NA-0003897.1.html
+  </topic>
+  <topic>EAE_CSG\D-TS-0002473_1.html
+  </topic>
+  <topic>EAE_CSG\D-TS-0002473_3.html
+  </topic>
+  <topic>EAE_CSG\D-TS-0002473_4.html
+  </topic>
+  <topic>EAE_CSG\DefenseInDepth-38633DAE.html
+  </topic>
+  <topic>EAE_CSG\DefenseinDepthComponentsCPT-3737B32B.html
+  </topic>
+  <topic>EAE_CSG\DefenseInDepthStrategy-3864BBA2.html
+  </topic>
+  <topic>EAE_CSG\DefinePKIandCertificatesCPT-3B7ADB26.html
+  </topic>
+  <topic>EAE_CSG\DefineSelfManagedPKIsCPT-3D68996D.html
+  </topic>
+  <topic>EAE_CSG\DPACControllerCommunicationsSecurit-B8A0C957.html
+  </topic>
+  <topic>EAE_CSG\DPACControllerCommunicationsSecurit-B8A0C957_1.html
+  </topic>
+  <topic>EAE_CSG\DPACDenial-of-ServiceDoSProtection-B8A1B1E1.html
+  </topic>
+  <topic>EAE_CSG\DPACPlatformsandServicesCPT-34B03717.html
+  </topic>
+  <topic>EAE_CSG\EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html
+  </topic>
+  <topic>EAE_CSG\EAE_CSG_id_address_tpc.html
+  </topic>
+  <topic>EAE_CSG\EAE_CSG_id_disclaimer_tpc.html
+  </topic>
+  <topic>EAE_CSG\EcoStruxureAutomationExpert-CyberSe-34B08F70.html
+  </topic>
+  <topic>EAE_CSG\EndPointProtection-38637BEE.html
+  </topic>
+  <topic>EAE_CSG\EnhanceResourceAvailabilityCPT-453DCCE1.html
+  </topic>
+  <topic>EAE_CSG\FirewallSecurityConsiderationsCPT-3737CC74.html
+  </topic>
+  <topic>EAE_CSG\HardeningGuidelineForContainersOnSo-99CC15EF.html
+  </topic>
+  <topic>EAE_CSG\HoldupAndFallbackFunctions-462D0F97.html
+  </topic>
+  <topic>EAE_CSG\IdentifyAuthenticateandAuthorizeUse-3B5990BB.html
+  </topic>
+  <topic>EAE_CSG\IEC62443-3-3Conformance-C4F48DAC.html
+  </topic>
+  <topic>EAE_CSG\InteractiveLogonBanner-5DFAFE8A.html
+  </topic>
+  <topic>EAE_CSG\MaintainSystemIntegrity-45A53B70.html
+  </topic>
+  <topic>EAE_CSG\ManageUsersAccountCPT-3B7ABEBB.html
+  </topic>
+  <topic>EAE_CSG\NetworkSecurity-3861BFEB.html
+  </topic>
+  <topic>EAE_CSG\PhysicalSecurityCPT-3737BBD9.html
+  </topic>
+  <topic>EAE_CSG\PKIHierarchies-133AD5A4.html
+  </topic>
+  <topic>EAE_CSG\PrivacyCPT-34B02B7C.html
+  </topic>
+  <topic>EAE_CSG\ProductDecommissioning-3863B2A6.html
+  </topic>
+  <topic>EAE_CSG\RemoteDesktopService-5416D500.html
+  </topic>
+  <topic>EAE_CSG\RiskAssessmentFormulas-12C32144.html
+  </topic>
+  <topic>EAE_CSG\SecuringConfidentialData-4D7F522B.html
+  </topic>
+  <topic>EAE_CSG\SecuringTheNetwork-3863CCA9.html
+  </topic>
+  <topic>EAE_CSG\SecurityAuditLoggingOn-5A6C4EB2.html
+  </topic>
+  <topic>EAE_CSG\SecurityFunctionalityVerification-3863F3AD.html
+  </topic>
+  <topic>EAE_CSG\SecurityOverview-386476B9.html
+  </topic>
+  <topic>EAE_CSG\SecurityPoliciesAndProcedures-12C044D8.html
+  </topic>
+  <topic>EAE_CSG\SetMultiResource-462A36EE.html
+  </topic>
+  <topic>EAE_CSG\SoftDPACHardening-B8A32228.html
+  </topic>
+  <topic>EAE_CSG\SoftwareInventoryUpdatesAndPatches-38640F35.html
+  </topic>
+  <topic>EAE_CSG\SolutionHardening-38642302.html
+  </topic>
+  <topic>EAE_CSG\SwitchSecurityConsiderations-38642AD5.html
+  </topic>
+  <topic>EAE_CSG\Threats-12C2F656.html
+  </topic>
+  <topic>EAE_CSG\UnsupportedConfigurationsCPT-34B04175.html
+  </topic>
+  <topic>EAE_CSG\UseCertificatesinApplicationCPT-3D68A517.html
+  </topic>
+  <topic>EAE_CSG\UseCertificatesInSecureRemoteAccess-B8213E86.html
+  </topic>
+  <topic>EAE_CSG\Vulnerabilities-12C30905.html
+  </topic>
+  <topic>EAE_CSG\WorkstationAndServerHardening-48D49D9F.html
+  </topic>
+  <topic>EAE_CSG\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

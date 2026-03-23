@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="3. Watch Event Rules" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="WatchEventRules-EA9BB537" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+3. Watch Event Rules
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.4.1.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/WorkingWithWatchPoints-EA9B8E54.html" />
+<meta name="brsnext" value="EAE_UM/SequentialControlEditor-2243A36F.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; Function Block Editors &gt; Watch" />
+</head>
+<body id="WatchEventRules-EA9BB537"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"FunctionBlockEditors-9FE0F1E2.html#FunctionBlockEditors-9FE0F1E2\">Function Block Editors<\/a> > <a href=\"Watch-9FF7176D.html#Watch-9FF7176D\">Watch<\/a> > 3. Watch Event Rules<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="WatchEventRules-EA9BB537" id="WatchEventRules-EA9BB537_">
+<!-- --></a><a name="WatchEventRules_EA9BB537" id="WatchEventRules_EA9BB537">
+<!-- --></a><a name="WatchEventRules_EA9BB537" id="WatchEventRules_EA9BB537_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+3. Watch Event Rules
+</h1>
+<div class="body conbody">
+<div class="section" id="WatchEventRules-EA9BB537__WatchEventRules-A65B8F54">
+<a name="WatchEventRules-A65B8F54" id="WatchEventRules-A65B8F54">
+<!-- --></a><a name="WatchEventRules_EA9BB537__WatchEventRules_A65B8F54" id="WatchEventRules_EA9BB537__WatchEventRules_A65B8F54">
+<!-- --></a><a name="WatchEventRules_A65B8F54" id="WatchEventRules_A65B8F54">
+<!-- --></a>
+<p class="p">
+You can trigger events of a Composite function block from within the function block.
+</p>
+<p class="p">
+While watching the inner components of a Composite function block, you can trigger the event inputs of the Composite directly within this view by right-clicking on the event block and selecting <span class="ph uicontrol">Trigger Event</span>. You do not need to move upwards to the next level upwards to do this.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The general rules for the Watch are:
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+At the input side of blocks the Watch displays the currently present values of the external interface of the block.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+At the output side of blocks the Watch displays the currently present values of the internal interface of the block. This allows also watching those values which are not connected to a subsequent block.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The Watch is only updated when any output event on the block is triggered.
+</p>
+</li>
+</ul>
+</div>
+<p class="p">
+When watching the outputs of function blocks, consider the rules, as described above. Further on, when constructing function blocks, it has to be considered that the currently calculated data is available on the external interface of the block output only when the data output also has an Association to the fired event. In the example below, a calculated value at the data output is displayed in the Watch (internal interface). However, the value (still) does not exist at the external interface of the block, and therefore cannot be accessed from the following block. For this reason, a manual trigger of the event input on the subsequent block would not cause updating the data value as well. The calculated value simply is not available for processing with the next block, although it is visible at the watched point, because the watch has been updated by firing another associated event:
+</p>
+<div class="p">
+<div class="fig fignone">
+<img class="image" src="0000774454.png" alt="" style="max-height:250pt;" />
+</div>
+<div class="fig fignone">
+<img class="image" src="0000930976.png" alt="" style="max-height:200pt;" />
+</div>
+<div class="fig fignone">
+<img class="image" src="0000930975.png" alt="" style="max-height:200pt;" />
+</div>
+</div>
+<p class="p">
+One way to find out the currently, actually applied data value at the external output interface of the block is to insert an additional block, as the <span class="keyword cmdname">ANY2ANY</span> in the example image above. By manually triggering the input event you can update the data input. However, the data values of the two blocks are only identical now when the calculated data at the sender block (<span class="keyword cmdname">Composite1</span> in the image) was also transferred to the external interface by a correct execution of the block. Otherwise, you have to rethink the structure of the function block.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> In very large blocks the buffer for the transfer of Watches may overflow. So it could happen in rare cases that the test container is not opened with online debugging.
+</div>
+<p class="p">
+A look at the system log may provide an indication: 'No space for notification' shows that the runtime is going to pass something (e.g. the watches) but the space is not sufficient. Since the size of the buffer depends on the device and is defined by the configuration of the device, this detected error can occur at different block sizes depending on the device.
+</p>
+<p class="p">
+Adapting the buffer, of course, is only possible to a limited extent. First confirm the permissibility of the device used. In this case, the simplest solution is to reduce the concerned block by dividing the logic in multiple blocks.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

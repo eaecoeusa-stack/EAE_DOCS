@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Simulating Connections" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SimulatingConnectionsCPT-5BF3FE05" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Simulating Connections
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.5.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_GS/TestingInstrumentsManuallyCPT-5BF3F740.html" />
+<meta name="brsnext" value="EAE_GS/TheFillingSequenceCATCPT-62B1A94C.html" />
+<meta name="topic-breadcrumbs" content="EcoStruxure Automation Expert - Getting Started &gt; Setting-Up the Instruments &gt; Testing the Application" />
+</head>
+<body id="SimulatingConnectionsCPT-5BF3FE05"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html");
+document.write("<a href=\"EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html\">EcoStruxure Automation Expert - Getting Started<\/a> > <a href=\"Setting-UptheInstrumentsCPT-5BF229A6.html#Setting-UptheInstrumentsCPT-5BF229A6\">Setting-Up the Instruments<\/a> > <a href=\"TestingtheApplicationCPT-5BF3E39D.html#TestingtheApplicationCPT-5BF3E39D\">Testing the Application<\/a> > Simulating Connections<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SimulatingConnectionsCPT-5BF3FE05" id="SimulatingConnectionsCPT-5BF3FE05_">
+<!-- --></a><a name="SimulatingConnectionsCPT_5BF3FE05" id="SimulatingConnectionsCPT_5BF3FE05">
+<!-- --></a><a name="SimulatingConnectionsCPT_5BF3FE05" id="SimulatingConnectionsCPT_5BF3FE05_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Simulating Connections
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Before simulating the connection, the <strong class="ph b">ownership of all instruments has to be set back</strong> to <strong class="ph b">Program</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">The <strong class="ph b">connections won’t be able to write commands to the instruments if their ownership is owned by the operator</strong>.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="div">
+<p class="p">
+However, as described in the topic <a class="xref" href="PurposeoftheConnectionsCPT-5BF28AAE.html">Purpose of the Connections</a>, some <strong class="ph b">instruments are turned On manually, by the operator</strong>. These instruments are:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+TR1LSL01
+</p>
+</li>
+<li class="li">
+<p class="p">
+TR1LSH01
+</p>
+</li>
+<li class="li">
+<p class="p">
+TR1M01
+</p>
+</li>
+<li class="li">
+<p class="p">
+TR1LT01
+</p>
+</li>
+</ul>
+</div>
+<p class="p">
+When it is possible, the <strong class="ph b">ownership should remain to the operator</strong>. For the digital input, the value has to be overridden in the setting faceplate.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:40.5%" />
+<col style="width:59.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0001127544.png" width="300" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+As developed in the topics <a class="xref" href="OpeningtheFirstValveCPT-5BF2A0FA.html">Opening the First Valve</a> and <a class="xref" href="OpeningtheSecondValveCPT-5BF2A89E.html">Opening the Second Valve</a>, when the <strong class="ph b">Override Values</strong> of TR1LSL01 and TR1LSH01 are set to <strong class="ph b">On</strong>, the open command is sent to the valves TR1V01 and TR1V02.
+</p>
+<p class="p">
+In the event that the simulation is already activated, the state will directly turn to <strong class="ph b">Open</strong>. Otherwise, the status will be set to <strong class="ph b">Opening</strong> and will be waiting for the simulation to be activated.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:40.5%" />
+<col style="width:59.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0001127543.png" width="250" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">The digital inputs are activating an alarm when turning <strong class="ph b">On</strong> because their original purpose is to alert when turning <strong class="ph b">On</strong>, not to turn <strong class="ph b">On</strong> and <strong class="ph b">Off</strong> instruments. Again, this example doesn’t claim to be realistic. The ‘Whole Milk Factory’ development will be.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+As developed in the topic <a class="xref" href="OpeningtheThirdValveCPT-5BF2B112.html">Opening the Third Valve</a>, TR1V01 and TR1V02 need to be opened, and TR1M01 <strong class="ph b">On</strong> for the simulation to open the third valve.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:56.49999999999999%" />
+<col style="width:43.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0001127542.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+<strong class="ph b">Now, let’s see the analog input TR1LT01.</strong>
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">As said previously, <strong class="ph b">TR1LT01 is handled manually</strong>.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="div">
+<p class="p">
+To <strong class="ph b">change its process value</strong>, go to its setting faceplate and change the override value:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:66%" />
+<col style="width:34%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0001127571.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:68.5%" />
+<col style="width:31.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0001127570.png" width="350" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+About the alarms ‘High’ and ‘High High’
+</h2>
+<p class="p">
+The <strong class="ph b">alarms ‘High’ and ‘High High’ are currently active</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">They are <strong class="ph b">active when the process value is higher than them</strong>.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="div">
+<p class="p">
+In our case:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+the <strong class="ph b">process</strong> <strong class="ph b">value </strong>has been<strong class="ph b"> set to 50</strong>
+</p>
+</li>
+<li class="li">
+<p class="p">
+the <strong class="ph b">‘High’</strong> and <strong class="ph b">‘High High’</strong> are <strong class="ph b">set to 0</strong>.
+</p>
+</li>
+</ul>
+</div>
+<div class="div">
+<p class="p">
+There are <strong class="ph b">two methods</strong> to manually change these ‘High’ and ‘High High’ values:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<u class="ph u"><strong class="ph b">Method 1</strong></u>
+</p>
+<p class="p">
+<strong class="ph b">Grab the arrows</strong> of these alarms and <strong class="ph b">raise them up</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:68.5%" />
+<col style="width:31.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0001127569.png" width="350" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+<u class="ph u"><strong class="ph b">Method 2</strong></u>
+</p>
+<p class="p">
+<strong class="ph b">Set the setpoint</strong> of the ‘High’ and ‘High High’ alarms <strong class="ph b">in their faceplate</strong>.
+</p>
+<img class="image" src="0001127568.png" width="500" alt="" />
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">As developed in the topic <a class="xref" href="TurningONtheDigitalOutputCPT-5BF2DCC3.html">Turning ‘ON’ the Digital Output</a>, the last digital output is commanded On when TR1V03 is Open and when TR1LT01’s process value is higher than or equal to the constant 82.5.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="div">
+<p class="p">
+Then <strong class="ph b">try the following configurations</strong>:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open TR1V03 and set the <strong class="ph b">process value to 82</strong>.
+</p>
+<img class="image" src="0001127567.png" width="500" alt="" />
+</li>
+<li class="li">
+<p class="p">
+Set the <strong class="ph b">process value to 82,5</strong>.
+</p>
+<img class="image" src="0001127566.png" width="500" alt="" />
+</li>
+<li class="li">
+<p class="p">
+Set the <strong class="ph b">process value to 85</strong>.
+</p>
+<img class="image" src="0001127565.png" width="500" alt="" />
+</li>
+<li class="li">
+<p class="p">
+Turn <strong class="ph b">Off</strong> TR1LSL01.
+</p>
+<img class="image" src="0001127564.png" width="500" alt="" />
+</li>
+</ol>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8.542713567839197%" />
+<col style="width:91.45728643216081%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000878449.png" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:middle; background-color:#3DCD58; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<strong class="ph b">You can now play with the instruments and try by yourself various other configurations or even try to develop other connections between function blocks.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004453.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

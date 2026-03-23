@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc15.js\"  name=\"Handling Potential Cross-communication Event Loss\" url=\"EAE_ADG/HandlingPotentialCross-communicatio-4BA517B9.html#HandlingPotentialCross-communicatio-4BA517B9\"><item name=\"Solution Principles\" url=\"EAE_ADG/SolutionPrinciples-4BA5EC75.html#SolutionPrinciples-4BA5EC75\" /></data>";

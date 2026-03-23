@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="EAE_IECMG" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="1" page="EAE_IECMG\AboutTheBook-5B4DE3AD.html">
+  </contextentry>
+  <contextentry id="5" page="EAE_IECMG\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="4" page="EAE_IECMG\D-TS-0002473_1.html">
+  </contextentry>
+  <contextentry id="3" page="EAE_IECMG\D-TS-0002473_3.html">
+  </contextentry>
+  <contextentry id="2" page="EAE_IECMG\D-TS-0002473_4.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="EAE_IECMG\EAE_IECMG_IEC614499ProgrammingGuidelinesEcoSt-5B4C38A7.html">
+  <topic>EAE_IECMG\AboutTheBook-5B4DE3AD.html
+  </topic>
+  <topic>EAE_IECMG\ApplyComponent-BasedProgrammingOnAu-5B6ED3E7.html
+  </topic>
+  <topic>EAE_IECMG\ApplyingDesignGuidelinesToARealUseC-619D0FB5.html
+  </topic>
+  <topic>EAE_IECMG\ArchitecturalIndications-617CC6CA.html
+  </topic>
+  <topic>EAE_IECMG\BehavioralLogics-HMIInterface-619C8A12.html
+  </topic>
+  <topic>EAE_IECMG\BehavioralLogics-InsideStructure-619C40B0.html
+  </topic>
+  <topic>EAE_IECMG\BehavioralLogicsFrame-5a-6199F893.html
+  </topic>
+  <topic>EAE_IECMG\Children-627D3C60.html
+  </topic>
+  <topic>EAE_IECMG\ChildrenSubsystemFrame-4CPT-B8B04007.html
+  </topic>
+  <topic>EAE_IECMG\Component-BasedProgrammingOverview-5B6CE5D9.html
+  </topic>
+  <topic>EAE_IECMG\Conclusion-627F14CB.html
+  </topic>
+  <topic>EAE_IECMG\D-NA-0003897.1.html
+  </topic>
+  <topic>EAE_IECMG\D-TS-0002473_1.html
+  </topic>
+  <topic>EAE_IECMG\D-TS-0002473_3.html
+  </topic>
+  <topic>EAE_IECMG\D-TS-0002473_4.html
+  </topic>
+  <topic>EAE_IECMG\DefinitionOfTheTopObject-61A062CD.html
+  </topic>
+  <topic>EAE_IECMG\EAE_IECMG_id_address_tpc.html
+  </topic>
+  <topic>EAE_IECMG\EAE_IECMG_id_disclaimer_tpc.html
+  </topic>
+  <topic>EAE_IECMG\EAE_IECMG_IEC614499ProgrammingGuidelinesEcoSt-5B4C38A7.html
+  </topic>
+  <topic>EAE_IECMG\EM_C1Children-627E218F.html
+  </topic>
+  <topic>EAE_IECMG\EM_C1EquipmentModule-627DAD8F.html
+  </topic>
+  <topic>EAE_IECMG\EM_C1FieldInterfaceModule-627EB3F1.html
+  </topic>
+  <topic>EAE_IECMG\EM_C1FunctionalBehavior-627EF1E6.html
+  </topic>
+  <topic>EAE_IECMG\EquipmentList-619E72BE.html
+  </topic>
+  <topic>EAE_IECMG\FieldInterfaceCATFrame-3CPT-B8AE9F6A.html
+  </topic>
+  <topic>EAE_IECMG\FlowControl-619DB3D0.html
+  </topic>
+  <topic>EAE_IECMG\FunctionalInputOutputInterface-61A12A0B.html
+  </topic>
+  <topic>EAE_IECMG\HierarchicalAggregationOfFunctional-617EDB5F.html
+  </topic>
+  <topic>EAE_IECMG\HierarchicalStructureInComponent-Ba-5B6D7C61.html
+  </topic>
+  <topic>EAE_IECMG\InitializationCATFrame-0CPT-B8AE978F.html
+  </topic>
+  <topic>EAE_IECMG\InitializationSequence-61A0CB19.html
+  </topic>
+  <topic>EAE_IECMG\InternalSWArchitectureOfSubsystemCA-6182FD3A.html
+  </topic>
+  <topic>EAE_IECMG\LevelControl-619DC5C3.html
+  </topic>
+  <topic>EAE_IECMG\LogicsSubsystemFrame-5CPT-B8B046CC.html
+  </topic>
+  <topic>EAE_IECMG\NormalShutdownProcedure-61A004DC.html
+  </topic>
+  <topic>EAE_IECMG\OperationModeManagement-61A13D96.html
+  </topic>
+  <topic>EAE_IECMG\OT-ITInterfacingWithStructuredSeman-61991978.html
+  </topic>
+  <topic>EAE_IECMG\Overview-5B6F31F8.html
+  </topic>
+  <topic>EAE_IECMG\Preparation-619F879B.html
+  </topic>
+  <topic>EAE_IECMG\PressureControl-619DD7C5.html
+  </topic>
+  <topic>EAE_IECMG\ProcessControl-619D5B19.html
+  </topic>
+  <topic>EAE_IECMG\ProgrammingGuidelinesIn-617C8AFF.html
+  </topic>
+  <topic>EAE_IECMG\ProgrammingMethodologiesComparison-617B1B40.html
+  </topic>
+  <topic>EAE_IECMG\Stand-byProcedure-619FEF35.html
+  </topic>
+  <topic>EAE_IECMG\StandardOverview-5B67F701.html
+  </topic>
+  <topic>EAE_IECMG\StartupAndNormalOperation-619FD19B.html
+  </topic>
+  <topic>EAE_IECMG\SubsystemsInterface-61800441.html
+  </topic>
+  <topic>EAE_IECMG\TemperatureControl-619DF5CE.html
+  </topic>
+  <topic>EAE_IECMG\Unit600-MEGDistillationProcessDescr-619EA39A.html
+  </topic>
+  <topic>EAE_IECMG\Unit601-627D82F6.html
+  </topic>
+  <topic>EAE_IECMG\UseCaseDescription-619D2E57.html
+  </topic>
+  <topic>EAE_IECMG\UseCaseImplementation-61A02B48.html
+  </topic>
+  <topic>EAE_IECMG\WhatIs-5B652C71.html
+  </topic>
+  <topic>EAE_IECMG\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

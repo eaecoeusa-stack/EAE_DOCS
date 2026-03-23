@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="PROFINET Module and Submodule Diagnostics" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="PROFINETModuleAndSubmoduleDiagnosti-62A9DA04" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+PROFINET Module and Submodule Diagnostics
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.5.3.0_4";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/SubscribingToPROFINETAlarms-4968A2BB.html" />
+<meta name="brsnext" value="EAE_UM/TroubleshootingAPROFINETConfigurati-50285255.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications &gt; PROFINET &gt; Configuring Event Driven PROFINET Communication" />
+</head>
+<body id="PROFINETModuleAndSubmoduleDiagnosti-62A9DA04"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > <a href=\"PROFINET-D50A0A36.html#PROFINET-D50A0A36\">PROFINET<\/a> > <a href=\"ConfiguringEventDrivenPROFINETCommu-498F57C5.html#ConfiguringEventDrivenPROFINETCommu-498F57C5\">Configuring Event Driven PROFINET Communication<\/a> > PROFINET Module and Submodule Diagnostics<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="PROFINETModuleAndSubmoduleDiagnosti-62A9DA04" id="PROFINETModuleAndSubmoduleDiagnosti-62A9DA04_">
+<!-- --></a><a name="PROFINETModuleAndSubmoduleDiagnosti_62A9DA04" id="PROFINETModuleAndSubmoduleDiagnosti_62A9DA04">
+<!-- --></a><a name="PROFINETModuleAndSubmoduleDiagnosti_62A9DA04" id="PROFINETModuleAndSubmoduleDiagnosti_62A9DA04_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+PROFINET Module and Submodule Diagnostics
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Use the <code class="ph codeph">PN_GET_DIAG</code> function block to provide a summary of the status of modules and submodules located on a specified slot. For any specified slot, the <code class="ph codeph">PN_GET_DIAG</code> function block can return the following information:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Module is OK
+</p>
+</li>
+<li class="li">
+<p class="p">
+Module is not present
+</p>
+</li>
+<li class="li">
+<p class="p">
+Wrong module is present
+</p>
+</li>
+<li class="li">
+<p class="p">
+Correct module is present, but one or more submodules are not present
+</p>
+</li>
+<li class="li">
+<p class="p">
+Correct module and a wrong submodule are present
+</p>
+</li>
+<li class="li">
+<p class="p">
+Module is in an undefined state
+</p>
+</li>
+<li class="li">
+<p class="p">
+Diagnostics are not available
+</p>
+</li>
+</ul>
+<p class="p">
+To configure the <code class="ph codeph">PN_GET_DIAG</code> function block:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the<a class="xref" href="FunctionBlocksNetworkEditor-69D62822.html"> Function Blocks Network editor</a>, add the <code class="ph codeph">PN_GET_DIAG</code> function block from the library <span class="ph menucascade"><span class="ph uicontrol">Standard.IoProfinet</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Services</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure the data inputs by specifying the target slot to examine:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<code class="ph codeph">REQ</code> links to the event that triggers the diagnostic operation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">BUS_ID</code> identifies the PROFINET IO-Controller - bus master - (which you added <a class="xref" href="AddAPROFINETIOControllerToYourProje-D51103F4.html">when creating your PROFINET network</a>) of the type <span class="ph uicontrol">Standard.IoProfinet.PN_IOController</span> that is that target of the diagnostic operation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">STATION_NAME</code> is the <span class="ph uicontrol">Station Name</span> of the IO-Device (which you <a class="xref" href="AddPROFINETIO-Devices-D5797036.html">previously added to the PROFINET network</a>) that is the target of the diagnostic operation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">SLOT_NO</code> is <a class="xref" href="AddModulesToDevices-D5837561.html#AddModulesToDevices-D5837561__AddingModules-D5897565">the module slot number</a> of that is the target of the diagnostic operation.
+</p>
+</li>
+</ul>
+<p class="p">
+For example:
+</p>
+<img class="image" src="DD00973968.png" alt="" style="max-height:1.3in;" />
+</li>
+<li class="li">
+<p class="p">
+The operation executes when:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<code class="ph codeph">REQ</code> = 1, and
+</p>
+</li>
+<li class="li">
+<p class="p">
+<code class="ph codeph">QI</code> = TRUE
+</p>
+</li>
+</ul>
+<p class="p">
+After execution, the data outputs display the result of the write operation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+After the operation concludes, check the <code class="ph codeph">STATUS</code> data output text value, which can display:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">OK</span>: the diagnostic operation was successful.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Error</span>: the specified channel, device or slot is invalid.
+</p>
+</li>
+</ul>
+<p class="p">
+If the <code class="ph codeph">STATUS</code> response is <span class="ph uicontrol">Error</span>, check both the Device and Cyclic Logs and the detected error code lists.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Standard.IoProfinet</span> library help for the <code class="ph codeph">PN_GET_DIAG</code> function block includes a link to PROFINET detected error codes.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Check the <code class="ph codeph">DIAG_STATE</code> output text value. This is a DWORD data type containing:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+a high word, which indicates the module diagnostic state, and
+</p>
+</li>
+<li class="li">
+<p class="p">
+a low word, which indicates the submodule diagnostic state
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <code class="ph codeph">DIAG_STATE</code> value is meaningful only if the <code class="ph codeph">STATUS</code> output value is 0.
+</div>
+<p class="p">
+Module state values (high word) can include:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:18.27%" />
+<col style="width:81.73%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d467034e269">
+<p class="p">
+Value
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d467034e274">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e269 ">
+<p class="p">
+0x0000
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e274 ">
+<p class="p">
+No Module
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e269 ">
+<p class="p">
+0x0001
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e274 ">
+<p class="p">
+Wrong Module
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e269 ">
+<p class="p">
+0x0002
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e274 ">
+<p class="p">
+Proper Module, but submodule difference exists
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e269 ">
+<p class="p">
+0xFEFE
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e274 ">
+<p class="p">
+Diagnosis not available
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e269 ">
+<p class="p">
+0xFFFF
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e274 ">
+<p class="p">
+Module OK
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e269 ">
+<p class="p">
+Others
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e274 ">
+<p class="p">
+Undefined state
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Submodule state values (low word) can include:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:18.62%" />
+<col style="width:81.38%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d467034e372">
+<p class="p">
+Value
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d467034e376">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e372 ">
+<p class="p">
+0x0002
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e376 ">
+<p class="p">
+Wrong submodules
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e372 ">
+<p class="p">
+0x0003
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e376 ">
+<p class="p">
+No submodules
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e372 ">
+<p class="p">
+0xFEFE
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e376 ">
+<p class="p">
+Diagnosis not available
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d467034e372 ">
+<p class="p">
+Others
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d467034e376 ">
+<p class="p">
+Undefined state
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

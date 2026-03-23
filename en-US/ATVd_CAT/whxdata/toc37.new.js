@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc38","name":"AltivarSoftStarter - Application CAT","type":"book","url":"ATVd_CAT/AltistartMSLight-ApplicationCAT-0BA3217E.html"},{"key":"toc39","name":"AltivarVsLight - Application CAT","type":"book","url":"ATVd_CAT/AltivarLightVS-ApplicationCAT-03E472F2.html"},{"key":"toc40","name":"AltivarVs - Application CAT","type":"book","url":"ATVd_CAT/AltivarVS-ApplicationCAT-03E89435.html"},{"key":"toc41","name":"ATVPosInterface2 - Application CAT","type":"book","url":"ATVd_CAT/ATVPosInterface2-ApplicationCAT-CEC4E501.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

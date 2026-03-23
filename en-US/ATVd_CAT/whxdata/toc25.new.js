@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc26","name":"ATVFrequencyControl - Hardware CAT","type":"book","url":"ATVd_CAT/ATVFrequencyControl-HardwareCAT-4D7D9D91.html"},{"key":"toc28","name":"ATVFrequencyControlLight - Hardware CAT","type":"book","url":"ATVd_CAT/ATVFrequencyControlLight-HardwareCA-4D7D9253.html"},{"key":"toc29","name":"ATVPosControlLight - Hardware CAT","type":"book","url":"ATVd_CAT/ATVPosControlLight-HardwareCAT-F2BC1D4E.html"},{"key":"toc30","name":"ATVSpeedControl - Hardware CAT","type":"book","url":"ATVd_CAT/D-SE-0103848.html"},{"key":"toc32","name":"ATVSpeedControlLight - Hardware CAT","type":"book","url":"ATVd_CAT/TPC_ATVSpeedControlLight-DC4F8F87.html#TPC_ATVSpeedControlLight-DC4F8F87"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

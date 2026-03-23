@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc5.js\"  name=\"Aggregating and Splitting Structured Data Objects\" url=\"EAE_ADG/ConceptTitle-E7078FCC.html#ConceptTitle-E7078FCC\"><item name=\"AGGREGATE\" url=\"EAE_ADG/AGGREGATE-E40EA8C5.html#AGGREGATE-E40EA8C5\" /><item name=\"SPLIT\" url=\"EAE_ADG/SPLIT-E70869A8.html#SPLIT-E70869A8\" /></data>";

@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"Compatibilities and Dependencies - User Guide\" url=\"EAE_CMPT/EAE_CMPT_CompatibilityGuideReferenceNumberOp-3D7DC3B5.html\" src=\"toc1.js\" /></data>";

@@ -1,0 +1,1 @@
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"About the Book\" to=\"Modicon M251 Distributed PAC\" num=\"19\"/><ck fm=\"Modicon M580 Distributed PAC\" to=\"System Requirements\" num=\"19\"/><ck fm=\"EcoStruxure Automation Expert — BMECRD0100 X80 Remote I/O\" to=\"csh.js\" num=\"2\"/></cki>";

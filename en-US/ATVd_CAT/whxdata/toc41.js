@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc37.js\"  name=\"ATVPosInterface2 - Application CAT\" url=\"ATVd_CAT/ATVPosInterface2-ApplicationCAT-CEC4E501.html\"><item name=\"Setting up a positioning application using ATV dPAC\" url=\"ATVd_CAT/AndlingExampleWithPositionerVSDBase-CB8EF17C.html\" /></data>";

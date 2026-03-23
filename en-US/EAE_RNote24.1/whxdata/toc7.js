@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"Additional Information\" url=\"EAE_RNote24.1/AdditionalInformation-B8B41214.html\"><item name=\"Distributed Components\" url=\"EAE_RNote24.1/DistributedComponents-E3ECC19A.html\" /><item name=\"Cybersecurity features\" url=\"EAE_RNote24.1/CybersecurityFeatures-805FADA6.html\" /></data>";

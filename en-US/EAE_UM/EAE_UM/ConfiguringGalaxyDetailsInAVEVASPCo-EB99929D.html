@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="1. Configuring Galaxy Details in AVEVA SP Configuration" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfiguringGalaxyDetailsInAVEVASPCo-EB99929D" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+1. Configuring Galaxy Details in AVEVA SP Configuration
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.6.1.1_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/TestConnectionfromtheClientPCwithth-5A4B3E51.html" />
+<meta name="brsnext" value="EAE_UM/MigratingAGalaxyFromASP2020R2SP1ToA-CFED543A.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; EcoStruxure Automation Expert – Data Exchange &gt; Asset Link for AVEVA OMI" />
+</head>
+<body id="ConfiguringGalaxyDetailsInAVEVASPCo-EB99929D"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"EcoStruxureAutomationExpertDataAndS-961C60B5.html#EcoStruxureAutomationExpertDataAndS-961C60B5\">EcoStruxure Automation Expert – Data Exchange<\/a> > <a href=\"AutobuildAvevaInTouchOMI-96443BE6.html#AutobuildAvevaInTouchOMI-96443BE6\">Asset Link for AVEVA OMI<\/a> > 1. Configuring Galaxy Details in AVEVA SP Configuration<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfiguringGalaxyDetailsInAVEVASPCo-EB99929D" id="ConfiguringGalaxyDetailsInAVEVASPCo-EB99929D_">
+<!-- --></a><a name="ConfiguringGalaxyDetailsInAVEVASPCo_EB99929D" id="ConfiguringGalaxyDetailsInAVEVASPCo_EB99929D">
+<!-- --></a><a name="ConfiguringGalaxyDetailsInAVEVASPCo_EB99929D" id="ConfiguringGalaxyDetailsInAVEVASPCo_EB99929D_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+1. Configuring Galaxy Details in <span class="ph">AVEVA</span> SP Configuration
+</h1>
+<div class="body conbody">
+<div class="section" id="ConfiguringGalaxyDetailsInAVEVASPCo-EB99929D__ConfiguringGalaxyDetailsInAVEVASPCo-A2AC62B6">
+<a name="ConfiguringGalaxyDetailsInAVEVASPCo-A2AC62B6" id="ConfiguringGalaxyDetailsInAVEVASPCo-A2AC62B6">
+<!-- --></a><a name="ConfiguringGalaxyDetailsInAVEVASPCo_EB99929D__ConfiguringGalaxyDetailsInAVEVASPCo_A2AC62B6" id="ConfiguringGalaxyDetailsInAVEVASPCo_EB99929D__ConfiguringGalaxyDetailsInAVEVASPCo_A2AC62B6">
+<!-- --></a><a name="ConfiguringGalaxyDetailsInAVEVASPCo_A2AC62B6" id="ConfiguringGalaxyDetailsInAVEVASPCo_A2AC62B6">
+<!-- --></a>
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span> pad, right-click the project node. From the context menu, select <span class="ph menucascade"><span class="ph uicontrol">Configurations</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">AVEVA SP Configuration</span></span> to launch the <span class="ph uicontrol">System Platform Configuration</span> dialog. In this dialog, you can:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Galaxy</span> tab, create a new Galaxy or select an existing Galaxy.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Object Naming</span> tab, specify a 2-character <span class="ph uicontrol">Template Prefix</span> to be added to Galaxy System Objects names and area/application object names. The use is described in <a class="xref" href="ASPTemplateMappingOfLibraryCATsOrSo-A2BA3FEE.html"><span class="ph">AVEVA System Platform</span> Template Mapping of Library <span class="ph">CATs</span> and Solution <span class="ph">CATs</span>.</a>
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Template Prefix</span> is used in conjunction with the <span class="ph uicontrol">Automap</span> feature. (Refer to <a class="xref" href="ASPTemplateMappingOfLibraryCATsOrSo-A2BA3FEE.html#ASPTemplateMappingOfLibraryCATsOrSo-A2BA3FEE__TemplateMappingOnlineMode-A3252234">Template Mapping – Online Mode</a>.) It is optional.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When you click on <span class="imageinline"><img class="image" src="DD01227658.png" alt="" /></span> icon, it opens this current topic from the <em class="ph i"><span class="ph"><span class="ph">EcoStruxure Automation Expert</span> - User Manual</span></em>.
+</div>
+</li>
+</ul>
+<div class="div">
+<p class="p">
+A <a class="xref" href="GalaxyARepositoryForAVEVAAssetsAlso-CE37EFEC.html">Galaxy</a> server may host a Galaxy with several <span class="ph uicontrol">System Objects</span> sets. That is why in the dialog you may have to select the System Objects individually through drop-downs. Various situations can be encountered:<img class="image" src="DD00767872.png" alt="" style="max-height:350px;" />
+</p>
+</div>
+<div class="div">
+<p class="p">
+To select an existing Galaxy:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:9.5%" />
+<col style="width:90.5%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d871848e158">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d871848e163">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e158 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e163 ">
+<p class="p">
+Enter the <span class="ph uicontrol">Galaxy Server</span> name. Click anywhere to validate the server name.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e158 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e163 ">
+<p class="p">
+In the <span class="ph uicontrol">Galaxy</span> tab, tick <span class="ph uicontrol">Select Galaxy and System Objects</span> then select a Galaxy from the list.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, the Galaxy’s on the local server are listed. Change the <span class="ph uicontrol">Galaxy Server</span> to list the Galaxy’s on a remote server.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Galaxies list can be fetched either by selecting the <span class="ph uicontrol">Select Galaxy</span> dropdown list or by selecting the <img class="image" src="DD01227659.png" alt="" /> (refresh icon ) beside the Galaxies list.
+</p>
+</li>
+<li class="li">
+<p class="p">
+After selecting the Galaxy from the list, the associated Authentication mode is displayed against the <span class="ph uicontrol">Authentication Mode</span>.
+</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e158 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e163 ">
+<p class="p">
+Enter the <span class="ph uicontrol">Username</span> and <span class="ph uicontrol">Password</span> for the selected Galaxy.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+If the <span class="ph uicontrol">Authentication Mode</span> of Galaxy is other than <span class="ph uicontrol">None</span> (No Security Enabled Galaxy), then provide a username and password to proceed.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+Since you are selecting an existing Galaxy, <span class="ph uicontrol">Galaxy Type</span> (cab file name) is in read-only mode.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e158 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e163 ">
+<p class="p">
+Click <span class="ph uicontrol">Validate</span>.
+</p>
+<p class="p">
+If the validation succeeds, the <span class="ph uicontrol">Object Naming</span> tab shows the current prefixes.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e158 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e163 ">
+<p class="p">
+If you are using an existing galaxy that does not include the latest OPC client template <span class="xref">($aSEOPCClient)</span>, then import the following files into the Galaxy
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The <span class="xref">“OpcUaClientConfigurator.aaSLIB”</span> script library file from the path <span class="xref">“&lt;EAE Installation Path&gt;\ASP Libraries\Common Process Library\Installation Files\Script Function Libraries“</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="xref">“ApplicationTemplates.aaPKG”</span> file from the path <span class="xref">“&lt;EAE Installation Path&gt;\ASP Libraries\Common Process Library\Installation Files\Application Templates”</span>. This file contains the new OPC client template.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e158 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e163 ">
+<p class="p">
+If any error occurs during selection or validation of the Galaxy connection, a brief information is shown in the <span class="ph uicontrol">Error</span> section of the window with an <img class="image" src="DD01229563.png" alt="" /> icon. Hover your mouse on the error to see the complete error message.
+</p>
+<p class="p">
+For corrective action, a <span class="ph uicontrol">Need help ?</span> link is available beside the error. Click on it to open the <span class="ph"><a class="xref " href="../../EAE_UM/index.htm?rhmapid=TroubleshootingTips_EB9DCF77" target="_blank"><em class="ph i">Troubleshooting Tips</em></a></span>of the <em class="ph i"><span class="ph"><span class="ph">EcoStruxure Automation Expert</span> - User Manual</span></em>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="div">
+<p class="p">
+To create a new Galaxy:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:9.55%" />
+<col style="width:90.45%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d871848e383">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d871848e388">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e383 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e388 ">
+<p class="p">
+In the <span class="ph uicontrol">Galaxy</span> tab, tick <span class="ph uicontrol">New Galaxy with System Objects</span>, then enter a name for the new Galaxy.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> By default, the new Galaxy is created on the local server. To create a Galaxy on a remote server, change the <span class="ph uicontrol">Galaxy Server</span> and verify that the <span class="ph filepath">CFLBlankGalaxy.cab</span> file is placed in the <span class="ph filepath">BackupGalaxies</span> folder of the remote Galaxy server machine.
+</div>
+<p class="p">
+The <span class="ph uicontrol">Galaxy Type</span> list displays a single, read-only <span class="ph filepath">.cab</span> file type: <span class="ph filepath">CFLBlankGalaxy.cab</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The new Galaxy is accessed with the default user name and password of the <span class="ph">AVEVA System Platform</span>, which are applied automatically.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e383 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e388 ">
+<p class="p">
+The <span class="ph uicontrol">Authentication Mode</span> area offers three options (<span class="ph uicontrol">Galaxy</span>, <span class="ph uicontrol">OS User Based</span>, <span class="ph uicontrol">OS Group Based</span>) for authenticating the newly-created Galaxy. When you set <span class="ph uicontrol">Authentication Mode</span> to <span class="ph uicontrol">OS User Based</span> or <span class="ph uicontrol">OS Group Based</span>, you can access the IDE and log in using the default user name and password, then add the OS user / group to the users list.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> When <span class="ph uicontrol">Authentication Mode</span> is set to <span class="ph uicontrol">OS Group Based</span>, the user needs to add a group in IDE whose s/he is a member, and provide application object creation and deployment permission to this group.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e383 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e388 ">
+<p class="p">
+Click the <span class="ph uicontrol">Next</span> button to access the <span class="ph uicontrol">Object Naming</span> tab.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="div">
+<p class="p">
+To use a Galaxy Cabinet file other than the default one provided with <span class="ph">EcoStruxure Automation Expert</span>, follow these steps:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:11.5%" />
+<col style="width:88.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Step</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+<strong class="ph b">Action</strong>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Place the cabinet file in the ASP path: <span class="xref">C:\Program Files (x86)\ArchestrA\Framework\Bin\BackupGalaxies</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Launch <span class="ph uicontrol">ASP IDE</span> and create galaxy selecting the cab file copied in above step.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+In <span class="ph">EcoStruxure Automation Expert</span>, go to <span class="ph uicontrol">AVEVA SP </span>configuration and in <span class="ph uicontrol">Choose existing </span>section, select the galaxy created in above step from the drop-down list, validate it and save the configuration.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Template synchronization is started automatically and all ASP templates and attributes available in the configured galaxy are synchronized with <span class="ph">EcoStruxure Automation Expert</span>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="div">
+<p class="p">
+Follow the next steps in the <span class="ph uicontrol">Object Naming</span> tab to specify object name prefixes:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:9.55%" />
+<col style="width:90.45%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d871848e624">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d871848e629">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Specify the prefixes in the <span class="ph uicontrol">System Objects</span> area. By default the value is <span class="ph uicontrol">AB</span> (which stands for AutoBuild), modify the prefixes following these rules:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+The maximum length of the prefix is two characters.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The first character must be alphabetic (A...Z).which
+</p>
+</li>
+<li class="li">
+<p class="p">
+The second character must be alphanumeric (A...Z or 0...9).
+</p>
+</li>
+</ul>
+<p class="p">
+If NO prefix is specified, the prefixes will take the value: <span class="ph uicontrol">EAE_OMI_</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Click the <span class="ph uicontrol">Next</span> button to open the <span class="ph uicontrol">Application Objects</span> sub-tab.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Define the <span class="ph uicontrol">AppObject</span> prefix. The default value is <span class="ph uicontrol">AB</span>.To modify the prefixes, follow the same rules as in the previous step.
+</p>
+<p class="p">
+If NO prefix is specified, no prefix will be assigned to the application objects.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Define the <span class="ph uicontrol">AppObject Naming</span> source:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">CAT Instance</span>: With this default value, the name of an application object will be the one of the <span class="ph">CAT</span> instance.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Asset Tag</span>: The name of the application object will be the <span class="ph">Asset Tag</span>. If the latter is missing, the former will take over in the <span class="ph">AVEVA System Platform</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">HMI Alias</span>: The name of the application object will be the same as the HMI alias. If the latter is missing, the <span class="ph uicontrol">CAT Instance</span> name will take over in the <span class="ph">AVEVA System Platform</span>.
+</p>
+</li>
+</ul>
+<p class="p">
+For details on how to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Configure an <span class="ph">Asset Tag</span>, see the topic <a class="xref" href="AssetAliasName-9112AA2D.html">Creating <span class="ph">Asset Tag</span> for <span class="ph">CAT</span> and Sub<span class="ph">CAT</span> Instances</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure an HMI alias, see the topic <a class="xref" href="CreatingAndDisplayingAliasNamesForC-67615DFD.html">Creating and Displaying Alias Names for CAT and SubCAT Instances</a>.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Define the <span class="ph uicontrol">Template prefix</span>. If the Galaxy is shared by multiple <span class="ph">EcoStruxure Automation Expert</span> solutions, it is recommended that you assign a different prefix for each Solution to avoid naming conflicts.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Click the <span class="ph uicontrol">Next</span> button to open the <span class="ph uicontrol">Communication Objects</span> sub-tab.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Define the <span class="ph uicontrol">OPC Client</span> prefix. The default value is <span class="ph uicontrol">AB</span>, which stands for AutoBuild. To modify the prefixes, follow the same rules as in the previous step.
+</p>
+<p class="p">
+Result with AL: AL_OPCClient_&lt;EcoRTDeviceName&gt;
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Click <span class="ph uicontrol">Save</span> to save the Galaxy configuration file (AvevaSPconfig).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d871848e624 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d871848e629 ">
+<p class="p">
+Since the configuration is completed, you may want to disconnect the Galaxy: click <span class="ph uicontrol">Disconnect</span> in the <span class="ph uicontrol">Galaxy</span> tab and close the dialog. As a result, the cached information and the relations are deleted.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

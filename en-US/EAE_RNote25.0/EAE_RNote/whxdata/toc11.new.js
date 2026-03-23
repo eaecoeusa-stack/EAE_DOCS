@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"EcoStruxure Automation Expert - Buildtime and Runtime System Requirements (Windows)","type":"item","url":"EAE_RNote/EAEBuildtimeAndRuntimeSystemRequire-19DC0024.html"},{"name":"EAE Runtime System Requirements (Ubuntu/Debian)","type":"item","url":"EAE_RNote/EAERuntimeSystemRequirementsUbuntuD-1A7E38BF.html"},{"name":"EcoStruxure Automation Expert Platform System Requirements (Windows)","type":"item","url":"EAE_RNote/EAEPlatformSystemRequirementsWindow-1A7F7D95.html"},{"name":"AVEVA System Platform System requirements (Windows)","type":"item","url":"EAE_RNote/AVEVASystemPlatformSystemRequiremen-1A7FF6A4.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

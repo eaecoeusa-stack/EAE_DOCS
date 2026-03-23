@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Setting-Up the CAT to be Online","type":"item","url":"EAE_GS/Setting-UptheCATtobeOnlineCPT-7F6D6701.html#Setting-UptheCATtobeOnlineCPT-7F6D6701"},{"name":"Watch, Trigger Event and Force Value","type":"item","url":"EAE_GS/WatchTriggerEventForceValue-7F736AA4.html#WatchTriggerEventForceValue-7F736AA4"},{"name":"Get the Filling Sequence Started","type":"item","url":"EAE_GS/GettheFillingSequenceStartedCPT-7F85EF01.html#GettheFillingSequenceStartedCPT-7F85EF01"},{"name":"Testing the Filling Sequence","type":"item","url":"EAE_GS/TestingtheFillingSequenceCPT-7F8C00E4.html#TestingtheFillingSequenceCPT-7F8C00E4"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

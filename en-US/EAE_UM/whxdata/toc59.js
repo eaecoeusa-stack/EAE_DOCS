@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc53.js\"  name=\"Hardware Configuration Editor\" url=\"EAE_UM/HardwareConfigurator-A18C4217.html#HardwareConfigurator-A18C4217\"><item name=\"Configuring HART Modules on a Remote I/O Drop\" url=\"EAE_UM/ConfiguringHARTModulesOnARemoteIODr-34F90134.html#ConfiguringHARTModulesOnARemoteIODr-34F90134\" /></data>";

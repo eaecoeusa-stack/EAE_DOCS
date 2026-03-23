@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc7","name":"Adding the Instruments","type":"book","url":"EAE_GS/AddingtheInstrumentsCPT-5BF25494.html#AddingtheInstrumentsCPT-5BF25494"},{"key":"toc8","name":"Creating Connections Between Instruments","type":"book","url":"EAE_GS/CreatingConnectionsbetweenInstrumen-5BF28183.html#CreatingConnectionsbetweenInstrumen-5BF28183"},{"key":"toc9","name":"Developing Canvas","type":"book","url":"EAE_GS/DevelopingCanvasCPT-5BF32647.html#DevelopingCanvasCPT-5BF32647"},{"key":"toc10","name":"Running the Application","type":"book","url":"EAE_GS/RunningtheApplicationCPT-5BF3B1B6.html#RunningtheApplicationCPT-5BF3B1B6"},{"key":"toc11","name":"Testing the Application","type":"book","url":"EAE_GS/TestingtheApplicationCPT-5BF3E39D.html#TestingtheApplicationCPT-5BF3E39D"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

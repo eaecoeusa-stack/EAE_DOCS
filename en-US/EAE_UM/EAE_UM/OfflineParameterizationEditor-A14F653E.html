@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Offline Parameterization Editor" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="OfflineParameterizationEditor-A14F653E" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Offline Parameterization Editor
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3.3_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/SymbolicLinks-A2221E99.html" />
+<meta name="brsnext" value="EAE_UM/OPCUAEditor-A1508266.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert Solution &gt; System Editor" />
+</head>
+<body id="OfflineParameterizationEditor-A14F653E"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertSolution-9F74E991.html#EcoStruxureAutomationExpertSolution-9F74E991\">EcoStruxure Automation Expert Solution<\/a> > <a href=\"SystemEditor-9FEBB8AC.html#SystemEditor-9FEBB8AC\">System Editor<\/a> > Offline Parameterization Editor<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="OfflineParameterizationEditor-A14F653E" id="OfflineParameterizationEditor-A14F653E_">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E" id="OfflineParameterizationEditor_A14F653E">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E" id="OfflineParameterizationEditor_A14F653E_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Offline Parameterization Editor
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Use the Offline Parameterization editor to configure both data persistence and default value attributes for HMI output variables of CAT objects.
+</p>
+<p class="p">
+The parameter settings in this editor are configured offline. Once configured and deployed to the device, configured values are stored on the device and initialized the next time the device restarts.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row" style="vertical-align:middle;">
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000900603.png" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:bottom; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<p class="p">
+<span style="font-size: 10pt">To learn more about offline parameterization, watch </span><a class="xref" href="https://www.youtube.com/watch?v=CcADEct9sIw&amp;list=PLa7UGrWOTyjkvGehn-WZtJ9Aif36xTemR&amp;index=7" target="_blank"><span style="font-size: 10pt">How to Configure Offline Parameterization in </span><span class="ph"><span style="font-size: 10pt">EcoStruxure Automation Expert</span></span></a>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__OfflineParameterizationTab-A3CA13AC">
+<a name="OfflineParameterizationTab-A3CA13AC" id="OfflineParameterizationTab-A3CA13AC">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__OfflineParameterizationTab_A3CA13AC" id="OfflineParameterizationEditor_A14F653E__OfflineParameterizationTab_A3CA13AC">
+<!-- --></a><a name="OfflineParameterizationTab_A3CA13AC" id="OfflineParameterizationTab_A3CA13AC">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Offline Parameterization
+</h2>
+<p class="p">
+The Offline Parameterization editor can be accessed for CAT_HMI, CAT, and SubApp objects, and in the <span class="ph uicontrol">System</span> editor for Application and Device level objects.
+</p>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__FilteringOfflineParameterizationObj-CB3516AD">
+<a name="FilteringOfflineParameterizationObj-CB3516AD" id="FilteringOfflineParameterizationObj-CB3516AD">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__FilteringOfflineParameterizationObj_CB3516AD" id="OfflineParameterizationEditor_A14F653E__FilteringOfflineParameterizationObj_CB3516AD">
+<!-- --></a><a name="FilteringOfflineParameterizationObj_CB3516AD" id="FilteringOfflineParameterizationObj_CB3516AD">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Filtering Offline Parameterization Objects
+</h2>
+<p class="p">
+You can filter on the <span class="ph uicontrol">Name</span> field for node objects and child node objects, their variables and parameters.
+</p>
+<p class="p">
+In the <span class="ph uicontrol">Name</span> column header, click the filter symbol (<img class="image" src="0001030065.png" alt="" style="max-height:0.2in;" />) to open a dialog with filtering settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Select All</span>: to include all device objects; or
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select from a list of object node names; or
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select a value delimiter for text you will input:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Is equal to
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is not equal to
+</p>
+</li>
+<li class="li">
+<p class="p">
+Starts with
+</p>
+</li>
+<li class="li">
+<p class="p">
+Ends with
+</p>
+</li>
+<li class="li">
+<p class="p">
+Contains
+</p>
+</li>
+<li class="li">
+<p class="p">
+Does not contain
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is contained in
+</p>
+</li>
+<li class="li">
+<p class="p">
+Is not contained in
+</p>
+</li>
+</ul>
+<p class="p">
+Then input the delimiting alphanumeric characters.
+</p>
+<p class="p">
+Optionally, you can add a second value delimiter and combine it with the first via AND or OR.
+</p>
+</li>
+</ul>
+<p class="p">
+Click <span class="ph uicontrol">Filter</span> to apply the filter, and <span class="ph uicontrol">Clear Filter</span> to remove the filter.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you search for instance names using value delimiters, it is recommended that you:
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+Use only one of the following value delimiters: "Contains" or "Is equal to".
+</p>
+</li>
+<li class="sli">
+<p class="p">
+Do not combine the "Contains" or "Is equal to" selection with another value delimiter.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__TwoDataSetsPerRuntimeConfiguration-A3CA0E18">
+<a name="TwoDataSetsPerRuntimeConfiguration-A3CA0E18" id="TwoDataSetsPerRuntimeConfiguration-A3CA0E18">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__TwoDataSetsPerRuntimeConfiguration_A3CA0E18" id="OfflineParameterizationEditor_A14F653E__TwoDataSetsPerRuntimeConfiguration_A3CA0E18">
+<!-- --></a><a name="TwoDataSetsPerRuntimeConfiguration_A3CA0E18" id="TwoDataSetsPerRuntimeConfiguration_A3CA0E18">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Two Data Sets per Runtime Configuration
+</h2>
+<p class="p">
+Each device maintains two sets of data:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Initial data: Contains data parameters – i.e. variables – and their default values as configured in the Offline Parameterization editor.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Persistence data: Contains data parameters and their persisted values for variables that have changed during runtime execution, for example by using an HMI.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__ApplyingDefaultVariables-DD7EAA4F">
+<a name="ApplyingDefaultVariables-DD7EAA4F" id="ApplyingDefaultVariables-DD7EAA4F">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__ApplyingDefaultVariables_DD7EAA4F" id="OfflineParameterizationEditor_A14F653E__ApplyingDefaultVariables_DD7EAA4F">
+<!-- --></a><a name="ApplyingDefaultVariables_DD7EAA4F" id="ApplyingDefaultVariables_DD7EAA4F">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Applying Default Variables
+</h2>
+<p class="p">
+An HMI output variable’s <span class="ph uicontrol">Persist</span> and <span class="ph uicontrol">Default Value</span> settings - made in the Offline Parameterization Editor - determine the value that is applied on initialization when a device re-starts, as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+If a <span class="ph uicontrol">Default Value</span> is not configured and <span class="ph uicontrol">Persist</span> is de-selected: the data type default value is applied on initialization and displayed as the <span class="ph uicontrol">Default Value</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If the <span class="ph uicontrol">Default Value</span> is configured and <span class="ph uicontrol">Persist</span> is de-selected: the configured <span class="ph uicontrol">Default Value</span> is applied.
+</p>
+</li>
+<li class="li">
+<p class="p">
+If <span class="ph uicontrol">Persist</span> is selected and the variable value has been changed during runtime (for example, by an HMI), the last modified value is re-applied.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__DataTypeDefaultValues-DD7EAD91">
+<a name="DataTypeDefaultValues-DD7EAD91" id="DataTypeDefaultValues-DD7EAD91">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__DataTypeDefaultValues_DD7EAD91" id="OfflineParameterizationEditor_A14F653E__DataTypeDefaultValues_DD7EAD91">
+<!-- --></a><a name="DataTypeDefaultValues_DD7EAD91" id="DataTypeDefaultValues_DD7EAD91">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Data Type Default Values
+</h2>
+<div class="div">
+<p class="p">
+The following default values may be applied based on data type:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:50%" />
+<col style="width:50%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d464318e277">
+<p class="p">
+Data Type
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d464318e282">
+<p class="p">
+Default Value
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+BOOL
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+false
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+SINT, DINT, LINT, USINT, UINT, UDINT, ULINT
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+0
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+REAL, LREAL
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+0.0
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+TIME
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+TIME#0d_0h_0m_0s_0ms
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+LTIME
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+LTIME#0d_0h_0m_0s_0.0ms
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+DATE, LDATE
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+(L)DATE#1970-1-1
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+TIME_OF_DAY, LTIME_OF_DAY, TOD, LTOD
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+(L)TIME_OF_DAY#00:00:00.00
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+DATE_AND_TIME, LDATE_AND_TIME, DT, LDT
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+(L)DATE_AND_TIME#1970-1-1-0:0:0.0
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d464318e277 ">
+<p class="p">
+STRING
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d464318e282 ">
+<p class="p">
+'' (empty string)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__Overparameterization-A3CA1035">
+<a name="Overparameterization-A3CA1035" id="Overparameterization-A3CA1035">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__Overparameterization_A3CA1035" id="OfflineParameterizationEditor_A14F653E__Overparameterization_A3CA1035">
+<!-- --></a><a name="Overparameterization_A3CA1035" id="Overparameterization_A3CA1035">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Overparameterization
+</h2>
+<p class="p">
+Overparameterization describes the ability to edit or override variable/CAT object attributes at different levels of the data structure. In the Offline Parameterization Editor, HMI output variable settings created at a child object level can be inherited by, and edited at, its parent object level. Persistence and default value attributes can be configured or Inherited in different levels as set forth in the following diagram, where:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+dotted line outlines indicate optional objects
+</p>
+</li>
+<li class="li">
+<p class="p">
+solid line outlines indicate necessary objects
+</p>
+</li>
+<li class="li">
+<p class="p">
+-N indicates an index number for successive objects of the same type (e.g. CAT, CAT-1, CAT-2 and so forth).
+</p>
+</li>
+</ul>
+<img class="image" src="0000693157.png" alt="" style="max-height:2.5in;" />
+<p class="p">
+For example, a variable in a child object might present a <span class="ph uicontrol">Default Value</span> of <em class="ph i">N</em> and a <span class="ph uicontrol">Persist</span> setting of <em class="ph i">enabled</em>, whereas a parent object that inherits the variable may configure a <span class="ph uicontrol">Default Value</span> of <em class="ph i">N+1</em>, and a <span class="ph uicontrol">Persist</span> setting of <em class="ph i">disabled</em>.
+</p>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__LimitingOverparameterizationOfHMIOu-DD7EB117">
+<a name="LimitingOverparameterizationOfHMIOu-DD7EB117" id="LimitingOverparameterizationOfHMIOu-DD7EB117">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__LimitingOverparameterizationOfHMIOu_DD7EB117" id="OfflineParameterizationEditor_A14F653E__LimitingOverparameterizationOfHMIOu_DD7EB117">
+<!-- --></a><a name="LimitingOverparameterizationOfHMIOu_DD7EB117" id="LimitingOverparameterizationOfHMIOu_DD7EB117">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Limiting Overparameterization of HMI Output Variable Attributes
+</h2>
+<div class="div">
+<p class="p">
+The following settings limit the ability of a parent object to overparameterize HMI output variable attributes created in a child object:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Mask</span>: This setting limits the ability to edit values of the <span class="ph uicontrol">Persist</span> attribute in derived objects. For example, a variable with <span class="ph uicontrol">Persist</span> set to <span class="ph uicontrol">True only</span> thereby restricts higher level object overparameterization to this value.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Locked</span>: The value of a locked attribute cannot be edited in a a derived object.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="OfflineParameterizationEditor-A14F653E__ManagingDefaultValueAttributeSettin-DD7EB43C">
+<a name="ManagingDefaultValueAttributeSettin-DD7EB43C" id="ManagingDefaultValueAttributeSettin-DD7EB43C">
+<!-- --></a><a name="OfflineParameterizationEditor_A14F653E__ManagingDefaultValueAttributeSettin_DD7EB43C" id="OfflineParameterizationEditor_A14F653E__ManagingDefaultValueAttributeSettin_DD7EB43C">
+<!-- --></a><a name="ManagingDefaultValueAttributeSettin_DD7EB43C" id="ManagingDefaultValueAttributeSettin_DD7EB43C">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Managing Default Value Attribute Settings
+</h2>
+<p class="p">
+<strong class="ph b">Troubleshooting Invalid Default Values</strong>
+</p>
+<p class="p">
+When an invalid value is input as the <span class="ph uicontrol">Default Value</span>, the cell displays a red border. Place your cursor on the cell to display a tooltip that explaining why the value is invalid (e.g., wrong data type, value out of range, and so forth).
+</p>
+<p class="p">
+<strong class="ph b">Resetting Default Values</strong>
+</p>
+<p class="p">
+When an output variable’s <span class="ph uicontrol">Default Value</span> is modified with other than the data type default value, the edited value is displayed in <strong class="ph b">bold</strong> and the cell displays the <img class="image" src="0000693156.png" alt="" style="max-height:18px;" /> icon indicating the value has been modified. Click on this icon to restore the default value, which depends upon the variable level as follows:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+for a CAT_HMI (lowest level) output variables, the data type default value is restored.
+</p>
+</li>
+<li class="li">
+<p class="p">
+for CAT, SubApp, Application and Device (higher level) output variables, the base default value, i.e. the default value inherited from the immediate child object in the hierarchy, is restored.
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

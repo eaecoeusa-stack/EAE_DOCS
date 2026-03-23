@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc14.js\"  name=\"EncoderEmbeddedATV340x075to22kW - Hardware CAT\" url=\"ATVd_CAT/D-SE-0107028.html\"><item name=\"EncoderEmbeddedATV340x075to22kW - Properties\" url=\"ATVd_CAT/D-SE-0107029.html\" /><item name=\"EncoderEmbeddedATV340x075to22kW HMI Symbol\" url=\"ATVd_CAT/D-SE-0107030.html\" /></data>";

@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"EcoStruxure Automation Expert - Getting Started\" url=\"EAE_GS/EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html\" src=\"toc1.js\" /></data>";

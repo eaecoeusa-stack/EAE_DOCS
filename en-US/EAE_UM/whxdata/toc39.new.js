@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Configure Event Triggered Read of PROFINET Data","type":"item","url":"EAE_UM/ReadingPROFINETEventTriggeredData-48DE821D.html#ReadingPROFINETEventTriggeredData-48DE821D"},{"name":"Configure Event Triggered Write of PROFINET Data","type":"item","url":"EAE_UM/ConfigureEventTriggeredWriteOfPROFI-48F894FB.html#ConfigureEventTriggeredWriteOfPROFI-48F894FB"},{"name":"Subscribing to PROFINET Alarms","type":"item","url":"EAE_UM/SubscribingToPROFINETAlarms-4968A2BB.html#SubscribingToPROFINETAlarms-4968A2BB"},{"name":"PROFINET Module and Submodule Diagnostics","type":"item","url":"EAE_UM/PROFINETModuleAndSubmoduleDiagnosti-62A9DA04.html#PROFINETModuleAndSubmoduleDiagnosti-62A9DA04"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

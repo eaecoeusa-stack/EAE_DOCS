@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"File Menu","type":"item","url":"EAE_UM/FileMenu-978832EA.html#FileMenu-978832EA"},{"name":"Home Menu","type":"item","url":"EAE_UM/HomeMenu-97A6C613.html#HomeMenu-97A6C613"},{"key":"toc9","name":"View Menu","type":"book","url":"EAE_UM/ViewMenu-97A96255.html#ViewMenu-97A96255"},{"name":"Help Menu","type":"item","url":"EAE_UM/HelpMenu-97AB9EC9.html#HelpMenu-97AB9EC9"},{"name":"Text Edit Menu","type":"item","url":"EAE_UM/TextEditMenu-97AC64F7.html#TextEditMenu-97AC64F7"},{"name":"Debug Menu","type":"item","url":"EAE_UM/DebugMenu-97AD40C7.html#DebugMenu-97AD40C7"},{"name":"Graphic Format Menu","type":"item","url":"EAE_UM/GraphicFormatMenu-97AE0CF2.html#GraphicFormatMenu-97AE0CF2"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="5. Character Types Conversion to Date and Time Types" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="CharacterTypesConversionToDateAndTi-244AF00F" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+5. Character Types Conversion to Date and Time Types
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.8.4.1.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/DateAndTimeTypesConversionToCharact-244A7C5D.html" />
+<meta name="brsnext" value="EAE_UM/NumericFunctionsOfTimeAndDurationDa-244B697F.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; Appendix &gt; Functions and Data Types &gt; Time Functions" />
+</head>
+<body id="CharacterTypesConversionToDateAndTi-244AF00F"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"Appendix-A2FF5064.html#Appendix-A2FF5064\">Appendix<\/a> > <a href=\"TimeFunctionsAndDataTypes-A309EDDC.html#TimeFunctionsAndDataTypes-A309EDDC\">Functions and Data Types<\/a> > <a href=\"TimeFunctions-A30A02B6.html#TimeFunctions-A30A02B6\">Time Functions<\/a> > 5. Character Types Conversion to Date and Time Types<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="CharacterTypesConversionToDateAndTi-244AF00F" id="CharacterTypesConversionToDateAndTi-244AF00F_">
+<!-- --></a><a name="CharacterTypesConversionToDateAndTi_244AF00F" id="CharacterTypesConversionToDateAndTi_244AF00F">
+<!-- --></a><a name="CharacterTypesConversionToDateAndTi_244AF00F" id="CharacterTypesConversionToDateAndTi_244AF00F_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+5. Character Types Conversion to Date and Time Types
+</h1>
+<div class="body conbody">
+<p class="p">
+All functions described in this topic are conforming to IEC 61131-3 third edition.
+</p>
+<div class="section" id="CharacterTypesConversionToDateAndTi-244AF00F__STRING_TO_DATESTRING_TO_LDATE-244B42AF">
+<a name="STRING_TO_DATESTRING_TO_LDATE-244B42AF" id="STRING_TO_DATESTRING_TO_LDATE-244B42AF">
+<!-- --></a><a name="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_DATESTRING_TO_LDATE_244B42AF" id="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_DATESTRING_TO_LDATE_244B42AF">
+<!-- --></a><a name="STRING_TO_DATESTRING_TO_LDATE_244B42AF" id="STRING_TO_DATESTRING_TO_LDATE_244B42AF">
+<!-- --></a>
+<h2 class="title sectiontitle">
+STRING_TO_DATE, STRING_TO_LDATE
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_DATE(IN: STRING): DATE
+STRING_TO_DATE(IN: STRING): DATE</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_LDATE(IN: STRING): LDATE
+STRING_TO_LDATE(IN: STRING): LDATE</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Converts parameter IN of type STRING to a value of DATE or LDATE. Base input format is ‘y-m-d’ with any of the valid date prefixes (D#, LD#, DATE# or LDATE#) being optional.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_CONVERSION: A conversion error is reported if the value in parameter IN cannot be converted to a valid date value.
+</p>
+<p class="p">
+ERR_RT_TYPERANGE: A type range error is reported if the input string syntax is invalid or any if any of the components is out of range.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF TO_DATE(STRING#'LDATE#2021-12-2') = D#2021-12-2 THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="CharacterTypesConversionToDateAndTi-244AF00F__STRING_TO_DTSTRING_TO_LDT-244B4515">
+<a name="STRING_TO_DTSTRING_TO_LDT-244B4515" id="STRING_TO_DTSTRING_TO_LDT-244B4515">
+<!-- --></a><a name="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_DTSTRING_TO_LDT_244B4515" id="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_DTSTRING_TO_LDT_244B4515">
+<!-- --></a><a name="STRING_TO_DTSTRING_TO_LDT_244B4515" id="STRING_TO_DTSTRING_TO_LDT_244B4515">
+<!-- --></a>
+<h2 class="title sectiontitle">
+STRING_TO_DT, STRING_TO_LDT
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_DT(IN: STRING): DT
+STRING_TO_DT(IN: STRING): DT</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_LDT(IN: STRING): LDT
+STRING_TO_LDT(IN: STRING): LDT</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Converts parameter IN of type STRING to a value of DATE_AND_TIME or LDATE_AND_TIME. Base input format is ‘y-m-d-h-m-s.s’ with any of the valid date prefixes (DT#, LDT#, DATE_AND_TIME#, LDATE_AND_TIME#, DT_UTC#, LDT_UTC#, DATE_AND_TIME_UTC# or LDATE_AND_TIME_UTC#) being optional.
+</p>
+<p class="p">
+By default, the input date is considered to be local time except if any of the UTC type prefixes is used. In all other cases a type prefix has no significance in the conversion process.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_CONVERSION: A conversion error is reported if the value in parameter IN cannot be converted to a valid date value.
+</p>
+<p class="p">
+ERR_RT_TYPERANGE: A type range error is reported if the input string syntax is invalid or any if any of the components is out of range.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF TO_DATE_AND_TIME('2021-12-3-12:0:0') = DT#2021-12-3-12-12:00:00 AND TO_DT('DT_UTC#2021-12-3-12:0:0') = DT_UTC#2021-12-3-12-12:00:00 THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="CharacterTypesConversionToDateAndTi-244AF00F__STRING_TO_TIMESTRING_TO_LTIME-244B40B8">
+<a name="STRING_TO_TIMESTRING_TO_LTIME-244B40B8" id="STRING_TO_TIMESTRING_TO_LTIME-244B40B8">
+<!-- --></a><a name="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_TIMESTRING_TO_LTIME_244B40B8" id="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_TIMESTRING_TO_LTIME_244B40B8">
+<!-- --></a><a name="STRING_TO_TIMESTRING_TO_LTIME_244B40B8" id="STRING_TO_TIMESTRING_TO_LTIME_244B40B8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+STRING_TO_TIME, STRING_TO_LTIME
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_TIME(IN: STRING): TIME
+STRING_TO_TIME(IN: STRING): TIME</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_LTIME(IN: STRING): LTIME
+STRING_TO_LTIME(IN: STRING): LTIME</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Converts parameter IN of type STRING to a value of TIME or LTIME. Base input format is ‘y-m-d-h:m:s.s’. All components are unsigned integer numbers. Valid date prefixes (T#, LT#, TIME# or LTIME#) are optional and have no significance in the conversion process.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_CONVERSION: A conversion error is reported if the value in parameter IN cannot be converted to a valid time value.
+</p>
+<p class="p">
+ERR_RT_OVERFLOW: An overflow error is reported if the value in parameter IN defines a time span which is larger that the allowed value range for data types TIME or LTIME.
+</p>
+<p class="p">
+ERR_RT_TYPERANGE: A type range error is reported if the input string syntax is invalid or any if any of the components is out of range.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF TO_TIME(IN := '-48h') = TIME#-2d THEN
+  (* correct *) ;
+END_IF;
+(* The input follows the same rules as time literals! The following is therefore not correct and produces a conversion error: *) ;
+IF TO_TIME('-1d48h') &lt;&gt; TIME#-3d THEN
+  (* definitely incorrect *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="CharacterTypesConversionToDateAndTi-244AF00F__STRING_TO_TODSTRING_TO_LTOD-244B474B">
+<a name="STRING_TO_TODSTRING_TO_LTOD-244B474B" id="STRING_TO_TODSTRING_TO_LTOD-244B474B">
+<!-- --></a><a name="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_TODSTRING_TO_LTOD_244B474B" id="CharacterTypesConversionToDateAndTi_244AF00F__STRING_TO_TODSTRING_TO_LTOD_244B474B">
+<!-- --></a><a name="STRING_TO_TODSTRING_TO_LTOD_244B474B" id="STRING_TO_TODSTRING_TO_LTOD_244B474B">
+<!-- --></a>
+<h2 class="title sectiontitle">
+STRING_TO_TOD, STRING_TO_LTOD
+</h2>
+<div class="div">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:11.111111111111112%" />
+<col style="width:44.44444444444445%" />
+<col style="width:44.44444444444445%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Synopsis</strong>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_TOD(IN: STRING): TOD
+STRING_TO_TOD(IN: STRING): TOD
+TO_TIME_OF_DAY(IN: STRING): TOD
+STRING_TO_TIME_OF_DAY(IN: STRING): TOD</code></pre>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>TO_LTOD(IN: STRING): LTOD
+STRING_TO_LTOD(IN: STRING): LTOD
+TO_LTIME_OF_DAY(IN: STRING): LTOD
+STRING_TO_LTIME_OF_DAY(IN: STRING): LTOD</code></pre>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Description</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Converts parameter IN of type STRING to a value of type TIME_OF_DAY or L TIME_OF_DAY. Base input format is ‘h:m:s.s’. All components are unsigned integer numbers. Valid date prefixes (TOD#, LTOD#, TIME_OF_DAY# or LTIME_OF_DAY#) are optional and have no significance in the conversion process.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Errors</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+ERR_RT_CONVERSION: A conversion error is reported if any of the components of the time of day input string are out of range.
+</p>
+<p class="p">
+ERR_RT_TYPERANGE: A type range error is reported if the input string syntax is invalid or any if any of the components is out of range.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<p class="p">
+<strong class="ph b">Example</strong>
+</p>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<pre class="pre codeblock" xml:space="preserve"><code>IF STRING_TO_TIME_IME_OF_DAY('LTOD#12:00:00.234567') = TIME_OF_DAY#12:00:00.234 THEN
+  (* correct *) ;
+END_IF;</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

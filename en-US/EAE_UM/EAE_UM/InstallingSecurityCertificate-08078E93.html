@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Installing Security Certificate" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="InstallingSecurityCertificate-08078E93" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Installing Security Certificate
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.6.1.2.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/TroubleshootingTips-EB9DCF77.html" />
+<meta name="brsnext" value="EAE_UM/StartingAndRestartingAVEVAServerDev-EB9E13E5.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; EcoStruxure Automation Expert – Data Exchange &gt; Asset Link for AVEVA OMI &gt; 13. Troubleshooting Tips" />
+</head>
+<body id="InstallingSecurityCertificate-08078E93"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"EcoStruxureAutomationExpertDataAndS-961C60B5.html#EcoStruxureAutomationExpertDataAndS-961C60B5\">EcoStruxure Automation Expert – Data Exchange<\/a> > <a href=\"AutobuildAvevaInTouchOMI-96443BE6.html#AutobuildAvevaInTouchOMI-96443BE6\">Asset Link for AVEVA OMI<\/a> > <a href=\"TroubleshootingTips-EB9DCF77.html\">13. Troubleshooting Tips<\/a> > Installing Security Certificate<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="InstallingSecurityCertificate-08078E93" id="InstallingSecurityCertificate-08078E93_">
+<!-- --></a><a name="InstallingSecurityCertificate_08078E93" id="InstallingSecurityCertificate_08078E93">
+<!-- --></a><a name="InstallingSecurityCertificate_08078E93" id="InstallingSecurityCertificate_08078E93_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Installing Security Certificate
+</h1>
+<div class="body conbody">
+
+<div class="section" id="InstallingSecurityCertificate-08078E93__TwoApproaches-0807EB0E">
+<a name="TwoApproaches-0807EB0E" id="TwoApproaches-0807EB0E">
+<!-- --></a><a name="InstallingSecurityCertificate_08078E93__TwoApproaches_0807EB0E" id="InstallingSecurityCertificate_08078E93__TwoApproaches_0807EB0E">
+<!-- --></a><a name="TwoApproaches_0807EB0E" id="TwoApproaches_0807EB0E">
+<!-- --></a>
+<p class="p">
+There are two approaches for installing the security certificate:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Re-install <span class="ph">EcoStruxure Automation Expert - Buildtime</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Manually install the security certificate
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="InstallingSecurityCertificate-08078E93__Re-installEcoStruxureAutomationExpe-0808F56E">
+<a name="Re-installEcoStruxureAutomationExpe-0808F56E" id="Re-installEcoStruxureAutomationExpe-0808F56E">
+<!-- --></a><a name="InstallingSecurityCertificate_08078E93__Re_installEcoStruxureAutomationExpe_0808F56E" id="InstallingSecurityCertificate_08078E93__Re_installEcoStruxureAutomationExpe_0808F56E">
+<!-- --></a><a name="Re_installEcoStruxureAutomationExpe_0808F56E" id="Re_installEcoStruxureAutomationExpe_0808F56E">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Re-install <span class="ph">EcoStruxure Automation Expert - Buildtime</span>
+</h2>
+<p class="p">
+If the security certificate was not properly installed or was subsequently removed, <a class="xref" href="UninstallEcoStruxureAutomationExper-9544E193.html">uninstalling <span class="ph">EcoStruxure Automation Expert - Buildtime</span></a> then <a class="xref" href="InstallEcoStruxureAutomationExpert-94F449FB.html">re-installing it</a> may install the security certificate.
+</p>
+</div>
+<div class="section" id="InstallingSecurityCertificate-08078E93__ManuallyInstallTheSecurityCertifica-080AD098">
+<a name="ManuallyInstallTheSecurityCertifica-080AD098" id="ManuallyInstallTheSecurityCertifica-080AD098">
+<!-- --></a><a name="InstallingSecurityCertificate_08078E93__ManuallyInstallTheSecurityCertifica_080AD098" id="InstallingSecurityCertificate_08078E93__ManuallyInstallTheSecurityCertifica_080AD098">
+<!-- --></a><a name="ManuallyInstallTheSecurityCertifica_080AD098" id="ManuallyInstallTheSecurityCertifica_080AD098">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Manually install the Security Certificate
+</h2>
+<p class="p">
+Manually installing the security certificate consists of three tasks:
+</p>
+<p class="p">
+<strong class="ph b">Task 1</strong>: Stop running services, as follows:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the Windows™ search field, located in the lower left par of the task bar, type <em class="ph i">Services</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click <em class="ph i">SE ASPSupervisoryFacetServices EcoStruxure Automation Expert 24.0</em> and select <span class="ph uicontrol">Stop</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Repeat step 2 for <em class="ph i">SE AVEVAConnectorService EcoStruxure Automation Expert 24.0</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Repeat step 2 for <em class="ph i">SE EngineeringHubService EcoStruxure Automation Expert 24.0</em>.
+</p>
+</li>
+</ol>
+<p class="p">
+<strong class="ph b">Task 2</strong>: Install the certificates:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the Windows search field, type <em class="ph i">Command Prompt</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click on the <span class="ph uicontrol">Command Prompt</span> app icon to open it.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Execute the following six commands in the command prompt:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="90%">
+<colgroup>
+<col style="width:100%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<p class="p">
+certutil.exe -addstore -enterprise root "%programdata%\Schneider Electric\Portal Services\Certificates\CACertificate-2.cer
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<p class="p">
+certutil.exe -importpfx -f -p "" "%programdata%\Schneider Electric\Portal Services\Certificates\Certificate-v3-2.p12"
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<p class="p">
+netsh http delete sslcert ipport=0.0.0.0:44850
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<p class="p">
+<span style="font-size: 7pt">netsh http add sslcert ipport=0.0.0.0:44850 certhash=bc6eb6350eeba8be078c288bbaf88dde48dd7bff appid={41a5e7a8-98cb-4949-aab7-d2be41f61cec}</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<p class="p">
+netsh http delete sslcert ipport=0.0.0.0:44840
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+<p class="p">
+<span style="font-size: 7pt">netsh http add sslcert ipport=0.0.0.0:44840 certhash=bc6eb6350eeba8be078c288bbaf88dde48dd7bff appid={ac2f4011-c6a6-4e01-a977-81d151df81a8}</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+<p class="p">
+<strong class="ph b">Task 3</strong>: Start services that were stopped in Task 1:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the Windows™ search field, type <em class="ph i">Services</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click <em class="ph i">SE ASPSupervisoryFacetServices EcoStruxure Automation Expert 24.0</em> and select <span class="ph uicontrol">Start</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Repeat step 2 for <em class="ph i">SE AVEVAConnectorService EcoStruxure Automation Expert 24.0</em>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Repeat step 2 for <em class="ph i">SE EngineeringHubService EcoStruxure Automation Expert 24.0</em>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="InstallingSecurityCertificate-08078E93__Follow-up-080ACDD8">
+<a name="Follow-up-080ACDD8" id="Follow-up-080ACDD8">
+<!-- --></a><a name="InstallingSecurityCertificate_08078E93__Follow_up_080ACDD8" id="InstallingSecurityCertificate_08078E93__Follow_up_080ACDD8">
+<!-- --></a><a name="Follow_up_080ACDD8" id="Follow_up_080ACDD8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Follow-up
+</h2>
+<p class="p">
+After implementing one of the above-described procedures, re-try the Asset Link functionality that previously did not succeed. If the condition persists, contact the Schneider Electric support team.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

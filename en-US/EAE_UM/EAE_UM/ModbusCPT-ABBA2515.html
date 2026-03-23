@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Modbus" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ModbusCPT-ABBA2515" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Modbus
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.5.3";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/MappingPhysicalDevicesToTheEIPSCANN-CB9F609C.html" />
+<meta name="brsnext" value="EAE_UM/BusAndDeviceSetUp-BCD2CD4B.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime Network Communications" />
+</head>
+<body id="ModbusCPT-ABBA2515"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"SupportedCommunicationProtocols-66B40E44_1.html#SupportedCommunicationProtocols-66B40E44\">EcoStruxure Automation Expert - Buildtime Network Communications<\/a> > Modbus<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ModbusCPT-ABBA2515" id="ModbusCPT-ABBA2515_">
+<!-- --></a><a name="ModbusCPT_ABBA2515" id="ModbusCPT_ABBA2515">
+<!-- --></a><a name="ModbusCPT_ABBA2515" id="ModbusCPT_ABBA2515_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span class="ph">Modbus</span>
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+<span class="ph">Modbus</span> is an application layer messaging protocol. <span class="ph">Modbus</span> provides client and server communications between devices connected on different types of buses or networks. <span class="ph">Modbus</span> offers many services specified by function codes.
+</p>
+</div>
+<div class="section" id="ModbusCPT-ABBA2515__ModbusParametrization-AAB63348">
+<a name="ModbusParametrization-AAB63348" id="ModbusParametrization-AAB63348">
+<!-- --></a><a name="ModbusCPT_ABBA2515__ModbusParametrization_AAB63348" id="ModbusCPT_ABBA2515__ModbusParametrization_AAB63348">
+<!-- --></a><a name="ModbusParametrization_AAB63348" id="ModbusParametrization_AAB63348">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">Modbus</span> Parametrization
+</h2>
+<p class="p">
+In <span class="ph">EcoStruxure Automation Expert</span>, <span class="ph">Modbus</span> is set up in the <a class="xref" href="HardwareConfigurator-A18C4217.html">Hardware Configuration</a> editor of the application needing communication. <span class="ph">Modbus</span> parametrization is done through three level of layer (each of them connected through a parent child relation):
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:13.172043010752688%" />
+<col style="width:25.806451612903224%" />
+<col style="width:61.02150537634409%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="5" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+1. <span class="ph uicontrol">Bus</span>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+It defines the communication type between client and server and also defines how the communication will be done. Implicitly, all the devices added under a bus will have the same communication types. In <span class="ph">EcoStruxure Automation Expert</span> three different kinds of bus are available:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<span class="ph uicontrol">Standard.IoModbus.MODBUS</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Accessible with the library <span class="ph uicontrol">Standard.IoModbus</span>, this bus is a client. It will get and transmit its information to a server by using the <span class="ph uicontrol">TCP</span> protocol.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<span class="ph uicontrol">Standard.IoModbus.MODBUSSERIAL</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Accessible with the library <span class="ph uicontrol">Standard.IoModbus</span>, this bus is a client. It will get and transmit its information to a server by using a <span class="ph uicontrol">serial</span> communication line with the <span class="ph uicontrol">Modbus RTU</span> protocol.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<span class="ph uicontrol">Standard.IoModbusSlave.MODBUS</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Accessible with the library <span class="ph uicontrol">Standard.IoModbusSlave</span>, this bus is a server. It will share its information with clients by using the <span class="ph uicontrol">TCP</span> protocol.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<span class="ph uicontrol">Standard.IoModbusSlave.MODBUSSERIAL</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Accessible with the library <span class="ph uicontrol">Standard.IoModbusSlave</span>, this bus is a server. It will share its information with clients by using a <span class="ph uicontrol">serial</span> communication line with the <span class="ph uicontrol">Modbus RTU</span> protocol.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:13.172043010752688%" />
+<col style="width:25.537634408602152%" />
+<col style="width:61.29032258064516%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="3" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+2. <span class="ph uicontrol">Modbus Devices</span>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+It defines the settings of communication used between itself and the other side bus (IP address, station ID...). Implicitly, all <span class="ph">Modbus</span> registers inside a <span class="ph">Modbus</span> device will be communicated using the same communications parameters. In <span class="ph">EcoStruxure Automation Expert</span> different kinds of <span class="ph">Modbus</span> devices are available:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<span class="ph uicontrol">Standard.IoModbus.MODBUSGENTCPS</span>, <span class="ph uicontrol">Standard.IoModbus.MODBUSGENSERIALS</span>, <span class="ph uicontrol">Standard.IoModbusSlave.MODBUSGENBC</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Accessible with the library <span class="ph uicontrol">Standard.IoModbus</span> for <span class="ph uicontrol">MODBUSGENTCPS</span>, <span class="ph uicontrol">MODBUSGENSERIALS</span>, and with the library <span class="ph uicontrol">Standard.IoModbusSlave</span> for <span class="ph uicontrol">Standard.IoModbus.MODBUSGENBC</span>, they are generic <span class="ph">Modbus</span> devices. All their <span class="ph">Modbus</span> registers and their variables have to be added by the user. These <span class="ph">Modbus</span> devices are then fully adjustable for the user need.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<span class="ph uicontrol">Custom Field Device</span>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Accessible with the library <span class="ph uicontrol">FieldDevice</span>, these are custom <span class="ph">Modbus</span> devices made specifically for communicating with devices from the Schneider Electric catalog. These custom <span class="ph">Modbus</span> devices already contain all the parameters used to communicate with the specific devices, the user only need to set them.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:13.172043010752688%" />
+<col style="width:25.537634408602152%" />
+<col style="width:61.29032258064516%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="4" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+3. <span class="ph uicontrol">Modbus Registers</span>
+</td>
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; ">
+<p class="p">
+It defines all variables communicated, where and how they are transmitted and what is their types. In <span class="ph">EcoStruxure Automation Expert</span>, two different kinds of <span class="ph">Modbus</span> registers are available:
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<strong class="ph b">The Standard.IoModbus register</strong>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Available with the library <span class="ph uicontrol">Standard.IoModbus</span>, these <span class="ph">Modbus</span> registers are the basic function blocks used to communicate Coil and Register values. A logic has to be manually setup to enable <span class="ph">Modbus</span> registers to read a specific variable type.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<strong class="ph b">The <span class="ph">Modbus</span> Gateway register</strong>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; ">
+<p class="p">
+Available with the library <span class="ph uicontrol">SE.ModbusGateway</span>, these <span class="ph">Modbus</span> registers are an improved version of the <span class="ph uicontrol">Standard.IoModbus</span> registers as the conversion logic is already integrated into the <span class="ph">Modbus</span> registers. The user will directly get as an output the needed variable type. This type of <span class="ph">Modbus</span> register can be added only under the client bus, <span class="ph uicontrol">Standard.IoModbus.MODBUS</span> and <span class="ph uicontrol">Standard.IoModbus.MODBUSSERIAL</span>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" colspan="2" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; ">
+<div class="note note">
+<span class="notetitle">NOTE:</span> The read <span class="ph">Modbus</span> registers of both <span class="ph">Standard.IoModbus</span> register and <span class="ph">Modbus</span> Gateway register support VTQ values. For more details, refer to <a class="xref" href="TransmittingAndInterpretingOnlineVa-B9100674.html#TransmittingAndInterpretingOnlineVa-B9100674__InterpretTheOnlineValues-B9152098">Transmitting and Interpreting Online Values topic</a>.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+In this chapter is detailed the following aspects:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<a class="xref" href="BusAndDeviceSetUp-BCD2CD4B.html">Configuration of a <span class="ph">Modbus</span> <span class="ph uicontrol">TCP</span> Communication</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="ConfigurationofaModbusSerialCommuni-C701F4BC.html">Configuration of a <span class="ph">Modbus</span> Serial Communication</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Development of <span class="ph">Modbus</span> Registers. There are three different ways to do this action:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="AutomaticGenerationCPT-A30ADE50.html">Automatic Generation</a>: Specific for the <span class="ph">Modbus</span> <span class="ph uicontrol">TCP</span> Communication, the <span class="ph">Modbus</span> Registers and their parameters are automatically generated based on the pre-filled <span class="ph">Modbus</span> mapping file.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="ManualDevelopmentCPT-A30AE92F.html">Manual Development</a>: The <span class="ph">Modbus</span> Registers and their parameters are modified manually.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="ExplicitModbusCommunication-C800E458.html">Explicit Modbus Communication</a> :The library <span class="ph uicontrol">Standard.IoModbus</span> provides a set of SFB to implement a <span class="ph">Modbus</span> Explicit communication from IEC61499 application to <span class="ph">Modbus</span> server. Please refer to library documentation for details.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Client registers require either only <span class="ph uicontrol">Standard.IoModbus</span> library or <span class="ph uicontrol">Standard.IoModbus</span> with <span class="ph uicontrol">SE.ModbusGateway</span> libraries. Server registers require <span class="ph uicontrol">Standard.IoModbusSlave</span> library.
+</div>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="TransmittingAndInterpretingOnlineVa-B9100674.html">Transmitting and interpreting online values</a>.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> To have more details about the other elements not further detailed in this chapter, like the <span class="ph">Modbus</span> Slave library or the <span class="ph uicontrol">standard.IoModbus</span> registers, check their library documentation or check the <a class="xref" href="https://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf" target="_blank"><span class="ph">Modbus</span> protocol</a>.
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row" style="vertical-align:middle;">
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000900603.png" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<p class="p">
+You may also check the following <span class="ph uicontrol">How-to</span> videos:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="https://www.youtube.com/watch?v=uomu-4sTxgc&amp;list=PLa7UGrWOTyjkvGehn-WZtJ9Aif36xTemR&amp;index=12" target="_blank">How to Configure a <span class="ph">Modbus</span> Master in <span class="ph">EcoStruxure Automation Expert</span></a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="https://www.youtube.com/watch?v=XKCY6qgwO54&amp;list=PLa7UGrWOTyjkvGehn-WZtJ9Aif36xTemR&amp;index=24" target="_blank">How to Configure a <span class="ph">Modbus</span> Gateway in <span class="ph">EcoStruxure Automation Expert</span></a>.
+</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Online Change with <span class="ph">Modbus</span> TCP Client
+</h2>
+<p class="p">
+In <span class="ph">EcoStruxure Automation Expert</span>, online change with <span class="ph">Modbus</span> TCP client is available when using <span class="ph">Soft dPAC</span> devices and hardware <span class="ph">CATs</span> from the <span class="ph">Standard.IoModbus</span> library.
+</p>
+<p class="p">
+Check all the online change supported actions in the <a class="xref" href="OnlineChange-961D4F72.html#OnlineChange-961D4F72__OnlineChangeSupportedActions-04FDC45E">Online Change topic</a>.
+</p>
+</div>
+<div class="section" id="ModbusCPT-ABBA2515__LimitationsForM2xxDPACControllers-AAB80E95">
+<a name="LimitationsForM2xxDPACControllers-AAB80E95" id="LimitationsForM2xxDPACControllers-AAB80E95">
+<!-- --></a><a name="ModbusCPT_ABBA2515__LimitationsForM2xxDPACControllers_AAB80E95" id="ModbusCPT_ABBA2515__LimitationsForM2xxDPACControllers_AAB80E95">
+<!-- --></a><a name="LimitationsForM2xxDPACControllers_AAB80E95" id="LimitationsForM2xxDPACControllers_AAB80E95">
+<!-- --></a>
+<h2 class="title sectiontitle">
+<span class="ph">Modbus</span> Limitations for M2●● dPAC Controllers
+</h2>
+<div class="p">
+M2●● dPAC controllers present the following <span class="ph">Modbus</span> limitations:
+<ul class="ul">
+<li class="li">
+<p class="p">
+Modbus Bus Master (client + server) instances are limited to 2.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Process image size is limited to 64 Kb.
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

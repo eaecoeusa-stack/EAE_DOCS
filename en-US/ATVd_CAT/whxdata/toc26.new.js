@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"ATVFrequencyControl - Hardware Configuration","type":"item","url":"ATVd_CAT/ATVFrequencyControl-HardwareConfigu-4D7F4C36.html"},{"name":"ATVFrequencyControl - Properties","type":"item","url":"ATVd_CAT/ATVFrequencyControl-Properties-4D806B68.html"},{"key":"toc27","name":"ATVFrequencyControl - sDrive","type":"book","url":"ATVd_CAT/ATVFrequencyControl-SDrive-4D817817.html"},{"name":"ATVFrequencyControl - sDriveInterface","type":"item","url":"ATVd_CAT/ATVFrequencyControl-SDriveInterface-5098FC3F.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

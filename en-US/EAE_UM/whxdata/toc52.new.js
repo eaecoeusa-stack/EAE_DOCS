@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"1. Instantiate Function Block Objects","type":"item","url":"EAE_UM/InstantiateFunctionBlockObjects-E8AABF3B.html#InstantiateFunctionBlockObjects-E8AABF3B"},{"name":"2. Frame and Comment Objects","type":"item","url":"EAE_UM/FrameAndCommentObjects-E9112640.html#FrameAndCommentObjects-E9112640"},{"name":"3. Connection Objects","type":"item","url":"EAE_UM/ConnectionObjects-E9118608.html"},{"name":"4. Modify Existing Connections and Adjust Attributes","type":"item","url":"EAE_UM/ModifyExistingConnectionsAndAdjustA-E911E6F9.html#ModifyExistingConnectionsAndAdjustA-E911E6F9"},{"name":"5. Write Documentation for Elements","type":"item","url":"EAE_UM/WriteDocumentationForElements-E8AC5DEC.html#WriteDocumentationForElements-E8AC5DEC"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

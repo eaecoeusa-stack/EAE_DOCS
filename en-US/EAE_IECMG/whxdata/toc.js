@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"IEC61499 Application Modeling - Guidelines\" url=\"EAE_IECMG/EAE_IECMG_IEC614499ProgrammingGuidelinesEcoSt-5B4C38A7.html\" src=\"toc1.js\" /></data>";

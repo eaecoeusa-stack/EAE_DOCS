@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Using Code to Cause an Input Event to Fire an Output Event" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="UsingCodeToCauseAnInputEventToFireA-3E94E1E6" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Using Code to Cause an Input Event to Fire an Output Event
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3_1";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/GoalsAndActionsMatrix-02D79258.html" />
+<meta name="brsnext" value="EAE_ADG/DebugandTestToolsinEcoStruxureAutom-C06087CA.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Special Design Use Cases" />
+</head>
+<body id="UsingCodeToCauseAnInputEventToFireA-3E94E1E6"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"SpecialDesignUseCases-4AA4F7F2.html#SpecialDesignUseCases-4AA4F7F2\">Special Design Use Cases<\/a> > Using Code to Cause an Input Event to Fire an Output Event<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="UsingCodeToCauseAnInputEventToFireA-3E94E1E6" id="UsingCodeToCauseAnInputEventToFireA-3E94E1E6_">
+<!-- --></a><a name="UsingCodeToCauseAnInputEventToFireA_3E94E1E6" id="UsingCodeToCauseAnInputEventToFireA_3E94E1E6">
+<!-- --></a><a name="UsingCodeToCauseAnInputEventToFireA_3E94E1E6" id="UsingCodeToCauseAnInputEventToFireA_3E94E1E6_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Using Code to Cause an Input Event to Fire an Output Event
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+If you create a function block and link one of its input events to an output event using C# code, and also use the EcoStruxure Automation Expert Local HMI tool to run multiple canvases, the output event can fire both when the input event is triggered and when the Local HMI tool switches focus to the canvas that is the target of the C# code.
+</p>
+<p class="p">
+For example, consider the following <code class="ph codeph">iThis</code> function block.<img class="image" src="DD00882235.png" alt="" style="max-height:2in;" />
+</p>
+</div>
+<div class="section" id="UsingCodeToCauseAnInputEventToFireA-3E94E1E6__CodeThatFiresAnOutputEventWhenTheLo-3E969F80">
+<a name="CodeThatFiresAnOutputEventWhenTheLo-3E969F80" id="CodeThatFiresAnOutputEventWhenTheLo-3E969F80">
+<!-- --></a><a name="UsingCodeToCauseAnInputEventToFireA_3E94E1E6__CodeThatFiresAnOutputEventWhenTheLo_3E969F80" id="UsingCodeToCauseAnInputEventToFireA_3E94E1E6__CodeThatFiresAnOutputEventWhenTheLo_3E969F80">
+<!-- --></a><a name="CodeThatFiresAnOutputEventWhenTheLo_3E969F80" id="CodeThatFiresAnOutputEventWhenTheLo_3E969F80">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Code that Fires an Output Event when the Local HMI Brings Focus to the Canvas
+</h2>
+<p class="p">
+If the following code is implemented for the <code class="ph codeph">iTHIS</code> function block, the <code class="ph codeph">TestEventHandler</code> output event is fired both when the <code class="ph codeph">ReqEventHandler</code> input is triggered and also when the EcoStruxure Automation Expert Local HMI brings focus to the canvas :
+</p>
+<div class="div">
+<pre class="pre codeblock" xml:space="preserve"><code>Public partial class sDefault : NxtControl.GuiFramework.HMISymbol
+{
+    public sDefault()
+    {
+         //
+         //
+The IntializeComponent() call is required for Windws Forms designer support.
+         //
+         InitializeComponent();
+         this.ReqEventHandler_Fired += ReqEventHandler_Fired_EventHandler;
+    }
+    void ReqEventHandler_Fired_EventHandler(object sender,ReqEventHandlerEventArgs e)
+    {
+        FireEvent_TestEventHandler(5);
+    }</code></pre>
+</div>
+</div>
+<div class="section" id="UsingCodeToCauseAnInputEventToFireA-3E94E1E6__CodeThatFiresAnOutputEventOnlyWhenA-3E96A1D9">
+<a name="CodeThatFiresAnOutputEventOnlyWhenA-3E96A1D9" id="CodeThatFiresAnOutputEventOnlyWhenA-3E96A1D9">
+<!-- --></a><a name="UsingCodeToCauseAnInputEventToFireA_3E94E1E6__CodeThatFiresAnOutputEventOnlyWhenA_3E96A1D9" id="UsingCodeToCauseAnInputEventToFireA_3E94E1E6__CodeThatFiresAnOutputEventOnlyWhenA_3E96A1D9">
+<!-- --></a><a name="CodeThatFiresAnOutputEventOnlyWhenA_3E96A1D9" id="CodeThatFiresAnOutputEventOnlyWhenA_3E96A1D9">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Code that Fires an Output Event only when an Input Event is Triggered
+</h2>
+<p class="p">
+To avoid the unintended firing of the <code class="ph codeph">TestEventHandler</code> output event, the following code fires the <code class="ph codeph">TestEventHandler</code> output event only when the <code class="ph codeph">ReqEventHandler</code> input is fired and not when the EcoStruxure Automation Expert Local HMI brings focus to the canvas::
+</p>
+<div class="div">
+<pre class="pre codeblock" xml:space="preserve"><code>using System;
+using System.Reflection;
+using NxtControl.Services;
+using NxtControl.GuiFramework;
+using NxtControl.Communication;
+
+namespace HMI.Main.Symbols.CAT1
+{
+	/// &lt;summary&gt;
+///	Description of sDefault.
+///	&lt;/summary&gt;
+public partial class sDefault : NxtControl.GuiFramework.HMISymbol
+	{
+		public sDefault()
+		{
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			InitializeReflection();
+			this.DEM_SAISIE_LOT_Fired += DEM_SAISIE_LOT_Fired_EventHandler;
+		}
+
+		private static FieldInfo channelIdInfo;
+		private static FieldInfo cookieInfo;
+		private static FieldInfo eventIndexInfo;
+		private static IHMIAccessorService accessorService;
+		private static void InitializeReflection()
+		{
+			if (channelIdInfo == null)
+			{
+				channelIdInfo = typeof(DEM_SAISIE_LOTEventArgs).GetField("channelId", BindingFlags.Instance | BindingFlags.GetField | BindingFlags.NonPublic);
+				cookieInfo = typeof(DEM_SAISIE_LOTEventArgs).GetField("cookie", BindingFlags.Instance | BindingFlags.GetField | BindingFlags.NonPublic);
+				eventIndexInfo = typeof(DEM_SAISIE_LOTEventArgs).GetField("eventIndex", BindingFlags.Instance | BindingFlags.GetField | BindingFlags.NonPublic);
+                accessorService = (IHMIAccessorService)ServiceProvider.GetService(typeof(IHMIAccessorService));
+                LoggingService.Info("setup:" + (channelIdInfo == null ? "failed" : "success"));
+			}
+
+		}
+		
+		void DEM_SAISIE_LOT_Fired_EventHandler(object sender, DEM_SAISIE_LOTEventArgs e)
+		{
+			LoggingService.Info(channelIdInfo.GetValue(e));
+			LoggingService.Info(cookieInfo.GetValue(e));
+			LoggingService.Info(eventIndexInfo.GetValue(e));
+		
+            EventStatusInformation eventStatusInformation = null;
+            accessorService.GetEventStatusValue((int)channelIdInfo.GetValue(e), (int)cookieInfo.GetValue(e), (int) eventIndexInfo.GetValue(e), true, 0, ref eventStatusInformation);
+            LoggingService.Info(eventStatusInformation.Valid);
+            LoggingService.Info(eventStatusInformation.Active);
+            LoggingService.Info(eventStatusInformation.Initial);
+            if(!eventStatusInformation.Initial)
+            {
+                // fire output event here
+                FireEvent_TestEventHandler(0, true);
+             }
+			
+		}
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

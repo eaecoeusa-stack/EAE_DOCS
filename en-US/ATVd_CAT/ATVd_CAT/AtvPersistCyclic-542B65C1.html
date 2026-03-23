@@ -1,0 +1,1038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="atvPersistCyclic" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500Rueil MalmaisonFrance+ 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="AtvPersistCyclic-542B65C1" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+atvPersistCyclic
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v16.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.9.0_6";
+//]]></script>
+<meta name="brsprev" value="ATVd_CAT/AtvEtaDecoder-952AA75F_3.html" />
+<meta name="brsnext" value="ATVd_CAT/AtvPersistEvent-542B5B7A.html" />
+<meta name="topic-breadcrumbs" content="SE.IoATV - Library Guide &gt; Composite Function Block" />
+</head>
+<body id="AtvPersistCyclic-542B65C1"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ATVd_CAT_D-SE-0105319.html");
+document.write("<a href=\"ATVd_CAT_D-SE-0105319.html\">SE.IoATV - Library Guide<\/a> > <a href=\"CompositeFunctionBlock-993987CD.html\">Composite Function Block<\/a> > atvPersistCyclic<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="AtvPersistCyclic-542B65C1" id="AtvPersistCyclic-542B65C1_">
+<!-- --></a><a name="AtvPersistCyclic_542B65C1" id="AtvPersistCyclic_542B65C1">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+atvPersistCyclic
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<h2 class="title sectiontitle">
+Overview
+</h2>
+<p class="p">
+The <span class="ph">atvPersistCyclic</span> is a composite function block within the <span class="ph">SE.IoATV</span> Library, It connects to other IEC 61499 function blocks in the application.
+</p>
+<p class="p">
+Composite function blocks are collections of basic function blocks or other composites with lower level functionality to achieve a higher-level functionality.
+</p>
+<p class="p">
+The <span class="ph">atvPersistCyclic</span> ensures that critical data is not lost during power interruptions by saving the necessary values automatically.
+</p>
+<p class="p">
+The <span class="ph">atvPersistCyclic</span> is compatible with ATV9••, ATV6•• and ATV340.
+</p>
+<p class="p">
+The figure below displays The <span class="ph">atvPersistCyclic</span> composite function block.
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00940632.JPG" alt="" />
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you plan to operate at low frequencies with only a few variables, using <span class="ph">atvPersistEvent</span> will put less load on the CPU. However, if you aim for high-frequency operations with many variables, <span class="ph">atvPersistCyclic</span> will be the better choice for managing CPU load.
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Event and data interface
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<caption>
+<span class="tablecap">Event Input Interface</span>
+</caption>
+<colgroup>
+<col style="width:1.1in" />
+<col />
+<col style="width:2in" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e107">
+<p class="p">
+Name
+</p>
+</th>
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e113">
+<p class="p">
+Parameter
+</p>
+</th>
+<th class="entry cell-norowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e119">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e107 ">
+<p class="p">
+<span class="ph">INIT</span>
+</p>
+</td>
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e113 ">
+<p class="p">
+<span class="ph">inVal</span>, <span class="ph">addrVal</span>, <span class="ph">symlinkScanner</span>
+</p>
+</td>
+<td class="entry cell-norowborder" style="text-align:left;vertical-align:top;" headers="d3174e119 ">
+<p class="p">
+Initialization request.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e107 ">
+<p class="p">
+<span class="ph">REQ</span>
+</p>
+</td>
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e113 ">
+<p class="p">
+<span class="ph">inVal</span>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d3174e119 ">
+<p class="p">
+Normal execution request.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<caption>
+<span class="tablecap">Event Output Interface</span>
+</caption>
+<colgroup>
+<col style="width:1.1in" />
+<col />
+<col style="width:2in" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e194">
+<p class="p">
+Name
+</p>
+</th>
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e200">
+<p class="p">
+Parameter
+</p>
+</th>
+<th class="entry cell-norowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e206">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e194 ">
+<p class="p">
+<span class="ph">INITO</span>
+</p>
+</td>
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e200 ">
+<p class="p">
+-
+</p>
+</td>
+<td class="entry cell-norowborder" style="text-align:left;vertical-align:top;" headers="d3174e206 ">
+<p class="p">
+Initialization confirmation.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e194 ">
+<p class="p">
+<span class="ph">CNF</span>
+</p>
+</td>
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e200 ">
+<p class="p">
+<span class="ph">outVal</span>
+</p>
+</td>
+<td class="entry cell-norowborder" style="text-align:left;vertical-align:top;" headers="d3174e206 ">
+<p class="p">
+Execution confirmation.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e194 ">
+<p class="p">
+<span class="ph">CNF_VALINIT</span>
+</p>
+</td>
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e200 ">
+<p class="p">
+<span class="ph">outValInit</span>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d3174e206 ">
+<p class="p">
+Confirmation of process memory read request.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<caption>
+<span class="tablecap">Data Input Interface</span>
+</caption>
+<colgroup>
+<col style="width:1.3in" />
+<col style="width:0.6in" />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e294">
+<p class="p">
+Name
+</p>
+</th>
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e300">
+<p class="p">
+Type
+</p>
+</th>
+<th class="entry cell-norowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e306">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e294 ">
+<p class="p">
+<span class="ph">inVal</span>
+</p>
+</td>
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e300 ">
+<p class="p">
+<span class="ph">WORD</span>
+</p>
+</td>
+<td class="entry cell-norowborder" style="text-align:left;vertical-align:top;" headers="d3174e306 ">
+<p class="p">
+Variable input.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e294 ">
+<p class="p">
+<span class="ph">addrVal</span>
+</p>
+</td>
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e300 ">
+<p class="p">
+<span class="ph">UINT</span>
+</p>
+</td>
+<td class="entry cell-norowborder" style="text-align:left;vertical-align:top;" headers="d3174e306 ">
+<p class="p">
+Address of the mailbox in the ATV.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e294 ">
+<span class="ph">symlinkScanner</span>
+</td>
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e300 ">
+<p class="p">
+<span class="ph">STRING</span>
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d3174e306 ">
+<p class="p">
+Names a symbolic link variable.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<caption>
+<span class="tablecap">Data Output Interface</span>
+</caption>
+<colgroup>
+<col style="width:1.3in" />
+<col style="width:0.6in" />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e394">
+<p class="p">
+Name
+</p>
+</th>
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e400">
+<p class="p">
+Type
+</p>
+</th>
+<th class="entry cell-norowborder" style="vertical-align:top; background-color:#e0e0e0;" id="d3174e406">
+<p class="p">
+Description
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e394 ">
+<p class="p">
+<span class="ph">outValInit</span>
+</p>
+</td>
+<td class="entry nocellnorowborder" style="text-align:left;vertical-align:top;" headers="d3174e400 ">
+<p class="p">
+WORD
+</p>
+</td>
+<td class="entry cell-norowborder" style="text-align:left;vertical-align:top;" headers="d3174e406 ">
+<p class="p">
+Variable output.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e394 ">
+<p class="p">
+<span class="ph">outVal</span>
+</p>
+</td>
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d3174e400 ">
+<p class="p">
+WORD
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d3174e406 ">
+<p class="p">
+First value upon initialization.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Integration
+</h2>
+<p class="p">
+The following table describes the steps to integrate the <span class="ph"><strong class="ph b">atvPersistCyclic</strong></span> composite function block to the solution:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<colgroup>
+<col style="width:0.5in" />
+<col style="width:100pt" />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#d0d0d0;" id="d3174e480">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#d0d0d0;" id="d3174e486">
+<p class="p">
+Action
+</p>
+</th>
+<th class="entry cell-norowborder" style="vertical-align:top; background-color:#d0d0d0;" id="d3174e492">
+<p class="p">
+Comment
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+<span class="ph"><strong class="ph b">atvPersistCyclic</strong></span> is available under <span class="ph menucascade"><span class="ph uicontrol">SE.IOATV</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">composite</span></span>
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates the step:
+</p>
+<img class="image" src="DD00940630.png" alt="" />
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+Add the <span class="ph"><strong class="ph b">atvPersistCyclic</strong></span> composite function block to the function blocks Network.
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates this step:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00940629.png" alt="" />
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+Right click on the data input <span class="ph">symlinkScanner</span> of your <span class="ph"><strong class="ph b">atvPersistEvent</strong></span> composite function block, then select <span class="ph uicontrol">Add Constant</span>.
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates this step:
+</p>
+<img class="image" src="DD00940628.png" alt="" />
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+Add the following function blocks and connect them as shown in the figure.
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates this step:
+</p>
+<img class="image" src="DD00940627.JPG" alt="" />
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+Add an <span class="ph uicontrol">ATVCyclicScanner</span> In the hardware configuration.
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates this step:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00940626.JPG" alt="" />
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+Open the properties editor of the <span class="ph uicontrol">ATVCyclicScanner</span>, configure the <span class="ph uicontrol">OutputScanner</span>, then build your solution.
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates this step:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00940625.JPG" alt="" />
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+You can set up to 10 parameters for Input Scanners and up to 10 parameters for Output Scanners.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+The scanner parameters help you store data. For more details about which Modbus addresses to use, please refer to the list of parameters section.
+</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="vertical-align:top;" headers="d3174e480 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry row-nocellborder" style="vertical-align:top;" headers="d3174e486 ">
+<p class="p">
+Link the symbolic links of the symlinkScanner variable to your output scanner.
+</p>
+</td>
+<td class="entry cellrowborder" style="vertical-align:top;" headers="d3174e492 ">
+<p class="p">
+The following figure illustrates this step:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00940624.jpg" alt="" />
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+List of Parameters
+</h2>
+<p class="p">
+The following table shows the Modbus addresses to use for your atvPersistCyclic to store the data:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<colgroup>
+<col style="width:50pt" />
+<col style="width:90pt" />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#d0d0d0;" id="d3174e713">
+<p class="p">
+Code
+</p>
+</th>
+<th class="entry nocellnorowborder" style="vertical-align:top; background-color:#d0d0d0;" id="d3174e719">
+<p class="p">
+Modbus address
+</p>
+</th>
+<th class="entry cell-norowborder" style="vertical-align:top; background-color:#d0d0d0;" id="d3174e725">
+<p class="p">
+Designation
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP0
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17830
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 0
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP1
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17831
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 1
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP2
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17832
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 2
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP3
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17833
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 3
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP4
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17834
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 4
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP5
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17835
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 5
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP6
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17836
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 6
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP7
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17837
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 7
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP8
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17838
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 8
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSP9
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17839
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 9
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPA
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17840
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 10
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPB
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17841
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 11
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPC
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17842
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 12
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPD
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17843
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 13
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPE
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17844
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 14
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPF
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17845
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 15
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPG
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17846
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 16
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPH
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17847
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 17
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPI
+</p>
+</td>
+<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17848
+</p>
+</td>
+<td class="entry cell-norowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 18
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="vertical-align:top;" headers="d3174e713 ">
+<p class="p">
+DSPJ
+</p>
+</td>
+<td class="entry row-nocellborder" style="vertical-align:top;" headers="d3174e719 ">
+<p class="p">
+17849
+</p>
+</td>
+<td class="entry cellrowborder" style="vertical-align:top;" headers="d3174e725 ">
+<p class="p">
+dpac mailbox saved parameter 19
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Refer to the <em class="ph i">communication parameters addresses</em> excel file of your device for more information about how to carry out searches (example: address and format parameters) and sorting operations:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="https://www.se.com/ww/en/download/document/EAV64332/" target="_blank">ATV6xx</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="https://www.se.com/us/en/download/document/NHA80944/" target="_blank">ATV9xx</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="https://www.se.com/ww/en/download/document/NVE61728/" target="_blank">ATV340</a>
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+NNZ13569.12
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Install the ASP Galaxy Repository in the Server PC","type":"item","url":"EAE_UM/InstalltheASPGalaxyRepositoryintheS-5A61564C.html#InstalltheASPGalaxyRepositoryintheS-5A61564C"},{"name":"Install the Archestra Remote Development in Client PC","type":"item","url":"EAE_UM/InstalltheArchestraRemoteDevelopmen-5A61A24D.html#InstalltheArchestraRemoteDevelopmen-5A61A24D"},{"name":"Configure DCOM","type":"item","url":"EAE_UM/ConfigureDCOMCPT-5A4B26CE.html#ConfigureDCOMCPT-5A4B26CE"},{"name":"Test Connection from the Client PC with the Remote Galaxy Repository","type":"item","url":"EAE_UM/TestConnectionfromtheClientPCwithth-5A4B3E51.html#TestConnectionfromtheClientPCwithth-5A4B3E51"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

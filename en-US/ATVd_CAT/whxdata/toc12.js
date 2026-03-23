@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc5.js\"  name=\"IoEmbeddedATV9xx - Hardware CAT\" url=\"ATVd_CAT/D-SE-0104930.html\"><item name=\"IoEmbeddedATV9xx - Properties\" url=\"ATVd_CAT/D-SE-0104931.html\" /><book name=\"IoEmbeddedATV9xx HMI Symbol\" url=\"ATVd_CAT/D-SE-0104933.html\" src=\"toc13.js\" /></data>";

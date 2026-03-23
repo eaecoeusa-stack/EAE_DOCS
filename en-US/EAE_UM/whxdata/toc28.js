@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc27.js\"  name=\"Network and Protocols\" url=\"EAE_UM/NetworkOverview-D37680CA.html#NetworkOverview-D37680CA\"><item name=\"Supported Network Infrastructure and Protocols\" url=\"EAE_UM/SupportedCommunicationProtocols-66B40E44.html\" /></data>";

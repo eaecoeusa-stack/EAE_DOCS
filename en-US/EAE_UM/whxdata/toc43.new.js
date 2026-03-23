@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"MQTT Broker Requirements","type":"item","url":"EAE_UM/MQTTBrokerRequirements-198D490D.html"},{"name":"Install Mosquitto","type":"item","url":"EAE_UM/InstallMosquitto-198D66E0.html"},{"key":"toc44","name":"Secure Mosquitto Communication","type":"book","url":"EAE_UM/SecureMosquittoCommunication-198D7E7D.html"},{"name":"Configure Mosquitto","type":"item","url":"EAE_UM/ConfigureMosquitto-198D744F.html"},{"name":"Define Multiple Mosquitto Listeners","type":"item","url":"EAE_UM/DefineMosquittoListeners-198DA604.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

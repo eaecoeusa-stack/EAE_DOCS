@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Introduction of EtherCAT","type":"item","url":"EAE_UM/IntroductionOfEtherCAT-9993A3EE.html"},{"name":"Requirements","type":"item","url":"EAE_UM/Requirements-9993E393.html"},{"name":"Set Up Solution and Hardware Configuration Editor","type":"item","url":"EAE_UM/SetUpSolutionandHardwareConfigurati-828D8FAC.html"},{"name":"Configure EtherCAT Network","type":"item","url":"EAE_UM/ConfigureEtherCATNetworkCPT-828DB0B6.html"},{"name":"Fine Tune EtherCAT Network","type":"item","url":"EAE_UM/UploadEtherCATNetworkCPT-828DBD65.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

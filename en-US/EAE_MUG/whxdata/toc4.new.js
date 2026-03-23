@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Reserve a Zone","type":"item","url":"EAE_MUG/ReservationOfAZone-3BF2030C.html"},{"name":"Edit and Save Changes","type":"item","url":"EAE_MUG/MakeChangesAndSaveProject-4C7962F2.html"},{"name":"Verify and Test","type":"item","url":"EAE_MUG/VerifyAndTest-9932FEF2.html"},{"name":"Update your Session","type":"item","url":"EAE_MUG/SynchronizeFromSever-4CF97BFC.html"},{"name":"Deliver Changes","type":"item","url":"EAE_MUG/GetDeliveriesFromMyColleagues-2CF43052.html"},{"name":"Release the Zone","type":"item","url":"EAE_MUG/ReleaseMyReservedZone-2BDEAEF5.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

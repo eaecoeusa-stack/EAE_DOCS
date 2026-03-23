@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Install EcoStruxure Automation Expert - HMI Runtime on Harmony ST6xxx Devices" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="EAE-InstallingOnHarmonyST6Devices-2133A526" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Install EcoStruxure Automation Expert - HMI Runtime on Harmony ST6xxx Devices
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.2_2";
+//]]></script>
+<meta name="brsprev" value="EAE_HMI/InstallEcoStruxureAutomationExpert--223644A0.html" />
+<meta name="brsnext" value="EAE_HMI/OperatingEcoStruxureAutomationExper-29723AF2.html" />
+<meta name="topic-breadcrumbs" content="HMI Client - User Guide &gt; Install EcoStruxure Automation Expert - HMI Runtime" />
+</head>
+<body id="EAE-InstallingOnHarmonyST6Devices-2133A526"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_HMI_UserGuideEcoStruxureAutomationExper-21B815C7.html");
+document.write("<a href=\"EAE_HMI_UserGuideEcoStruxureAutomationExper-21B815C7.html\">HMI Client - User Guide<\/a> > <a href=\"InstallHMIClient-2235B0D3.html#InstallHMIClient-2235B0D3\">Install EcoStruxure Automation Expert - HMI Runtime<\/a> > Install EcoStruxure Automation Expert - HMI Runtime on Harmony ST6xxx Devices<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="EAE-InstallingOnHarmonyST6Devices-2133A526" id="EAE-InstallingOnHarmonyST6Devices-2133A526_">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526" id="EAE_InstallingOnHarmonyST6Devices_2133A526">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526" id="EAE_InstallingOnHarmonyST6Devices_2133A526_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Install <span class="ph">EcoStruxure Automation Expert - HMI</span> Runtime on Harmony ST6xxx Devices
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> HMI Runtime can be installed on the following Harmony ST6xxx touch panel HMI devices:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+HMIST6200
+</p>
+</li>
+<li class="li">
+<p class="p">
+HMIST6400
+</p>
+</li>
+<li class="li">
+<p class="p">
+HMIST6500
+</p>
+</li>
+<li class="li">
+<p class="p">
+HMIST6600
+</p>
+</li>
+<li class="li">
+<p class="p">
+HMIST6700
+</p>
+</li>
+</ul>
+<p class="p">
+These devices are delivered with Linux-based EcoStruxure Operator Terminal Expert software pre-installed. This software can be replaced by the <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime software, enabling <span class="ph">EcoStruxure Automation Expert</span> HMI applications to be installed on the devices.
+</p>
+<p class="p">
+It is possible to subsequently <a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__RestoringTheFactoryInstalledSoftwar-216EC4A1">restart the EcoStruxure Operator Terminal Expert</a> software if necessary.
+</p>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__InstallationChecklist-17687B15">
+<a name="InstallationChecklist-17687B15" id="InstallationChecklist-17687B15">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__InstallationChecklist_17687B15" id="EAE_InstallingOnHarmonyST6Devices_2133A526__InstallationChecklist_17687B15">
+<!-- --></a><a name="InstallationChecklist_17687B15" id="InstallationChecklist_17687B15">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Installation Checklist
+</h2>
+<p class="p">
+The installation of the <span class="ph">EcoStruxure Automation Expert - HMI</span> Runtime on Harmony ST6xxx Devices includes performance of the following tasks:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Verify system requirements (Linux or Windows) before installation.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Download the correct EcoStruxure Automation Expert - HMI package for your architecture (arm64 or amd64).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Perform signature verification using GPG:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Import Schneider Electric public key (SE_GPG.asc).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Verify .deb package signature with the command <code class="ph codeph">gpg --verify</code>
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Install the HMI package using <code class="ph codeph">sudo apt install ./&lt;package&gt;.deb (Linux)</code><br />
+</p>
+</li>
+<li class="li">
+<p class="p">
+Configure <span class="ph">EcoStruxure Automation Expert</span> settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Add Soft HMI runtime in the <span class="ph uicontrol">Physical Devices</span> editor.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+For Harmony ST6 devices:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE">Configure the IP address</a> and network settings,
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__EnablingEthernetDownloads-216EB319">Enable Ethernet downloads</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__InstallingEcoStruxureAutomationExpe-216EB83D">Install <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime</a> using installer command (EcoStruxureAutomationExpertHMIST6Installer.exe).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__section-136-707CE5FE">Set the local time zone</a> using the command <code class="ph codeph">--tzset</code>
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Deploy HMI application from <span class="ph">EcoStruxure Automation Expert</span> Buildtime.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Confirm successful installation and reboot device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Do not disconnect power during installation or update process.
+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__InstallationSteps-176838E4">
+<a name="InstallationSteps-176838E4" id="InstallationSteps-176838E4">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__InstallationSteps_176838E4" id="EAE_InstallingOnHarmonyST6Devices_2133A526__InstallationSteps_176838E4">
+<!-- --></a><a name="InstallationSteps_176838E4" id="InstallationSteps_176838E4">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Installation Steps
+</h2>
+<p class="p">
+The steps to install <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime on Harmony ST6xxx devices are:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE">Configuring the IP address</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__EnablingEthernetDownloads-216EB319">Enabling Ethernet downloads</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__InstallingEcoStruxureAutomationExpe-216EB83D">Installing <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__section-136-707CE5FE">Setting the local time zone</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__CreatingAndDeployingAnHMIApplicatio-216EBD8B">Creating and deploying an HMI application</a>.
+</p>
+</li>
+</ol>
+<p class="p">
+If an <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime is already available on Harmony ST6xxx devices and update has to be made, the steps to follow are:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__RestoringTheFactoryInstalledSoftwar-216EC4A1">Starting the Factory Installed Software on the Harmony Device.</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE">Configuring the IP address</a> (without its step 1 since the <span class="ph uicontrol">HW Configuration</span> would already be open).
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__EnablingEthernetDownloads-216EB319">Enabling Ethernet downloads</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__InstallingEcoStruxureAutomationExpe-216EB83D">Updating <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__CreatingAndDeployingAnHMIApplicatio-216EBD8B">Creating and deploying an HMI application</a>.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE">
+<a name="ConfiguringTheIPAddress-216EAFFE" id="ConfiguringTheIPAddress-216EAFFE">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__ConfiguringTheIPAddress_216EAFFE" id="EAE_InstallingOnHarmonyST6Devices_2133A526__ConfiguringTheIPAddress_216EAFFE">
+<!-- --></a><a name="ConfiguringTheIPAddress_216EAFFE" id="ConfiguringTheIPAddress_216EAFFE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Configuring the IP Address
+</h2>
+<div class="p">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.809999999999999%" />
+<col style="width:87.19%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13964e326">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13964e330">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e326 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e330 ">
+<p class="p">
+On the <strong class="ph b">Welcome</strong> screen of the Harmony device, press <span class="ph uicontrol">HW Configuration</span> to open the configuration screen:
+</p>
+<img class="image" src="0000816438.png" alt="" style="max-height:4.5in;" />
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e326 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e330 ">
+<p class="p">
+Press the <span class="ph uicontrol">Ethernet1</span> field and enter the device IP address, the Gateway address and the Network mask.
+</p>
+<p class="p">
+Alternatively, you can press the <img class="image" src="0000816437.png" alt="" style="max-height:0.25in;" /> field to the right of the <span class="ph uicontrol">Ethernet1</span> field, then press the <span class="ph uicontrol">IP Address</span> field and enter the IP address. Additional configuration options are available using this method.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--notice">
+NOTICE
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+risk of loss of network connection and “no route to host” detected error
+</div>
+<div class="howtoavoid">
+When configuring network settings on the ST6 device and only one Ethernet interface is being used (e.g., <span class="ph uicontrol">Ethernet1</span>), you must also assign the same Gateway address and Network mask to the other Ethernet interfaces (e.g., <span class="ph uicontrol">Ethernet2</span>), even if the other interfaces are not actively used.
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e326 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e330 ">
+<p class="p">
+Press <span class="ph uicontrol">Save and Reboot</span>.
+</p>
+<p class="p">
+<strong class="ph b">Result:</strong> The IP address is configured and the device reboots.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> It may be necessary to repeat the process and reboot again if the IP address is not correctly configured immediately.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__EnablingEthernetDownloads-216EB319">
+<a name="EnablingEthernetDownloads-216EB319" id="EnablingEthernetDownloads-216EB319">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__EnablingEthernetDownloads_216EB319" id="EAE_InstallingOnHarmonyST6Devices_2133A526__EnablingEthernetDownloads_216EB319">
+<!-- --></a><a name="EnablingEthernetDownloads_216EB319" id="EnablingEthernetDownloads_216EB319">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Enabling Ethernet Downloads
+</h2>
+<p class="p">
+The Harmony device must now be configured to allow remote downloading of projects over an Ethernet connection:
+</p>
+<div class="p">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.809999999999999%" />
+<col style="width:87.19%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13964e441">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13964e445">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e441 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e445 ">
+<p class="p">
+Connect an Ethernet cable to the ETH1 port on the Harmony device and the Ethernet port on the PC.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e441 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e445 ">
+<p class="p">
+On the <strong class="ph b">Welcome</strong> screen of the Harmony device, press <span class="ph uicontrol">HW Configuration</span> to open the configuration screen.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e441 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e445 ">
+<p class="p">
+Scroll down to the <span class="ph uicontrol">Ethernet Download</span> field.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e441 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e445 ">
+<p class="p">
+Press the <span class="ph uicontrol">Enable</span> field.
+</p>
+<p class="p">
+<strong class="ph b">Result: </strong> A popup window appears confirming that the Ethernet port is open and projects can now be downloaded using the Ethernet connection.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__InstallingEcoStruxureAutomationExpe-216EB83D">
+<a name="InstallingEcoStruxureAutomationExpe-216EB83D" id="InstallingEcoStruxureAutomationExpe-216EB83D">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__InstallingEcoStruxureAutomationExpe_216EB83D" id="EAE_InstallingOnHarmonyST6Devices_2133A526__InstallingEcoStruxureAutomationExpe_216EB83D">
+<!-- --></a><a name="InstallingEcoStruxureAutomationExpe_216EB83D" id="InstallingEcoStruxureAutomationExpe_216EB83D">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Installing <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime on a Harmony ST6xxx Device
+</h2>
+<p class="p">
+<strong class="ph b">Prerequisites: </strong><span class="ph">EcoStruxure Automation Expert</span> Buildtime and Runtime, version 21.2 or greater, must be installed on the PC.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The following steps are similar for installing and updating <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime on a Harmony ST6xxx Device. In the update case, the executable used in this section is an updated version of the one already installed in the device.
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.809999999999999%" />
+<col style="width:87.19%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13964e550">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13964e554">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e550 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e554 ">
+<p class="p">
+Navigate to the following folder:
+</p>
+<p class="p">
+<code class="ph codeph">C:\Program Files\Schneider Electric\EcoStruxure Automation Expert - Buildtime <em class="ph i">xx.x</em>\Studio\bin</code>
+</p>
+<p class="p">
+where <em class="ph i">xx.x</em> is the software version, for example, 24.0.
+</p>
+<p class="p">
+Once there, open the command prompt window by typing <strong class="ph b"><span class="ph synph">cmd</span></strong> in the folder’s breadcrumb.
+</p>
+<img class="image" src="0000916356.png" width="500" alt="" />
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e550 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e554 ">
+<p class="p">
+In the command prompt window, enter the following command to ping the HMI:
+</p>
+<p class="p">
+<span class="keyword cmdname">EcoStruxureAutomationExpertHMIST6Installer.exe --ping 192.168.xxx.xx </span>
+</p>
+<p class="p">
+where 192.168.xxx.xx is the previously configured IP address of the Harmony device.
+</p>
+<img class="image" src="0000916355.png" width="500" alt="" />
+<div class="note note">
+<span class="notetitle">NOTE:</span> If the ping is not responding as shown in the image above, please verify the <a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE">Configuring the IP address</a> and <a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__EnablingEthernetDownloads-216EB319">Enabling Ethernet downloads</a> steps.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e550 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e554 ">
+<p class="p">
+Finally, run the following command to install <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime on the HMI:
+</p>
+<p class="p">
+<span class="keyword cmdname">EcoStruxureAutomationExpertHMIST6Installer.exe --install 192.168.xxx.xx </span>
+</p>
+<p class="p">
+where 192.168.xxx.xx is the previously configured IP address of the Harmony device.
+</p>
+<p class="p">
+Type <strong class="ph b">y</strong> to begin installation.
+</p>
+<p class="p">
+<strong class="ph b">Result: </strong>
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+A popup window appears on the Harmony device with the message <cite class="cite">Now downloading...</cite>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Confirmation of successful installation is displayed in the command window of the PC.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The Harmony device reboots.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The messages <cite class="cite"> Application is starting...</cite> then <cite class="cite">No project has been deployed to the device</cite> appear on the screen of the Harmony device.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Do not disconnect the power cable from the device during this period.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+The <span class="ph">EcoStruxure Automation Expert</span> HMI Runtime software is now installed on the Harmony device.
+</p>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__section-136-707CE5FE">
+<a name="section-136-707CE5FE" id="section-136-707CE5FE">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__section_136_707CE5FE" id="EAE_InstallingOnHarmonyST6Devices_2133A526__section_136_707CE5FE">
+<!-- --></a><a name="section_136_707CE5FE" id="section_136_707CE5FE">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Setting the Local Time Zone on the Harmony Device
+</h2>
+<p class="p">
+HMI applications can include alarm controls that display the local time. To set the local time zone on the Harmony device:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.809999999999999%" />
+<col style="width:87.19%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13964e704">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13964e708">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e704 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e708 ">
+<p class="p">
+Ensure the Ethernet service is configured in the <a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE"><span class="ph uicontrol">HW Configuration</span> screen on the Harmony device</a>.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e704 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e708 ">
+<p class="p">
+Navigate to the following folder:
+</p>
+<p class="p">
+<code class="ph codeph">C:\Program Files\Schneider Electric\EcoStruxure Automation Expert - Buildtime <em class="ph i">xx.x</em>\Studio\bin</code>
+</p>
+<p class="p">
+where <em class="ph i">xx.x</em> is the software version, for example, 24.0.
+</p>
+<p class="p">
+Once there, open the command prompt window by typing <strong class="ph b"><span class="ph synph">cmd</span></strong> in the folder’s breadcrumb.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e704 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e708 ">
+<p class="p">
+In the command prompt window, run the following command:
+</p>
+<p class="p">
+<span class="keyword cmdname">EcoStruxureAutomationExpertHMIST6Installer.exe --tzset </span><em class="ph i">timezone</em> <em class="ph i">ipaddress</em>
+</p>
+<p class="p">
+where:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<em class="ph i">timezone</em> is the standard tz database name of the time zone. Enter the name exactly as specified in the tz database.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<em class="ph i">ipaddress</em> is the previously configured IP address of the Harmony device.
+</p>
+</li>
+</ul>
+<p class="p">
+For example:
+</p>
+<p class="p">
+<span class="keyword cmdname">EcoStruxureAutomationExpertHMIST6Installer.exe --tzset Asia/Shanghai 192.168.0.1</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e704 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e708 ">
+<p class="p">
+Cycle the power on the Harmony device.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__CreatingAndDeployingAnHMIApplicatio-216EBD8B">
+<a name="CreatingAndDeployingAnHMIApplicatio-216EBD8B" id="CreatingAndDeployingAnHMIApplicatio-216EBD8B">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__CreatingAndDeployingAnHMIApplicatio_216EBD8B" id="EAE_InstallingOnHarmonyST6Devices_2133A526__CreatingAndDeployingAnHMIApplicatio_216EBD8B">
+<!-- --></a><a name="CreatingAndDeployingAnHMIApplicatio_216EBD8B" id="CreatingAndDeployingAnHMIApplicatio_216EBD8B">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Creating and Deploying an HMI Application
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.809999999999999%" />
+<col style="width:87.19%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13964e837">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13964e841">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+Using <span class="ph">EcoStruxure Automation Expert</span>, create a new solution (refer to the <em class="ph i">EcoStruxure Automation Expert User Manual</em> topic <span class="ph"><a class="xref " href="../../EAE_UM/index.htm?rhmapid=CreateNewSolution_958E9FE9" target="_blank"><em class="ph i">Create New Solution</em></a></span>). On the first screen, select the option <strong class="ph b"><span class="ph">EcoStruxure Automation Expert</span> - Starter Kit (Multi-OS HMI)</strong> to provide support for Linux-based devices.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the <span class="ph uicontrol">Solution</span> pad, create a new resolution (<span class="ph menucascade"><span class="ph uicontrol">Canvases</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">New Resolution</span></span>).
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+On the <span class="ph uicontrol">Resolution</span> window, select the screen <span class="ph uicontrol">Size</span> matching that of the target Harmony device, then click <span class="ph uicontrol">Finish</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For details on the other options available, refer to the <em class="ph i">EcoStruxure Automation Expert User Manual</em> topic <em class="ph i">Start Canvas</em>.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+4
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+Right-click on the new resolution under the <span class="ph uicontrol">Canvases</span> node and choose <span class="ph uicontrol">New item</span>. Proceed to design the canvases and graphical elements of the HMI runtime application, as described in the <em class="ph i">Graphic Editors</em> chapter of the <em class="ph i">EcoStruxure Automation Expert User Manual</em>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Multi-OS HMI applications can contain a maximum of 140 numeric values for each canvas.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+5
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the quick access toolbar, click the <span class="ph uicontrol">System File</span> icon <img class="image" src="0000809844.png" alt="" style="max-height:14px;" /> to open the <span class="ph uicontrol">System</span> editor.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+6
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+Click the <span class="ph uicontrol">Physical devices</span> icon <img class="image" src="0000908941.png" alt="" style="max-height:14px;" /> from the vertical toolbar on the left.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+7
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the Device catalog on the left:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Select <span class="ph menucascade"><span class="ph uicontrol">Harmony</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Harmony operating panel</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Harmony ST6</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Drag and drop the device onto the workspace area.
+</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+8
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the workspace area, select the Harmony ST6 device to display its properties in the <span class="ph uicontrol">Properties</span> pad.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If the <span class="ph uicontrol">Properties</span> pad is not visible, select <span class="ph menucascade"><span class="ph uicontrol">View</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">General pads</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Properties</span></span> in the main menu to display it.
+</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+9
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the <span class="ph uicontrol">Ethernet interface</span> section, set the <span class="ph uicontrol">IP Address</span> to that previously configured in the Harmony device.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+10
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the <span class="ph uicontrol">Solution Explorer</span>:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Navigate to and select <span class="ph menucascade"><span class="ph uicontrol">&lt;Solution Name&gt;</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">System</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Devices</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click and select <span class="ph uicontrol">New Device</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">New Device</span> dialog:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Enter a <span class="ph uicontrol">Name</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select a <span class="ph uicontrol">Count</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the <span class="ph uicontrol">Type</span><span class="ph uicontrol"><span style="white-space: nowrap;" class="ph nowrap">SE.Standard:HMI_NET</span></span>
+</p>
+</li>
+</ul>
+<p class="p">
+... then click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+11
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+In the <span class="ph uicontrol">Logical Devices</span> editor, select the new standard HMI object, then double-click in the <span class="ph uicontrol">Physical Device</span> column and select the <span class="ph uicontrol">Harmony ST6</span> device to link it to the logical device.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+12
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+On the <span class="ph uicontrol">Deploy and Diagnostic</span> pad, compile the device and deploy it.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e837 ">
+<p class="p">
+13
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e841 ">
+<p class="p">
+On the Harmony device, the following message is displayed:
+</p>
+<p class="p">
+<cite class="cite">A new version is deployed. Do you want to restart the HMI?</cite>
+</p>
+<p class="p">
+Press <span class="ph uicontrol">YES</span>.
+</p>
+<p class="p">
+<strong class="ph b">Result: </strong>The following message is displayed:
+</p>
+<p class="p">
+<cite class="cite">New application is starting…</cite>
+</p>
+<p class="p">
+The new project is then displayed.
+</p>
+<p class="p">
+If a project was already running, press <span class="ph uicontrol">New version deployed</span>, then press <span class="ph uicontrol">YES</span>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="EAE-InstallingOnHarmonyST6Devices-2133A526__RestoringTheFactoryInstalledSoftwar-216EC4A1">
+<a name="RestoringTheFactoryInstalledSoftwar-216EC4A1" id="RestoringTheFactoryInstalledSoftwar-216EC4A1">
+<!-- --></a><a name="EAE_InstallingOnHarmonyST6Devices_2133A526__RestoringTheFactoryInstalledSoftwar_216EC4A1" id="EAE_InstallingOnHarmonyST6Devices_2133A526__RestoringTheFactoryInstalledSoftwar_216EC4A1">
+<!-- --></a><a name="RestoringTheFactoryInstalledSoftwar_216EC4A1" id="RestoringTheFactoryInstalledSoftwar_216EC4A1">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Starting the Factory Installed Software on the Harmony Device
+</h2>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:12.809999999999999%" />
+<col style="width:87.19%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d13964e1248">
+<p class="p">
+Step
+</p>
+</th>
+<th class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d13964e1252">
+<p class="p">
+Action
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" rowspan="1" colspan="1" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e1248 ">
+<p class="p">
+1
+</p>
+</td>
+<td class="entry" rowspan="1" colspan="1" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e1252 ">
+<p class="p">
+Power on the Harmony device. Startup of the currently installed HMI runtime application begins. The device is responsive to commands for the first 5 seconds of the startup phase.
+</p>
+<p class="p">
+When the progress bar is in the middle, the message <cite class="cite">Initializing EcoStruxure Automation Expert HMI</cite> appears.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e1248 ">
+<p class="p">
+2
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e1252 ">
+<p class="p">
+Touch the upper left third of the screen, drag down to the lower left third of the screen, and release:
+</p>
+<img class="image" src="0000816436.png" alt="" style="max-height:3.5in;" />
+<p class="p">
+<strong class="ph b">Result: </strong>The message <cite class="cite">Starting the original runtime...</cite> appears.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Welcome</span> screen appears if no runtime application is loaded on the device. Otherwise, the EcoStruxure Operator Terminal Expert application starts.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d13964e1248 ">
+<p class="p">
+3
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d13964e1252 ">
+<p class="p">
+Because a project has already been installed on the device using EcoStruxure Operator Terminal Expert, the Welcome screen, shown in the <a class="xref" href="#EAE-InstallingOnHarmonyST6Devices-2133A526__ConfiguringTheIPAddress-216EAFFE">Configuring the IP address</a> section, is no longer displayed.
+</p>
+<p class="p">
+To access the configuration screen, press once in the upper left corner of the screen then once in the lower right corner of the screen as soon as the loading icon appears in the middle of the screen.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005464.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

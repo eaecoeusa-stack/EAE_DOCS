@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc5.js\"  name=\"Management of Cyclic I/O\" url=\"EAE_ADG/ManagementOfCyclicIO-4980AB67.html#ManagementOfCyclicIO-4980AB67\"><item name=\"Bus Cycle Time\" url=\"EAE_ADG/BusCycleTime-49817B2F.html#BusCycleTime-49817B2F\" /></data>";

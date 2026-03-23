@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Creating and Displaying HMI Alias Names" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="CreatingAndDisplayingAliasNamesForC-67615DFD" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Creating and Displaying HMI Alias Names
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.3.3.0_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/AssetAliasName-9112AA2D.html" />
+<meta name="brsnext" value="EAE_UM/DisplayInstanceNameAssetTagandAlias-960D4C27.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; Elements &gt; Creating and Localizing different CAT and Sub-CAT Instance Names" />
+</head>
+<body id="CreatingAndDisplayingAliasNamesForC-67615DFD"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"Elements-97BB21D1.html#Elements-97BB21D1\">Elements<\/a> > <a href=\"CreatingAndLocalizingHMIAliasesAndA-6760E2EE.html#CreatingAndLocalizingHMIAliasesAndA-6760E2EE\">Creating and Localizing different CAT and Sub-CAT Instance Names<\/a> > Creating and Displaying HMI Alias Names<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="CreatingAndDisplayingAliasNamesForC-67615DFD" id="CreatingAndDisplayingAliasNamesForC-67615DFD_">
+<!-- --></a><a name="CreatingAndDisplayingAliasNamesForC_67615DFD" id="CreatingAndDisplayingAliasNamesForC_67615DFD">
+<!-- --></a><a name="CreatingAndDisplayingAliasNamesForC_67615DFD" id="CreatingAndDisplayingAliasNamesForC_67615DFD_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Creating and Displaying HMI Alias Names
+</h1>
+<div class="body conbody">
+
+<div class="section" id="CreatingAndDisplayingAliasNamesForC-67615DFD__Preliminaries-676563ED">
+<a name="Preliminaries-676563ED" id="Preliminaries-676563ED">
+<!-- --></a><a name="CreatingAndDisplayingAliasNamesForC_67615DFD__Preliminaries_676563ED" id="CreatingAndDisplayingAliasNamesForC_67615DFD__Preliminaries_676563ED">
+<!-- --></a><a name="Preliminaries_676563ED" id="Preliminaries_676563ED">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Preliminaries
+</h2>
+<p class="p">
+Create and add to <span class="ph menucascade"><span class="ph uicontrol">System</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Applications</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">&lt;App name&gt;</span></span> one or more application <span class="ph">CAT</span> or Sub-<span class="ph">CAT</span> objects.
+</p>
+</div>
+<div class="section" id="CreatingAndDisplayingAliasNamesForC-67615DFD__CreateTheAliasName-67656619">
+<a name="CreateTheAliasName-67656619" id="CreateTheAliasName-67656619">
+<!-- --></a><a name="CreatingAndDisplayingAliasNamesForC_67615DFD__CreateTheAliasName_67656619" id="CreatingAndDisplayingAliasNamesForC_67615DFD__CreateTheAliasName_67656619">
+<!-- --></a><a name="CreateTheAliasName_67656619" id="CreateTheAliasName_67656619">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Create the HMI Alias Name
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <a class="xref" href="FunctionBlocksNetworkEditor-69D62822.html">Function Blocks Network editor</a> to <span class="ph menucascade"><span class="ph uicontrol">System</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Applications/Devices</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click and select <span class="ph uicontrol">Attributes...</span>
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the <span class="ph uicontrol">Exported</span> tab to open it.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Refer to the <span class="ph uicontrol">Context</span> and <span class="ph uicontrol">Element Name</span> column values to identify the intended <span class="ph uicontrol">HMI.Alias</span> attribute, then enter an alias name in the <span class="ph uicontrol">Value</span> column.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> You can enter localized language text to display the object in that language in the HMI.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">OK</span> to save the <span class="ph uicontrol">HMI.Alias</span> value.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="CreatingAndDisplayingAliasNamesForC-67615DFD__DisplayTheAliasName-6765686B">
+<a name="DisplayTheAliasName-6765686B" id="DisplayTheAliasName-6765686B">
+<!-- --></a><a name="CreatingAndDisplayingAliasNamesForC_67615DFD__DisplayTheAliasName_6765686B" id="CreatingAndDisplayingAliasNamesForC_67615DFD__DisplayTheAliasName_6765686B">
+<!-- --></a><a name="DisplayTheAliasName_6765686B" id="DisplayTheAliasName_6765686B">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Display the HMI Alias Name
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Create an <a class="xref" href="HMI-Canvas-993311FB.html">HMI-Canvas</a> that includes a <a class="xref" href="GraphicsEditorToolbar-EAB7CA20.html">History Trend control</a> (<img class="image" src="0000824786.png" alt="" style="max-height:20px;" />).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">History Trend Configuration Manager</span>:<br />In the <span class="ph uicontrol">Solution Explorer</span> pad select <span class="ph menucascade"><span class="ph uicontrol">&lt;solution name&gt;</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configurations</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">History Trend</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Select an existing configuration that includes the object with the configured HMI Alias and click <span class="ph uicontrol">OK</span>,<br />or
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#CreatingAndDisplayingAliasNamesForC-67615DFD__CreateANewConfiguration-67656C48">Create a new configuration as described below</a>.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Right click on the <span class="ph menucascade"><span class="ph uicontrol">&lt;solution name&gt;</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Canvases</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> 1280x980</span></span> node, then select <span class="ph uicontrol">Start Local HMI</span>. The project builds, then the <span class="ph">EcoStruxure Automation Expert - HMI</span> service starts and runs the canvas.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the running canvas toolbar, click the Configuration icon (<img class="image" src="0000824784.png" alt="" style="max-height:20px;" /> located on the left of the toolbar). The <span class="ph uicontrol">History Trend Configuration Manager</span> opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the configuration and click <span class="ph uicontrol">OK</span> to apply it to the <span class="ph uicontrol">History Trend</span> control and close the dialog.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The variables assigned to the selected configuration are added to the <span class="ph uicontrol">History Trend</span> control.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Check the name on the bottom of the canvas. It is the HMI Alias name you configured.
+</p>
+</li>
+</ol>
+</div>
+<div class="section" id="CreatingAndDisplayingAliasNamesForC-67615DFD__CreateANewConfiguration-67656C48">
+<a name="CreateANewConfiguration-67656C48" id="CreateANewConfiguration-67656C48">
+<!-- --></a><a name="CreatingAndDisplayingAliasNamesForC_67615DFD__CreateANewConfiguration_67656C48" id="CreatingAndDisplayingAliasNamesForC_67615DFD__CreateANewConfiguration_67656C48">
+<!-- --></a><a name="CreateANewConfiguration_67656C48" id="CreateANewConfiguration_67656C48">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Create a New Configuration
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">History Trend Configuration Manager</span>, highlight the <span class="ph uicontrol">Configurations</span> node, right click and select <span class="ph uicontrol">New</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">History Trend Configuration</span> dialog, in the <span class="ph uicontrol">Series</span> field, click the ellipsis (...). The <span class="ph uicontrol">Trend Series Collection Editor</span> opens
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Add</span>. The <span class="ph uicontrol">Select Archive Path</span> dialog opens.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the path(s) to the HMI input variable values you want to view, then click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">OK</span> three more times to return to the <span class="ph uicontrol">History Trend Configuration Manager</span>, which now displays the selected variable configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">Close</span>.
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

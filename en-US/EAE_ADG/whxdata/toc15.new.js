@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc16","name":"Availability Monitoring and Execution Synchronization","type":"book","url":"EAE_ADG/AvailabilityMonitoringAndExecutionS-4AA514F2.html#AvailabilityMonitoringAndExecutionS-4AA514F2"},{"key":"toc17","name":"Handling Potential Cross-communication Event Loss","type":"book","url":"EAE_ADG/HandlingPotentialCross-communicatio-4BA517B9.html#HandlingPotentialCross-communicatio-4BA517B9"},{"key":"toc18","name":"Reducing Jitter in an EcoStruxure Automation Expert Application","type":"book","url":"EAE_ADG/ReducingJitterInAnEcoStruxureAutoma-02432EEE.html#ReducingJitterInAnEcoStruxureAutoma-02432EEE"},{"name":"Using Code to Cause an Input Event to Fire an Output Event","type":"item","url":"EAE_ADG/UsingCodeToCauseAnInputEventToFireA-3E94E1E6.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

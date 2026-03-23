@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Processing the Analog Input Value" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ProcessingAnalogInputValueCPT-5BF2B96A" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Processing the Analog Input Value
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.2.0_5";
+//]]></script>
+<meta name="brsprev" value="EAE_GS/OpeningtheThirdValveCPT-5BF2B112.html" />
+<meta name="brsnext" value="EAE_GS/TurningONtheDigitalOutputCPT-5BF2DCC3.html" />
+<meta name="topic-breadcrumbs" content="EcoStruxure Automation Expert - Getting Started &gt; Setting-Up the Instruments &gt; Creating Connections Between Instruments" />
+</head>
+<body id="ProcessingAnalogInputValueCPT-5BF2B96A"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html");
+document.write("<a href=\"EAE_GS_DocumentTypeProductCategoryRangeNam-8D95B8DE.html\">EcoStruxure Automation Expert - Getting Started<\/a> > <a href=\"Setting-UptheInstrumentsCPT-5BF229A6.html#Setting-UptheInstrumentsCPT-5BF229A6\">Setting-Up the Instruments<\/a> > <a href=\"CreatingConnectionsbetweenInstrumen-5BF28183.html#CreatingConnectionsbetweenInstrumen-5BF28183\">Creating Connections Between Instruments<\/a> > Processing the Analog Input Value<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ProcessingAnalogInputValueCPT-5BF2B96A" id="ProcessingAnalogInputValueCPT-5BF2B96A_">
+<!-- --></a><a name="ProcessingAnalogInputValueCPT_5BF2B96A" id="ProcessingAnalogInputValueCPT_5BF2B96A">
+<!-- --></a><a name="ProcessingAnalogInputValueCPT_5BF2B96A" id="ProcessingAnalogInputValueCPT_5BF2B96A_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Processing the Analog Input Value
+</h1>
+<div class="body conbody">
+
+<p class="p">
+As required in the topic <a class="xref" href="PurposeoftheConnectionsCPT-5BF28AAE.html">Purpose of the Connections</a>, the <strong class="ph b">TR1LT01</strong> analog input process value must be compared to a constant value.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">If the event of the process value is greater than or equal to the constant, the result of the comparison will be ‘TRUE’ otherwise ‘FALSE’.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+To make this comparison, use a <strong class="ph b">COMPARE</strong> function block.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:53.73134328358209%" />
+<col style="width:46.26865671641791%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000886576.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="div">
+<p class="p">
+This function block gets <strong class="ph b">two values as inputs through IN${CNT}:</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">IN1</strong> for the 1<sup class="ph sup">st</sup> input
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">IN2</strong> for the 2<sup class="ph sup">nd</sup> input
+</p>
+</li>
+</ul>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i"><strong class="ph b">These two input variables get updated thanks to the REQ event</strong>.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Whenever <strong class="ph b">REQ</strong> triggers, the first input value is compared to the second one.
+</p>
+<div class="div">
+<p class="p">
+The result is given for all the possible comparison:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">LT</strong> : ‘TRUE’ if <strong class="ph b">IN1</strong> is Lower than <strong class="ph b">IN2</strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">LE</strong> : ‘TRUE’ if <strong class="ph b">IN1</strong> is Lower than or Equal to <strong class="ph b">IN2</strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">EQ</strong> : ‘TRUE’ if <strong class="ph b">IN1</strong> is Equal to <strong class="ph b">IN2</strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">NE</strong> : ‘TRUE’ if <strong class="ph b">IN1</strong> is Not Equal to <strong class="ph b">IN2</strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">GE</strong> : ‘TRUE’ if <strong class="ph b">IN1</strong> is Greater or Equal than <strong class="ph b">IN2</strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">GT</strong> : ‘TRUE’ if <strong class="ph b">IN1</strong> is Greater than <strong class="ph b">IN2</strong>.
+</p>
+</li>
+</ul>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">In our example,<strong class="ph b"> the GE output will be used since the process value has to be greater than or equal to the constant value</strong>.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+Now, add a <strong class="ph b">COMPARE</strong> function block and name it <strong class="ph b">LevelCompare</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:26.86567164179105%" />
+<col style="width:73.13432835820896%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000886575.png" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">The <strong class="ph b">inputs are currently indicating a detected error</strong>. It is because their types have to be configured.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="div">
+<p class="p">
+To <strong class="ph b">configure types of input</strong>:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Go to the <span class="ph uicontrol">Interface Editor</span> of <strong class="ph b">LevelCompare</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:65%" />
+<col style="width:35%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000903770.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i"><strong class="ph b">In the Interface Editor</strong>, you see that <strong class="ph b">the two inputs currently have the <span class="ph uicontrol">ANY</span> type</strong>. That is the reason why the inputs both raise error.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:65%" />
+<col style="width:35%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000902938.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+As the process value of <strong class="ph b">TR1LT01</strong> is given the <span class="ph uicontrol">VTQREAL</span> type, the two input types will be set to <strong class="ph b">REAL</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:65%" />
+<col style="width:35%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000886572.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">The <strong class="ph b">VTQ</strong> types (as <strong class="ph b">VTQBOOL</strong>, <strong class="ph b">VTQREAL</strong>…) transmit a value and additional information. As only the <strong class="ph b">REAL</strong> value matters for the comparison, the <strong class="ph b">REAL</strong> type has been selected instead of <strong class="ph b">VTQREAL</strong>.</em>
+</p>
+<p class="p">
+<em class="ph i">The <strong class="ph b">REAL</strong> value of the <strong class="ph b">VTQREAL</strong> <strong class="ph b">PV</strong> will then be transmitted while the additional ones will be lost.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+To <strong class="ph b">change the type of the inputs</strong> in the <span class="ph uicontrol">Interface Editor</span>, click on the cell containing the value <strong class="ph b">ANY</strong>.
+</p>
+<p class="p">
+It becomes editable.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:65%" />
+<col style="width:35%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000902937.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Then, either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Type <strong class="ph b">REAL</strong> in the cell.
+</p>
+</li>
+</ul>
+<p class="p">
+<strong class="ph b">or</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Click on the downward arrow to show a drop-down list.
+</p>
+<p class="p">
+Then, look for the <strong class="ph b">REAL</strong> type and select it.
+</p>
+</li>
+</ul>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:65%" />
+<col style="width:35%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000902936.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Press <strong class="ph b">OK</strong> to validate.
+</p>
+</li>
+</ol>
+</div>
+<p class="p">
+The detected errors on the inputs disappear.
+</p>
+<div class="div">
+<p class="p">
+Now to <strong class="ph b">send the process value</strong> to <strong class="ph b">LevelCompare</strong>:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Link <strong class="ph b">TR1LT01.Pv</strong> to <strong class="ph b">LevelCompare.IN1</strong> and <strong class="ph b">TR1LT01.CNF</strong> to <strong class="ph b">LevelCompare.REQ</strong>.
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:65%" />
+<col style="width:35%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000886589.png" width="500" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Set a constant to <strong class="ph b">IN2</strong>.
+</p>
+<img class="image" src="0000903799.png" width="250" alt="" />
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="90%">
+<colgroup>
+<col style="width:8.542713567839197%" />
+<col style="width:91.45728643216081%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000878449.png" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:middle; background-color:#3DCD58; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<strong class="ph b">A blank box linked to IN2 appears.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="li">
+<p class="p">
+Type the desired value and validate by pressing <strong class="ph b"><span class="ph synph">Enter</span></strong> (or by clicking anywhere in the layer).
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:41%" />
+<col style="width:59%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000886587.png" width="250" alt="" />
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+ 
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">Sometimes, the <strong class="ph b">constant value does not appear after pressing <span class="ph synph">Enter</span></strong>. To show it, <strong class="ph b">unselect the function block</strong> by clicking anywhere in the layer.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table" width="100%">
+<colgroup>
+<col style="width:8.542713567839197%" />
+<col style="width:91.45728643216081%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:middle; border-right-style: none; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000878449.png" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:middle; background-color:#3DCD58; border-right-style: none; border-bottom-style: none; border-top-style: none; ">
+<strong class="ph b">The process value of the analog input <span class="ph uicontrol">IN1</span> is now compared to the constant 82.5 every time the REQ event is triggered.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col style="width:8.5%" />
+<col style="width:91.5%" />
+</colgroup>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="text-align:center;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: none; border-top-style: none; border-left-style: none; ">
+<img class="image" src="0000873141.jpg" width="50" alt="" />
+</td>
+<td class="entry" style="text-align:left;vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #3DCD58; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #3DCD58; border-top-style: solid; border-top-width: 1px; border-top-color: #3DCD58; ">
+<strong class="ph b">NOTE:</strong>
+<p class="p">
+<em class="ph i">The <strong class="ph b">constant value can be replaced anytime by any other real value</strong>. The change will be updated the next time the <strong class="ph b">REQ</strong> event is triggered.</em>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004453.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

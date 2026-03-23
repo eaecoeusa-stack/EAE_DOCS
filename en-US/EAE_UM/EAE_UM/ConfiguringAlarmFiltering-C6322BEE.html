@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Configuring Alarm Filtering" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ConfiguringAlarmFiltering-C6322BEE" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Configuring Alarm Filtering
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.7.0_1";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/FilteringAlarmEvents-C6310E16.html" />
+<meta name="brsnext" value="EAE_UM/AcknowledgingAlarms-CC49476C.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; Filtering Alarm Events" />
+</head>
+<body id="ConfiguringAlarmFiltering-C6322BEE"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"FilteringAlarmEvents-C6310E16.html#FilteringAlarmEvents-C6310E16\">Filtering Alarm Events<\/a> > Configuring Alarm Filtering<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ConfiguringAlarmFiltering-C6322BEE" id="ConfiguringAlarmFiltering-C6322BEE_">
+<!-- --></a><a name="ConfiguringAlarmFiltering_C6322BEE" id="ConfiguringAlarmFiltering_C6322BEE">
+<!-- --></a><a name="ConfiguringAlarmFiltering_C6322BEE" id="ConfiguringAlarmFiltering_C6322BEE_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Configuring Alarm Filtering
+</h1>
+<div class="body conbody">
+
+<div class="section" id="ConfiguringAlarmFiltering-C6322BEE__InAFunctionBlockCanvasForExampleInT-C634BCB4">
+<a name="InAFunctionBlockCanvasForExampleInT-C634BCB4" id="InAFunctionBlockCanvasForExampleInT-C634BCB4">
+<!-- --></a><a name="ConfiguringAlarmFiltering_C6322BEE__InAFunctionBlockCanvasForExampleInT_C634BCB4" id="ConfiguringAlarmFiltering_C6322BEE__InAFunctionBlockCanvasForExampleInT_C634BCB4">
+<!-- --></a><a name="InAFunctionBlockCanvasForExampleInT_C634BCB4" id="InAFunctionBlockCanvasForExampleInT_C634BCB4">
+<!-- --></a>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In a function block canvas – for example, in the HMI node of an Application CAT – add an <span class="ph uicontrol">Alarm Grid</span> control to the canvas.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Properties</span> window for the grid, under <span class="ph uicontrol">Misc</span> configure the following settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">ShowToolbar</span>: Select <span class="ph uicontrol">True</span> to activate the grid toolbar. This will display and enable the filtering tools on the alarm grid during runtime.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">ShowOnlyLocalAlarms</span>: Select either:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">True</span>: to display alarms only for the local CAT or SubCAT.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">False</span>: to display all alarms.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">AlarmType</span>
+</p>
+: Select either:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Online</span>: to display only active alarms.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Archive</span>: to display only alarms stored in the PostgreSQL archive server.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">AlarmFilter</span>: Click the ellipsis. A message informs you that filtering alarms can lead to possible hidden alarms:
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--warning">
+<span class="hazardstatement--warning-symbol"> </span>WARNING
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+UNINTENDED EQUIPMENT OPERATION
+</div>
+<div class="howtoavoid">
+If you choose to filter some alarms, the operator will not be able to see some alarms.
+</div>
+<div class="howtoavoid">
+This can result in unnoticed alarms coming from the process
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in death, serious injury, or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</li>
+<li class="li">
+<p class="p">
+To proceed with alarm filtering, press the<span class="ph uicontrol"> I want to filter alarms anyway</span> button. As the button tool tip indicates:
+</p>
+<p class="p">
+<em class="ph i">By pressing this button, you confirm that some alarms will be hidden based on the applied filter. You should also check that remaining alarms are displayed as expected by running EcoStruxure Automation Expert HMI.</em>
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Alarm Filter</span> dialog, configure the following settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Filter from searched text</span>: Enter filtering text. You can use the asterisk (*) as a wildcard to represent any combination of characters.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Interval Type</span>: For filtering archived alarms only, you can select:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+A defined interval (e.g. <span class="ph uicontrol">All</span>, <span class="ph uicontrol">ThisWeek</span>, and so forth)
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">FromTime</span> to specify a start time (<span class="ph uicontrol">From</span>) and a subsequent time period (<span class="ph uicontrol">Range</span>)
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">FromTimeToTime</span> to specify a date range via <span class="ph uicontrol">From</span> and <span class="ph uicontrol">To</span> dates.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+After alarm filtering is configured, save your edits, then <a class="xref" href="DeviceAction-EC279F2B.html#DeviceAction-EC279F2B__DeviceAction-A5CF753A">compile</a> and <a class="xref" href="SubMenuDeploy-EC28B8A0.html#SubMenuDeploy-EC28B8A0__SubMenuDeploy-A5CF780C">deploy</a> your solution.
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

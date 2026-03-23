@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"key":"toc67","name":"EcoStruxure Automation Expert HMI","type":"book","url":"EAE_UM/EcoStruxureAutomationExpertHMI-A2976A50.html#EcoStruxureAutomationExpertHMI-A2976A50"},{"name":".Net HMI","type":"item","url":"EAE_UM/NetHMI-A2B32421.html#NetHMI-A2B32421"},{"key":"toc68","name":"Symbol Editor","type":"book","url":"EAE_UM/SymbolEditor-A2D2CE9C.html#SymbolEditor-A2D2CE9C"},{"name":"Faceplate Editor","type":"item","url":"EAE_UM/FaceplateEditor-A2D80A14.html#FaceplateEditor-A2D80A14"},{"name":"Canvas Editor","type":"item","url":"EAE_UM/CanvasEditor-A2D8D8BF.html#CanvasEditor-A2D8D8BF"},{"name":"Graphic Shapes Editor","type":"item","url":"EAE_UM/GraphicShapesEditor-A2D99E03.html#GraphicShapesEditor-A2D99E03"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

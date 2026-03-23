@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Reducing Jitter in an EcoStruxure Automation Expert Application" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ReducingJitterInAnEcoStruxureAutoma-02432EEE" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Reducing Jitter in an EcoStruxure Automation Expert Application
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.7.3";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/SolutionPrinciples-4BA5EC75.html" />
+<meta name="brsnext" value="EAE_ADG/UsingMultipleResourcesWithConfigura-024D38E5.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Special Design Use Cases" />
+</head>
+<body id="ReducingJitterInAnEcoStruxureAutoma-02432EEE"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"SpecialDesignUseCases-4AA4F7F2.html#SpecialDesignUseCases-4AA4F7F2\">Special Design Use Cases<\/a> > Reducing Jitter in an EcoStruxure Automation Expert Application<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ReducingJitterInAnEcoStruxureAutoma-02432EEE" id="ReducingJitterInAnEcoStruxureAutoma-02432EEE_">
+<!-- --></a><a name="ReducingJitterInAnEcoStruxureAutoma_02432EEE" id="ReducingJitterInAnEcoStruxureAutoma_02432EEE">
+<!-- --></a><a name="ReducingJitterInAnEcoStruxureAutoma_02432EEE" id="ReducingJitterInAnEcoStruxureAutoma_02432EEE_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Reducing Jitter in an EcoStruxure Automation Expert Application
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<p class="p">
+Jitter is the measure of varying time fluctuations in the delivery of data and communication signals in an industrial automation control system. In <span class="ph">EcoStruxure Automation Expert</span>, jitter mainly applies to I/O signal delivery, but can also apply to the execution of program logic. Jitter can impact an industrial automation system at both the fieldbus and the application level, in the latter case by impacting Application Response Time (ART).
+</p>
+<p class="p">
+In severe cases, jitter can cause I/O to apply their fallback settings (for example, in the CRD controller), especially during online change.
+</p>
+</div>
+<div class="section" id="ReducingJitterInAnEcoStruxureAutoma-02432EEE__JitterMitigationOverview-0247A55C">
+<a name="JitterMitigationOverview-0247A55C" id="JitterMitigationOverview-0247A55C">
+<!-- --></a><a name="ReducingJitterInAnEcoStruxureAutoma_02432EEE__JitterMitigationOverview_0247A55C" id="ReducingJitterInAnEcoStruxureAutoma_02432EEE__JitterMitigationOverview_0247A55C">
+<!-- --></a><a name="JitterMitigationOverview_0247A55C" id="JitterMitigationOverview_0247A55C">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Jitter Mitigation Overview
+</h2>
+<p class="p">
+This chapter presents the following suggestions for mitigating jitter.
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Use <span class="ph">EcoStruxure Automation Expert</span> to reduce jitter in critical parts of your application:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="UsingMultipleResourcesWithConfigura-024D38E5.html">Use multiple (up to three) resources with configurable (three-level) priorities for Soft dPAC (non-HA), ATV dPAC, and M262 controllers</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="ConfiguringBusMasterPhases-02D1BF93.html">Configure bus master phases so that their cycles do not simultaneously occur</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="DisablingSymlinksRemappingForOnline-02D1F015.html">Disable the re-mapping of symlinks during online change</a>.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="OptimizeTheSoftDPACOperatingSystem-02D6DC4F.html">Optimize the Soft dPAC Operating System</a>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+During installation, use a specifically designed script to enhance real-time operations (for example by tuning kernel throttling, disabling unused services, and so forth).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Install no third-party software on the host device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Deploy a single instance of Soft dPAC to the host device.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Design the field device network so there is no congestion on the path from Soft dPAC to the field devices. This primarily impacts the Modbus TCP and EtherNet/IP communication protocols.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="OptimizeControllerSelection-02D7167B.html">Optimize your selection of controller</a>:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Let your project needs determine the controller selection.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="p">
+For a synopsis of the goals and actions you can take to achieve them, refer to the <a class="xref" href="GoalsAndActionsMatrix-02D79258.html">Goals and Actions matrix</a>.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

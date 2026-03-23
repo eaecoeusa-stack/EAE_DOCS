@@ -1,0 +1,2454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="[Compiler] Error Handling Solution" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="CompilerErrorHandlingSolution-BC0D11E9" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+[Compiler] Error Handling Solution
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.8.3.3_2";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/StructuredTextExplicitDataConversio-A30963DA.html" />
+<meta name="brsnext" value="EAE_UM/TimeFunctionsAndDataTypes-A309EDDC.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; Appendix &gt; Structured Text (ST) Reference" />
+</head>
+<body id="CompilerErrorHandlingSolution-BC0D11E9"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"Appendix-A2FF5064.html#Appendix-A2FF5064\">Appendix<\/a> > <a href=\"StructuredTextSTReference-A2FF5637.html#StructuredTextSTReference-A2FF5637\">Structured Text (ST) Reference<\/a> > [Compiler] Error Handling Solution<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="CompilerErrorHandlingSolution-BC0D11E9" id="CompilerErrorHandlingSolution-BC0D11E9_">
+<!-- --></a><a name="CompilerErrorHandlingSolution_BC0D11E9" id="CompilerErrorHandlingSolution_BC0D11E9">
+<!-- --></a><a name="CompilerErrorHandlingSolution_BC0D11E9" id="CompilerErrorHandlingSolution_BC0D11E9_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+<span style="font-size: 1em;">[Compiler] Error Handling Solution</span>
+</h1>
+<div class="body conbody">
+
+<p class="p">
+<span style="font-size: 1em;">With the enhanced Error Handling solution, you can manage programmatically errors in ST standard functions without stopping the runtime, making available continuous operation and online changes. </span>
+</p>
+
+<p class="p">
+<span style="font-size: 1em;">The solution provides the ability to structure code in a way that enables applications to run uninterrupted, even when dysfunction occurs. Standard Functions that execute in parallel can handle errors without affecting performance.</span>
+</p>
+<p class="p">
+<span style="font-size: 1em;">The solution is conformed to the IEC 61131-3 standards, making it portable across different environments, including IEC 61499 muti-resource setups.</span>
+</p>
+<br /> <br />
+<p class="p">
+<span style="font-size: 1em;">In the following example, the SQRT function is called with a negative value, which would result in an error. Instead of stopping the runtime, the ENO </span><em class="ph i"><span style="font-size: 1em;">sucess</span></em><span style="font-size: 1em;"> parameter is set to </span><em class="ph i"><span style="font-size: 1em;">FALSE</span></em><span style="font-size: 1em;">, allowing the application to continue running and handle the error programmatically.</span>
+</p>
+<img class="image" src="DD01157309.png" alt="" /> <br />
+<p class="p">
+<span style="font-size: 1em;">The standard functions for which the solution can be used are listed in the following table: </span>
+</p>
+<div class="fig fignone">
+<span class="figcap"><span style="font-size: 1em;">Compatible functions</span></span>
+<div class="p">
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" style="max-width: 100% ;height: auto;border-collapse:collapse;" class="table">
+<colgroup>
+<col />
+<col />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " id="d897162e111">
+<p class="p">
+<span style="font-size: 1em;">Standard Functions</span>
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d897162e116">
+<p class="p">
+<span style="font-size: 1em;">Error Message</span>
+</p>
+</th>
+<th class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; " id="d897162e121">
+<p class="p">
+<span style="font-size: 1em;">Solution</span>
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">ACOS</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">ACOS(IN := y, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">ASIN</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">ASIN(IN := y, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">ATAN</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">ATAN(IN := y, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">ATAN2</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">ATAN2(Y := y, X := x, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">BYTE_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">BYTE_TO_STRING(IN := b, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT(IN1 := s1, IN2 := s2, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_DATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_DATE(YEAR := y, MONTH := m, DAY := d, ENO := e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_DT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_DT(YEAR := y, MONTH := m, DAY := md, HOUR := h, MINUTE := mi, SECOND := s, MILLISECOND := ms, MICROSECOND := us, NANOSECOND := ns)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_DT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_DT_UTC(YEAR := y, MONTH := m, DAY := md, HOUR := h, MINUTE := mi, SECOND := s, MILLISECOND := ms, MICROSECOND := us, NANOSECOND := ns)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LDATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LDATE(YEAR := y, MONTH := m, DAY := d, ENO := e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LDT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LDT(YEAR := y, MONTH := m, DAY := md, HOUR := h, MINUTE := mi, SECOND := s, MILLISECOND := ms, MICROSECOND := us, NANOSECOND := ns)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LDT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LDT_UTC(YEAR := y, MONTH := m, DAY := md, HOUR := h, MINUTE := mi, SECOND := s, MILLISECOND := ms, MICROSECOND := us, NANOSECOND := ns)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LTOD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_LTOD(HOUR := h, MINUTE := mi, SECOND := s, MILLISECOND := ms, MICROSECOND := us, NANOSECOND := ns, ENO := e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_TOD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">CONCAT_TOD(HOUR := h, MINUTE := mi, SECOND := s, MILLISECOND := ms, MICROSECOND := us, NANOSECOND := ns, ENO := e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DATE_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION, ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DATE_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DAY_OF_WEEK</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DAY_OF_WEEK(IN := d, ENO :=&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DAY_OF_YEAR</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DAY_OF_YEAR(IN := d, ENO :=&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DELETE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DELETE(IN := s, L := l, P := p, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_DATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_DATE(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_DATE_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_DATE_UTC(IN := dt, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_LREAL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_LREAL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_LREAL_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_LREAL_UTC(IN := dt)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_REAL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_REAL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_REAL_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_REAL_UTC(IN := dt)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION, ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_TOD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_TOD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_TOD_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DT_TO_TOD_UTC(IN := dt, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">DWORD_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">DWORD_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">EXP</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">EXP(IN := x, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">EXPT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">EXPT(IN1 := a, IN2 := b, ENO=&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">INSERT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE,ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">INSERT(IN1 := s1, IN2 := s2, P := p, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">INT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">INT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDATE_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION, ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDATE_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LDATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LDATE(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LDATE_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LDATE_UTC(IN := dt, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LREAL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LREAL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LREAL_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LREAL_UTC(IN := dt)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LTOD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LTOD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LTOD_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_LTOD_UTC(IN := dt, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_REAL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_REAL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_REAL_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_REAL_UTC(IN := dt)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION, ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LDT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LEFT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE,ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LEFT(IN := s, L := l, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">LINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LINT_TO_TIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LINT_TO_TIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LN</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LN(IN := x, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LOG</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LOG(IN := x, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_DINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_DINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_DT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_DT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_DT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_DT_UTC(IN := lr, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_INT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_INT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LDT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LDT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LDT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LDT_UTC(IN := lr, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LTIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_LTIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_SINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_SINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION, ERR_RT_FPERROR</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_TIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_TIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_UDINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_UDINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_UINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_UINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_ULINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_ULINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_USINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LREAL_TO_USINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LTIME_TO_DINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LTIME_TO_DINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LTIME_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LTIME_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LTIME_TO_TIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LTIME_TO_TIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LTOD_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LTOD_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">LWORD_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">LWORD_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">MID</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE,ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">MID(IN := s, L := l, P := p, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">MOVE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">s1 := MOVE(IN := s2, e=&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">MUX</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">MUX(K := k, IN1 := in1, IN2 := in2, ..., ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_DINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_DINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_DT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_DT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_DT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_DT_UTC(IN := r; ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_INT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_INT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LDT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LDT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LDT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW, ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LDT_UTC(IN := r; ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LTIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_LTIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_SINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_SINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION, ERR_RT_FPERROR</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_TIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_TIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_UDINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_UDINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_UINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_UINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_ULINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_ULINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_USINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REAL_TO_USINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">REPLACE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE,ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">REPLACE(IN1 := s1, IN2 := s2, L := l, P := p, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">RIGHT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_PAR_RANGE,ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">RIGTH(IN := s, L := l, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_DATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_DATE(IN := d, YEAR =&gt; y, MONTH =&gt; m, DAY = md, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_DT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_DT(IN := dt, Year =&gt; y, MONTH =&gt; m,  DAY =&gt; md, HOUR =&gt; h, MINUTE =&gt; mi, SECOND =&gt; s, MILLISECOND =&gt; ms, MICROSECON := us, NANOSECOND := ns, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_DT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_DT_UTC(IN := dt, Year =&gt; y, MONTH =&gt; m,  DAY =&gt; md, HOUR =&gt; h, MINUTE =&gt; mi, SECOND =&gt; s, MILLISECOND =&gt; ms, MICROSECON := us, NANOSECOND := ns, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_LDATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_LDATE(IN := d, YEAR =&gt; y, MONTH =&gt; m, DAY = md, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_LDT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_LDT(IN := dt, Year =&gt; y, MONTH =&gt; m,  DAY =&gt; md, HOUR =&gt; h, MINUTE =&gt; mi, SECOND =&gt; s, MILLISECOND =&gt; ms, MICROSECON =&gt; us, NANOSECOND =&gt; ns, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_LDT_UTC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_DTCONVERSION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SPLIT_LDT_UTC(IN := dt, Year =&gt; y, MONTH =&gt; m,  DAY =&gt; md, HOUR =&gt; h, MINUTE =&gt; mi, SECOND =&gt; s, MILLISECOND =&gt; ms, MICROSECON := us, NANOSECOND := ns, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SQRT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SQRT(IN := x, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_BOOL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_BOOL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_BYTE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_BYTE(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DATE(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DWORD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_DWORD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_INT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_INT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LDATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LDATE(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LDT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LDT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LREAL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LREAL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LTIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LTIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LTOD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LTOD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LWORD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_LWORD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_REAL</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_REAL(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_SINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_SINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_TIME</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_TIME(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_TOD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_TOD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_UDINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_UDINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_UINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_UINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_ULINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_ULINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_USINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_USINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_WORD</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_WORD(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_WSTRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">STRING_TO_WSTRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SUB_DATE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SUB(IN1 := d1, IN2 := d2, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">SUB_DT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">SUB(IN1 := dt1, IN2 := dt2, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">TAN</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_ILL_RESULT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">TAN(IN := x)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">TIME_TO_DINT</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">TIME_TO_DINT(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">TIME_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">TIME_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">TOD_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">TOD_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">TRUNC</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_OVERFLOW</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">TRUNC(IN := v)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">UDINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">UDINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">UINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">UINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">ULINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">ULINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">USINT_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">USINT_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">WCHAR_TO_CHAR</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">WCHAR_TO_CHAR(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">WORD_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_TRUNCATION</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">WORD_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; " headers="d897162e111 ">
+<p class="p">
+<span style="font-size: 1em;">WSTRING_TO_STRING</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e116 ">
+<p class="p">
+<span style="font-size: 1em;">ERR_RT_CONVERSION, ERR_RT_TYPERANGE</span>
+</p>
+</td>
+<td class="entry" style="vertical-align:top; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; " headers="d897162e121 ">
+<p class="p">
+<span style="font-size: 1em;">WSTRING_TO_STRING(IN := v, ENO =&gt; e)</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

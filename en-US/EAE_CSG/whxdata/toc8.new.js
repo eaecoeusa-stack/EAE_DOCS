@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"PKI Hierarchies","type":"item","url":"EAE_CSG/PKIHierarchies-133AD5A4.html#PKIHierarchies-133AD5A4"},{"name":"Define Self Managed PKIs","type":"item","url":"EAE_CSG/DefineSelfManagedPKIsCPT-3D68996D.html#DefineSelfManagedPKIsCPT-3D68996D"},{"name":"Use Certificates in an EcoStruxure Automation Expert Application","type":"item","url":"EAE_CSG/UseCertificatesinApplicationCPT-3D68A517.html#UseCertificatesinApplicationCPT-3D68A517"},{"name":"Use Certificates in Secure Remote Access","type":"item","url":"EAE_CSG/UseCertificatesInSecureRemoteAccess-B8213E86.html#UseCertificatesInSecureRemoteAccess-B8213E86"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

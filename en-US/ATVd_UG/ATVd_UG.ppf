@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="ATVd_UG" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="8" page="ATVd_UG\AboutTheBook-D13AC94D.html">
+  </contextentry>
+  <contextentry id="15" page="ATVd_UG\D-NA-0003897.1.html">
+  </contextentry>
+  <contextentry id="3" page="ATVd_UG\D-SE-0105086.html">
+  </contextentry>
+  <contextentry id="2" page="ATVd_UG\D-SE-0105087.html">
+  </contextentry>
+  <contextentry id="1" page="ATVd_UG\D-SE-0105088.html">
+  </contextentry>
+  <contextentry id="7" page="ATVd_UG\D-SE-0105091.html">
+  </contextentry>
+  <contextentry id="6" page="ATVd_UG\D-SE-0105092.html">
+  </contextentry>
+  <contextentry id="5" page="ATVd_UG\D-SE-0105097.html">
+  </contextentry>
+  <contextentry id="4" page="ATVd_UG\D-SE-0105098.html">
+  </contextentry>
+  <contextentry id="16" page="ATVd_UG\D-SE-0105114.html">
+  </contextentry>
+  <contextentry id="14" page="ATVd_UG\D-SE-0105336_1.html">
+  </contextentry>
+  <contextentry id="13" page="ATVd_UG\D-SE-0105336.html">
+  </contextentry>
+  <contextentry id="12" page="ATVd_UG\D-SE-0105337_1.html">
+  </contextentry>
+  <contextentry id="11" page="ATVd_UG\D-SE-0105337_2.html">
+  </contextentry>
+  <contextentry id="10" page="ATVd_UG\D-SE-0105337.html">
+  </contextentry>
+  <contextentry id="9" page="ATVd_UG\D-SE-0105338.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="ATVd_UG\ATVd_UG_D-SE-0105440.html">
+  <topic>ATVd_UG\AboutTheBook-D13AC94D.html
+  </topic>
+  <topic>ATVd_UG\AdditionalCommunicationChannels-E769982C.html
+  </topic>
+  <topic>ATVd_UG\AltivarDriveCommissioning-E767EB9F.html
+  </topic>
+  <topic>ATVd_UG\ATVDistributedPACFirmwarePAC-D60F8E81.html
+  </topic>
+  <topic>ATVd_UG\ATVDistributedTimeManagement-E76A842D.html
+  </topic>
+  <topic>ATVd_UG\ATVDPACDisplay-C2DF130A.html
+  </topic>
+  <topic>ATVd_UG\ATVDPACEtherNetIPUse-cases-B911CC92.html
+  </topic>
+  <topic>ATVd_UG\ATVDPACGraphicDisplayTerminal-CBA5B41B.html
+  </topic>
+  <topic>ATVd_UG\ATVDPACSpecificLibraryObjects-C2E236CA.html
+  </topic>
+  <topic>ATVd_UG\ATVDriveFirmwareUpdate-D60F1FA2.html
+  </topic>
+  <topic>ATVd_UG\ATVd_UG_D-SE-0105440.html
+  </topic>
+  <topic>ATVd_UG\ATVd_UG_id_disclaimer_tpc.html
+  </topic>
+  <topic>ATVd_UG\ATVGraphicDisplayTerminalLabelsUpda-D883FD40.html
+  </topic>
+  <topic>ATVd_UG\CentralizedDiagnosticsAndData-E769B03D.html
+  </topic>
+  <topic>ATVd_UG\ConceptTitle-E76652B2.html
+  </topic>
+  <topic>ATVd_UG\ConnectionToMQQTKiwiSysLogServer-CFAC1221.html
+  </topic>
+  <topic>ATVd_UG\ContactUs-EE192E5F.html
+  </topic>
+  <topic>ATVd_UG\ControllerApplicationMenuMissingOnT-CBA4D61B.html
+  </topic>
+  <topic>ATVd_UG\CybersecurityGeneralities-0C1F6E09.html
+  </topic>
+  <topic>ATVd_UG\D-NA-0003897.1.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105078.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105079.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105080.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105081.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105086.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105087.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105088.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105090.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105091.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105092.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105095.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105096.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105097.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105098.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105114.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105336.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105336_1.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105337.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105337_1.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105337_2.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105338.html
+  </topic>
+  <topic>ATVd_UG\D-SE-0105440.9.html
+  </topic>
+  <topic>ATVd_UG\DocumentScope-EE186A97.html
+  </topic>
+  <topic>ATVd_UG\DriveEmbeddedCommunicationPorts-D885548F.html
+  </topic>
+  <topic>ATVd_UG\DriveParametersMailbox-61903128.html
+  </topic>
+  <topic>ATVd_UG\EcoStruxureAutomationExpertInterfac-E766CFF1.html
+  </topic>
+  <topic>ATVd_UG\ExplicitMessagingWithExternalEtherN-B911D53D.html
+  </topic>
+  <topic>ATVd_UG\FastDeviceReplacement-6D781F24.html
+  </topic>
+  <topic>ATVd_UG\FirmwareUpdateWithEcoStruxureAutoma-0762D3A2.html
+  </topic>
+  <topic>ATVd_UG\ImpactOfMultiresourceFeatureOnMibge-CBA4CDC6.html
+  </topic>
+  <topic>ATVd_UG\ImplicitMessagingWithExternalEtherN-C2C61B5C.html
+  </topic>
+  <topic>ATVd_UG\IntegratedCommunicationPorts-D8848EA4.html
+  </topic>
+  <topic>ATVd_UG\LocalResetOfATVDPACToFactorySetting-C692DC21.html
+  </topic>
+  <topic>ATVd_UG\LocalResetOfTheATVDPACToFactorySett-C77F7DD9.html
+  </topic>
+  <topic>ATVd_UG\NativeAltivarDriveInterface-E7678B05.html
+  </topic>
+  <topic>ATVd_UG\Overview-E76A6EF0.html
+  </topic>
+  <topic>ATVd_UG\RealTimeClockRTC-E76A5190.html
+  </topic>
+  <topic>ATVd_UG\RelatedDocuments-EE18F069.html
+  </topic>
+  <topic>ATVd_UG\RemoteDevicesAndIOSupport-E768DE10.html
+  </topic>
+  <topic>ATVd_UG\RuntimeStatusDSTAMonitoring-5F634C41.html
+  </topic>
+  <topic>ATVd_UG\Terminology-EE191627.html
+  </topic>
+  <topic>ATVd_UG\TimeManagementSettingTheInitialTime-9503F763.html
+  </topic>
+  <topic>ATVd_UG\Troubleshooting-CB067B8C.html
+  </topic>
+  <topic>ATVd_UG\TroubleshootingDuringTheATVDPACFirm-07ED2413.html
+  </topic>
+  <topic>ATVd_UG\UserPINManagementUsingATVDPACDispla-CB1FFD8E.html
+  </topic>
+  <topic>ATVd_UG\ValidityNote-EE18A10A.html
+  </topic>
+  <topic>ATVd_UG\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

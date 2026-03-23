@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Handling Application Instances" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="AddingCATInstanceCPT-F059199C" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Handling Application Instances
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.4.1.0_4";
+//]]></script>
+<meta name="brsprev" value="EAE_UM/CreatingAnAvevaModelPlantView-7510C526.html" />
+<meta name="brsnext" value="EAE_UM/RationaleForRepresentingAProcessTre-C8AB4B41.html" />
+<meta name="topic-breadcrumbs" content="User Manual &gt; EcoStruxure Automation Expert - Buildtime User Environment and Framework &gt; Pads &gt; Hierarchy View Pad" />
+</head>
+<body id="AddingCATInstanceCPT-F059199C"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html");
+document.write("<a href=\"EAE_UM_EcoStruxureTMAutomationExpertSystem-93280074.html\">User Manual<\/a> > <a href=\"EcoStruxureAutomationExpertBuildtim-9787C1F8.html#EcoStruxureAutomationExpertBuildtim-9787C1F8\">EcoStruxure Automation Expert - Buildtime User Environment and Framework<\/a> > <a href=\"Pads-994F9A20.html#Pads-994F9A20\">Pads<\/a> > <a href=\"ProcessViewPadCPT-F059026A.html#ProcessViewPadCPT-F059026A\">Hierarchy View Pad<\/a> > Handling Application Instances<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="AddingCATInstanceCPT-F059199C" id="AddingCATInstanceCPT-F059199C_">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C" id="AddingCATInstanceCPT_F059199C">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C" id="AddingCATInstanceCPT_F059199C_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Handling Application Instances
+</h1>
+<div class="body conbody">
+<p class="p">
+In a hierarchy view, all the application instances (<span class="ph">CAT</span> instances, <span class="ph">SubApp</span> instances and Sub<span class="ph">CAT</span> instances) available in the <span class="ph uicontrol">Solution Explorer</span> pad can be:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Assigned to one or several hierarchy views (Process view and <span class="ph">AVEVA</span> plant model view).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Unassigned to the current hierarchy view.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Moved within the current hierarchy view.
+</p>
+</li>
+</ul>
+<p class="p">
+All these actions can be done without impact on the application instances as the hierarchy views are independent of the application instances. Thus actions in the <span class="ph uicontrol">Hierarchy View</span> pad don’t affect the application instances in the <span class="ph uicontrol">Solution Explorer</span> pad.
+</p>
+<p class="p">
+Here are all the actions possible related to the application instances:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__AssigningAnExistingInstance-F37833EC">Assigning existing <span class="ph">CAT</span> instance(s) to the current hierarchy view through a dialog</a>
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__DragAndDropExistingOrSub-Instance-F3783508">Assigning an existing <span class="ph">CAT</span> instance to the current hierarchy view through dragging-and-dropping</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__CreatingANewInstanceDirectlyIntoThe-F3783637">Creating a new <span class="ph">CAT</span> instance directly into the <span class="ph uicontrol">Hierarchy View</span> pad</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__MovingElements-F377AE1A">Moving elements inside a hierarchy view</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__AddInstancesIntoAnApplication-72024E11">Assigning an instance of a hierarchy view to an application</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__UnassigningOrSub-Instance-F377AFE6">Unassigning application instances from a hierarchy view</a>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<a class="xref" href="#AddingCATInstanceCPT-F059199C__FindReferencesOfAnInstance-720A083C">Finding references of an application instance</a>.
+</p>
+</li>
+</ul>
+<p class="p">
+Whenever an instance is assigned to the current hierarchical view, a ● mark is prepended to the instance name in the solution tree-view.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> All these actions (except Find references of an application instance) are disabled within an <span class="ph">AVEVA</span> hierarchy view when a Galaxy is deployed: all the elements inside the view are greyed out and in italics.
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__AssigningAnExistingInstance-F37833EC">
+<a name="AssigningAnExistingInstance-F37833EC" id="AssigningAnExistingInstance-F37833EC">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__AssigningAnExistingInstance_F37833EC" id="AddingCATInstanceCPT_F059199C__AssigningAnExistingInstance_F37833EC">
+<!-- --></a><a name="AssigningAnExistingInstance_F37833EC" id="AssigningAnExistingInstance_F37833EC">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Assigning existing <span class="ph">CAT</span> instance(s) to the current hierarchy view through a dialog
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">Hierarchy View</span> pad and select the wanted hierarchy view in the drop-down.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click on the root node of the hierarchy view or on the folder which the <span class="ph">CAT</span> instance will be assigned to.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">Assign CAT Instance</span>; this opens the <span class="ph uicontrol">Assign CAT Instance</span> dialog box.
+</p>
+</li>
+<li class="li">
+<p class="p">
+This dialog contains all the <span class="ph">CAT</span> instances and <span class="ph">SubApp</span> instances not already assigned to the current view (whether they are assigned or not to an application). Search for the wanted instance by scrolling into the list or by typing the instance name(s) into the search bar.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> This dialog box doesn’t allow to assign Sub<span class="ph">CAT</span> instances.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Select the <span class="ph">CAT</span> instance and click <span class="ph uicontrol">Finish</span>.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Sub<span class="ph">CAT</span> instances are included or not depending on the check box <span class="ph menucascade"><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">General</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Generic Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Retain CAT hierarchy while assigning CAT to Hierarchy View</span></span> is ticked or not (this is reflected by the presence or absence of the <span class="imageinline"><img class="image" src="DD00711515.png" alt="" style="max-height:20px;" /></span> icon above the tree-view);
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> A • mark is added before the instance name in the Solution Explorer.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> With an <span class="ph">AVEVA</span> plant model view, you can only use the next method..
+</div>
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__DragAndDropExistingOrSub-Instance-F3783508">
+<a name="DragAndDropExistingOrSub-Instance-F3783508" id="DragAndDropExistingOrSub-Instance-F3783508">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__DragAndDropExistingOrSub_Instance_F3783508" id="AddingCATInstanceCPT_F059199C__DragAndDropExistingOrSub_Instance_F3783508">
+<!-- --></a><a name="DragAndDropExistingOrSub_Instance_F3783508" id="DragAndDropExistingOrSub_Instance_F3783508">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Assigning an existing <span class="ph">CAT</span> instance to the current hierarchy view through dragging-and-dropping
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open and detach the <span class="ph uicontrol">Hierarchy View</span> pad.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the wanted hierarchy view in the drop-down and expand the <span class="ph uicontrol">CAT Instance</span> section in the <span class="ph uicontrol">Solution Explorer</span> pad.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Search and select the wanted application instance.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Drag-and-drop it into the hierarchy view, onto the root node of the hierarchy view or a folder. The application instance gets assigned to it.
+</p>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Only one application instance can be dragged and dropped at one time. Thus repeat this action as many times as there are <span class="ph">CATs</span>, <span class="ph">SubApp</span> or Sub<span class="ph">CAT</span> instances to assign. No duplicates are allowed wheresoever they may be.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> A • mark is added before the instance name in the Solution Explorer.
+</div>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Sub<span class="ph">CAT</span> instances can be dropped under any <span class="ph">CAT</span> instance provided the check box <span class="ph menucascade"><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">General</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Generic Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Retain CAT hierarchy while assigning CAT to Hierarchy View</span></span> is NOT ticked (this is reflected by the absence of the <span class="imageinline"><img class="image" src="DD00711515.png" alt="" style="max-height:20px;" /></span> icon above the tree-view);
+</div>
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__CreatingANewInstanceDirectlyIntoThe-F3783637">
+<a name="CreatingANewInstanceDirectlyIntoThe-F3783637" id="CreatingANewInstanceDirectlyIntoThe-F3783637">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__CreatingANewInstanceDirectlyIntoThe_F3783637" id="AddingCATInstanceCPT_F059199C__CreatingANewInstanceDirectlyIntoThe_F3783637">
+<!-- --></a><a name="CreatingANewInstanceDirectlyIntoThe_F3783637" id="CreatingANewInstanceDirectlyIntoThe_F3783637">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Creating a new <span class="ph">CAT</span> instance directly in the hierarchy view
+</h2>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">Hierarchy View</span> pad and select the wanted hierarchy view in the drop-down.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click on the root node of the hierarchy view or on the folder which the <span class="ph">CAT</span> instance will be assigned to.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">Create New Instance</span> and navigate until finding the wanted <span class="ph">CAT</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click the wanted <span class="ph">CAT</span>. This opens the <span class="ph uicontrol">Create Instance</span> dialog box.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Enter the name of the new <span class="ph">CAT</span> instance that starts with a letter and excludes *, $, space.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select an application an a layer.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Click <span class="ph uicontrol">OK</span>.
+</p>
+</li>
+<li class="li">
+<div class="p">
+If the <span class="ph uicontrol">System</span> tab is active on instantiation (whatever editor is open), choose:
+<ul class="ul">
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Save</span>: if you want to create the instance in the Solution Explorer and have it in the hierarchy view AND already in the <span class="ph uicontrol">Function Block Network</span> of the selected application and layer.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<span class="ph uicontrol">Discard</span>: if you want ONLY to create the instance in the Solution Explorer and have it in the hierarchy view.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If no application is selected in the <span class="ph uicontrol">Define new name</span> dialog, the choice does not matter.
+</div>
+</div>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span>
+<ul class="sl simple">
+<li class="sli">
+<p class="p">
+Only one <span class="ph">CAT</span> instance can be created at one time.
+</p>
+</li>
+<li class="sli">
+<p class="p">
+You can still assign it later to an application and layer: refer to<a class="xref" href="#AddingCATInstanceCPT-F059199C__AddInstancesIntoAnApplication-72024E11"> Adding instances into an application</a>.
+</p>
+</li>
+</ul>
+</div>
+<p class="p">
+To assign an Asset tag, right-click the <span class="ph">CAT</span> instance and select <span class="ph uicontrol">Set Asset Tag Name</span>.
+</p>
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__MovingElements-F377AE1A">
+<a name="MovingElements-F377AE1A" id="MovingElements-F377AE1A">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__MovingElements_F377AE1A" id="AddingCATInstanceCPT_F059199C__MovingElements_F377AE1A">
+<!-- --></a><a name="MovingElements_F377AE1A" id="MovingElements_F377AE1A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Moving elements inside a hierarchy view
+</h2>
+<p class="p">
+All the elements assigned or created inside a hierarchy view (application instance and folders) can be moved from a place to another inside the hierarchy view. If the moved element is a folder, all elements contained in it will also be moved.
+</p>
+<p class="p">
+There are two different ways to do this:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Drag and drop the element. The element has to be dropped onto either the hierarchy view backbone or onto a folder.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Use the context menu:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Open the <span class="ph uicontrol">Hierarchy View</span> pad and select the wanted hierarchy view.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click the element name to move.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <span class="ph uicontrol">Move To</span> or <span class="ph uicontrol">Move To Folder</span> to open the <span class="ph uicontrol">Move To</span> dialog box.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the folder where the element will be moved to. It can be:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+A new folder created through the <span class="ph uicontrol">Add new folder</span> button in the dialog box.
+</p>
+</li>
+<li class="li">
+<p class="p">
+An existing folder found by searching for its name in the search bar.
+</p>
+</li>
+<li class="li">
+<p class="p">
+An existing folder found by drilling down with the &gt; icon
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+Select the folder and click <span class="ph uicontrol">Finish</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The <span class="ph uicontrol">Finish</span> button will be available only if the folder is closed.
+</div>
+</li>
+</ol>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Sub<span class="ph">CAT</span> instances can be moved under any <span class="ph">CAT</span> instance provided the check box <span class="ph menucascade"><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">General</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Generic Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Retain CAT hierarchy while assigning CAT to Hierarchy View</span></span> is NOT ticked (this is reflected by the absence of the <span class="imageinline"><img class="image" src="DD00711515.png" alt="" style="max-height:20px;" /></span> icon above the tree-view).
+</div>
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__AddInstancesIntoAnApplication-72024E11">
+<a name="AddInstancesIntoAnApplication-72024E11" id="AddInstancesIntoAnApplication-72024E11">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__AddInstancesIntoAnApplication_72024E11" id="AddingCATInstanceCPT_F059199C__AddInstancesIntoAnApplication_72024E11">
+<!-- --></a><a name="AddInstancesIntoAnApplication_72024E11" id="AddInstancesIntoAnApplication_72024E11">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Assigning an instance of a hierarchy view to an application
+</h2>
+<p class="p">
+All the <span class="ph">CAT</span> or <span class="ph">SubApp</span> instances available in a hierarchy view can be added to an application:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Function Blocks Network</span> editor, open the application where the application instance needs to be added.
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the hierarchy view, select the application instance that needs to be added.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Drag and drop it into the application.
+</p>
+</li>
+</ol>
+<p class="p">
+If the instance is already assigned to an application, a pop up informs you about this.
+</p>
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__UnassigningOrSub-Instance-F377AFE6">
+<a name="UnassigningOrSub-Instance-F377AFE6" id="UnassigningOrSub-Instance-F377AFE6">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__UnassigningOrSub_Instance_F377AFE6" id="AddingCATInstanceCPT_F059199C__UnassigningOrSub_Instance_F377AFE6">
+<!-- --></a><a name="UnassigningOrSub_Instance_F377AFE6" id="UnassigningOrSub_Instance_F377AFE6">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Unassigning application instance(s) from a hierarchy view
+</h2>
+<p class="p">
+To unassign <span class="ph">CAT</span>, <span class="ph">SubApp</span> or Sub<span class="ph">CAT</span> instance(s), select it/them and:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+either select the <span class="ph uicontrol">Unassign CAT Instance</span> in the context menu
+</p>
+</li>
+<li class="li">
+<p class="p">
+or press the Delete key.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> This action does NOT delete the application instances from the solution, but only unassign them from the hierarchy view. Application instances cannot be deleted from the <span class="ph uicontrol">Hierarchy View</span> pad.
+</div>
+</li>
+</ul>
+<p class="p">
+The selected application instances are removed from the hierarchy view and the ● mark before the application instance name(s) in the <span class="ph uicontrol">Solution Explorer</span> pad is/are removed.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> The Sub<span class="ph">CAT</span> instances can be unassigned separately of the parent provided the check box <span class="ph menucascade"><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">General</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Generic Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Retain CAT hierarchy while assigning CAT to Hierarchy View</span></span> is NOT ticked (this is reflected by the absence of the <span class="imageinline"><img class="image" src="DD00711515.png" alt="" style="max-height:20px;" /></span> icon above the tree-view);
+</div>
+</div>
+<div class="section" id="AddingCATInstanceCPT-F059199C__FindReferencesOfAnInstance-720A083C">
+<a name="FindReferencesOfAnInstance-720A083C" id="FindReferencesOfAnInstance-720A083C">
+<!-- --></a><a name="AddingCATInstanceCPT_F059199C__FindReferencesOfAnInstance_720A083C" id="AddingCATInstanceCPT_F059199C__FindReferencesOfAnInstance_720A083C">
+<!-- --></a><a name="FindReferencesOfAnInstance_720A083C" id="FindReferencesOfAnInstance_720A083C">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Finding references of an application instance
+</h2>
+<p class="p">
+To find all the references of a <span class="ph">CAT</span> or a <span class="ph">SubApp</span> instance, right-click it and select <span class="ph uicontrol">Find All References</span>.
+</p>
+<p class="p">
+All the references found are listed in the <span class="ph uicontrol">Search Results</span> pad. Double-click one of the results to access the instance into the <span class="ph uicontrol">Function Blocks Network</span> editor.
+</p>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004459.08
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

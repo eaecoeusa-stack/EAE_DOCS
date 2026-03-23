@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2026" />
+<meta name="DC.rights.owner" content="(C) Copyright 2026" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="Security Audit Logging on Syslog" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="SecurityAuditLoggingOn-5A6C4EB2" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+Security Audit Logging on Syslog
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.4.2_5";
+//]]></script>
+<meta name="brsprev" value="EAE_CSG/SecuringConfidentialData-4D7F522B.html" />
+<meta name="brsnext" value="EAE_CSG/SetMultiResource-462A36EE.html" />
+<meta name="topic-breadcrumbs" content="Cybersecurity - Guide &gt; EcoStruxure Automation Expert - Cybersecurity Features" />
+</head>
+<body id="SecurityAuditLoggingOn-5A6C4EB2"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html");
+document.write("<a href=\"EAE_CSG_CybersecurityGuideEcoStruxureAutoma-341F9CBF.html\">Cybersecurity - Guide<\/a> > <a href=\"EcoStruxureAutomationExpert-CyberSe-34B08F70.html#EcoStruxureAutomationExpert-CyberSe-34B08F70\">EcoStruxure Automation Expert - Cybersecurity Features<\/a> > Security Audit Logging on Syslog<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="SecurityAuditLoggingOn-5A6C4EB2" id="SecurityAuditLoggingOn-5A6C4EB2_">
+<!-- --></a><a name="SecurityAuditLoggingOn_5A6C4EB2" id="SecurityAuditLoggingOn_5A6C4EB2">
+<!-- --></a><a name="SecurityAuditLoggingOn_5A6C4EB2" id="SecurityAuditLoggingOn_5A6C4EB2_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+Security Audit Logging on <span class="ph">Syslog</span>
+</h1>
+<div class="body conbody">
+
+<p class="p">
+Currently <span class="ph">EcoStruxure Automation Expert</span> devices support <span class="ph">Syslog</span> using both modes <span class="ph">TCP</span> and <span class="ph">TLS</span> (secured communication).
+</p>
+<p class="p">
+For a list of Syslog triggering events, refer to the <em class="ph i">EcoStruxure Automation Expert - User Manual</em> topic <span class="ph"><a class="xref " href="../../EAE_UM/index.htm?rhmapid=SYSLOGMessageTriggeringEvents_7C61BBDE" target="_blank"><em class="ph i">Syslog Message Triggering Events</em></a></span>.
+</p>
+<div class="section" id="SecurityAuditLoggingOn-5A6C4EB2__UsingTheGraylogSyslogServer-B8943C9C">
+<a name="UsingTheGraylogSyslogServer-B8943C9C" id="UsingTheGraylogSyslogServer-B8943C9C">
+<!-- --></a><a name="SecurityAuditLoggingOn_5A6C4EB2__UsingTheGraylogSyslogServer_B8943C9C" id="SecurityAuditLoggingOn_5A6C4EB2__UsingTheGraylogSyslogServer_B8943C9C">
+<!-- --></a><a name="UsingTheGraylogSyslogServer_B8943C9C" id="UsingTheGraylogSyslogServer_B8943C9C">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Using the Graylog Syslog Server
+</h2>
+<p class="p">
+<span class="ph">EcoStruxure Automation Expert</span> does not provide a <span class="ph">Syslog</span> server. For the system to provide audit logging a <span class="ph">Syslog</span> server with the IP address of the Graylog/SIEM must be defined in the <span class="ph uicontrol">Physical devices</span> view and <span class="ph">Syslog</span> client must be configured on all dPAC devices.
+</p>
+<p class="p">
+To configure the <span class="ph">Syslog</span> server:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+In the <span class="ph uicontrol">Physical devices</span> view add a server with IP address corresponding to the Graylog service.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right click and select <span class="ph menucascade"><span class="ph uicontrol">Manage Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Syslog Server "Activate Service"</span></span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+The <span class="ph">Syslog</span> settings can then be adjusted in the properties under the <span class="ph uicontrol">SYSLOG Server </span>section.
+</p>
+</li>
+</ol>
+<p class="p">
+Mutual authentication between the dPAC devices and the <span class="ph">Graylog</span> <span class="ph">Syslog</span> server is not possible. So the <span class="ph">TLS</span> connections between the devices and <span class="ph">Syslog</span> server must be added to the firewall access control list. If the security audit log is considered as critical and the network path cannot be trusted with the firewall in place, an IPSEC tunnel could be created between the control network and the <span class="ph">Graylog</span> server.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about <span class="ph">Graylog</span>, refer to <a class="xref" href="AccountActivityLog-5A63AFB0.html">Account Activity Log topic</a>.
+</div>
+</div>
+<div class="section" id="SecurityAuditLoggingOn-5A6C4EB2__SecuringThePerimeter-B8943EF8">
+<a name="SecuringThePerimeter-B8943EF8" id="SecuringThePerimeter-B8943EF8">
+<!-- --></a><a name="SecurityAuditLoggingOn_5A6C4EB2__SecuringThePerimeter_B8943EF8" id="SecurityAuditLoggingOn_5A6C4EB2__SecuringThePerimeter_B8943EF8">
+<!-- --></a><a name="SecuringThePerimeter_B8943EF8" id="SecuringThePerimeter_B8943EF8">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Securing the Perimeter
+</h2>
+<div class="p">
+It is strongly recommended to secure the perimeter of the engineering workstations with <span class="ph">EcoStruxure Automation Expert</span> using <span class="ph">Syslog</span> in it and their connection to COTD.
+<div class="note note">
+<span class="notetitle">NOTE:</span> For more information about COTD, refer to the <a class="xref" href="AccountActivityLog-5A63AFB0.html">Account Activity Log topic</a>.
+</div>
+</div>
+<p class="p">
+For COTD to receive <span class="ph">EcoStruxure Automation Expert</span> log data, perform these two configurations:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+On COTD, configure an input listener with <span class="ph">Syslog</span> using <span class="ph">TCP</span>.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Refer to CAP documentation on how to configure unsecured <span class="ph">TCP</span> and <span class="ph">UDP</span> as inputs.
+</div>
+</li>
+<li class="li">
+<p class="p">
+Configure on <span class="ph">EcoStruxure Automation Expert</span> using <span class="ph">Syslog</span> the IP address and port to connect the engineering workstation to COTD <span class="ph">Syslog</span> input listener.
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Refer to <span class="ph"><a class="xref " href="../../EAE_UM/index.htm?rhmapid=ConfigureSYSLOG_7C6442C2_1" target="_blank"><em class="ph i">Configure SYSLOG</em></a></span> topic of the <em class="ph i"><span class="ph">EcoStruxure Automation Expert</span> - User Manual</em>.
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="SecurityAuditLoggingOn-5A6C4EB2__AuditLoggingPractices-B894432A">
+<a name="AuditLoggingPractices-B894432A" id="AuditLoggingPractices-B894432A">
+<!-- --></a><a name="SecurityAuditLoggingOn_5A6C4EB2__AuditLoggingPractices_B894432A" id="SecurityAuditLoggingOn_5A6C4EB2__AuditLoggingPractices_B894432A">
+<!-- --></a><a name="AuditLoggingPractices_B894432A" id="AuditLoggingPractices_B894432A">
+<!-- --></a>
+<h2 class="title sectiontitle">
+Audit Logging Practices
+</h2>
+<p class="p">
+The audit logs should be checked regularly to identify any unexpected security events. The following audit logs must be referred to for a complete view of security related events:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+OT dashboard and SIEM Graylog
+</p>
+</li>
+<li class="li">
+<p class="p">
+Windows Event Viewer
+</p>
+</li>
+<li class="li">
+<p class="p">
+Aveva Alarms and Events subsystem
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Security-audit (operator change) events Alarms and Events subsystem refer to the <strong class="ph b">Types of Events</strong> chapter in the "AVEVA™ System <em class="ph i">Platform IDE User Guide</em>" [ Publication ID: 922676 ]
+</div>
+</li>
+<li class="li">
+<p class="p">
+EcoStruxure Device Maintenance logs
+</p>
+</li>
+</ul>
+<p class="p">
+The following must also be considered for effective audit logging.
+</p>
+<p class="p">
+The Domain Server (Server Hosting the "Active directory Service") the Graylog server, the AVEVA Server and any workstation used to view the logs should be time synchronized so that all timestamps correlate.
+</p>
+<p class="p">
+Edge I/O devices also provide a log that includes security audit events, which should be checked regularly. For more information refer to the <em class="ph i">Modicon Edge I/O Configurator and Web Interface - User Guide</em> topic <em class="ph i">Logs Section</em> (under<em class="ph i"> Island Management Main Page</em>).
+</p>
+<div class="note note">
+<span class="notetitle">NOTE:</span> Syslog is not yet supported by these Edge I/O devices, even if it is configured using Cybersecurity Admin Expert. Refer to the <em class="ph i">Modicon Edge I/O Configurator and Web Interface - User Guide</em> topic <em class="ph i">Security Settings Configuration with Cybersecurity Admin Expert Software </em>for more information.
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000005517.01
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

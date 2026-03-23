@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"EcoStruxure Automation Expert - Release Notes\" url=\"EAE_RNote/EAE_RNote_ReleaseNotesEcoStruxureAutomationEx-B82E5819.html\" src=\"toc1.js\" /></data>";

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"ATVSpeedControl - Hardware Configuration","type":"item","url":"ATVd_CAT/D-SE-0104582.html"},{"name":"ATVSpeedControl - Properties","type":"item","url":"ATVd_CAT/D-SE-0103868.html"},{"key":"toc31","name":"ATVSpeedControl - sDrive","type":"book","url":"ATVd_CAT/D-SE-0104584.html"},{"name":"ATVSpeedControl - sDriveInterface","type":"item","url":"ATVd_CAT/D-SE-0104605.html"},{"name":"How to set separate mode for ATVSpeedControl","type":"item","url":"ATVd_CAT/GatingRulesForATVSpeedControl-08765E0B.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

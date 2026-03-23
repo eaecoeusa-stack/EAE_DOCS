@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Initialization CAT (Frame-0)","type":"item","url":"EAE_IECMG/InitializationCATFrame-0CPT-B8AE978F.html#InitializationCATFrame-0CPT-B8AE978F"},{"name":"Field Interface CAT (Frame-3)","type":"item","url":"EAE_IECMG/FieldInterfaceCATFrame-3CPT-B8AE9F6A.html#FieldInterfaceCATFrame-3CPT-B8AE9F6A"},{"name":"Children Sub-system (Frame-4)","type":"item","url":"EAE_IECMG/ChildrenSubsystemFrame-4CPT-B8B04007.html#ChildrenSubsystemFrame-4CPT-B8B04007"},{"key":"toc6","name":"Logics Sub-system (Frame-5)","type":"book","url":"EAE_IECMG/LogicsSubsystemFrame-5CPT-B8B046CC.html#LogicsSubsystemFrame-5CPT-B8B046CC"},{"name":"OT - IT Interfacing with Structured Semantics (Frame-6)","type":"item","url":"EAE_IECMG/OT-ITInterfacingWithStructuredSeman-61991978.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

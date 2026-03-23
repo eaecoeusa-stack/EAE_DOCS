@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"General Design Rules","type":"item","url":"EAE_ADG/GeneralDesignRules-4A940A41.html#GeneralDesignRules-4A940A41"},{"name":"Optimization at Application Design Level","type":"item","url":"EAE_ADG/OptimizationAtApplicationDesignLeve-4A955320.html#OptimizationAtApplicationDesignLeve-4A955320"},{"name":"Optimization at Hardware Configuration Level","type":"item","url":"EAE_ADG/OptimizationAtHardwareConfiguration-4AA4104A.html#OptimizationAtHardwareConfiguration-4AA4104A"},{"name":"Online Change","type":"item","url":"EAE_ADG/OnlineChange-4AA47291.html#OnlineChange-4AA47291"},{"name":"Mapping / Distribution","type":"item","url":"EAE_ADG/MappingDistribution-4AA4C380.html#MappingDistribution-4AA4C380"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

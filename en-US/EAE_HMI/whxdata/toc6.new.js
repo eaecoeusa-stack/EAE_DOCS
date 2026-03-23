@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Signature Verification","type":"item","url":"EAE_HMI/SignatureVerification-3B0C6A04.html#SignatureVerification-3B0C6A04"},{"name":"EcoStruxure Automation Expert - HMI Installation Procedure","type":"item","url":"EAE_HMI/InstallationProcedure-3B0CAF44.html#InstallationProcedure-3B0CAF44"},{"name":"Completing the Installation in EcoStruxure Automation Expert","type":"item","url":"EAE_HMI/CompletingTheInstallationInEcoStrux-3B0CD348.html#CompletingTheInstallationInEcoStrux-3B0CD348"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

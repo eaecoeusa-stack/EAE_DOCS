@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="ARCHV_UG" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="1" page="ARCHV_UG\AboutTheBook-1D076C1C.html">
+  </contextentry>
+  <contextentry id="2" page="ARCHV_UG\D-NA-0003897.1.html">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="ARCHV_UG\ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html">
+  <topic>ARCHV_UG\AboutTheBook-1D076C1C.html
+  </topic>
+  <topic>ARCHV_UG\AddingARuntimeForArchiveConfigurati-6C742DA9.html
+  </topic>
+  <topic>ARCHV_UG\ArchivingInputDataAndAlarmEvents-9590C55E.html
+  </topic>
+  <topic>ARCHV_UG\ARCHV_UG_id_address_tpc.html
+  </topic>
+  <topic>ARCHV_UG\ARCHV_UG_id_disclaimer_tpc.html
+  </topic>
+  <topic>ARCHV_UG\ARCHV_UG_id_glo_tpc.html
+  </topic>
+  <topic>ARCHV_UG\ARCHV_UG_UserGuideEcoStruxureAutomationExper-1D0D2413.html
+  </topic>
+  <topic>ARCHV_UG\ChecksumAndSignatureVerification-F052DC75.html
+  </topic>
+  <topic>ARCHV_UG\Commissioning-952FE4B0.html
+  </topic>
+  <topic>ARCHV_UG\ConfiguringAlarmArchiving-928E75C3.html
+  </topic>
+  <topic>ARCHV_UG\ConfiguringHMIInputVariablesForArch-6CDFD9EB.html
+  </topic>
+  <topic>ARCHV_UG\ConfiguringPgAdmin4-2D88AFDE.html
+  </topic>
+  <topic>ARCHV_UG\ConfiguringTheVisualizationOfHistor-95307555.html
+  </topic>
+  <topic>ARCHV_UG\CreatingAnArchivingDatabase-6CF7D440.html
+  </topic>
+  <topic>ARCHV_UG\CreatingAndConfiguringAnArchiveData-6C77DB78.html
+  </topic>
+  <topic>ARCHV_UG\CreatingAndConfiguringAnArchiveLink-6C78FC34.html
+  </topic>
+  <topic>ARCHV_UG\CreatingAndConfiguringASoftDPACRunt-6CDE84F0.html
+  </topic>
+  <topic>ARCHV_UG\D-NA-0003897.1.html
+  </topic>
+  <topic>ARCHV_UG\DeployingTheArchiveLink-EB3B365B.html
+  </topic>
+  <topic>ARCHV_UG\EAE-ArchiveUninstallation-43416CD8.html
+  </topic>
+  <topic>ARCHV_UG\EAEAchiveInstallMW-25E6B246.html
+  </topic>
+  <topic>ARCHV_UG\EAEArchiveInstallUbuntu-25E8974F.html
+  </topic>
+  <topic>ARCHV_UG\EcoStruxureAutomationExpert-Archive-7BC5E5D3.html
+  </topic>
+  <topic>ARCHV_UG\InstallingPgAgentMicrosoftWindows-25DF665C.html
+  </topic>
+  <topic>ARCHV_UG\InstallingPgAgentUbuntu-25E85DF3.html
+  </topic>
+  <topic>ARCHV_UG\InstallingUbuntu-256703C5.html
+  </topic>
+  <topic>ARCHV_UG\Introduction-C767940C.html
+  </topic>
+  <topic>ARCHV_UG\MicrosoftWindowsUninstallation-1D2D1C47.html
+  </topic>
+  <topic>ARCHV_UG\MigratingMWDatabase-2884A0A4.html
+  </topic>
+  <topic>ARCHV_UG\Overview-411629E2.html
+  </topic>
+  <topic>ARCHV_UG\PgAdmin4Configuration-4D0F8812.html
+  </topic>
+  <topic>ARCHV_UG\PgAdminpgAdminIsAToolUsedForTheConf-20C6A8A2.html
+  </topic>
+  <topic>ARCHV_UG\PgAgentJobActions-25E680F2.html
+  </topic>
+  <topic>ARCHV_UG\PgAgentMW-25E027FD.html
+  </topic>
+  <topic>ARCHV_UG\PgAgentpgAgentIsAToolUsedForSchedul-20A1D3B1.html
+  </topic>
+  <topic>ARCHV_UG\PostgreSQLGlossaryDefinition-1F1416BA.html
+  </topic>
+  <topic>ARCHV_UG\PostgreSQLInstallationWindows-45B5DE7A.html
+  </topic>
+  <topic>ARCHV_UG\Prerequisites-411901B2.html
+  </topic>
+  <topic>ARCHV_UG\Prerequisites-45361A6F.html
+  </topic>
+  <topic>ARCHV_UG\Prerequisites-C765CFF3.html
+  </topic>
+  <topic>ARCHV_UG\ProductInformation-433E7ACA.html
+  </topic>
+  <topic>ARCHV_UG\ResetForgottenPasswordForSuperUserp-F1C8961B.html
+  </topic>
+  <topic>ARCHV_UG\SystemRequirements-45352E69.html
+  </topic>
+  <topic>ARCHV_UG\TestingHMIInputDataAndAlarmArchivin-EB3B5E15.html
+  </topic>
+  <topic>ARCHV_UG\Troubleshooting-1D75F8D9.html
+  </topic>
+  <topic>ARCHV_UG\UbuntuLinuxArchiveOperatingCommands-3A8789DA.html
+  </topic>
+  <topic>ARCHV_UG\UbuntuUninstallation-1D2D32C3.html
+  </topic>
+  <topic>ARCHV_UG\Upgrade-3A87F1B9.html
+  </topic>
+  <topic>ARCHV_UG\UpgradingEAE-Archive-434592C7.html
+  </topic>
+  <topic>ARCHV_UG\UsingTheArchivedData-8EDA7DEA.html
+  </topic>
+  <topic>ARCHV_UG\ViewingHMIInputVariableDataFromTheA-6C54A369.html
+  </topic>
+  <topic>ARCHV_UG\ViewingHMIInputVariablesAddedToAHis-6C556E9E.html
+  </topic>
+  <topic>ARCHV_UG\_whxdata_\csh.js.html
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>favicon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

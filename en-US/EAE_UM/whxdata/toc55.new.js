@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Device Catalog","type":"item","url":"EAE_UM/DeviceCatalog-D8A6B4FB.html"},{"name":"Using the Device Catalog","type":"item","url":"EAE_UM/AddingDevicesViaTheDeviceCatalog-EA9DD75A.html"},{"name":"Edit Physical Devices Connections","type":"item","url":"EAE_UM/ConnectingDevicesInTheTopology-EA9E0350.html"},{"name":"Managing Networks and Device IP Addresses","type":"item","url":"EAE_UM/ManagingNetworksAndDeviceIPAddresse-EA9E260E.html"},{"name":"Displaying the Device","type":"item","url":"EAE_UM/DisplayingTheDevice-EA9E455B.html"},{"name":"Associating Physical Devices with Logical Devices","type":"item","url":"EAE_UM/AssociatingPhysicalDevicesWithLogic-EA9E6228.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

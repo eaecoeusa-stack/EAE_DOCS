@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Automation Solution","type":"item","url":"EAE_MUG/AutomationSolutionAnAutomationSolut-C78C20C5.html"},{"name":"Current-Zone","type":"item","url":"EAE_MUG/Current-zoneTheCurrentZoneIsThePadO-C78F06F8.html"},{"name":"Distributed Control Application","type":"item","url":"EAE_MUG/DistributedControlApplicationGlossa-C709B31F.html"},{"name":"EcoStruxure Automation Expert Platform","type":"item","url":"EAE_MUG/EcoStruxureAutomationExpertPlatform-C78C8E3F.html"},{"name":"Parent-Zone","type":"item","url":"EAE_MUG/Parent-zoneAParent-zoneIsAZoneThatI-C78F0E08.html"},{"name":"Sub-Zone","type":"item","url":"EAE_MUG/Sub-zoneASub-zoneIsAZoneThatIsInclu-C78F161E.html"},{"name":"Zone","type":"item","url":"EAE_MUG/ZoneAZoneIsAPartOfADistributedContr-C78C325A.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

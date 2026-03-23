@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="EVENTCHAINHEAD and EVENTCHAIN Function Blocks" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500 Rueil MalmaisonFrance + 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="EVENTCHAINHEADAndEVENTCHAINFunction-B8B0FB81" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+EVENTCHAINHEAD and EVENTCHAIN Function Blocks
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v17.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.3.2.0_3";
+//]]></script>
+<meta name="brsprev" value="EAE_ADG/DPAC_FULLINITFunctionBlockCPT-B8B0EBB5.html" />
+<meta name="brsnext" value="EAE_ADG/ConceptTitle-E7078FCC.html" />
+<meta name="topic-breadcrumbs" content="Application Design - Guidelines &gt; Application Design Principles &gt; Strategies for Initialization in EcoStruxure Automation Expert" />
+</head>
+<body id="EVENTCHAINHEADAndEVENTCHAINFunction-B8B0FB81"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html");
+document.write("<a href=\"EAE_ADG_ReferenceManualEcoStruxureTMAutomat-489788CF.html\">Application Design - Guidelines<\/a> > <a href=\"ApplicationDesignPrinciplesCPT-B8ACBADA.html#ApplicationDesignPrinciplesCPT-B8ACBADA\">Application Design Principles<\/a> > <a href=\"StrategiesForInitializationInEcoStr-B8B081B1.html#StrategiesForInitializationInEcoStr-B8B081B1\">Strategies for Initialization in EcoStruxure Automation Expert<\/a> > EVENTCHAINHEAD and EVENTCHAIN Function Blocks<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="EVENTCHAINHEADAndEVENTCHAINFunction-B8B0FB81" id="EVENTCHAINHEADAndEVENTCHAINFunction-B8B0FB81_">
+<!-- --></a><a name="EVENTCHAINHEADAndEVENTCHAINFunction_B8B0FB81" id="EVENTCHAINHEADAndEVENTCHAINFunction_B8B0FB81">
+<!-- --></a><a name="EVENTCHAINHEADAndEVENTCHAINFunction_B8B0FB81" id="EVENTCHAINHEADAndEVENTCHAINFunction_B8B0FB81_">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+EVENTCHAINHEAD and EVENTCHAIN Function Blocks
+</h1>
+<div class="body conbody">
+
+<p class="p">
+The <span class="ph uicontrol">EVENTCHAINHEAD</span> function block can be used in a given resource initialization function block to trigger all <span class="ph uicontrol">EVENTCHAIN</span> function blocks in the <span class="ph">CATs</span> or <span class="ph uicontrol">Composites</span> of that resource that have the same string set in their <span class="ph uicontrol">NAME</span> input data and the same boolean set in their <span class="ph uicontrol">INVERT</span> input data.
+</p>
+<p class="p">
+If all resources of the system own an instance of <span class="ph uicontrol">EVENTCHAINHEAD</span>, then the <span class="ph">CAT</span> instances can be mapped and moved anywhere without the need to re-link them.
+</p>
+<p class="p">
+Set the <span class="ph uicontrol">NAME</span> and <span class="ph uicontrol">INVERT</span> input data in the <span class="ph uicontrol">EVENTCHAINHEAD</span> function block identical in all <span class="ph uicontrol">EVENTCHAIN</span> function blocks to be triggered (here: <span class="ph uicontrol">'APP_INIT'</span> and <span class="ph uicontrol">FALSE</span>):
+</p>
+<img class="image" src="DD00683385.png" alt="" style="max-height:1.75in;" />
+<p class="p">
+The <span class="ph uicontrol">EVENTCHAIN</span> function block must be connected to the initialization logic by its <span class="ph uicontrol">E0</span> output event, and then the last initialized function block <span class="ph uicontrol">E0</span> output event must be connected back to the <span class="ph uicontrol">ACK</span> input event of <span class="ph uicontrol">EVENTCHAIN</span> function block.
+</p>
+<p class="p">
+The <span class="ph uicontrol">Timeout</span> input data of <span class="ph uicontrol">EVENTCHAIN</span> function block can be set to end the initialization chain at a specific time.
+</p>
+<div class="div">
+<p class="p">
+<span class="ph uicontrol">EVENTCHAIN</span> function block connected to the initialization logic by <span class="ph uicontrol">E0</span> event output:
+</p>
+<div class="fig fignone">
+<img class="image" src="0000870371.png" alt="" style="max-height:2.1in;" />
+</div>
+</div>
+<p class="p">
+In the below illustration, two initialization chains are triggered (one for <span class="ph uicontrol">'APP_INIT'</span> and one for <span class="ph uicontrol">'INIT'</span>). They both execute the initialization in parallel for the matching <span class="ph uicontrol">EVENTCHAIN</span> function blocks (respectively of identically set <span class="ph uicontrol">NAME</span> and <span class="ph uicontrol">INVERT</span>), instantiated in the current resource.
+</p>
+<div class="div">
+<p class="p">
+Triggering two event chains:
+</p>
+<div class="fig fignone">
+<img class="image" src="0000987529.png" alt="" style="max-height:2in;" />
+</div>
+</div>
+<p class="p">
+In the following illustrations, the <span class="ph uicontrol">Counter</span> implementation can be made independent of the resource, by replacing the direct connection to the resource <span class="ph uicontrol">E_RESTART</span> function block by an instance of <span class="ph uicontrol">EVENTCHAIN</span>.
+</p>
+<p class="p">
+The original initialization of the count was made through an <span class="ph uicontrol">E_RESTART</span> function block, using the <span class="ph uicontrol">Counter</span> function block:
+</p>
+<img class="image" src="DD00677503.png" alt="" style="max-height:1.25in;" />
+<p class="p">
+Now the <span class="ph uicontrol">Counter</span> function block is modified to incorporate an <span class="ph uicontrol">EVENTCHAIN</span>, with <span class="ph uicontrol">NAME</span> = <span class="ph uicontrol">'INIT'</span> and <strong class="ph b">INVERT</strong> = <strong class="ph b">TRUE</strong>.
+</p>
+<div class="div">
+<p class="p">
+Count function block instantiates an <span class="ph uicontrol">EVENTCHAIN</span> function block:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00677502.png" alt="" style="max-height:1.8in;" />
+</div>
+</div>
+<p class="p">
+And the resource initialization is modified to incorporate <span class="ph uicontrol">EVENTCHAINHEAD</span>, with <span class="ph uicontrol">NAME</span> = <span class="ph uicontrol">'INIT'</span> and <span class="ph uicontrol">INVERT</span> = <span class="ph uicontrol">TRUE</span>.
+</p>
+<p class="p">
+Resource initialization function block is linked to an <span class="ph uicontrol">EVENTCHAINHEAD</span> function block:
+</p>
+<img class="image" src="0000987528.png" alt="" style="max-height:1.8in;" />
+<p class="p">
+In a system, if all of the resource’s initialization own an instance of <span class="ph uicontrol">EVENTCHAINEAD</span> with that same <span class="ph uicontrol">NAME</span> and <span class="ph uicontrol">INVERT</span> values, then the <span class="ph uicontrol">Counter</span> instances can be mapped or remapped into any resources (without the need to relink them manually to the initialization function block of these resources, because the link is automatically made by the matching <span class="ph uicontrol">NAME</span> and <span class="ph uicontrol">INVERT</span> between the <span class="ph uicontrol">EVENTCHAINHEAD</span> function blocks (of the resource) and the <span class="ph uicontrol">EVENTCHAIN</span> function block (of <span class="ph uicontrol">Counter</span> function block).
+</p>
+<div class="section">
+<h2 class="title sectiontitle">
+Function Blocks with INIT and INITO Pins
+</h2>
+<p class="p">
+The <span class="ph uicontrol">INIT</span> input event and <span class="ph uicontrol">INITO</span> output event, available in function blocks and in many <span class="ph">CATs</span> and Composites, can be used to chain the initialization of all logical function blocks.
+</p>
+<p class="p">
+The initialization chain is created by linking the <span class="ph uicontrol">INITO</span> output event of the upstream function block to the <span class="ph uicontrol">INIT</span> input event of the downstream function block.
+</p>
+<p class="p">
+This is the simplest way to initialize the logic in the resources, but it has the following drawbacks:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+It requires function blocks having an <span class="ph uicontrol">INIT</span> input event.
+</p>
+</li>
+<li class="li">
+<p class="p">
+It can result in a long initialization chain.
+</p>
+</li>
+<li class="li">
+<p class="p">
+It requires the function blocks to be already mapped to a resource.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Any re-mapping requires re-linking the function blocks.
+</p>
+</li>
+</ul>
+<div class="note note">
+<span class="notetitle">NOTE:</span> If you use a link between <span class="ph uicontrol">FB1.INITO</span> and <span class="ph uicontrol">FB2.INIT</span>, verify that <span class="ph uicontrol">FB1</span> and <span class="ph uicontrol">FB2</span> are part of the same resource.
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+EIO0000004686.06
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

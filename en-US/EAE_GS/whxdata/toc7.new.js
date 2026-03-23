@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Adding a Function Block","type":"item","url":"EAE_GS/AddingaFunctionBlockCPT-5BF248BD.html#AddingaFunctionBlockCPT-5BF248BD"},{"name":"Cyclic Motor","type":"item","url":"EAE_GS/CyclicMotorInstrumentCPT-5BF25DBA.html#CyclicMotorInstrumentCPT-5BF25DBA"},{"name":"Valve","type":"item","url":"EAE_GS/ValveInstrumentsCPT-5BF26393.html#ValveInstrumentsCPT-5BF26393"},{"name":"Analog Input","type":"item","url":"EAE_GS/AnalogInputInstrumentCPT-5BF26E2C.html#AnalogInputInstrumentCPT-5BF26E2C"},{"name":"Digital Input","type":"item","url":"EAE_GS/DigitalInputInstrumentsCPT-5BF2752A.html#DigitalInputInstrumentsCPT-5BF2752A"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+
+<html lang="en-us">
+<head>
+<meta name="copyright" content="(C) Copyright 2025" />
+<meta name="DC.rights.owner" content="(C) Copyright 2025" />
+<meta name="DC.type" content="concept" />
+<meta name="DC.title" content="ATVFrequencyControl - fpDriveCtrl" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.creator" content="Schneider Electric 35 rue Joseph Monier92500Rueil MalmaisonFrance+ 33 (0) 1 41 29 70 00 www.se.com" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="ATVFrequencyControl-FpDriveCtrl-50965F21" />
+<meta name="DC.language" content="en-US" />
+<link type="text/css" rel="StyleSheet" href="commonltr.css" />
+<link rel="stylesheet" type="text/css" href="../responsive_html5_!MasterPage!/content.css" />
+<title>
+ATVFrequencyControl - fpDriveCtrl
+</title><script type="text/javascript" language="JavaScript" xml:space="preserve">//<![CDATA[
+//
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+
+//]]></script>
+<style type="text/css" xml:space="preserve">
+
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+
+</style>
+<meta name="generator" content="Adobe FrameMaker v16.0" /><script type="text/javascript" src="../template/scripts/rh.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/common.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/topic.min.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/constants.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/utils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhutils.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhlang.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhver.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/settings.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/XmlJsReader.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadparentdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadscreen.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/loadprojdata.js" xml:space="preserve"></script><script type="text/javascript" src="../template/scripts/mhtopic.js" xml:space="preserve"></script>
+<link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css" /><script type="text/javascript" xml:space="preserve">//<![CDATA[
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "1.6.1.1.0_1";
+//]]></script>
+<meta name="brsprev" value="ATVd_CAT/ATVFrequencyControl-SDrive-4D817817.html" />
+<meta name="brsnext" value="ATVd_CAT/ATVFrequencyControl-FpDriveSettings-5096590E.html" />
+<meta name="topic-breadcrumbs" content="SE.IoATV - Library Guide &gt; VSD_Control &gt; ATVFrequencyControl - Hardware CAT &gt; ATVFrequencyControl - sDrive" />
+</head>
+<body id="ATVFrequencyControl-FpDriveCtrl-50965F21"><script type="text/javascript" src="../ehlpdhtm.js" xml:space="preserve"></script>
+ <!-- UTF_8 token:     对 -->
+ <!-- Begin: Schneider Electric enhancement _ reference to javascript file at top of body --> <script src="../template/SchneiderElectric_Responsive/se_body_top_functions_master.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamiclinkresolver.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_dynamicLinks.js" type="text/javascript" xml:space="preserve"></script> <script src="../template/SchneiderElectric_Responsive/se_toggleGroups.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at top of body -->
+ <!-- Begin: Schneider Electric extension _ Breadcrumbs --> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs.js" language="JavaScript1.2" xml:space="preserve"></script> <script type="text/javascript" src="../template/SchneiderElectric_Responsive/breadcrumbs_func.js" language="JavaScript1.2" xml:space="preserve"></script>
+ <!-- End: Schneider Electric extension _ Breadcrumbs -->
+ <!-- 
+     This masterpage contents Header / Footer / Breadcrumbs / MiniTOC. 
+     All the elements are optional, and can be deleted, if not required in output. 
+     To get more details visit http://help.adobe.com/en_US/framemaker/using/WS2d2a17056e21919829932d1e144fe8e0719_8000.html
+    -->
+ <!-- Breadcrumbs starts here-->
+<div><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+document.write("<p class=\"pt_breadcrumbs\"  >");
+AddMasterBreadcrumbs("../index.htm", "", ">", "", "ATVd_CAT_D-SE-0105319.html");
+document.write("<a href=\"ATVd_CAT_D-SE-0105319.html\">SE.IoATV - Library Guide<\/a> > <a href=\"HardwareCATs-DBB099F9.html#HardwareCATs-DBB099F9\">VSD_Control<\/a> > <a href=\"ATVFrequencyControl-HardwareCAT-4D7D9D91.html\">ATVFrequencyControl - Hardware CAT<\/a> > <a href=\"ATVFrequencyControl-SDrive-4D817817.html\">ATVFrequencyControl - sDrive<\/a> > ATVFrequencyControl - fpDriveCtrl<\/p>");
+//]]></script>
+</div>
+<!-- Breadcrumbs ends here-->
+<div id="content_idx">
+<!-- Body place holder starts here-->
+<a name="ATVFrequencyControl-FpDriveCtrl-50965F21" id="ATVFrequencyControl-FpDriveCtrl-50965F21_">
+<!-- --></a><a name="ATVFrequencyControl_FpDriveCtrl_50965F21" id="ATVFrequencyControl_FpDriveCtrl_50965F21">
+<!-- --></a>
+<h1 class="title topictitle1" id="ariaid-title1">
+ATVFrequencyControl - fpDriveCtrl
+</h1>
+<div class="body conbody">
+
+<div class="section">
+<h2 class="title sectiontitle">
+Abstract
+</h2>
+<p class="p">
+The <span class="ph">ATVFrequencyControl - fpDriveCtrl</span> faceplate allows you to:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Start, stop or quick stop the drive (Quick stop command allows the motor to decelerate very quickly).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Clear detected errors using the <strong class="ph b">CLEAR</strong> button.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Observe and monitor various drive parameter values and states.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select drive modes such as AUTO or FORCE Mode.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select the direction of drive rotation (Forward or Reverse).
+</p>
+</li>
+</ul>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">
+Description
+</h2>
+<p class="p">
+<strong class="ph b">Usage</strong>
+</p>
+<p class="p">
+Access the <strong class="ph b"><span class="ph">ATVFrequencyControl - fpDriveCtrl</span></strong> faceplate by clicking the corresponding active zone in <span class="ph"><strong class="ph b">ATVFrequencyControl - sDrive</strong></span>.
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00927494.png" alt="" />
+</div>
+<p class="p">
+<strong class="ph b">Faceplate Components</strong>
+</p>
+<p class="p">
+The following figure illustrates the <span class="ph"><strong class="ph b">ATVSpeedControl - fpDriveCtrl</strong></span> faceplate:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00927493.png" alt="" />
+</div>
+<p class="p">
+The <span class="ph"><strong class="ph b">ATVSpeedControl : fpDriveCtrl </strong></span> faceplate consists of two main zones:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+<strong class="ph b">Variable Speed Drive</strong>
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+To monitor the parameters: SYS (Speed Reference), Owner, Drive State (command and speed), Motor State.
+</p>
+</li>
+<li class="li">
+<p class="p">
+To monitor actual Hardware values with Reference Values: Frequency, Speed, Torque, Current and Power.
+</p>
+</li>
+<li class="li">
+<p class="p">
+To monitor Status values: Last Error value and Last Warning Value.
+</p>
+</li>
+<li class="li">
+<p class="p">
+To clear the detected errors by clicking the <strong class="ph b">CLEAR</strong> button.
+</p>
+</li>
+</ul>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Operator Command</strong>
+</p>
+<p class="p">
+This zone provides you the various options for the following settings:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Owner: AUTO/FORCE.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Auto-Stop Inhibition: On/Off.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Test Without Device: On/Off.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Command: Run/Stop/Quick stop (Quick stop command allows the motor to decelerate very quickly).
+</p>
+</li>
+<li class="li">
+<p class="p">
+Direction: Forward/Reverse.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Speed Reference: Calculated based on the Nominal Speed Value [NSP] parameter set in the drive. When the unit of the speed value changes, the value is set to 0.
+</p>
+</li>
+<li class="li">
+<p class="p">
+PV/Program.
+</p>
+</li>
+<li class="li">
+<p class="p">
+SIM/Forced: in rpm or % with decimal point adjustment.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Autotuning: Apply Autotuning/Erase Autotuning.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Autotuning Status: Not Done/Pending/In Progress/Error/Autotuning Done.
+</p>
+</li>
+</ul>
+</li>
+</ol>
+<div class="note note">
+<span class="notetitle">NOTE:</span> In Operator mode, the drive takes the values (ACC, DEC, LSP, HSP) from the program.
+</div>
+<p class="p">
+<strong class="ph b">View or hide the <strong class="ph b">Operator Command</strong></strong>
+</p>
+<p class="p">
+Click on the following button <img class="image" src="T003274322.gif" alt="" style="max-height:0.2in;" /> to view or hide the <strong class="ph b">Operator Command</strong> window.
+</p>
+<table border="1" class="note hazardstatement" style="max-width: 100% ;height: auto;">
+<tr>
+<th colspan="2" class="hazardstatement--warning">
+<span class="hazardstatement--warning-symbol"> </span>WARNING
+</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="messagepanel">
+<div class="typeofhazard">
+LOSS OF CONTROL
+</div>
+<div class="howtoavoid">
+Verify that closing or hiding the tab to view or hide the <strong class="ph b">Operator Command</strong> window, while the operator mode is active does not result in unsafe conditions
+</div>
+<div class="consequence">
+Failure to follow these instructions can result in death, serious injury, or equipment damage.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p class="p">
+<strong class="ph b">Auto-Stop Inhibition</strong>
+</p>
+<p class="p">
+This safety measure stops unsupervised motor operation in forced mode if left unattended. By default, the <strong class="ph b">Auto-Stop Inhibition</strong> position is <strong class="ph b">OFF</strong>.
+</p>
+<div class="fig fignone">
+<img class="image" src="0000610837.png" alt="" />
+</div>
+<p class="p">
+If FORCE mode is enabled and the drive is forced to <strong class="ph b">RUN</strong>, the drive stops on ramp and is switches to the operating state <span class="ph"><strong class="ph b">Ready</strong></span> under the following conditions:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+Communication interruption with the <span class="ph">ATV dPAC</span>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Switching between different drive canvases or closing of the canvas.
+</p>
+</li>
+</ul>
+<p class="p">
+If <strong class="ph b">Auto-Stop Inhibition</strong> is set to <strong class="ph b">ON</strong>, the following safety message is displayed:
+</p>
+<div class="fig fignone">
+<img class="image" src="0000992079.PNG" alt="" style="max-height:2IN;" />
+</div>
+<p class="p">
+<strong class="ph b">AutoTune</strong>
+</p>
+<div class="p">
+When you set <strong class="ph b">AutoTune</strong> to <strong class="ph b">APPLY</strong>, the following Safety Message is displayed.
+<div class="fig fignone">
+<img class="image" src="0001113300.PNG" alt="" style="max-height:0.8in;" />
+</div>
+<div class="fig fignone">
+<img class="image" src="0001113436.PNG" alt="" style="max-height:2.5in;" />
+</div>
+</div>
+<p class="p">
+If you click:
+</p>
+<ul class="ul">
+<li class="li">
+<p class="p">
+<strong class="ph b">Continue</strong>: Auto-tuning is performed.
+</p>
+</li>
+<li class="li">
+<p class="p">
+<strong class="ph b">Cancel</strong>: Auto-tuning is not performed.
+</p>
+</li>
+</ul>
+<p class="p">
+<strong class="ph b">Reverse Inhibition (RIN)</strong>
+</p>
+<p class="p">
+Reverse Inhibition bit allows you to enable/disable the motor reverse direction.
+</p>
+<p class="p">
+The following table provides the details:
+</p>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all" style="max-width: 100% ;height: auto;">
+<colgroup>
+<col style="width:50pt" />
+<col />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+<tr class="row">
+<th class="entry nocellnorowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;" id="d116485e332">
+<p class="p">
+<strong class="ph b">RIN</strong>
+</p>
+</th>
+<th class="entry cell-norowborder" style="text-align:left;vertical-align:top; background-color:#d0d0d0;" id="d116485e339">
+<p class="p">
+<strong class="ph b">Status</strong>
+</p>
+</th>
+</tr>
+</thead>
+<tbody class="tbody" style="vertical-align:top;">
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d116485e332 ">
+<p class="p">
+RIN = 1
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d116485e339 ">
+<p class="p">
+Motor Reverse command is disabled.
+</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry row-nocellborder" style="text-align:left;vertical-align:top;" headers="d116485e332 ">
+<p class="p">
+RIN = 0
+</p>
+</td>
+<td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d116485e339 ">
+<p class="p">
+Motor Reverse command is enabled.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p">
+To enable motor reverse direction:
+</p>
+<ol class="ol">
+<li class="li">
+<p class="p">
+Go to the Hardware Configuration.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Right-click on the <strong class="ph b"><span class="ph">ATVSpeedControl</span></strong>.
+</p>
+</li>
+<li class="li">
+<p class="p">
+Select <strong class="ph b">Properties Editor</strong> (New Window appears).
+</p>
+</li>
+<li class="li">
+<p class="p">
+In the <strong class="ph b">Command &amp; Reference </strong> tab, set <strong class="ph b">[RIN] Reverse Direction Disable</strong> to <strong class="ph b">No</strong>.
+</p>
+</li>
+</ol>
+<div class="fig fignone">
+<img class="image" src="DD00927492.png" alt="" />
+</div>
+<p class="p">
+The following figure illustrates the use case for [RIN] Reverse Direction Disable = No:
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00927491.png" alt="" />
+</div>
+<p class="p">
+The <span class="ph">ATVSpeedControl: sDrive</span> faceplate displays the following parameters.
+</p>
+<div class="fig fignone">
+<img class="image" src="DD00927490.JPG" alt="" />
+</div>
+</div>
+</div>
+<div>
+<div class="pt_footer" style="float: none; margin-top: 15px;">
+</div>
+<div id="table_footer" class="table_footer">
+<p class="footer-partno">
+NNZ13569.12
+</p>
+</div>
+<div id="table_footer_dynamic_script"><script type="text/javascript" language="javascript" xml:space="preserve">//<![CDATA[
+			var footer = document.getElementById("table_footer");
+			//add company
+			var copyright = document.createElement("p");
+			copyright.className = "footer-copyright";
+			copyright.innerText = "© 2025";
+			footer.appendChild(copyright);
+			footer.innerHTML += " ";
+			//add company
+			var company = document.createElement("p");
+			company.className = "footer-company";
+			company.innerText = "Schneider Electric.";
+			footer.appendChild(company);
+			footer.innerHTML += " ";
+			//add disclaimer
+			var disclaimer = document.createElement("p");
+			disclaimer.className = "footer-disclaimer";
+			disclaimer.innerText = "All rights reserved.";
+			footer.appendChild(disclaimer);
+		//]]></script>
+</div>
+</div>
+<!-- Body place holder ends here-->
+</div>
+<!-- Footer place holder starts here-->
+<!-- Footer place holder ends here-->
+<!-- Begin: Schneider Electric enhancement _ reference to javascript file at bottom of body --><script src="../template/SchneiderElectric_Responsive/se_body_bottom_functions_master.js" type="text/javascript" xml:space="preserve"></script>
+ <!-- End: Schneider Electric enhancement _ reference to javascript file at bottom of body -->
+</body>
+</html>

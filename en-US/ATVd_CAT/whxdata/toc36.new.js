@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Abstract","type":"item","url":"ATVd_CAT/Abstract-F5F961F4.html"},{"name":"Description","type":"item","url":"ATVd_CAT/Description-F5F972F7.html"},{"name":"ATVDisplay Properties","type":"item","url":"ATVd_CAT/ATVDisplayProperties-F5F98BD6.html"},{"name":"ATVDisplay Integration","type":"item","url":"ATVd_CAT/ATVDisplayIntegration-F67A511D.html"},{"name":"ATVDisplay Configuration","type":"item","url":"ATVd_CAT/ATVDisplayConfiguration-F8F9DE30.html"},{"name":"Application example","type":"item","url":"ATVd_CAT/ApplicationExample-4D043E84.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

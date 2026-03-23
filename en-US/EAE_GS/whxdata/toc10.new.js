@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"Setting the Logical Devices","type":"item","url":"EAE_GS/SettingtheLogicalDevicesCPT-5BF3BBD0.html#SettingtheLogicalDevicesCPT-5BF3BBD0"},{"name":"Mapping","type":"item","url":"EAE_GS/MappingCPT-5BF3C2B8.html#MappingCPT-5BF3C2B8"},{"name":"Initializing the Device","type":"item","url":"EAE_GS/InitializingtheDeviceCPT-5BF3CBD3.html#InitializingtheDeviceCPT-5BF3CBD3"},{"name":"Compiling, Deploying and Running the Application","type":"item","url":"EAE_GS/CompilingDeployingandRunningtheAppl-5BF3DAEE.html#CompilingDeployingandRunningtheAppl-5BF3DAEE"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

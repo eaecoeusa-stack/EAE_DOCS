@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"name":"PROFINET Limitations","type":"item","url":"EAE_UM/PROFINETLimitations-D91CB4EC.html#PROFINETLimitations-D91CB4EC"},{"key":"toc37","name":"Configuring a PROFINET IO-Controller","type":"book","url":"EAE_UM/PROFINETIOConfigurator-D580871C.html#PROFINETIOConfigurator-D580871C"},{"key":"toc38","name":"Configuring a Soft dPAC Controller as I-Device","type":"book","url":"EAE_UM/ConfiguringASoftDPACControllerAsIO--F66626E0.html"},{"key":"toc39","name":"Configuring Event Driven PROFINET Communication","type":"book","url":"EAE_UM/ConfiguringEventDrivenPROFINETCommu-498F57C5.html#ConfiguringEventDrivenPROFINETCommu-498F57C5"},{"name":"Troubleshooting a PROFINET Configuration","type":"item","url":"EAE_UM/TroubleshootingAPROFINETConfigurati-50285255.html#TroubleshootingAPROFINETConfigurati-50285255"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();
