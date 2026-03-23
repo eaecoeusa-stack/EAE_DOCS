@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoStruxure Automation Expert — Documentation Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #3dcd58;
+    --green-dark: #1a8c38;
+    --green-dim: rgba(61,205,88,0.12);
+    --green-border: rgba(61,205,88,0.25);
+    --bg: #0d1117;
+    --bg2: #131920;
+    --bg3: #1a2330;
+    --text: #e8edf2;
+    --text2: #8a9bb0;
+    --text3: #4a6070;
+    --border: rgba(255,255,255,0.07);
+    --radius: 12px;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(61,205,88,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(61,205,88,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Glow */
+  body::after {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(ellipse, rgba(61,205,88,0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  header {
+    padding: 40px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .se-logo {
+    width: 40px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 13px;
+    color: #000;
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+  }
+
+  .se-brand {
+    font-size: 13px;
+    color: var(--text2);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 72px 0 56px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .version-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--green-dim);
+    border: 1px solid var(--green-border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    color: var(--green);
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+
+  .version-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  h1 strong {
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: var(--text2);
+    font-weight: 300;
+    max-width: 560px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text3);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .meta-item span {
+    color: var(--text2);
+  }
+
+  /* Section heading */
+  .section-label {
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin: 56px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* Doc grid */
+  .docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 56px;
+  }
+
+  .doc-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .doc-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--green);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  .doc-card:hover {
+    border-color: var(--green-border);
+    background: var(--bg3);
+    transform: translateY(-2px);
+  }
+
+  .doc-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--green-dim);
+    border: 1px solid var(--green-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.3;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+
+  .card-tag {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.5px;
+    color: var(--text3);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 7px;
+  }
+
+  .card-arrow {
+    color: var(--green);
+    font-size: 16px;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .doc-card:hover .card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* AI usage box */
+  .ai-box {
+    background: var(--bg2);
+    border: 1px solid var(--green-border);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    margin-bottom: 56px;
+  }
+
+  .ai-box-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .ai-box-header h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green);
+    letter-spacing: 0.3px;
+  }
+
+  .ai-box p {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .prompt-example {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .prompt-example::before {
+    content: '»';
+    color: var(--green);
+    margin-right: 8px;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: gap;
+    gap: 16px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    color: var(--text3);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .footer-text a {
+    color: var(--text2);
+    text-decoration: none;
+  }
+
+  .footer-text a:hover { color: var(--green); }
+
+  @media (max-width: 640px) {
+    .container { padding: 0 20px; }
+    .docs-grid { grid-template-columns: 1fr; }
+    .hero { padding: 48px 0 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="se-logo">SE</div>
+    <div class="se-brand">Schneider Electric — EAE COE</div>
+  </header>
+
+  <section class="hero">
+    <div class="version-badge">v25.0 — December 2025</div>
+    <h1><strong>EcoStruxure</strong><br>Automation Expert<br>Documentation Hub</h1>
+    <p class="hero-sub">Complete technical reference for EAE v25.0. Browse guides directly or use any AI assistant to query the documentation by sharing a section URL.</p>
+    <div class="hero-meta">
+      <div class="meta-item">📄 <span>9 guides</span></div>
+      <div class="meta-item">🌐 <span>Web-based, always accessible</span></div>
+      <div class="meta-item">🤖 <span>AI-queryable via URL</span></div>
+    </div>
+  </section>
+
+  <div class="section-label">Documentation Guides</div>
+
+  <div class="docs-grid">
+
+    <a class="doc-card" href="en-US/EAE_RNote25.0/index.htm" target="_blank">
+      <div class="card-icon">🆕</div>
+      <div class="card-title">Release Notes v25.0</div>
+      <div class="card-desc">What's new in EAE v25.0 — platform changes, new features, known issues, and upgrade guidance.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_RNote25.0</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/EAE_IECMG/index.htm" target="_blank">
+      <div class="card-icon">⚙️</div>
+      <div class="card-title">IEC 61499 Application Modeling Guidelines</div>
+      <div class="card-desc">Component-based programming, hierarchical structuring, function blocks, and IEC 61499 design patterns.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_IECMG</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/EAE_CSG/index.htm" target="_blank">
+      <div class="card-icon">🔒</div>
+      <div class="card-title">Cybersecurity Guide</div>
+      <div class="card-desc">Network segmentation, DMZ architecture, VPN, IDS/IPS, security hardening, and compliance guidance.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_CSG</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/EAE_HMI/index.htm" target="_blank">
+      <div class="card-icon">🖥️</div>
+      <div class="card-title">HMI Client User Guide</div>
+      <div class="card-desc">HMI runtime installation, system requirements, Linux/Windows deployment, and interface configuration.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_HMI</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/ATVd_UG/index.htm" target="_blank">
+      <div class="card-icon">🔌</div>
+      <div class="card-title">Altivar dPAC Module User Guide</div>
+      <div class="card-desc">ATV distributed PAC module VW3A3530D — configuration, EtherNet/IP use cases, and troubleshooting.</div>
+      <div class="card-footer">
+        <span class="card-tag">ATVd_UG</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/EAE_MUG/index.htm" target="_blank">
+      <div class="card-icon">👥</div>
+      <div class="card-title">Multi-User Environment Guide</div>
+      <div class="card-desc">Zone concepts, concurrent access, reservation management, and collaborative development workflows.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_MUG</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/EAE_CMPT/index.htm" target="_blank">
+      <div class="card-icon">🔗</div>
+      <div class="card-title">Compatibilities & Dependencies</div>
+      <div class="card-desc">Controller compatibilities, library dependencies, device support matrix, and version compatibility tables.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_CMPT</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/ARCHV_UG/index.htm" target="_blank">
+      <div class="card-icon">🗄️</div>
+      <div class="card-title">Archive User Guide</div>
+      <div class="card-desc">Project archiving, history viewing, PostgreSQL/pgAgent setup on Ubuntu, and data retention workflows.</div>
+      <div class="card-footer">
+        <span class="card-tag">ARCHV_UG</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="doc-card" href="en-US/EAE_RNote/index.htm" target="_blank">
+      <div class="card-icon">📋</div>
+      <div class="card-title">Release Notes (Previous)</div>
+      <div class="card-desc">Historical release notes — library information, documentation references, and prior version details.</div>
+      <div class="card-footer">
+        <span class="card-tag">EAE_RNote</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="section-label">Using with AI Assistants</div>
+
+  <div class="ai-box">
+    <div class="ai-box-header">
+      <span>🤖</span>
+      <h3>Query any guide using Claude, ChatGPT, or Perplexity</h3>
+    </div>
+    <p>Share a documentation section URL with any AI assistant to get answers grounded in the official EAE documentation. Simply paste a link from above and ask your question.</p>
+    <div class="prompt-example">Read the EAE Cybersecurity Guide at https://eaecoeusa-stack.github.io/EAE_DOCS/en-US/EAE_CSG/index.htm and explain how to configure a DMZ for the control network.</div>
+  </div>
+
+  <footer>
+    <div class="footer-text">EcoStruxure™ Automation Expert v25.0 — © 2025 Schneider Electric. All rights reserved.</div>
+    <div class="footer-text"><a href="https://github.com/eaecoeusa-stack/EAE_DOCS" target="_blank">github.com/eaecoeusa-stack/EAE_DOCS</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
